@@ -29,6 +29,7 @@ import { MemoPencil_3c0293af } from "./MemoPencil_3c0293af";
 import { SizeDefaultTypeImageStatusFalse_59ef8191 } from "./SizeDefaultTypeImageStatusFalse_59ef8191";
 import { Today_ddd8af3c } from "./Today_ddd8af3c";
 import { Variant5_91935847 } from "./Variant5_91935847";
+import { FigmaImage } from "./FigmaImage";
 
 export function WeekCalendarHistoricalPage() {
   const screenData = useFigmaScreenData();
@@ -45,7 +46,7 @@ export function WeekCalendarHistoricalPage() {
           <div data-figma-node="5584:26946" data-figma-component="5273:20995" className="pointer-events-auto box-border w-[1440px] h-[80px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] bg-[#ffffff]">
             <div data-figma-node="I5584:26946;5217:13714" className="box-border w-[282px] h-[50px] absolute left-[20px] top-[15px] [--fx:20] [--fww:282] gap-[30px]">
               <div data-figma-node="I5584:26946;5217:13715" className="box-border w-[282px] h-[50px] absolute left-[0px] top-[0px] [--fx:0] [--fww:282] gap-3">
-                <img data-figma-node="I5584:26946;5217:13716" src="/assets/figma/I5584-26946-5217-13716.png" alt="image 2" className="box-border w-[54px] h-[50px] absolute left-[0px] top-[0px] [--fx:0] [--fww:54] rounded-[10px] max-w-none object-cover object-top" />
+                <FigmaImage data-figma-node="I5584:26946;5217:13716" src="/assets/figma/I5584-26946-5217-13716.png" alt="image 2" className="box-border w-[54px] h-[50px] absolute left-[0px] top-[0px] [--fx:0] [--fww:54] rounded-[10px] max-w-none object-cover object-top" />
                 <div data-figma-node="I5584:26946;5217:13717" className="box-border w-[216px] h-[43px] absolute left-[66px] top-[4px] [--fx:66] [--fww:216] flex flex-col items-start gap-[2px] gap-0.5">
                   <p data-figma-node="I5584:26946;5217:13718" className="box-border w-[216px] h-[27px] font-inter text-[22px] font-[800] leading-[27px] text-left whitespace-nowrap text-[#231f20]">Marketing Calendar </p>
                   <p data-figma-node="I5584:26946;5217:13719" className="box-border w-[171px] h-[14px] font-onest text-[11px] font-[600] leading-[14px] text-left whitespace-nowrap text-[#686868]">Plan · Create · Track · Grow</p>
@@ -179,7 +180,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:50506;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:50506;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">2</p>
                             </div>
-                            <img data-figma-node="I5589:50506;5725:104713" src="/assets/figma/I5589-50506-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:50506;5725:104713" src="/assets/figma/I5589-50506-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:50564" data-figma-component="5556:77475" className="box-border w-[96px] h-[180px] absolute left-[193px] top-[0px] [--fx:193] [--fww:96] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px]">
@@ -187,7 +188,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:50564;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:50564;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
                             </div>
-                            <img data-figma-node="I5589:50564;5725:104713" src="/assets/figma/I5589-50564-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:50564;5725:104713" src="/assets/figma/I5589-50564-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:50622" data-figma-component="5556:77447" className="box-border w-[96px] h-[180px] absolute left-[289px] top-[0px] [--fx:289] [--fww:96] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -541,7 +542,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:50854;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:50854;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">8</p>
                             </div>
-                            <img data-figma-node="I5589:50854;5725:99922" src="/assets/figma/I5589-50854-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:50854;5725:99922" src="/assets/figma/I5589-50854-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:50854;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:50854;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -617,7 +618,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:50912;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:50912;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">9</p>
                             </div>
-                            <img data-figma-node="I5589:50912;5725:99922" src="/assets/figma/I5589-50912-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:50912;5725:99922" src="/assets/figma/I5589-50912-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:50912;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:50912;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -693,7 +694,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:50970;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:50970;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">10</p>
                             </div>
-                            <img data-figma-node="I5589:50970;5725:99922" src="/assets/figma/I5589-50970-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:50970;5725:99922" src="/assets/figma/I5589-50970-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:50970;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:50970;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -772,7 +773,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:51028;5725:99921;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:51028;5725:99922" src="/assets/figma/I5589-51028-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51028;5725:99922" src="/assets/figma/I5589-51028-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51028;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51028;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -848,7 +849,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51086;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51086;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">12</p>
                             </div>
-                            <img data-figma-node="I5589:51086;5725:99922" src="/assets/figma/I5589-51086-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51086;5725:99922" src="/assets/figma/I5589-51086-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51086;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51086;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -927,7 +928,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:51144;5725:99921;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:51144;5725:99922" src="/assets/figma/I5589-51144-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51144;5725:99922" src="/assets/figma/I5589-51144-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51144;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51144;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1003,7 +1004,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51202;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51202;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">14</p>
                             </div>
-                            <img data-figma-node="I5589:51202;5725:99922" src="/assets/figma/I5589-51202-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51202;5725:99922" src="/assets/figma/I5589-51202-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51202;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51202;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1081,7 +1082,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51322;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51322;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">15</p>
                             </div>
-                            <img data-figma-node="I5589:51322;5725:99922" src="/assets/figma/I5589-51322-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51322;5725:99922" src="/assets/figma/I5589-51322-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51322;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51322;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1157,7 +1158,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51323;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51323;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">16</p>
                             </div>
-                            <img data-figma-node="I5589:51323;5725:99922" src="/assets/figma/I5589-51323-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51323;5725:99922" src="/assets/figma/I5589-51323-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51323;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51323;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1236,7 +1237,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:51324;5725:99921;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:51324;5725:99922" src="/assets/figma/I5589-51324-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51324;5725:99922" src="/assets/figma/I5589-51324-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51324;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51324;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1312,7 +1313,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51325;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51325;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">18</p>
                             </div>
-                            <img data-figma-node="I5589:51325;5725:99922" src="/assets/figma/I5589-51325-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51325;5725:99922" src="/assets/figma/I5589-51325-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51325;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51325;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1388,7 +1389,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51326;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51326;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">19</p>
                             </div>
-                            <img data-figma-node="I5589:51326;5725:99922" src="/assets/figma/I5589-51326-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51326;5725:99922" src="/assets/figma/I5589-51326-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51326;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51326;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1467,7 +1468,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:51327;5725:99921;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:51327;5725:99922" src="/assets/figma/I5589-51327-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51327;5725:99922" src="/assets/figma/I5589-51327-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51327;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51327;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1543,7 +1544,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51328;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51328;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">21</p>
                             </div>
-                            <img data-figma-node="I5589:51328;5725:99922" src="/assets/figma/I5589-51328-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51328;5725:99922" src="/assets/figma/I5589-51328-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51328;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51328;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1621,7 +1622,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51729;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51729;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">22</p>
                             </div>
-                            <img data-figma-node="I5589:51729;5725:99922" src="/assets/figma/I5589-51729-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51729;5725:99922" src="/assets/figma/I5589-51729-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51729;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51729;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1697,7 +1698,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51730;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51730;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">23</p>
                             </div>
-                            <img data-figma-node="I5589:51730;5725:99922" src="/assets/figma/I5589-51730-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51730;5725:99922" src="/assets/figma/I5589-51730-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51730;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51730;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1773,7 +1774,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51731;5725:99918" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51731;5725:87494" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">24</p>
                             </div>
-                            <img data-figma-node="I5589:51731;5725:99922" src="/assets/figma/I5589-51731-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51731;5725:99922" src="/assets/figma/I5589-51731-5725-99922.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5589:51731;5559:19118" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5589:51731;5556:77452" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1849,7 +1850,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51732;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51732;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">25</p>
                             </div>
-                            <img data-figma-node="I5589:51732;5725:104713" src="/assets/figma/I5589-51732-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51732;5725:104713" src="/assets/figma/I5589-51732-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:51733" data-figma-component="5556:77475" className="box-border w-[96px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px]">
@@ -1857,7 +1858,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51733;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51733;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">26</p>
                             </div>
-                            <img data-figma-node="I5589:51733;5725:104713" src="/assets/figma/I5589-51733-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51733;5725:104713" src="/assets/figma/I5589-51733-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:51734" data-figma-component="5556:77475" className="box-border w-[96px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px]">
@@ -1865,7 +1866,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51734;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51734;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">27</p>
                             </div>
-                            <img data-figma-node="I5589:51734;5725:104713" src="/assets/figma/I5589-51734-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51734;5725:104713" src="/assets/figma/I5589-51734-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:51735" data-figma-component="5556:77475" className="box-border w-[96px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px]">
@@ -1873,7 +1874,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5589:51735;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5589:51735;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">28</p>
                             </div>
-                            <img data-figma-node="I5589:51735;5725:104713" src="/assets/figma/I5589-51735-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:51735;5725:104713" src="/assets/figma/I5589-51735-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                       </div>
@@ -1890,7 +1891,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:52241;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:52241;5725:102098" src="/assets/figma/I5589-52241-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:52241;5725:102098" src="/assets/figma/I5589-52241-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:52242" data-figma-component="5556:77518" className="box-border w-[96px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
@@ -1901,7 +1902,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:52242;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:52242;5725:102098" src="/assets/figma/I5589-52242-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:52242;5725:102098" src="/assets/figma/I5589-52242-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:52243" data-figma-component="5556:77518" className="box-border w-[96px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
@@ -1912,7 +1913,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5589:52243;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5589:52243;5725:102098" src="/assets/figma/I5589-52243-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5589:52243;5725:102098" src="/assets/figma/I5589-52243-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5589:52238" data-figma-component="5556:77447" className="box-border w-[96px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -2353,7 +2354,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52899;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52899;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">1</p>
                             </div>
-                            <img data-figma-node="I5596:52899;5725:104713" src="/assets/figma/I5596-52899-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52899;5725:104713" src="/assets/figma/I5596-52899-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </Link>
                         <Link data-figma-node="5596:52900" data-figma-component="5556:77475" href="/create-activity-popup" className="box-border w-[94px] h-[180px] absolute left-[188px] top-[0px] [--fx:188] [--fww:94] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px]">
@@ -2361,7 +2362,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52900;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52900;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">2</p>
                             </div>
-                            <img data-figma-node="I5596:52900;5725:104713" src="/assets/figma/I5596-52900-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52900;5725:104713" src="/assets/figma/I5596-52900-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </Link>
                         <div data-figma-node="5596:52901" data-figma-component="5556:77440" className="box-border w-[94px] h-[180px] absolute left-[282px] top-[0px] [--fx:282] [--fww:94] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -2369,7 +2370,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52901;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52901;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
                             </div>
-                            <img data-figma-node="I5596:52901;5725:103122" src="/assets/figma/I5596-52901-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52901;5725:103122" src="/assets/figma/I5596-52901-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52901;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52901;5602:55917" data-figma-component="5217:13666" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -2521,7 +2522,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52903;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52903;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">5</p>
                             </div>
-                            <img data-figma-node="I5596:52903;5725:103122" src="/assets/figma/I5596-52903-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52903;5725:103122" src="/assets/figma/I5596-52903-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52903;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52903;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -2597,7 +2598,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52904;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52904;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">6</p>
                             </div>
-                            <img data-figma-node="I5596:52904;5725:103122" src="/assets/figma/I5596-52904-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52904;5725:103122" src="/assets/figma/I5596-52904-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52904;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52904;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -2725,7 +2726,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52927;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52927;5725:103122" src="/assets/figma/I5596-52927-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52927;5725:103122" src="/assets/figma/I5596-52927-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52927;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52927;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -2801,7 +2802,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52928;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52928;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">8</p>
                             </div>
-                            <img data-figma-node="I5596:52928;5725:103122" src="/assets/figma/I5596-52928-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52928;5725:103122" src="/assets/figma/I5596-52928-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52928;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52928;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3039,7 +3040,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52932;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52932;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">12</p>
                             </div>
-                            <img data-figma-node="I5596:52932;5725:103122" src="/assets/figma/I5596-52932-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52932;5725:103122" src="/assets/figma/I5596-52932-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52932;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52932;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3118,7 +3119,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52933;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52933;5725:103122" src="/assets/figma/I5596-52933-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52933;5725:103122" src="/assets/figma/I5596-52933-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52933;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52933;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3196,7 +3197,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52939;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52939;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">14</p>
                             </div>
-                            <img data-figma-node="I5596:52939;5725:103122" src="/assets/figma/I5596-52939-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52939;5725:103122" src="/assets/figma/I5596-52939-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52939;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <Variant5_91935847 data-figma-node="I5596:52939;5602:55917" data-figma-component="5217:13650" className="relative" />
@@ -3251,7 +3252,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52940;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52940;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">15</p>
                             </div>
-                            <img data-figma-node="I5596:52940;5725:103122" src="/assets/figma/I5596-52940-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52940;5725:103122" src="/assets/figma/I5596-52940-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52940;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <Variant5_91935847 data-figma-node="I5596:52940;5602:55917" data-figma-component="5217:13650" className="relative" />
@@ -3306,7 +3307,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52941;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52941;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">16</p>
                             </div>
-                            <img data-figma-node="I5596:52941;5725:103122" src="/assets/figma/I5596-52941-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52941;5725:103122" src="/assets/figma/I5596-52941-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52941;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52941;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3385,7 +3386,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52942;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52942;5725:103122" src="/assets/figma/I5596-52942-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52942;5725:103122" src="/assets/figma/I5596-52942-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52942;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52942;5602:55917" data-figma-component="5217:13650" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3461,7 +3462,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52943;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52943;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">18</p>
                             </div>
-                            <img data-figma-node="I5596:52943;5725:103122" src="/assets/figma/I5596-52943-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52943;5725:103122" src="/assets/figma/I5596-52943-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52943;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52943;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3537,7 +3538,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52944;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52944;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">19</p>
                             </div>
-                            <img data-figma-node="I5596:52944;5725:103122" src="/assets/figma/I5596-52944-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52944;5725:103122" src="/assets/figma/I5596-52944-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52944;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52944;5602:55917" data-figma-component="5217:13650" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3616,7 +3617,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52945;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52945;5725:103122" src="/assets/figma/I5596-52945-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52945;5725:103122" src="/assets/figma/I5596-52945-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52945;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52945;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3694,7 +3695,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52950;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52950;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">21</p>
                             </div>
-                            <img data-figma-node="I5596:52950;5725:103122" src="/assets/figma/I5596-52950-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52950;5725:103122" src="/assets/figma/I5596-52950-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52950;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52950;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3770,7 +3771,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52951;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52951;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">22</p>
                             </div>
-                            <img data-figma-node="I5596:52951;5725:103122" src="/assets/figma/I5596-52951-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52951;5725:103122" src="/assets/figma/I5596-52951-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52951;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52951;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3849,7 +3850,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52952;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52952;5725:103122" src="/assets/figma/I5596-52952-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52952;5725:103122" src="/assets/figma/I5596-52952-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52952;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52952;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -3925,7 +3926,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52953;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52953;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">24</p>
                             </div>
-                            <img data-figma-node="I5596:52953;5725:103122" src="/assets/figma/I5596-52953-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52953;5725:103122" src="/assets/figma/I5596-52953-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52953;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52953;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4001,7 +4002,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52954;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52954;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">25</p>
                             </div>
-                            <img data-figma-node="I5596:52954;5725:103122" src="/assets/figma/I5596-52954-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52954;5725:103122" src="/assets/figma/I5596-52954-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52954;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52954;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4077,7 +4078,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52955;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52955;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">26</p>
                             </div>
-                            <img data-figma-node="I5596:52955;5725:103122" src="/assets/figma/I5596-52955-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52955;5725:103122" src="/assets/figma/I5596-52955-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52955;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52955;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4153,7 +4154,7 @@ export function WeekCalendarHistoricalPage() {
                             <div data-figma-node="I5596:52956;5725:103119" className="box-border w-[16px] h-[17px] relative gap-1.5">
                               <p data-figma-node="I5596:52956;5725:103120" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">27</p>
                             </div>
-                            <img data-figma-node="I5596:52956;5725:103122" src="/assets/figma/I5596-52956-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52956;5725:103122" src="/assets/figma/I5596-52956-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52956;5602:55916" className="box-border w-[86px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52956;5602:55917" data-figma-component="5217:10959" className="box-border w-[86px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4237,7 +4238,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52964;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52964;5725:103122" src="/assets/figma/I5596-52964-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52964;5725:103122" src="/assets/figma/I5596-52964-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52964;5602:55916" className="box-border w-[84px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52964;5602:55917" data-figma-component="5217:10959" className="box-border w-[84px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4316,7 +4317,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52965;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52965;5725:103122" src="/assets/figma/I5596-52965-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52965;5725:103122" src="/assets/figma/I5596-52965-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52965;5602:55916" className="box-border w-[84px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52965;5602:55917" data-figma-component="5217:10959" className="box-border w-[84px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4395,7 +4396,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52966;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52966;5725:103122" src="/assets/figma/I5596-52966-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52966;5725:103122" src="/assets/figma/I5596-52966-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52966;5602:55916" className="box-border w-[84px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52966;5602:55917" data-figma-component="5217:10959" className="box-border w-[84px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4474,7 +4475,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52967;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52967;5725:103122" src="/assets/figma/I5596-52967-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52967;5725:103122" src="/assets/figma/I5596-52967-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5596:52967;5602:55916" className="box-border w-[84px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5596:52967;5602:55917" data-figma-component="5217:10959" className="box-border w-[84px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -4559,7 +4560,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52975;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52975;5725:102098" src="/assets/figma/I5596-52975-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52975;5725:102098" src="/assets/figma/I5596-52975-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5596:52976" data-figma-component="5556:77518" className="box-border w-[90px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
@@ -4570,7 +4571,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52976;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52976;5725:102098" src="/assets/figma/I5596-52976-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52976;5725:102098" src="/assets/figma/I5596-52976-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5596:52977" data-figma-component="5556:77518" className="box-border w-[90px] h-[180px] relative gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
@@ -4581,7 +4582,7 @@ export function WeekCalendarHistoricalPage() {
                                 <p data-figma-node="I5596:52977;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5596:52977;5725:102098" src="/assets/figma/I5596-52977-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5596:52977;5725:102098" src="/assets/figma/I5596-52977-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <div data-figma-node="5596:52978" data-figma-component="5556:77447" className="box-border w-[96px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">

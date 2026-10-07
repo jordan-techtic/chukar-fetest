@@ -1,3 +1,4 @@
+import { FigmaImage } from "./FigmaImage";
 /**
  * Luna generated shared component
  * Figma componentId: 5556:77518
@@ -15,7 +16,7 @@ export function Disabled_781e0828({ className = "", ...rest }: { className?: str
           <p data-figma-node="I5645:67153;5602:64576;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
         </div>
       </div>
-      <img data-figma-node="I5645:67153;5602:64576;5725:102098" src="/assets/figma/I5645-67153-5602-64576-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+      <FigmaImage data-figma-node="I5645:67153;5602:64576;5725:102098" src="/assets/figma/I5645-67153-5602-64576-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
     </div>
   </div>
   );

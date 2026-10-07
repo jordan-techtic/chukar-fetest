@@ -63,7 +63,8 @@ export async function fetchContractWrite(
     if (!id) {
       throw new Error("Activity id is required for update.");
     }
-    const { id: _id, ...updateBody } = body as ActivityUpdateRequest & { id?: string };
+    const updateBody = { ...(body as ActivityUpdateRequest & { id?: string }) };
+    delete updateBody.id;
     return updateMarketingTeamMemberActivity(id, updateBody, token);
   }
   if (method === "DELETE" && path === MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH) {

@@ -6,6 +6,7 @@
  * luna-spec-codegen: owned-layout
  */
 import { Default_7363b927 } from "./Default_7363b927";
+import { FigmaImage } from "./FigmaImage";
 export function Disabled_6ecccdb1({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
   <div data-figma-node="I5645:67153;5602:68653" data-figma-component="5602:61909" className={`box-border w-[196px] h-[180px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9] ${className}`} {...rest}>
@@ -14,7 +15,7 @@ export function Disabled_6ecccdb1({ className = "", ...rest }: { className?: str
         <p data-figma-node="I5645:67153;5602:68653;5725:80444" className="box-border w-[8px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
         <Default_7363b927 data-figma-node="I5645:67153;5602:68653;5725:80445" data-figma-component="5725:71390" className="relative" />
       </div>
-      <img data-figma-node="I5645:67153;5602:68653;5725:80446" src="/assets/figma/I5645-67153-5602-68653-5725-80446.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+      <FigmaImage data-figma-node="I5645:67153;5602:68653;5725:80446" src="/assets/figma/I5645-67153-5602-68653-5725-80446.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
     </div>
   </div>
   );

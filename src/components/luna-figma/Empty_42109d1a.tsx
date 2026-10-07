@@ -1,3 +1,4 @@
+import { FigmaImage } from "./FigmaImage";
 /**
  * Luna generated shared component
  * Figma componentId: 5556:77475
@@ -12,7 +13,7 @@ export function Empty_42109d1a({ className = "", ...rest }: { className?: string
       <div data-figma-node="I5589:50448;5725:104710" className="box-border w-[16px] h-[17px] relative gap-1.5">
         <p data-figma-node="I5589:50448;5725:104711" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">1</p>
       </div>
-      <img data-figma-node="I5589:50448;5725:104713" src="/assets/figma/I5589-50448-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+      <FigmaImage data-figma-node="I5589:50448;5725:104713" src="/assets/figma/I5589-50448-5725-104713.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
     </div>
   </div>
   );

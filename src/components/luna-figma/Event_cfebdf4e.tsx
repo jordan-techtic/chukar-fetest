@@ -6,6 +6,7 @@
  * luna-spec-codegen: owned-layout
  */
 import { FiRrEnvelope_edd5c8e7 } from "./FiRrEnvelope_edd5c8e7";
+import { FigmaImage } from "./FigmaImage";
 export function Event_cfebdf4e({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
   <div data-figma-node="5596:52961" data-figma-component="5556:77440" className={`box-border w-[96px] h-[180px] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#fff9f3] ${className}`} {...rest}>
@@ -16,7 +17,7 @@ export function Event_cfebdf4e({ className = "", ...rest }: { className?: string
           <p data-figma-node="I5596:52961;5725:103121;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
         </div>
       </div>
-      <img data-figma-node="I5596:52961;5725:103122" src="/assets/figma/I5596-52961-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+      <FigmaImage data-figma-node="I5596:52961;5725:103122" src="/assets/figma/I5596-52961-5725-103122.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
     </div>
     <div data-figma-node="I5596:52961;5602:55916" className="box-border w-[88px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
       <div data-figma-node="I5596:52961;5602:55917" data-figma-component="5217:10959" className="box-border w-[88px] h-[42px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">

@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Onest } from "next/font/google";
 
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["800"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const onest = Onest({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-onest",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Marketing Content Calendar",
@@ -13,17 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap"
-        />
-      </head>
+    <html lang="en" className={`${inter.variable} ${onest.variable}`}>
       <body className="font-inter antialiased">{children}</body>
     </html>
   );
