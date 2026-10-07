@@ -31,6 +31,7 @@ import { Variant4_55dac6d9 } from "./Variant4_55dac6d9";
 import { Variant5_785d198e } from "./Variant5_785d198e";
 import { Variant6_37f10a87 } from "./Variant6_37f10a87";
 import { Variant7_1369850e } from "./Variant7_1369850e";
+import { FigmaImage } from "./FigmaImage";
 
 export function CreateActivityPopupPage() {
   const screenData = useFigmaScreenData();
@@ -119,7 +120,7 @@ export function CreateActivityPopupPage() {
           <div data-figma-node="5279:22675" data-figma-component="5273:20995" className="pointer-events-auto box-border w-[1440px] h-[80px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] bg-[#ffffff]">
             <div data-figma-node="I5279:22675;5217:13714" className="box-border w-[282px] h-[50px] absolute left-[20px] top-[15px] [--fx:20] [--fww:282] gap-[30px]">
               <div data-figma-node="I5279:22675;5217:13715" className="box-border w-[282px] h-[50px] absolute left-[0px] top-[0px] [--fx:0] [--fww:282] gap-3">
-                <img data-figma-node="I5279:22675;5217:13716" src="/assets/figma/I5279-22675-5217-13716.png" alt="image 2" className="box-border w-[54px] h-[50px] absolute left-[0px] top-[0px] [--fx:0] [--fww:54] rounded-[10px] max-w-none object-cover object-top" />
+                <FigmaImage data-figma-node="I5279:22675;5217:13716" src="/assets/figma/I5279-22675-5217-13716.png" alt="image 2" className="box-border w-[54px] h-[50px] absolute left-[0px] top-[0px] [--fx:0] [--fww:54] rounded-[10px] max-w-none object-cover object-top" />
                 <div data-figma-node="I5279:22675;5217:13717" className="box-border w-[216px] h-[43px] absolute left-[66px] top-[4px] [--fx:66] [--fww:216] flex flex-col items-start gap-[2px] gap-0.5">
                   <p data-figma-node="I5279:22675;5217:13718" className="box-border w-[216px] h-[27px] font-inter text-[22px] font-[800] leading-[27px] text-left whitespace-nowrap text-[#231f20]">Marketing Calendar </p>
                   <p data-figma-node="I5279:22675;5217:13719" className="box-border w-[171px] h-[14px] font-onest text-[11px] font-[600] leading-[14px] text-left whitespace-nowrap text-[#686868]">Plan · Create · Track · Grow</p>
@@ -262,7 +263,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:66732;5725:81427" className="box-border w-[5px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:66732;5725:81428" className="box-border w-[5px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:5] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">1</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:66732;5725:81430" src="/assets/figma/I5645-67153-5602-66732-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:66732;5725:81430" src="/assets/figma/I5645-67153-5602-66732-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </Link>
                         <Link data-figma-node="I5645:67153;5602:66790" data-figma-component="5602:61866" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[391px] top-[0px] [--fx:391] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
@@ -270,7 +271,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:66790;5725:81427" className="box-border w-[8px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:66790;5725:81428" className="box-border w-[8px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:8] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">2</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:66790;5725:81430" src="/assets/figma/I5645-67153-5602-66790-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:66790;5725:81430" src="/assets/figma/I5645-67153-5602-66790-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </Link>
                         <div data-figma-node="I5645:67153;5602:66848" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[587px] top-[0px] [--fx:587] [--fww:196] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -278,7 +279,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:66848;5725:79515" className="box-border w-[8px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:66848;5602:61812" className="box-border w-[8px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:8] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:66848;5725:77344" src="/assets/figma/I5645-67153-5602-66848-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:66848;5725:77344" src="/assets/figma/I5645-67153-5602-66848-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:66848;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <Variant6_37f10a87 data-figma-node="I5645:67153;5602:66848;5602:69270" data-figma-component="5602:69061" className="absolute left-[0px] top-[0px] [--fx:0] [--fww:172]" />
@@ -325,7 +326,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:66964;5725:79515" className="box-border w-[8px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:66964;5602:61812" className="box-border w-[8px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:8] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">5</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:66964;5725:77344" src="/assets/figma/I5645-67153-5602-66964-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:66964;5725:77344" src="/assets/figma/I5645-67153-5602-66964-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:66964;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:66964;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -359,7 +360,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67022;5725:79515" className="box-border w-[9px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67022;5602:61812" className="box-border w-[9px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:9] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">6</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67022;5725:77344" src="/assets/figma/I5645-67153-5602-67022-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67022;5725:77344" src="/assets/figma/I5645-67153-5602-67022-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67022;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67022;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -421,7 +422,7 @@ export function CreateActivityPopupPage() {
                                 <p data-figma-node="I5645:67153;5602:67138;5725:71418;5725:71398" className="box-border w-[50px] h-[13px] absolute left-[6px] top-[4px] [--fx:6] [--fww:50] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">Labor Day</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67138;5725:77344" src="/assets/figma/I5645-67153-5602-67138-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67138;5725:77344" src="/assets/figma/I5645-67153-5602-67138-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67138;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67138;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -497,7 +498,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67196;5725:79515" className="box-border w-[9px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67196;5602:61812" className="box-border w-[9px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:9] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">8</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67196;5725:77344" src="/assets/figma/I5645-67153-5602-67196-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67196;5725:77344" src="/assets/figma/I5645-67153-5602-67196-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67196;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67196;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -651,7 +652,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67312;5725:79515" className="box-border w-[14px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67312;5602:61812" className="box-border w-[14px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:14] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">10</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67312;5725:77344" src="/assets/figma/I5645-67153-5602-67312-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67312;5725:77344" src="/assets/figma/I5645-67153-5602-67312-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67312;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <Variant5_785d198e data-figma-node="I5645:67153;5602:67312;5602:69270" data-figma-component="5602:69045" className="absolute left-[0px] top-[0px] [--fx:0] [--fww:172]" />
@@ -719,7 +720,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67428;5725:79515" className="box-border w-[13px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67428;5602:61812" className="box-border w-[13px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:13] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">12</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67428;5725:77344" src="/assets/figma/I5645-67153-5602-67428-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67428;5725:77344" src="/assets/figma/I5645-67153-5602-67428-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67428;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <Variant5_785d198e data-figma-node="I5645:67153;5602:67428;5602:69270" data-figma-component="5602:69045" className="absolute left-[0px] top-[0px] [--fx:0] [--fww:172]" />
@@ -777,7 +778,7 @@ export function CreateActivityPopupPage() {
                                 <p data-figma-node="I5645:67153;5602:67486;5725:71418;5725:71388" className="box-border w-[74px] h-[13px] absolute left-[6px] top-[4px] [--fx:6] [--fww:74] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">Grandparents...</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67486;5725:77344" src="/assets/figma/I5645-67153-5602-67486-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67486;5725:77344" src="/assets/figma/I5645-67153-5602-67486-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67486;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67486;5602:69270" data-figma-component="5602:69061" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -856,7 +857,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67544;5725:79515" className="box-border w-[14px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67544;5602:61812" className="box-border w-[14px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:14] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">14</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67544;5725:77344" src="/assets/figma/I5645-67153-5602-67544-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67544;5725:77344" src="/assets/figma/I5645-67153-5602-67544-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67544;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67544;5602:69270" data-figma-component="5602:69045" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -890,7 +891,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67602;5725:79515" className="box-border w-[13px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67602;5602:61812" className="box-border w-[13px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:13] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">15</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67602;5725:77344" src="/assets/figma/I5645-67153-5602-67602-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67602;5725:77344" src="/assets/figma/I5645-67153-5602-67602-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67602;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67602;5602:69270" data-figma-component="5602:69045" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -924,7 +925,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67660;5725:79515" className="box-border w-[14px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67660;5602:61812" className="box-border w-[14px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:14] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">16</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67660;5725:77344" src="/assets/figma/I5645-67153-5602-67660-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67660;5725:77344" src="/assets/figma/I5645-67153-5602-67660-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67660;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:67660;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_06d6cc402d05" {...figmaActionProps("act_06d6cc402d05")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -961,7 +962,7 @@ export function CreateActivityPopupPage() {
                                 <p data-figma-node="I5645:67153;5602:67718;5725:71418;5725:71388" className="box-border w-[80px] h-[13px] absolute left-[6px] top-[4px] [--fx:6] [--fww:80] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">Constitution Day</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67718;5725:77344" src="/assets/figma/I5645-67153-5602-67718-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67718;5725:77344" src="/assets/figma/I5645-67153-5602-67718-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67718;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67718;5602:69270" data-figma-component="5602:69045" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -995,7 +996,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67776;5725:79515" className="box-border w-[14px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67776;5602:61812" className="box-border w-[14px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:14] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">18</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67776;5725:77344" src="/assets/figma/I5645-67153-5602-67776-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67776;5725:77344" src="/assets/figma/I5645-67153-5602-67776-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67776;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:67776;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_86ba6b0f98b1" {...figmaActionProps("act_86ba6b0f98b1")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -1029,7 +1030,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67834;5725:79515" className="box-border w-[14px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67834;5602:61812" className="box-border w-[14px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:14] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">19</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67834;5725:77344" src="/assets/figma/I5645-67153-5602-67834-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67834;5725:77344" src="/assets/figma/I5645-67153-5602-67834-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67834;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:67834;5602:69270" data-figma-component="5602:69045" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1064,7 +1065,7 @@ export function CreateActivityPopupPage() {
                               <p data-figma-node="I5645:67153;5602:67892;5602:61812" className="box-border w-[16px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">20</p>
                               <Default_7363b927 data-figma-node="I5645:67153;5602:67892;5725:71418" data-figma-component="5725:71390" className="relative" />
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67892;5725:77344" src="/assets/figma/I5645-67153-5602-67892-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67892;5725:77344" src="/assets/figma/I5645-67153-5602-67892-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67892;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:67892;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_04a8ddfc6ee3" {...figmaActionProps("act_04a8ddfc6ee3")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -1100,7 +1101,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:67950;5725:79515" className="box-border w-[13px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:67950;5602:61812" className="box-border w-[13px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:13] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">21</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:67950;5725:77344" src="/assets/figma/I5645-67153-5602-67950-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:67950;5725:77344" src="/assets/figma/I5645-67153-5602-67950-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67950;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:67950;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_7bf1a6299d6c" {...figmaActionProps("act_7bf1a6299d6c")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -1176,7 +1177,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:68008;5725:79515" className="box-border w-[15px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:68008;5602:61812" className="box-border w-[15px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:15] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">22</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68008;5725:77344" src="/assets/figma/I5645-67153-5602-68008-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68008;5725:77344" src="/assets/figma/I5645-67153-5602-68008-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68008;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:68008;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_0df19ea52ad0" {...figmaActionProps("act_0df19ea52ad0")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -1255,7 +1256,7 @@ export function CreateActivityPopupPage() {
                                 <p data-figma-node="I5645:67153;5602:68066;5725:71418;5725:71388" className="box-border w-[77px] h-[13px] absolute left-[6px] top-[4px] [--fx:6] [--fww:77] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">Autumnal Equi...</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68066;5725:77344" src="/assets/figma/I5645-67153-5602-68066-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68066;5725:77344" src="/assets/figma/I5645-67153-5602-68066-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68066;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:68066;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_beea64445414" {...figmaActionProps("act_beea64445414")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -1331,7 +1332,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:68124;5725:79515" className="box-border w-[16px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:68124;5602:61812" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">24</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68124;5725:77344" src="/assets/figma/I5645-67153-5602-68124-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68124;5725:77344" src="/assets/figma/I5645-67153-5602-68124-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68124;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <button data-figma-node="I5645:67153;5602:68124;5602:69270" data-figma-component="5602:68955" type="button" data-figma-action="act_8a4da3f4e93d" {...figmaActionProps("act_8a4da3f4e93d")} className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1 cursor-pointer block">
@@ -1407,7 +1408,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:68182;5725:79515" className="box-border w-[16px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:68182;5602:61812" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">25</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68182;5725:77344" src="/assets/figma/I5645-67153-5602-68182-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68182;5725:77344" src="/assets/figma/I5645-67153-5602-68182-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68182;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:68182;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1483,7 +1484,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:68240;5725:79515" className="box-border w-[16px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:68240;5602:61812" className="box-border w-[16px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:16] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">26</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68240;5725:77344" src="/assets/figma/I5645-67153-5602-68240-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68240;5725:77344" src="/assets/figma/I5645-67153-5602-68240-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68240;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:68240;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1559,7 +1560,7 @@ export function CreateActivityPopupPage() {
                             <div data-figma-node="I5645:67153;5602:68298;5725:79515" className="box-border w-[14px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:68298;5602:61812" className="box-border w-[14px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:14] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">27</p>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68298;5725:77344" src="/assets/figma/I5645-67153-5602-68298-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68298;5725:77344" src="/assets/figma/I5645-67153-5602-68298-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68298;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:68298;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1638,7 +1639,7 @@ export function CreateActivityPopupPage() {
                               <p data-figma-node="I5645:67153;5602:68479;5602:61812" className="box-border w-[16px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">28</p>
                               <Default_7363b927 data-figma-node="I5645:67153;5602:68479;5725:71418" data-figma-component="5725:71390" className="relative" />
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68479;5725:77344" src="/assets/figma/I5645-67153-5602-68479-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68479;5725:77344" src="/assets/figma/I5645-67153-5602-68479-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68479;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:68479;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1715,7 +1716,7 @@ export function CreateActivityPopupPage() {
                               <p data-figma-node="I5645:67153;5602:68537;5602:61812" className="box-border w-[16px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">29</p>
                               <Default_7363b927 data-figma-node="I5645:67153;5602:68537;5725:71418" data-figma-component="5725:71390" className="relative" />
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68537;5725:77344" src="/assets/figma/I5645-67153-5602-68537-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68537;5725:77344" src="/assets/figma/I5645-67153-5602-68537-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68537;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:68537;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1792,7 +1793,7 @@ export function CreateActivityPopupPage() {
                               <p data-figma-node="I5645:67153;5602:68595;5602:61812" className="box-border w-[17px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">30</p>
                               <Default_7363b927 data-figma-node="I5645:67153;5602:68595;5725:71418" data-figma-component="5725:71390" className="relative" />
                             </div>
-                            <img data-figma-node="I5645:67153;5602:68595;5725:77344" src="/assets/figma/I5645-67153-5602-68595-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:68595;5725:77344" src="/assets/figma/I5645-67153-5602-68595-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:68595;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5645:67153;5602:68595;5602:69270" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
@@ -1881,7 +1882,7 @@ export function CreateActivityPopupPage() {
                                 <p data-figma-node="I5645:67153;5602:64575;5725:102097;5725:71388" className="box-border w-[8px] h-[13px] absolute left-[4px] top-[2px] [--fx:4] [--fww:8] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-[#231f20]">H</p>
                               </div>
                             </div>
-                            <img data-figma-node="I5645:67153;5602:64575;5725:102098" src="/assets/figma/I5645-67153-5602-64575-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
+                            <FigmaImage data-figma-node="I5645:67153;5602:64575;5725:102098" src="/assets/figma/I5645-67153-5602-64575-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
                         <Disabled_781e0828 data-figma-node="I5645:67153;5602:64576" data-figma-component="5556:77518" className="absolute left-[328px] top-[0px] [--fx:328] [--fww:327]" />
