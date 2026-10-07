@@ -9,18 +9,24 @@
 
 import type { ReactElement } from "react";
 import { FigmaScreenDataProvider } from "./useFigmaScreenData";
-import { MyProfilePage } from "./MyProfilePage";
+import { CreateActivityPopupPage } from "./CreateActivityPopupPage";
 import { WeekCalendarDefaultPage } from "./WeekCalendarDefaultPage";
+import { WeekCalendarHistoricalPage } from "./WeekCalendarHistoricalPage";
+import { AnnualCalendarDefaultPage } from "./AnnualCalendarDefaultPage";
+import { ManageActivityPage } from "./ManageActivityPage";
 
 const routes: Record<string, () => ReactElement> = {
-  "": MyProfilePage,
-  "my-profile": MyProfilePage,
+  "": CreateActivityPopupPage,
+  "create-activity-popup": CreateActivityPopupPage,
   calendar: WeekCalendarDefaultPage,
   "week-calendar-default": WeekCalendarDefaultPage,
+  "week-calendar-historical-view": WeekCalendarHistoricalPage,
+  "annual-calendar-default": AnnualCalendarDefaultPage,
+  "manage-activity": ManageActivityPage
 };
 
 // Project pages linked from this design whose screens are not built yet.
-const PENDING_ROUTES: ReadonlySet<string> = new Set(["marketing-team-member-my-profile"]);
+const PENDING_ROUTES: ReadonlySet<string> = new Set([]);
 
 function FigmaRouteNotFound({ path }: { path: string }) {
   const pending = PENDING_ROUTES.has(path);
@@ -40,14 +46,12 @@ function FigmaRouteNotFound({ path }: { path: string }) {
   );
 }
 
-function normalizePath(pathname: string): string {
-  return pathname.replace(/^\/+|\/+$/g, "");
-}
-
-export function FigmaScreenPage({ routePath }: { routePath?: string }) {
+export function FigmaScreenPage({ routePath }: { routePath?: string } = {}) {
   const path =
     routePath ??
-    (typeof window !== "undefined" ? normalizePath(window.location.pathname) : "");
+    (typeof window !== "undefined"
+      ? window.location.pathname.replace(/^\/+|\/+$/g, "")
+      : "");
   const Screen = routes[path];
   if (!Screen) {
     return <FigmaRouteNotFound path={path} />;

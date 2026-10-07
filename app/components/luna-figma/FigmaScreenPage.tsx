@@ -7,18 +7,21 @@
  */
 import type { ReactElement } from "react";
 import { FigmaScreenDataProvider } from "./useFigmaScreenData";
-import { MyProfilePage } from "./MyProfilePage";
-import { WeekCalendarDefaultPage } from "./WeekCalendarDefaultPage";
+import { CreateActivityPopupPage } from "./CreateActivityPopupPage";
+import { WeekCalendarHistoricalPage } from "./WeekCalendarHistoricalPage";
+import { AnnualCalendarDefaultPage } from "./AnnualCalendarDefaultPage";
+import { ManageActivityPage } from "./ManageActivityPage";
 
 const routes: Record<string, () => ReactElement> = {
-  "": MyProfilePage,
-  "my-profile": MyProfilePage,
-  "calendar": WeekCalendarDefaultPage,
-  "week-calendar-default": WeekCalendarDefaultPage
+  "": CreateActivityPopupPage,
+  "create-activity-popup": CreateActivityPopupPage,
+  "week-calendar-historical-view": WeekCalendarHistoricalPage,
+  "annual-calendar-default": AnnualCalendarDefaultPage,
+  "manage-activity": ManageActivityPage
 };
 
 // Project pages linked from this design whose screens are not built yet.
-const PENDING_ROUTES: ReadonlySet<string> = new Set(["marketing-team-member-my-profile"]);
+const PENDING_ROUTES: ReadonlySet<string> = new Set([]);
 
 function FigmaRouteNotFound({ path }: { path: string }) {
   const pending = PENDING_ROUTES.has(path);

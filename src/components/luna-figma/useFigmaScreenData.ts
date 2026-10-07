@@ -19,6 +19,14 @@ import { useRouter } from "next/navigation";
 import { fetchContractRead, fetchContractWrite } from "@/lib/api/contract-api";
 import { ApiRequestError } from "@/lib/api/client";
 import {
+  getMarketingTeamMemberCalendar,
+  MARKETING_TEAM_MEMBER_CALENDAR_PATH,
+} from "@/lib/api/marketing-team-member-calendar";
+import {
+  getMarketingTeamMemberPerformanceMetrics,
+  MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
+} from "@/lib/api/marketing-team-member-performance-metrics";
+import {
   getMarketingTeamMemberProfile,
   updateMarketingTeamMemberProfile,
 } from "@/lib/api/marketing-team-member-profile";
@@ -51,12 +59,32 @@ export type FigmaFieldBinding = {
 export type FigmaActionBinding = {
   onClick?: (event: MouseEvent<HTMLElement>) => void;
   disabled?: boolean;
+  "aria-pressed"?: boolean;
 };
 
 const MY_PROFILE_FRAME_ID = "5329:12027";
+const CREATE_ACTIVITY_FRAME_ID = "5217:16193";
+
+const CREATE_ACTIVITY_CATEGORY_ACTIONS: Readonly<
+  Record<string, { readonly nodeId: string; readonly category: string }>
+> = {
+  act_9a5165463dd2: { nodeId: "5217:17063", category: "promotions" },
+  act_7b13b11585e8: { nodeId: "5217:17064", category: "content" },
+  act_fd861928229b: { nodeId: "5217:17065", category: "focuses" },
+};
+
+const CREATE_ACTIVITY_TYPE_NODE_IDS = [
+  "5217:17063",
+  "5217:17064",
+  "5217:17065",
+] as const;
 
 const ROUTE_TO_FRAME: Readonly<Record<string, string>> = {
-  "": MY_PROFILE_FRAME_ID,
+  "": "5217:16193",
+  "create-activity-popup": "5217:16193",
+  "week-calendar-historical-view": "5584:26945",
+  "annual-calendar-default": "5645:60757",
+  "manage-activity": "5359:17106",
   "my-profile": MY_PROFILE_FRAME_ID,
   calendar: "5602:71490",
   "week-calendar-default": "5602:71490",
@@ -72,6 +100,7 @@ type ScreenDataContextValue = {
   statusMessage: string;
   profileLoadError: string;
   setFieldValue: (field: string, value: string) => void;
+  setStatusMessage: (message: string) => void;
   toggleVariant: (nodeId: string) => void;
   submit: () => Promise<void>;
   retryProfileLoad: () => Promise<void>;
@@ -104,6 +133,17 @@ function applyVariantDom(nodeId: string, active: boolean): void {
   const card = cardRootForVariantNode(nodeId);
   if (card) {
     card.setAttribute("data-figma-variant-active", active ? "true" : "false");
+  }
+}
+
+function applyCategorySelection(selectedNodeId: string): void {
+  for (const nodeId of CREATE_ACTIVITY_TYPE_NODE_IDS) {
+    const target = document.querySelector(`[data-figma-node="${nodeId}"]`);
+    if (target instanceof HTMLElement) {
+      const selected = nodeId === selectedNodeId;
+      target.setAttribute("data-figma-category-selected", selected ? "true" : "false");
+      target.setAttribute("aria-pressed", selected ? "true" : "false");
+    }
   }
 }
 
@@ -226,6 +266,44 @@ export function FigmaScreenDataProvider({
             );
             continue;
           }
+        } else if (op.method === "GET" && op.path === MARKETING_TEAM_MEMBER_CALENDAR_PATH) {
+          try {
+            const response = await getMarketingTeamMemberCalendar(undefined, token);
+            body = response.body;
+          } catch (error) {
+            if (error instanceof ApiRequestError && error.status === 401) {
+              redirectToLogin();
+              return;
+            }
+            setStatusMessage(
+              error instanceof ApiRequestError
+                ? error.message
+                : "Unable to load data.",
+            );
+            continue;
+          }
+        } else if (
+          op.method === "GET" &&
+          op.path === MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH
+        ) {
+          try {
+            const response = await getMarketingTeamMemberPerformanceMetrics(
+              undefined,
+              token,
+            );
+            body = response.body;
+          } catch (error) {
+            if (error instanceof ApiRequestError && error.status === 401) {
+              redirectToLogin();
+              return;
+            }
+            setStatusMessage(
+              error instanceof ApiRequestError
+                ? error.message
+                : "Unable to load data.",
+            );
+            continue;
+          }
         } else {
           try {
             const response = await fetchContractRead(op.method, op.path, token);
@@ -276,6 +354,13 @@ export function FigmaScreenDataProvider({
     const clientErrors = validateValues(writeOp, values);
     if (Object.keys(clientErrors).length > 0) {
       setFieldErrors(clientErrors);
+      return;
+    }
+
+    if (writeOp.unboundRequired.length > 0) {
+      setStatusMessage(
+        `Cannot create activity from this step: ${writeOp.unboundRequired.join(", ")} are not bound in the design.`,
+      );
       return;
     }
 
@@ -350,6 +435,7 @@ export function FigmaScreenDataProvider({
       statusMessage,
       profileLoadError,
       setFieldValue,
+      setStatusMessage,
       toggleVariant,
       submit,
       retryProfileLoad: loadProfileRead,
@@ -361,6 +447,7 @@ export function FigmaScreenDataProvider({
       loading,
       profileLoadError,
       setFieldValue,
+      setStatusMessage,
       statusMessage,
       submit,
       submitting,
@@ -405,6 +492,7 @@ function useScreenData(): ScreenDataContextValue {
       statusMessage: "",
       profileLoadError: "",
       setFieldValue: () => {},
+      setStatusMessage: () => {},
       toggleVariant: () => {},
       submit: async () => {},
       retryProfileLoad: async () => {},
@@ -451,13 +539,45 @@ function actionTriggersSubmit(action: string, frameId: string): boolean {
 }
 
 export function useFigmaActionProps(action: string): FigmaActionBinding {
-  const { bound, submitting, loading, submit, toggleVariant } = useScreenData();
+  const {
+    bound,
+    values,
+    submitting,
+    loading,
+    submit,
+    toggleVariant,
+    setFieldValue,
+    setStatusMessage,
+  } = useScreenData();
   const contract = FIGMA_ACTIONS[action];
   const busy = submitting || loading;
+  const categoryPick = CREATE_ACTIVITY_CATEGORY_ACTIONS[action];
 
   return {
     disabled: busy,
+    "aria-pressed":
+      categoryPick && values["activity-category"] === categoryPick.category
+        ? true
+        : undefined,
     onClick: (event) => {
+      if (categoryPick && bound === CREATE_ACTIVITY_FRAME_ID) {
+        event.preventDefault();
+        setFieldValue("activity-category", categoryPick.category);
+        applyCategorySelection(categoryPick.nodeId);
+        return;
+      }
+
+      if (
+        action === "act_0290919bbc04" &&
+        bound === CREATE_ACTIVITY_FRAME_ID
+      ) {
+        event.preventDefault();
+        if (!values["activity-category"]) {
+          setStatusMessage("Select an activity type to continue.");
+        }
+        return;
+      }
+
       if (!contract) {
         event.preventDefault();
         return;
@@ -489,4 +609,13 @@ export function useFigmaActionProps(action: string): FigmaActionBinding {
 
 export function useFigmaScreenData() {
   return useScreenData();
+}
+
+/** Layout files call these during render; they delegate to the screen data context. */
+export function figmaFieldProps(field: string): FigmaFieldBinding {
+  return useFigmaFieldProps(field);
+}
+
+export function figmaActionProps(action: string): FigmaActionBinding {
+  return useFigmaActionProps(action);
 }

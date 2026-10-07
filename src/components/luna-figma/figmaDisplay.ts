@@ -1,5 +1,4 @@
 /** luna-spec-codegen: owned-layout */
-"use client";
 // Figma display nodes bound to GET response fields (Luna display contract).
 // The data hook calls publishReadPayload(method, path, body) after every read;
 // bound copy then renders the response value and cards past the response
@@ -21,28 +20,10 @@ export interface FigmaDisplayBinding {
 }
 
 /** data-figma-node → the response field it renders. */
-export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
-  "5335:4278": {
-    "evidence": "label_pair",
-    "format": null,
-    "frameId": "5329:12027",
-    "kind": "text",
-    "nodeId": "5335:4278",
-    "operation": "GET /api/v1/marketing-team-member/profile",
-    "path": [
-      "role"
-    ],
-    "responseUnwrap": "data",
-    "valueType": "string"
-  }
-};
+export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {};
 
 /** Screen frame id → read operations its display bindings consume. */
-export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {
-  "5329:12027": [
-    "GET /api/v1/marketing-team-member/profile"
-  ]
-};
+export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {};
 
 const payloads = new Map<string, unknown>();
 const listeners = new Set<() => void>();
@@ -172,6 +153,10 @@ export function useFigmaTextContent(nodeId: string, fallback: string): string {
   return loaded ? formatDisplayValue(value, binding) : fallback;
 }
 
+export function figmaTextContent(nodeId: string, fallback: string): string {
+  return useFigmaTextContent(nodeId, fallback);
+}
+
 export type FigmaItemBinding = {
   hidden?: boolean;
   "aria-hidden"?: boolean;
@@ -179,7 +164,7 @@ export type FigmaItemBinding = {
 };
 
 /** A repeated card hides once its read is published without an item at its index. */
-export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
+export function figmaItemProps(nodeId: string): FigmaItemBinding {
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "item") {

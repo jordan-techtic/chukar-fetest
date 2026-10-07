@@ -6,6 +6,10 @@ const nextConfig = {
       process.env.VITE_API_BASE_URL ??
       process.env.NEXT_PUBLIC_API_URL ??
       "",
+    VITE_MOCK_DATA:
+      process.env.VITE_MOCK_DATA ??
+      process.env.NEXT_PUBLIC_VITE_MOCK_DATA ??
+      "",
   },
   rewrites: async () => ({
     beforeFiles: [

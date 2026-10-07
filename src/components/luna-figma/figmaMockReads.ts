@@ -15,12 +15,11 @@ let mockFlagWarned = false;
 
 /** Enabled for true/1/yes after trim and lowercase. Unset and empty stay off. */
 function mockDataFlag(): string | undefined {
-  if (typeof process !== "undefined" && process.env) {
-    return (
-      process.env.NEXT_PUBLIC_VITE_MOCK_DATA ??
-      process.env.NEXT_PUBLIC_MOCK_DATA ??
-      process.env.VITE_MOCK_DATA
-    );
+  if (typeof process !== "undefined" && process.env.VITE_MOCK_DATA !== undefined) {
+    return process.env.VITE_MOCK_DATA;
+  }
+  if (typeof process !== "undefined" && process.env.NEXT_PUBLIC_VITE_MOCK_DATA !== undefined) {
+    return process.env.NEXT_PUBLIC_VITE_MOCK_DATA;
   }
   return undefined;
 }

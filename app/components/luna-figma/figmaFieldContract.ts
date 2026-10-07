@@ -29,35 +29,48 @@ export interface FigmaOperation {
 }
 
 /** Screen frame id → contract operations its form uses. */
-export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
-  "5329:12027": [
-    {
-      "fields": [],
-      "method": "GET",
-      "path": "/api/v1/marketing-team-member/profile",
-      "responseUnwrap": "data",
-      "role": "read",
-      "submitNodeId": null,
-      "unboundRequired": []
-    }
-  ]
-};
+export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {};
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
-  "5329:12027": [
-    "bio",
-    "new-password",
-    "confirm-password",
-    "change-password"
-  ],
-  "5602:71490": [
+  "5217:16193": [
     "mon",
     "tue",
     "wed",
     "thu",
     "fri",
     "sat"
+  ],
+  "5359:17106": [
+    "search-input"
+  ],
+  "5584:26945": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "field-5596-52876",
+    "field-5596-52878",
+    "field-5596-52880",
+    "field-5596-52882",
+    "field-5596-52884",
+    "field-5596-52886"
+  ],
+  "5645:60757": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "field-i5645-60760-5596-52876",
+    "field-i5645-60760-5596-52878",
+    "field-i5645-60760-5596-52880",
+    "field-i5645-60760-5596-52882",
+    "field-i5645-60760-5596-52884",
+    "field-i5645-60760-5596-52886"
   ]
 };
 
