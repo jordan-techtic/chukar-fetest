@@ -161,7 +161,7 @@ export function formatDisplayValue(value: unknown, binding: FigmaDisplayBinding)
 }
 
 /** Bound copy: the response value once its read is published, the Figma copy before. */
-export function figmaTextContent(nodeId: string, fallback: string): string {
+export function useFigmaTextContent(nodeId: string, fallback: string): string {
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "text") {
@@ -178,7 +178,7 @@ export type FigmaItemBinding = {
 };
 
 /** A repeated card hides once its read is published without an item at its index. */
-export function figmaItemProps(nodeId: string): FigmaItemBinding {
+export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "item") {

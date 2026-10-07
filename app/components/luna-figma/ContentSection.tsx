@@ -8,8 +8,10 @@
  * luna-spec-codegen: owned-layout
  */
 import { figmaFieldProps, figmaActionProps } from "./useFigmaScreenData";
-import { figmaTextContent } from "./figmaDisplay";
+import { useFigmaTextContent } from "./figmaDisplay";
 export function ContentSection() {
+  const roleLabel = useFigmaTextContent("5335:4278", "Senior Campaign Lead");
+
   return (
     <section data-figma-node="5329:12075" id="contact" className="absolute box-border left-[0px] top-[169px] w-[1440px] h-[1010px] [--fx:0] [--fww:1440] pr-[40px] pb-[52px] pl-[40px] flex flex-row items-start gap-6 z-[2]">
       <div data-figma-node="5329:12076" className="box-border w-[400px] h-[418px] rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-center gap-[24px] gap-6 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
@@ -73,7 +75,7 @@ export function ContentSection() {
             <div data-figma-node="5335:4275" className="box-border w-[872px] h-[63px] relative flex flex-col items-start gap-[6px] gap-1.5">
               <p data-figma-node="5335:4276" className="box-border w-[33px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#9ca3af]">Role</p>
               <div data-figma-node="5335:4277" className="box-border w-[872px] h-[42px] rounded-[8px] relative pt-[12px] pr-[14px] pb-[12px] pl-[14px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                <p data-figma-node="5335:4278" className="box-border w-[844px] h-[18px] absolute left-[14px] top-[12px] font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{figmaTextContent("5335:4278", "Senior Campaign Lead")}</p>
+                <p data-figma-node="5335:4278" className="box-border w-[844px] h-[18px] absolute left-[14px] top-[12px] font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{roleLabel}</p>
               </div>
             </div>
             <div data-figma-node="5335:4283" className="box-border w-[872px] h-[141px] relative flex flex-col items-start gap-[6px] gap-1.5">
