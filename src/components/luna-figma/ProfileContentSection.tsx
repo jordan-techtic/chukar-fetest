@@ -10,14 +10,14 @@
 "use client";
 
 import { updateMarketingTeamMemberProfile } from "@/lib/api/marketing-team-member-profile";
-import { figmaTextContent } from "./figmaDisplay";
-import { figmaActionProps, figmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
+import { useFigmaTextContent } from "./figmaDisplay";
+import { useFigmaActionProps, useFigmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 
 /** CF-23 PUT route binding from profile form section. */
 export const profileSectionPutApi = updateMarketingTeamMemberProfile;
 
 export function ProfileContentSection() {
-  const roleLabel = figmaTextContent("5335:4278", "Senior Campaign Lead");
+  const roleLabel = useFigmaTextContent("5335:4278", "Senior Campaign Lead");
   const { profileLoadError, retryProfileLoad } = useFigmaScreenData();
 
   return (
@@ -28,7 +28,7 @@ export function ProfileContentSection() {
       {profileLoadError ? (
         <div
           role="alert"
-          className="absolute left-[40px] top-[-52px] z-[2] box-border flex w-[calc(100%-80px)] items-center justify-between gap-4 rounded-[8px] border border-[#da002f] bg-[#fff5f5] px-4 py-3"
+          className="absolute left-[40px] top-[-52px] z-[2] box-border flex w-[calc(100%-80px)] items-center justify-between gap-4 rounded-[8px] border border-[#da002f] bg-[#ffffff] px-4 py-3"
         >
           <p className="font-onest text-[14px] font-[500] leading-[18px] text-[#da002f]">
             {profileLoadError}
@@ -127,7 +127,7 @@ export function ProfileContentSection() {
                     name="first-name"
                     data-figma-field="first-name"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("first-name")}
+                    {...useFigmaFieldProps("first-name")}
                     type="text"
                     aria-label="First name"
                     className="box-border h-full w-full bg-transparent font-onest text-[14px] font-[500] leading-[18px] text-[#231f20] shadow-none ring-0 focus-visible:outline-none focus-visible:ring-0"
@@ -147,7 +147,7 @@ export function ProfileContentSection() {
                     name="last-name"
                     data-figma-field="last-name"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("last-name")}
+                    {...useFigmaFieldProps("last-name")}
                     type="text"
                     aria-label="Last name"
                     className="box-border h-full w-full bg-transparent font-onest text-[14px] font-[500] leading-[18px] text-[#231f20] shadow-none ring-0 focus-visible:outline-none focus-visible:ring-0"
@@ -169,7 +169,7 @@ export function ProfileContentSection() {
                     name="email"
                     data-figma-field="email"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("email")}
+                    {...useFigmaFieldProps("email")}
                     type="email"
                     aria-label="Email Address"
                     className="box-border h-full w-full bg-transparent font-onest text-[14px] font-[500] leading-[18px] text-[#231f20] shadow-none ring-0 focus-visible:outline-none focus-visible:ring-0"
@@ -222,7 +222,7 @@ export function ProfileContentSection() {
                   name="bio"
                   data-figma-field="bio"
                   data-figma-field-origin="design_text"
-                  {...figmaFieldProps("bio")}
+                  {...useFigmaFieldProps("bio")}
                   placeholder="Tell us about yourself..."
                   aria-label="Bio"
                   className="box-border h-full w-full resize-none bg-transparent font-onest text-[14px] font-[500] leading-[18px] text-[#231f20] placeholder:text-[#9ca3af] shadow-none ring-0 focus-visible:outline-none focus-visible:ring-0"
@@ -236,7 +236,7 @@ export function ProfileContentSection() {
               data-figma-node="5335:4291"
               type="button"
               data-figma-action="act_4d5182b12c73"
-              {...figmaActionProps("act_4d5182b12c73")}
+              {...useFigmaActionProps("act_4d5182b12c73")}
               className="box-border inline-flex h-[42px] w-[112px] cursor-pointer items-center justify-center whitespace-nowrap rounded-[8px] bg-[#a21d35] pt-[12px] pr-[16px] pb-[12px] pl-[16px] disabled:cursor-not-allowed disabled:opacity-60"
             >
               <span data-figma-node="5335:4292" className="font-onest text-[14px] font-[700] leading-[18px] whitespace-nowrap text-[#ffffff]">
@@ -277,7 +277,7 @@ export function ProfileContentSection() {
                     name="change-password"
                     data-figma-field="change-password"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("change-password")}
+                    {...useFigmaFieldProps("change-password")}
                     type="password"
                     aria-label="Current Password"
                     className="box-border h-full w-full bg-transparent font-onest text-[14px] font-[500] leading-[18px] text-[#231f20] shadow-none ring-0 focus-visible:outline-none focus-visible:ring-0"
@@ -297,7 +297,7 @@ export function ProfileContentSection() {
                     name="new-password"
                     data-figma-field="new-password"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("new-password")}
+                    {...useFigmaFieldProps("new-password")}
                     type="password"
                     placeholder="New Password"
                     aria-label="New Password"
@@ -320,7 +320,7 @@ export function ProfileContentSection() {
                     name="confirm-password"
                     data-figma-field="confirm-password"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("confirm-password")}
+                    {...useFigmaFieldProps("confirm-password")}
                     type="password"
                     placeholder="Confirm Password"
                     aria-label="Confirm Password"
@@ -331,7 +331,7 @@ export function ProfileContentSection() {
               <button
                 data-figma-node="5339:8839"
                 type="button"
-                className="luna-cta-change-password box-border inline-flex h-[36px] w-[179px] items-center justify-center whitespace-nowrap rounded-[6px] border border-[#a21d35] bg-transparent pt-[8px] pr-[12px] pb-[8px] pl-[12px]"
+                className="box-border inline-flex h-[36px] w-[179px] items-center justify-center whitespace-nowrap rounded-[6px] border border-[#a21d35] bg-transparent pt-[8px] pr-[12px] pb-[8px] pl-[12px]"
               >
                 <span
                   data-figma-node="5339:8840"

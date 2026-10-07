@@ -8,7 +8,7 @@
 "use client";
 
 import { FIGMA_ACTIONS } from "./figmaActions";
-import { figmaActionProps } from "./useFigmaScreenData";
+import { useFigmaActionProps } from "./useFigmaScreenData";
 import { FiRrEnvelope_edd5c8e7 } from "./FiRrEnvelope_edd5c8e7";
 
 function actionForKebabNode(sourceNodeId: string): string {
@@ -31,17 +31,18 @@ export function Variant4_55dac6d9({
     typeof nodeId === "string" ? nodeId : "I5602:71582;5725:47922";
   const kebabNodeId = `${instanceId};5602:68962`;
   const actionId = actionForKebabNode(kebabNodeId);
+  const kebabActionProps = useFigmaActionProps(actionId);
 
   return (
-  <div data-figma-node={instanceId} data-figma-component="5602:68955" className={`box-border w-[120px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] gap-1 luna-cta-week-cards ${className}`} {...rest}>
-    <div data-figma-node={`${instanceId};5602:68956`} className="box-border w-[120px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
+  <div data-figma-node={instanceId} data-figma-component="5602:68955" className={`box-border w-[120px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] gap-1 ${className}`} {...rest}>
+    <div data-figma-node={`${instanceId};5602:68956`} className="box-border w-[172px] h-[52px] whitespace-nowrap absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
       <div data-figma-node={`${instanceId};5602:68957`} className="box-border w-[104px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
         <div data-figma-node={`${instanceId};5602:68958`} className="box-border w-[104px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
           <div data-figma-node={`${instanceId};5602:68959`} className="box-border h-[14px] w-[14px] overflow-hidden relative gap-1">
             <FiRrEnvelope_edd5c8e7 data-figma-node={`${instanceId};5725:47375`} data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
           </div>
           <p data-figma-node={`${instanceId};5602:68966`} className="box-border w-[64px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
-          <button data-figma-node={kebabNodeId} type="button" data-figma-action={actionId} {...figmaActionProps(actionId)} className="box-border w-[14px] h-[14px] relative flex flex-col items-center gap-[2px] gap-0.5 cursor-pointer block">
+          <button data-figma-node={kebabNodeId} type="button" data-figma-action={actionId} {...kebabActionProps} className="box-border w-[14px] h-[14px] relative flex flex-col items-center gap-[2px] gap-0.5 cursor-pointer block">
             <svg data-figma-node={`${instanceId};5602:68963`} viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
             <svg data-figma-node={`${instanceId};5602:68964`} viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
             <svg data-figma-node={`${instanceId};5602:68965`} viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>

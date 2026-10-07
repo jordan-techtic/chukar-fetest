@@ -413,7 +413,7 @@ function useScreenData(): ScreenDataContextValue {
   return context;
 }
 
-export function figmaFieldProps(field: string): FigmaFieldBinding {
+export function useFigmaFieldProps(field: string): FigmaFieldBinding {
   const { values, fieldErrors, submitting, loading, setFieldValue } = useScreenData();
   const error = fieldErrors[field];
   const errorId = error ? `figma-field-error-${field}` : undefined;
@@ -432,7 +432,7 @@ export function figmaFieldProps(field: string): FigmaFieldBinding {
   };
 }
 
-export function figmaFieldError(field: string): string | undefined {
+export function useFigmaFieldError(field: string): string | undefined {
   const { fieldErrors } = useScreenData();
   return fieldErrors[field];
 }
@@ -450,7 +450,7 @@ function actionTriggersSubmit(action: string, frameId: string): boolean {
   );
 }
 
-export function figmaActionProps(action: string): FigmaActionBinding {
+export function useFigmaActionProps(action: string): FigmaActionBinding {
   const { bound, submitting, loading, submit, toggleVariant } = useScreenData();
   const contract = FIGMA_ACTIONS[action];
   const busy = submitting || loading;
