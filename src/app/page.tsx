@@ -61,7 +61,7 @@ function HealthStatusCard() {
 
 export default function HomePage() {
   return (
-    <div className="figma-gradient-shell mx-auto flex min-h-screen max-w-[1280px] flex-col gap-[var(--gap-24)] px-[var(--padding-16)] py-[var(--padding-24)] md:px-[var(--padding-24)]">
+    <div className="mx-auto flex min-h-screen max-w-[1280px] flex-col gap-[var(--gap-24)] bg-[var(--color-background)] px-[var(--padding-16)] py-[var(--padding-24)] md:px-[var(--padding-24)]">
       <section className="flex flex-col gap-[var(--gap-8)]">
         <h1 className="type-heading-lg-31 text-[var(--color-15)]">
           Marketing Content Calendar
