@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_VITE_API_BASE_URL:
+      process.env.NEXT_PUBLIC_VITE_API_BASE_URL ??
+      process.env.VITE_API_BASE_URL ??
+      process.env.NEXT_PUBLIC_API_URL ??
+      "",
+  },
   rewrites: async () => ({
     beforeFiles: [
       {
