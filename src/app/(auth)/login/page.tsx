@@ -60,7 +60,7 @@ export default function LoginPage() {
                 type="text"
                 autoComplete="username"
                 placeholder="you@company.com"
-                className="h-[48px] rounded-[var(--radius-10)] border-[var(--color-border)] bg-[var(--color-100)] px-[var(--padding-14)] text-[var(--color-text-primary)] placeholder:text-[var(--color-13)] focus-visible:ring-[var(--color-accent)]"
+                className="h-10 rounded-[var(--radius-10)] border-[var(--color-border)] bg-[var(--color-100)] px-[var(--padding-14)] text-[var(--color-text-primary)] placeholder:text-[var(--color-13)] focus-visible:ring-[var(--color-accent)]"
               />
             </div>
             <div className="flex flex-col gap-[var(--gap-6)]">
@@ -72,7 +72,7 @@ export default function LoginPage() {
                   type={showPassword ? "text" : "password"}
                   autoComplete="current-password"
                   placeholder="Enter your password"
-                  className="h-[48px] rounded-[var(--radius-10)] border-[var(--color-border)] bg-[var(--color-100)] px-[var(--padding-14)] pr-[var(--padding-40)] text-[var(--color-text-primary)] placeholder:text-[var(--color-13)] focus-visible:ring-[var(--color-accent)]"
+                  className="h-10 rounded-[var(--radius-10)] border-[var(--color-border)] bg-[var(--color-100)] px-[var(--padding-14)] pr-[var(--padding-40)] text-[var(--color-text-primary)] placeholder:text-[var(--color-13)] focus-visible:ring-[var(--color-accent)]"
                 />
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -101,7 +101,7 @@ export default function LoginPage() {
             </p>
             <Button
               type="button"
-              className="h-[48px] w-full rounded-[var(--radius-10)] border border-[var(--color-border)] bg-[var(--color-23)] type-body-sm-34 text-[var(--color-100)] shadow-none hover:bg-[var(--color-23)] hover:opacity-90"
+              className="h-10 w-full rounded-[var(--radius-10)] border border-[var(--color-border)] bg-[var(--color-23)] type-body-sm-34 text-[var(--color-100)] shadow-none hover:bg-[var(--color-23)] hover:opacity-90"
             >
               Login
             </Button>

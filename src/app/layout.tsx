@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { AuthSessionProvider } from "@/components/providers/auth-session-provider";
+import { ErrorBoundary } from "@/components/ui/error-boundary";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/styles/theme-provider";
 import "./globals.css";
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body className="min-h-full font-onest antialiased">
         <ThemeProvider>
           <AuthSessionProvider>
-            {children}
+            <ErrorBoundary>{children}</ErrorBoundary>
             <Toaster position="top-right" />
           </AuthSessionProvider>
         </ThemeProvider>

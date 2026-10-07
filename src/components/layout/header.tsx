@@ -87,17 +87,22 @@ export function Header({
         )}
       >
         <div className="flex items-center gap-[var(--gap-8)]">
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            aria-label="Open navigation"
-            aria-expanded={sidebarOpen}
-            onClick={onMenuClick}
-          >
-            <Menu className="h-5 w-5" aria-hidden="true" />
-          </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                className="md:hidden"
+                aria-label="Open navigation"
+                aria-expanded={sidebarOpen}
+                onClick={onMenuClick}
+              >
+                <Menu className="h-5 w-5" aria-hidden="true" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Open navigation</TooltipContent>
+          </Tooltip>
           <h1 className="type-heading-md-21 text-[var(--color-15)]">{title}</h1>
         </div>
         <AccountMenu />
