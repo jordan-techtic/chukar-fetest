@@ -1,19 +1,29 @@
 # Marketing Content Calendar
 
-Production-ready Next.js frontend scaffold for the Marketing Content Calendar application.
+Plain Next.js (App Router) frontend project.
+
+## Stack
+
+- Next.js 16 (App Router) + React 19
+- TypeScript
+- Tailwind CSS 4
+- ESLint + Prettier
+- Jest + Testing Library
 
 ## Setup
 
 ```bash
 npm install
-cp .env.example .env
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment
 
-| Variable              | Description                                              |
-| --------------------- | -------------------------------------------------------- |
-| `NEXT_PUBLIC_API_URL` | Backend API base URL (e.g. `http://174.138.72.184:8989`) |
+| Variable                           | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| `LUNA_VALIDATION_API_PROXY_TARGET` | Optional target for the `/api/*` rewrite in `next.config.js` |
 
 ## Scripts
 
@@ -31,26 +41,8 @@ cp .env.example .env
 
 ```
 src/
-  app/              Next.js App Router pages and route groups
-  components/
-    ui/             shadcn/ui primitives
-    layout/         AppShell, Header, Sidebar
-    features/       Feature-specific components
-  hooks/            Custom React hooks
-  lib/
-    api/            HTTP client and API helpers
-    auth/           Token storage and auth guard
-    utils/          Shared utilities (cn)
-  stores/           State management (placeholder)
-  styles/           Design tokens and theme provider
-  types/            TypeScript type definitions
-tests/              Unit tests
+  app/
+    layout.tsx    Root layout
+    page.tsx      Home page
+    globals.css   Tailwind entry
 ```
-
-## Routes
-
-| Route       | Access    | Description                            |
-| ----------- | --------- | -------------------------------------- |
-| `/`         | Public    | Home placeholder with API health check |
-| `/login`    | Public    | Login placeholder (auth group)         |
-| `/calendar` | Protected | Calendar placeholder (dashboard group) |
