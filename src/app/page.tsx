@@ -73,20 +73,13 @@ export default function HomePage() {
 
       <HealthStatusCard />
 
-      <div className="flex flex-wrap items-center gap-[var(--gap-12)]">
-        <Button
-          asChild
-          className="h-[44px] rounded-[var(--radius-10)] border border-[var(--color-border)] bg-[var(--color-23)] px-[var(--padding-20)] type-body-sm-34 text-[var(--color-100)] hover:bg-[var(--color-23)] hover:opacity-90"
+      <div>
+        <Link
+          href="/calendar"
+          className="type-body-sm-5 text-[var(--color-surface)] underline-offset-4 hover:underline"
         >
-          <Link href="/login">Sign In</Link>
-        </Button>
-        <Button
-          asChild
-          variant="outline"
-          className="h-[44px] rounded-[var(--radius-10)] border-[var(--color-border)] bg-[var(--color-accent)] px-[var(--padding-20)] type-body-sm-11 text-[var(--color-100)]"
-        >
-          <Link href="/calendar">Go to Calendar</Link>
-        </Button>
+          Go to Calendar
+        </Link>
       </div>
     </div>
   );
