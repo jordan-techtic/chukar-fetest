@@ -11,19 +11,39 @@
 
 import { updateMarketingTeamMemberProfile } from "@/lib/api/marketing-team-member-profile";
 import { figmaTextContent } from "./figmaDisplay";
-import { figmaActionProps, figmaFieldProps } from "./useFigmaScreenData";
+import { figmaActionProps, figmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 
 /** CF-23 PUT route binding from profile form section. */
 export const profileSectionPutApi = updateMarketingTeamMemberProfile;
 
 export function ProfileContentSection() {
   const roleLabel = figmaTextContent("5335:4278", "Senior Campaign Lead");
+  const { profileLoadError, retryProfileLoad } = useFigmaScreenData();
 
   return (
     <section
       data-figma-node="5329:12075"
       className="absolute box-border left-[0px] top-[169px] flex w-[1440px] flex-row items-start gap-6 pr-[40px] pb-[52px] pl-[40px] [--fx:0] [--fww:1440] z-[1]"
     >
+      {profileLoadError ? (
+        <div
+          role="alert"
+          className="absolute left-[40px] top-[-52px] z-[2] box-border flex w-[calc(100%-80px)] items-center justify-between gap-4 rounded-[8px] border border-[#da002f] bg-[#fff5f5] px-4 py-3"
+        >
+          <p className="font-onest text-[14px] font-[500] leading-[18px] text-[#da002f]">
+            {profileLoadError}
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              void retryProfileLoad();
+            }}
+            className="box-border inline-flex h-[36px] items-center justify-center rounded-[8px] border border-[#da002f] bg-[#ffffff] px-4 font-onest text-[14px] font-[700] text-[#da002f]"
+          >
+            Retry
+          </button>
+        </div>
+      ) : null}
       <div
         data-figma-node="5329:12076"
         className="box-border h-[418px] w-[400px] rounded-[12px] border-[#e2d9d0] border-[1px] bg-[#ffffff] pt-[32px] pr-[32px] pb-[32px] pl-[32px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] [--fx:40] [--fww:400]"
@@ -217,9 +237,9 @@ export function ProfileContentSection() {
               type="button"
               data-figma-action="act_4d5182b12c73"
               {...figmaActionProps("act_4d5182b12c73")}
-              className="box-border inline-flex h-[42px] w-[112px] cursor-pointer items-center justify-center rounded-[8px] bg-[#a21d35] pt-[12px] pr-[16px] pb-[12px] pl-[16px] disabled:cursor-not-allowed disabled:opacity-60"
+              className="box-border inline-flex h-[42px] w-[112px] cursor-pointer items-center justify-center whitespace-nowrap rounded-[8px] bg-[#a21d35] pt-[12px] pr-[16px] pb-[12px] pl-[16px] disabled:cursor-not-allowed disabled:opacity-60"
             >
-              <span data-figma-node="5335:4292" className="font-onest text-[14px] font-[700] leading-[18px] text-[#ffffff]">
+              <span data-figma-node="5335:4292" className="font-onest text-[14px] font-[700] leading-[18px] whitespace-nowrap text-[#ffffff]">
                 Save
               </span>
             </button>
@@ -286,8 +306,8 @@ export function ProfileContentSection() {
                 </div>
               </div>
             </div>
-            <div data-figma-node="5337:4292" className="box-border flex w-full flex-col gap-4">
-              <div data-figma-node="5337:4293" className="box-border flex w-full flex-col gap-1.5">
+            <div data-figma-node="5337:4292" className="box-border flex w-full items-end justify-between gap-4">
+              <div data-figma-node="5337:4293" className="box-border flex w-[428px] flex-col gap-1.5">
                 <p data-figma-node="5337:4294" className="font-onest text-[12px] font-[700] leading-[15px] text-[#9ca3af]">
                   Confirm Password
                 </p>
@@ -308,6 +328,18 @@ export function ProfileContentSection() {
                   />
                 </div>
               </div>
+              <button
+                data-figma-node="5339:8839"
+                type="button"
+                className="luna-cta-change-password box-border inline-flex h-[36px] w-[179px] items-center justify-center whitespace-nowrap rounded-[6px] border border-[#a21d35] bg-transparent pt-[8px] pr-[12px] pb-[8px] pl-[12px]"
+              >
+                <span
+                  data-figma-node="5339:8840"
+                  className="font-onest text-[14px] font-[700] leading-[18px] whitespace-nowrap text-[#a21d35]"
+                >
+                  Change Password
+                </span>
+              </button>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@
 import {
   createContext,
   createElement,
+  startTransition,
   useCallback,
   useContext,
   useEffect,
@@ -13,6 +14,7 @@ import {
   type MouseEvent,
   type ReactNode,
 } from "react";
+import { useRouter } from "next/navigation";
 
 import { fetchContractRead, fetchContractWrite } from "@/lib/api/contract-api";
 import { ApiRequestError } from "@/lib/api/client";
@@ -68,9 +70,11 @@ type ScreenDataContextValue = {
   submitting: boolean;
   loading: boolean;
   statusMessage: string;
+  profileLoadError: string;
   setFieldValue: (field: string, value: string) => void;
   toggleVariant: (nodeId: string) => void;
   submit: () => Promise<void>;
+  retryProfileLoad: () => Promise<void>;
 };
 
 const ScreenDataContext = createContext<ScreenDataContextValue | null>(null);
@@ -110,6 +114,7 @@ export function FigmaScreenDataProvider({
   routePath?: string;
   children?: ReactNode;
 }) {
+  const router = useRouter();
   const frameId = frameIdForRoute(routePath);
   const [values, setValues] = useState<FigmaFieldValues>({});
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
@@ -117,6 +122,16 @@ export function FigmaScreenDataProvider({
   const [submitting, setSubmitting] = useState(false);
   const [loading, setLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
+  const [profileLoadError, setProfileLoadError] = useState("");
+
+  const redirectToLogin = useCallback(() => {
+    clearAccessToken();
+    clearReadPayloads();
+    const redirect = encodeURIComponent(
+      `${window.location.pathname}${window.location.search}`,
+    );
+    router.replace(`/login?redirect=${redirect}`);
+  }, [router]);
 
   const setFieldValue = useCallback((field: string, value: string) => {
     setValues((current) => ({ ...current, [field]: value }));
@@ -138,6 +153,38 @@ export function FigmaScreenDataProvider({
     });
   }, []);
 
+  const loadProfileRead = useCallback(async () => {
+    const readOp = figmaReadOperation(MY_PROFILE_FRAME_ID);
+    if (!readOp) {
+      return;
+    }
+
+    setProfileLoadError("");
+    const token = getAccessToken();
+
+    try {
+      const response = await getMarketingTeamMemberProfile(token);
+      publishReadPayload(readOp.method, readOp.path, response.body);
+      const merged = valuesFromResponse(
+        readOp,
+        unwrapPayload(response.body, readOp.responseUnwrap),
+      );
+      if (Object.keys(merged).length > 0) {
+        setValues((current) => ({ ...current, ...merged }));
+      }
+    } catch (error) {
+      if (error instanceof ApiRequestError && error.status === 401) {
+        redirectToLogin();
+        return;
+      }
+      setProfileLoadError(
+        error instanceof ApiRequestError
+          ? error.message
+          : "Unable to load profile.",
+      );
+    }
+  }, [redirectToLogin]);
+
   const loadReads = useCallback(async (activeFrameId: string) => {
     if (!activeFrameId) {
       return;
@@ -149,10 +196,6 @@ export function FigmaScreenDataProvider({
 
     try {
       for (const op of readOps) {
-        if (activeFrameId === MY_PROFILE_FRAME_ID) {
-          continue;
-        }
-
         const resolution = resolveBoundRead(op);
 
         if (resolution.mode === "missing") {
@@ -163,14 +206,34 @@ export function FigmaScreenDataProvider({
         let body: unknown;
         if (resolution.mode === "mock") {
           body = resolution.body;
+        } else if (
+          activeFrameId === MY_PROFILE_FRAME_ID &&
+          op.path === "/api/v1/marketing-team-member/profile"
+        ) {
+          try {
+            const response = await getMarketingTeamMemberProfile(token);
+            body = response.body;
+            setProfileLoadError("");
+          } catch (error) {
+            if (error instanceof ApiRequestError && error.status === 401) {
+              redirectToLogin();
+              return;
+            }
+            setProfileLoadError(
+              error instanceof ApiRequestError
+                ? error.message
+                : "Unable to load profile.",
+            );
+            continue;
+          }
         } else {
           try {
             const response = await fetchContractRead(op.method, op.path, token);
             body = response.body;
           } catch (error) {
             if (error instanceof ApiRequestError && error.status === 401) {
-              clearAccessToken();
-              clearReadPayloads();
+              redirectToLogin();
+              return;
             }
             setStatusMessage(
               error instanceof ApiRequestError
@@ -190,10 +253,12 @@ export function FigmaScreenDataProvider({
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [redirectToLogin]);
 
   useEffect(() => {
-    void loadReads(frameId);
+    startTransition(() => {
+      void loadReads(frameId);
+    });
   }, [frameId, loadReads]);
 
   useEffect(() => {
@@ -261,8 +326,8 @@ export function FigmaScreenDataProvider({
     } catch (error) {
       if (error instanceof ApiRequestError) {
         if (error.status === 401) {
-          clearAccessToken();
-          clearReadPayloads();
+          redirectToLogin();
+          return;
         }
         setFieldErrors(fieldErrorsFromResponse(writeOp, error.body));
         setStatusMessage(error.message);
@@ -272,7 +337,7 @@ export function FigmaScreenDataProvider({
     } finally {
       setSubmitting(false);
     }
-  }, [frameId, loadReads, values]);
+  }, [frameId, loadReads, redirectToLogin, values]);
 
   const contextValue = useMemo<ScreenDataContextValue>(
     () => ({
@@ -283,14 +348,18 @@ export function FigmaScreenDataProvider({
       submitting,
       loading,
       statusMessage,
+      profileLoadError,
       setFieldValue,
       toggleVariant,
       submit,
+      retryProfileLoad: loadProfileRead,
     }),
     [
       fieldErrors,
       frameId,
+      loadProfileRead,
       loading,
+      profileLoadError,
       setFieldValue,
       statusMessage,
       submit,
@@ -334,9 +403,11 @@ function useScreenData(): ScreenDataContextValue {
       submitting: false,
       loading: false,
       statusMessage: "",
+      profileLoadError: "",
       setFieldValue: () => {},
       toggleVariant: () => {},
       submit: async () => {},
+      retryProfileLoad: async () => {},
     };
   }
   return context;

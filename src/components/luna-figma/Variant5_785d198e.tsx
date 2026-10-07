@@ -12,7 +12,7 @@ export function Variant5_785d198e({ className = "", ...rest }: { className?: str
     <div data-figma-node="I5602:71612;5602:69270;5602:69046" className="box-border w-[120px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
       <div data-figma-node="I5602:71612;5602:69270;5602:69047" className="box-border w-[104px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
         <div data-figma-node="I5602:71612;5602:69270;5602:69048" className="box-border w-[104px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-          <div data-figma-node="I5602:71612;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1">
+          <div data-figma-node="I5602:71612;5602:69270;5602:69049" className="box-border h-[14px] w-[14px] overflow-hidden relative gap-1">
             <FiRrELearning_336860e7 data-figma-node="I5602:71612;5602:69270;5725:46976" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
           </div>
           <p data-figma-node="I5602:71612;5602:69270;5602:69056" className="box-border w-[64px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
