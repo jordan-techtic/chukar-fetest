@@ -19,11 +19,64 @@ export interface FigmaDisplayBinding {
   readonly evidence: string;
 }
 
+const ACTIVITIES_LIST_OP = "GET /api/v1/marketing-team-member/activities";
+const CALENDAR_OP = "GET /api/v1/marketing-team-member/calendar";
+const METRICS_OP = "GET /api/v1/marketing-team-member/performance-metrics";
+
+const MANAGE_ACTIVITY_FRAME = "5359:17106";
+const WEEK_CALENDAR_HISTORICAL_FRAME = "5584:26945";
+const ANNUAL_CALENDAR_FRAME = "5645:60757";
+
+function itemBinding(
+  nodeId: string,
+  frameId: string,
+  operation: string,
+  path: readonly FigmaDisplayPathPart[],
+): FigmaDisplayBinding {
+  return {
+    nodeId,
+    frameId,
+    operation,
+    responseUnwrap: "data",
+    path,
+    kind: "item",
+    valueType: null,
+    format: null,
+    evidence: "explicit_binding",
+  };
+}
+
 /** data-figma-node → the response field it renders. */
-export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {};
+export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
+  "5359:17170": itemBinding("5359:17170", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 0]),
+  "5359:17187": itemBinding("5359:17187", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 1]),
+  "5359:17204": itemBinding("5359:17204", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 2]),
+  "5359:17218": itemBinding("5359:17218", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 3]),
+  "5359:17235": itemBinding("5359:17235", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 4]),
+  "5359:17252": itemBinding("5359:17252", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 5]),
+  "I5589:50622;5556:77452": itemBinding("I5589:50622;5556:77452", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 0]),
+  "I5589:50622;5589:48811": itemBinding("I5589:50622;5589:48811", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 1]),
+  "I5589:50622;5589:48828": itemBinding("I5589:50622;5589:48828", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 2]),
+  "I5645:60760;5589:50622;5556:77452": itemBinding("I5645:60760;5589:50622;5556:77452", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 0]),
+  "I5645:60760;5589:50622;5589:48811": itemBinding("I5645:60760;5589:50622;5589:48811", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 1]),
+  "I5645:60760;5589:50622;5589:48828": itemBinding("I5645:60760;5589:50622;5589:48828", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 2]),
+  "I5645:60759;5273:21173": itemBinding("I5645:60759;5273:21173", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 0]),
+  "I5645:60759;5273:21176": itemBinding("I5645:60759;5273:21176", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 1]),
+  "I5645:60759;5273:21179": itemBinding("I5645:60759;5273:21179", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 2]),
+  "I5584:26947;5273:21173": itemBinding("I5584:26947;5273:21173", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 0]),
+  "I5584:26947;5273:21176": itemBinding("I5584:26947;5273:21176", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 1]),
+  "I5584:26947;5273:21179": itemBinding("I5584:26947;5273:21179", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 2]),
+  "I5645:60760;5596:52901;5602:55917": itemBinding("I5645:60760;5596:52901;5602:55917", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 0]),
+  "I5645:60760;5596:52901;5602:55918": itemBinding("I5645:60760;5596:52901;5602:55918", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 1]),
+  "I5645:60760;5596:52901;5602:55919": itemBinding("I5645:60760;5596:52901;5602:55919", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 2]),
+};
 
 /** Screen frame id → read operations its display bindings consume. */
-export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {};
+export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {
+  [MANAGE_ACTIVITY_FRAME]: [ACTIVITIES_LIST_OP],
+  [WEEK_CALENDAR_HISTORICAL_FRAME]: [CALENDAR_OP],
+  [ANNUAL_CALENDAR_FRAME]: [CALENDAR_OP, METRICS_OP],
+};
 
 const payloads = new Map<string, unknown>();
 const listeners = new Set<() => void>();
@@ -153,10 +206,6 @@ export function useFigmaTextContent(nodeId: string, fallback: string): string {
   return loaded ? formatDisplayValue(value, binding) : fallback;
 }
 
-export function figmaTextContent(nodeId: string, fallback: string): string {
-  return useFigmaTextContent(nodeId, fallback);
-}
-
 export type FigmaItemBinding = {
   hidden?: boolean;
   "aria-hidden"?: boolean;
@@ -164,7 +213,7 @@ export type FigmaItemBinding = {
 };
 
 /** A repeated card hides once its read is published without an item at its index. */
-export function figmaItemProps(nodeId: string): FigmaItemBinding {
+export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "item") {

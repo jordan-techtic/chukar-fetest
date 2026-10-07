@@ -613,9 +613,11 @@ export function useFigmaScreenData() {
 
 /** Layout files call these during render; they delegate to the screen data context. */
 export function figmaFieldProps(field: string): FigmaFieldBinding {
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- generated layout entry point
   return useFigmaFieldProps(field);
 }
 
 export function figmaActionProps(action: string): FigmaActionBinding {
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- generated layout entry point
   return useFigmaActionProps(action);
 }

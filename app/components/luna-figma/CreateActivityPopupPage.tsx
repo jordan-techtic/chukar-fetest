@@ -7,6 +7,7 @@
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
+import Link from "next/link";
 import "./figma-fonts.css";
 import "./figma-responsive.css";
 import { FigmaFrameShell } from "./FigmaFrameShell";
@@ -108,7 +109,7 @@ export function CreateActivityPopupPage() {
               </div>
               <div data-figma-node="5217:17066" className="box-border w-[635px] h-[1px] bg-[#e2d9d0]" />
               <div data-figma-node="5217:17067" className="box-border w-[635px] h-[38px] relative flex items-center gap-[12px] gap-3">
-                <button data-figma-node="5217:17068" type="button" data-figma-unresolved-action="true" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#0b0b0b] cursor-pointer"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></button>
+                <button data-figma-node="5217:17068" type="button" data-figma-unresolved-action="true" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#231f20] cursor-pointer"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></button>
                 <button data-figma-node="5217:17070" type="button" data-figma-action="act_0290919bbc04" {...figmaActionProps("act_0290919bbc04")} className="box-border w-[109px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#a21d35] hover:opacity-90 cursor-pointer"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#ffffff] whitespace-nowrap">Next Step</span></button>
               </div>
             </div>
@@ -256,22 +257,22 @@ export function CreateActivityPopupPage() {
                     <div data-figma-node="I5645:67153;5602:64490" className="box-border w-[1368px] h-[1123px] relative flex flex-col items-center">
                       <div data-figma-node="I5645:67153;5602:64494" className="box-border w-[1368px] h-[180px] relative bg-[#ffffff]">
                         <input data-figma-node="I5645:67153;5602:64498" data-figma-component="5556:77518" name="historical-view" data-figma-field="historical-view" data-figma-field-origin="design_text" {...figmaFieldProps("historical-view")} type="text" placeholder="Historical View" aria-label="Historical View" className="box-border w-[196px] h-[180px] absolute left-[0px] top-[0px] [--fx:0] [--fww:196] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e5e7eb] border-[1px] bg-[#f9f9f9] pt-[8px] pr-[4px] pb-[8px] pl-[4px]" />
-                        <a data-figma-node="I5645:67153;5602:66732" data-figma-component="5602:61866" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[196px] top-[0px] [--fx:196] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
+                        <Link data-figma-node="I5645:67153;5602:66732" data-figma-component="5602:61866" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[196px] top-[0px] [--fx:196] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
                           <div data-figma-node="I5645:67153;5602:66732;5725:81426" className="box-border w-[172px] h-[20px] absolute left-[12px] top-[8px] [--fx:12] [--fww:172] flex items-center gap-[121px] gap-5">
                             <div data-figma-node="I5645:67153;5602:66732;5725:81427" className="box-border w-[5px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:66732;5725:81428" className="box-border w-[5px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:5] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">1</p>
                             </div>
                             <img data-figma-node="I5645:67153;5602:66732;5725:81430" src="/assets/figma/I5645-67153-5602-66732-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
-                        </a>
-                        <a data-figma-node="I5645:67153;5602:66790" data-figma-component="5602:61866" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[391px] top-[0px] [--fx:391] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
+                        </Link>
+                        <Link data-figma-node="I5645:67153;5602:66790" data-figma-component="5602:61866" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[391px] top-[0px] [--fx:391] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
                           <div data-figma-node="I5645:67153;5602:66790;5725:81426" className="box-border w-[172px] h-[20px] absolute left-[12px] top-[8px] [--fx:12] [--fww:172] flex items-center gap-[118px] gap-5">
                             <div data-figma-node="I5645:67153;5602:66790;5725:81427" className="box-border w-[8px] h-[17px] relative gap-2.5">
                               <p data-figma-node="I5645:67153;5602:66790;5725:81428" className="box-border w-[8px] h-[17px] absolute left-[0px] top-[0px] [--fx:0] [--fww:8] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">2</p>
                             </div>
                             <img data-figma-node="I5645:67153;5602:66790;5725:81430" src="/assets/figma/I5645-67153-5602-66790-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
-                        </a>
+                        </Link>
                         <div data-figma-node="I5645:67153;5602:66848" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[587px] top-[0px] [--fx:587] [--fww:196] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                           <div data-figma-node="I5645:67153;5602:66848;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[118px] gap-5">
                             <div data-figma-node="I5645:67153;5602:66848;5725:79515" className="box-border w-[8px] h-[17px] relative gap-2.5">
@@ -280,9 +281,9 @@ export function CreateActivityPopupPage() {
                             <img data-figma-node="I5645:67153;5602:66848;5725:77344" src="/assets/figma/I5645-67153-5602-66848-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:66848;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                            <Variant6_37f10a87 data-figma-node="I5645:67153;5602:66848;5602:69270" data-figma-component="5602:69061" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66848;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66848;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant6_37f10a87 data-figma-node="I5645:67153;5602:66848;5602:69270" data-figma-component="5602:69061" className="absolute left-[0px] top-[0px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66848;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66848;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:66906" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[782px] top-[0px] [--fx:782] [--fww:196] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -297,7 +298,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:66906;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:66906;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:66906;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:66906;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:66906;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:66906;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:66906;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -315,8 +316,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66906;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66906;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66906;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66906;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:66964" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[978px] top-[0px] [--fx:978] [--fww:196] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -331,7 +332,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:66964;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:66964;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:66964;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:66964;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:66964;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:66964;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:66964;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -349,8 +350,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66964;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66964;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66964;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:66964;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67022" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[1173px] top-[0px] [--fx:1173] [--fww:196] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -365,7 +366,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67022;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67022;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67022;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67022;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67022;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67022;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67022;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -383,15 +384,15 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67022;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67022;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67022;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67022;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:64505" className="box-border w-[408px] h-[52px] absolute left-[599px] top-[36px] [--fx:599] [--fww:408] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] gap-1">
                           <button data-figma-node="I5645:67153;5602:64506" type="button" data-figma-action="act_4031692c0367" {...figmaActionProps("act_4031692c0367")} className="box-border w-[768px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:768] rounded-[8px_0px_0px_8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#2a9d8f] border-[1px] bg-[#eefbf9] cursor-pointer block">
                             <div data-figma-node="I5645:67153;5602:64507" className="box-border w-[752px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:752] flex flex-col items-start gap-[4px] gap-1">
                               <div data-figma-node="I5645:67153;5725:56209" className="box-border w-[752px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                <div data-figma-node="I5645:67153;5725:56210" className="box-border w-[14px] h-[14px] relative gap-1">
+                                <div data-figma-node="I5645:67153;5725:56210" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                   <FiRrELearning_336860e7 data-figma-node="I5645:67153;5725:56213" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
                                 </div>
                                 <p data-figma-node="I5645:67153;5725:56214" className="box-border w-[712px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -427,7 +428,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67138;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67138;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67138;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67138;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67138;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67138;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67138;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -449,7 +450,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67138;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67138;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67138;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67138;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67138;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67138;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67138;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -471,7 +472,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67138;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67138;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67138;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67138;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67138;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67138;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67138;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -503,7 +504,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67196;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67196;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67196;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67196;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67196;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67196;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67196;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -525,7 +526,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67196;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67196;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67196;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67196;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67196;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67196;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67196;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -547,7 +548,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67196;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67196;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67196;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67196;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67196;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67196;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67196;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -581,7 +582,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67254;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67254;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67254;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67254;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67254;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67254;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67254;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -603,7 +604,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67254;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67254;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67254;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67254;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67254;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67254;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67254;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -625,7 +626,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67254;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67254;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67254;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67254;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67254;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67254;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67254;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -653,12 +654,12 @@ export function CreateActivityPopupPage() {
                             <img data-figma-node="I5645:67153;5602:67312;5725:77344" src="/assets/figma/I5645-67153-5602-67312-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67312;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                            <Variant5_785d198e data-figma-node="I5645:67153;5602:67312;5602:69270" data-figma-component="5602:69045" className="relative" />
+                            <Variant5_785d198e data-figma-node="I5645:67153;5602:67312;5602:69270" data-figma-component="5602:69045" className="absolute left-[0px] top-[0px] [--fx:0] [--fww:172]" />
                             <div data-figma-node="I5645:67153;5602:67312;5725:47922" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                               <div data-figma-node="I5645:67153;5602:67312;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67312;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67312;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67312;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67312;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67312;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67312;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -680,7 +681,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67312;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67312;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67312;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67312;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67312;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67312;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67312;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -700,7 +701,7 @@ export function CreateActivityPopupPage() {
                             </div>
                           </div>
                         </div>
-                        <a data-figma-node="I5645:67153;5602:67370" data-figma-component="5602:61887" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[782px] top-[0px] [--fx:782] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
+                        <Link data-figma-node="I5645:67153;5602:67370" data-figma-component="5602:61887" href="/create-activity-popup" className="box-border w-[196px] h-[180px] absolute left-[782px] top-[0px] [--fx:782] [--fww:196] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]">
                           <div data-figma-node="I5645:67153;5602:67370;5725:80972" className="box-border w-[172px] h-[20px] absolute left-[12px] top-[8px] [--fx:12] [--fww:172] flex items-center gap-[30px] gap-5">
                             <div data-figma-node="I5645:67153;5602:67370;5725:80973" className="box-border w-[96px] h-[20px] relative flex items-center gap-[10px] gap-2.5">
                               <div data-figma-node="I5645:67153;5602:67370;5602:61889" className="box-border w-[20px] h-[20px] rounded-[100px] relative gap-2.5 pr-[4px] pl-[4px] bg-[#a21d35]">
@@ -712,7 +713,7 @@ export function CreateActivityPopupPage() {
                             </div>
                             <div data-figma-node="I5645:67153;5602:67370;5725:80976" className="box-border w-[46px] h-[16px] relative gap-2.5"></div>
                           </div>
-                        </a>
+                        </Link>
                         <div data-figma-node="I5645:67153;5602:67428" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[978px] top-[0px] [--fx:978] [--fww:196] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                           <div data-figma-node="I5645:67153;5602:67428;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[113px] gap-5">
                             <div data-figma-node="I5645:67153;5602:67428;5725:79515" className="box-border w-[13px] h-[17px] relative gap-2.5">
@@ -721,12 +722,12 @@ export function CreateActivityPopupPage() {
                             <img data-figma-node="I5645:67153;5602:67428;5725:77344" src="/assets/figma/I5645-67153-5602-67428-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:67153;5602:67428;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                            <Variant5_785d198e data-figma-node="I5645:67153;5602:67428;5602:69270" data-figma-component="5602:69045" className="relative" />
+                            <Variant5_785d198e data-figma-node="I5645:67153;5602:67428;5602:69270" data-figma-component="5602:69045" className="absolute left-[0px] top-[0px] [--fx:0] [--fww:172]" />
                             <div data-figma-node="I5645:67153;5602:67428;5725:47922" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                               <div data-figma-node="I5645:67153;5602:67428;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67428;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67428;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67428;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67428;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67428;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67428;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -748,7 +749,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67428;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67428;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67428;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67428;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67428;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67428;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67428;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -805,7 +806,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67486;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67486;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67486;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67486;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67486;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67486;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67486;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -827,7 +828,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67486;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67486;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67486;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67486;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67486;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67486;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67486;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -862,7 +863,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67544;5602:69270;5602:69046" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
                                 <div data-figma-node="I5645:67153;5602:67544;5602:69270;5602:69047" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67544;5602:69270;5602:69048" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67544;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67544;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrELearning_336860e7 data-figma-node="I5645:67153;5602:67544;5602:69270;5725:46976" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67544;5602:69270;5602:69056" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -880,8 +881,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67544;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67544;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67544;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67544;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67602" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -896,7 +897,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67602;5602:69270;5602:69046" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
                                 <div data-figma-node="I5645:67153;5602:67602;5602:69270;5602:69047" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67602;5602:69270;5602:69048" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67602;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67602;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrELearning_336860e7 data-figma-node="I5645:67153;5602:67602;5602:69270;5725:46976" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67602;5602:69270;5602:69056" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -914,8 +915,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67602;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67602;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67602;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67602;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67660" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -930,7 +931,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67660;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67660;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67660;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67660;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67660;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67660;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67660;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -948,8 +949,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </button>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67660;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67660;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67660;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67660;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67718" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -967,7 +968,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67718;5602:69270;5602:69046" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
                                 <div data-figma-node="I5645:67153;5602:67718;5602:69270;5602:69047" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67718;5602:69270;5602:69048" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67718;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67718;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrELearning_336860e7 data-figma-node="I5645:67153;5602:67718;5602:69270;5725:46976" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67718;5602:69270;5602:69056" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -985,8 +986,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67718;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67718;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67718;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67718;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67776" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -1001,7 +1002,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67776;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67776;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67776;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67776;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67776;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67776;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67776;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1019,8 +1020,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </button>
-                            <Variant6_37f10a87 data-figma-node="I5645:67153;5602:67776;5725:47922" data-figma-component="5602:69061" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67776;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant6_37f10a87 data-figma-node="I5645:67153;5602:67776;5725:47922" data-figma-component="5602:69061" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67776;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67834" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -1035,7 +1036,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67834;5602:69270;5602:69046" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
                                 <div data-figma-node="I5645:67153;5602:67834;5602:69270;5602:69047" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67834;5602:69270;5602:69048" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67834;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67834;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrELearning_336860e7 data-figma-node="I5645:67153;5602:67834;5602:69270;5725:46976" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67834;5602:69270;5602:69056" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1053,8 +1054,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </div>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67834;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67834;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67834;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67834;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                         <div data-figma-node="I5645:67153;5602:67892" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
@@ -1070,7 +1071,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67892;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67892;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67892;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67892;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67892;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67892;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67892;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1088,8 +1089,8 @@ export function CreateActivityPopupPage() {
                                 </div>
                               </div>
                             </button>
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67892;5725:47922" data-figma-component="5602:68955" className="relative" />
-                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67892;5725:52065" data-figma-component="5602:68955" className="relative" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67892;5725:47922" data-figma-component="5602:68955" className="absolute left-[0px] top-[56px] [--fx:0] [--fww:172]" />
+                            <Variant4_55dac6d9 data-figma-node="I5645:67153;5602:67892;5725:52065" data-figma-component="5602:68955" className="absolute left-[0px] top-[112px] [--fx:0] [--fww:172]" />
                           </div>
                         </div>
                       </div>
@@ -1106,7 +1107,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67950;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67950;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67950;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67950;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67950;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67950;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67950;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1128,7 +1129,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67950;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67950;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67950;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67950;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67950;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67950;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67950;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1150,7 +1151,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:67950;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:67950;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:67950;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:67950;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:67950;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:67950;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:67950;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1182,7 +1183,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68008;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68008;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68008;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68008;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68008;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68008;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68008;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1204,7 +1205,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68008;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68008;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68008;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68008;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68008;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68008;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68008;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1226,7 +1227,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68008;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68008;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68008;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68008;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68008;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68008;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68008;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1261,7 +1262,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68066;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68066;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68066;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68066;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68066;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68066;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68066;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1283,7 +1284,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68066;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68066;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68066;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68066;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68066;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68066;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68066;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1305,7 +1306,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68066;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68066;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68066;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68066;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68066;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68066;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68066;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1337,7 +1338,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68124;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68124;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68124;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68124;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68124;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68124;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68124;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1359,7 +1360,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68124;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68124;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68124;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68124;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68124;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68124;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68124;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1381,7 +1382,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68124;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68124;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68124;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68124;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68124;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68124;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68124;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1413,7 +1414,7 @@ export function CreateActivityPopupPage() {
                               <button data-figma-node="I5645:67153;5602:68182;5602:69270;5602:68956" type="button" data-figma-action="act_2847796ef9a9" {...figmaActionProps("act_2847796ef9a9")} className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4] cursor-pointer block">
                                 <div data-figma-node="I5645:67153;5602:68182;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68182;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68182;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68182;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68182;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68182;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1435,7 +1436,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68182;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68182;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68182;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68182;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68182;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68182;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68182;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1457,7 +1458,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68182;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68182;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68182;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68182;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68182;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68182;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68182;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1489,7 +1490,7 @@ export function CreateActivityPopupPage() {
                               <button data-figma-node="I5645:67153;5602:68240;5602:69270;5602:68956" type="button" data-figma-action="act_9d93985a562f" {...figmaActionProps("act_9d93985a562f")} className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4] cursor-pointer block">
                                 <div data-figma-node="I5645:67153;5602:68240;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68240;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68240;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68240;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68240;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68240;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1511,7 +1512,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68240;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68240;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68240;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68240;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68240;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68240;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68240;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1533,7 +1534,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68240;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68240;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68240;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68240;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68240;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68240;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68240;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1565,7 +1566,7 @@ export function CreateActivityPopupPage() {
                               <button data-figma-node="I5645:67153;5602:68298;5602:69270;5602:68956" type="button" data-figma-action="act_ce11052e950a" {...figmaActionProps("act_ce11052e950a")} className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4] cursor-pointer block">
                                 <div data-figma-node="I5645:67153;5602:68298;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68298;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68298;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68298;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68298;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68298;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1587,7 +1588,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68298;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68298;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68298;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68298;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68298;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68298;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68298;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1609,7 +1610,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68298;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68298;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68298;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68298;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68298;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68298;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68298;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1644,7 +1645,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68479;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68479;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68479;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68479;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68479;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68479;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68479;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1666,7 +1667,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68479;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68479;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68479;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68479;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68479;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68479;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68479;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1688,7 +1689,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68479;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68479;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68479;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68479;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68479;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68479;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68479;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1721,7 +1722,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68537;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68537;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68537;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68537;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68537;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68537;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68537;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1743,7 +1744,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68537;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68537;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68537;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68537;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68537;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68537;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68537;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1765,7 +1766,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68537;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68537;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68537;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68537;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68537;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68537;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68537;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1798,7 +1799,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68595;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68595;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68595;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68595;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68595;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68595;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68595;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1820,7 +1821,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68595;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68595;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68595;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68595;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68595;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68595;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68595;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1842,7 +1843,7 @@ export function CreateActivityPopupPage() {
                               <div data-figma-node="I5645:67153;5602:68595;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] [--fx:0] [--fww:172] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:67153;5602:68595;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] [--fx:8] [--fww:156] flex flex-col items-center gap-[4px] gap-1">
                                   <div data-figma-node="I5645:67153;5602:68595;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                                    <div data-figma-node="I5645:67153;5602:68595;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                                    <div data-figma-node="I5645:67153;5602:68595;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] overflow-hidden relative gap-1">
                                       <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:67153;5602:68595;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                                     </div>
                                     <p data-figma-node="I5645:67153;5602:68595;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1862,10 +1863,10 @@ export function CreateActivityPopupPage() {
                             </div>
                           </div>
                         </div>
-                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68653" data-figma-component="5602:61909" className="relative" />
-                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68711" data-figma-component="5602:61909" className="relative" />
-                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68769" data-figma-component="5602:61909" className="relative" />
-                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68827" data-figma-component="5602:61909" className="relative" />
+                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68653" data-figma-component="5602:61909" className="absolute left-[587px] top-[0px] [--fx:587] [--fww:196]" />
+                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68711" data-figma-component="5602:61909" className="absolute left-[782px] top-[0px] [--fx:782] [--fww:196]" />
+                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68769" data-figma-component="5602:61909" className="absolute left-[978px] top-[0px] [--fx:978] [--fww:196]" />
+                        <Disabled_6ecccdb1 data-figma-node="I5645:67153;5602:68827" data-figma-component="5602:61909" className="absolute left-[1173px] top-[0px] [--fx:1173] [--fww:196]" />
                       </div>
                       <div data-figma-node="I5645:67153;5602:64568" className="box-border w-[1368px] h-[43px] relative gap-2.5 pt-[10px] pb-[10px] pl-[24px] bg-[#f2f1dd]">
                         <p data-figma-node="I5645:67153;5602:64569" className="box-border w-[118px] h-[23px] absolute left-[24px] top-[10px] [--fx:24] [--fww:118] font-onest text-[18px] font-[500] leading-[23px] text-left whitespace-nowrap text-[#a21d35]">October 2025</p>
@@ -1883,12 +1884,12 @@ export function CreateActivityPopupPage() {
                             <img data-figma-node="I5645:67153;5602:64575;5725:102098" src="/assets/figma/I5645-67153-5602-64575-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
-                        <Disabled_781e0828 data-figma-node="I5645:67153;5602:64576" data-figma-component="5556:77518" className="relative" />
-                        <Disabled_781e0828 data-figma-node="I5645:67153;5602:64577" data-figma-component="5556:77518" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64578" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64579" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64580" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64581" data-figma-component="5556:77447" className="relative" />
+                        <Disabled_781e0828 data-figma-node="I5645:67153;5602:64576" data-figma-component="5556:77518" className="absolute left-[328px] top-[0px] [--fx:328] [--fww:327]" />
+                        <Disabled_781e0828 data-figma-node="I5645:67153;5602:64577" data-figma-component="5556:77518" className="absolute left-[655px] top-[0px] [--fx:655] [--fww:327]" />
+                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64578" data-figma-component="5556:77447" className="absolute left-[982px] top-[0px] [--fx:982] [--fww:96]" />
+                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64579" data-figma-component="5556:77447" className="absolute left-[1079px] top-[0px] [--fx:1079] [--fww:96]" />
+                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64580" data-figma-component="5556:77447" className="absolute left-[1175px] top-[0px] [--fx:1175] [--fww:96]" />
+                        <Variant7_1369850e data-figma-node="I5645:67153;5602:64581" data-figma-component="5556:77447" className="absolute left-[1272px] top-[0px] [--fx:1272] [--fww:96]" />
                       </div>
                     </div>
                   </div>
