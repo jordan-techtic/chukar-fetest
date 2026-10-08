@@ -13,7 +13,7 @@ export function ManageHolidayContentSection() {
             <p data-figma-node="5621:28298" className="font-onest text-[12px] font-[700] text-[#4a5568]">Holiday Name</p><p data-figma-node="5621:28299" className="font-onest text-[12px] font-[700] text-[#4a5568]">START DATE</p><p data-figma-node="5621:28300" className="font-onest text-[12px] font-[700] text-[#4a5568]">END DATE</p><p data-figma-node="5621:28301" className="font-onest text-[12px] font-[700] text-[#4a5568]">Status</p><p data-figma-node="5621:28303" className="font-onest text-[12px] font-[700] text-[#4a5568]">Actions</p>
           </div>
       <div data-figma-node="5621:28304" className="box-border w-[1360px] h-[56px] border-[#e2d9d0] border-[1px] flex items-center gap-4 px-[24px]">
-        <p data-figma-node="5621:28307" className="font-onest text-[14px] text-[#231f20]">New Year's Day</p>
+        <p data-figma-node="5621:28307" className="font-onest text-[14px] text-[#231f20]">{"New Year's Day"}</p>
         <p data-figma-node="5621:28308" className="box-border w-[150px] h-[18px] font-onest text-[14px] text-[#231f20] whitespace-nowrap">January 1, 2026</p>
         <p data-figma-node="5621:28498" className="font-onest text-[14px] text-[#231f20]">January 1, 2026</p>
       </div>

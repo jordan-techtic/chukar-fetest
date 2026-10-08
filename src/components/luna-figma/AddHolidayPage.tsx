@@ -18,6 +18,7 @@ import { ContentColumnSection } from "./ContentColumnSection";
 import { figmaFieldProps } from "./useFigmaScreenData";
 import { FiRrCalendar_8ca23c72 } from "./FiRrCalendar_8ca23c72";
 import { FiRrCrossSmall_aec28f27 } from "./FiRrCrossSmall_aec28f27";
+import Link from "next/link";
 import { Shared_08359495 } from "./Shared_08359495";
 
 export function AddHolidayPage() {
@@ -47,9 +48,9 @@ export function AddHolidayPage() {
                   <p data-figma-node="5621:29007" className="box-border w-[174px] h-[23px] font-onest text-[18px] font-[700] leading-[23px] text-left whitespace-nowrap text-[#231f20]">Create New Holiday</p>
                 </div>
                 <div data-figma-node="5621:29008" className="box-border w-[32px] h-[32px] absolute left-[440px] top-[0px] [--fx:440] [--fww:32] gap-3">
-                  <a data-figma-node="5621:29009" href="/manage-users" className="box-border w-[32px] h-[32px] absolute left-[0px] top-[0px] [--fx:0] [--fww:32] overflow-hidden rounded-[6px] pt-[4px] pr-[4px] pb-[4px] pl-[4px] bg-[#fff9f3]">
+                  <Link data-figma-node="5621:29009" href="/manage-users" className="box-border w-[32px] h-[32px] absolute left-[0px] top-[0px] [--fx:0] [--fww:32] overflow-hidden rounded-[6px] pt-[4px] pr-[4px] pb-[4px] pl-[4px] bg-[#fff9f3]">
                     <FiRrCrossSmall_aec28f27 data-figma-node="5621:29010" data-figma-component="5121:8491" className="absolute left-[4px] top-[4px]" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div data-figma-node="5621:29011" className="box-border w-[472px] h-[144px] relative gap-4">
@@ -78,8 +79,8 @@ export function AddHolidayPage() {
               </div>
               <div data-figma-node="5621:29041" className="box-border w-[472px] h-[1px] bg-[#e2d9d0]" />
               <div data-figma-node="5621:29042" className="box-border w-[472px] h-[38px] relative flex items-center gap-[12px] gap-3">
-                <a data-figma-node="5621:29043" href="/manage-holiday" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#231f20]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></a>
-                <a data-figma-node="5621:29045" href="/manage-holiday" className="box-border w-[129px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#a21d35] hover:opacity-90"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#ffffff] whitespace-nowrap">Save Holiday</span></a>
+                <Link data-figma-node="5621:29043" href="/manage-holiday" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#231f20]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></Link>
+                <Link data-figma-node="5621:29045" href="/manage-holiday" className="box-border w-[129px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#a21d35] hover:opacity-90"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#ffffff] whitespace-nowrap">Save Holiday</span></Link>
               </div>
             </div>
           </div>
