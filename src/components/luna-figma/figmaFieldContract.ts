@@ -28,144 +28,120 @@ export interface FigmaOperation {
   readonly submitNodeId: string | null;
 }
 
-const CREATE_ACTIVITY_FRAME_ID = "5217:16193";
-const MANAGE_ACTIVITY_FRAME_ID = "5359:17106";
-const WEEK_CALENDAR_DEFAULT_FRAME_ID = "5602:71490";
-const WEEK_CALENDAR_HISTORICAL_FRAME_ID = "5584:26945";
-const ANNUAL_CALENDAR_DEFAULT_FRAME_ID = "5645:60757";
-
-const MARKETING_TEAM_MEMBER_CALENDAR_PATH =
-  "/api/v1/marketing-team-member/calendar";
-const MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH =
-  "/api/v1/marketing-team-member/performance-metrics";
-
-const MARKETING_TEAM_MEMBER_ACTIVITIES_PATH =
-  "/api/v1/marketing-team-member/activities";
-const MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH =
-  "/api/v1/marketing-team-member/activities/{id}";
+const PROFILE_FRAME_FIELDS: readonly FigmaFieldBinding[] = [
+  {
+    figmaField: "first-name",
+    apiField: "first_name",
+    nodeId: "5335:4270",
+    kind: "text",
+    required: false,
+    resolution: "bound",
+    maxLength: 100,
+  },
+  {
+    figmaField: "last-name",
+    apiField: "last_name",
+    nodeId: "5337:4266",
+    kind: "text",
+    required: false,
+    resolution: "bound",
+    maxLength: 100,
+  },
+  {
+    figmaField: "email",
+    apiField: "email",
+    nodeId: "5335:4274",
+    kind: "email",
+    required: false,
+    resolution: "bound",
+    format: "email",
+    maxLength: 255,
+  },
+];
 
 /** Screen frame id → contract operations its form uses. */
 export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
-  [CREATE_ACTIVITY_FRAME_ID]: [
+  "5329:12027": [
     {
-      fields: [],
-      method: "POST",
-      path: "/api/v1/marketing-team-member/activities",
-      responseUnwrap: "data",
-      role: "write",
-      submitNodeId: null,
-      unboundRequired: ["title", "start_date", "activity_type"],
-    },
-  ],
-  [WEEK_CALENDAR_DEFAULT_FRAME_ID]: [
-    {
-      fields: [],
+      fields: PROFILE_FRAME_FIELDS,
       method: "GET",
-      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-  ],
-  [WEEK_CALENDAR_HISTORICAL_FRAME_ID]: [
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-  ],
-  [ANNUAL_CALENDAR_DEFAULT_FRAME_ID]: [
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
+      path: "/api/v1/marketing-team-member/profile",
       responseUnwrap: "data",
       role: "read",
       submitNodeId: null,
       unboundRequired: [],
     },
     {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-  ],
-  [MANAGE_ACTIVITY_FRAME_ID]: [
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_ACTIVITIES_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-    {
-      fields: [],
-      method: "POST",
-      path: MARKETING_TEAM_MEMBER_ACTIVITIES_PATH,
-      responseUnwrap: "data",
-      role: "write",
-      submitNodeId: null,
-      unboundRequired: ["title", "start_date", "activity_type"],
-    },
-    {
-      fields: [],
+      fields: PROFILE_FRAME_FIELDS,
       method: "PUT",
-      path: MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH,
+      path: "/api/v1/marketing-team-member/profile",
       responseUnwrap: "data",
       role: "write",
-      submitNodeId: null,
-      unboundRequired: ["id"],
+      submitNodeId: "5335:4291",
+      unboundRequired: [],
     },
+  ],
+  "5645:60757": [
     {
       fields: [],
-      method: "DELETE",
-      path: MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH,
+      method: "GET",
+      path: "/api/v1/marketing-team-member/calendar",
       responseUnwrap: "data",
-      role: "write",
+      role: "read",
       submitNodeId: null,
-      unboundRequired: ["id"],
+      unboundRequired: [],
+    },
+  ],
+  "5449:19126": [
+    {
+      fields: [],
+      method: "GET",
+      path: "/api/v1/marketing-team-member/categories",
+      responseUnwrap: "data",
+      role: "read",
+      submitNodeId: null,
+      unboundRequired: [],
+    },
+  ],
+  "5602:71490": [
+    {
+      fields: [],
+      method: "GET",
+      path: "/api/v1/marketing-team-member/notes",
+      responseUnwrap: "data",
+      role: "read",
+      submitNodeId: null,
+      unboundRequired: [],
     },
   ],
 };
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
-  "5217:16193": [
+  "5329:12027": [
+    "bio",
+    "new-password",
+    "confirm-password",
+    "change-password"
+  ],
+  "5359:17424": [
+    "search-users",
+    "jane-smith-company-com",
+    "alex-j-company-com",
+    "emily-w-company-com",
+    "michael-c-company-com",
+    "robert-t-company-com"
+  ],
+  "5449:19126": [
+    "filter-categories"
+  ],
+  "5602:71490": [
     "mon",
     "tue",
     "wed",
     "thu",
     "fri",
-    "sat",
-    "activity-category"
-  ],
-  "5359:17106": [
-    "search-input"
-  ],
-  "5584:26945": [
-    "mon",
-    "tue",
-    "wed",
-    "thu",
-    "fri",
-    "sat",
-    "field-5596-52876",
-    "field-5596-52878",
-    "field-5596-52880",
-    "field-5596-52882",
-    "field-5596-52884",
-    "field-5596-52886"
+    "sat"
   ],
   "5645:60757": [
     "mon",
@@ -311,10 +287,11 @@ export function fieldErrorsFromResponse(
   const byApi = new Map(op.fields.map((field) => [field.apiField, field.figmaField]));
   const record = asRecord(body);
   const errorEnvelope = asRecord(record?.error);
+  const detailList = errorEnvelope?.details;
   const raw =
     record?.errors ??
     record?.details ??
-    errorEnvelope?.details ??
+    (Array.isArray(detailList) ? detailList : detailList) ??
     record?.message;
   const assign = (apiField: unknown, message: unknown): void => {
     const figmaField = typeof apiField === "string" ? byApi.get(apiField) : undefined;

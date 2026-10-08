@@ -4,6 +4,8 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
+"use client";
+
 import { useRef, type ReactNode } from "react";
 
 import { FRAME_WIDTH, useFrameScale } from "./useFrameScale";

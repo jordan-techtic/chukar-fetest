@@ -23,13 +23,13 @@ import {
   MARKETING_TEAM_MEMBER_CALENDAR_PATH,
 } from "@/lib/api/marketing-team-member-calendar";
 import {
+  listMarketingTeamMemberNotes,
+  MARKETING_TEAM_MEMBER_NOTES_PATH,
+} from "@/lib/api/marketing-team-member-notes";
+import {
   getMarketingTeamMemberPerformanceMetrics,
   MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
 } from "@/lib/api/marketing-team-member-performance-metrics";
-import {
-  getMarketingTeamMemberProfile,
-  updateMarketingTeamMemberProfile,
-} from "@/lib/api/marketing-team-member-profile";
 import { clearAccessToken, getAccessToken } from "@/lib/auth/token-storage";
 
 import { FIGMA_ACTIONS } from "./figmaActions";
@@ -80,11 +80,13 @@ const CREATE_ACTIVITY_TYPE_NODE_IDS = [
 ] as const;
 
 const ROUTE_TO_FRAME: Readonly<Record<string, string>> = {
-  "": "5217:16193",
+  "": MY_PROFILE_FRAME_ID,
   "create-activity-popup": "5217:16193",
   "week-calendar-historical-view": "5584:26945",
   "annual-calendar-default": "5645:60757",
   "manage-activity": "5359:17106",
+  "manage-users": "5359:17424",
+  "manage-category": "5449:19126",
   "my-profile": MY_PROFILE_FRAME_ID,
   calendar: "5602:71490",
   "week-calendar-default": "5602:71490",
@@ -200,14 +202,26 @@ export function FigmaScreenDataProvider({
     }
 
     setProfileLoadError("");
+    const resolution = resolveBoundRead(readOp);
+    if (resolution.mode === "missing") {
+      setStatusMessage(resolution.diagnostic);
+      return;
+    }
+
     const token = getAccessToken();
 
     try {
-      const response = await getMarketingTeamMemberProfile(token);
-      publishReadPayload(readOp.method, readOp.path, response.body);
+      let body: unknown;
+      if (resolution.mode === "mock") {
+        body = resolution.body;
+      } else {
+        const response = await fetchContractRead(readOp.method, readOp.path, token);
+        body = response.body;
+      }
+      publishReadPayload(readOp.method, readOp.path, body);
       const merged = valuesFromResponse(
         readOp,
-        unwrapPayload(response.body, readOp.responseUnwrap),
+        unwrapPayload(body, readOp.responseUnwrap),
       );
       if (Object.keys(merged).length > 0) {
         setValues((current) => ({ ...current, ...merged }));
@@ -246,23 +260,26 @@ export function FigmaScreenDataProvider({
         let body: unknown;
         if (resolution.mode === "mock") {
           body = resolution.body;
-        } else if (
-          activeFrameId === MY_PROFILE_FRAME_ID &&
-          op.path === "/api/v1/marketing-team-member/profile"
-        ) {
+        } else if (op.method === "GET" && op.path === MARKETING_TEAM_MEMBER_NOTES_PATH) {
           try {
-            const response = await getMarketingTeamMemberProfile(token);
+            const now = new Date();
+            const response = await listMarketingTeamMemberNotes(
+              {
+                year: String(now.getFullYear()),
+                month: String(now.getMonth() + 1),
+              },
+              token,
+            );
             body = response.body;
-            setProfileLoadError("");
           } catch (error) {
             if (error instanceof ApiRequestError && error.status === 401) {
               redirectToLogin();
               return;
             }
-            setProfileLoadError(
+            setStatusMessage(
               error instanceof ApiRequestError
                 ? error.message
-                : "Unable to load profile.",
+                : "Unable to load data.",
             );
             continue;
           }
@@ -308,16 +325,29 @@ export function FigmaScreenDataProvider({
           try {
             const response = await fetchContractRead(op.method, op.path, token);
             body = response.body;
+            if (
+              activeFrameId === MY_PROFILE_FRAME_ID &&
+              op.path === "/api/v1/marketing-team-member/profile"
+            ) {
+              setProfileLoadError("");
+            }
           } catch (error) {
             if (error instanceof ApiRequestError && error.status === 401) {
               redirectToLogin();
               return;
             }
-            setStatusMessage(
+            const message =
               error instanceof ApiRequestError
                 ? error.message
-                : "Unable to load data.",
-            );
+                : "Unable to load data.";
+            if (
+              activeFrameId === MY_PROFILE_FRAME_ID &&
+              op.path === "/api/v1/marketing-team-member/profile"
+            ) {
+              setProfileLoadError(message);
+            } else {
+              setStatusMessage(message);
+            }
             continue;
           }
         }
@@ -359,7 +389,7 @@ export function FigmaScreenDataProvider({
 
     if (writeOp.unboundRequired.length > 0) {
       setStatusMessage(
-        `Cannot create activity from this step: ${writeOp.unboundRequired.join(", ")} are not bound in the design.`,
+        `Cannot save: ${writeOp.unboundRequired.join(", ")} are required by the API but not bound in the design.`,
       );
       return;
     }
@@ -371,10 +401,12 @@ export function FigmaScreenDataProvider({
     try {
       const token = getAccessToken();
       const payload = requestBodyFor(writeOp, values);
-      const response =
-        frameId === MY_PROFILE_FRAME_ID
-          ? await updateMarketingTeamMemberProfile(payload, token)
-          : await fetchContractWrite(writeOp.method, writeOp.path, payload, token);
+      const response = await fetchContractWrite(
+        writeOp.method,
+        writeOp.path,
+        payload,
+        token,
+      );
 
       publishReadPayload(writeOp.method, writeOp.path, response.body);
       const readOp = figmaReadOperation(frameId);
@@ -394,20 +426,7 @@ export function FigmaScreenDataProvider({
           ? (response.body as { message: string }).message
           : "Saved.",
       );
-      if (frameId === MY_PROFILE_FRAME_ID) {
-        const readOpAfterSave = figmaReadOperation(frameId);
-        if (readOpAfterSave) {
-          const refreshed = await getMarketingTeamMemberProfile(token);
-          publishReadPayload(readOpAfterSave.method, readOpAfterSave.path, refreshed.body);
-          const mergedAfterRefresh = valuesFromResponse(
-            readOpAfterSave,
-            unwrapPayload(refreshed.body, readOpAfterSave.responseUnwrap),
-          );
-          setValues((current) => ({ ...current, ...mergedAfterRefresh }));
-        }
-      } else {
-        await loadReads(frameId);
-      }
+      await loadReads(frameId);
     } catch (error) {
       if (error instanceof ApiRequestError) {
         if (error.status === 401) {
@@ -474,6 +493,13 @@ export function FigmaScreenDataProvider({
         statusMessage,
       ),
       loading ? createElement("p", { className: "sr-only", role: "status" }, "Loading") : null,
+      profileLoadError
+        ? createElement(
+            "p",
+            { className: "sr-only", role: "alert", "aria-live": "assertive" },
+            profileLoadError,
+          )
+        : null,
       children,
     ),
   );

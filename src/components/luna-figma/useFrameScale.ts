@@ -4,6 +4,8 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
+"use client";
+
 import { useEffect, useState, type RefObject } from "react";
 
 export const FRAME_WIDTH = 1440;
