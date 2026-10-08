@@ -37,7 +37,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17495" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[43px] border-[#e2d9d0] border-b-[1px] bg-transparent">
+          <div data-figma-node="5359:17495" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[43px] border-[#e2d9d0] border-b-[1px] bg-[#ffffff]">
             <p data-figma-node="5359:17498" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               John Doe
             </p>
@@ -60,7 +60,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17511" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[99px] border-[#e2d9d0] border-b-[1px] bg-transparent">
+          <div data-figma-node="5359:17511" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[99px] border-[#e2d9d0] border-b-[1px] bg-[#f3f4f6]">
             <p data-figma-node="5359:17514" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Jane Smith
             </p>
@@ -89,7 +89,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17527" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[155px] border-[#e2d9d0] border-b-[1px] bg-transparent">
+          <div data-figma-node="5359:17527" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[155px] border-[#e2d9d0] border-b-[1px] bg-[#ffffff]">
             <p data-figma-node="5359:17530" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Alex Johnson
             </p>
@@ -118,7 +118,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17543" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[211px] border-[#e2d9d0] border-b-[1px] bg-transparent">
+          <div data-figma-node="5359:17543" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[211px] border-[#e2d9d0] border-b-[1px] bg-[#f3f4f6]">
             <p data-figma-node="5359:17546" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Emily Watson
             </p>
@@ -147,7 +147,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17559" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[267px] border-[#e2d9d0] border-b-[1px] bg-transparent">
+          <div data-figma-node="5359:17559" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[267px] border-[#e2d9d0] border-b-[1px] bg-[#ffffff]">
             <p data-figma-node="5359:17562" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Michael Chang
             </p>
@@ -176,7 +176,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17575" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[323px] bg-transparent">
+          <div data-figma-node="5359:17575" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[323px] bg-[#f3f4f6]">
             <p data-figma-node="5359:17578" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Robert Taylor
             </p>

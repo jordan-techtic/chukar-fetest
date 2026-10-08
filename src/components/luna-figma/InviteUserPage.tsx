@@ -20,6 +20,7 @@ import { FiRrCrossSmall_aec28f27 } from "./FiRrCrossSmall_aec28f27";
 import { PenField_051ce1e3 } from "./PenField_051ce1e3";
 import Link from "next/link";
 import { Shared_08359495 } from "./Shared_08359495";
+import { FigmaRadixSelect } from "./FigmaRadixSelect";
 
 export function InviteUserPage() {
   const screenData = useFigmaScreenData();
@@ -74,7 +75,7 @@ export function InviteUserPage() {
                   </div>
                   <div data-figma-node="5449:19743" className="box-border w-[472px] h-[62px] relative flex flex-col items-start gap-[6px] gap-1.5">
                     <p data-figma-node="5449:19744" className="box-border w-[30px] h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-[#4a5568]">Role</p>
-                    <div className="box-border w-[472px] h-[42px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><select data-figma-node="5449:19745" name="role" data-figma-field="role" data-figma-field-origin="design_text" {...figmaFieldProps("role")} aria-label="Please select" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#9ca3af] font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap pt-[12px] pr-[14px] pb-[12px] pl-[14px]"><option value="">Please select</option></select><div className="pointer-events-none absolute inset-0"><ChevronDown_a4db42af data-figma-node="5449:19752" data-figma-component="5111:6287" className="absolute left-[442px] top-[12px]" /></div></div>
+                    <div className="box-border w-[472px] h-[42px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><FigmaRadixSelect data-figma-node="5449:19745" name="role" data-figma-field="role" data-figma-field-origin="design_text" {...figmaFieldProps("role")} aria-label="Please select" placeholder="Please select" options={[{ value: "", label: "Please select" }]} className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#9ca3af] font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap pt-[12px] pr-[14px] pb-[12px] pl-[14px]" /><div className="pointer-events-none absolute inset-0"><ChevronDown_a4db42af data-figma-node="5449:19752" data-figma-component="5111:6287" className="absolute left-[442px] top-[12px]" /></div></div>
                   </div>
                   <div data-figma-node="5449:19747" className="box-border w-[472px] h-[140px] relative flex flex-col items-start gap-[6px] gap-1.5">
                     <p data-figma-node="5449:19748" className="box-border w-[20px] h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-[#4a5568]">Bio</p>

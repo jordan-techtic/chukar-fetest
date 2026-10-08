@@ -18,7 +18,7 @@ import { Variant4_55dac6d9 } from "./Variant4_55dac6d9";
 import { Variant5_785d198e } from "./Variant5_785d198e";
 import { Variant7_1369850e } from "./Variant7_1369850e";
 
-const LUNA_FIGMA_TEXT_5621_25855 = "Sep 1 \n- \nSep 6";
+import { LUNA_COMPILED_TEXT_5621_25855 as LUNA_FIGMA_TEXT_5621_25855 } from "./luna-compiled-text";
 export function ContentSection() {
   return (
     <section data-figma-node="5621:25770" id="content" className="absolute box-border left-[0px] top-[139px] w-[1440px] h-[757px] [--fx:0] [--fww:1440] flex flex-row items-start z-[2]">

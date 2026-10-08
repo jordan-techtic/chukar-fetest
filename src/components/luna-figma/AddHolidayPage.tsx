@@ -20,6 +20,7 @@ import { FiRrCalendar_8ca23c72 } from "./FiRrCalendar_8ca23c72";
 import { FiRrCrossSmall_aec28f27 } from "./FiRrCrossSmall_aec28f27";
 import Link from "next/link";
 import { Shared_08359495 } from "./Shared_08359495";
+import { FigmaRadixSelect } from "./FigmaRadixSelect";
 
 export function AddHolidayPage() {
   const screenData = useFigmaScreenData();
@@ -49,7 +50,9 @@ export function AddHolidayPage() {
                 </div>
                 <div data-figma-node="5621:29008" className="box-border w-[32px] h-[32px] absolute left-[440px] top-[0px] [--fx:440] [--fww:32] gap-3">
                   <Link data-figma-node="5621:29009" href="/manage-users" className="box-border w-[32px] h-[32px] absolute left-[0px] top-[0px] [--fx:0] [--fww:32] overflow-hidden rounded-[6px] pt-[4px] pr-[4px] pb-[4px] pl-[4px] bg-[#fff9f3]">
-                    <FiRrCrossSmall_aec28f27 data-figma-node="5621:29010" data-figma-component="5121:8491" className="absolute left-[4px] top-[4px]" />
+                    <span className="box-border absolute left-[4px] top-[4px] h-[24px] w-[24px] overflow-hidden rounded-[0px]">
+                      <FiRrCrossSmall_aec28f27 data-figma-node="5621:29010" data-figma-component="5121:8491" className="absolute left-[0px] top-[0px]" />
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -64,14 +67,18 @@ export function AddHolidayPage() {
                   <div data-figma-node="5621:29028" className="box-border w-[472px] h-[65px] relative flex items-center gap-[16px] gap-4">
                     <div data-figma-node="5621:29029" className="box-border w-[228px] h-[65px] relative flex flex-col items-start gap-[6px] gap-1.5">
                       <p data-figma-node="5621:29030" className="box-border w-[77px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-[#4a5568]">START DATE</p>
-                      <div className="box-border w-[228px] h-[44px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><select data-figma-node="5621:29031" name="start-date" data-figma-field="start-date" data-figma-field-origin="design_text" {...figmaFieldProps("start-date")} aria-label="Sept 25, 2026" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#231f20] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Sept 25, 2026</option></select><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:29033" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden rounded-[8px] gap-2.5">
-  <FiRrCalendar_8ca23c72 data-figma-node="5621:29034" data-figma-component="5121:5917" className="absolute left-[4px] top-[4px]" />
+                      <div className="box-border w-[228px] h-[44px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><FigmaRadixSelect data-figma-node="5621:29031" name="start-date" data-figma-field="start-date" data-figma-field-origin="design_text" {...figmaFieldProps("start-date")} aria-label="Sept 25, 2026" placeholder="Sept 25, 2026" options={[{ value: "", label: "Sept 25, 2026" }]} className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#231f20] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:29033" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden rounded-[8px] gap-2.5">
+  <span className="box-border absolute left-[4px] top-[4px] h-[16px] w-[16px] overflow-hidden rounded-[0px]">
+    <FiRrCalendar_8ca23c72 data-figma-node="5621:29034" data-figma-component="5121:5917" className="absolute left-[0px] top-[0px]" />
+  </span>
 </div></div></div>
                     </div>
                     <div data-figma-node="5621:29035" className="box-border w-[228px] h-[65px] relative flex flex-col items-start gap-[6px] gap-1.5">
                       <p data-figma-node="5621:29036" className="box-border w-[64px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-[#4a5568]">END DATE</p>
-                      <div className="box-border w-[228px] h-[44px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><select data-figma-node="5621:29037" name="end-date" data-figma-field="end-date" data-figma-field-origin="design_text" {...figmaFieldProps("end-date")} aria-label="Sept 27, 2026" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#231f20] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Sept 27, 2026</option></select><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:29039" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden rounded-[8px] gap-2.5">
-  <FiRrCalendar_8ca23c72 data-figma-node="5621:29040" data-figma-component="5121:5917" className="absolute left-[4px] top-[4px]" />
+                      <div className="box-border w-[228px] h-[44px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><FigmaRadixSelect data-figma-node="5621:29037" name="end-date" data-figma-field="end-date" data-figma-field-origin="design_text" {...figmaFieldProps("end-date")} aria-label="Sept 27, 2026" placeholder="Sept 27, 2026" options={[{ value: "", label: "Sept 27, 2026" }]} className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#231f20] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:29039" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden rounded-[8px] gap-2.5">
+  <span className="box-border absolute left-[4px] top-[4px] h-[16px] w-[16px] overflow-hidden rounded-[0px]">
+    <FiRrCalendar_8ca23c72 data-figma-node="5621:29040" data-figma-component="5121:5917" className="absolute left-[0px] top-[0px]" />
+  </span>
 </div></div></div>
                     </div>
                   </div>

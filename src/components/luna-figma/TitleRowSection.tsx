@@ -8,6 +8,51 @@
 import Link from "next/link";
 import { figmaFieldProps } from "./useFigmaScreenData";
 
+function AddHolidayCtaLink({
+  buttonNodeId,
+  plusNodeId,
+  vectorNodeId,
+  labelNodeId,
+}: {
+  buttonNodeId: string;
+  plusNodeId: string;
+  vectorNodeId: string;
+  labelNodeId: string;
+}) {
+  return (
+    <Link
+      data-figma-node={buttonNodeId}
+      href="/add-holiday"
+      className="box-border inline-flex h-[37px] w-[135px] items-center justify-center gap-[8px] rounded-[6px] bg-[#a21d35] pt-[10px] pr-[18px] pb-[10px] pl-[18px]"
+    >
+      <span
+        data-figma-node={plusNodeId}
+        className="box-border relative h-[14px] w-[14px] overflow-hidden rounded-[0px]"
+      >
+        <svg
+          data-figma-node={vectorNodeId}
+          viewBox="0 0 8.17 8.17"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          className="absolute left-[2.9px] top-[2.9px] h-[8.17px] w-[8.17px]"
+        >
+          <path
+            d="M4.085 0V8.17M0 4.085H8.17"
+            stroke="#ffffff"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      </span>
+      <span
+        data-figma-node={labelNodeId}
+        className="font-onest text-[13px] font-[700] leading-[17px] text-[#ffffff] whitespace-nowrap"
+      >
+        Add Holiday
+      </span>
+    </Link>
+  );
+}
 
 export function TitleRow_5354_14363() {
   return (
@@ -97,7 +142,7 @@ export function TitleRow_5621_28272() {
           <input data-figma-node="5621:28286" name="search-users" type="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent border-0 pl-[38px] pr-[16px] font-onest text-[13px] text-[#686868] placeholder:text-[#686868]" />
         </div>
         <button type="button" className="box-border w-[126px] h-[37px] whitespace-nowrap rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">Upload List</button>
-        <Link data-figma-node="5621:28290" href="/add-holiday" className="box-border w-[146px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add Holiday</span></Link>
+        <AddHolidayCtaLink buttonNodeId="5621:28290" plusNodeId="5621:28291" vectorNodeId="5621:28292" labelNodeId="5621:28293" />
       </div>
     </section>
   );
@@ -135,7 +180,7 @@ export function TitleRowSection() {
           <input data-figma-node="5621:28808" name="search-users" {...figmaFieldProps("search-users")} type="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent border-0 pl-[38px] font-onest text-[13px]" />
         </div>
         <button type="button" className="box-border w-[126px] h-[37px] whitespace-nowrap rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">Upload List</button>
-        <Link data-figma-node="5621:28815" href="/add-holiday" className="box-border w-[146px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add Holiday</span></Link>
+        <AddHolidayCtaLink buttonNodeId="5621:28815" plusNodeId="5621:28816" vectorNodeId="5621:28817" labelNodeId="5621:28818" />
       </div>
     </section>
   );
