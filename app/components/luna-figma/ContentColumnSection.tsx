@@ -121,7 +121,7 @@ export function ContentColumnSection() {
             <p data-figma-node="5725:67493" className="box-border w-[239px] h-[18px] absolute left-[577px] top-[21px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Focuses</p>
             <div data-figma-node="5364:8869" className="box-border w-[100px] h-[15px] absolute left-[836px] top-[22px] flex items-center gap-[8px] gap-2">
               <svg data-figma-node="5364:8870" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6fcf97" /></svg>
-              <p data-figma-node="5364:8871" className="box-border w-[50px] h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-[#686868]">#F4A261</p>
+              <p data-figma-node="5364:8871" className="box-border w-[50px] h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-[#686868]">#6FCF97</p>
             </div>
             <div data-figma-node="5359:17221" className="box-border w-[100px] h-[16px] absolute left-[956px] top-[22px]">
               <div data-figma-node="5359:17222" data-figma-component="5111:12391" className="box-border w-[28px] h-[16px] absolute left-[0px] top-[0px] rounded-[20px] gap-0.5 bg-[#a21d35]">
@@ -155,7 +155,7 @@ export function ContentColumnSection() {
             <p data-figma-node="5725:67495" className="box-border w-[239px] h-[18px] absolute left-[577px] top-[21px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Focuses</p>
             <div data-figma-node="5364:8873" className="box-border w-[100px] h-[15px] absolute left-[836px] top-[22px] flex items-center gap-[8px] gap-2">
               <svg data-figma-node="5364:8874" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#da002f" /></svg>
-              <p data-figma-node="5364:8875" className="box-border w-[48px] h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-[#686868]">#E76F51</p>
+              <p data-figma-node="5364:8875" className="box-border w-[48px] h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-[#686868]">#DA002F</p>
             </div>
             <div data-figma-node="5359:17238" className="box-border w-[100px] h-[16px] absolute left-[956px] top-[22px]">
               <div data-figma-node="5359:17239" data-figma-component="5111:12391" className="box-border w-[28px] h-[16px] absolute left-[0px] top-[0px] rounded-[20px] gap-0.5 bg-[#a21d35]">
@@ -192,7 +192,7 @@ export function ContentColumnSection() {
             <p data-figma-node="5725:67497" className="box-border w-[239px] h-[18px] absolute left-[577px] top-[21px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Content</p>
             <div data-figma-node="5364:8877" className="box-border w-[100px] h-[15px] absolute left-[836px] top-[22px] flex items-center gap-[8px] gap-2">
               <svg data-figma-node="5364:8878" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#da002f" /></svg>
-              <p data-figma-node="5364:8879" className="box-border w-[48px] h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-[#686868]">#E76F51</p>
+              <p data-figma-node="5364:8879" className="box-border w-[48px] h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-[#686868]">#DA002F</p>
             </div>
             <div data-figma-node="5359:17255" className="box-border w-[100px] h-[16px] absolute left-[956px] top-[22px]">
               <ActiveFalseSizeDefault_e6eaad3f data-figma-node="5359:17256" data-figma-component="5111:12395" className="absolute left-[0px] top-[0px]" />

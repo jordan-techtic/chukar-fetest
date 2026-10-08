@@ -29,7 +29,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${onest.variable}`}>
-      <body className="font-inter antialiased">{children}</body>
+      <body className="font-inter antialiased">
+        <button
+          type="button"
+          data-figma-node="5621:28815"
+          className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0"
+          tabIndex={-1}
+          aria-hidden
+        >
+          <span className="box-border inline-flex h-[37px] w-[135px] items-center justify-center whitespace-nowrap">
+            Add Button
+          </span>
+        </button>
+        {children}
+      </body>
     </html>
   );
 }

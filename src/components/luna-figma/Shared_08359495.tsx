@@ -21,7 +21,7 @@ export function Shared_08359495({ className = "", ...rest }: { className?: strin
     </div>
     <div data-figma-node="I5621:28801;5217:13733" className="box-border w-[217px] h-[40px] absolute left-[1203px] top-[20px] gap-4">
       <button data-figma-node="I5621:28801;5217:13746" type="button" data-figma-unresolved-action="true" className="box-border w-[145px] h-[40px] absolute left-[0px] top-[0px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer"><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20] whitespace-nowrap">oPEN CALANDER</span></button>
-      <div data-figma-node="I5621:28801;5217:13749" className="box-border w-[56px] h-[32px] absolute left-[161px] top-[4px] gap-2">
+      <div data-figma-node="I5621:28801;5217:13749" className="box-border w-[56px] h-[32px] absolute left-[161px] top-[4px] overflow-hidden rounded-[0px] gap-2">
         <SizeDefaultTypeImageStatusFalse_59ef8191 data-figma-node="I5621:28801;5217:13750" data-figma-component="5111:12456" className="absolute left-[0px] top-[0px]" />
         <ChevronDown_a4db42af data-figma-node="I5621:28801;5217:13752" data-figma-component="5111:6287" className="absolute left-[40px] top-[8px]" />
       </div>

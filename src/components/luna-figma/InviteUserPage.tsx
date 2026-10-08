@@ -39,12 +39,12 @@ export function InviteUserPage() {
           <div data-figma-node="5449:19594" className="pointer-events-auto box-border w-[1440px] h-[770px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] flex flex-row items-center justify-center pt-[103px] pr-[460px] pb-[103px] pl-[460px]" style={{backgroundColor: "rgba(26, 32, 44, 0.584)"}}>
             <div data-figma-node="5449:19595" className="box-border w-[520px] h-[564px] rounded-[12px] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)] relative flex flex-col items-center gap-[24px] gap-6 pt-[24px] pr-[24px] pb-[24px] pl-[24px] bg-[#ffffff]">
               <div data-figma-node="5449:19596" className="box-border w-[472px] h-[32px] relative">
-                <div data-figma-node="5449:19597" className="box-border w-[126px] h-[24px] absolute left-[0px] top-[4px] [--fx:0] [--fww:126] flex items-center gap-[8px] gap-2">
+                <div data-figma-node="5449:19597" className="box-border w-[126px] h-[24px] absolute left-[0px] top-[4px] [--fx:0] [--fww:126] overflow-hidden rounded-[0px] flex items-center gap-[8px] gap-2">
                   <PenField_051ce1e3 data-figma-node="5449:19598" data-figma-component="5111:7679" className="relative" />
                   <p data-figma-node="5449:19599" className="box-border w-[94px] h-[23px] font-onest text-[18px] font-[700] leading-[23px] text-left whitespace-nowrap text-[#231f20]">Invite User</p>
                 </div>
                 <div data-figma-node="5449:19600" className="box-border w-[32px] h-[32px] absolute left-[440px] top-[0px] [--fx:440] [--fww:32] gap-3">
-                  <a data-figma-node="5449:19601" href="/manage-users" className="box-border w-[32px] h-[32px] absolute left-[0px] top-[0px] [--fx:0] [--fww:32] rounded-[6px] pt-[4px] pr-[4px] pb-[4px] pl-[4px] bg-[#fff9f3]">
+                  <a data-figma-node="5449:19601" href="/manage-users" className="box-border w-[32px] h-[32px] absolute left-[0px] top-[0px] [--fx:0] [--fww:32] overflow-hidden rounded-[6px] pt-[4px] pr-[4px] pb-[4px] pl-[4px] bg-[#fff9f3]">
                     <FiRrCrossSmall_aec28f27 data-figma-node="5449:19602" data-figma-component="5121:8491" className="absolute left-[4px] top-[4px]" />
                   </a>
                 </div>

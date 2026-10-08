@@ -37,7 +37,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17495" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[43px] border-[#e2d9d0] border-b-[1px] bg-[#ffffff]">
+          <div data-figma-node="5359:17495" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[43px] border-[#e2d9d0] border-b-[1px] bg-transparent">
             <p data-figma-node="5359:17498" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               John Doe
             </p>
@@ -60,7 +60,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17511" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[99px] border-[#e2d9d0] border-b-[1px] bg-[#f3f4f6]">
+          <div data-figma-node="5359:17511" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[99px] border-[#e2d9d0] border-b-[1px] bg-transparent">
             <p data-figma-node="5359:17514" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Jane Smith
             </p>
@@ -81,7 +81,7 @@ export function ManageUsersContentSection() {
                 readOnly
                 defaultValue="Admin"
                 aria-label="Admin"
-                className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#7c3aed] whitespace-nowrap"
+                className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4b5563] whitespace-nowrap"
               />
             </div>
             <p data-figma-node="5359:17518" className="box-border w-[140px] h-[18px] absolute left-[1076px] top-[19px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
@@ -89,7 +89,7 @@ export function ManageUsersContentSection() {
             </p>
           </div>
 
-          <div data-figma-node="5359:17527" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[155px] border-[#e2d9d0] border-b-[1px] bg-[#ffffff]">
+          <div data-figma-node="5359:17527" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[155px] border-[#e2d9d0] border-b-[1px] bg-transparent">
             <p data-figma-node="5359:17530" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Alex Johnson
             </p>
@@ -103,14 +103,22 @@ export function ManageUsersContentSection() {
               className="box-border w-[376px] h-[18px] absolute left-[420px] top-[19px] appearance-none border-0 bg-transparent font-onest text-[14px] font-[400] leading-[18px] text-[#686868]"
             />
             <div data-figma-node="5359:17532" className="box-border w-[120px] h-[22px] absolute left-[816px] top-[17px] rounded-[100px] bg-[#f5f3ff] pt-[4px] pr-[10px] pb-[4px] pl-[10px]">
-              <input data-figma-node="5359:17533" name="role-alex-j" type="text" readOnly defaultValue="Admin" aria-label="Admin" className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#7c3aed] whitespace-nowrap" />
+              <input
+                data-figma-node="5359:17533"
+                name="role-alex-j"
+                type="text"
+                readOnly
+                defaultValue="Admin"
+                aria-label="Admin"
+                className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4b5563] whitespace-nowrap"
+              />
             </div>
             <p data-figma-node="5359:17534" className="box-border w-[140px] h-[18px] absolute left-[1076px] top-[19px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               1 day ago
             </p>
           </div>
 
-          <div data-figma-node="5359:17543" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[211px] border-[#e2d9d0] border-b-[1px] bg-[#f3f4f6]">
+          <div data-figma-node="5359:17543" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[211px] border-[#e2d9d0] border-b-[1px] bg-transparent">
             <p data-figma-node="5359:17546" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Emily Watson
             </p>
@@ -124,14 +132,22 @@ export function ManageUsersContentSection() {
               className="box-border w-[376px] h-[18px] absolute left-[420px] top-[19px] appearance-none border-0 bg-transparent font-onest text-[14px] font-[400] leading-[18px] text-[#686868]"
             />
             <div data-figma-node="5359:17548" className="box-border w-[120px] h-[22px] absolute left-[816px] top-[17px] rounded-[100px] bg-[#eef2ff] pt-[4px] pr-[10px] pb-[4px] pl-[10px]">
-              <input data-figma-node="5359:17549" name="role-emily-w" type="text" readOnly defaultValue="Admin" aria-label="Admin" className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4f46e5] whitespace-nowrap" />
+              <input
+                data-figma-node="5359:17549"
+                name="role-emily-w"
+                type="text"
+                readOnly
+                defaultValue="Admin"
+                aria-label="Admin"
+                className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4b5563] whitespace-nowrap"
+              />
             </div>
             <p data-figma-node="5359:17550" className="box-border w-[140px] h-[18px] absolute left-[1076px] top-[19px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               3 days ago
             </p>
           </div>
 
-          <div data-figma-node="5359:17559" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[267px] border-[#e2d9d0] border-b-[1px] bg-[#ffffff]">
+          <div data-figma-node="5359:17559" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[267px] border-[#e2d9d0] border-b-[1px] bg-transparent">
             <p data-figma-node="5359:17562" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Michael Chang
             </p>
@@ -145,14 +161,22 @@ export function ManageUsersContentSection() {
               className="box-border w-[376px] h-[18px] absolute left-[420px] top-[19px] appearance-none border-0 bg-transparent font-onest text-[14px] font-[400] leading-[18px] text-[#686868]"
             />
             <div data-figma-node="5359:17564" className="box-border w-[120px] h-[22px] absolute left-[816px] top-[17px] rounded-[100px] bg-[#f5f3ff] pt-[4px] pr-[10px] pb-[4px] pl-[10px]">
-              <input data-figma-node="5359:17565" name="role-michael-c" type="text" readOnly defaultValue="Admin" aria-label="Admin" className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#7c3aed] whitespace-nowrap" />
+              <input
+                data-figma-node="5359:17565"
+                name="role-michael-c"
+                type="text"
+                readOnly
+                defaultValue="Admin"
+                aria-label="Admin"
+                className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4b5563] whitespace-nowrap"
+              />
             </div>
             <p data-figma-node="5359:17566" className="box-border w-[140px] h-[18px] absolute left-[1076px] top-[19px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               5 days ago
             </p>
           </div>
 
-          <div data-figma-node="5359:17575" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[323px] bg-[#f3f4f6]">
+          <div data-figma-node="5359:17575" className="box-border w-[1360px] h-[56px] absolute left-[0px] top-[323px] bg-transparent">
             <p data-figma-node="5359:17578" className="box-border w-[332px] h-[18px] absolute left-[44px] top-[19px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               Robert Taylor
             </p>
@@ -166,7 +190,15 @@ export function ManageUsersContentSection() {
               className="box-border w-[376px] h-[18px] absolute left-[420px] top-[19px] appearance-none border-0 bg-transparent font-onest text-[14px] font-[400] leading-[18px] text-[#686868]"
             />
             <div data-figma-node="5359:17580" className="box-border w-[120px] h-[22px] absolute left-[816px] top-[17px] rounded-[100px] bg-[#eef2ff] pt-[4px] pr-[10px] pb-[4px] pl-[10px]">
-              <input data-figma-node="5359:17581" name="role-robert-t" type="text" readOnly defaultValue="Admin" aria-label="Admin" className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4f46e5] whitespace-nowrap" />
+              <input
+                data-figma-node="5359:17581"
+                name="role-robert-t"
+                type="text"
+                readOnly
+                defaultValue="Admin"
+                aria-label="Admin"
+                className="box-border w-[68px] h-[14px] absolute left-[26px] top-[4px] appearance-none border-0 bg-transparent font-onest text-[11px] font-[700] leading-[14px] text-[#4b5563] whitespace-nowrap"
+              />
             </div>
             <p data-figma-node="5359:17582" className="box-border w-[140px] h-[18px] absolute left-[1076px] top-[19px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#231f20]">
               1 week ago

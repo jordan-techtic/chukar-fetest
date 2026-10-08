@@ -17,6 +17,8 @@ import { FiRrEnvelope_edd5c8e7 } from "./FiRrEnvelope_edd5c8e7";
 import { Variant4_55dac6d9 } from "./Variant4_55dac6d9";
 import { Variant5_785d198e } from "./Variant5_785d198e";
 import { Variant7_1369850e } from "./Variant7_1369850e";
+
+const LUNA_FIGMA_TEXT_5621_25855 = "Sep 1 \n- \nSep 6";
 export function ContentSection() {
   return (
     <section data-figma-node="5621:25770" id="content" className="absolute box-border left-[0px] top-[139px] w-[1440px] h-[757px] [--fx:0] [--fww:1440] flex flex-row items-start z-[2]">
@@ -91,34 +93,34 @@ export function ContentSection() {
                 <div data-figma-node="5621:25852" className="box-border w-[1368px] h-[180px] relative overflow-hidden bg-[#ffffff]">
                   <div data-figma-node="5621:25853" className="box-border w-[60px] h-[180px] absolute left-[0px] top-[0px] flex flex-col items-center gap-1 pt-[12px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]" style={{backgroundColor: "rgba(0, 0, 0, 0)"}}>
                     <p data-figma-node="5621:25854" className="box-border w-[22px] h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#a21d35]">W1</p>
-                    <p data-figma-node="5621:25855" className="box-border w-[34px] h-[42px] font-onest text-[11px] font-[400] leading-[14px] text-center text-[#686868] whitespace-pre-line">{"Sep 1 \n- \nSep 6"}</p>
+                    <p data-figma-node="5621:25855" className="box-border w-[34px] h-[42px] font-onest text-[11px] font-[400] leading-[14px] text-center text-[#686868] whitespace-pre-line">{LUNA_FIGMA_TEXT_5621_25855}</p>
                   </div>
                   <div data-figma-node="5621:25856" data-figma-component="5556:77518" className="box-border w-[187px] h-[180px] absolute left-[60px] top-[0px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]" />
                   <Empty_895c96af data-figma-node="5621:25857" data-figma-component="5602:61866" className="absolute left-[247px] top-[0px]" />
                   <Empty_895c96af data-figma-node="5621:25858" data-figma-component="5602:61866" className="absolute left-[443px] top-[0px]" />
                   <div data-figma-node="5621:25859" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[638px] top-[0px] overflow-hidden">
-                    <Variant4_55dac6d9 className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25859;5725:52065" className="relative" />
+                    <Variant4_55dac6d9 className="relative"  figmaInstancePrefix="I5621:25859;5725:47922" kebabAction="act_315861aef729" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25859;5725:52065" className="relative"  figmaInstancePrefix="I5621:25859;5725:52065" kebabAction="act_04e775163dd8" />
                   </div>
                   <div data-figma-node="5621:25860" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[834px] top-[0px] overflow-hidden">
-                    <Variant5_785d198e data-figma-node="I5621:25860;5602:69270" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25860;5725:47922" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25860;5725:52065" className="relative" />
+                    <Variant5_785d198e data-figma-node="I5621:25860;5602:69270" className="relative"  figmaInstancePrefix="I5621:25860;5602:69270" kebabAction="act_b8b1e9c7efbf" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25860;5725:47922" className="relative"  figmaInstancePrefix="I5621:25860;5725:47922" kebabAction="act_d7fc7688e26e" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25860;5725:52065" className="relative"  figmaInstancePrefix="I5621:25860;5725:52065" kebabAction="act_a59b4e19b2f1" />
                   </div>
                   <div data-figma-node="5621:25861" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[1029px] top-[0px] overflow-hidden">
-                    <Variant5_785d198e data-figma-node="I5621:25861;5602:69270" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25861;5725:47922" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25861;5725:52065" className="relative" />
+                    <Variant5_785d198e data-figma-node="I5621:25861;5602:69270" className="relative"  figmaInstancePrefix="I5621:25861;5602:69270" kebabAction="act_1e3aa81d21fd" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25861;5725:47922" className="relative"  figmaInstancePrefix="I5621:25861;5725:47922" kebabAction="act_78a880b1566d" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25861;5725:52065" className="relative"  figmaInstancePrefix="I5621:25861;5725:52065" kebabAction="act_6f69f5b829af" />
                   </div>
                   <div data-figma-node="5621:25862" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[1225px] top-[0px] overflow-hidden">
-                    <Variant5_785d198e data-figma-node="I5621:25862;5602:69270" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25862;5725:47922" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25862;5725:52065" className="relative" />
+                    <Variant5_785d198e data-figma-node="I5621:25862;5602:69270" className="relative"  figmaInstancePrefix="I5621:25862;5602:69270" kebabAction="act_5f0fd18d3dfe" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25862;5725:47922" className="relative"  figmaInstancePrefix="I5621:25862;5725:47922" kebabAction="act_5f1cd876eef1" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25862;5725:52065" className="relative"  figmaInstancePrefix="I5621:25862;5725:52065" kebabAction="act_e15775cba98e" />
                   </div>
                   <div data-figma-node="5621:25863" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[1421px] top-[0px] overflow-hidden">
-                    <Variant5_785d198e data-figma-node="I5621:25863;5602:69270" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25863;5725:47922" className="relative" />
-                    <Variant4_55dac6d9 data-figma-node="I5621:25863;5725:52065" className="relative" />
+                    <Variant5_785d198e data-figma-node="I5621:25863;5602:69270" className="relative"  figmaInstancePrefix="I5621:25863;5602:69270" kebabAction="act_c0cc583f40c2" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25863;5725:47922" className="relative"  figmaInstancePrefix="I5621:25863;5725:47922" kebabAction="act_a7d6b3180b40" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25863;5725:52065" className="relative"  figmaInstancePrefix="I5621:25863;5725:52065" kebabAction="act_35d8fd9db1ab" />
                   </div>
                   <div className="pointer-events-none absolute left-[820px] top-[36px] w-[196px] h-[16px] overflow-hidden"><div className="luna-spec-marquee-track flex w-max"><div className="flex shrink-0"><img data-figma-node="I5621:25856;5725:102098" src="/assets/figma/I5621-25856-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25857;5725:81430" src="/assets/figma/I5621-25857-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25858;5725:81430" src="/assets/figma/I5621-25858-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25859;5725:77344" src="/assets/figma/I5621-25859-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25860;5725:77344" src="/assets/figma/I5621-25860-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25861;5725:77344" src="/assets/figma/I5621-25861-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25862;5725:77344" src="/assets/figma/I5621-25862-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25863;5725:77344" src="/assets/figma/I5621-25863-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /></div><div className="flex shrink-0" aria-hidden="true"><img data-figma-node="I5621:25856;5725:102098" src="/assets/figma/I5621-25856-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25857;5725:81430" src="/assets/figma/I5621-25857-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25858;5725:81430" src="/assets/figma/I5621-25858-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25859;5725:77344" src="/assets/figma/I5621-25859-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25860;5725:77344" src="/assets/figma/I5621-25860-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25861;5725:77344" src="/assets/figma/I5621-25861-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25862;5725:77344" src="/assets/figma/I5621-25862-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25863;5725:77344" src="/assets/figma/I5621-25863-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /></div></div></div>
                 </div>
@@ -147,7 +149,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25886;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25886;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25886;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25886;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25886;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25886;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25886;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -169,7 +171,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25886;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25886;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25886;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25886;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25886;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25886;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25886;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -191,7 +193,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25886;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25886;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25886;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25886;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25886;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25886;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25886;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -226,7 +228,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25887;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25887;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25887;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25887;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25887;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25887;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25887;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -248,7 +250,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25887;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25887;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25887;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25887;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25887;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25887;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25887;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -270,7 +272,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25887;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25887;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25887;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25887;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25887;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25887;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25887;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -305,7 +307,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25888;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25888;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25888;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25888;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25888;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25888;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25888;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -327,7 +329,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25888;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25888;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25888;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25888;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25888;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25888;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25888;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -349,7 +351,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25888;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25888;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25888;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25888;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25888;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25888;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25888;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -384,7 +386,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25889;5602:69270;5602:69046" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
                           <div data-figma-node="I5621:25889;5602:69270;5602:69047" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25889;5602:69270;5602:69048" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25889;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25889;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrELearning_336860e7 data-figma-node="I5621:25889;5602:69270;5725:46976" data-figma-component="5121:8577" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25889;5602:69270;5602:69056" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -406,7 +408,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25889;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25889;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25889;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25889;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25889;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25889;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25889;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -428,7 +430,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25889;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25889;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25889;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25889;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25889;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25889;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25889;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -476,7 +478,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25891;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25891;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25891;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25891;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25891;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25891;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25891;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -498,7 +500,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25891;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25891;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25891;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25891;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25891;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25891;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25891;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -520,7 +522,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25891;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25891;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25891;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25891;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25891;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25891;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25891;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -555,7 +557,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25892;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25892;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25892;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25892;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25892;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25892;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25892;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -577,7 +579,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25892;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25892;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25892;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25892;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25892;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25892;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25892;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -599,7 +601,7 @@ Sep 13</p>
                         <div data-figma-node="I5621:25892;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25892;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25892;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25892;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25892;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25892;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25892;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -639,13 +641,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25898;5725:77344" src="/assets/figma/I5621-25898-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25898;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant5_785d198e data-figma-node="I5621:25898;5602:69270" data-figma-component="5602:69045" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25898;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant5_785d198e data-figma-node="I5621:25898;5602:69270" data-figma-component="5602:69045" className="relative"  figmaInstancePrefix="I5621:25898;5602:69270" kebabAction="act_b8b1e9c7efbf" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25898;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25898;5725:47922" kebabAction="act_3ec87fc98de0" />
                       <div data-figma-node="I5621:25898;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25898;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25898;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25898;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25898;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25898;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25898;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25898;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -676,13 +678,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25899;5725:77344" src="/assets/figma/I5621-25899-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25899;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant5_785d198e data-figma-node="I5621:25899;5602:69270" data-figma-component="5602:69045" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25899;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant5_785d198e data-figma-node="I5621:25899;5602:69270" data-figma-component="5602:69045" className="relative"  figmaInstancePrefix="I5621:25899;5602:69270" kebabAction="act_b8b1e9c7efbf" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25899;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25899;5725:47922" kebabAction="act_aa7154e517f8" />
                       <div data-figma-node="I5621:25899;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25899;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25899;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25899;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25899;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25899;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25899;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25899;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -713,13 +715,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25900;5725:77344" src="/assets/figma/I5621-25900-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25900;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant4_55dac6d9 data-figma-node="I5621:25900;5602:69270" data-figma-component="5602:68955" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25900;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25900;5602:69270" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25900;5602:69270" kebabAction="act_1e5ef2f8de81" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25900;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25900;5725:47922" kebabAction="act_adc9d794c64c" />
                       <div data-figma-node="I5621:25900;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25900;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25900;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25900;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25900;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25900;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25900;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25900;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -750,13 +752,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25901;5725:77344" src="/assets/figma/I5621-25901-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25901;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant5_785d198e data-figma-node="I5621:25901;5602:69270" data-figma-component="5602:69045" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25901;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant5_785d198e data-figma-node="I5621:25901;5602:69270" data-figma-component="5602:69045" className="relative"  figmaInstancePrefix="I5621:25901;5602:69270" kebabAction="act_b8b1e9c7efbf" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25901;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25901;5725:47922" kebabAction="act_72d812e3bea3" />
                       <div data-figma-node="I5621:25901;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25901;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25901;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25901;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25901;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25901;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25901;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25901;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -787,13 +789,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25902;5725:77344" src="/assets/figma/I5621-25902-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25902;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant4_55dac6d9 data-figma-node="I5621:25902;5602:69270" data-figma-component="5602:68955" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25902;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25902;5602:69270" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25902;5602:69270" kebabAction="act_aa72752264c5" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25902;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25902;5725:47922" kebabAction="act_b53739be83b9" />
                       <div data-figma-node="I5621:25902;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25902;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25902;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25902;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25902;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25902;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25902;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25902;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -824,13 +826,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25903;5725:77344" src="/assets/figma/I5621-25903-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25903;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant5_785d198e data-figma-node="I5621:25903;5602:69270" data-figma-component="5602:69045" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25903;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant5_785d198e data-figma-node="I5621:25903;5602:69270" data-figma-component="5602:69045" className="relative"  figmaInstancePrefix="I5621:25903;5602:69270" kebabAction="act_b8b1e9c7efbf" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25903;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25903;5725:47922" kebabAction="act_9f3c62c76283" />
                       <div data-figma-node="I5621:25903;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25903;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25903;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25903;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25903;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25903;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25903;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25903;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -861,13 +863,13 @@ Sep 20</p>
                       <img data-figma-node="I5621:25904;5725:77344" src="/assets/figma/I5621-25904-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5621:25904;5602:61816" className="box-border w-[172px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
-                      <Variant4_55dac6d9 data-figma-node="I5621:25904;5602:69270" data-figma-component="5602:68955" className="relative" />
-                      <Variant4_55dac6d9 data-figma-node="I5621:25904;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25904;5602:69270" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25904;5602:69270" kebabAction="act_d47efa34a91f" />
+                      <Variant4_55dac6d9 data-figma-node="I5621:25904;5725:47922" data-figma-component="5602:68955" className="relative"  figmaInstancePrefix="I5621:25904;5725:47922" kebabAction="act_c10397a0f269" />
                       <div data-figma-node="I5621:25904;5725:52065" data-figma-component="5602:68955" className="box-border w-[172px] h-[52px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative gap-1">
                         <div data-figma-node="I5621:25904;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25904;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25904;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25904;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25904;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25904;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25904;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -910,7 +912,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25909;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25909;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25909;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25909;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25909;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25909;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25909;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -932,7 +934,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25909;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25909;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25909;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25909;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25909;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25909;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25909;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -954,7 +956,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25909;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25909;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25909;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25909;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25909;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25909;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25909;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -989,7 +991,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25910;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25910;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25910;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25910;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25910;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25910;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25910;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1011,7 +1013,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25910;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25910;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25910;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25910;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25910;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25910;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25910;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1033,7 +1035,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25910;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25910;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25910;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25910;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25910;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25910;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25910;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1068,7 +1070,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25911;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25911;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25911;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25911;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25911;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25911;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25911;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1090,7 +1092,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25911;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25911;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25911;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25911;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25911;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25911;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25911;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1112,7 +1114,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25911;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25911;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25911;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25911;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25911;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25911;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25911;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1147,7 +1149,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25912;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25912;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25912;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25912;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25912;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25912;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25912;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1169,7 +1171,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25912;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25912;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25912;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25912;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25912;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25912;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25912;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1191,7 +1193,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25912;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25912;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25912;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25912;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25912;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25912;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25912;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1226,7 +1228,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25913;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25913;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25913;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25913;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25913;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25913;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25913;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1248,7 +1250,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25913;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25913;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25913;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25913;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25913;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25913;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25913;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1270,7 +1272,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25913;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25913;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25913;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25913;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25913;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25913;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25913;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1305,7 +1307,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25914;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25914;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25914;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25914;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25914;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25914;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25914;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1327,7 +1329,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25914;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25914;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25914;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25914;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25914;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25914;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25914;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1349,7 +1351,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25914;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25914;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25914;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25914;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25914;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25914;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25914;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1384,7 +1386,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25915;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25915;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25915;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25915;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25915;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25915;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25915;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1406,7 +1408,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25915;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25915;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25915;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25915;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25915;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25915;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25915;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1428,7 +1430,7 @@ Sep 20</p>
                         <div data-figma-node="I5621:25915;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25915;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25915;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25915;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25915;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25915;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25915;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1471,7 +1473,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25920;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25920;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25920;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25920;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25920;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25920;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25920;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1493,7 +1495,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25920;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25920;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25920;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25920;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25920;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25920;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25920;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1515,7 +1517,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25920;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25920;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25920;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25920;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25920;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25920;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25920;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1550,7 +1552,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25921;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25921;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25921;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25921;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25921;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25921;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25921;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1572,7 +1574,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25921;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25921;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25921;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25921;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25921;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25921;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25921;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1594,7 +1596,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25921;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25921;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25921;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25921;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25921;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25921;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25921;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1629,7 +1631,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25922;5602:69270;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25922;5602:69270;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25922;5602:69270;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25922;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25922;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25922;5602:69270;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25922;5602:69270;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1651,7 +1653,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25922;5725:47922;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25922;5725:47922;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25922;5725:47922;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25922;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25922;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25922;5725:47922;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25922;5725:47922;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
@@ -1673,7 +1675,7 @@ Sep 30</p>
                         <div data-figma-node="I5621:25922;5725:52065;5602:68956" className="box-border w-[172px] h-[52px] absolute left-[0px] top-[0px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                           <div data-figma-node="I5621:25922;5725:52065;5602:68957" className="box-border w-[156px] h-[36px] absolute left-[8px] top-[8px] flex flex-col items-center gap-[4px] gap-1">
                             <div data-figma-node="I5621:25922;5725:52065;5602:68958" className="box-border w-[156px] h-[15px] relative flex items-center gap-[6px] gap-1.5">
-                              <div data-figma-node="I5621:25922;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1">
+                              <div data-figma-node="I5621:25922;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative gap-1 overflow-hidden rounded-[0px]">
                                 <FiRrEnvelope_edd5c8e7 data-figma-node="I5621:25922;5725:52065;5725:47375" data-figma-component="5121:8609" className="absolute left-[0px] top-[0px]" />
                               </div>
                               <p data-figma-node="I5621:25922;5725:52065;5602:68966" className="box-border w-[116px] h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
