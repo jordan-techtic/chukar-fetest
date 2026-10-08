@@ -4,10 +4,19 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-.font-inter { font-family: var(--font-inter), 'Inter', sans-serif; }
-.font-onest { font-family: var(--font-onest), 'Onest', sans-serif; }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap");
 
-html, body { background-color: #fff9f3; min-height: 100%; font-family: var(--font-inter), 'Inter', sans-serif; }
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-onest: 'Onest', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+.font-inter { font-family: 'Inter', sans-serif; }
+.font-onest { font-family: 'Onest', sans-serif; }
+
+html, body { background-color: #fff9f3; min-height: 100%; font-family: var(--font-inter, 'Inter'), sans-serif; }
 
 @keyframes luna-spec-marquee {
   from { transform: translateX(0); }

@@ -28,158 +28,99 @@ export interface FigmaOperation {
   readonly submitNodeId: string | null;
 }
 
-const CREATE_ACTIVITY_FRAME_ID = "5217:16193";
-const MANAGE_ACTIVITY_FRAME_ID = "5359:17106";
-const WEEK_CALENDAR_DEFAULT_FRAME_ID = "5602:71490";
-const WEEK_CALENDAR_HISTORICAL_FRAME_ID = "5584:26945";
-const ANNUAL_CALENDAR_DEFAULT_FRAME_ID = "5645:60757";
-
-const MARKETING_TEAM_MEMBER_CALENDAR_PATH =
-  "/api/v1/marketing-team-member/calendar";
-const MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH =
-  "/api/v1/marketing-team-member/performance-metrics";
-
-const MARKETING_TEAM_MEMBER_ACTIVITIES_PATH =
-  "/api/v1/marketing-team-member/activities";
-const MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH =
-  "/api/v1/marketing-team-member/activities/{id}";
-
 /** Screen frame id → contract operations its form uses. */
 export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
-  [CREATE_ACTIVITY_FRAME_ID]: [
+  "5359:17278": [
     {
-      fields: [],
       method: "POST",
-      path: "/api/v1/marketing-team-member/activities",
-      responseUnwrap: "data",
+      path: "/api/v1/marketing-team-member/categories",
       role: "write",
-      submitNodeId: null,
-      unboundRequired: ["title", "start_date", "activity_type"],
+      submitNodeId: "5449:19302",
+      responseUnwrap: "data",
+      unboundRequired: [],
+      fields: [
+        {
+          figmaField: "title",
+          apiField: "title",
+          nodeId: "5449:19250",
+          kind: "text",
+          required: true,
+          resolution: "schema",
+          minLength: 1,
+          maxLength: 100,
+        },
+        {
+          figmaField: "description",
+          apiField: "description",
+          nodeId: "5449:19260",
+          kind: "textarea",
+          required: false,
+          resolution: "schema",
+          maxLength: 500,
+        },
+      ],
     },
   ],
-  [WEEK_CALENDAR_DEFAULT_FRAME_ID]: [
+  "5449:19126": [
     {
-      fields: [],
       method: "GET",
-      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
-      responseUnwrap: "data",
+      path: "/api/v1/marketing-team-member/categories",
       role: "read",
-      submitNodeId: null,
+      fields: [],
       unboundRequired: [],
-    },
-  ],
-  [WEEK_CALENDAR_HISTORICAL_FRAME_ID]: [
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
       responseUnwrap: "data",
-      role: "read",
       submitNodeId: null,
-      unboundRequired: [],
-    },
-  ],
-  [ANNUAL_CALENDAR_DEFAULT_FRAME_ID]: [
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-  ],
-  [MANAGE_ACTIVITY_FRAME_ID]: [
-    {
-      fields: [],
-      method: "GET",
-      path: MARKETING_TEAM_MEMBER_ACTIVITIES_PATH,
-      responseUnwrap: "data",
-      role: "read",
-      submitNodeId: null,
-      unboundRequired: [],
-    },
-    {
-      fields: [],
-      method: "POST",
-      path: MARKETING_TEAM_MEMBER_ACTIVITIES_PATH,
-      responseUnwrap: "data",
-      role: "write",
-      submitNodeId: null,
-      unboundRequired: ["title", "start_date", "activity_type"],
-    },
-    {
-      fields: [],
-      method: "PUT",
-      path: MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH,
-      responseUnwrap: "data",
-      role: "write",
-      submitNodeId: null,
-      unboundRequired: ["id"],
-    },
-    {
-      fields: [],
-      method: "DELETE",
-      path: MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH,
-      responseUnwrap: "data",
-      role: "write",
-      submitNodeId: null,
-      unboundRequired: ["id"],
     },
   ],
 };
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
-  "5217:16193": [
+  "5329:12177": [
+    "date-range",
+    "user",
+    "action-type"
+  ],
+  "5359:17278": [
+    "filter-categories"
+  ],
+  "5359:17424": [
+    "search-users",
+    "jane-smith-company-com",
+    "alex-j-company-com",
+    "emily-w-company-com",
+    "michael-c-company-com",
+    "robert-t-company-com"
+  ],
+  "5449:19126": [
+    "filter-categories"
+  ],
+  "5449:19395": [
+    "role",
+    "search-users",
+    "jane-smith-company-com",
+    "alex-j-company-com",
+    "emily-w-company-com",
+    "michael-c-company-com",
+    "robert-t-company-com"
+  ],
+  "5621:25767": [
+    "clear-all",
     "mon",
     "tue",
     "wed",
     "thu",
     "fri",
-    "sat",
-    "activity-category"
+    "sat"
   ],
-  "5359:17106": [
-    "search-input"
+  "5621:28270": [
+    "search-users"
   ],
-  "5584:26945": [
-    "mon",
-    "tue",
-    "wed",
-    "thu",
-    "fri",
-    "sat",
-    "field-5596-52876",
-    "field-5596-52878",
-    "field-5596-52880",
-    "field-5596-52882",
-    "field-5596-52884",
-    "field-5596-52886"
-  ],
-  "5645:60757": [
-    "mon",
-    "tue",
-    "wed",
-    "thu",
-    "fri",
-    "sat",
-    "field-i5645-60760-5596-52876",
-    "field-i5645-60760-5596-52878",
-    "field-i5645-60760-5596-52880",
-    "field-i5645-60760-5596-52882",
-    "field-i5645-60760-5596-52884",
-    "field-i5645-60760-5596-52886"
+  "5621:28800": [
+    "holiday-name",
+    "start-date",
+    "end-date",
+    "search-users"
   ]
 };
 

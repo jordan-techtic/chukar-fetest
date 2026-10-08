@@ -19,26 +19,40 @@ export interface FigmaDisplayBinding {
   readonly evidence: string;
 }
 
-const ACTIVITIES_LIST_OP = "GET /api/v1/marketing-team-member/activities";
-const CALENDAR_OP = "GET /api/v1/marketing-team-member/calendar";
-const METRICS_OP = "GET /api/v1/marketing-team-member/performance-metrics";
+const CATEGORIES_LIST_OP = "GET /api/v1/marketing-team-member/categories";
+const MANAGE_CATEGORY_FRAME = "5449:19126";
 
-const MANAGE_ACTIVITY_FRAME = "5359:17106";
-const WEEK_CALENDAR_HISTORICAL_FRAME = "5584:26945";
-const ANNUAL_CALENDAR_FRAME = "5645:60757";
-
-function itemBinding(
+function textBinding(
   nodeId: string,
   frameId: string,
-  operation: string,
   path: readonly FigmaDisplayPathPart[],
+  valueType: FigmaDisplayBinding["valueType"] = "string",
+  format: string | null = null,
 ): FigmaDisplayBinding {
   return {
     nodeId,
     frameId,
-    operation,
+    operation: CATEGORIES_LIST_OP,
     responseUnwrap: "data",
     path,
+    kind: "text",
+    valueType,
+    format,
+    evidence: "explicit_binding",
+  };
+}
+
+function itemBinding(
+  nodeId: string,
+  frameId: string,
+  index: number,
+): FigmaDisplayBinding {
+  return {
+    nodeId,
+    frameId,
+    operation: CATEGORIES_LIST_OP,
+    responseUnwrap: "data",
+    path: ["items", index],
     kind: "item",
     valueType: null,
     format: null,
@@ -48,34 +62,23 @@ function itemBinding(
 
 /** data-figma-node → the response field it renders. */
 export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
-  "5359:17170": itemBinding("5359:17170", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 0]),
-  "5359:17187": itemBinding("5359:17187", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 1]),
-  "5359:17204": itemBinding("5359:17204", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 2]),
-  "5359:17218": itemBinding("5359:17218", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 3]),
-  "5359:17235": itemBinding("5359:17235", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 4]),
-  "5359:17252": itemBinding("5359:17252", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 5]),
-  "I5589:50622;5556:77452": itemBinding("I5589:50622;5556:77452", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 0]),
-  "I5589:50622;5589:48811": itemBinding("I5589:50622;5589:48811", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 1]),
-  "I5589:50622;5589:48828": itemBinding("I5589:50622;5589:48828", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 2]),
-  "I5645:60760;5589:50622;5556:77452": itemBinding("I5645:60760;5589:50622;5556:77452", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 0]),
-  "I5645:60760;5589:50622;5589:48811": itemBinding("I5645:60760;5589:50622;5589:48811", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 1]),
-  "I5645:60760;5589:50622;5589:48828": itemBinding("I5645:60760;5589:50622;5589:48828", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 2]),
-  "I5645:60759;5273:21173": itemBinding("I5645:60759;5273:21173", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 0]),
-  "I5645:60759;5273:21176": itemBinding("I5645:60759;5273:21176", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 1]),
-  "I5645:60759;5273:21179": itemBinding("I5645:60759;5273:21179", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 2]),
-  "I5584:26947;5273:21173": itemBinding("I5584:26947;5273:21173", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 0]),
-  "I5584:26947;5273:21176": itemBinding("I5584:26947;5273:21176", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 1]),
-  "I5584:26947;5273:21179": itemBinding("I5584:26947;5273:21179", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 2]),
-  "I5645:60760;5596:52901;5602:55917": itemBinding("I5645:60760;5596:52901;5602:55917", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 0]),
-  "I5645:60760;5596:52901;5602:55918": itemBinding("I5645:60760;5596:52901;5602:55918", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 1]),
-  "I5645:60760;5596:52901;5602:55919": itemBinding("I5645:60760;5596:52901;5602:55919", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 2]),
+  "5449:19152": textBinding("5449:19152", MANAGE_CATEGORY_FRAME, ["items", 0, "title"]),
+  "5449:19153": textBinding("5449:19153", MANAGE_CATEGORY_FRAME, ["items", 0, "description"]),
+  "5449:19156": textBinding("5449:19156", MANAGE_CATEGORY_FRAME, ["items", 0, "created_at"], "date", "month_day"),
+  "5449:19163": textBinding("5449:19163", MANAGE_CATEGORY_FRAME, ["items", 1, "title"]),
+  "5449:19164": textBinding("5449:19164", MANAGE_CATEGORY_FRAME, ["items", 1, "description"]),
+  "5449:19167": textBinding("5449:19167", MANAGE_CATEGORY_FRAME, ["items", 1, "created_at"], "date", "month_day"),
+  "5449:19174": textBinding("5449:19174", MANAGE_CATEGORY_FRAME, ["items", 2, "title"]),
+  "5449:19175": textBinding("5449:19175", MANAGE_CATEGORY_FRAME, ["items", 2, "description"]),
+  "5449:19178": textBinding("5449:19178", MANAGE_CATEGORY_FRAME, ["items", 2, "created_at"], "date", "month_day"),
+  "5449:19151": itemBinding("5449:19151", MANAGE_CATEGORY_FRAME, 0),
+  "5449:19162": itemBinding("5449:19162", MANAGE_CATEGORY_FRAME, 1),
+  "5449:19173": itemBinding("5449:19173", MANAGE_CATEGORY_FRAME, 2),
 };
 
 /** Screen frame id → read operations its display bindings consume. */
 export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {
-  [MANAGE_ACTIVITY_FRAME]: [ACTIVITIES_LIST_OP],
-  [WEEK_CALENDAR_HISTORICAL_FRAME]: [CALENDAR_OP],
-  [ANNUAL_CALENDAR_FRAME]: [CALENDAR_OP, METRICS_OP],
+  [MANAGE_CATEGORY_FRAME]: [CATEGORIES_LIST_OP],
 };
 
 const payloads = new Map<string, unknown>();
@@ -196,7 +199,8 @@ export function formatDisplayValue(value: unknown, binding: FigmaDisplayBinding)
 }
 
 /** Bound copy: the response value once its read is published, the Figma copy before. */
-export function useFigmaTextContent(nodeId: string, fallback: string): string {
+export function figmaTextContent(nodeId: string, fallback: string): string {
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- generated layout entry point
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "text") {
@@ -213,7 +217,8 @@ export type FigmaItemBinding = {
 };
 
 /** A repeated card hides once its read is published without an item at its index. */
-export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
+export function figmaItemProps(nodeId: string): FigmaItemBinding {
+  // eslint-disable-next-line react-hooks/rules-of-hooks -- generated layout entry point
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "item") {
@@ -229,4 +234,33 @@ export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
 /** Read operations ("METHOD /path") whose responses feed this frame's display bindings. */
 export function figmaDisplayOperations(frameId: string): readonly string[] {
   return FIGMA_DISPLAY_OPERATIONS[frameId] ?? [];
+}
+
+/** Raw published response body for a contract read (envelope included). */
+export function readPublishedPayload(method: string, path: string): unknown {
+  return payloads.get(`${method.toUpperCase()} ${path}`);
+}
+
+export type PublishedCategoryRow = {
+  readonly id: string;
+  readonly status: string;
+};
+
+/** Category list row from the last published GET /categories response. */
+export function publishedCategoryAt(rowIndex: number): PublishedCategoryRow | null {
+  const body = readPublishedPayload("GET", "/api/v1/marketing-team-member/categories");
+  const envelope = asRecord(body);
+  const data = asRecord(envelope?.data);
+  const items = data?.items;
+  if (!Array.isArray(items) || rowIndex < 0 || rowIndex >= items.length) {
+    return null;
+  }
+  const item = asRecord(items[rowIndex]);
+  if (!item || typeof item.id !== "string") {
+    return null;
+  }
+  return {
+    id: item.id,
+    status: typeof item.status === "string" ? item.status : "active",
+  };
 }
