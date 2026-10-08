@@ -13,7 +13,7 @@ import "./figma-fonts.css";
 import "./figma-responsive.css";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
-import { TitleRowSection } from "./TitleRowSection";
+import { TitleRow_5339_8822 } from "./TitleRowSection";
 import { WorkspaceSplitSection } from "./WorkspaceSplitSection";
 import { figmaActionProps } from "./useFigmaScreenData";
 import { ChevronDown_a4db42af } from "./ChevronDown_a4db42af";
@@ -30,7 +30,7 @@ export function AuditLogsPage() {
     >
       <main className="relative z-10 flex w-full flex-col">
         <FigmaFrameShell frameWidth={1440} frameHeight={770} nodeId="frame">
-        <TitleRowSection />
+        <TitleRow_5339_8822 />
         <WorkspaceSplitSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
           <div data-figma-node="5333:4347" data-figma-component="5273:20995" className="pointer-events-auto box-border w-[1440px] h-[80px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] bg-[#ffffff]">

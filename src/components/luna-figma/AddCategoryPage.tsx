@@ -13,8 +13,7 @@ import "./figma-fonts.css";
 import "./figma-responsive.css";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
-import { TitleRowSection } from "./TitleRowSection";
-import { ContentColumnSection } from "./ContentColumnSection";
+import { TitleRow_5354_14348 } from "./TitleRowSection";
 import { FiRrCrossSmall_aec28f27 } from "./FiRrCrossSmall_aec28f27";
 import { PenField_051ce1e3 } from "./PenField_051ce1e3";
 import { Shared_08359495 } from "./Shared_08359495";
@@ -37,10 +36,9 @@ export function AddCategoryPage() {
     >
       <main className="relative z-10 flex w-full flex-col">
         <FigmaFrameShell frameWidth={1440} frameHeight={770} nodeId="frame">
-        <TitleRowSection />
-        <ContentColumnSection />
+        <TitleRow_5354_14348 />
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <Shared_08359495 data-figma-node="5354:14252" data-figma-component="5273:20995" className="pointer-events-auto absolute left-[0px] top-[0px]" />
+          <Shared_08359495 data-figma-node="5354:14252" data-figma-component="5273:20995" className="pointer-events-auto absolute left-[0px] top-[0px] box-border h-[80px] overflow-hidden" />
         </div>
         <div className="pointer-events-none absolute inset-0 z-[3]">
           <div data-figma-node="5449:19238" className="pointer-events-auto box-border w-[1440px] h-[770px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] flex flex-row items-center justify-center pt-[171px] pr-[460px] pb-[171px] pl-[460px]" style={{backgroundColor: "rgba(26, 32, 44, 0.584)"}}>
@@ -80,7 +78,7 @@ export function AddCategoryPage() {
               </div>
               <div data-figma-node="5449:19298" className="box-border w-[472px] h-[1px] bg-[#e2d9d0]" />
               <div data-figma-node="5449:19299" className="box-border w-[472px] h-[38px] relative flex items-center gap-[12px] gap-3">
-                <a data-figma-node="5449:19300" href="/manage-category" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#0b0b0b]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></a>
+                <a data-figma-node="5449:19300" href="/manage-category" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#231f20]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></a>
                 <button data-figma-node="5449:19302" type="button" {...figmaActionProps("act_4acaeab4fb49")} className="box-border w-[153px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#a21d35] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#ffffff] whitespace-nowrap">Create Category</span></button>
               </div>
             </div>

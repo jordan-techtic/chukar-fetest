@@ -27,7 +27,7 @@ export function Variant7_1369850e({ className = "", ...rest }: { className?: str
         </div>
       </div>
     </div>
-    <div data-figma-node="I5621:25937;5559:19118" className="box-border w-[88px] h-[130px] overflow-hidden relative flex flex-col items-center gap-[4px] gap-1">
+    <div data-figma-node="I5621:25937;5559:19118" className="box-border w-[264px] h-[130px] relative flex flex-col items-center gap-[4px] gap-1">
       <Variant4_736d44f6 data-figma-node="I5621:25937;5556:77452" data-figma-component="5217:10959" className="relative" />
       <Variant4_736d44f6 data-figma-node="I5621:25937;5589:48811" data-figma-component="5217:10959" className="relative" />
       <Variant4_736d44f6 data-figma-node="I5621:25937;5589:48828" data-figma-component="5217:10959" className="relative" />

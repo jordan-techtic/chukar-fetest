@@ -13,8 +13,8 @@ import "./figma-fonts.css";
 import "./figma-responsive.css";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
-import { TitleRowSection } from "./TitleRowSection";
-import { ContentColumnSection } from "./ContentColumnSection";
+import { TitleRow_5354_14363 } from "./TitleRowSection";
+import { ManageUsersContentSection } from "./ManageUsersContentSection";
 import { figmaActionProps } from "./useFigmaScreenData";
 import { ChevronDown_a4db42af } from "./ChevronDown_a4db42af";
 import { SizeDefaultTypeImageStatusFalse_59ef8191 } from "./SizeDefaultTypeImageStatusFalse_59ef8191";
@@ -30,8 +30,8 @@ export function ManageUsersPage() {
     >
       <main className="relative z-10 flex w-full flex-col">
         <FigmaFrameShell frameWidth={1440} frameHeight={770} nodeId="frame">
-        <TitleRowSection />
-        <ContentColumnSection />
+        <TitleRow_5354_14363 />
+        <ManageUsersContentSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
           <div data-figma-node="5354:14284" data-figma-component="5273:20995" className="pointer-events-auto box-border w-[1440px] h-[80px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] bg-[#ffffff]">
             <div data-figma-node="I5354:14284;5217:13714" className="box-border w-[282px] h-[50px] absolute left-[20px] top-[15px] [--fx:20] [--fww:282] gap-[30px]">

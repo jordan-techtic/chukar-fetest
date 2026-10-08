@@ -9,7 +9,7 @@ import { ChevronDown_a4db42af } from "./ChevronDown_a4db42af";
 import { SizeDefaultTypeImageStatusFalse_59ef8191 } from "./SizeDefaultTypeImageStatusFalse_59ef8191";
 export function Shared_08359495({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="5621:28801" data-figma-component="5273:20995" className={`box-border w-[1440px] h-[80px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] bg-[#ffffff] ${className}`} {...rest}>
+  <div data-figma-node="5621:28801" data-figma-component="5273:20995" className={`box-border h-[80px] w-[1440px] overflow-hidden shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] bg-[#ffffff] ${className}`} {...rest}>
     <div data-figma-node="I5621:28801;5217:13714" className="box-border w-[282px] h-[50px] absolute left-[20px] top-[15px] gap-[30px]">
       <div data-figma-node="I5621:28801;5217:13715" className="box-border w-[282px] h-[50px] absolute left-[0px] top-[0px] gap-3">
         <img data-figma-node="I5621:28801;5217:13716" src="/assets/figma/I5621-28801-5217-13716.png" alt="image 2" className="box-border w-[54px] h-[50px] absolute left-[0px] top-[0px] rounded-[10px] max-w-none object-cover object-top" />

@@ -34,7 +34,7 @@ export function AddHolidayPage() {
         <TitleRowSection />
         <ContentColumnSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <Shared_08359495 data-figma-node="5621:28801" data-figma-component="5273:20995" className="pointer-events-auto absolute left-[0px] top-[0px]" />
+          <Shared_08359495 data-figma-node="5621:28801" data-figma-component="5273:20995" className="pointer-events-auto absolute left-[0px] top-[0px] box-border h-[80px] overflow-hidden" />
         </div>
         <div className="pointer-events-none absolute inset-0 z-[3]">
           <div data-figma-node="5621:29002" className="pointer-events-auto box-border w-[1440px] h-[770px] absolute left-[0px] top-[0px] [--fx:0] [--fww:1440] flex flex-row items-center justify-center pt-[218px] pr-[460px] pb-[218px] pl-[460px]" style={{backgroundColor: "rgba(26, 32, 44, 0.584)"}}>
@@ -56,19 +56,19 @@ export function AddHolidayPage() {
                 <div data-figma-node="5621:29022" className="box-border w-[472px] h-[144px] absolute left-[0px] top-[0px] [--fx:0] [--fww:472] flex flex-col items-center gap-[16px] gap-4">
                   <div data-figma-node="5621:29023" className="box-border w-[472px] h-[63px] relative gap-4">
                     <div data-figma-node="5621:29024" className="box-border w-[472px] h-[63px] absolute left-[0px] top-[0px] [--fx:0] [--fww:472] flex flex-col items-start gap-[6px] gap-1.5">
-                      <p data-figma-node="5621:29025" className="box-border w-[93px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#4a5568]">Holiday name</p>
+                      <p data-figma-node="5621:29025" className="box-border w-[93px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#4a5568]">Holiday Name</p>
                       <input data-figma-node="5621:29026" name="holiday-name" data-figma-field="holiday-name" data-figma-field-origin="design_text" {...figmaFieldProps("holiday-name")} type="text" placeholder="e.g. Thanksgiving Day" aria-label="e.g. Thanksgiving Day" className="box-border w-[472px] h-[42px] rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-[#ffffff] pt-[12px] pr-[14px] pb-[12px] pl-[14px] text-[#9ca3af] placeholder:text-[#9ca3af]" />
                     </div>
                   </div>
                   <div data-figma-node="5621:29028" className="box-border w-[472px] h-[65px] relative flex items-center gap-[16px] gap-4">
                     <div data-figma-node="5621:29029" className="box-border w-[228px] h-[65px] relative flex flex-col items-start gap-[6px] gap-1.5">
-                      <p data-figma-node="5621:29030" className="box-border w-[77px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-[#4a5568]">Start Date</p>
+                      <p data-figma-node="5621:29030" className="box-border w-[77px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-[#4a5568]">START DATE</p>
                       <div className="box-border w-[228px] h-[44px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><select data-figma-node="5621:29031" name="start-date" data-figma-field="start-date" data-figma-field-origin="design_text" {...figmaFieldProps("start-date")} aria-label="Sept 25, 2026" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#231f20] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Sept 25, 2026</option></select><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:29033" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] gap-2.5">
   <FiRrCalendar_8ca23c72 data-figma-node="5621:29034" data-figma-component="5121:5917" className="absolute left-[4px] top-[4px]" />
 </div></div></div>
                     </div>
                     <div data-figma-node="5621:29035" className="box-border w-[228px] h-[65px] relative flex flex-col items-start gap-[6px] gap-1.5">
-                      <p data-figma-node="5621:29036" className="box-border w-[64px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-[#4a5568]">End Date</p>
+                      <p data-figma-node="5621:29036" className="box-border w-[64px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-[#4a5568]">END DATE</p>
                       <div className="box-border w-[228px] h-[44px] rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]"><select data-figma-node="5621:29037" name="end-date" data-figma-field="end-date" data-figma-field-origin="design_text" {...figmaFieldProps("end-date")} aria-label="Sept 27, 2026" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-[#231f20] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Sept 27, 2026</option></select><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:29039" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] gap-2.5">
   <FiRrCalendar_8ca23c72 data-figma-node="5621:29040" data-figma-component="5121:5917" className="absolute left-[4px] top-[4px]" />
 </div></div></div>
@@ -78,7 +78,7 @@ export function AddHolidayPage() {
               </div>
               <div data-figma-node="5621:29041" className="box-border w-[472px] h-[1px] bg-[#e2d9d0]" />
               <div data-figma-node="5621:29042" className="box-border w-[472px] h-[38px] relative flex items-center gap-[12px] gap-3">
-                <a data-figma-node="5621:29043" href="/manage-holiday" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#0b0b0b]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></a>
+                <a data-figma-node="5621:29043" href="/manage-holiday" className="box-border w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#231f20]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#4a5568] whitespace-nowrap">Cancel</span></a>
                 <a data-figma-node="5621:29045" href="/manage-holiday" className="box-border w-[129px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#a21d35] hover:opacity-90"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#ffffff] whitespace-nowrap">Save Holiday</span></a>
               </div>
             </div>

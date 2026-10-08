@@ -13,8 +13,10 @@ import { WeekCalendarAdvanceFilterPage } from "@/components/luna-figma/WeekCalen
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="week-calendar-advance-filter">
-      <WeekCalendarAdvanceFilterPage />
-    </FigmaScreenDataProvider>
+    <div className="w-full flex flex-col">
+      <FigmaScreenDataProvider routePath="week-calendar-advance-filter">
+        <WeekCalendarAdvanceFilterPage />
+      </FigmaScreenDataProvider>
+    </div>
   );
 }
