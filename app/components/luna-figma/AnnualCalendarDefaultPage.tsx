@@ -134,20 +134,20 @@ export function AnnualCalendarDefaultPage() {
               <div data-figma-node="I5645:60759;5528:40185" className="box-border w-[575px] h-[29px] relative flex items-center gap-[20px] gap-5">
                 <div data-figma-node="I5645:60759;5503:25941" className="box-border w-[526px] h-[29px] relative gap-2.5">
                   <div data-figma-node="I5645:60759;5273:21172" className="box-border w-[114px] h-[29px] absolute left-[0px] top-[0px] [--fx:0] [--fww:114] rounded-[6px] flex items-center gap-[6px] gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                    <FiRrMegaphone_89c2c562 data-figma-node="I5645:60759;5273:21173" data-figma-component="5121:9035" className="relative" />
+                    <FiRrMegaphone_89c2c562 data-figma-node="I5645:60759;5273:21173" data-figma-component="5121:9035" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5645:60759;5273:21174" className="box-border w-[70px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Promotions</p>
                   </div>
                   <div data-figma-node="I5645:60759;5273:21175" className="box-border w-[95px] h-[29px] absolute left-[124px] top-[0px] [--fx:124] [--fww:95] rounded-[6px] flex items-center gap-[6px] gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                    <FiRrDocument_718ff216 data-figma-node="I5645:60759;5273:21176" data-figma-component="5121:8558" className="relative" />
+                    <FiRrDocument_718ff216 data-figma-node="I5645:60759;5273:21176" data-figma-component="5121:8558" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5645:60759;5273:21177" className="box-border w-[51px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Content</p>
                   </div>
                   <div data-figma-node="I5645:60759;5273:21178" className="box-border w-[95px] h-[29px] absolute left-[229px] top-[0px] [--fx:229] [--fww:95] rounded-[6px] flex items-center gap-[6px] gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-[#ffffff]">
-                    <FiRrTarget_6d6fca9a data-figma-node="I5645:60759;5273:21179" data-figma-component="5121:9541" className="relative" />
+                    <FiRrTarget_6d6fca9a data-figma-node="I5645:60759;5273:21179" data-figma-component="5121:9541" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5645:60759;5273:21180" className="box-border w-[51px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#a21d35]">Focuses</p>
                   </div>
                   <div data-figma-node="I5645:60759;5273:21181" className="box-border w-[1px] h-[20px] absolute left-[334px] top-[4px] [--fx:334] [--fww:1] bg-[#e2d9d0]"></div>
                   <div data-figma-node="I5645:60759;5621:25566" className="box-border w-[93px] h-[27px] absolute left-[345px] top-[1px] [--fx:345] [--fww:93] rounded-[6px] flex items-center gap-[6px] gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-[#d5ba8c]">
-                    <FiRrFilter_17dad1cf data-figma-node="I5645:60759;5621:25623" data-figma-component="5121:8683" className="relative" />
+                    <FiRrFilter_17dad1cf data-figma-node="I5645:60759;5621:25623" data-figma-component="5121:8683" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5645:60759;5621:25568" className="box-border w-[49px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#000000]">Filters</p>
                   </div>
                   <div data-figma-node="I5645:60759;5273:21182" className="box-border w-[78px] h-[29px] absolute left-[448px] top-[0px] [--fx:448] [--fww:78] rounded-[6px] flex items-center gap-[4px] gap-1 pt-[6px] pr-[10px] pb-[6px] pl-[10px] border-[#e2d9d0] border-[1px] bg-[#e2d9d0]">

@@ -9,6 +9,7 @@
  */
 import "./figma-fonts.css";
 import "./figma-responsive.css";
+import Link from "next/link";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
 import { WeekCalendarDefaultContentSection } from "./WeekCalendarDefaultContentSection";
@@ -54,13 +55,13 @@ export function WeekCalendarDefaultPage() {
               </div>
             </div>
             <div data-figma-node="I5602:71491;5217:13733" className="box-border w-max max-w-[434px] h-[40px] relative flex flex-row items-center gap-4">
-              <button data-figma-node="I5602:71491;5217:13742" type="button" data-figma-action="act_6c8575e83444" {...figmaActionProps("act_6c8575e83444")} className="box-border w-max max-w-[208px] h-[40px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-[#faf3e8] hover:opacity-90 cursor-pointer gap-2"><RefreshCcwClock_22f0146d data-figma-node="I5602:71491;5217:13743" data-figma-component="5111:8203" className="relative overflow-hidden rounded-[4px]" /><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#a21d35] whitespace-nowrap">Historical View</span></button>
+              <Link data-figma-node="I5602:71491;5217:13742" href="/calendar" data-figma-action="act_ed2875c8f17c" {...figmaActionProps("act_ed2875c8f17c")} className="box-border w-max max-w-[208px] h-[40px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-[#faf3e8] hover:opacity-90 cursor-pointer gap-2 no-underline"><RefreshCcwClock_22f0146d data-figma-node="I5602:71491;5217:13743" data-figma-component="5111:8203" className="relative overflow-hidden rounded-[4px]" /><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#a21d35] whitespace-nowrap">Historical View</span></Link>
               <button data-figma-node="I5602:71491;5217:13746" type="button" data-figma-action="act_calendar_export_pdf" onClick={handleExportPdf} className="box-border w-max max-w-[138px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer gap-2"><FiRrDownload_e2f06a4e data-figma-node="I5602:71491;5217:13747" data-figma-component="5121:8564" className="relative overflow-hidden rounded-[4px]" /><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20] whitespace-nowrap">Export PDF</span></button>
               <button data-figma-node="I5602:71491;5217:13749" type="button" data-figma-action="act_1c12087c7323" {...figmaActionProps("act_1c12087c7323")} className="box-border w-max max-w-[56px] h-[32px] relative flex flex-row items-center gap-2 cursor-pointer block">
                 <div data-figma-node="I5602:71491;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-[32px] rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
                   <img data-figma-node="I5602:71491;5217:13750;1002:172586" src="/assets/figma/I5602-71491-5217-13750-1002-172586.png" alt="Image" className="box-border w-[32px] h-[32px] rounded-[32px] max-w-none object-cover object-top" />
                 </div>
-                <ChevronDown_a4db42af data-figma-node="I5602:71491;5217:13752" data-figma-component="5111:6287" className="relative" />
+                <ChevronDown_a4db42af data-figma-node="I5602:71491;5217:13752" data-figma-component="5111:6287" className="relative overflow-hidden rounded-[4px]" />
               </button>
             </div>
           </div>
@@ -86,29 +87,29 @@ export function WeekCalendarDefaultPage() {
               <div data-figma-node="I5602:71492;5528:39931" className="box-border w-max max-w-[575px] h-[29px] relative flex flex-row items-center gap-5">
                 <div data-figma-node="I5602:71492;5503:26056" className="box-border w-max max-w-[526px] h-[29px] relative flex flex-row items-center gap-2.5">
                   <div data-figma-node="I5602:71492;5273:20970" className="box-border w-max max-w-[114px] h-[29px] rounded-[6px] relative flex flex-row items-center gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                    <FiRrMegaphone_89c2c562 data-figma-node="I5602:71492;5273:20971" data-figma-component="5121:9035" className="relative" />
+                    <FiRrMegaphone_89c2c562 data-figma-node="I5602:71492;5273:20971" data-figma-component="5121:9035" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5602:71492;5273:20972" className="box-border w-max max-w-[70px] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Promotions</p>
                   </div>
                   <div data-figma-node="I5602:71492;5273:20973" className="box-border w-max max-w-[95px] h-[29px] rounded-[6px] relative flex flex-row items-center gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                    <FiRrDocument_718ff216 data-figma-node="I5602:71492;5273:20974" data-figma-component="5121:8558" className="relative" />
+                    <FiRrDocument_718ff216 data-figma-node="I5602:71492;5273:20974" data-figma-component="5121:8558" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5602:71492;5273:20975" className="box-border w-max max-w-[51px] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Content</p>
                   </div>
                   <div data-figma-node="I5602:71492;5273:20976" className="box-border w-max max-w-[95px] h-[29px] rounded-[6px] relative flex flex-row items-center gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-[#ffffff]">
-                    <FiRrTarget_6d6fca9a data-figma-node="I5602:71492;5273:20977" data-figma-component="5121:9541" className="relative" />
+                    <FiRrTarget_6d6fca9a data-figma-node="I5602:71492;5273:20977" data-figma-component="5121:9541" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5602:71492;5273:20978" className="box-border w-max max-w-[51px] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#a21d35]">Focuses</p>
                   </div>
                   <div data-figma-node="I5602:71492;5273:20979" className="box-border w-[1px] h-[20px] relative block bg-[#e2d9d0]"></div>
                   <button data-figma-node="I5602:71492;5621:25652" type="button" data-figma-action="act_3c6e5300934f" {...figmaActionProps("act_3c6e5300934f")} className="box-border w-max max-w-[93px] h-[27px] rounded-[6px] relative flex flex-row items-center gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-[#d5ba8c] cursor-pointer block">
-                    <FiRrFilter_17dad1cf data-figma-node="I5602:71492;5621:25653" data-figma-component="5121:8683" className="relative" />
+                    <FiRrFilter_17dad1cf data-figma-node="I5602:71492;5621:25653" data-figma-component="5121:8683" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5602:71492;5621:25654" className="box-border w-max max-w-[49px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#000000]">Filters</p>
                   </button>
                   <div data-figma-node="I5602:71492;5273:20980" className="box-border w-max max-w-[78px] h-[29px] rounded-[6px] relative flex flex-row items-center gap-1 pt-[6px] pr-[10px] pb-[6px] pl-[10px] border-[#e2d9d0] border-[1px] bg-[#e2d9d0]">
-                    <FiRrCrossSmall_aec28f27 data-figma-node="I5602:71492;5503:25916" data-figma-component="5121:8491" className="relative" />
+                    <FiRrCrossSmall_aec28f27 data-figma-node="I5602:71492;5503:25916" data-figma-component="5121:8491" className="relative overflow-hidden rounded-[6px]" />
                     <p data-figma-node="I5602:71492;5273:20982" className="box-border w-max max-w-[40px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Clear</p>
                   </div>
                 </div>
                 <button data-figma-node="I5602:71492;5528:36949" type="button" data-figma-action="act_a812655c8af6" {...figmaActionProps("act_a812655c8af6")} className="box-border w-[29px] h-[29px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff] cursor-pointer block">
-                  <MemoPencil_3c0293af data-figma-node="I5602:71492;5528:39864" data-figma-component="5111:10773" className="relative" />
+                  <MemoPencil_3c0293af data-figma-node="I5602:71492;5528:39864" data-figma-component="5111:10773" className="relative overflow-hidden rounded-[6px]" />
                 </button>
               </div>
             </div>

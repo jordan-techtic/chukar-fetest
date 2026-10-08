@@ -98,7 +98,7 @@ export function WeekCalendarDefaultContentSection() {
                       <img data-figma-node="I5602:71581;5725:81430" src="/assets/figma/I5602-71581-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                   </button>
-                  <div data-figma-node="5602:71582" data-figma-component="5602:61810" className="box-border w-[144px] h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <div data-figma-node="5602:71582" data-figma-component="5602:61810" data-figma-action="act_1d2673162dfb" {...figmaActionProps("act_1d2673162dfb")} className="box-border w-[144px] h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5602:71582;5602:61811" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5602:71582;5725:79515" className="box-border w-max max-w-[8px] h-[17px] relative flex flex-row items-center gap-2.5">
                         <p data-figma-node="I5602:71582;5602:61812" className="box-border w-max max-w-[8px] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
@@ -114,11 +114,11 @@ export function WeekCalendarDefaultContentSection() {
                                 <svg data-figma-node="I5602:71582;5602:69270;5725:47328;403:404" viewBox="0 0 11.67 14" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[14px] absolute left-[1px] top-[0px] pointer-events-none overflow-visible"><path d="M8.75 8.16668C8.75 8.32139 8.68854 8.46976 8.57915 8.57916C8.46975 8.68855 8.32138 8.75001 8.16667 8.75001L3.5 8.75001C3.34529 8.75001 3.19692 8.68855 3.08752 8.57916C2.97812 8.46976 2.91667 8.32139 2.91667 8.16668C2.91667 8.01197 2.97812 7.8636 3.08752 7.7542C3.19692 7.6448 3.34529 7.58335 3.5 7.58335L8.16667 7.58335C8.32138 7.58335 8.46975 7.6448 8.57915 7.7542C8.68854 7.8636 8.75 8.01197 8.75 8.16668ZM6.41667 9.91668L3.5 9.91668C3.34529 9.91668 3.19692 9.97814 3.08752 10.0875C2.97812 10.1969 2.91667 10.3453 2.91667 10.5C2.91667 10.6547 2.97812 10.8031 3.08752 10.9125C3.19692 11.0219 3.34529 11.0833 3.5 11.0833L6.41667 11.0833C6.57138 11.0833 6.71975 11.0219 6.82915 10.9125C6.93854 10.8031 7 10.6547 7 10.5C7 10.3453 6.93854 10.1969 6.82915 10.0875C6.71975 9.97814 6.57138 9.91668 6.41667 9.91668ZM11.6667 6.11626L11.6667 11.0833C11.6657 11.8566 11.3582 12.5979 10.8114 13.1447C10.2646 13.6915 9.52326 13.9991 8.75 14L2.91667 14C2.1434 13.9991 1.40208 13.6915 0.855295 13.1447C0.308514 12.5979 0.00092625 11.8566 0 11.0833L0 2.91668C0.00092625 2.14342 0.308514 1.40209 0.855295 0.855308C1.40208 0.308528 2.1434 0.000939695 2.91667 1.34451e-05L5.55042 1.34451e-05C6.08686 -0.00136726 6.61826 0.103606 7.11388 0.308865C7.6095 0.514123 8.05952 0.815594 8.43792 1.19585L10.4702 3.22935C10.8507 3.60749 11.1524 4.05736 11.3577 4.55292C11.5631 5.04847 11.6681 5.57984 11.6667 6.11626L11.6667 6.11626ZM7.61308 2.02068C7.4295 1.84286 7.22338 1.68989 7 1.56568L7 4.08335C7 4.23806 7.06146 4.38643 7.17085 4.49583C7.28025 4.60522 7.42862 4.66668 7.58333 4.66668L10.101 4.66668C9.97672 4.44337 9.82354 4.23743 9.64542 4.05418L7.61308 2.02068ZM10.5 6.11626C10.5 6.02001 10.4813 5.92785 10.4726 5.83335L7.58333 5.83335C7.1192 5.83335 6.67408 5.64897 6.3459 5.32078C6.01771 4.99259 5.83333 4.54748 5.83333 4.08335L5.83333 1.1941C5.73883 1.18535 5.64608 1.16668 5.55042 1.16668L2.91667 1.16668C2.45254 1.16668 2.00742 1.35105 1.67923 1.67924C1.35104 2.00743 1.16667 2.45255 1.16667 2.91668L1.16667 11.0833C1.16667 11.5475 1.35104 11.9926 1.67923 12.3208C2.00742 12.649 2.45254 12.8333 2.91667 12.8333L8.75 12.8333C9.21413 12.8333 9.65925 12.649 9.98744 12.3208C10.3156 11.9926 10.5 11.5475 10.5 11.0833L10.5 6.11626Z" fill="#2a9d8f" /></svg>
                               </div>
                               <p data-figma-node="I5602:71582;5602:69270;5602:69072" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
-                              <div data-figma-node="I5602:71582;5602:69270;5602:69068" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
+                              <button data-figma-node="I5602:71582;5602:69270;5602:69068" type="button" data-figma-action="act_c1ba9e64a4bd" {...figmaActionProps("act_c1ba9e64a4bd")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
                                 <svg data-figma-node="I5602:71582;5602:69270;5602:69069" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
                                 <svg data-figma-node="I5602:71582;5602:69270;5602:69070" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
                                 <svg data-figma-node="I5602:71582;5602:69270;5602:69071" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
-                              </div>
+                              </button>
                             </div>
                             <div data-figma-node="I5602:71582;5602:69270;5602:69073" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-center gap-1">
                               <div data-figma-node="I5602:71582;5602:69270;5602:69075" className="box-border w-full min-w-0 h-full min-h-0 rounded-[100px] relative flex flex-row items-center justify-center gap-2.5 pt-[2px] pr-[6px] pb-[2px] pl-[6px] bg-[#ffffff]">
@@ -145,7 +145,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71583;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71583;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71583;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71583;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71583;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71583;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71583;5602:69270;5602:68962" type="button" data-figma-action="act_90fd80df18b9" {...figmaActionProps("act_90fd80df18b9")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -167,7 +167,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71583;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71583;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71583;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71583;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71583;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71583;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71583;5725:47922;5602:68962" type="button" data-figma-action="act_d7b6f885265e" {...figmaActionProps("act_d7b6f885265e")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -189,7 +189,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71583;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71583;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71583;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71583;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71583;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71583;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71583;5725:52065;5602:68962" type="button" data-figma-action="act_7acdbd24233c" {...figmaActionProps("act_7acdbd24233c")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -221,7 +221,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71584;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71584;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71584;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71584;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71584;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71584;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71584;5602:69270;5602:68962" type="button" data-figma-action="act_0bc0df7720e9" {...figmaActionProps("act_0bc0df7720e9")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -243,7 +243,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71584;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71584;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71584;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71584;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71584;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71584;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71584;5725:47922;5602:68962" type="button" data-figma-action="act_8b6b2d4d4f35" {...figmaActionProps("act_8b6b2d4d4f35")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -265,7 +265,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71584;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71584;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71584;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71584;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71584;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71584;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71584;5725:52065;5602:68962" type="button" data-figma-action="act_834ff08734e3" {...figmaActionProps("act_834ff08734e3")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -297,7 +297,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71585;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71585;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71585;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71585;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71585;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71585;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71585;5602:69270;5602:68962" type="button" data-figma-action="act_c2477e767c8b" {...figmaActionProps("act_c2477e767c8b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -319,7 +319,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71585;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71585;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71585;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71585;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71585;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71585;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71585;5725:47922;5602:68962" type="button" data-figma-action="act_4074bd436f5c" {...figmaActionProps("act_4074bd436f5c")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -341,7 +341,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71585;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71585;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71585;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71585;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71585;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71585;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71585;5725:52065;5602:68962" type="button" data-figma-action="act_37bce873831e" {...figmaActionProps("act_37bce873831e")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -365,7 +365,7 @@ export function WeekCalendarDefaultContentSection() {
                       <div data-figma-node="5725:105828" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                         <div data-figma-node="5725:105829" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                           <div data-figma-node="5725:105830" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                            <FiRrELearning_336860e7 data-figma-node="5725:105833" data-figma-component="5121:8577" className="relative" />
+                            <FiRrELearning_336860e7 data-figma-node="5725:105833" data-figma-component="5121:8577" className="relative overflow-hidden rounded-[6px]" />
                           </div>
                           <p data-figma-node="5725:105834" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                           <div data-figma-node="5725:105835" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -401,7 +401,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71609;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71609;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71609;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71609;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71609;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71609;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71609;5602:69270;5602:68962" type="button" data-figma-action="act_92c2bc48e53b" {...figmaActionProps("act_92c2bc48e53b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -423,7 +423,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71609;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71609;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71609;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71609;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71609;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71609;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71609;5725:47922;5602:68962" type="button" data-figma-action="act_46dee5c9e0c3" {...figmaActionProps("act_46dee5c9e0c3")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -445,7 +445,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71609;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71609;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71609;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71609;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71609;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71609;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71609;5725:52065;5602:68962" type="button" data-figma-action="act_31f19ba425d3" {...figmaActionProps("act_31f19ba425d3")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -477,7 +477,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71610;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71610;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71610;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71610;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71610;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71610;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71610;5602:69270;5602:68962" type="button" data-figma-action="act_0d475e8daca5" {...figmaActionProps("act_0d475e8daca5")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -499,7 +499,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71610;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71610;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71610;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71610;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71610;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71610;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71610;5725:47922;5602:68962" type="button" data-figma-action="act_90ddad0c6963" {...figmaActionProps("act_90ddad0c6963")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -521,7 +521,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71610;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71610;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71610;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71610;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71610;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71610;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71610;5725:52065;5602:68962" type="button" data-figma-action="act_8fad358d5ae4" {...figmaActionProps("act_8fad358d5ae4")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -553,7 +553,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71611;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71611;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71611;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71611;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71611;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71611;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71611;5602:69270;5602:68962" type="button" data-figma-action="act_e5e413d25b1e" {...figmaActionProps("act_e5e413d25b1e")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -575,7 +575,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71611;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71611;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71611;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71611;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71611;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71611;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71611;5725:47922;5602:68962" type="button" data-figma-action="act_547e3e671bd2" {...figmaActionProps("act_547e3e671bd2")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -597,7 +597,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71611;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71611;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71611;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71611;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71611;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71611;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71611;5725:52065;5602:68962" type="button" data-figma-action="act_96ccf5d81968" {...figmaActionProps("act_96ccf5d81968")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -630,7 +630,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71612;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71612;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71612;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71612;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71612;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71612;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71612;5725:47922;5602:68962" type="button" data-figma-action="act_f280c373389b" {...figmaActionProps("act_f280c373389b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -652,7 +652,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71612;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71612;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71612;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71612;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71612;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71612;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71612;5725:52065;5602:68962" type="button" data-figma-action="act_38e50e3c5b61" {...figmaActionProps("act_38e50e3c5b61")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -697,7 +697,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71614;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71614;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71614;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71614;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71614;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71614;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71614;5602:69270;5602:68962" type="button" data-figma-action="act_b330a2453d89" {...figmaActionProps("act_b330a2453d89")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -719,7 +719,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71614;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71614;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71614;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71614;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71614;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71614;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71614;5725:47922;5602:68962" type="button" data-figma-action="act_3b42c02a308c" {...figmaActionProps("act_3b42c02a308c")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -741,7 +741,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71614;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71614;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71614;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71614;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71614;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71614;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71614;5725:52065;5602:68962" type="button" data-figma-action="act_d3fe780754e7" {...figmaActionProps("act_d3fe780754e7")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -776,7 +776,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71615;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71615;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71615;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71615;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71615;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71615;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71615;5602:69270;5602:68962" type="button" data-figma-action="act_f129990e3a1b" {...figmaActionProps("act_f129990e3a1b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -798,7 +798,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71615;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71615;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71615;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71615;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71615;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71615;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71615;5725:47922;5602:68962" type="button" data-figma-action="act_4ac90d93e481" {...figmaActionProps("act_4ac90d93e481")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -820,7 +820,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71615;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71615;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71615;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71615;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71615;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71615;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71615;5725:52065;5602:68962" type="button" data-figma-action="act_7b819b6ee2f9" {...figmaActionProps("act_7b819b6ee2f9")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -881,7 +881,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71623;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71623;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71623;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71623;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71623;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71623;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71623;5602:69270;5602:68962" type="button" data-figma-action="act_be58b2c8a45f" {...figmaActionProps("act_be58b2c8a45f")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -931,7 +931,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71625;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71625;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71625;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71625;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71625;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71625;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71625;5602:69270;5602:68962" type="button" data-figma-action="act_5b3fcaf5994b" {...figmaActionProps("act_5b3fcaf5994b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -953,7 +953,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71625;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71625;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71625;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71625;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71625;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71625;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71625;5725:47922;5602:68962" type="button" data-figma-action="act_795f7e40494c" {...figmaActionProps("act_795f7e40494c")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -975,7 +975,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71625;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71625;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71625;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71625;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71625;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71625;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71625;5725:52065;5602:68962" type="button" data-figma-action="act_80e2e05cb872" {...figmaActionProps("act_80e2e05cb872")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1007,7 +1007,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71626;5602:69270;5602:69047" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71626;5602:69270;5602:69048" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71626;5602:69270;5602:69049" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrELearning_336860e7 data-figma-node="I5602:71626;5602:69270;5725:46976" data-figma-component="5121:8577" className="relative" />
+                                <FiRrELearning_336860e7 data-figma-node="I5602:71626;5602:69270;5725:46976" data-figma-component="5121:8577" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71626;5602:69270;5602:69056" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71626;5602:69270;5602:69052" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1029,7 +1029,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71626;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71626;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71626;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71626;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71626;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71626;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71626;5725:47922;5602:68962" type="button" data-figma-action="act_210446e7f9e5" {...figmaActionProps("act_210446e7f9e5")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1051,7 +1051,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71626;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71626;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71626;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71626;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71626;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71626;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71626;5725:52065;5602:68962" type="button" data-figma-action="act_f62cbd8c0291" {...figmaActionProps("act_f62cbd8c0291")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1086,7 +1086,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71627;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71627;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71627;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71627;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71627;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71627;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71627;5602:69270;5602:68962" type="button" data-figma-action="act_1981c917612e" {...figmaActionProps("act_1981c917612e")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1108,7 +1108,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71627;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71627;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71627;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71627;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71627;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71627;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71627;5725:47922;5602:68962" type="button" data-figma-action="act_1565703da158" {...figmaActionProps("act_1565703da158")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1130,7 +1130,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71627;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71627;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71627;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71627;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71627;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71627;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71627;5725:52065;5602:68962" type="button" data-figma-action="act_a976b49799eb" {...figmaActionProps("act_a976b49799eb")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1164,7 +1164,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71632;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71632;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71632;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71632;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71632;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71632;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71632;5602:69270;5602:68962" type="button" data-figma-action="act_6b1bdb9992e4" {...figmaActionProps("act_6b1bdb9992e4")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1186,7 +1186,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71632;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71632;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71632;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71632;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71632;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71632;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71632;5725:47922;5602:68962" type="button" data-figma-action="act_e8129d443509" {...figmaActionProps("act_e8129d443509")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1208,7 +1208,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71632;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71632;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71632;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71632;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71632;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71632;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71632;5725:52065;5602:68962" type="button" data-figma-action="act_962eeced036b" {...figmaActionProps("act_962eeced036b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1240,7 +1240,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71633;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71633;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71633;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71633;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71633;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71633;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71633;5602:69270;5602:68962" type="button" data-figma-action="act_c1ba9e64a4bd" {...figmaActionProps("act_c1ba9e64a4bd")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1262,7 +1262,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71633;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71633;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71633;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71633;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71633;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71633;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71633;5725:47922;5602:68962" type="button" data-figma-action="act_d5caac9bcb2c" {...figmaActionProps("act_d5caac9bcb2c")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1284,7 +1284,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71633;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71633;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71633;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71633;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71633;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71633;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71633;5725:52065;5602:68962" type="button" data-figma-action="act_26aaace13c0e" {...figmaActionProps("act_26aaace13c0e")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1319,7 +1319,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71634;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71634;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71634;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71634;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71634;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71634;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71634;5602:69270;5602:68962" type="button" data-figma-action="act_6b60bc7cc248" {...figmaActionProps("act_6b60bc7cc248")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1341,7 +1341,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71634;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71634;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71634;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71634;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71634;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71634;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71634;5725:47922;5602:68962" type="button" data-figma-action="act_a79f2ec9e91a" {...figmaActionProps("act_a79f2ec9e91a")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1363,7 +1363,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71634;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71634;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71634;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71634;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71634;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71634;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71634;5725:52065;5602:68962" type="button" data-figma-action="act_b8415d0b8daf" {...figmaActionProps("act_b8415d0b8daf")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1395,7 +1395,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71635;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71635;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71635;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71635;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71635;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71635;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71635;5602:69270;5602:68962" type="button" data-figma-action="act_c5281b618790" {...figmaActionProps("act_c5281b618790")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1417,7 +1417,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71635;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71635;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71635;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71635;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71635;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71635;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71635;5725:47922;5602:68962" type="button" data-figma-action="act_4236da70c1e5" {...figmaActionProps("act_4236da70c1e5")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1439,7 +1439,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71635;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71635;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71635;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71635;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71635;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71635;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71635;5725:52065;5602:68962" type="button" data-figma-action="act_558a8503fc29" {...figmaActionProps("act_558a8503fc29")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1471,7 +1471,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71636;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71636;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71636;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71636;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71636;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71636;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71636;5602:69270;5602:68962" type="button" data-figma-action="act_1c392eec5de6" {...figmaActionProps("act_1c392eec5de6")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1493,7 +1493,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71636;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71636;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71636;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71636;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71636;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71636;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71636;5725:47922;5602:68962" type="button" data-figma-action="act_a38a1c5f225e" {...figmaActionProps("act_a38a1c5f225e")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1515,7 +1515,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71636;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71636;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71636;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71636;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71636;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71636;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71636;5725:52065;5602:68962" type="button" data-figma-action="act_0a01067644c2" {...figmaActionProps("act_0a01067644c2")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1547,7 +1547,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71637;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71637;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71637;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71637;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71637;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71637;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71637;5602:69270;5602:68962" type="button" data-figma-action="act_b6b9e604afd1" {...figmaActionProps("act_b6b9e604afd1")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1569,7 +1569,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71637;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71637;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71637;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71637;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71637;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71637;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71637;5725:47922;5602:68962" type="button" data-figma-action="act_3741fb65c3a7" {...figmaActionProps("act_3741fb65c3a7")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1591,7 +1591,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71637;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71637;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71637;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71637;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71637;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71637;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71637;5725:52065;5602:68962" type="button" data-figma-action="act_d5a8cbeb467b" {...figmaActionProps("act_d5a8cbeb467b")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1623,7 +1623,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71638;5602:69270;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71638;5602:69270;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71638;5602:69270;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71638;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71638;5602:69270;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71638;5602:69270;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71638;5602:69270;5602:68962" type="button" data-figma-action="act_5069b0c18dff" {...figmaActionProps("act_5069b0c18dff")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1645,7 +1645,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71638;5725:47922;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71638;5725:47922;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71638;5725:47922;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71638;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71638;5725:47922;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71638;5725:47922;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71638;5725:47922;5602:68962" type="button" data-figma-action="act_8555a097af2f" {...figmaActionProps("act_8555a097af2f")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1667,7 +1667,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71638;5725:52065;5602:68957" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71638;5725:52065;5602:68958" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71638;5725:52065;5602:68959" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71638;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71638;5725:52065;5725:47375" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71638;5725:52065;5602:68966" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <button data-figma-node="I5602:71638;5725:52065;5602:68962" type="button" data-figma-action="act_0a8c6cad0519" {...figmaActionProps("act_0a8c6cad0519")} className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block">
@@ -1733,7 +1733,7 @@ export function WeekCalendarDefaultContentSection() {
                           <svg data-figma-node="I5602:71660;5725:99926" viewBox="0 0 12.5 12.5" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[13px] absolute left-[2px] top-[2px] pointer-events-none overflow-visible"><path d="M6.25056 0C4.55319 0 4.34013 0.0074375 3.6735 0.03775C3.00813 0.06825 2.55394 0.173562 2.15656 0.328125C1.74544 0.48775 1.39675 0.701312 1.04938 1.04881C0.701688 1.39625 0.488125 1.74494 0.328 2.15587C0.173 2.55338 0.0675625 3.00775 0.037625 3.67281C0.00781246 4.3395 0 4.55263 0 6.25006C0 7.9475 0.00750001 8.15987 0.03775 8.8265C0.068375 9.49187 0.173688 9.94606 0.328125 10.3434C0.487875 10.7546 0.701438 11.1033 1.04894 11.4506C1.39625 11.7983 1.74494 12.0124 2.15575 12.172C2.55344 12.3266 3.00769 12.4319 3.67294 12.4624C4.33962 12.4927 4.5525 12.5001 6.24981 12.5001C7.94738 12.5001 8.15975 12.4927 8.82638 12.4624C9.49175 12.4319 9.94644 12.3266 10.3441 12.172C10.7551 12.0124 11.1032 11.7983 11.4505 11.4506C11.7982 11.1033 12.0117 10.7546 12.1719 10.3436C12.3255 9.94606 12.431 9.49175 12.4622 8.82662C12.4922 8.16 12.5 7.9475 12.5 6.25006C12.5 4.55263 12.4922 4.33962 12.4622 3.67294C12.431 3.00756 12.3255 2.55344 12.1719 2.15606C12.0117 1.74494 11.7982 1.39625 11.4505 1.04881C11.1029 0.701187 10.7552 0.487625 10.3438 0.328187C9.94531 0.173562 9.49087 0.0681875 8.8255 0.03775C8.15881 0.0074375 7.94656 0 6.24862 0L6.25056 0ZM5.68988 1.12631C5.85631 1.12606 6.042 1.12631 6.25056 1.12631C7.91938 1.12631 8.11712 1.13231 8.77612 1.16225C9.3855 1.19012 9.71625 1.29194 9.93656 1.3775C10.2283 1.49075 10.4362 1.62619 10.6548 1.845C10.8736 2.06375 11.0089 2.27206 11.1225 2.56375C11.2081 2.78375 11.31 3.1145 11.3378 3.72388C11.3677 4.38275 11.3742 4.58062 11.3742 6.24862C11.3742 7.91663 11.3677 8.11456 11.3378 8.77337C11.3099 9.38275 11.2081 9.7135 11.1225 9.93356C11.0093 10.2253 10.8736 10.4329 10.6548 10.6516C10.4361 10.8703 10.2284 11.0057 9.93656 11.119C9.7165 11.2049 9.3855 11.3065 8.77612 11.3344C8.11725 11.3643 7.91938 11.3708 6.25056 11.3708C4.58169 11.3708 4.38387 11.3643 3.72506 11.3344C3.11569 11.3063 2.78494 11.2044 2.56444 11.1189C2.27281 11.0056 2.06444 10.8702 1.84569 10.6514C1.62694 10.4327 1.49156 10.2249 1.378 9.93306C1.29244 9.713 1.1905 9.38225 1.16275 8.77287C1.13281 8.114 1.12681 7.91613 1.12681 6.24706C1.12681 4.578 1.13281 4.38119 1.16275 3.72231C1.19062 3.11294 1.29244 2.78219 1.378 2.56187C1.49131 2.27019 1.62694 2.06188 1.84575 1.84313C2.06456 1.62438 2.27281 1.48894 2.5645 1.37544C2.78481 1.2895 3.11569 1.18794 3.72506 1.15994C4.30162 1.13387 4.52506 1.12606 5.68988 1.12475L5.68988 1.12631ZM9.58681 2.16406C9.17275 2.16406 8.83681 2.49969 8.83681 2.91381C8.83681 3.32788 9.17275 3.66381 9.58681 3.66381C10.0009 3.66381 10.3368 3.32788 10.3368 2.91381C10.3368 2.49975 10.0009 2.16381 9.58681 2.16381L9.58681 2.16406ZM6.25056 3.04038C4.47806 3.04038 3.04094 4.4775 3.04094 6.25006C3.04094 8.02262 4.47806 9.45906 6.25056 9.45906C8.02312 9.45906 9.45975 8.02262 9.45975 6.25006C9.45975 4.47756 8.023 3.04038 6.25044 3.04038L6.25056 3.04038ZM6.25056 4.16669C7.40112 4.16669 8.33394 5.09938 8.33394 6.25006C8.33394 7.40063 7.40112 8.33344 6.25056 8.33344C5.1 8.33344 4.16725 7.40063 4.16725 6.25006C4.16725 5.09938 5.09994 4.16669 6.25056 4.16669Z" fill="#ffffff" /></svg>
                         </div>
                         <div data-figma-node="I5602:71660;5725:99927" className="box-border w-[20px] h-[20px] rounded-[13px] relative flex flex-row items-center justify-center bg-[#fde8ed]">
-                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71660;5725:99928" data-figma-component="5121:7331" className="relative" />
+                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71660;5725:99928" data-figma-component="5121:7331" className="relative overflow-hidden rounded-[6px]" />
                         </div>
                       </div>
                     </div>
@@ -1743,7 +1743,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71660;5556:77452;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71660;5556:77452;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71660;5556:77452;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71660;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71660;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71660;5556:77452;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71660;5556:77452;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1765,7 +1765,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71660;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71660;5589:48811;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71660;5589:48811;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71660;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71660;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71660;5589:48811;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71660;5589:48811;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1787,7 +1787,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71660;5589:48828;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71660;5589:48828;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71660;5589:48828;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71660;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71660;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71660;5589:48828;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71660;5589:48828;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1819,7 +1819,7 @@ export function WeekCalendarDefaultContentSection() {
                           <svg data-figma-node="I5602:71661;5725:99926" viewBox="0 0 12.5 12.5" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[13px] absolute left-[2px] top-[2px] pointer-events-none overflow-visible"><path d="M6.25056 0C4.55319 0 4.34013 0.0074375 3.6735 0.03775C3.00813 0.06825 2.55394 0.173562 2.15656 0.328125C1.74544 0.48775 1.39675 0.701312 1.04938 1.04881C0.701688 1.39625 0.488125 1.74494 0.328 2.15587C0.173 2.55338 0.0675625 3.00775 0.037625 3.67281C0.00781246 4.3395 0 4.55263 0 6.25006C0 7.9475 0.00750001 8.15987 0.03775 8.8265C0.068375 9.49187 0.173688 9.94606 0.328125 10.3434C0.487875 10.7546 0.701438 11.1033 1.04894 11.4506C1.39625 11.7983 1.74494 12.0124 2.15575 12.172C2.55344 12.3266 3.00769 12.4319 3.67294 12.4624C4.33962 12.4927 4.5525 12.5001 6.24981 12.5001C7.94738 12.5001 8.15975 12.4927 8.82638 12.4624C9.49175 12.4319 9.94644 12.3266 10.3441 12.172C10.7551 12.0124 11.1032 11.7983 11.4505 11.4506C11.7982 11.1033 12.0117 10.7546 12.1719 10.3436C12.3255 9.94606 12.431 9.49175 12.4622 8.82662C12.4922 8.16 12.5 7.9475 12.5 6.25006C12.5 4.55263 12.4922 4.33962 12.4622 3.67294C12.431 3.00756 12.3255 2.55344 12.1719 2.15606C12.0117 1.74494 11.7982 1.39625 11.4505 1.04881C11.1029 0.701187 10.7552 0.487625 10.3438 0.328187C9.94531 0.173562 9.49087 0.0681875 8.8255 0.03775C8.15881 0.0074375 7.94656 0 6.24862 0L6.25056 0ZM5.68988 1.12631C5.85631 1.12606 6.042 1.12631 6.25056 1.12631C7.91938 1.12631 8.11712 1.13231 8.77612 1.16225C9.3855 1.19012 9.71625 1.29194 9.93656 1.3775C10.2283 1.49075 10.4362 1.62619 10.6548 1.845C10.8736 2.06375 11.0089 2.27206 11.1225 2.56375C11.2081 2.78375 11.31 3.1145 11.3378 3.72388C11.3677 4.38275 11.3742 4.58062 11.3742 6.24862C11.3742 7.91663 11.3677 8.11456 11.3378 8.77337C11.3099 9.38275 11.2081 9.7135 11.1225 9.93356C11.0093 10.2253 10.8736 10.4329 10.6548 10.6516C10.4361 10.8703 10.2284 11.0057 9.93656 11.119C9.7165 11.2049 9.3855 11.3065 8.77612 11.3344C8.11725 11.3643 7.91938 11.3708 6.25056 11.3708C4.58169 11.3708 4.38387 11.3643 3.72506 11.3344C3.11569 11.3063 2.78494 11.2044 2.56444 11.1189C2.27281 11.0056 2.06444 10.8702 1.84569 10.6514C1.62694 10.4327 1.49156 10.2249 1.378 9.93306C1.29244 9.713 1.1905 9.38225 1.16275 8.77287C1.13281 8.114 1.12681 7.91613 1.12681 6.24706C1.12681 4.578 1.13281 4.38119 1.16275 3.72231C1.19062 3.11294 1.29244 2.78219 1.378 2.56187C1.49131 2.27019 1.62694 2.06188 1.84575 1.84313C2.06456 1.62438 2.27281 1.48894 2.5645 1.37544C2.78481 1.2895 3.11569 1.18794 3.72506 1.15994C4.30162 1.13387 4.52506 1.12606 5.68988 1.12475L5.68988 1.12631ZM9.58681 2.16406C9.17275 2.16406 8.83681 2.49969 8.83681 2.91381C8.83681 3.32788 9.17275 3.66381 9.58681 3.66381C10.0009 3.66381 10.3368 3.32788 10.3368 2.91381C10.3368 2.49975 10.0009 2.16381 9.58681 2.16381L9.58681 2.16406ZM6.25056 3.04038C4.47806 3.04038 3.04094 4.4775 3.04094 6.25006C3.04094 8.02262 4.47806 9.45906 6.25056 9.45906C8.02312 9.45906 9.45975 8.02262 9.45975 6.25006C9.45975 4.47756 8.023 3.04038 6.25044 3.04038L6.25056 3.04038ZM6.25056 4.16669C7.40112 4.16669 8.33394 5.09938 8.33394 6.25006C8.33394 7.40063 7.40112 8.33344 6.25056 8.33344C5.1 8.33344 4.16725 7.40063 4.16725 6.25006C4.16725 5.09938 5.09994 4.16669 6.25056 4.16669Z" fill="#ffffff" /></svg>
                         </div>
                         <div data-figma-node="I5602:71661;5725:99927" className="box-border w-[20px] h-[20px] rounded-[13px] relative flex flex-row items-center justify-center bg-[#fde8ed]">
-                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71661;5725:99928" data-figma-component="5121:7331" className="relative" />
+                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71661;5725:99928" data-figma-component="5121:7331" className="relative overflow-hidden rounded-[6px]" />
                         </div>
                       </div>
                     </div>
@@ -1829,7 +1829,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71661;5556:77452;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71661;5556:77452;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71661;5556:77452;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71661;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71661;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71661;5556:77452;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71661;5556:77452;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1851,7 +1851,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71661;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71661;5589:48811;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71661;5589:48811;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71661;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71661;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71661;5589:48811;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71661;5589:48811;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1873,7 +1873,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71661;5589:48828;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71661;5589:48828;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71661;5589:48828;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71661;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71661;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71661;5589:48828;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71661;5589:48828;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1905,7 +1905,7 @@ export function WeekCalendarDefaultContentSection() {
                           <svg data-figma-node="I5602:71662;5725:99926" viewBox="0 0 12.5 12.5" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[13px] absolute left-[2px] top-[2px] pointer-events-none overflow-visible"><path d="M6.25056 0C4.55319 0 4.34013 0.0074375 3.6735 0.03775C3.00813 0.06825 2.55394 0.173562 2.15656 0.328125C1.74544 0.48775 1.39675 0.701312 1.04938 1.04881C0.701688 1.39625 0.488125 1.74494 0.328 2.15587C0.173 2.55338 0.0675625 3.00775 0.037625 3.67281C0.00781246 4.3395 0 4.55263 0 6.25006C0 7.9475 0.00750001 8.15987 0.03775 8.8265C0.068375 9.49187 0.173688 9.94606 0.328125 10.3434C0.487875 10.7546 0.701438 11.1033 1.04894 11.4506C1.39625 11.7983 1.74494 12.0124 2.15575 12.172C2.55344 12.3266 3.00769 12.4319 3.67294 12.4624C4.33962 12.4927 4.5525 12.5001 6.24981 12.5001C7.94738 12.5001 8.15975 12.4927 8.82638 12.4624C9.49175 12.4319 9.94644 12.3266 10.3441 12.172C10.7551 12.0124 11.1032 11.7983 11.4505 11.4506C11.7982 11.1033 12.0117 10.7546 12.1719 10.3436C12.3255 9.94606 12.431 9.49175 12.4622 8.82662C12.4922 8.16 12.5 7.9475 12.5 6.25006C12.5 4.55263 12.4922 4.33962 12.4622 3.67294C12.431 3.00756 12.3255 2.55344 12.1719 2.15606C12.0117 1.74494 11.7982 1.39625 11.4505 1.04881C11.1029 0.701187 10.7552 0.487625 10.3438 0.328187C9.94531 0.173562 9.49087 0.0681875 8.8255 0.03775C8.15881 0.0074375 7.94656 0 6.24862 0L6.25056 0ZM5.68988 1.12631C5.85631 1.12606 6.042 1.12631 6.25056 1.12631C7.91938 1.12631 8.11712 1.13231 8.77612 1.16225C9.3855 1.19012 9.71625 1.29194 9.93656 1.3775C10.2283 1.49075 10.4362 1.62619 10.6548 1.845C10.8736 2.06375 11.0089 2.27206 11.1225 2.56375C11.2081 2.78375 11.31 3.1145 11.3378 3.72388C11.3677 4.38275 11.3742 4.58062 11.3742 6.24862C11.3742 7.91663 11.3677 8.11456 11.3378 8.77337C11.3099 9.38275 11.2081 9.7135 11.1225 9.93356C11.0093 10.2253 10.8736 10.4329 10.6548 10.6516C10.4361 10.8703 10.2284 11.0057 9.93656 11.119C9.7165 11.2049 9.3855 11.3065 8.77612 11.3344C8.11725 11.3643 7.91938 11.3708 6.25056 11.3708C4.58169 11.3708 4.38387 11.3643 3.72506 11.3344C3.11569 11.3063 2.78494 11.2044 2.56444 11.1189C2.27281 11.0056 2.06444 10.8702 1.84569 10.6514C1.62694 10.4327 1.49156 10.2249 1.378 9.93306C1.29244 9.713 1.1905 9.38225 1.16275 8.77287C1.13281 8.114 1.12681 7.91613 1.12681 6.24706C1.12681 4.578 1.13281 4.38119 1.16275 3.72231C1.19062 3.11294 1.29244 2.78219 1.378 2.56187C1.49131 2.27019 1.62694 2.06188 1.84575 1.84313C2.06456 1.62438 2.27281 1.48894 2.5645 1.37544C2.78481 1.2895 3.11569 1.18794 3.72506 1.15994C4.30162 1.13387 4.52506 1.12606 5.68988 1.12475L5.68988 1.12631ZM9.58681 2.16406C9.17275 2.16406 8.83681 2.49969 8.83681 2.91381C8.83681 3.32788 9.17275 3.66381 9.58681 3.66381C10.0009 3.66381 10.3368 3.32788 10.3368 2.91381C10.3368 2.49975 10.0009 2.16381 9.58681 2.16381L9.58681 2.16406ZM6.25056 3.04038C4.47806 3.04038 3.04094 4.4775 3.04094 6.25006C3.04094 8.02262 4.47806 9.45906 6.25056 9.45906C8.02312 9.45906 9.45975 8.02262 9.45975 6.25006C9.45975 4.47756 8.023 3.04038 6.25044 3.04038L6.25056 3.04038ZM6.25056 4.16669C7.40112 4.16669 8.33394 5.09938 8.33394 6.25006C8.33394 7.40063 7.40112 8.33344 6.25056 8.33344C5.1 8.33344 4.16725 7.40063 4.16725 6.25006C4.16725 5.09938 5.09994 4.16669 6.25056 4.16669Z" fill="#ffffff" /></svg>
                         </div>
                         <div data-figma-node="I5602:71662;5725:99927" className="box-border w-[20px] h-[20px] rounded-[13px] relative flex flex-row items-center justify-center bg-[#fde8ed]">
-                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71662;5725:99928" data-figma-component="5121:7331" className="relative" />
+                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71662;5725:99928" data-figma-component="5121:7331" className="relative overflow-hidden rounded-[6px]" />
                         </div>
                       </div>
                     </div>
@@ -1915,7 +1915,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71662;5556:77452;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71662;5556:77452;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71662;5556:77452;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71662;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71662;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71662;5556:77452;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71662;5556:77452;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1937,7 +1937,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71662;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71662;5589:48811;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71662;5589:48811;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71662;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71662;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71662;5589:48811;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71662;5589:48811;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1959,7 +1959,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71662;5589:48828;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71662;5589:48828;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71662;5589:48828;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71662;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71662;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71662;5589:48828;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71662;5589:48828;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -1991,7 +1991,7 @@ export function WeekCalendarDefaultContentSection() {
                           <svg data-figma-node="I5602:71663;5725:99926" viewBox="0 0 12.5 12.5" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[13px] absolute left-[2px] top-[2px] pointer-events-none overflow-visible"><path d="M6.25056 0C4.55319 0 4.34013 0.0074375 3.6735 0.03775C3.00813 0.06825 2.55394 0.173562 2.15656 0.328125C1.74544 0.48775 1.39675 0.701312 1.04938 1.04881C0.701688 1.39625 0.488125 1.74494 0.328 2.15587C0.173 2.55338 0.0675625 3.00775 0.037625 3.67281C0.00781246 4.3395 0 4.55263 0 6.25006C0 7.9475 0.00750001 8.15987 0.03775 8.8265C0.068375 9.49187 0.173688 9.94606 0.328125 10.3434C0.487875 10.7546 0.701438 11.1033 1.04894 11.4506C1.39625 11.7983 1.74494 12.0124 2.15575 12.172C2.55344 12.3266 3.00769 12.4319 3.67294 12.4624C4.33962 12.4927 4.5525 12.5001 6.24981 12.5001C7.94738 12.5001 8.15975 12.4927 8.82638 12.4624C9.49175 12.4319 9.94644 12.3266 10.3441 12.172C10.7551 12.0124 11.1032 11.7983 11.4505 11.4506C11.7982 11.1033 12.0117 10.7546 12.1719 10.3436C12.3255 9.94606 12.431 9.49175 12.4622 8.82662C12.4922 8.16 12.5 7.9475 12.5 6.25006C12.5 4.55263 12.4922 4.33962 12.4622 3.67294C12.431 3.00756 12.3255 2.55344 12.1719 2.15606C12.0117 1.74494 11.7982 1.39625 11.4505 1.04881C11.1029 0.701187 10.7552 0.487625 10.3438 0.328187C9.94531 0.173562 9.49087 0.0681875 8.8255 0.03775C8.15881 0.0074375 7.94656 0 6.24862 0L6.25056 0ZM5.68988 1.12631C5.85631 1.12606 6.042 1.12631 6.25056 1.12631C7.91938 1.12631 8.11712 1.13231 8.77612 1.16225C9.3855 1.19012 9.71625 1.29194 9.93656 1.3775C10.2283 1.49075 10.4362 1.62619 10.6548 1.845C10.8736 2.06375 11.0089 2.27206 11.1225 2.56375C11.2081 2.78375 11.31 3.1145 11.3378 3.72388C11.3677 4.38275 11.3742 4.58062 11.3742 6.24862C11.3742 7.91663 11.3677 8.11456 11.3378 8.77337C11.3099 9.38275 11.2081 9.7135 11.1225 9.93356C11.0093 10.2253 10.8736 10.4329 10.6548 10.6516C10.4361 10.8703 10.2284 11.0057 9.93656 11.119C9.7165 11.2049 9.3855 11.3065 8.77612 11.3344C8.11725 11.3643 7.91938 11.3708 6.25056 11.3708C4.58169 11.3708 4.38387 11.3643 3.72506 11.3344C3.11569 11.3063 2.78494 11.2044 2.56444 11.1189C2.27281 11.0056 2.06444 10.8702 1.84569 10.6514C1.62694 10.4327 1.49156 10.2249 1.378 9.93306C1.29244 9.713 1.1905 9.38225 1.16275 8.77287C1.13281 8.114 1.12681 7.91613 1.12681 6.24706C1.12681 4.578 1.13281 4.38119 1.16275 3.72231C1.19062 3.11294 1.29244 2.78219 1.378 2.56187C1.49131 2.27019 1.62694 2.06188 1.84575 1.84313C2.06456 1.62438 2.27281 1.48894 2.5645 1.37544C2.78481 1.2895 3.11569 1.18794 3.72506 1.15994C4.30162 1.13387 4.52506 1.12606 5.68988 1.12475L5.68988 1.12631ZM9.58681 2.16406C9.17275 2.16406 8.83681 2.49969 8.83681 2.91381C8.83681 3.32788 9.17275 3.66381 9.58681 3.66381C10.0009 3.66381 10.3368 3.32788 10.3368 2.91381C10.3368 2.49975 10.0009 2.16381 9.58681 2.16381L9.58681 2.16406ZM6.25056 3.04038C4.47806 3.04038 3.04094 4.4775 3.04094 6.25006C3.04094 8.02262 4.47806 9.45906 6.25056 9.45906C8.02312 9.45906 9.45975 8.02262 9.45975 6.25006C9.45975 4.47756 8.023 3.04038 6.25044 3.04038L6.25056 3.04038ZM6.25056 4.16669C7.40112 4.16669 8.33394 5.09938 8.33394 6.25006C8.33394 7.40063 7.40112 8.33344 6.25056 8.33344C5.1 8.33344 4.16725 7.40063 4.16725 6.25006C4.16725 5.09938 5.09994 4.16669 6.25056 4.16669Z" fill="#ffffff" /></svg>
                         </div>
                         <div data-figma-node="I5602:71663;5725:99927" className="box-border w-[20px] h-[20px] rounded-[13px] relative flex flex-row items-center justify-center bg-[#fde8ed]">
-                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71663;5725:99928" data-figma-component="5121:7331" className="relative" />
+                          <FiRsPlusSmall_7eb9d5ec data-figma-node="I5602:71663;5725:99928" data-figma-component="5121:7331" className="relative overflow-hidden rounded-[6px]" />
                         </div>
                       </div>
                     </div>
@@ -2001,7 +2001,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71663;5556:77452;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71663;5556:77452;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71663;5556:77452;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71663;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71663;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71663;5556:77452;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71663;5556:77452;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -2023,7 +2023,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71663;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71663;5589:48811;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71663;5589:48811;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71663;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71663;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71663;5589:48811;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71663;5589:48811;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -2045,7 +2045,7 @@ export function WeekCalendarDefaultContentSection() {
                           <div data-figma-node="I5602:71663;5589:48828;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
                             <div data-figma-node="I5602:71663;5589:48828;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
                               <div data-figma-node="I5602:71663;5589:48828;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71663;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative" />
+                                <FiRrEnvelope_edd5c8e7 data-figma-node="I5602:71663;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[6px]" />
                               </div>
                               <p data-figma-node="I5602:71663;5589:48828;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
                               <div data-figma-node="I5602:71663;5589:48828;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -2091,10 +2091,10 @@ export function WeekCalendarDefaultContentSection() {
               <p data-figma-node="5602:73714" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Campaign Kickoff Prep</p>
               <div data-figma-node="5602:73715" className="box-border w-max max-w-[64px] h-[28px] relative flex flex-row items-center gap-2">
                 <div data-figma-node="5602:73716" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                  <FiRrPencil_93ff9a17 data-figma-node="5602:73717" data-figma-component="5121:9154" className="relative" />
+                  <FiRrPencil_93ff9a17 data-figma-node="5602:73717" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[6px]" />
                 </div>
                 <div data-figma-node="5602:73718" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                  <FiRrTrash_ffb59942 data-figma-node="5602:73719" data-figma-component="5121:9660" className="relative" />
+                  <FiRrTrash_ffb59942 data-figma-node="5602:73719" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[6px]" />
                 </div>
               </div>
             </div>
@@ -2111,7 +2111,7 @@ export function WeekCalendarDefaultContentSection() {
               <p data-figma-node="5602:73727" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Budget Reallocation</p>
               <div data-figma-node="5602:73728" className="box-border w-max max-w-[64px] h-[28px] relative flex flex-row items-center gap-2">
                 <div data-figma-node="5602:73729" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                  <FiRrPencil_93ff9a17 data-figma-node="5602:73730" data-figma-component="5121:9154" className="relative" />
+                  <FiRrPencil_93ff9a17 data-figma-node="5602:73730" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[6px]" />
                 </div>
                 <div data-figma-node="5602:73731" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
                   <div data-figma-node="5602:73732" data-figma-component="5121:9660" className="box-border w-[16px] h-[16px] overflow-hidden relative">
@@ -2135,7 +2135,7 @@ export function WeekCalendarDefaultContentSection() {
               <p data-figma-node="5602:73740" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Holiday Content Deadlines</p>
               <div data-figma-node="5602:73741" className="box-border w-max max-w-[64px] h-[28px] relative flex flex-row items-center gap-2">
                 <div data-figma-node="5602:73742" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                  <FiRrPencil_93ff9a17 data-figma-node="5602:73743" data-figma-component="5121:9154" className="relative" />
+                  <FiRrPencil_93ff9a17 data-figma-node="5602:73743" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[6px]" />
                 </div>
                 <div data-figma-node="5602:73744" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
                   <div data-figma-node="5602:73745" data-figma-component="5121:9660" className="box-border w-[16px] h-[16px] overflow-hidden relative">
