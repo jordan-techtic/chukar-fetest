@@ -1,0 +1,24 @@
+/**
+ * Luna generated support file
+ * Role: figma fonts
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ */
+.font-inter { font-family: var(--font-inter), 'Inter', sans-serif; }
+.font-onest { font-family: var(--font-onest), 'Onest', sans-serif; }
+
+html, body { background-color: #fff9f3; min-height: 100%; font-family: var(--font-inter), 'Inter', sans-serif; }
+
+@keyframes luna-spec-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.luna-spec-marquee-track {
+  animation: luna-spec-marquee 40s linear infinite;
+}
+.luna-spec-marquee-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .luna-spec-marquee-track { animation: none; }
+}
