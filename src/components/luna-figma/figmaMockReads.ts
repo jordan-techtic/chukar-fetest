@@ -14,18 +14,8 @@ const MOCK_FLAG_DISABLED = new Set(["false", "0", "no"]);
 let mockFlagWarned = false;
 
 /** Enabled for true/1/yes after trim and lowercase. Unset and empty stay off. */
-function mockDataFlag(): string | undefined {
-  if (typeof process !== "undefined" && process.env.VITE_MOCK_DATA !== undefined) {
-    return process.env.VITE_MOCK_DATA;
-  }
-  if (typeof process !== "undefined" && process.env.NEXT_PUBLIC_VITE_MOCK_DATA !== undefined) {
-    return process.env.NEXT_PUBLIC_VITE_MOCK_DATA;
-  }
-  return undefined;
-}
-
 export function mockBoundReadsEnabled(): boolean {
-  const raw = mockDataFlag();
+  const raw = process.env.NEXT_PUBLIC_MOCK_DATA;
   if (typeof raw !== "string") {
     return false;
   }
@@ -39,7 +29,7 @@ export function mockBoundReadsEnabled(): boolean {
   if (!mockFlagWarned) {
     mockFlagWarned = true;
     console.warn(
-      `[Luna mock-data] Invalid VITE_MOCK_DATA value ${JSON.stringify(raw)}. Expected true/false, 1/0, yes/no.`,
+      `[Luna mock-data] Invalid NEXT_PUBLIC_MOCK_DATA value ${JSON.stringify(raw)}. Expected true/false, 1/0, yes/no.`,
     );
   }
   return false;

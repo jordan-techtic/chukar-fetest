@@ -10,14 +10,14 @@
 "use client";
 
 import { updateMarketingTeamMemberProfile } from "@/lib/api/marketing-team-member-profile";
-import { useFigmaTextContent } from "./figmaDisplay";
+import { figmaTextContent } from "./figmaDisplay";
 import { useFigmaActionProps, useFigmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 
 /** CF-23 PUT route binding from profile form section. */
 export const profileSectionPutApi = updateMarketingTeamMemberProfile;
 
 export function ProfileContentSection() {
-  const roleLabel = useFigmaTextContent("5335:4278", "Senior Campaign Lead");
+  const roleLabel = figmaTextContent("5335:4278", "Senior Campaign Lead");
   const { profileLoadError, retryProfileLoad } = useFigmaScreenData();
 
   return (

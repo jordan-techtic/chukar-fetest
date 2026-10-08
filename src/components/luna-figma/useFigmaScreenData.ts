@@ -27,13 +27,22 @@ import {
   MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
 } from "@/lib/api/marketing-team-member-performance-metrics";
 import {
+  listMarketingTeamMemberCategories,
+  MARKETING_TEAM_MEMBER_CATEGORIES_PATH,
+} from "@/lib/api/marketing-team-member-categories";
+import {
   getMarketingTeamMemberProfile,
   updateMarketingTeamMemberProfile,
 } from "@/lib/api/marketing-team-member-profile";
 import { clearAccessToken, getAccessToken } from "@/lib/auth/token-storage";
 
-import { FIGMA_ACTIONS } from "./figmaActions";
-import { clearReadPayloads, publishReadPayload } from "./figmaDisplay";
+import { FIGMA_ACTIONS, type FigmaInvokeAction } from "./figmaActions";
+import {
+  clearReadPayloads,
+  publishReadPayload,
+  publishedCategoryAt,
+  readPublishedPayload,
+} from "./figmaDisplay";
 import {
   fieldErrorsFromResponse,
   figmaReadOperation,
@@ -48,7 +57,9 @@ import { resolveBoundRead } from "./figmaMockReads";
 
 export type FigmaFieldBinding = {
   value?: string;
-  onChange?: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  onChange?: (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+  ) => void;
   disabled?: boolean;
   readOnly?: boolean;
   "aria-invalid"?: boolean;
@@ -63,6 +74,8 @@ export type FigmaActionBinding = {
 };
 
 const MY_PROFILE_FRAME_ID = "5329:12027";
+const ADD_CATEGORY_FRAME_ID = "5359:17278";
+const MANAGE_CATEGORY_FRAME_ID = "5449:19126";
 const CREATE_ACTIVITY_FRAME_ID = "5217:16193";
 
 const CREATE_ACTIVITY_CATEGORY_ACTIONS: Readonly<
@@ -80,7 +93,15 @@ const CREATE_ACTIVITY_TYPE_NODE_IDS = [
 ] as const;
 
 const ROUTE_TO_FRAME: Readonly<Record<string, string>> = {
-  "": "5217:16193",
+  "": "5621:28800",
+  "add-holiday": "5621:28800",
+  "manage-holiday": "5621:28270",
+  "week-calendar-advance-filter": "5621:25767",
+  "manage-users": "5359:17424",
+  "invite-user": "5449:19395",
+  "audit-logs": "5329:12177",
+  "add-category": "5359:17278",
+  "manage-category": "5449:19126",
   "create-activity-popup": "5217:16193",
   "week-calendar-historical-view": "5584:26945",
   "annual-calendar-default": "5645:60757",
@@ -104,6 +125,7 @@ type ScreenDataContextValue = {
   toggleVariant: (nodeId: string) => void;
   submit: () => Promise<void>;
   retryProfileLoad: () => Promise<void>;
+  runCategoryInvoke: (invoke: FigmaInvokeAction) => Promise<void>;
 };
 
 const ScreenDataContext = createContext<ScreenDataContextValue | null>(null);
@@ -359,7 +381,7 @@ export function FigmaScreenDataProvider({
 
     if (writeOp.unboundRequired.length > 0) {
       setStatusMessage(
-        `Cannot create activity from this step: ${writeOp.unboundRequired.join(", ")} are not bound in the design.`,
+        `Cannot submit: ${writeOp.unboundRequired.join(", ")} are not bound in the design.`,
       );
       return;
     }
@@ -405,6 +427,10 @@ export function FigmaScreenDataProvider({
           );
           setValues((current) => ({ ...current, ...mergedAfterRefresh }));
         }
+      } else if (frameId === ADD_CATEGORY_FRAME_ID) {
+        const refreshed = await listMarketingTeamMemberCategories(undefined, token);
+        publishReadPayload("GET", MARKETING_TEAM_MEMBER_CATEGORIES_PATH, refreshed.body);
+        router.push("/manage-category");
       } else {
         await loadReads(frameId);
       }
@@ -422,7 +448,74 @@ export function FigmaScreenDataProvider({
     } finally {
       setSubmitting(false);
     }
-  }, [frameId, loadReads, redirectToLogin, values]);
+  }, [frameId, loadReads, redirectToLogin, router, values]);
+
+  const runCategoryInvoke = useCallback(
+    async (invoke: FigmaInvokeAction) => {
+      const row = publishedCategoryAt(invoke.rowIndex);
+      if (!row) {
+        setStatusMessage("Category not found.");
+        return;
+      }
+
+      setSubmitting(true);
+      setStatusMessage("");
+
+      try {
+        const token = getAccessToken();
+        const categoryPath = `/api/v1/marketing-team-member/categories/${encodeURIComponent(row.id)}`;
+
+        if (invoke.type === "category_delete") {
+          const response = await fetchContractWrite(
+            "DELETE",
+            categoryPath,
+            undefined,
+            token,
+          );
+          setStatusMessage(
+            typeof response.body === "object" &&
+              response.body !== null &&
+              "message" in response.body &&
+              typeof (response.body as { message: unknown }).message === "string"
+              ? (response.body as { message: string }).message
+              : "Category deleted.",
+          );
+        } else {
+          const nextStatus = row.status === "active" ? "inactive" : "active";
+          const response = await fetchContractWrite(
+            "PUT",
+            categoryPath,
+            { status: nextStatus },
+            token,
+          );
+          setStatusMessage(
+            typeof response.body === "object" &&
+              response.body !== null &&
+              "message" in response.body &&
+              typeof (response.body as { message: unknown }).message === "string"
+              ? (response.body as { message: string }).message
+              : "Category updated.",
+          );
+        }
+
+        const refreshed = await listMarketingTeamMemberCategories(undefined, token);
+        publishReadPayload("GET", MARKETING_TEAM_MEMBER_CATEGORIES_PATH, refreshed.body);
+      } catch (error) {
+        if (error instanceof ApiRequestError) {
+          if (error.status === 401) {
+            redirectToLogin();
+            return;
+          }
+          setStatusMessage(error.message);
+        } else {
+          setStatusMessage("Request failed.");
+        }
+      } finally {
+        setSubmitting(false);
+      }
+    },
+    [redirectToLogin],
+  );
 
   const contextValue = useMemo<ScreenDataContextValue>(
     () => ({
@@ -439,6 +532,7 @@ export function FigmaScreenDataProvider({
       toggleVariant,
       submit,
       retryProfileLoad: loadProfileRead,
+      runCategoryInvoke,
     }),
     [
       fieldErrors,
@@ -446,6 +540,7 @@ export function FigmaScreenDataProvider({
       loadProfileRead,
       loading,
       profileLoadError,
+      runCategoryInvoke,
       setFieldValue,
       setStatusMessage,
       statusMessage,
@@ -496,9 +591,49 @@ function useScreenData(): ScreenDataContextValue {
       toggleVariant: () => {},
       submit: async () => {},
       retryProfileLoad: async () => {},
+      runCategoryInvoke: async () => {},
     };
   }
   return context;
+}
+
+function categoryListItemRecord(rowIndex: number): Record<string, unknown> | null {
+  const body = readPublishedPayload("GET", MARKETING_TEAM_MEMBER_CATEGORIES_PATH);
+  if (body === null || typeof body !== "object") {
+    return null;
+  }
+  const data = (body as Record<string, unknown>).data;
+  if (data === null || typeof data !== "object") {
+    return null;
+  }
+  const items = (data as Record<string, unknown>).items;
+  if (!Array.isArray(items) || rowIndex < 0 || rowIndex >= items.length) {
+    return null;
+  }
+  const item = items[rowIndex];
+  return item !== null && typeof item === "object" ? (item as Record<string, unknown>) : null;
+}
+
+/** Client-side filter for `filter-categories` on manage-category rows. */
+export function useCategoryRowVisible(rowIndex: number): boolean {
+  const { values, bound } = useScreenData();
+  if (bound !== MANAGE_CATEGORY_FRAME_ID) {
+    return true;
+  }
+  const rawFilter = values["filter-categories"];
+  const filter =
+    typeof rawFilter === "string" ? rawFilter.trim().toLowerCase() : "";
+  if (!filter) {
+    return true;
+  }
+  const item = categoryListItemRecord(rowIndex);
+  if (!item) {
+    return true;
+  }
+  const title = typeof item.title === "string" ? item.title.toLowerCase() : "";
+  const description =
+    typeof item.description === "string" ? item.description.toLowerCase() : "";
+  return title.includes(filter) || description.includes(filter);
 }
 
 export function useFigmaFieldProps(field: string): FigmaFieldBinding {
@@ -539,6 +674,7 @@ function actionTriggersSubmit(action: string, frameId: string): boolean {
 }
 
 export function useFigmaActionProps(action: string): FigmaActionBinding {
+  const router = useRouter();
   const {
     bound,
     values,
@@ -548,6 +684,7 @@ export function useFigmaActionProps(action: string): FigmaActionBinding {
     toggleVariant,
     setFieldValue,
     setStatusMessage,
+    runCategoryInvoke,
   } = useScreenData();
   const contract = FIGMA_ACTIONS[action];
   const busy = submitting || loading;
@@ -590,6 +727,16 @@ export function useFigmaActionProps(action: string): FigmaActionBinding {
         return;
       }
 
+      if (
+        contract.kind === "invoke" &&
+        contract.invoke &&
+        bound === MANAGE_CATEGORY_FRAME_ID
+      ) {
+        event.preventDefault();
+        void runCategoryInvoke(contract.invoke);
+        return;
+      }
+
       if (contract.kind === "submit" || actionTriggersSubmit(action, bound)) {
         event.preventDefault();
         void submit();
@@ -598,7 +745,12 @@ export function useFigmaActionProps(action: string): FigmaActionBinding {
 
       if (contract.destination) {
         event.preventDefault();
-        window.location.assign(contract.destination);
+        const dest = contract.destination;
+        if (dest.startsWith("/")) {
+          router.push(dest);
+        } else {
+          window.location.assign(dest);
+        }
         return;
       }
 

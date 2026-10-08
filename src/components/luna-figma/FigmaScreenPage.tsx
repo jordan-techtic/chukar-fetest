@@ -9,20 +9,38 @@
 
 import type { ReactElement } from "react";
 import { FigmaScreenDataProvider } from "./useFigmaScreenData";
+import { AddCategoryPage } from "./AddCategoryPage";
+import { AddHolidayPage } from "./AddHolidayPage";
+import { AuditLogsPage } from "./AuditLogsPage";
 import { CreateActivityPopupPage } from "./CreateActivityPopupPage";
+import { InviteUserPage } from "./InviteUserPage";
+import { ManageActivityPage } from "./ManageActivityPage";
+import { ManageCategoryPage } from "./ManageCategoryPage";
+import { ManageHolidayPage } from "./ManageHolidayPage";
+import { ManageUsersPage } from "./ManageUsersPage";
+import { MyProfilePage } from "./MyProfilePage";
+import { WeekCalendarAdvanceFilterPage } from "./WeekCalendarAdvanceFilterPage";
 import { WeekCalendarDefaultPage } from "./WeekCalendarDefaultPage";
 import { WeekCalendarHistoricalPage } from "./WeekCalendarHistoricalPage";
 import { AnnualCalendarDefaultPage } from "./AnnualCalendarDefaultPage";
-import { ManageActivityPage } from "./ManageActivityPage";
 
 const routes: Record<string, () => ReactElement> = {
-  "": CreateActivityPopupPage,
+  "": AddHolidayPage,
+  "add-holiday": AddHolidayPage,
+  "manage-holiday": ManageHolidayPage,
+  "week-calendar-advance-filter": WeekCalendarAdvanceFilterPage,
+  "manage-users": ManageUsersPage,
+  "invite-user": InviteUserPage,
+  "audit-logs": AuditLogsPage,
+  "add-category": AddCategoryPage,
+  "manage-category": ManageCategoryPage,
   "create-activity-popup": CreateActivityPopupPage,
   calendar: WeekCalendarDefaultPage,
   "week-calendar-default": WeekCalendarDefaultPage,
   "week-calendar-historical-view": WeekCalendarHistoricalPage,
   "annual-calendar-default": AnnualCalendarDefaultPage,
-  "manage-activity": ManageActivityPage
+  "manage-activity": ManageActivityPage,
+  "my-profile": MyProfilePage,
 };
 
 // Project pages linked from this design whose screens are not built yet.

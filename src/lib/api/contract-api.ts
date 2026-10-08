@@ -18,6 +18,15 @@ import {
   MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
 } from "./marketing-team-member-performance-metrics";
 import {
+  createMarketingTeamMemberCategory,
+  deleteMarketingTeamMemberCategory,
+  listMarketingTeamMemberCategories,
+  MARKETING_TEAM_MEMBER_CATEGORIES_PATH,
+  updateMarketingTeamMemberCategory,
+  type CategoryCreateRequest,
+  type CategoryUpdateRequest,
+} from "./marketing-team-member-categories";
+import {
   getMarketingTeamMemberProfile,
   MARKETING_TEAM_MEMBER_PROFILE_PATH,
   updateMarketingTeamMemberProfile,
@@ -42,6 +51,9 @@ export async function fetchContractRead(
   if (method === "GET" && path === MARKETING_TEAM_MEMBER_ACTIVITIES_PATH) {
     return listMarketingTeamMemberActivities(undefined, token);
   }
+  if (method === "GET" && path === MARKETING_TEAM_MEMBER_CATEGORIES_PATH) {
+    return listMarketingTeamMemberCategories(undefined, token);
+  }
   return apiRequest(method, path, undefined, token);
 }
 
@@ -57,6 +69,9 @@ export async function fetchContractWrite(
   }
   if (method === "POST" && path === MARKETING_TEAM_MEMBER_ACTIVITIES_PATH) {
     return createMarketingTeamMemberActivity(body as ActivityCreateRequest, token);
+  }
+  if (method === "POST" && path === MARKETING_TEAM_MEMBER_CATEGORIES_PATH) {
+    return createMarketingTeamMemberCategory(body as CategoryCreateRequest, token);
   }
   if (method === "PUT" && path === MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH) {
     const id = (body as { id?: string } | null)?.id;
@@ -87,6 +102,22 @@ export async function fetchContractWrite(
   if (method === "DELETE" && activityByIdMatch) {
     return deleteMarketingTeamMemberActivity(
       decodeURIComponent(activityByIdMatch[1]),
+      token,
+    );
+  }
+  const categoryByIdMatch = path.match(
+    /^\/api\/v1\/marketing-team-member\/categories\/([^/]+)$/,
+  );
+  if (method === "PUT" && categoryByIdMatch) {
+    return updateMarketingTeamMemberCategory(
+      decodeURIComponent(categoryByIdMatch[1]),
+      body as CategoryUpdateRequest,
+      token,
+    );
+  }
+  if (method === "DELETE" && categoryByIdMatch) {
+    return deleteMarketingTeamMemberCategory(
+      decodeURIComponent(categoryByIdMatch[1]),
       token,
     );
   }
