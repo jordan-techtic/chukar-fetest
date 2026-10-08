@@ -4,15 +4,6 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap");
-
-@theme {
-  --font-inter: 'Inter', sans-serif;
-  --font-onest: 'Onest', sans-serif;
-  --font-sans: 'Inter', sans-serif;
-}
-
 .font-inter { font-family: 'Inter', sans-serif; }
 .font-onest { font-family: 'Onest', sans-serif; }
 

@@ -28,75 +28,158 @@ export interface FigmaOperation {
   readonly submitNodeId: string | null;
 }
 
-const PROFILE_FRAME_FIELDS: readonly FigmaFieldBinding[] = [
-  {
-    figmaField: "first-name",
-    apiField: "first_name",
-    nodeId: "5335:4270",
-    kind: "text",
-    required: false,
-    resolution: "resolved",
-    maxLength: 100,
-  },
-  {
-    figmaField: "last-name",
-    apiField: "last_name",
-    nodeId: "5337:4266",
-    kind: "text",
-    required: false,
-    resolution: "resolved",
-    maxLength: 100,
-  },
-  {
-    figmaField: "email",
-    apiField: "email",
-    nodeId: "5335:4274",
-    kind: "text",
-    required: false,
-    resolution: "resolved",
-    format: "email",
-  },
-];
+const CREATE_ACTIVITY_FRAME_ID = "5217:16193";
+const MANAGE_ACTIVITY_FRAME_ID = "5359:17106";
+const WEEK_CALENDAR_DEFAULT_FRAME_ID = "5602:71490";
+const WEEK_CALENDAR_HISTORICAL_FRAME_ID = "5584:26945";
+const ANNUAL_CALENDAR_DEFAULT_FRAME_ID = "5645:60757";
+
+const MARKETING_TEAM_MEMBER_CALENDAR_PATH =
+  "/api/v1/marketing-team-member/calendar";
+const MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH =
+  "/api/v1/marketing-team-member/performance-metrics";
+
+const MARKETING_TEAM_MEMBER_ACTIVITIES_PATH =
+  "/api/v1/marketing-team-member/activities";
+const MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH =
+  "/api/v1/marketing-team-member/activities/{id}";
 
 /** Screen frame id → contract operations its form uses. */
 export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
-  "5329:12027": [
+  [CREATE_ACTIVITY_FRAME_ID]: [
     {
-      fields: PROFILE_FRAME_FIELDS,
+      fields: [],
+      method: "POST",
+      path: "/api/v1/marketing-team-member/activities",
+      responseUnwrap: "data",
+      role: "write",
+      submitNodeId: null,
+      unboundRequired: ["title", "start_date", "activity_type"],
+    },
+  ],
+  [WEEK_CALENDAR_DEFAULT_FRAME_ID]: [
+    {
+      fields: [],
       method: "GET",
-      path: "/api/v1/marketing-team-member/profile",
+      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
+      responseUnwrap: "data",
+      role: "read",
+      submitNodeId: null,
+      unboundRequired: [],
+    },
+  ],
+  [WEEK_CALENDAR_HISTORICAL_FRAME_ID]: [
+    {
+      fields: [],
+      method: "GET",
+      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
+      responseUnwrap: "data",
+      role: "read",
+      submitNodeId: null,
+      unboundRequired: [],
+    },
+  ],
+  [ANNUAL_CALENDAR_DEFAULT_FRAME_ID]: [
+    {
+      fields: [],
+      method: "GET",
+      path: MARKETING_TEAM_MEMBER_CALENDAR_PATH,
       responseUnwrap: "data",
       role: "read",
       submitNodeId: null,
       unboundRequired: [],
     },
     {
-      fields: PROFILE_FRAME_FIELDS,
-      method: "PUT",
-      path: "/api/v1/marketing-team-member/profile",
+      fields: [],
+      method: "GET",
+      path: MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
+      responseUnwrap: "data",
+      role: "read",
+      submitNodeId: null,
+      unboundRequired: [],
+    },
+  ],
+  [MANAGE_ACTIVITY_FRAME_ID]: [
+    {
+      fields: [],
+      method: "GET",
+      path: MARKETING_TEAM_MEMBER_ACTIVITIES_PATH,
+      responseUnwrap: "data",
+      role: "read",
+      submitNodeId: null,
+      unboundRequired: [],
+    },
+    {
+      fields: [],
+      method: "POST",
+      path: MARKETING_TEAM_MEMBER_ACTIVITIES_PATH,
       responseUnwrap: "data",
       role: "write",
-      submitNodeId: "5335:4291",
-      unboundRequired: [],
+      submitNodeId: null,
+      unboundRequired: ["title", "start_date", "activity_type"],
+    },
+    {
+      fields: [],
+      method: "PUT",
+      path: MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH,
+      responseUnwrap: "data",
+      role: "write",
+      submitNodeId: null,
+      unboundRequired: ["id"],
+    },
+    {
+      fields: [],
+      method: "DELETE",
+      path: MARKETING_TEAM_MEMBER_ACTIVITY_BY_ID_PATH,
+      responseUnwrap: "data",
+      role: "write",
+      submitNodeId: null,
+      unboundRequired: ["id"],
     },
   ],
 };
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
-  "5329:12027": [
-    "bio",
-    "new-password",
-    "confirm-password",
-    "change-password"
-  ],
-  "5602:71490": [
+  "5217:16193": [
     "mon",
     "tue",
     "wed",
     "thu",
     "fri",
-    "sat"
+    "sat",
+    "activity-category"
+  ],
+  "5359:17106": [
+    "search-input"
+  ],
+  "5584:26945": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "field-5596-52876",
+    "field-5596-52878",
+    "field-5596-52880",
+    "field-5596-52882",
+    "field-5596-52884",
+    "field-5596-52886"
+  ],
+  "5645:60757": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "field-i5645-60760-5596-52876",
+    "field-i5645-60760-5596-52878",
+    "field-i5645-60760-5596-52880",
+    "field-i5645-60760-5596-52882",
+    "field-i5645-60760-5596-52884",
+    "field-i5645-60760-5596-52886"
   ]
 };
 
