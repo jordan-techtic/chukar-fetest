@@ -8,6 +8,7 @@
  * luna-spec-codegen: owned-layout
  */
 import { figmaFieldProps, figmaActionProps } from "./useFigmaScreenData";
+import { Empty_895c96af } from "./Empty_895c96af";
 import { Default_7363b927 } from "./Default_7363b927";
 import { Disabled_6ecccdb1 } from "./Disabled_6ecccdb1";
 import { Disabled_781e0828 } from "./Disabled_781e0828";
@@ -87,12 +88,39 @@ export function ContentSection() {
                   <p data-figma-node="5621:25850" className="box-border w-[143px] h-[23px] absolute left-[24px] top-[10px] font-onest text-[18px] font-[500] leading-[23px] text-left whitespace-nowrap text-[#a21d35]">September 2026</p>
                   <div data-figma-node="5621:25851" className="box-border w-[1191px] h-[1px] absolute left-[177px] top-[21px] bg-[#e2d9d0]"></div>
                 </div>
-                <div data-figma-node="5621:25852" className="box-border w-[1368px] h-[180px] overflow-hidden"><div className="luna-spec-marquee-track flex w-max"><div className="flex shrink-0"><img data-figma-node="I5621:25856;5725:102098" src="/assets/figma/I5621-25856-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25857;5725:81430" src="/assets/figma/I5621-25857-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25858;5725:81430" src="/assets/figma/I5621-25858-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25859;5725:77344" src="/assets/figma/I5621-25859-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25860;5725:77344" src="/assets/figma/I5621-25860-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25861;5725:77344" src="/assets/figma/I5621-25861-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25862;5725:77344" src="/assets/figma/I5621-25862-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25863;5725:77344" src="/assets/figma/I5621-25863-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /></div><div className="flex shrink-0" aria-hidden="true"><img data-figma-node="I5621:25856;5725:102098" src="/assets/figma/I5621-25856-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25857;5725:81430" src="/assets/figma/I5621-25857-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25858;5725:81430" src="/assets/figma/I5621-25858-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25859;5725:77344" src="/assets/figma/I5621-25859-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25860;5725:77344" src="/assets/figma/I5621-25860-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25861;5725:77344" src="/assets/figma/I5621-25861-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25862;5725:77344" src="/assets/figma/I5621-25862-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25863;5725:77344" src="/assets/figma/I5621-25863-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /></div></div></div>
-                <div data-figma-node="5621:25870" className="box-border w-[1368px] h-[180px] relative border-[#e5e7eb] border-[1px] bg-[#ffffff]">
-                  <div data-figma-node="5621:25871" className="box-border w-[60px] h-[180px] absolute left-[0px] top-[0px] flex flex-col items-center gap-[4px] gap-1 pt-[12px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#f2f1dd]">
-                    <p data-figma-node="5621:25872" className="box-border w-[22px] h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#a21d35]">W1</p>
-                    <p data-figma-node="5621:25873" className="box-border w-[34px] h-[42px] font-onest text-[11px] font-[400] leading-[14px] text-center text-[#686868] whitespace-pre-line">Sep 1{"\n"}-{"\n"}Sep 6</p>
+                <div data-figma-node="5621:25852" className="box-border w-[1368px] h-[180px] relative overflow-hidden bg-[#ffffff]">
+                  <div data-figma-node="5621:25853" className="box-border w-[60px] h-[180px] absolute left-[0px] top-[0px] flex flex-col items-center gap-1 pt-[12px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px]" style={{backgroundColor: "rgba(0, 0, 0, 0)"}}>
+                    <p data-figma-node="5621:25854" className="box-border w-[22px] h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#a21d35]">W1</p>
+                    <p data-figma-node="5621:25855" className="box-border w-[34px] h-[42px] font-onest text-[11px] font-[400] leading-[14px] text-center text-[#686868] whitespace-pre-line">{"Sep 1 \n- \nSep 6"}</p>
                   </div>
+                  <div data-figma-node="5621:25856" data-figma-component="5556:77518" className="box-border w-[187px] h-[180px] absolute left-[60px] top-[0px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]" />
+                  <Empty_895c96af data-figma-node="5621:25857" data-figma-component="5602:61866" className="absolute left-[247px] top-[0px]" />
+                  <Empty_895c96af data-figma-node="5621:25858" data-figma-component="5602:61866" className="absolute left-[443px] top-[0px]" />
+                  <div data-figma-node="5621:25859" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[638px] top-[0px] overflow-hidden">
+                    <Variant4_55dac6d9 className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25859;5725:52065" className="relative" />
+                  </div>
+                  <div data-figma-node="5621:25860" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[834px] top-[0px] overflow-hidden">
+                    <Variant5_785d198e data-figma-node="I5621:25860;5602:69270" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25860;5725:47922" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25860;5725:52065" className="relative" />
+                  </div>
+                  <div data-figma-node="5621:25861" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[1029px] top-[0px] overflow-hidden">
+                    <Variant5_785d198e data-figma-node="I5621:25861;5602:69270" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25861;5725:47922" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25861;5725:52065" className="relative" />
+                  </div>
+                  <div data-figma-node="5621:25862" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[1225px] top-[0px] overflow-hidden">
+                    <Variant5_785d198e data-figma-node="I5621:25862;5602:69270" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25862;5725:47922" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25862;5725:52065" className="relative" />
+                  </div>
+                  <div data-figma-node="5621:25863" data-figma-component="5602:61866" className="box-border w-[196px] h-[180px] absolute left-[1421px] top-[0px] overflow-hidden">
+                    <Variant5_785d198e data-figma-node="I5621:25863;5602:69270" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25863;5725:47922" className="relative" />
+                    <Variant4_55dac6d9 data-figma-node="I5621:25863;5725:52065" className="relative" />
+                  </div>
+                  <div className="pointer-events-none absolute left-[820px] top-[36px] w-[196px] h-[16px] overflow-hidden"><div className="luna-spec-marquee-track flex w-max"><div className="flex shrink-0"><img data-figma-node="I5621:25856;5725:102098" src="/assets/figma/I5621-25856-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25857;5725:81430" src="/assets/figma/I5621-25857-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25858;5725:81430" src="/assets/figma/I5621-25858-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25859;5725:77344" src="/assets/figma/I5621-25859-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25860;5725:77344" src="/assets/figma/I5621-25860-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25861;5725:77344" src="/assets/figma/I5621-25861-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25862;5725:77344" src="/assets/figma/I5621-25862-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25863;5725:77344" src="/assets/figma/I5621-25863-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /></div><div className="flex shrink-0" aria-hidden="true"><img data-figma-node="I5621:25856;5725:102098" src="/assets/figma/I5621-25856-5725-102098.png" alt="Frame 1000007851" className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25857;5725:81430" src="/assets/figma/I5621-25857-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25858;5725:81430" src="/assets/figma/I5621-25858-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25859;5725:77344" src="/assets/figma/I5621-25859-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25860;5725:77344" src="/assets/figma/I5621-25860-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25861;5725:77344" src="/assets/figma/I5621-25861-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25862;5725:77344" src="/assets/figma/I5621-25862-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /><img data-figma-node="I5621:25863;5725:77344" src="/assets/figma/I5621-25863-5725-77344.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" /></div></div></div>
                 </div>
                 <div data-figma-node="5621:25880" className="box-border w-[1368px] h-[180px] relative border-[#e5e7eb] border-[1px] bg-[#ffffff]">
                   <div data-figma-node="5621:25881" className="box-border w-[60px] h-[180px] absolute left-[0px] top-[0px] flex flex-col items-center gap-[4px] gap-1 pt-[12px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#f2f1dd]">
@@ -593,14 +621,14 @@ Sep 13</p>
                   </div>
                   <div data-figma-node="5621:25893" className="box-border w-[408px] h-[73px] absolute left-[121px] top-[40px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] gap-1"></div>
                 </div>
-                <div data-figma-node="5621:25894" className="box-border w-[1368px] h-[180px] relative flex items-center border-[#e2d9d0] border-[1px] bg-[#ffffff]">
+                <div data-figma-node="5621:25894" className="box-border w-[1368px] h-[180px] relative flex items-start border-[#e2d9d0] border-[1px] bg-[#ffffff]">
                   <div data-figma-node="5621:25895" className="box-border w-[60px] h-[180px] relative flex flex-col items-center gap-[4px] gap-1 pt-[12px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#ffffff]">
                     <p data-figma-node="5621:25896" className="box-border w-[23px] h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-[#a21d35]">W3</p>
                     <p data-figma-node="5621:25897" className="box-border w-[38px] h-[42px] font-onest text-[11px] font-[400] leading-[14px] text-center text-[#686868]">Sep 14 
 - 
 Sep 20</p>
                   </div>
-                  <div data-figma-node="5621:25898" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <div data-figma-node="5621:25898" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[443px] top-[0px] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5621:25898;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[42px] gap-5">
                       <div data-figma-node="I5621:25898;5725:79515" className="box-border w-[84px] h-[20px] relative flex items-center gap-[10px] gap-2.5">
                         <p data-figma-node="I5621:25898;5602:61812" className="box-border w-[14px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">14</p>
@@ -637,7 +665,7 @@ Sep 20</p>
                       </div>
                     </div>
                   </div>
-                  <div data-figma-node="5621:25899" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <div data-figma-node="5621:25899" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[638px] top-[0px] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5621:25899;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[43px] gap-5">
                       <div data-figma-node="I5621:25899;5725:79515" className="box-border w-[83px] h-[20px] relative flex items-center gap-[10px] gap-2.5">
                         <p data-figma-node="I5621:25899;5602:61812" className="box-border w-[13px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">15</p>
@@ -674,7 +702,7 @@ Sep 20</p>
                       </div>
                     </div>
                   </div>
-                  <div data-figma-node="5621:25900" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <div data-figma-node="5621:25900" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[834px] top-[0px] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5621:25900;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[42px] gap-5">
                       <div data-figma-node="I5621:25900;5725:79515" className="box-border w-[84px] h-[20px] relative flex items-center gap-[10px] gap-2.5">
                         <p data-figma-node="I5621:25900;5602:61812" className="box-border w-[14px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">16</p>
@@ -711,7 +739,7 @@ Sep 20</p>
                       </div>
                     </div>
                   </div>
-                  <div data-figma-node="5621:25901" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <div data-figma-node="5621:25901" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[1029px] top-[0px] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5621:25901;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[44px] gap-5">
                       <div data-figma-node="I5621:25901;5725:79515" className="box-border w-[82px] h-[20px] relative flex items-center gap-[10px] gap-2.5">
                         <p data-figma-node="I5621:25901;5602:61812" className="box-border w-[12px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">17</p>
@@ -748,7 +776,7 @@ Sep 20</p>
                       </div>
                     </div>
                   </div>
-                  <div data-figma-node="5621:25902" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] relative flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <div data-figma-node="5621:25902" data-figma-component="5602:61810" className="box-border w-[196px] h-[180px] absolute left-[1225px] top-[0px] flex flex-col items-center gap-[8px] gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5621:25902;5602:61811" className="box-border w-[172px] h-[20px] relative flex items-center gap-[42px] gap-5">
                       <div data-figma-node="I5621:25902;5725:79515" className="box-border w-[84px] h-[20px] relative flex items-center gap-[10px] gap-2.5">
                         <p data-figma-node="I5621:25902;5602:61812" className="box-border w-[14px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">18</p>

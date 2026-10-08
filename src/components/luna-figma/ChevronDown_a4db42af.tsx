@@ -7,8 +7,8 @@
  */
 export function ChevronDown_a4db42af({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5621:28801;5217:13752" data-figma-component="5111:6287" className={`box-border w-[16px] h-[16px] overflow-hidden ${className}`} {...rest}>
-    <span data-figma-node="I5621:28801;5217:13752;5111:6288" data-figma-unrendered="vector" data-figma-diagnostic="vector_geometry_unavailable" aria-hidden="true" className="box-border w-[8px] h-[4px] absolute left-[4px] top-[6px] inline-block pointer-events-none" />
+  <div data-figma-node="I5621:28801;5217:13752" data-figma-component="5111:6287" className={`box-border w-[16px] h-[16px] overflow-hidden rounded-[0px] ${className}`} {...rest}>
+    <svg data-figma-node="I5621:28801;5217:13752;5111:6288" viewBox="0 0 8 4" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[8px] h-[4px] absolute left-[4px] top-[6px] pointer-events-none overflow-visible"><path d="M0 0L4 4L8 0" fill="none" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
   </div>
   );
 }

@@ -1,4 +1,10 @@
-/** Luna generated layout — TitleRow variants */
+/**
+ * Luna generated layout
+ * Figma node: TitleRow variants
+ * Section: title row
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ */
 import { figmaFieldProps } from "./useFigmaScreenData";
 
 
@@ -31,7 +37,7 @@ export function TitleRow_5339_8822() {
         <p className="font-onest text-[13px] font-[400] leading-[17px] text-[#686868]">Review system access, modifications, and exports.</p>
       </div>
       
-      <a data-figma-node="5339:8827" href="#" className="box-border w-[116px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Export Logs</span></a>
+      <button data-figma-node="5339:8827" type="button" className="box-border w-[116px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Export Logs</span></button>
     </section>
   );
 }
@@ -68,7 +74,7 @@ export function TitleRow_5449_19397() {
         <button type="button" data-figma-node="5359:17478" className="box-border w-[96px] h-[37px] whitespace-nowrap rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[400] text-[#231f20]">Role: All</span></button>
         <button type="button" data-figma-node="5359:17481" className="box-border w-[110px] h-[37px] whitespace-nowrap rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[400] text-[#231f20]">Status: All</span></button>
         <div className="box-border w-[280px] h-[37px] rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff] relative">
-          <input data-figma-node="5354:14369" name="search-users" type="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent border-0 pl-[38px] pr-[16px] font-onest text-[13px] text-[#686868] placeholder:text-[#686868]" />
+          <input data-figma-node="5449:19411" name="search-users" type="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent border-0 pl-[38px] pr-[16px] font-onest text-[13px] text-[#686868] placeholder:text-[#686868]" />
         </div>
         <a data-figma-node="5449:19427" href="/manage-users" className="box-border w-[126px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add User</span></a>
       </div>
@@ -90,7 +96,7 @@ export function TitleRow_5621_28272() {
           <input data-figma-node="5621:28286" name="search-users" type="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent border-0 pl-[38px] pr-[16px] font-onest text-[13px] text-[#686868] placeholder:text-[#686868]" />
         </div>
         <button type="button" className="box-border w-[126px] h-[37px] whitespace-nowrap rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">Upload List</button>
-        <a data-figma-node="5621:28290" href="/add-holiday" className="box-border w-[135px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add Holiday</span></a>
+        <a data-figma-node="5621:28290" href="/add-holiday" className="box-border w-[146px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add Holiday</span></a>
       </div>
     </section>
   );
@@ -128,7 +134,7 @@ export function TitleRowSection() {
           <input data-figma-node="5621:28808" name="search-users" {...figmaFieldProps("search-users")} type="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent border-0 pl-[38px] font-onest text-[13px]" />
         </div>
         <button type="button" className="box-border w-[126px] h-[37px] whitespace-nowrap rounded-[6px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">Upload List</button>
-        <a data-figma-node="5621:28815" href="/invite-user" className="box-border w-[135px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add Holiday</span></a>
+        <a data-figma-node="5621:28815" href="/add-holiday" className="box-border w-[146px] h-[37px] whitespace-nowrap rounded-[6px] bg-[#a21d35] inline-flex items-center justify-center"><span className="font-onest text-[13px] font-[700] text-[#ffffff]">Add Holiday</span></a>
       </div>
     </section>
   );
