@@ -1,0 +1,3015 @@
+{
+  "actions": {
+    "app:act_049444cb0726": {
+      "action_id": "app:act_049444cb0726",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71633",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_049444cb0726",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_049444cb0726",
+      "source_node_id": "5602:71633"
+    },
+    "app:act_06e59d16dc3f": {
+      "action_id": "app:act_06e59d16dc3f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52901",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_06e59d16dc3f",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_06e59d16dc3f",
+      "source_node_id": "I5645:60760;5596:52901"
+    },
+    "app:act_077ece4721f5": {
+      "action_id": "app:act_077ece4721f5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "5645:65194",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_077ece4721f5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_077ece4721f5",
+      "source_node_id": "5645:65194"
+    },
+    "app:act_0a01067644c2": {
+      "action_id": "app:act_0a01067644c2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71636;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0a01067644c2",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0a01067644c2",
+      "source_node_id": "I5602:71636;5725:52065;5602:68962"
+    },
+    "app:act_0a4b6c4807a4": {
+      "action_id": "app:act_0a4b6c4807a4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71622",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0a4b6c4807a4",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0a4b6c4807a4",
+      "source_node_id": "5602:71622"
+    },
+    "app:act_0a8c6cad0519": {
+      "action_id": "app:act_0a8c6cad0519",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71638;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0a8c6cad0519",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0a8c6cad0519",
+      "source_node_id": "I5602:71638;5725:52065;5602:68962"
+    },
+    "app:act_0afcd982c666": {
+      "action_id": "app:act_0afcd982c666",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71580",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_0afcd982c666",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0afcd982c666",
+      "source_node_id": "5602:71580"
+    },
+    "app:act_0bc0df7720e9": {
+      "action_id": "app:act_0bc0df7720e9",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71584;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0bc0df7720e9",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0bc0df7720e9",
+      "source_node_id": "I5602:71584;5602:69270;5602:68962"
+    },
+    "app:act_0c987fd7a304": {
+      "action_id": "app:act_0c987fd7a304",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52904",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0c987fd7a304",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_0c987fd7a304",
+      "source_node_id": "I5645:60760;5596:52904"
+    },
+    "app:act_0d475e8daca5": {
+      "action_id": "app:act_0d475e8daca5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71610;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0d475e8daca5",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0d475e8daca5",
+      "source_node_id": "I5602:71610;5602:69270;5602:68962"
+    },
+    "app:act_0d5f97075080": {
+      "action_id": "app:act_0d5f97075080",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71613",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0d5f97075080",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_0d5f97075080",
+      "source_node_id": "5602:71613"
+    },
+    "app:act_10928db93e36": {
+      "action_id": "app:act_10928db93e36",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71612",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_10928db93e36",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_10928db93e36",
+      "source_node_id": "5602:71612"
+    },
+    "app:act_10d44dec483f": {
+      "action_id": "app:act_10d44dec483f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71585",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_10d44dec483f",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_10d44dec483f",
+      "source_node_id": "5602:71585"
+    },
+    "app:act_128f3e9f81cf": {
+      "action_id": "app:act_128f3e9f81cf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52942",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_128f3e9f81cf",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_128f3e9f81cf",
+      "source_node_id": "I5645:60760;5596:52942"
+    },
+    "app:act_1565703da158": {
+      "action_id": "app:act_1565703da158",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71627;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_1565703da158",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_1565703da158",
+      "source_node_id": "I5602:71627;5725:47922;5602:68962"
+    },
+    "app:act_15f5581f1ece": {
+      "action_id": "app:act_15f5581f1ece",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71624",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_15f5581f1ece",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_15f5581f1ece",
+      "source_node_id": "5602:71624"
+    },
+    "app:act_175cdab1c1b5": {
+      "action_id": "app:act_175cdab1c1b5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52900",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_175cdab1c1b5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_175cdab1c1b5",
+      "source_node_id": "I5645:60760;5596:52900"
+    },
+    "app:act_1981c917612e": {
+      "action_id": "app:act_1981c917612e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71627;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_1981c917612e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_1981c917612e",
+      "source_node_id": "I5602:71627;5602:69270;5602:68962"
+    },
+    "app:act_1a838affa2c7": {
+      "action_id": "app:act_1a838affa2c7",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71644;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_1a838affa2c7",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_1a838affa2c7",
+      "source_node_id": "I5602:71644;5725:47922;5602:68962"
+    },
+    "app:act_1c12087c7323": {
+      "action_id": "app:act_1c12087c7323",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71491;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_1c12087c7323",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_1c12087c7323",
+      "source_node_id": "I5602:71491;5217:13749"
+    },
+    "app:act_1c392eec5de6": {
+      "action_id": "app:act_1c392eec5de6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71636;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_1c392eec5de6",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_1c392eec5de6",
+      "source_node_id": "I5602:71636;5602:69270;5602:68962"
+    },
+    "app:act_1d2673162dfb": {
+      "action_id": "app:act_1d2673162dfb",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71582",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_1d2673162dfb",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_1d2673162dfb",
+      "source_node_id": "5602:71582"
+    },
+    "app:act_1ddb475e90a4": {
+      "action_id": "app:act_1ddb475e90a4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "I5449:19127;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_1ddb475e90a4",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_1ddb475e90a4",
+      "source_node_id": "I5449:19127;5217:13749"
+    },
+    "app:act_210446e7f9e5": {
+      "action_id": "app:act_210446e7f9e5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71626;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_210446e7f9e5",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_210446e7f9e5",
+      "source_node_id": "I5602:71626;5725:47922;5602:68962"
+    },
+    "app:act_216382fbc9db": {
+      "action_id": "app:act_216382fbc9db",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71624;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_216382fbc9db",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_216382fbc9db",
+      "source_node_id": "I5602:71624;5725:52065;5602:68962"
+    },
+    "app:act_239e70fbe8e4": {
+      "action_id": "app:act_239e70fbe8e4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60758;5217:13742",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_239e70fbe8e4",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_239e70fbe8e4",
+      "source_node_id": "I5645:60758;5217:13742"
+    },
+    "app:act_249aa2a4eeed": {
+      "action_id": "app:act_249aa2a4eeed",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52899",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_249aa2a4eeed",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_249aa2a4eeed",
+      "source_node_id": "I5645:60760;5596:52899"
+    },
+    "app:act_26aaace13c0e": {
+      "action_id": "app:act_26aaace13c0e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71633;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_26aaace13c0e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_26aaace13c0e",
+      "source_node_id": "I5602:71633;5725:52065;5602:68962"
+    },
+    "app:act_2a2c0d078807": {
+      "action_id": "app:act_2a2c0d078807",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:73708",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_2a2c0d078807",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_2a2c0d078807",
+      "source_node_id": "5602:73708"
+    },
+    "app:act_2b3d328768a3": {
+      "action_id": "app:act_2b3d328768a3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "I5354:14284;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_2b3d328768a3",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_2b3d328768a3",
+      "source_node_id": "I5354:14284;5217:13746"
+    },
+    "app:act_2b456dafdf04": {
+      "action_id": "app:act_2b456dafdf04",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52955",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_2b456dafdf04",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_2b456dafdf04",
+      "source_node_id": "I5645:60760;5596:52955"
+    },
+    "app:act_30726f9d85f7": {
+      "action_id": "app:act_30726f9d85f7",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71643;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_30726f9d85f7",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_30726f9d85f7",
+      "source_node_id": "I5602:71643;5725:47922;5602:68962"
+    },
+    "app:act_30f77ede2935": {
+      "action_id": "app:act_30f77ede2935",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71582;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_30f77ede2935",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_30f77ede2935",
+      "source_node_id": "I5602:71582;5725:47922;5602:68962"
+    },
+    "app:act_31f19ba425d3": {
+      "action_id": "app:act_31f19ba425d3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71609;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_31f19ba425d3",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_31f19ba425d3",
+      "source_node_id": "I5602:71609;5725:52065;5602:68962"
+    },
+    "app:act_32b9dd794ccf": {
+      "action_id": "app:act_32b9dd794ccf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71644;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_32b9dd794ccf",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_32b9dd794ccf",
+      "source_node_id": "I5602:71644;5725:52065;5602:68962"
+    },
+    "app:act_32d7a8c36c56": {
+      "action_id": "app:act_32d7a8c36c56",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "5645:65080",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_32d7a8c36c56",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_32d7a8c36c56",
+      "source_node_id": "5645:65080"
+    },
+    "app:act_3741fb65c3a7": {
+      "action_id": "app:act_3741fb65c3a7",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71637;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_3741fb65c3a7",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_3741fb65c3a7",
+      "source_node_id": "I5602:71637;5725:47922;5602:68962"
+    },
+    "app:act_37b91bed18a2": {
+      "action_id": "app:act_37b91bed18a2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52961",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_37b91bed18a2",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_37b91bed18a2",
+      "source_node_id": "I5645:60760;5596:52961"
+    },
+    "app:act_37bce873831e": {
+      "action_id": "app:act_37bce873831e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71585;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_37bce873831e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_37bce873831e",
+      "source_node_id": "I5602:71585;5725:52065;5602:68962"
+    },
+    "app:act_38e50e3c5b61": {
+      "action_id": "app:act_38e50e3c5b61",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71612;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_38e50e3c5b61",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_38e50e3c5b61",
+      "source_node_id": "I5602:71612;5725:52065;5602:68962"
+    },
+    "app:act_3b42c02a308c": {
+      "action_id": "app:act_3b42c02a308c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71614;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_3b42c02a308c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_3b42c02a308c",
+      "source_node_id": "I5602:71614;5725:47922;5602:68962"
+    },
+    "app:act_3c6e5300934f": {
+      "action_id": "app:act_3c6e5300934f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71492;5621:25652",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_3c6e5300934f",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_3c6e5300934f",
+      "source_node_id": "I5602:71492;5621:25652"
+    },
+    "app:act_3f38523cddf1": {
+      "action_id": "app:act_3f38523cddf1",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71636",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_3f38523cddf1",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_3f38523cddf1",
+      "source_node_id": "5602:71636"
+    },
+    "app:act_4074bd436f5c": {
+      "action_id": "app:act_4074bd436f5c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71585;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4074bd436f5c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_4074bd436f5c",
+      "source_node_id": "I5602:71585;5725:47922;5602:68962"
+    },
+    "app:act_4236da70c1e5": {
+      "action_id": "app:act_4236da70c1e5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71635;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4236da70c1e5",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_4236da70c1e5",
+      "source_node_id": "I5602:71635;5725:47922;5602:68962"
+    },
+    "app:act_424660040d21": {
+      "action_id": "app:act_424660040d21",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71621;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_424660040d21",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_424660040d21",
+      "source_node_id": "I5602:71621;5725:52065;5602:68962"
+    },
+    "app:act_456f572c81bf": {
+      "action_id": "app:act_456f572c81bf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52900",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_456f572c81bf",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_456f572c81bf",
+      "source_node_id": "I5645:60760;5596:52900"
+    },
+    "app:act_46dee5c9e0c3": {
+      "action_id": "app:act_46dee5c9e0c3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71609;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_46dee5c9e0c3",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_46dee5c9e0c3",
+      "source_node_id": "I5602:71609;5725:47922;5602:68962"
+    },
+    "app:act_4a58bdd08bb7": {
+      "action_id": "app:act_4a58bdd08bb7",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52902",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4a58bdd08bb7",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_4a58bdd08bb7",
+      "source_node_id": "I5645:60760;5596:52902"
+    },
+    "app:act_4aa3e74c52ad": {
+      "action_id": "app:act_4aa3e74c52ad",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71609",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4aa3e74c52ad",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_4aa3e74c52ad",
+      "source_node_id": "5602:71609"
+    },
+    "app:act_4ac90d93e481": {
+      "action_id": "app:act_4ac90d93e481",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71615;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4ac90d93e481",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_4ac90d93e481",
+      "source_node_id": "I5602:71615;5725:47922;5602:68962"
+    },
+    "app:act_4cfc7dc15598": {
+      "action_id": "app:act_4cfc7dc15598",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "I5449:19127;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_4cfc7dc15598",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_4cfc7dc15598",
+      "source_node_id": "I5449:19127;5217:13746"
+    },
+    "app:act_4d5182b12c73": {
+      "action_id": "app:act_4d5182b12c73",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5329:12027",
+          "node_id": "5335:4291",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_4d5182b12c73",
+      "page_id": "page:my-profile:5329:12027",
+      "prototype_action_id": "act_4d5182b12c73",
+      "source_node_id": "5335:4291"
+    },
+    "app:act_4f309f503a15": {
+      "action_id": "app:act_4f309f503a15",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71622;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4f309f503a15",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_4f309f503a15",
+      "source_node_id": "I5602:71622;5725:52065;5602:68962"
+    },
+    "app:act_4fc3cccf2bab": {
+      "action_id": "app:act_4fc3cccf2bab",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71582;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4fc3cccf2bab",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_4fc3cccf2bab",
+      "source_node_id": "I5602:71582;5725:52065;5602:68962"
+    },
+    "app:act_5000a6dd5486": {
+      "action_id": "app:act_5000a6dd5486",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71645",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5000a6dd5486",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_5000a6dd5486",
+      "source_node_id": "5602:71645"
+    },
+    "app:act_5069b0c18dff": {
+      "action_id": "app:act_5069b0c18dff",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71638;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5069b0c18dff",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_5069b0c18dff",
+      "source_node_id": "I5602:71638;5602:69270;5602:68962"
+    },
+    "app:act_547e3e671bd2": {
+      "action_id": "app:act_547e3e671bd2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71611;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_547e3e671bd2",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_547e3e671bd2",
+      "source_node_id": "I5602:71611;5725:47922;5602:68962"
+    },
+    "app:act_558a8503fc29": {
+      "action_id": "app:act_558a8503fc29",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71635;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_558a8503fc29",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_558a8503fc29",
+      "source_node_id": "I5602:71635;5725:52065;5602:68962"
+    },
+    "app:act_5624a17f0ce8": {
+      "action_id": "app:act_5624a17f0ce8",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71583",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5624a17f0ce8",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_5624a17f0ce8",
+      "source_node_id": "5602:71583"
+    },
+    "app:act_580733380960": {
+      "action_id": "app:act_580733380960",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60758;5217:13742",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_580733380960",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_580733380960",
+      "source_node_id": "I5645:60758;5217:13742"
+    },
+    "app:act_58d12b286353": {
+      "action_id": "app:act_58d12b286353",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52903",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_58d12b286353",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_58d12b286353",
+      "source_node_id": "I5645:60760;5596:52903"
+    },
+    "app:act_5af05c52e777": {
+      "action_id": "app:act_5af05c52e777",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52964",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5af05c52e777",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_5af05c52e777",
+      "source_node_id": "I5645:60760;5596:52964"
+    },
+    "app:act_5b3fcaf5994b": {
+      "action_id": "app:act_5b3fcaf5994b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71625;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5b3fcaf5994b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_5b3fcaf5994b",
+      "source_node_id": "I5602:71625;5602:69270;5602:68962"
+    },
+    "app:act_5cc5abe5d37c": {
+      "action_id": "app:act_5cc5abe5d37c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71625",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5cc5abe5d37c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_5cc5abe5d37c",
+      "source_node_id": "5602:71625"
+    },
+    "app:act_5d2741f7f334": {
+      "action_id": "app:act_5d2741f7f334",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52967",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5d2741f7f334",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_5d2741f7f334",
+      "source_node_id": "I5645:60760;5596:52967"
+    },
+    "app:act_5f9884bba9a5": {
+      "action_id": "app:act_5f9884bba9a5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52954",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5f9884bba9a5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_5f9884bba9a5",
+      "source_node_id": "I5645:60760;5596:52954"
+    },
+    "app:act_6059e9b07401": {
+      "action_id": "app:act_6059e9b07401",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71643;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6059e9b07401",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_6059e9b07401",
+      "source_node_id": "I5602:71643;5725:52065;5602:68962"
+    },
+    "app:act_69211dd4ed64": {
+      "action_id": "app:act_69211dd4ed64",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71580",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_69211dd4ed64",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_69211dd4ed64",
+      "source_node_id": "5602:71580"
+    },
+    "app:act_693948f11413": {
+      "action_id": "app:act_693948f11413",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71615",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_693948f11413",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_693948f11413",
+      "source_node_id": "5602:71615"
+    },
+    "app:act_6b1bdb9992e4": {
+      "action_id": "app:act_6b1bdb9992e4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71632;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6b1bdb9992e4",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_6b1bdb9992e4",
+      "source_node_id": "I5602:71632;5602:69270;5602:68962"
+    },
+    "app:act_6b4d1f2d6957": {
+      "action_id": "app:act_6b4d1f2d6957",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71643",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6b4d1f2d6957",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_6b4d1f2d6957",
+      "source_node_id": "5602:71643"
+    },
+    "app:act_6b60bc7cc248": {
+      "action_id": "app:act_6b60bc7cc248",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71634;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6b60bc7cc248",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_6b60bc7cc248",
+      "source_node_id": "I5602:71634;5602:69270;5602:68962"
+    },
+    "app:act_6bc8b9284c1f": {
+      "action_id": "app:act_6bc8b9284c1f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71611",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6bc8b9284c1f",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_6bc8b9284c1f",
+      "source_node_id": "5602:71611"
+    },
+    "app:act_704040f665ad": {
+      "action_id": "app:act_704040f665ad",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5725:105827",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_704040f665ad",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_704040f665ad",
+      "source_node_id": "5725:105827"
+    },
+    "app:act_7489efb0786e": {
+      "action_id": "app:act_7489efb0786e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71637",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7489efb0786e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_7489efb0786e",
+      "source_node_id": "5602:71637"
+    },
+    "app:act_795f7e40494c": {
+      "action_id": "app:act_795f7e40494c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71625;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_795f7e40494c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_795f7e40494c",
+      "source_node_id": "I5602:71625;5725:47922;5602:68962"
+    },
+    "app:act_7a15e9d408cd": {
+      "action_id": "app:act_7a15e9d408cd",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5329:12027",
+          "node_id": "I5329:12028;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_7a15e9d408cd",
+      "page_id": "page:my-profile:5329:12027",
+      "prototype_action_id": "act_7a15e9d408cd",
+      "source_node_id": "I5329:12028;5217:13749"
+    },
+    "app:act_7acdbd24233c": {
+      "action_id": "app:act_7acdbd24233c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71583;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7acdbd24233c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_7acdbd24233c",
+      "source_node_id": "I5602:71583;5725:52065;5602:68962"
+    },
+    "app:act_7b819b6ee2f9": {
+      "action_id": "app:act_7b819b6ee2f9",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71615;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7b819b6ee2f9",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_7b819b6ee2f9",
+      "source_node_id": "I5602:71615;5725:52065;5602:68962"
+    },
+    "app:act_7d68912a589b": {
+      "action_id": "app:act_7d68912a589b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52945",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7d68912a589b",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_7d68912a589b",
+      "source_node_id": "I5645:60760;5596:52945"
+    },
+    "app:act_7e92c4b81773": {
+      "action_id": "app:act_7e92c4b81773",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52952",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7e92c4b81773",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_7e92c4b81773",
+      "source_node_id": "I5645:60760;5596:52952"
+    },
+    "app:act_80e2e05cb872": {
+      "action_id": "app:act_80e2e05cb872",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71625;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_80e2e05cb872",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_80e2e05cb872",
+      "source_node_id": "I5602:71625;5725:52065;5602:68962"
+    },
+    "app:act_834ff08734e3": {
+      "action_id": "app:act_834ff08734e3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71584;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_834ff08734e3",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_834ff08734e3",
+      "source_node_id": "I5602:71584;5725:52065;5602:68962"
+    },
+    "app:act_8457de7fe5e6": {
+      "action_id": "app:act_8457de7fe5e6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52931",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8457de7fe5e6",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_8457de7fe5e6",
+      "source_node_id": "I5645:60760;5596:52931"
+    },
+    "app:act_84f41997a418": {
+      "action_id": "app:act_84f41997a418",
+      "destination_route": "invite-user",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "5354:14367",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_84f41997a418",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_84f41997a418",
+      "source_node_id": "5354:14367"
+    },
+    "app:act_8555a097af2f": {
+      "action_id": "app:act_8555a097af2f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71638;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8555a097af2f",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_8555a097af2f",
+      "source_node_id": "I5602:71638;5725:47922;5602:68962"
+    },
+    "app:act_8747dc05cbb6": {
+      "action_id": "app:act_8747dc05cbb6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "I5354:14284;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_8747dc05cbb6",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_8747dc05cbb6",
+      "source_node_id": "I5354:14284;5217:13749"
+    },
+    "app:act_8b6b2d4d4f35": {
+      "action_id": "app:act_8b6b2d4d4f35",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71584;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8b6b2d4d4f35",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_8b6b2d4d4f35",
+      "source_node_id": "I5602:71584;5725:47922;5602:68962"
+    },
+    "app:act_8e9cab6943a2": {
+      "action_id": "app:act_8e9cab6943a2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52956",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8e9cab6943a2",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_8e9cab6943a2",
+      "source_node_id": "I5645:60760;5596:52956"
+    },
+    "app:act_8fabca384511": {
+      "action_id": "app:act_8fabca384511",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71581",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8fabca384511",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_8fabca384511",
+      "source_node_id": "5602:71581"
+    },
+    "app:act_8fad358d5ae4": {
+      "action_id": "app:act_8fad358d5ae4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71610;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8fad358d5ae4",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_8fad358d5ae4",
+      "source_node_id": "I5602:71610;5725:52065;5602:68962"
+    },
+    "app:act_90ddad0c6963": {
+      "action_id": "app:act_90ddad0c6963",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71610;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_90ddad0c6963",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_90ddad0c6963",
+      "source_node_id": "I5602:71610;5725:47922;5602:68962"
+    },
+    "app:act_90fd80df18b9": {
+      "action_id": "app:act_90fd80df18b9",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71583;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_90fd80df18b9",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_90fd80df18b9",
+      "source_node_id": "I5602:71583;5602:69270;5602:68962"
+    },
+    "app:act_92c2bc48e53b": {
+      "action_id": "app:act_92c2bc48e53b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71609;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_92c2bc48e53b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_92c2bc48e53b",
+      "source_node_id": "I5602:71609;5602:69270;5602:68962"
+    },
+    "app:act_93fe55174e9e": {
+      "action_id": "app:act_93fe55174e9e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52950",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_93fe55174e9e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_93fe55174e9e",
+      "source_node_id": "I5645:60760;5596:52950"
+    },
+    "app:act_962eeced036b": {
+      "action_id": "app:act_962eeced036b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71632;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_962eeced036b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_962eeced036b",
+      "source_node_id": "I5602:71632;5725:52065;5602:68962"
+    },
+    "app:act_9662d9add77f": {
+      "action_id": "app:act_9662d9add77f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52951",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_9662d9add77f",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_9662d9add77f",
+      "source_node_id": "I5645:60760;5596:52951"
+    },
+    "app:act_96ccf5d81968": {
+      "action_id": "app:act_96ccf5d81968",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71611;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_96ccf5d81968",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_96ccf5d81968",
+      "source_node_id": "I5602:71611;5725:52065;5602:68962"
+    },
+    "app:act_9e130ef286f6": {
+      "action_id": "app:act_9e130ef286f6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "5354:14373",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_9e130ef286f6",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_9e130ef286f6",
+      "source_node_id": "5354:14373"
+    },
+    "app:act_a38a1c5f225e": {
+      "action_id": "app:act_a38a1c5f225e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71636;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a38a1c5f225e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_a38a1c5f225e",
+      "source_node_id": "I5602:71636;5725:47922;5602:68962"
+    },
+    "app:act_a79f2ec9e91a": {
+      "action_id": "app:act_a79f2ec9e91a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71634;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a79f2ec9e91a",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_a79f2ec9e91a",
+      "source_node_id": "I5602:71634;5725:47922;5602:68962"
+    },
+    "app:act_a812655c8af6": {
+      "action_id": "app:act_a812655c8af6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71492;5528:36949",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_a812655c8af6",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_a812655c8af6",
+      "source_node_id": "I5602:71492;5528:36949"
+    },
+    "app:act_a91a36ae4329": {
+      "action_id": "app:act_a91a36ae4329",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71627",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a91a36ae4329",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_a91a36ae4329",
+      "source_node_id": "5602:71627"
+    },
+    "app:act_a932f4a9bde3": {
+      "action_id": "app:act_a932f4a9bde3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52965",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a932f4a9bde3",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_a932f4a9bde3",
+      "source_node_id": "I5645:60760;5596:52965"
+    },
+    "app:act_a976b49799eb": {
+      "action_id": "app:act_a976b49799eb",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71627;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a976b49799eb",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_a976b49799eb",
+      "source_node_id": "I5602:71627;5725:52065;5602:68962"
+    },
+    "app:act_adde0899ec26": {
+      "action_id": "app:act_adde0899ec26",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71626",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_adde0899ec26",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_adde0899ec26",
+      "source_node_id": "5602:71626"
+    },
+    "app:act_ae4063b9ed10": {
+      "action_id": "app:act_ae4063b9ed10",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52931",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_ae4063b9ed10",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_ae4063b9ed10",
+      "source_node_id": "I5645:60760;5596:52931"
+    },
+    "app:act_b12f39dbc0ad": {
+      "action_id": "app:act_b12f39dbc0ad",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52940",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b12f39dbc0ad",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_b12f39dbc0ad",
+      "source_node_id": "I5645:60760;5596:52940"
+    },
+    "app:act_b16beab924cd": {
+      "action_id": "app:act_b16beab924cd",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71634",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b16beab924cd",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b16beab924cd",
+      "source_node_id": "5602:71634"
+    },
+    "app:act_b23f8f90c077": {
+      "action_id": "app:act_b23f8f90c077",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71645;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b23f8f90c077",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b23f8f90c077",
+      "source_node_id": "I5602:71645;5602:69270;5602:68962"
+    },
+    "app:act_b330a2453d89": {
+      "action_id": "app:act_b330a2453d89",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71614;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b330a2453d89",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b330a2453d89",
+      "source_node_id": "I5602:71614;5602:69270;5602:68962"
+    },
+    "app:act_b3437de7be7d": {
+      "action_id": "app:act_b3437de7be7d",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71610",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b3437de7be7d",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b3437de7be7d",
+      "source_node_id": "5602:71610"
+    },
+    "app:act_b4327f13dee4": {
+      "action_id": "app:act_b4327f13dee4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71584",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b4327f13dee4",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b4327f13dee4",
+      "source_node_id": "5602:71584"
+    },
+    "app:act_b575d778726a": {
+      "action_id": "app:act_b575d778726a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71644;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b575d778726a",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b575d778726a",
+      "source_node_id": "I5602:71644;5602:69270;5602:68962"
+    },
+    "app:act_b6b9e604afd1": {
+      "action_id": "app:act_b6b9e604afd1",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71637;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b6b9e604afd1",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b6b9e604afd1",
+      "source_node_id": "I5602:71637;5602:69270;5602:68962"
+    },
+    "app:act_b6edc725d563": {
+      "action_id": "app:act_b6edc725d563",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71645;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b6edc725d563",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b6edc725d563",
+      "source_node_id": "I5602:71645;5725:52065;5602:68962"
+    },
+    "app:act_b73882abe844": {
+      "action_id": "app:act_b73882abe844",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71638",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b73882abe844",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b73882abe844",
+      "source_node_id": "5602:71638"
+    },
+    "app:act_b8415d0b8daf": {
+      "action_id": "app:act_b8415d0b8daf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71634;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b8415d0b8daf",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b8415d0b8daf",
+      "source_node_id": "I5602:71634;5725:52065;5602:68962"
+    },
+    "app:act_b853603385f4": {
+      "action_id": "app:act_b853603385f4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71581",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_b853603385f4",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_b853603385f4",
+      "source_node_id": "5602:71581"
+    },
+    "app:act_be4cc9bfb872": {
+      "action_id": "app:act_be4cc9bfb872",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52944",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_be4cc9bfb872",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_be4cc9bfb872",
+      "source_node_id": "I5645:60760;5596:52944"
+    },
+    "app:act_be58b2c8a45f": {
+      "action_id": "app:act_be58b2c8a45f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71623;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_be58b2c8a45f",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_be58b2c8a45f",
+      "source_node_id": "I5602:71623;5602:69270;5602:68962"
+    },
+    "app:act_bf05efd18307": {
+      "action_id": "app:act_bf05efd18307",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52966",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_bf05efd18307",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_bf05efd18307",
+      "source_node_id": "I5645:60760;5596:52966"
+    },
+    "app:act_bfa5e8a23718": {
+      "action_id": "app:act_bfa5e8a23718",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "5449:19138",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_bfa5e8a23718",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_bfa5e8a23718",
+      "source_node_id": "5449:19138"
+    },
+    "app:act_c1ba9e64a4bd": {
+      "action_id": "app:act_c1ba9e64a4bd",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71633;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c1ba9e64a4bd",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_c1ba9e64a4bd",
+      "source_node_id": "I5602:71633;5602:69270;5602:68962"
+    },
+    "app:act_c2477e767c8b": {
+      "action_id": "app:act_c2477e767c8b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71585;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c2477e767c8b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_c2477e767c8b",
+      "source_node_id": "I5602:71585;5602:69270;5602:68962"
+    },
+    "app:act_c5281b618790": {
+      "action_id": "app:act_c5281b618790",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71635;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c5281b618790",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_c5281b618790",
+      "source_node_id": "I5602:71635;5602:69270;5602:68962"
+    },
+    "app:act_c64d700d2941": {
+      "action_id": "app:act_c64d700d2941",
+      "destination_route": "add-category",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "5449:19132",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_c64d700d2941",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_c64d700d2941",
+      "source_node_id": "5449:19132"
+    },
+    "app:act_c68b306470e5": {
+      "action_id": "app:act_c68b306470e5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52929",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c68b306470e5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_c68b306470e5",
+      "source_node_id": "I5645:60760;5596:52929"
+    },
+    "app:act_c77d00f2956c": {
+      "action_id": "app:act_c77d00f2956c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71621",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c77d00f2956c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_c77d00f2956c",
+      "source_node_id": "5602:71621"
+    },
+    "app:act_c8d719acf86a": {
+      "action_id": "app:act_c8d719acf86a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71621;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c8d719acf86a",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_c8d719acf86a",
+      "source_node_id": "I5602:71621;5725:47922;5602:68962"
+    },
+    "app:act_cd0089ad194b": {
+      "action_id": "app:act_cd0089ad194b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5329:12027",
+          "node_id": "I5329:12028;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_cd0089ad194b",
+      "page_id": "page:my-profile:5329:12027",
+      "prototype_action_id": "act_cd0089ad194b",
+      "source_node_id": "I5329:12028;5217:13746"
+    },
+    "app:act_d1630611f478": {
+      "action_id": "app:act_d1630611f478",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71635",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d1630611f478",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_d1630611f478",
+      "source_node_id": "5602:71635"
+    },
+    "app:act_d3fe780754e7": {
+      "action_id": "app:act_d3fe780754e7",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71614;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d3fe780754e7",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_d3fe780754e7",
+      "source_node_id": "I5602:71614;5725:52065;5602:68962"
+    },
+    "app:act_d408ac45232d": {
+      "action_id": "app:act_d408ac45232d",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52899",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_d408ac45232d",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d408ac45232d",
+      "source_node_id": "I5645:60760;5596:52899"
+    },
+    "app:act_d4a99517c8ab": {
+      "action_id": "app:act_d4a99517c8ab",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52928",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d4a99517c8ab",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d4a99517c8ab",
+      "source_node_id": "I5645:60760;5596:52928"
+    },
+    "app:act_d540cb8c353e": {
+      "action_id": "app:act_d540cb8c353e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52941",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d540cb8c353e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d540cb8c353e",
+      "source_node_id": "I5645:60760;5596:52941"
+    },
+    "app:act_d5a8cbeb467b": {
+      "action_id": "app:act_d5a8cbeb467b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71637;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d5a8cbeb467b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_d5a8cbeb467b",
+      "source_node_id": "I5602:71637;5725:52065;5602:68962"
+    },
+    "app:act_d5caac9bcb2c": {
+      "action_id": "app:act_d5caac9bcb2c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71633;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d5caac9bcb2c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_d5caac9bcb2c",
+      "source_node_id": "I5602:71633;5725:47922;5602:68962"
+    },
+    "app:act_d7b6f885265e": {
+      "action_id": "app:act_d7b6f885265e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71583;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d7b6f885265e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_d7b6f885265e",
+      "source_node_id": "I5602:71583;5725:47922;5602:68962"
+    },
+    "app:act_d937c588d9b6": {
+      "action_id": "app:act_d937c588d9b6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52953",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d937c588d9b6",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d937c588d9b6",
+      "source_node_id": "I5645:60760;5596:52953"
+    },
+    "app:act_da6799775757": {
+      "action_id": "app:act_da6799775757",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52943",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_da6799775757",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_da6799775757",
+      "source_node_id": "I5645:60760;5596:52943"
+    },
+    "app:act_ddc36daeb58c": {
+      "action_id": "app:act_ddc36daeb58c",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71645;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_ddc36daeb58c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_ddc36daeb58c",
+      "source_node_id": "I5602:71645;5725:47922;5602:68962"
+    },
+    "app:act_e0f77cf6a0b9": {
+      "action_id": "app:act_e0f77cf6a0b9",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52932",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e0f77cf6a0b9",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_e0f77cf6a0b9",
+      "source_node_id": "I5645:60760;5596:52932"
+    },
+    "app:act_e2df1de38c0e": {
+      "action_id": "app:act_e2df1de38c0e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52963",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e2df1de38c0e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_e2df1de38c0e",
+      "source_node_id": "I5645:60760;5596:52963"
+    },
+    "app:act_e4b07b44c095": {
+      "action_id": "app:act_e4b07b44c095",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71643;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e4b07b44c095",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_e4b07b44c095",
+      "source_node_id": "I5602:71643;5602:69270;5602:68962"
+    },
+    "app:act_e50c32d800d2": {
+      "action_id": "app:act_e50c32d800d2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71632",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e50c32d800d2",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_e50c32d800d2",
+      "source_node_id": "5602:71632"
+    },
+    "app:act_e5e413d25b1e": {
+      "action_id": "app:act_e5e413d25b1e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71611;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e5e413d25b1e",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_e5e413d25b1e",
+      "source_node_id": "I5602:71611;5602:69270;5602:68962"
+    },
+    "app:act_e5f5df9066c4": {
+      "action_id": "app:act_e5f5df9066c4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71623;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e5f5df9066c4",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_e5f5df9066c4",
+      "source_node_id": "I5602:71623;5725:52065;5602:68962"
+    },
+    "app:act_e8129d443509": {
+      "action_id": "app:act_e8129d443509",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71632;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e8129d443509",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_e8129d443509",
+      "source_node_id": "I5602:71632;5725:47922;5602:68962"
+    },
+    "app:act_e846490401e5": {
+      "action_id": "app:act_e846490401e5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e846490401e5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_e846490401e5",
+      "source_node_id": "I5645:60760;5596:52962"
+    },
+    "app:act_e8cc2762ff35": {
+      "action_id": "app:act_e8cc2762ff35",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71622;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e8cc2762ff35",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_e8cc2762ff35",
+      "source_node_id": "I5602:71622;5725:47922;5602:68962"
+    },
+    "app:act_ec05202ba107": {
+      "action_id": "app:act_ec05202ba107",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52927",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_ec05202ba107",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_ec05202ba107",
+      "source_node_id": "I5645:60760;5596:52927"
+    },
+    "app:act_ed2875c8f17c": {
+      "action_id": "app:act_ed2875c8f17c",
+      "destination_route": "calendar",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71491;5217:13742",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_ed2875c8f17c",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_ed2875c8f17c",
+      "source_node_id": "I5602:71491;5217:13742"
+    },
+    "app:act_edd51451072e": {
+      "action_id": "app:act_edd51451072e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52933",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_edd51451072e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_edd51451072e",
+      "source_node_id": "I5645:60760;5596:52933"
+    },
+    "app:act_f04f5d6e9aaa": {
+      "action_id": "app:act_f04f5d6e9aaa",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71624;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f04f5d6e9aaa",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_f04f5d6e9aaa",
+      "source_node_id": "I5602:71624;5725:47922;5602:68962"
+    },
+    "app:act_f129990e3a1b": {
+      "action_id": "app:act_f129990e3a1b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71615;5602:69270;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f129990e3a1b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_f129990e3a1b",
+      "source_node_id": "I5602:71615;5602:69270;5602:68962"
+    },
+    "app:act_f280c373389b": {
+      "action_id": "app:act_f280c373389b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71612;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f280c373389b",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_f280c373389b",
+      "source_node_id": "I5602:71612;5725:47922;5602:68962"
+    },
+    "app:act_f2cff7020a30": {
+      "action_id": "app:act_f2cff7020a30",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71614",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f2cff7020a30",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_f2cff7020a30",
+      "source_node_id": "5602:71614"
+    },
+    "app:act_f62cbd8c0291": {
+      "action_id": "app:act_f62cbd8c0291",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71626;5725:52065;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f62cbd8c0291",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_f62cbd8c0291",
+      "source_node_id": "I5602:71626;5725:52065;5602:68962"
+    },
+    "app:act_f87f2233bf66": {
+      "action_id": "app:act_f87f2233bf66",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "I5602:71623;5725:47922;5602:68962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f87f2233bf66",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_f87f2233bf66",
+      "source_node_id": "I5602:71623;5725:47922;5602:68962"
+    },
+    "app:act_f8e0208bcc1b": {
+      "action_id": "app:act_f8e0208bcc1b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52939",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f8e0208bcc1b",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_f8e0208bcc1b",
+      "source_node_id": "I5645:60760;5596:52939"
+    },
+    "app:act_fc41c4406f0a": {
+      "action_id": "app:act_fc41c4406f0a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "5645:65192",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_fc41c4406f0a",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_fc41c4406f0a",
+      "source_node_id": "5645:65192"
+    },
+    "app:act_fd3db8a1435a": {
+      "action_id": "app:act_fd3db8a1435a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71644",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_fd3db8a1435a",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_fd3db8a1435a",
+      "source_node_id": "5602:71644"
+    },
+    "app:act_fdb731798501": {
+      "action_id": "app:act_fdb731798501",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5602:71490",
+          "node_id": "5602:71623",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_fdb731798501",
+      "page_id": "page:calendar:5602:71490",
+      "prototype_action_id": "act_fdb731798501",
+      "source_node_id": "5602:71623"
+    }
+  },
+  "application_id": "app",
+  "collections": {
+    "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile": {
+      "collection_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile",
+      "evidence": [
+        {
+          "detail": "Collection authorized by read operation; cardinality is not limited to painted Figma nodes",
+          "frame_id": "5329:12027",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "page_id": "page:my-profile:5329:12027",
+      "query_id": "query:GET:/api/v1/marketing-team-member/profile:5329:12027",
+      "supports_variable_cardinality": true
+    }
+  },
+  "components": {},
+  "diagnostics": [],
+  "dialogs": {},
+  "features": {
+    "feature:annual-calendar-default": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5645:60757",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:annual-calendar-default",
+      "name": "annual-calendar-default",
+      "page_ids": [
+        "page:annual-calendar-default:5645:60757"
+      ]
+    },
+    "feature:manage-category": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5449:19126",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:manage-category",
+      "name": "manage-category",
+      "page_ids": [
+        "page:manage-category:5449:19126"
+      ]
+    },
+    "feature:manage-users": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5359:17424",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:manage-users",
+      "name": "manage-users",
+      "page_ids": [
+        "page:manage-users:5359:17424"
+      ]
+    },
+    "feature:my-profile": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5329:12027",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:my-profile",
+      "name": "my-profile",
+      "page_ids": [
+        "page:my-profile:5329:12027"
+      ]
+    },
+    "feature:week-calendar-default": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5602:71490",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:week-calendar-default",
+      "name": "Week-calendar-default",
+      "page_ids": [
+        "page:calendar:5602:71490"
+      ]
+    }
+  },
+  "forms": {},
+  "ir_kind": "application_frontend",
+  "ir_version": 1,
+  "layout_emit": "legacy_artboard_compatible",
+  "mode": "application_oriented",
+  "mutations": {},
+  "pages": {
+    "page:annual-calendar-default:5645:60757": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5645:60757",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `annual-calendar-default`",
+          "frame_id": "5645:60757",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:annual-calendar-default"
+      ],
+      "frame_id": "5645:60757",
+      "name": "annual-calendar-default",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "route_path": "annual-calendar-default",
+      "section_node_ids": [
+        "5645:60758",
+        "5645:65073",
+        "5645:60759",
+        "5645:60760",
+        "5645:60761"
+      ]
+    },
+    "page:calendar:5602:71490": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5602:71490",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `calendar`",
+          "frame_id": "5602:71490",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:week-calendar-default"
+      ],
+      "frame_id": "5602:71490",
+      "name": "Week-calendar-default",
+      "page_id": "page:calendar:5602:71490",
+      "route_path": "calendar",
+      "section_node_ids": [
+        "5602:71491",
+        "5602:71492",
+        "5602:71493"
+      ]
+    },
+    "page:manage-category:5449:19126": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5449:19126",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `manage-category`",
+          "frame_id": "5449:19126",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:manage-category"
+      ],
+      "frame_id": "5449:19126",
+      "name": "manage-category",
+      "page_id": "page:manage-category:5449:19126",
+      "route_path": "manage-category",
+      "section_node_ids": [
+        "5449:19127",
+        "5449:19128",
+        "5449:19142"
+      ]
+    },
+    "page:manage-users:5359:17424": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5359:17424",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `manage-users`",
+          "frame_id": "5359:17424",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:manage-users"
+      ],
+      "frame_id": "5359:17424",
+      "name": "manage-users",
+      "page_id": "page:manage-users:5359:17424",
+      "route_path": "manage-users",
+      "section_node_ids": [
+        "5354:14284",
+        "5354:14363",
+        "5359:17456"
+      ]
+    },
+    "page:my-profile:5329:12027": {
+      "collection_ids": [
+        "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+      ],
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5329:12027",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `my-profile`",
+          "frame_id": "5329:12027",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:my-profile"
+      ],
+      "frame_id": "5329:12027",
+      "name": "my-profile",
+      "page_id": "page:my-profile:5329:12027",
+      "query_ids": [
+        "query:GET:/api/v1/marketing-team-member/profile:5329:12027"
+      ],
+      "route_path": "my-profile",
+      "section_node_ids": [
+        "5329:12028",
+        "5333:4381",
+        "5329:12075"
+      ]
+    }
+  },
+  "queries": {
+    "query:GET:/api/v1/marketing-team-member/profile:5329:12027": {
+      "evidence": [
+        {
+          "detail": "FieldContract read operation",
+          "frame_id": "5329:12027",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "method": "GET",
+      "page_id": "page:my-profile:5329:12027",
+      "path": "/api/v1/marketing-team-member/profile",
+      "query_id": "query:GET:/api/v1/marketing-team-member/profile:5329:12027"
+    }
+  },
+  "routes": {
+    "route:annual-calendar-default": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5645:60757",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "path": "annual-calendar-default",
+      "route_id": "route:annual-calendar-default"
+    },
+    "route:calendar": {
+      "aliases": [
+        "week-calendar-default"
+      ],
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5602:71490",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:calendar:5602:71490",
+      "path": "calendar",
+      "route_id": "route:calendar"
+    },
+    "route:manage-category": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5449:19126",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:manage-category:5449:19126",
+      "path": "manage-category",
+      "route_id": "route:manage-category"
+    },
+    "route:manage-users": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5359:17424",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:manage-users:5359:17424",
+      "path": "manage-users",
+      "route_id": "route:manage-users"
+    },
+    "route:my-profile": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5329:12027",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:my-profile:5329:12027",
+      "path": "my-profile",
+      "route_id": "route:my-profile"
+    }
+  },
+  "runtime_states": [
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "loading",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "empty",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "error",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "success",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    }
+  ],
+  "shell": null,
+  "visual_authority": "figma_screen_spec",
+  "workflows": {}
+}

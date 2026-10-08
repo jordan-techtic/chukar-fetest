@@ -1,7 +1,19 @@
-export default function HomePage() {
+/**
+ * Luna generated page
+ * Page: MyProfilePage
+ * Ownership: Figma-owned layout
+ * Behavior: useFigmaScreenData / figmaFieldContract
+ * luna-spec-codegen: owned-layout
+ */
+"use client";
+
+import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
+import { MyProfilePage } from "@/components/luna-figma/MyProfilePage";
+
+export default function Page() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-8">
-      <h1 className="text-2xl font-semibold">Marketing Content Calendar</h1>
-    </main>
+    <FigmaScreenDataProvider routePath="my-profile">
+      <MyProfilePage />
+    </FigmaScreenDataProvider>
   );
 }

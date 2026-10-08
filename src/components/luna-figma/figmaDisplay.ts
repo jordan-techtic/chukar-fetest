@@ -19,63 +19,52 @@ export interface FigmaDisplayBinding {
   readonly evidence: string;
 }
 
-const ACTIVITIES_LIST_OP = "GET /api/v1/marketing-team-member/activities";
-const CALENDAR_OP = "GET /api/v1/marketing-team-member/calendar";
-const METRICS_OP = "GET /api/v1/marketing-team-member/performance-metrics";
-
-const MANAGE_ACTIVITY_FRAME = "5359:17106";
-const WEEK_CALENDAR_HISTORICAL_FRAME = "5584:26945";
-const ANNUAL_CALENDAR_FRAME = "5645:60757";
-
-function itemBinding(
-  nodeId: string,
-  frameId: string,
-  operation: string,
-  path: readonly FigmaDisplayPathPart[],
-): FigmaDisplayBinding {
-  return {
-    nodeId,
-    frameId,
-    operation,
-    responseUnwrap: "data",
-    path,
-    kind: "item",
-    valueType: null,
-    format: null,
-    evidence: "explicit_binding",
-  };
-}
-
 /** data-figma-node → the response field it renders. */
 export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
-  "5359:17170": itemBinding("5359:17170", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 0]),
-  "5359:17187": itemBinding("5359:17187", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 1]),
-  "5359:17204": itemBinding("5359:17204", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 2]),
-  "5359:17218": itemBinding("5359:17218", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 3]),
-  "5359:17235": itemBinding("5359:17235", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 4]),
-  "5359:17252": itemBinding("5359:17252", MANAGE_ACTIVITY_FRAME, ACTIVITIES_LIST_OP, ["items", 5]),
-  "I5589:50622;5556:77452": itemBinding("I5589:50622;5556:77452", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 0]),
-  "I5589:50622;5589:48811": itemBinding("I5589:50622;5589:48811", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 1]),
-  "I5589:50622;5589:48828": itemBinding("I5589:50622;5589:48828", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activities", 2]),
-  "I5645:60760;5589:50622;5556:77452": itemBinding("I5645:60760;5589:50622;5556:77452", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 0]),
-  "I5645:60760;5589:50622;5589:48811": itemBinding("I5645:60760;5589:50622;5589:48811", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 1]),
-  "I5645:60760;5589:50622;5589:48828": itemBinding("I5645:60760;5589:50622;5589:48828", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activities", 2]),
-  "I5645:60759;5273:21173": itemBinding("I5645:60759;5273:21173", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 0]),
-  "I5645:60759;5273:21176": itemBinding("I5645:60759;5273:21176", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 1]),
-  "I5645:60759;5273:21179": itemBinding("I5645:60759;5273:21179", ANNUAL_CALENDAR_FRAME, CALENDAR_OP, ["activity_types", 2]),
-  "I5584:26947;5273:21173": itemBinding("I5584:26947;5273:21173", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 0]),
-  "I5584:26947;5273:21176": itemBinding("I5584:26947;5273:21176", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 1]),
-  "I5584:26947;5273:21179": itemBinding("I5584:26947;5273:21179", WEEK_CALENDAR_HISTORICAL_FRAME, CALENDAR_OP, ["activity_types", 2]),
-  "I5645:60760;5596:52901;5602:55917": itemBinding("I5645:60760;5596:52901;5602:55917", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 0]),
-  "I5645:60760;5596:52901;5602:55918": itemBinding("I5645:60760;5596:52901;5602:55918", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 1]),
-  "I5645:60760;5596:52901;5602:55919": itemBinding("I5645:60760;5596:52901;5602:55919", ANNUAL_CALENDAR_FRAME, METRICS_OP, ["metrics", 2]),
+  "5335:4278": {
+    "evidence": "label_pair",
+    "format": null,
+    "frameId": "5329:12027",
+    "kind": "text",
+    "nodeId": "5335:4278",
+    "operation": "GET /api/v1/marketing-team-member/profile",
+    "path": [
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5602:73733": {
+    "evidence": "display_hint",
+    "format": null,
+    "frameId": "5602:71490",
+    "kind": "text",
+    "nodeId": "5602:73733",
+    "operation": "GET /api/v1/marketing-team-member/notes",
+    "path": [
+      "items",
+      0,
+      "description"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  }
 };
 
 /** Screen frame id → read operations its display bindings consume. */
 export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {
-  [MANAGE_ACTIVITY_FRAME]: [ACTIVITIES_LIST_OP],
-  [WEEK_CALENDAR_HISTORICAL_FRAME]: [CALENDAR_OP],
-  [ANNUAL_CALENDAR_FRAME]: [CALENDAR_OP, METRICS_OP],
+  "5329:12027": [
+    "GET /api/v1/marketing-team-member/profile"
+  ],
+  "5645:60757": [
+    "GET /api/v1/marketing-team-member/calendar"
+  ],
+  "5449:19126": [
+    "GET /api/v1/marketing-team-member/categories"
+  ],
+  "5602:71490": [
+    "GET /api/v1/marketing-team-member/notes"
+  ],
 };
 
 const payloads = new Map<string, unknown>();
@@ -196,14 +185,18 @@ export function formatDisplayValue(value: unknown, binding: FigmaDisplayBinding)
 }
 
 /** Bound copy: the response value once its read is published, the Figma copy before. */
-export function useFigmaTextContent(nodeId: string, fallback: string): string {
+export function figmaTextContent(nodeId: string, fallback: string): string {
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "text") {
     return fallback;
   }
   const { loaded, value } = lookup(binding);
-  return loaded ? formatDisplayValue(value, binding) : fallback;
+  if (!loaded) {
+    return fallback;
+  }
+  const rendered = formatDisplayValue(value, binding);
+  return rendered === "" ? fallback : rendered;
 }
 
 export type FigmaItemBinding = {
@@ -213,7 +206,7 @@ export type FigmaItemBinding = {
 };
 
 /** A repeated card hides once its read is published without an item at its index. */
-export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
+export function figmaItemProps(nodeId: string): FigmaItemBinding {
   useSyncExternalStore(subscribe, snapshot, snapshot);
   const binding = FIGMA_DISPLAY_BINDINGS[nodeId];
   if (!binding || binding.kind !== "item") {
@@ -225,6 +218,9 @@ export function useFigmaItemProps(nodeId: string): FigmaItemBinding {
   }
   return { hidden: true, "aria-hidden": true, "data-figma-item-missing": "true" };
 }
+
+/** Alias for layout modules that import the hook-style name. */
+export const useFigmaItemProps = figmaItemProps;
 
 /** Read operations ("METHOD /path") whose responses feed this frame's display bindings. */
 export function figmaDisplayOperations(frameId: string): readonly string[] {

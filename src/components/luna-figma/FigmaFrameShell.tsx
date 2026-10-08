@@ -4,6 +4,8 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
+"use client";
+
 import { useRef, type ReactNode } from "react";
 
 import { FRAME_WIDTH, useFrameScale } from "./useFrameScale";
@@ -34,7 +36,7 @@ export function FigmaFrameShell({
     <div
       ref={outerRef}
       id={id}
-      className="w-full overflow-hidden"
+      className="w-full overflow-x-hidden"
       style={{
         height: narrow ? frameHeight : frameHeight * scale,
         marginTop: marginTopPx * (narrow ? 1 : scale),
