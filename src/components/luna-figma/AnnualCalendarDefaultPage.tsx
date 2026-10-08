@@ -9,6 +9,7 @@
  */
 import "./figma-fonts.css";
 import "./figma-responsive.css";
+import Link from "next/link";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
 import { AnnualCalendarDefaultProfileCardSection } from "./AnnualCalendarDefaultProfileCardSection";
@@ -63,7 +64,7 @@ export function AnnualCalendarDefaultPage() {
               </div>
             </div>
             <div data-figma-node="I5645:60758;5217:13733" className="box-border w-max max-w-[434px] h-[40px] relative flex flex-row items-center gap-4">
-              <button data-figma-node="I5645:60758;5217:13742" type="button" data-figma-action="act_239e70fbe8e4" {...figmaActionProps("act_239e70fbe8e4")} className="box-border w-max max-w-[208px] h-[40px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-[#faf3e8] hover:opacity-90 cursor-pointer gap-2"><RefreshCcwClock_22f0146d data-figma-node="I5645:60758;5217:13743" data-figma-component="5111:8203" className="relative overflow-hidden rounded-[4px]" /><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#a21d35] whitespace-nowrap">Historical View</span></button>
+              <Link data-figma-node="I5645:60758;5217:13742" href="/week-calendar-historical-view" data-figma-action="act_580733380960" className="box-border w-max max-w-[208px] h-[40px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-[#faf3e8] hover:opacity-90 cursor-pointer gap-2 no-underline"><RefreshCcwClock_22f0146d data-figma-node="I5645:60758;5217:13743" data-figma-component="5111:8203" className="relative overflow-hidden rounded-[4px]" /><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#a21d35] whitespace-nowrap">Historical View</span></Link>
               <button data-figma-node="I5645:60758;5217:13746" type="button" data-figma-action="act_calendar_export_pdf" onClick={handleExportPdf} className="box-border w-max max-w-[138px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer gap-2"><FiRrDownload_e2f06a4e data-figma-node="I5645:60758;5217:13747" data-figma-component="5121:8564" className="relative overflow-hidden rounded-[4px]" />
 <span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20] whitespace-nowrap">Export PDF</span></button>
               <button data-figma-node="I5645:60758;5217:13749" type="button" data-figma-action="act_1c12087c7323" {...figmaActionProps("act_1c12087c7323")} className="box-border w-max max-w-[56px] h-[32px] relative flex flex-row items-center gap-2 cursor-pointer block">

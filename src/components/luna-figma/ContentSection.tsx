@@ -74,8 +74,8 @@ export function ContentSection() {
             </div>
             <div data-figma-node="5335:4275" className="box-border w-[872px] h-[63px] relative flex flex-col items-start gap-[6px] gap-1.5">
               <p data-figma-node="5335:4276" className="box-border w-[33px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-[#9ca3af]">Role</p>
-              <div data-figma-node="5335:4277" className="box-border w-[872px] h-[42px] rounded-[8px] relative pt-[12px] pr-[14px] pb-[12px] pl-[14px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                <p data-figma-node="5335:4278" className="box-border w-[844px] h-[18px] absolute left-[14px] top-[12px] font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{roleLabel}</p>
+              <div data-figma-node="5335:4277" className="box-border w-[872px] h-[42px] rounded-[8px] pt-[12px] pr-[14px] pb-[12px] pl-[14px] border-[#e2d9d0] border-[1px] bg-[#ffffff]">
+                <p data-figma-node="5335:4278" className="box-border w-full font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{roleLabel}</p>
               </div>
             </div>
             <div data-figma-node="5335:4283" className="box-border w-[872px] h-[141px] relative flex flex-col items-start gap-[6px] gap-1.5">

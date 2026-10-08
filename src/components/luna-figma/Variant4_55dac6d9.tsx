@@ -61,6 +61,7 @@ export function Variant4_55dac6d9({ className = "", ...rest }: { className?: str
               data-figma-node={kebabNodeId}
               type="button"
               data-figma-action={kebabAction}
+              aria-label="Activity options"
               {...figmaActionProps(kebabAction)}
               className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5 cursor-pointer block"
             >

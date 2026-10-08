@@ -98,7 +98,7 @@ export function WeekCalendarDefaultContentSection() {
                       <img data-figma-node="I5602:71581;5725:81430" src="/assets/figma/I5602-71581-5725-81430.png" alt="Frame 1000007851" className="box-border w-[46px] h-[16px] max-w-none object-cover object-top" />
                     </div>
                   </button>
-                  <div data-figma-node="5602:71582" data-figma-component="5602:61810" data-figma-action="act_1d2673162dfb" {...figmaActionProps("act_1d2673162dfb")} className="box-border w-[144px] h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
+                  <button type="button" data-figma-node="5602:71582" data-figma-component="5602:61810" data-figma-action="act_1d2673162dfb" {...figmaActionProps("act_1d2673162dfb")} className="box-border w-[144px] h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3] cursor-pointer block text-left">
                     <div data-figma-node="I5602:71582;5602:61811" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5602:71582;5725:79515" className="box-border w-max max-w-[8px] h-[17px] relative flex flex-row items-center gap-2.5">
                         <p data-figma-node="I5602:71582;5602:61812" className="box-border w-max max-w-[8px] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
@@ -131,7 +131,7 @@ export function WeekCalendarDefaultContentSection() {
                       <Variant4_55dac6d9 data-figma-node="I5602:71582;5725:47922" data-figma-component="5602:68955" className="relative" />
                       <Variant4_55dac6d9 data-figma-node="I5602:71582;5725:52065" data-figma-component="5602:68955" className="relative" />
                     </div>
-                  </div>
+                  </button>
                   <div data-figma-node="5602:71583" data-figma-component="5602:61810" className="box-border w-[144px] h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-[#e5e7eb] border-[1px] bg-[#fff9f3]">
                     <div data-figma-node="I5602:71583;5602:61811" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5602:71583;5725:79515" className="box-border w-max max-w-[9px] h-[17px] relative flex flex-row items-center gap-2.5">
