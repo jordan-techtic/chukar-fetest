@@ -10,6 +10,7 @@
 import { ActiveTrueSizeDefault_ddd4f79d } from "./ActiveTrueSizeDefault_ddd4f79d";
 import { FiRrPencil_93ff9a17 } from "./FiRrPencil_93ff9a17";
 import { FiRrTrash_ffb59942 } from "./FiRrTrash_ffb59942";
+import { figmaTextContent } from "./figmaDisplay";
 export function ManageCategoryContentColumnSection() {
   return (
     <section data-figma-node="5449:19142" className="absolute box-border left-[0px] top-[169px] w-[1440px] h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
@@ -23,50 +24,50 @@ export function ManageCategoryContentColumnSection() {
             <p data-figma-node="5449:19150" className="box-border w-[100px] h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-right whitespace-nowrap text-[#231f20]">Actions</p>
           </div>
           <div data-figma-node="5449:19151" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] border-[#e2d9d0] border-[1px]">
-            <p data-figma-node="5449:19152" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">Promotions</p>
-            <p data-figma-node="5449:19153" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Email, SMS, and other promotional sends</p>
+            <p data-figma-node="5449:19152" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{figmaTextContent("5449:19152", "Promotions")}</p>
+            <p data-figma-node="5449:19153" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">{figmaTextContent("5449:19153", "Email, SMS, and other promotional sends")}</p>
             <div data-figma-node="5449:19154" className="box-border w-[100px] h-[16px] relative flex flex-row items-center">
               <ActiveTrueSizeDefault_ddd4f79d data-figma-node="5449:19155" data-figma-component="5111:12391" className="relative" />
             </div>
             <p data-figma-node="5449:19156" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Aug 12, 2026</p>
             <div data-figma-node="5449:19157" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
-              <div data-figma-node="5449:19158" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                <FiRrPencil_93ff9a17 data-figma-node="5449:19159" data-figma-component="5121:9154" className="relative" />
+              <div data-figma-node="5449:19158" className="box-border w-[28px] h-[28px] overflow-hidden rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
+                <FiRrPencil_93ff9a17 data-figma-node="5449:19159" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[6px]" />
               </div>
-              <div data-figma-node="5449:19160" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                <FiRrTrash_ffb59942 data-figma-node="5449:19161" data-figma-component="5121:9660" className="relative" />
+              <div data-figma-node="5449:19160" className="box-border w-[28px] h-[28px] overflow-hidden rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
+                <FiRrTrash_ffb59942 data-figma-node="5449:19161" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[6px]" />
               </div>
             </div>
           </div>
           <div data-figma-node="5449:19162" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] border-[#e2d9d0] border-[1px]">
-            <p data-figma-node="5449:19163" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">Content</p>
-            <p data-figma-node="5449:19164" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Blog posts, social posts, and other content</p>
+            <p data-figma-node="5449:19163" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{figmaTextContent("5449:19163", "Content")}</p>
+            <p data-figma-node="5449:19164" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">{figmaTextContent("5449:19164", "Blog posts, social posts, and other content")}</p>
             <div data-figma-node="5449:19165" className="box-border w-[100px] h-[16px] relative flex flex-row items-center">
               <ActiveTrueSizeDefault_ddd4f79d data-figma-node="5449:19166" data-figma-component="5111:12391" className="relative" />
             </div>
             <p data-figma-node="5449:19167" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Aug 15, 2026</p>
             <div data-figma-node="5449:19168" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
-              <div data-figma-node="5449:19169" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                <FiRrPencil_93ff9a17 data-figma-node="5449:19170" data-figma-component="5121:9154" className="relative" />
+              <div data-figma-node="5449:19169" className="box-border w-[28px] h-[28px] overflow-hidden rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
+                <FiRrPencil_93ff9a17 data-figma-node="5449:19170" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[6px]" />
               </div>
-              <div data-figma-node="5449:19171" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                <FiRrTrash_ffb59942 data-figma-node="5449:19172" data-figma-component="5121:9660" className="relative" />
+              <div data-figma-node="5449:19171" className="box-border w-[28px] h-[28px] overflow-hidden rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
+                <FiRrTrash_ffb59942 data-figma-node="5449:19172" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[6px]" />
               </div>
             </div>
           </div>
           <div data-figma-node="5449:19173" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] border-[#e2d9d0] border-[1px]">
-            <p data-figma-node="5449:19174" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">Focuses</p>
-            <p data-figma-node="5449:19175" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Product and seasonal campaign focuses</p>
+            <p data-figma-node="5449:19174" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-[#231f20]">{figmaTextContent("5449:19174", "Focuses")}</p>
+            <p data-figma-node="5449:19175" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">{figmaTextContent("5449:19175", "Product and seasonal campaign focuses")}</p>
             <div data-figma-node="5449:19176" className="box-border w-[100px] h-[16px] relative flex flex-row items-center">
               <ActiveTrueSizeDefault_ddd4f79d data-figma-node="5449:19177" data-figma-component="5111:12391" className="relative" />
             </div>
             <p data-figma-node="5449:19178" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-[#686868]">Aug 20, 2026</p>
             <div data-figma-node="5449:19179" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
-              <div data-figma-node="5449:19180" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                <FiRrPencil_93ff9a17 data-figma-node="5449:19181" data-figma-component="5121:9154" className="relative" />
+              <div data-figma-node="5449:19180" className="box-border w-[28px] h-[28px] overflow-hidden rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
+                <FiRrPencil_93ff9a17 data-figma-node="5449:19181" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[6px]" />
               </div>
-              <div data-figma-node="5449:19182" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
-                <FiRrTrash_ffb59942 data-figma-node="5449:19183" data-figma-component="5121:9660" className="relative" />
+              <div data-figma-node="5449:19182" className="box-border w-[28px] h-[28px] overflow-hidden rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-[#faf3e8]">
+                <FiRrTrash_ffb59942 data-figma-node="5449:19183" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[6px]" />
               </div>
             </div>
           </div>

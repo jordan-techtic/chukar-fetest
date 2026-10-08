@@ -13,8 +13,10 @@ import { ManageCategoryPage } from "@/components/luna-figma/ManageCategoryPage";
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="manage-category">
-      <ManageCategoryPage />
-    </FigmaScreenDataProvider>
+    <div className="w-full flex flex-col">
+      <FigmaScreenDataProvider routePath="manage-category">
+        <ManageCategoryPage />
+      </FigmaScreenDataProvider>
+    </div>
   );
 }

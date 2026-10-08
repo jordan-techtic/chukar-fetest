@@ -1,4 +1,5 @@
 /** luna-spec-codegen: owned-layout */
+/* eslint-disable react-hooks/rules-of-hooks -- display bindings subscribe during client render via useSyncExternalStore */
 // Figma display nodes bound to GET response fields (Luna display contract).
 // The data hook calls publishReadPayload(method, path, body) after every read;
 // bound copy then renders the response value and cards past the response
@@ -46,6 +47,72 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
       0,
       "description"
     ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19152": {
+    "evidence": "explicit_binding",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19152",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": ["items", 0, "title"],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19153": {
+    "evidence": "explicit_binding",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19153",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": ["items", 0, "description"],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19163": {
+    "evidence": "explicit_binding",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19163",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": ["items", 1, "title"],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19164": {
+    "evidence": "explicit_binding",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19164",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": ["items", 1, "description"],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19174": {
+    "evidence": "explicit_binding",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19174",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": ["items", 2, "title"],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19175": {
+    "evidence": "explicit_binding",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19175",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": ["items", 2, "description"],
     "responseUnwrap": "data",
     "valueType": "string"
   }
@@ -221,6 +288,9 @@ export function figmaItemProps(nodeId: string): FigmaItemBinding {
 
 /** Alias for layout modules that import the hook-style name. */
 export const useFigmaItemProps = figmaItemProps;
+
+/** Alias for layout modules that import the hook-style name. */
+export const useFigmaTextContent = figmaTextContent;
 
 /** Read operations ("METHOD /path") whose responses feed this frame's display bindings. */
 export function figmaDisplayOperations(frameId: string): readonly string[] {

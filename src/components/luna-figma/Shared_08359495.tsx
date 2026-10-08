@@ -10,7 +10,7 @@ import { ChevronDown_a4db42af } from "./ChevronDown_a4db42af";
 import { SizeDefaultTypeImageStatusFalse_59ef8191 } from "./SizeDefaultTypeImageStatusFalse_59ef8191";
 export function Shared_08359495({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="5329:12028" data-figma-component="5273:20995" className={`box-border w-full min-w-0 h-full min-h-0 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between bg-[#ffffff] ${className}`} {...rest}>
+  <div data-figma-node="5329:12028" data-figma-component="5273:20995" className={`box-border w-full min-w-0 h-[80px] overflow-hidden shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between bg-[#ffffff] ${className}`} {...rest}>
     <div data-figma-node="I5329:12028;5217:13714" className="box-border w-max max-w-[282px] h-[50px] relative flex flex-row items-center gap-[30px]">
       <div data-figma-node="I5329:12028;5217:13715" className="box-border w-max max-w-[282px] h-[50px] relative flex flex-row items-center gap-3">
         <img data-figma-node="I5329:12028;5217:13716" src="/assets/figma/I5329-12028-5217-13716.png" alt="image 2" className="box-border w-[54px] h-[50px] rounded-[10px] max-w-none object-cover object-top" />

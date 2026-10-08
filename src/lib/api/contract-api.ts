@@ -37,6 +37,11 @@ import {
   MARKETING_TEAM_MEMBER_PERFORMANCE_METRICS_PATH,
 } from "./marketing-team-member-performance-metrics";
 import {
+  exportMarketingTeamMemberCalendar,
+  MARKETING_TEAM_MEMBER_EXPORT_CALENDAR_PATH,
+  type ExportCalendarRequest,
+} from "./marketing-team-member-export-calendar";
+import {
   getMarketingTeamMemberProfile,
   MARKETING_TEAM_MEMBER_PROFILE_PATH,
   updateMarketingTeamMemberProfile,
@@ -178,6 +183,13 @@ export async function fetchContractWrite(
   }
   if (method === "DELETE" && noteByIdMatch) {
     return deleteMarketingTeamMemberNote(decodeURIComponent(noteByIdMatch[1]), token);
+  }
+  if (method === "POST" && path === MARKETING_TEAM_MEMBER_EXPORT_CALENDAR_PATH) {
+    const blob = await exportMarketingTeamMemberCalendar(
+      body as ExportCalendarRequest,
+      token,
+    );
+    return { status: 200, body: blob, headers: new Headers() };
   }
   return apiRequest(method, path, body, token);
 }
