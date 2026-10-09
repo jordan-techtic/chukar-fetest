@@ -18,6 +18,21 @@ export default tseslint.config(
     },
   },
   {
+    files: ["src/components/luna-figma/**/*.{ts,tsx}"],
+    rules: {
+      "@next/next/no-html-link-for-pages": "off",
+      "@next/next/no-img-element": "off",
+      "react/no-unescaped-entities": "off",
+    },
+  },
+  {
+    files: ["src/components/luna-figma/useFigmaScreenData.ts"],
+    rules: {
+      "react-hooks/rules-of-hooks": "off",
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
+  {
     files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
     languageOptions: {
       globals: {

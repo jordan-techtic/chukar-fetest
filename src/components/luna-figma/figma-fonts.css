@@ -1,0 +1,33 @@
+/**
+ * Luna generated support file
+ * Role: figma fonts
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap");
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-onest: 'Onest', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+.font-inter { font-family: 'Inter', sans-serif; }
+.font-onest { font-family: 'Onest', sans-serif; }
+
+html, body { background-color: #fff9f3; min-height: 100%; font-family: 'Inter', sans-serif; }
+
+@keyframes luna-spec-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.luna-spec-marquee-track {
+  animation: luna-spec-marquee 40s linear infinite;
+}
+.luna-spec-marquee-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .luna-spec-marquee-track { animation: none; }
+}
