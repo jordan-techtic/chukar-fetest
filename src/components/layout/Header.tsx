@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export function Header({ onMenuClick }: HeaderProps) {
   return (
-    <header className="flex flex-row items-center justify-between border-b border-[#e5e7eb] bg-[#a21d35] px-[16px] py-[12px] text-[#fff9f3] font-['Onest',sans-serif]">
+    <header className="flex flex-row items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-surface)] px-[var(--spacing-padding-16)] py-[var(--spacing-gap-12)] text-[var(--color-text-primary)]">
       <div className="flex items-center gap-[var(--spacing-gap-12)]">
         <Button
           type="button"
@@ -18,16 +18,12 @@ export function Header({ onMenuClick }: HeaderProps) {
           size="icon"
           className="text-[var(--color-text-primary)] hover:bg-[var(--color-color-59)] hover:text-[var(--color-text-primary)] md:hidden"
           aria-label="Open navigation"
+          title="Open navigation"
           onClick={onMenuClick}
         >
           <HiOutlineMenuAlt2 className="h-5 w-5" aria-hidden />
         </Button>
-        <span
-          className="text-[22px] font-bold leading-[28.049999237060547px]"
-          style={{ fontFamily: "'Onest', sans-serif" }}
-        >
-          Marketing Content Calendar
-        </span>
+        <span className="text-heading-md-21">Marketing Content Calendar</span>
       </div>
     </header>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter, Noto_Sans, Onest } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
@@ -7,6 +8,24 @@ import { ThemeProvider } from "@/theme/ThemeProvider";
 
 import "./globals.css";
 
+const onest = Onest({
+  subsets: ["latin"],
+  variable: "--font-onest",
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "800"],
+});
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  variable: "--font-noto-sans",
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Marketing Content Calendar",
   description: "Marketing team content calendar application",
@@ -14,17 +33,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Noto+Sans:wght@400&family=Inter:wght@400;500;600;800&display=swap"
-        />
-      </head>
-      <body
-        className="min-h-screen antialiased font-onest"
-        style={{ fontFamily: "'Onest', sans-serif" }}
-      >
+    <html
+      lang="en"
+      className={`${onest.variable} ${inter.variable} ${notoSans.variable}`}
+    >
+      <body className={`${onest.className} min-h-screen antialiased`}>
         <ThemeProvider>
           <ErrorBoundary>
             <a
@@ -34,7 +47,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               Skip to main content
             </a>
             {children}
-            <Toaster position="top-right" richColors closeButton />
+            <Toaster position="top-right" />
           </ErrorBoundary>
         </ThemeProvider>
       </body>

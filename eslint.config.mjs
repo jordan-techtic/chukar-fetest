@@ -1,11 +1,13 @@
 import eslint from "@eslint/js";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: [".next/**", "node_modules/**", "coverage/**"],
+    ignores: [".next/**", "node_modules/**", "coverage/**", "tsconfig.tsbuildinfo"],
   },
   eslint.configs.recommended,
+  ...nextCoreWebVitals,
   ...tseslint.configs.recommended,
   {
     rules: {
