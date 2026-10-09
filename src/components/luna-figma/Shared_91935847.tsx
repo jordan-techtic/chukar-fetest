@@ -12,8 +12,8 @@ export function Shared_91935847({ className = "", ...rest }: { className?: strin
     <div data-figma-node="I5596:52939;5602:55917;5217:13651" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#0083ba] border-[1px] bg-[#eff7fa]">
       <div data-figma-node="I5596:52939;5602:55917;5217:13652" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
         <div data-figma-node="I5596:52939;5602:55917;5725:67039" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
-          <div data-figma-node="I5596:52939;5602:55917;5725:67040" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-            <FiRrELearning_336860e7 data-figma-node="I5596:52939;5602:55917;5725:67043" data-figma-component="5121:8577" className="relative" />
+          <div data-figma-node="I5596:52939;5602:55917;5725:67040" className="box-border w-[14px] h-[14px] overflow-hidden relative flex flex-row items-center gap-1 rounded-[4px]">
+            <FiRrELearning_336860e7 data-figma-node="I5596:52939;5602:55917;5725:67043" data-figma-component="5121:8577" className="relative overflow-hidden" />
           </div>
           <p data-figma-node="I5596:52939;5602:55917;5725:67044" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
           <div data-figma-node="I5596:52939;5602:55917;5725:67045" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
