@@ -7,6 +7,12 @@
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
+"use client";
+
+import { useCallback } from "react";
+
+import { toast } from "@/components/ui/toast";
+
 import "./figma-responsive.css";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
@@ -34,8 +40,31 @@ import { HistoricalView_1369850e } from "./HistoricalView_1369850e";
 import { Shared_736d44f6 } from "./Shared_736d44f6";
 import { Shared_91935847 } from "./Shared_91935847";
 import { Today_ddd8af3c } from "./Today_ddd8af3c";
+import { apiRequest, LunaApiError } from "./lunaApiClient";
 export function AnnualCalendarDefaultPage() {
   const screenData = useFigmaScreenData();
+  const exportCalendarPdf = useCallback(async () => {
+    try {
+      const body = await apiRequest("POST", "/api/v1/marketing-team-member/export-calendar", null, {
+        year: String(screenData.calendarPeriod.year),
+        month: String(screenData.calendarPeriod.month),
+      });
+      if (!(body instanceof Blob)) {
+        toast.error("Export did not return a PDF.");
+        return;
+      }
+      const url = URL.createObjectURL(body);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = `calendar-${screenData.calendarPeriod.year}-${screenData.calendarPeriod.month}.pdf`;
+      anchor.click();
+      URL.revokeObjectURL(url);
+      toast.success("Calendar exported.");
+    } catch (error) {
+      const message = error instanceof LunaApiError ? error.message : "Export failed.";
+      toast.error(message);
+    }
+  }, [screenData.calendarPeriod.month, screenData.calendarPeriod.year]);
   return (
     <div
       data-figma-bound={screenData.bound}
@@ -62,7 +91,7 @@ export function AnnualCalendarDefaultPage() {
             <div data-figma-node="I5645:60758;5217:13733" className="box-border w-max max-w-[434px] h-[40px] relative flex flex-row items-center gap-4">
               <button data-figma-node="I5645:60758;5217:13742" type="button" data-figma-action="act_580733380960" {...useFigmaActionProps("act_580733380960")} className="box-border w-max max-w-[208px] h-[40px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-[#faf3e8] hover:opacity-90 cursor-pointer gap-2"><div data-figma-node="I5645:60758;5217:13743" data-figma-component="5111:8203" className="box-border w-[16px] h-[16px] overflow-hidden relative rounded-[4px]"><RefreshCcwClock_22f0146d className="relative overflow-hidden" /></div><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#a21d35]">Historical View</span></button>
               <ActiveTrueSizeDefault_ddd4f79d data-figma-node="I5645:60758;5217:13745" data-figma-component="5111:12391" className="relative shrink-0" />
-              <button data-figma-node="I5645:60758;5217:13746" type="button" data-figma-unresolved-action="true" className="box-border w-max max-w-[138px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer gap-2"><div data-figma-node="I5645:60758;5217:13747" data-figma-component="5121:8564" className="box-border w-[16px] h-[16px] overflow-hidden relative rounded-[4px] flex flex-col items-center"><FiRrDownload_e2f06a4e className="relative overflow-hidden" /></div><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Export PDF</span></button>
+              <button data-figma-node="I5645:60758;5217:13746" type="button" data-figma-action="act_export_calendar_pdf" onClick={(event) => { event.preventDefault(); void exportCalendarPdf(); }} className="box-border w-max max-w-[138px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer gap-2"><div data-figma-node="I5645:60758;5217:13747" data-figma-component="5121:8564" className="box-border w-[16px] h-[16px] overflow-hidden relative rounded-[4px] flex flex-col items-center"><FiRrDownload_e2f06a4e className="relative overflow-hidden" /></div><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Export PDF</span></button>
               <div data-figma-node="I5645:60758;5217:13749" className="box-border w-max max-w-[56px] h-[32px] relative flex flex-row items-center gap-2">
                 <div data-figma-node="I5645:60758;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-[32px] rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
                   <img data-figma-node="I5645:60758;5217:13750;1002:172586" src="/assets/figma/I5645-60758-5217-13750-1002-172586.png" alt="Image" width={32} height={32} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[32px] h-[32px] rounded-[32px] max-w-none object-cover object-top" />
@@ -4400,8 +4429,8 @@ export function AnnualCalendarDefaultPage() {
                         <p data-figma-node="I5645:60760;5596:52969" className="box-border w-max max-w-[118px] h-auto min-h-[23px] font-onest text-[18px] font-[500] leading-[23px] text-left whitespace-nowrap text-[#a21d35]">October 2025</p>
                         <div data-figma-node="I5645:60760;5596:52970" className="box-border w-full min-w-0 h-full min-h-0 relative block bg-[#e2d9d0]"></div>
                       </div>
-                      <div data-figma-node="I5645:60760;5596:52971" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start border-[#e2d9d0] border-[1px] bg-[#ffffff]">
-                        <div data-figma-node="I5645:60760;5596:52975" data-figma-component="5556:77518" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
+                      <div data-figma-node="I5645:60760;5596:52971" className="box-border w-full min-w-0 h-[180px] relative border-[#e2d9d0] border-[1px] bg-[#ffffff]">
+                        <div data-figma-node="I5645:60760;5596:52975" data-figma-component="5556:77518" className="box-border absolute left-[0px] top-[0px] w-[94px] h-[180px] flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
                           <div data-figma-node="I5645:60760;5596:52975;5725:102094" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
                             <div data-figma-node="I5645:60760;5596:52975;5725:102095" className="box-border w-max max-w-[38px] h-[17px] relative flex flex-row items-center gap-1.5">
                               <p data-figma-node="I5645:60760;5596:52975;5725:102096" className="box-border w-[16px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
@@ -4410,7 +4439,7 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5596:52975;5725:102098" src="/assets/figma/I5645-60760-5596-52975-5725-102098.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
-                        <div data-figma-node="I5645:60760;5596:52976" data-figma-component="5556:77518" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
+                        <div data-figma-node="I5645:60760;5596:52976" data-figma-component="5556:77518" className="box-border absolute left-[94px] top-[0px] w-[94px] h-[180px] flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
                           <div data-figma-node="I5645:60760;5596:52976;5725:102094" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
                             <div data-figma-node="I5645:60760;5596:52976;5725:102095" className="box-border w-max max-w-[38px] h-[17px] relative flex flex-row items-center gap-1.5">
                               <p data-figma-node="I5645:60760;5596:52976;5725:102096" className="box-border w-[16px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
@@ -4419,7 +4448,7 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5596:52976;5725:102098" src="/assets/figma/I5645-60760-5596-52976-5725-102098.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
-                        <div data-figma-node="I5645:60760;5596:52977" data-figma-component="5556:77518" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
+                        <div data-figma-node="I5645:60760;5596:52977" data-figma-component="5556:77518" className="box-border absolute left-[188px] top-[0px] w-[94px] h-[180px] flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-[#e5e7eb] border-[1px] bg-[#f9f9f9]">
                           <div data-figma-node="I5645:60760;5596:52977;5725:102094" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
                             <div data-figma-node="I5645:60760;5596:52977;5725:102095" className="box-border w-max max-w-[38px] h-[17px] relative flex flex-row items-center gap-1.5">
                               <p data-figma-node="I5645:60760;5596:52977;5725:102096" className="box-border w-[16px] h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-[#374151]">3</p>
@@ -4428,10 +4457,10 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5596:52977;5725:102098" src="/assets/figma/I5645-60760-5596-52977-5725-102098.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
-                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52978" data-figma-component="5556:77447" className="relative" />
-                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52979" data-figma-component="5556:77447" className="relative" />
-                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52980" data-figma-component="5556:77447" className="relative" />
-                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52981" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52978" data-figma-component="5556:77447" className="absolute left-[282px] top-[0px]" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52979" data-figma-component="5556:77447" className="absolute left-[377px] top-[0px]" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52980" data-figma-component="5556:77447" className="absolute left-[471px] top-[0px]" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52981" data-figma-component="5556:77447" className="absolute left-[565px] top-[0px]" />
                       </div>
                     </div>
                   </div>
