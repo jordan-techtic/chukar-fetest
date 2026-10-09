@@ -5,7 +5,7 @@ import { useCallback, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Spinner } from "@/components/ui/spinner";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "@/components/ui/toast";
 import { fetchHealth } from "@/lib/api/health";
 import { getApiErrorMessage } from "@/lib/api/get-api-error-message";
 
