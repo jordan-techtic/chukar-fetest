@@ -1,9 +1,9 @@
 "use client";
 
-import { figmaFieldError } from "./useFigmaScreenData";
+import { useFigmaFieldError } from "./useFigmaScreenData";
 
 export function FigmaFieldInlineError({ field }: { field: string }) {
-  const message = figmaFieldError(field);
+  const message = useFigmaFieldError(field);
   if (!message) {
     return null;
   }

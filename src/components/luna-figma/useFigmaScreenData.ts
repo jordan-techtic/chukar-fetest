@@ -276,7 +276,15 @@ export function FigmaScreenDataProvider({
   }, [frameId, calendarPeriod]);
 
   useEffect(() => {
-    void loadReads();
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (!cancelled) {
+        void loadReads();
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [loadReads]);
 
   useEffect(() => {
@@ -405,7 +413,7 @@ export function FigmaScreenDataProvider({
   );
 }
 
-export function figmaFieldProps(field: string): FigmaFieldBinding {
+export function useFigmaFieldProps(field: string): FigmaFieldBinding {
   const { values, fieldErrors, setFieldValue } = useScreenContext();
   const value = values[field];
   const errorId = fieldErrors[field] ? `figma-field-error-${field}` : undefined;
@@ -417,7 +425,7 @@ export function figmaFieldProps(field: string): FigmaFieldBinding {
   };
 }
 
-export function figmaActionProps(action: string): FigmaActionBinding {
+export function useFigmaActionProps(action: string): FigmaActionBinding {
   const router = useRouter();
   const destination = FIGMA_ACTION_DESTINATIONS[action];
   const { submit, submitting } = useScreenContext();
@@ -459,7 +467,7 @@ export function useFigmaScreenData() {
   };
 }
 
-export function figmaFieldError(field: string): string | undefined {
+export function useFigmaFieldError(field: string): string | undefined {
   const { fieldErrors } = useScreenContext();
   return fieldErrors[field];
 }

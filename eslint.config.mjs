@@ -26,13 +26,6 @@ export default tseslint.config(
     },
   },
   {
-    files: ["src/components/luna-figma/useFigmaScreenData.ts"],
-    rules: {
-      "react-hooks/rules-of-hooks": "off",
-      "react-hooks/set-state-in-effect": "off",
-    },
-  },
-  {
     files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
     languageOptions: {
       globals: {

@@ -12,8 +12,8 @@
 import { figmaTextContent } from "./figmaDisplay";
 import {
   FigmaFieldInlineError,
-  figmaActionProps,
-  figmaFieldProps,
+  useFigmaActionProps,
+  useFigmaFieldProps,
   useFigmaScreenData,
 } from "./useFigmaScreenData";
 export function MyProfileContentSection() {
@@ -70,19 +70,19 @@ export function MyProfileContentSection() {
             <div data-figma-node="5337:4268" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-4">
               <div data-figma-node="5335:4267" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                 <p data-figma-node="5335:4268" className="box-border w-max max-w-[74px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-3">First name</p>
-                <input data-figma-node="5335:4269" name="first-name" data-figma-field="first-name" data-figma-field-origin="design_text" data-figma-api-field="first_name" {...figmaFieldProps("first-name")} type="text" aria-label="First name" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-background-2 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-1 pt-[12px] pr-[14px] pb-[12px] pl-[14px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none" />
+                <input data-figma-node="5335:4269" name="first-name" data-figma-field="first-name" data-figma-field-origin="design_text" data-figma-api-field="first_name" {...useFigmaFieldProps("first-name")} type="text" aria-label="First name" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-background-2 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-1 pt-[12px] pr-[14px] pb-[12px] pl-[14px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none" />
                 <FigmaFieldInlineError field="first-name" />
               </div>
               <div data-figma-node="5337:4263" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                 <p data-figma-node="5337:4264" className="box-border w-max max-w-[70px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-3">Last name</p>
-                <input data-figma-node="5337:4265" name="last-name" data-figma-field="last-name" data-figma-field-origin="design_text" data-figma-api-field="last_name" {...figmaFieldProps("last-name")} type="text" aria-label="Last name" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-background-2 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-1 pt-[12px] pr-[14px] pb-[12px] pl-[14px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none" />
+                <input data-figma-node="5337:4265" name="last-name" data-figma-field="last-name" data-figma-field-origin="design_text" data-figma-api-field="last_name" {...useFigmaFieldProps("last-name")} type="text" aria-label="Last name" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-background-2 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-1 pt-[12px] pr-[14px] pb-[12px] pl-[14px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none" />
                 <FigmaFieldInlineError field="last-name" />
               </div>
             </div>
             <div data-figma-node="5337:4274" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-4">
               <div data-figma-node="5335:4271" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                 <p data-figma-node="5335:4272" className="box-border w-max max-w-[99px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-3">Email Address</p>
-                <input data-figma-node="5335:4273" name="email" data-figma-field="email" data-figma-field-origin="design_text" data-figma-api-field="email" {...figmaFieldProps("email")} type="email" aria-label="Email Address" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-background-2 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-1 pt-[12px] pr-[14px] pb-[12px] pl-[14px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none" />
+                <input data-figma-node="5335:4273" name="email" data-figma-field="email" data-figma-field-origin="design_text" data-figma-api-field="email" {...useFigmaFieldProps("email")} type="email" aria-label="Email Address" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-background-2 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-1 pt-[12px] pr-[14px] pb-[12px] pl-[14px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none" />
                 <FigmaFieldInlineError field="email" />
               </div>
               <div data-figma-node="5337:4269" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
@@ -98,12 +98,12 @@ export function MyProfileContentSection() {
             </div>
             <div data-figma-node="5335:4283" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
               <p data-figma-node="5335:4284" className="box-border w-max max-w-[21px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-3">Bio</p>
-              <textarea data-figma-node="5335:4285" name="bio" data-figma-field="bio" data-figma-field-origin="design_text" {...figmaFieldProps("bio")} placeholder="Tell us about yourself..." aria-label="Tell us about yourself..." className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-background-2 pt-[14px] pr-[14px] pb-[14px] pl-[14px] text-neutral-mid-3 placeholder:text-[#9ca3af]" />
+              <textarea data-figma-node="5335:4285" name="bio" data-figma-field="bio" data-figma-field-origin="design_text" {...useFigmaFieldProps("bio")} placeholder="Tell us about yourself..." aria-label="Tell us about yourself..." className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-background-2 pt-[14px] pr-[14px] pb-[14px] pl-[14px] text-neutral-mid-3 placeholder:text-[#9ca3af]" />
             </div>
           </form>
           <div data-figma-node="5335:4287" className="box-border w-full min-w-0 h-full min-h-0 opacity-[0.5] bg-[#e5e7eb] h-px" />
           <div data-figma-node="5335:4288" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start justify-end gap-3">
-            <button data-figma-node="5335:4291" type="submit" form="profile-edit-form" data-figma-action="act_4d5182b12c73" {...figmaActionProps("act_4d5182b12c73")} className="box-border w-[112px] h-[42px] rounded-[8px] inline-flex items-center justify-center whitespace-nowrap bg-brand-primary-1 hover:opacity-90 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-background-2 whitespace-nowrap">Save</span></button>
+            <button data-figma-node="5335:4291" type="submit" form="profile-edit-form" data-figma-action="act_4d5182b12c73" {...useFigmaActionProps("act_4d5182b12c73")} className="box-border w-[112px] h-[42px] rounded-[8px] inline-flex items-center justify-center whitespace-nowrap bg-brand-primary-1 hover:opacity-90 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-background-2 whitespace-nowrap">Save</span></button>
           </div>
         </div>
         <div data-figma-node="5337:4275" className="box-border w-full min-w-0 h-full min-h-0 rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-5 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-background-2">
@@ -125,19 +125,19 @@ export function MyProfileContentSection() {
               </div>
               <div data-figma-node="5337:4288" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                 <p data-figma-node="5337:4289" className="box-border w-max max-w-[101px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-3">New Password</p>
-                <input data-figma-node="5337:4290" name="new-password" data-figma-field="new-password" data-figma-field-origin="design_text" {...figmaFieldProps("new-password")} type="password" placeholder="New Password" aria-label="New Password" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-background-2 pt-[12px] pr-[14px] pb-[12px] pl-[14px] text-neutral-mid-3 placeholder:text-[#9ca3af]" />
+                <input data-figma-node="5337:4290" name="new-password" data-figma-field="new-password" data-figma-field-origin="design_text" {...useFigmaFieldProps("new-password")} type="password" placeholder="New Password" aria-label="New Password" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-background-2 pt-[12px] pr-[14px] pb-[12px] pl-[14px] text-neutral-mid-3 placeholder:text-[#9ca3af]" />
               </div>
             </div>
             <div data-figma-node="5337:4292" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-4">
               <div data-figma-node="5337:4293" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                 <p data-figma-node="5337:4294" className="box-border w-max max-w-[130px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-3">Confirm Password</p>
-                <input data-figma-node="5337:4295" name="confirm-password" data-figma-field="confirm-password" data-figma-field-origin="design_text" {...figmaFieldProps("confirm-password")} type="password" placeholder="Confirm Password" aria-label="Confirm Password" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-background-2 pt-[12px] pr-[14px] pb-[12px] pl-[14px] text-neutral-mid-3 placeholder:text-[#9ca3af]" />
+                <input data-figma-node="5337:4295" name="confirm-password" data-figma-field="confirm-password" data-figma-field-origin="design_text" {...useFigmaFieldProps("confirm-password")} type="password" placeholder="Confirm Password" aria-label="Confirm Password" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#e2d9d0] border-[1px] bg-background-2 pt-[12px] pr-[14px] pb-[12px] pl-[14px] text-neutral-mid-3 placeholder:text-[#9ca3af]" />
               </div>
             </div>
           </div>
           <div data-figma-node="5337:4309" className="box-border w-full min-w-0 h-full min-h-0 opacity-[0.5] bg-[#e5e7eb] h-px" />
           <div data-figma-node="5337:4310" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start justify-end gap-3">
-            <input data-figma-node="5339:8839" name="change-password" data-figma-field="change-password" data-figma-field-origin="design_text" {...figmaFieldProps("change-password")} type="password" placeholder="Change Password" aria-label="Change Password" className="box-border w-[179px] h-[36px] rounded-[6px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#a21d35] border-[1px] bg-transparent pt-[8px] pr-[12px] pb-[8px] pl-[12px] text-brand-primary-1 placeholder:text-[#a21d35]" />
+            <input data-figma-node="5339:8839" name="change-password" data-figma-field="change-password" data-figma-field-origin="design_text" {...useFigmaFieldProps("change-password")} type="password" placeholder="Change Password" aria-label="Change Password" className="box-border w-[179px] h-[36px] rounded-[6px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none border-[#a21d35] border-[1px] bg-transparent pt-[8px] pr-[12px] pb-[8px] pl-[12px] text-brand-primary-1 placeholder:text-[#a21d35]" />
           </div>
         </div>
       </div>

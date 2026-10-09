@@ -12,7 +12,7 @@ import { FigmaFrameShell } from "./FigmaFrameShell";
 import { useFigmaScreenData } from "./useFigmaScreenData";
 import { MyProfileTitleRowSection } from "./MyProfileTitleRowSection";
 import { MyProfileContentSection } from "./MyProfileContentSection";
-import { figmaActionProps } from "./useFigmaScreenData";
+import { useFigmaActionProps } from "./useFigmaScreenData";
 import { ChevronDown_a4db42af } from "./ChevronDown_a4db42af";
 
 export function MyProfilePage() {
@@ -40,8 +40,8 @@ export function MyProfilePage() {
               </div>
             </div>
             <div data-figma-node="I5329:12028;5217:13733" className="box-border w-max max-w-[217px] h-[40px] relative flex flex-row items-center gap-4">
-              <button data-figma-node="I5329:12028;5217:13746" type="button" data-figma-action="act_cd0089ad194b" {...figmaActionProps("act_cd0089ad194b")} className="box-border w-max max-w-[145px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer"><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20] whitespace-nowrap">oPEN CALANDER</span></button>
-              <button data-figma-node="I5329:12028;5217:13749" type="button" data-figma-action="act_7a15e9d408cd" {...figmaActionProps("act_7a15e9d408cd")} className="box-border w-max max-w-[56px] h-[32px] relative flex flex-row items-center gap-2 cursor-pointer block">
+              <button data-figma-node="I5329:12028;5217:13746" type="button" data-figma-action="act_cd0089ad194b" {...useFigmaActionProps("act_cd0089ad194b")} className="box-border w-max max-w-[145px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer"><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20] whitespace-nowrap">oPEN CALANDER</span></button>
+              <button data-figma-node="I5329:12028;5217:13749" type="button" data-figma-action="act_7a15e9d408cd" {...useFigmaActionProps("act_7a15e9d408cd")} className="box-border w-max max-w-[56px] h-[32px] relative flex flex-row items-center gap-2 cursor-pointer block">
                 <div data-figma-node="I5329:12028;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-[32px] rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
                   <img data-figma-node="I5329:12028;5217:13750;1002:172586" src="/assets/figma/I5329-12028-5217-13750-1002-172586.png" alt="Image" width={32} height={32} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[32px] h-[32px] rounded-[32px] max-w-none object-cover object-top" />
                 </div>

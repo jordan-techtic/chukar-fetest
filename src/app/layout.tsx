@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-import { LunaScreenNav } from "@/components/layout/LunaScreenNav";
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 import { Toaster } from "@/components/ui/toast";
 import { ThemeProvider } from "@/theme/ThemeProvider";
@@ -26,7 +25,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             >
               Skip to main content
             </a>
-            <LunaScreenNav />
             <div id="main-content">{children}</div>
             <Toaster position="top-right" />
           </ErrorBoundary>

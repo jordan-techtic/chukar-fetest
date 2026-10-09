@@ -19,7 +19,7 @@ import { useFigmaPagination } from "./useFigmaScreenData";
 export function ManageHolidayContentColumnSection() {
   const { setCurrentPage, goPrev, goNext, isActive } = useFigmaPagination(10);
   return (
-    <section data-figma-node="5621:28294" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
+    <section data-figma-node="5621:28294" data-figma-list-field="items" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
       <div data-figma-node="5621:28295" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
         <div data-figma-node="5621:28296" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-background-2">
           <div data-figma-node="5621:28297" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-[#e2d9d0] border-[1px] bg-background-tinted-6">
@@ -43,10 +43,10 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <div data-figma-node="5621:28314" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5621:28315" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5621:28316" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5621:28316" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5621:28317" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrTrash_ffb59942 data-figma-node="5621:28318" data-figma-component="5121:9660" className="relative" />
+                <FiRrTrash_ffb59942 data-figma-node="5621:28318" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>
@@ -64,10 +64,10 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <div data-figma-node="5621:28329" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5621:28330" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5621:28331" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5621:28331" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5621:28332" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrTrash_ffb59942 data-figma-node="5621:28333" data-figma-component="5121:9660" className="relative" />
+                <FiRrTrash_ffb59942 data-figma-node="5621:28333" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>
@@ -85,10 +85,10 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <div data-figma-node="5621:28344" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5621:28345" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5621:28346" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5621:28346" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5621:28347" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrTrash_ffb59942 data-figma-node="5621:28348" data-figma-component="5121:9660" className="relative" />
+                <FiRrTrash_ffb59942 data-figma-node="5621:28348" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <div data-figma-node="5621:28359" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5621:28360" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5621:28361" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5621:28361" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5621:28362" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
                 <div data-figma-node="5621:28363" data-figma-component="5121:9660" className="box-border w-[16px] h-[16px] overflow-hidden relative">
@@ -131,7 +131,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <div data-figma-node="5621:28374" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5621:28375" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5621:28376" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5621:28376" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5621:28377" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
                 <div data-figma-node="5621:28378" data-figma-component="5121:9660" className="box-border w-[16px] h-[16px] overflow-hidden relative">
@@ -156,7 +156,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <div data-figma-node="5621:28389" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5621:28390" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5621:28391" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5621:28391" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5621:28392" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
                 <div data-figma-node="5621:28393" data-figma-component="5121:9660" className="box-border w-[16px] h-[16px] overflow-hidden relative">

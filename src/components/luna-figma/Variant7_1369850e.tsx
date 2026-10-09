@@ -33,7 +33,7 @@ export function Variant7_1369850e({ className = "", ...rest }: { className?: str
           <div data-figma-node="I5645:60760;5589:52238;5556:77452;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
             <div data-figma-node="I5645:60760;5589:52238;5556:77452;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
               <div data-figma-node="I5645:60760;5589:52238;5556:77452;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:60760;5589:52238;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative" />
+                <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:60760;5589:52238;5556:77452;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="I5645:60760;5589:52238;5556:77452;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
               <div data-figma-node="I5645:60760;5589:52238;5556:77452;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -55,7 +55,7 @@ export function Variant7_1369850e({ className = "", ...rest }: { className?: str
           <div data-figma-node="I5645:60760;5589:52238;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
             <div data-figma-node="I5645:60760;5589:52238;5589:48811;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
               <div data-figma-node="I5645:60760;5589:52238;5589:48811;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:60760;5589:52238;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative" />
+                <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:60760;5589:52238;5589:48811;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="I5645:60760;5589:52238;5589:48811;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
               <div data-figma-node="I5645:60760;5589:52238;5589:48811;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">
@@ -77,7 +77,7 @@ export function Variant7_1369850e({ className = "", ...rest }: { className?: str
           <div data-figma-node="I5645:60760;5589:52238;5589:48828;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
             <div data-figma-node="I5645:60760;5589:52238;5589:48828;5725:59480" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-1.5">
               <div data-figma-node="I5645:60760;5589:52238;5589:48828;5725:59481" className="box-border w-[14px] h-[14px] relative flex flex-row items-center gap-1">
-                <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:60760;5589:52238;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative" />
+                <FiRrEnvelope_edd5c8e7 data-figma-node="I5645:60760;5589:52238;5589:48828;5725:59483" data-figma-component="5121:8609" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="I5645:60760;5589:52238;5589:48828;5725:59485" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-[#231f20]">Great Prosser Balloon Rally</p>
               <div data-figma-node="I5645:60760;5589:52238;5589:48828;5725:59486" className="box-border w-[14px] h-[14px] relative flex flex-row items-center justify-center gap-0.5">

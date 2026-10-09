@@ -17,7 +17,7 @@ import { useFigmaPagination } from "./useFigmaScreenData";
 export function ManageCategoryContentColumnSection() {
   const { setCurrentPage, goPrev, goNext, isActive } = useFigmaPagination(10);
   return (
-    <section data-figma-node="5449:19142" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
+    <section data-figma-node="5449:19142" data-figma-list-field="items" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
       <div data-figma-node="5449:19143" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
         <div data-figma-node="5449:19144" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-background-2">
           <div data-figma-node="5449:19145" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-[#e2d9d0] border-[1px] bg-background-tinted-6">
@@ -36,10 +36,10 @@ export function ManageCategoryContentColumnSection() {
             <p data-figma-node="5449:19156" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-1">{figmaTextContent("5449:19156", "Aug 12, 2026")}</p>
             <div data-figma-node="5449:19157" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5449:19158" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5449:19159" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5449:19159" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5449:19160" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrTrash_ffb59942 data-figma-node="5449:19161" data-figma-component="5121:9660" className="relative" />
+                <FiRrTrash_ffb59942 data-figma-node="5449:19161" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>
@@ -52,10 +52,10 @@ export function ManageCategoryContentColumnSection() {
             <p data-figma-node="5449:19167" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-1">{figmaTextContent("5449:19167", "Aug 15, 2026")}</p>
             <div data-figma-node="5449:19168" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5449:19169" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5449:19170" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5449:19170" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5449:19171" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrTrash_ffb59942 data-figma-node="5449:19172" data-figma-component="5121:9660" className="relative" />
+                <FiRrTrash_ffb59942 data-figma-node="5449:19172" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>
@@ -68,10 +68,10 @@ export function ManageCategoryContentColumnSection() {
             <p data-figma-node="5449:19178" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-1">{figmaTextContent("5449:19178", "Aug 20, 2026")}</p>
             <div data-figma-node="5449:19179" className="box-border w-[100px] h-[28px] relative flex flex-row items-start justify-end gap-1.5">
               <div data-figma-node="5449:19180" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrPencil_93ff9a17 data-figma-node="5449:19181" data-figma-component="5121:9154" className="relative" />
+                <FiRrPencil_93ff9a17 data-figma-node="5449:19181" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <div data-figma-node="5449:19182" className="box-border w-[28px] h-[28px] rounded-[6px] relative flex flex-row items-center justify-center pt-[6px] pr-[6px] pb-[6px] pl-[6px] bg-background-tinted-6">
-                <FiRrTrash_ffb59942 data-figma-node="5449:19183" data-figma-component="5121:9660" className="relative" />
+                <FiRrTrash_ffb59942 data-figma-node="5449:19183" data-figma-component="5121:9660" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>

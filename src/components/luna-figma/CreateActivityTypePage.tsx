@@ -13,8 +13,8 @@ import "./figma-responsive.css";
 import { FigmaFrameShell } from "./FigmaFrameShell";
 import {
   FigmaFieldInlineError,
-  figmaActionProps,
-  figmaFieldProps,
+  useFigmaActionProps,
+  useFigmaFieldProps,
   useFigmaScreenData,
 } from "./useFigmaScreenData";
 import { CreateActivityTypeTitleRowSection } from "./CreateActivityTypeTitleRowSection";
@@ -54,7 +54,7 @@ export function CreateActivityTypePage() {
                 <div data-figma-node="I5449:18416;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-[32px] rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
                   <img data-figma-node="I5449:18416;5217:13750;1002:172586" src="/assets/figma/I5449-18416-5217-13750-1002-172586.png" alt="Image" width={32} height={32} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[32px] h-[32px] rounded-[32px] max-w-none object-cover object-top" />
                 </div>
-                <ChevronDown_a4db42af data-figma-node="I5449:18416;5217:13752" data-figma-component="5111:6287" className="relative" />
+                <ChevronDown_a4db42af data-figma-node="I5449:18416;5217:13752" data-figma-component="5111:6287" className="relative overflow-hidden rounded-[4px]" />
               </div>
             </div>
           </div>
@@ -64,14 +64,14 @@ export function CreateActivityTypePage() {
             <div data-figma-node="5449:18601" className="box-border w-[520px] h-[700px] rounded-[12px] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)] relative flex flex-col items-start gap-6 pt-[24px] pr-[24px] pb-[24px] pl-[24px] bg-background-2">
               <div data-figma-node="5449:18602" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between">
                 <div data-figma-node="5449:18603" className="box-border w-max max-w-[212px] h-[24px] relative flex flex-row items-center gap-2">
-                  <PenField_051ce1e3 data-figma-node="5449:18604" data-figma-component="5111:7679" className="relative" />
+                  <PenField_051ce1e3 data-figma-node="5449:18604" data-figma-component="5111:7679" className="relative overflow-hidden rounded-[4px]" />
                   <p data-figma-node="5449:18605" className="box-border w-max max-w-[180px] h-auto min-h-[23px] font-onest text-[18px] font-[700] leading-[23px] text-left whitespace-nowrap text-text-body-1">Create Activity Type</p>
                 </div>
-                <button data-figma-node="5449:18606" type="button" data-figma-action="act_e41ad4a168bc" {...figmaActionProps("act_e41ad4a168bc")} className="box-border w-max max-w-[32px] h-[32px] relative flex flex-row items-center gap-3">
+                <a data-figma-node="5449:18606" href="/manage-activity" data-figma-action="act_e41ad4a168bc" {...useFigmaActionProps("act_e41ad4a168bc")} className="box-border w-max max-w-[32px] h-[32px] relative flex flex-row items-center gap-3">
                   <div data-figma-node="5449:18609" className="box-border w-max max-w-[32px] h-[32px] rounded-[6px] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] bg-background-tinted-11">
-                    <FiRrCrossSmall_aec28f27 data-figma-node="5449:18610" data-figma-component="5121:8491" className="relative" />
+                    <FiRrCrossSmall_aec28f27 data-figma-node="5449:18610" data-figma-component="5121:8491" className="relative overflow-hidden rounded-[4px]" />
                   </div>
-                </button>
+                </a>
               </div>
               <form
                 id="create-activity-type-form"
@@ -89,18 +89,18 @@ export function CreateActivityTypePage() {
                 <div data-figma-node="5725:105925" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-4">
                   <div data-figma-node="5725:105915" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                     <p data-figma-node="5725:105916" className="box-border w-max max-w-[33px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-neutral-2">Icon</p>
-                    <div className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-background-2"><select data-figma-node="5725:105917" name="icon" data-figma-field="icon" data-figma-field-origin="design_text" data-figma-api-field="icon" {...figmaFieldProps("icon")} aria-label="Selected icon:" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-text-body-1 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Selected icon:</option></select><FigmaFieldInlineError field="icon" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5765:117014" className="box-border w-max max-w-[121px] h-[18px] absolute left-[12px] top-[13px] [--fx:12] [--fww:121] flex flex-row items-center gap-2.5">
+                    <div className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-background-2"><select data-figma-node="5725:105917" name="icon" data-figma-field="icon" data-figma-field-origin="design_text" data-figma-api-field="icon" {...useFigmaFieldProps("icon")} aria-label="Selected icon:" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-text-body-1 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Selected icon:</option></select><FigmaFieldInlineError field="icon" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5765:117014" className="box-border w-max max-w-[121px] h-[18px] absolute left-[12px] top-[13px] [--fx:12] [--fww:121] flex flex-row items-center gap-2.5">
   <div data-figma-node="5725:105918" className="box-border w-max max-w-[16px] h-[16px] relative flex flex-row items-center gap-2">
-    <FiRrPencil_93ff9a17 data-figma-node="5725:105920" data-figma-component="5121:9154" className="relative" />
+    <FiRrPencil_93ff9a17 data-figma-node="5725:105920" data-figma-component="5121:9154" className="relative overflow-hidden rounded-[4px]" />
   </div>
 </div><div data-figma-node="5725:105921" data-figma-component="5111:6287" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden">
-  <span data-figma-node="I5725:105921;5111:6288" data-figma-unrendered="vector" data-figma-diagnostic="vector_geometry_unavailable" aria-hidden="true" className="box-border w-[12px] h-[6px] absolute left-[6px] top-[9px] [--fx:6] [--fww:12] inline-block pointer-events-none" />
+  <svg data-figma-node="I5725:105921;5111:6288" viewBox="0 0 6 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[6px] absolute left-[6px] top-[9px] pointer-events-none overflow-visible"><path d="M0.707107 -0.707107C0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C-1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L0 0L0.707107 -0.707107ZM3 3L2.29289 3.70711L3 4.41421L3.70711 3.70711L3 3ZM6.70711 0.707107C7.09763 0.316583 7.09763 -0.316583 6.70711 -0.707107C6.31658 -1.09763 5.68342 -1.09763 5.29289 -0.707107L6 0L6.70711 0.707107ZM0 0L-0.707107 0.707107L2.29289 3.70711L3 3L3.70711 2.29289L0.707107 -0.707107L0 0ZM3 3L3.70711 3.70711L6.70711 0.707107L6 0L5.29289 -0.707107L2.29289 2.29289L3 3Z" fill="#686868" /></svg>
 </div></div></div>
                   </div>
                   <div data-figma-node="5549:56811" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                     <p data-figma-node="5549:56812" className="box-border w-max max-w-[69px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] text-left whitespace-nowrap text-neutral-2">Category</p>
-                    <div className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-background-2"><select data-figma-node="5549:56813" name="category" data-figma-field="category" data-figma-field-origin="design_text" data-figma-api-field="category" {...figmaFieldProps("category")} aria-label="Promotion" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-text-body-1 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Promotion</option></select><FigmaFieldInlineError field="category" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5549:56814" className="box-border w-max max-w-[69px] h-[18px] absolute left-[12px] top-[13px] [--fx:12] [--fww:69] flex flex-row items-center gap-2"></div><div data-figma-node="5549:56817" data-figma-component="5111:6287" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden">
-  <span data-figma-node="I5549:56817;5111:6288" data-figma-unrendered="vector" data-figma-diagnostic="vector_geometry_unavailable" aria-hidden="true" className="box-border w-[12px] h-[6px] absolute left-[6px] top-[9px] [--fx:6] [--fww:12] inline-block pointer-events-none" />
+                    <div className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-background-2"><select data-figma-node="5549:56813" name="category" data-figma-field="category" data-figma-field-origin="design_text" data-figma-api-field="category" {...useFigmaFieldProps("category")} aria-label="Promotion" className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-none cursor-pointer text-text-body-1 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"><option value="">Promotion</option></select><FigmaFieldInlineError field="category" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5549:56814" className="box-border w-max max-w-[69px] h-[18px] absolute left-[12px] top-[13px] [--fx:12] [--fww:69] flex flex-row items-center gap-2"></div><div data-figma-node="5549:56817" data-figma-component="5111:6287" className="box-border w-[24px] h-[24px] absolute left-[192px] top-[10px] [--fx:192] [--fww:24] overflow-hidden">
+  <svg data-figma-node="I5549:56817;5111:6288" viewBox="0 0 6 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[6px] absolute left-[6px] top-[9px] pointer-events-none overflow-visible"><path d="M0.707107 -0.707107C0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C-1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L0 0L0.707107 -0.707107ZM3 3L2.29289 3.70711L3 4.41421L3.70711 3.70711L3 3ZM6.70711 0.707107C7.09763 0.316583 7.09763 -0.316583 6.70711 -0.707107C6.31658 -1.09763 5.68342 -1.09763 5.29289 -0.707107L6 0L6.70711 0.707107ZM0 0L-0.707107 0.707107L2.29289 3.70711L3 3L3.70711 2.29289L0.707107 -0.707107L0 0ZM3 3L3.70711 3.70711L6.70711 0.707107L6 0L5.29289 -0.707107L2.29289 2.29289L3 3Z" fill="#686868" /></svg>
 </div></div></div>
                   </div>
                 </div>
@@ -136,8 +136,8 @@ export function CreateActivityTypePage() {
               </form>
               <div data-figma-node="5449:18664" className="box-border w-full min-w-0 h-full min-h-0 bg-surface-light h-px" />
               <div data-figma-node="5449:18665" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start justify-end gap-3">
-                <button data-figma-node="5449:18666" type="button" data-figma-action="act_e8c842f8c0ef" {...figmaActionProps("act_e8c842f8c0ef")} className="box-border w-max max-w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#0b0b0b]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-neutral-2 whitespace-nowrap">Cancel</span></button>
-                <button data-figma-node="5449:18668" type="submit" form="create-activity-type-form" data-figma-action="act_e298ac259136" {...figmaActionProps("act_e298ac259136")} disabled={submitting} className="box-border w-max max-w-[180px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-brand-primary-1 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-background-2 whitespace-nowrap">Create Activity Type</span></button>
+                <a data-figma-node="5449:18666" href="/manage-activity" data-figma-action="act_e8c842f8c0ef" {...useFigmaActionProps("act_e8c842f8c0ef")} className="box-border w-max max-w-[78px] h-[38px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#231f20]"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-neutral-2 whitespace-nowrap">Cancel</span></a>
+                <button data-figma-node="5449:18668" type="submit" form="create-activity-type-form" data-figma-action="act_e298ac259136" {...useFigmaActionProps("act_e298ac259136")} disabled={submitting} className="box-border w-max max-w-[180px] h-[38px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-brand-primary-1 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-background-2 whitespace-nowrap">Create Activity Type</span></button>
               </div>
             </div>
           </div>
