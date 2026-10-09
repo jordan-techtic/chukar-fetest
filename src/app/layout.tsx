@@ -3,7 +3,7 @@ import { Inter, Noto_Sans, Onest } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toast";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
 import "./globals.css";
