@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useId, useState } from "react";
+import * as ToastPrimitive from "@radix-ui/react-toast";
+import { useCallback, useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils/cn";
 
@@ -10,29 +11,27 @@ interface ToastRecord {
   id: string;
   kind: ToastKind;
   message: string;
+  open: boolean;
 }
-
-const TOAST_EVENT = "app-toast";
 
 let nextToastId = 0;
 
-function publishToast(kind: ToastKind, message: string): void {
-  if (typeof window === "undefined") {
-    return;
-  }
-  window.dispatchEvent(
-    new CustomEvent<ToastRecord>(TOAST_EVENT, {
-      detail: { id: String(++nextToastId), kind, message },
-    }),
-  );
-}
-
 export const toast = {
   success(message: string): void {
-    publishToast("success", message);
+    if (typeof window === "undefined") {
+      return;
+    }
+    window.dispatchEvent(
+      new CustomEvent("app-toast", { detail: { kind: "success" as const, message } }),
+    );
   },
   error(message: string): void {
-    publishToast("error", message);
+    if (typeof window === "undefined") {
+      return;
+    }
+    window.dispatchEvent(
+      new CustomEvent("app-toast", { detail: { kind: "error" as const, message } }),
+    );
   },
 };
 
@@ -51,41 +50,43 @@ const positionClasses: Record<NonNullable<ToasterProps["position"]>, string> = {
 };
 
 export function Toaster({ position = "top-right" }: ToasterProps) {
-  const regionId = useId();
   const [toasts, setToasts] = useState<ToastRecord[]>([]);
 
   const dismiss = useCallback((id: string) => {
-    setToasts((current) => current.filter((item) => item.id !== id));
+    setToasts((current) =>
+      current.map((item) => (item.id === id ? { ...item, open: false } : item)),
+    );
+    window.setTimeout(() => {
+      setToasts((current) => current.filter((item) => item.id !== id));
+    }, 200);
   }, []);
 
   useEffect(() => {
     const handleToast = (event: Event) => {
-      const custom = event as CustomEvent<ToastRecord>;
-      const record = custom.detail;
-      setToasts((current) => [...current, record]);
-      window.setTimeout(() => dismiss(record.id), 5000);
+      const custom = event as CustomEvent<{ kind: ToastKind; message: string }>;
+      const id = String(++nextToastId);
+      setToasts((current) => [
+        ...current,
+        { id, kind: custom.detail.kind, message: custom.detail.message, open: true },
+      ]);
     };
-
-    window.addEventListener(TOAST_EVENT, handleToast);
-    return () => window.removeEventListener(TOAST_EVENT, handleToast);
-  }, [dismiss]);
+    window.addEventListener("app-toast", handleToast);
+    return () => window.removeEventListener("app-toast", handleToast);
+  }, []);
 
   return (
-    <div
-      id={regionId}
-      aria-relevant="additions"
-      className={cn(
-        "pointer-events-none fixed z-50 flex max-w-sm flex-col gap-[var(--spacing-gap-8)]",
-        positionClasses[position],
-      )}
-    >
+    <ToastPrimitive.Provider swipeDirection="right" duration={5000}>
       {toasts.map((item) => {
         const isError = item.kind === "error";
         return (
-          <div
+          <ToastPrimitive.Root
             key={item.id}
-            role={isError ? "alert" : "status"}
-            aria-live={isError ? "assertive" : "polite"}
+            open={item.open}
+            onOpenChange={(open) => {
+              if (!open) {
+                dismiss(item.id);
+              }
+            }}
             className={cn(
               "pointer-events-auto flex items-start gap-[var(--spacing-gap-8)] rounded-[var(--radius-8)] border border-border bg-card px-[var(--spacing-padding-16)] py-[var(--spacing-gap-12)] text-body-sm-5 shadow-[var(--shadow-drop-shadow-2)]",
               isError
@@ -93,18 +94,31 @@ export function Toaster({ position = "top-right" }: ToasterProps) {
                 : "text-[var(--color-text-secondary)]",
             )}
           >
-            <span className="min-w-0 flex-1">{item.message}</span>
-            <button
-              type="button"
+            <ToastPrimitive.Title className="min-w-0 flex-1 font-normal">
+              {item.message}
+            </ToastPrimitive.Title>
+            <ToastPrimitive.Close
               className="shrink-0 rounded-[var(--radius-6)] px-[var(--spacing-gap-4)] text-[var(--color-text-secondary)] hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)]"
               aria-label="Dismiss notification"
-              onClick={() => dismiss(item.id)}
             >
               ×
-            </button>
-          </div>
+            </ToastPrimitive.Close>
+          </ToastPrimitive.Root>
         );
       })}
-    </div>
+      <ToastPrimitive.Viewport
+        className={cn(
+          "pointer-events-none fixed z-50 flex max-w-sm flex-col gap-[var(--spacing-gap-8)] outline-none",
+          positionClasses[position],
+        )}
+      />
+    </ToastPrimitive.Provider>
   );
 }
+
+export const Toast = ToastPrimitive.Root;
+export const ToastTitle = ToastPrimitive.Title;
+export const ToastDescription = ToastPrimitive.Description;
+export const ToastClose = ToastPrimitive.Close;
+export const ToastViewport = ToastPrimitive.Viewport;
+export const ToastProvider = ToastPrimitive.Provider;

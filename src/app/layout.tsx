@@ -1,30 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans, Onest } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 import { Toaster } from "@/components/ui/toast";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
+import "@/components/luna-figma/figma-fonts.css";
 import "./globals.css";
-
-const onest = Onest({
-  subsets: ["latin"],
-  variable: "--font-onest",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "800"],
-});
-
-const notoSans = Noto_Sans({
-  subsets: ["latin"],
-  variable: "--font-noto-sans",
-  weight: ["400"],
-});
 
 export const metadata: Metadata = {
   title: "Marketing Content Calendar",
@@ -33,11 +15,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${onest.variable} ${inter.variable} ${notoSans.variable}`}
-    >
-      <body className={`${onest.className} min-h-screen antialiased`}>
+    <html lang="en">
+      <body className="min-h-screen antialiased">
         <ThemeProvider>
           <ErrorBoundary>
             <a
@@ -46,7 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             >
               Skip to main content
             </a>
-            {children}
+            <div id="main-content">{children}</div>
             <Toaster position="top-right" />
           </ErrorBoundary>
         </ThemeProvider>

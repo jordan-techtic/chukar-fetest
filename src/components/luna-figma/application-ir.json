@@ -1,0 +1,2512 @@
+{
+  "actions": {
+    "app:act_01012278e08f": {
+      "action_id": "app:act_01012278e08f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52927",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_01012278e08f",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_01012278e08f",
+      "source_node_id": "5596:52927"
+    },
+    "app:act_06e59d16dc3f": {
+      "action_id": "app:act_06e59d16dc3f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52901",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_06e59d16dc3f",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_06e59d16dc3f",
+      "source_node_id": "I5645:60760;5596:52901"
+    },
+    "app:act_077ece4721f5": {
+      "action_id": "app:act_077ece4721f5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "5645:65194",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_077ece4721f5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_077ece4721f5",
+      "source_node_id": "5645:65194"
+    },
+    "app:act_0c987fd7a304": {
+      "action_id": "app:act_0c987fd7a304",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52904",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_0c987fd7a304",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_0c987fd7a304",
+      "source_node_id": "I5645:60760;5596:52904"
+    },
+    "app:act_10d2f6bcffe2": {
+      "action_id": "app:act_10d2f6bcffe2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52954",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_10d2f6bcffe2",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_10d2f6bcffe2",
+      "source_node_id": "5596:52954"
+    },
+    "app:act_128f3e9f81cf": {
+      "action_id": "app:act_128f3e9f81cf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52942",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_128f3e9f81cf",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_128f3e9f81cf",
+      "source_node_id": "I5645:60760;5596:52942"
+    },
+    "app:act_170e02d1f519": {
+      "action_id": "app:act_170e02d1f519",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52961",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_170e02d1f519",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_170e02d1f519",
+      "source_node_id": "5596:52961"
+    },
+    "app:act_175cdab1c1b5": {
+      "action_id": "app:act_175cdab1c1b5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52900",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_175cdab1c1b5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_175cdab1c1b5",
+      "source_node_id": "I5645:60760;5596:52900"
+    },
+    "app:act_1ddb475e90a4": {
+      "action_id": "app:act_1ddb475e90a4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "I5449:19127;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_1ddb475e90a4",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_1ddb475e90a4",
+      "source_node_id": "I5449:19127;5217:13749"
+    },
+    "app:act_21a2202d94bc": {
+      "action_id": "app:act_21a2202d94bc",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_21a2202d94bc",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_21a2202d94bc",
+      "source_node_id": "5596:52962"
+    },
+    "app:act_239e70fbe8e4": {
+      "action_id": "app:act_239e70fbe8e4",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60758;5217:13742",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_239e70fbe8e4",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_239e70fbe8e4",
+      "source_node_id": "I5645:60758;5217:13742"
+    },
+    "app:act_249aa2a4eeed": {
+      "action_id": "app:act_249aa2a4eeed",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52899",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_249aa2a4eeed",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_249aa2a4eeed",
+      "source_node_id": "I5645:60760;5596:52899"
+    },
+    "app:act_24a4d2f0f8b8": {
+      "action_id": "app:act_24a4d2f0f8b8",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52932",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_24a4d2f0f8b8",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_24a4d2f0f8b8",
+      "source_node_id": "5596:52932"
+    },
+    "app:act_2764b49a12cf": {
+      "action_id": "app:act_2764b49a12cf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52900",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_2764b49a12cf",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_2764b49a12cf",
+      "source_node_id": "5596:52900"
+    },
+    "app:act_2848831f5315": {
+      "action_id": "app:act_2848831f5315",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52942",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_2848831f5315",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_2848831f5315",
+      "source_node_id": "5596:52942"
+    },
+    "app:act_2853d927f093": {
+      "action_id": "app:act_2853d927f093",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52931",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_2853d927f093",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_2853d927f093",
+      "source_node_id": "5596:52931"
+    },
+    "app:act_2b3d328768a3": {
+      "action_id": "app:act_2b3d328768a3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "I5354:14284;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_2b3d328768a3",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_2b3d328768a3",
+      "source_node_id": "I5354:14284;5217:13746"
+    },
+    "app:act_2b456dafdf04": {
+      "action_id": "app:act_2b456dafdf04",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52955",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_2b456dafdf04",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_2b456dafdf04",
+      "source_node_id": "I5645:60760;5596:52955"
+    },
+    "app:act_32d7a8c36c56": {
+      "action_id": "app:act_32d7a8c36c56",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "5645:65080",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_32d7a8c36c56",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_32d7a8c36c56",
+      "source_node_id": "5645:65080"
+    },
+    "app:act_376724e8222a": {
+      "action_id": "app:act_376724e8222a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52901",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_376724e8222a",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_376724e8222a",
+      "source_node_id": "5596:52901"
+    },
+    "app:act_37b91bed18a2": {
+      "action_id": "app:act_37b91bed18a2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52961",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_37b91bed18a2",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_37b91bed18a2",
+      "source_node_id": "I5645:60760;5596:52961"
+    },
+    "app:act_3a76a09f21bd": {
+      "action_id": "app:act_3a76a09f21bd",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52899",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_3a76a09f21bd",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_3a76a09f21bd",
+      "source_node_id": "5596:52899"
+    },
+    "app:act_3ba4c1642247": {
+      "action_id": "app:act_3ba4c1642247",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52900",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_3ba4c1642247",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_3ba4c1642247",
+      "source_node_id": "5596:52900"
+    },
+    "app:act_3e47c2f5e482": {
+      "action_id": "app:act_3e47c2f5e482",
+      "destination_route": "create-activity-type",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17106",
+          "node_id": "5359:17160",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_3e47c2f5e482",
+      "page_id": "page:manage-activity:5359:17106",
+      "prototype_action_id": "act_3e47c2f5e482",
+      "source_node_id": "5359:17160"
+    },
+    "app:act_3f38c0e67bcf": {
+      "action_id": "app:act_3f38c0e67bcf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5621:28270",
+          "node_id": "5621:28290",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_3f38c0e67bcf",
+      "page_id": "page:manage-holiday:5621:28270",
+      "prototype_action_id": "act_3f38c0e67bcf",
+      "source_node_id": "5621:28290"
+    },
+    "app:act_4246d753de43": {
+      "action_id": "app:act_4246d753de43",
+      "destination_route": "manage-activity",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:18415",
+          "node_id": "5449:18418",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_4246d753de43",
+      "page_id": "page:create-activity-type:5449:18415",
+      "prototype_action_id": "act_4246d753de43",
+      "source_node_id": "5449:18418"
+    },
+    "app:act_42c63738fd61": {
+      "action_id": "app:act_42c63738fd61",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52967",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_42c63738fd61",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_42c63738fd61",
+      "source_node_id": "5596:52967"
+    },
+    "app:act_4407dc75343d": {
+      "action_id": "app:act_4407dc75343d",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52940",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4407dc75343d",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_4407dc75343d",
+      "source_node_id": "5596:52940"
+    },
+    "app:act_456f572c81bf": {
+      "action_id": "app:act_456f572c81bf",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52900",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_456f572c81bf",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_456f572c81bf",
+      "source_node_id": "I5645:60760;5596:52900"
+    },
+    "app:act_4a15698736d1": {
+      "action_id": "app:act_4a15698736d1",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52950",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4a15698736d1",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_4a15698736d1",
+      "source_node_id": "5596:52950"
+    },
+    "app:act_4a58bdd08bb7": {
+      "action_id": "app:act_4a58bdd08bb7",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52902",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_4a58bdd08bb7",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_4a58bdd08bb7",
+      "source_node_id": "I5645:60760;5596:52902"
+    },
+    "app:act_4cfc7dc15598": {
+      "action_id": "app:act_4cfc7dc15598",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "I5449:19127;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_4cfc7dc15598",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_4cfc7dc15598",
+      "source_node_id": "I5449:19127;5217:13746"
+    },
+    "app:act_4d5182b12c73": {
+      "action_id": "app:act_4d5182b12c73",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5329:12027",
+          "node_id": "5335:4291",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_4d5182b12c73",
+      "page_id": "page:my-profile:5329:12027",
+      "prototype_action_id": "act_4d5182b12c73",
+      "source_node_id": "5335:4291"
+    },
+    "app:act_5266d9cac01e": {
+      "action_id": "app:act_5266d9cac01e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52904",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5266d9cac01e",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_5266d9cac01e",
+      "source_node_id": "5596:52904"
+    },
+    "app:act_548b3dfa3ae5": {
+      "action_id": "app:act_548b3dfa3ae5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "I5584:26946;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_548b3dfa3ae5",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_548b3dfa3ae5",
+      "source_node_id": "I5584:26946;5217:13749"
+    },
+    "app:act_5639f9c2d2c8": {
+      "action_id": "app:act_5639f9c2d2c8",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52945",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5639f9c2d2c8",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_5639f9c2d2c8",
+      "source_node_id": "5596:52945"
+    },
+    "app:act_58031d229feb": {
+      "action_id": "app:act_58031d229feb",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52944",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_58031d229feb",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_58031d229feb",
+      "source_node_id": "5596:52944"
+    },
+    "app:act_580733380960": {
+      "action_id": "app:act_580733380960",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60758;5217:13742",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_580733380960",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_580733380960",
+      "source_node_id": "I5645:60758;5217:13742"
+    },
+    "app:act_58d12b286353": {
+      "action_id": "app:act_58d12b286353",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52903",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_58d12b286353",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_58d12b286353",
+      "source_node_id": "I5645:60760;5596:52903"
+    },
+    "app:act_5af05c52e777": {
+      "action_id": "app:act_5af05c52e777",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52964",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5af05c52e777",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_5af05c52e777",
+      "source_node_id": "I5645:60760;5596:52964"
+    },
+    "app:act_5d2741f7f334": {
+      "action_id": "app:act_5d2741f7f334",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52967",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5d2741f7f334",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_5d2741f7f334",
+      "source_node_id": "I5645:60760;5596:52967"
+    },
+    "app:act_5f9884bba9a5": {
+      "action_id": "app:act_5f9884bba9a5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52954",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_5f9884bba9a5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_5f9884bba9a5",
+      "source_node_id": "I5645:60760;5596:52954"
+    },
+    "app:act_60536f303e6b": {
+      "action_id": "app:act_60536f303e6b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52963",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_60536f303e6b",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_60536f303e6b",
+      "source_node_id": "5596:52963"
+    },
+    "app:act_67c361615c11": {
+      "action_id": "app:act_67c361615c11",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52955",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_67c361615c11",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_67c361615c11",
+      "source_node_id": "5596:52955"
+    },
+    "app:act_6ad30c269c67": {
+      "action_id": "app:act_6ad30c269c67",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52965",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6ad30c269c67",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_6ad30c269c67",
+      "source_node_id": "5596:52965"
+    },
+    "app:act_6dbb6392c11d": {
+      "action_id": "app:act_6dbb6392c11d",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52966",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_6dbb6392c11d",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_6dbb6392c11d",
+      "source_node_id": "5596:52966"
+    },
+    "app:act_74d518224274": {
+      "action_id": "app:act_74d518224274",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52956",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_74d518224274",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_74d518224274",
+      "source_node_id": "5596:52956"
+    },
+    "app:act_783df4816c6a": {
+      "action_id": "app:act_783df4816c6a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52929",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_783df4816c6a",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_783df4816c6a",
+      "source_node_id": "5596:52929"
+    },
+    "app:act_7a15e9d408cd": {
+      "action_id": "app:act_7a15e9d408cd",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5329:12027",
+          "node_id": "I5329:12028;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_7a15e9d408cd",
+      "page_id": "page:my-profile:5329:12027",
+      "prototype_action_id": "act_7a15e9d408cd",
+      "source_node_id": "I5329:12028;5217:13749"
+    },
+    "app:act_7c0e3947d31d": {
+      "action_id": "app:act_7c0e3947d31d",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5621:28270",
+          "node_id": "I5621:28271;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_7c0e3947d31d",
+      "page_id": "page:manage-holiday:5621:28270",
+      "prototype_action_id": "act_7c0e3947d31d",
+      "source_node_id": "I5621:28271;5217:13746"
+    },
+    "app:act_7d68912a589b": {
+      "action_id": "app:act_7d68912a589b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52945",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7d68912a589b",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_7d68912a589b",
+      "source_node_id": "I5645:60760;5596:52945"
+    },
+    "app:act_7e92c4b81773": {
+      "action_id": "app:act_7e92c4b81773",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52952",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_7e92c4b81773",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_7e92c4b81773",
+      "source_node_id": "I5645:60760;5596:52952"
+    },
+    "app:act_81c6cb8a03ac": {
+      "action_id": "app:act_81c6cb8a03ac",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52943",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_81c6cb8a03ac",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_81c6cb8a03ac",
+      "source_node_id": "5596:52943"
+    },
+    "app:act_8457de7fe5e6": {
+      "action_id": "app:act_8457de7fe5e6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52931",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8457de7fe5e6",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_8457de7fe5e6",
+      "source_node_id": "I5645:60760;5596:52931"
+    },
+    "app:act_84f41997a418": {
+      "action_id": "app:act_84f41997a418",
+      "destination_route": "invite-user",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "5354:14367",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_84f41997a418",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_84f41997a418",
+      "source_node_id": "5354:14367"
+    },
+    "app:act_8747dc05cbb6": {
+      "action_id": "app:act_8747dc05cbb6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "I5354:14284;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_8747dc05cbb6",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_8747dc05cbb6",
+      "source_node_id": "I5354:14284;5217:13749"
+    },
+    "app:act_8bade57cf5d5": {
+      "action_id": "app:act_8bade57cf5d5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "I5584:26947;5528:39891",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_8bade57cf5d5",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_8bade57cf5d5",
+      "source_node_id": "I5584:26947;5528:39891"
+    },
+    "app:act_8e9859b5ffbc": {
+      "action_id": "app:act_8e9859b5ffbc",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52903",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8e9859b5ffbc",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_8e9859b5ffbc",
+      "source_node_id": "5596:52903"
+    },
+    "app:act_8e9cab6943a2": {
+      "action_id": "app:act_8e9cab6943a2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52956",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8e9cab6943a2",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_8e9cab6943a2",
+      "source_node_id": "I5645:60760;5596:52956"
+    },
+    "app:act_8f4dba306425": {
+      "action_id": "app:act_8f4dba306425",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52964",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_8f4dba306425",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_8f4dba306425",
+      "source_node_id": "5596:52964"
+    },
+    "app:act_93fe55174e9e": {
+      "action_id": "app:act_93fe55174e9e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52950",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_93fe55174e9e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_93fe55174e9e",
+      "source_node_id": "I5645:60760;5596:52950"
+    },
+    "app:act_94f0dc0da0bd": {
+      "action_id": "app:act_94f0dc0da0bd",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17106",
+          "node_id": "I5354:14220;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_94f0dc0da0bd",
+      "page_id": "page:manage-activity:5359:17106",
+      "prototype_action_id": "act_94f0dc0da0bd",
+      "source_node_id": "I5354:14220;5217:13746"
+    },
+    "app:act_9662d9add77f": {
+      "action_id": "app:act_9662d9add77f",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52951",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_9662d9add77f",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_9662d9add77f",
+      "source_node_id": "I5645:60760;5596:52951"
+    },
+    "app:act_98e02760b5f2": {
+      "action_id": "app:act_98e02760b5f2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52939",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_98e02760b5f2",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_98e02760b5f2",
+      "source_node_id": "5596:52939"
+    },
+    "app:act_9e130ef286f6": {
+      "action_id": "app:act_9e130ef286f6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17424",
+          "node_id": "5354:14373",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_9e130ef286f6",
+      "page_id": "page:manage-users:5359:17424",
+      "prototype_action_id": "act_9e130ef286f6",
+      "source_node_id": "5354:14373"
+    },
+    "app:act_9eeba9d87485": {
+      "action_id": "app:act_9eeba9d87485",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52953",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_9eeba9d87485",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_9eeba9d87485",
+      "source_node_id": "5596:52953"
+    },
+    "app:act_a601bb771bef": {
+      "action_id": "app:act_a601bb771bef",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52933",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a601bb771bef",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_a601bb771bef",
+      "source_node_id": "5596:52933"
+    },
+    "app:act_a932f4a9bde3": {
+      "action_id": "app:act_a932f4a9bde3",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52965",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_a932f4a9bde3",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_a932f4a9bde3",
+      "source_node_id": "I5645:60760;5596:52965"
+    },
+    "app:act_ab8e52301253": {
+      "action_id": "app:act_ab8e52301253",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52928",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_ab8e52301253",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_ab8e52301253",
+      "source_node_id": "5596:52928"
+    },
+    "app:act_ae4063b9ed10": {
+      "action_id": "app:act_ae4063b9ed10",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52931",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_ae4063b9ed10",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_ae4063b9ed10",
+      "source_node_id": "I5645:60760;5596:52931"
+    },
+    "app:act_b12f39dbc0ad": {
+      "action_id": "app:act_b12f39dbc0ad",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52940",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_b12f39dbc0ad",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_b12f39dbc0ad",
+      "source_node_id": "I5645:60760;5596:52940"
+    },
+    "app:act_be4cc9bfb872": {
+      "action_id": "app:act_be4cc9bfb872",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52944",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_be4cc9bfb872",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_be4cc9bfb872",
+      "source_node_id": "I5645:60760;5596:52944"
+    },
+    "app:act_bf05efd18307": {
+      "action_id": "app:act_bf05efd18307",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52966",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_bf05efd18307",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_bf05efd18307",
+      "source_node_id": "I5645:60760;5596:52966"
+    },
+    "app:act_bf3507e76946": {
+      "action_id": "app:act_bf3507e76946",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52941",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_bf3507e76946",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_bf3507e76946",
+      "source_node_id": "5596:52941"
+    },
+    "app:act_bfa5e8a23718": {
+      "action_id": "app:act_bfa5e8a23718",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:19126",
+          "node_id": "5449:19138",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_bfa5e8a23718",
+      "page_id": "page:manage-category:5449:19126",
+      "prototype_action_id": "act_bfa5e8a23718",
+      "source_node_id": "5449:19138"
+    },
+    "app:act_c4cbfd943513": {
+      "action_id": "app:act_c4cbfd943513",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52899",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c4cbfd943513",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_c4cbfd943513",
+      "source_node_id": "5596:52899"
+    },
+    "app:act_c68b306470e5": {
+      "action_id": "app:act_c68b306470e5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52929",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c68b306470e5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_c68b306470e5",
+      "source_node_id": "I5645:60760;5596:52929"
+    },
+    "app:act_c8ac4f9b9a71": {
+      "action_id": "app:act_c8ac4f9b9a71",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52902",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_c8ac4f9b9a71",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_c8ac4f9b9a71",
+      "source_node_id": "5596:52902"
+    },
+    "app:act_cd0089ad194b": {
+      "action_id": "app:act_cd0089ad194b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5329:12027",
+          "node_id": "I5329:12028;5217:13746",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_cd0089ad194b",
+      "page_id": "page:my-profile:5329:12027",
+      "prototype_action_id": "act_cd0089ad194b",
+      "source_node_id": "I5329:12028;5217:13746"
+    },
+    "app:act_d15a609f1860": {
+      "action_id": "app:act_d15a609f1860",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "I5584:26946;5217:13742",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_d15a609f1860",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_d15a609f1860",
+      "source_node_id": "I5584:26946;5217:13742"
+    },
+    "app:act_d408ac45232d": {
+      "action_id": "app:act_d408ac45232d",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52899",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_d408ac45232d",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d408ac45232d",
+      "source_node_id": "I5645:60760;5596:52899"
+    },
+    "app:act_d4a99517c8ab": {
+      "action_id": "app:act_d4a99517c8ab",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52928",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d4a99517c8ab",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d4a99517c8ab",
+      "source_node_id": "I5645:60760;5596:52928"
+    },
+    "app:act_d540cb8c353e": {
+      "action_id": "app:act_d540cb8c353e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52941",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d540cb8c353e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d540cb8c353e",
+      "source_node_id": "I5645:60760;5596:52941"
+    },
+    "app:act_d937c588d9b6": {
+      "action_id": "app:act_d937c588d9b6",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52953",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_d937c588d9b6",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_d937c588d9b6",
+      "source_node_id": "I5645:60760;5596:52953"
+    },
+    "app:act_da6799775757": {
+      "action_id": "app:act_da6799775757",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52943",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_da6799775757",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_da6799775757",
+      "source_node_id": "I5645:60760;5596:52943"
+    },
+    "app:act_daf066e8ec75": {
+      "action_id": "app:act_daf066e8ec75",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52952",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_daf066e8ec75",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_daf066e8ec75",
+      "source_node_id": "5596:52952"
+    },
+    "app:act_e0f77cf6a0b9": {
+      "action_id": "app:act_e0f77cf6a0b9",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52932",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e0f77cf6a0b9",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_e0f77cf6a0b9",
+      "source_node_id": "I5645:60760;5596:52932"
+    },
+    "app:act_e298ac259136": {
+      "action_id": "app:act_e298ac259136",
+      "destination_route": "manage-activity",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:18415",
+          "node_id": "5449:18668",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_e298ac259136",
+      "page_id": "page:create-activity-type:5449:18415",
+      "prototype_action_id": "act_e298ac259136",
+      "source_node_id": "5449:18668"
+    },
+    "app:act_e2df1de38c0e": {
+      "action_id": "app:act_e2df1de38c0e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52963",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e2df1de38c0e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_e2df1de38c0e",
+      "source_node_id": "I5645:60760;5596:52963"
+    },
+    "app:act_e41ad4a168bc": {
+      "action_id": "app:act_e41ad4a168bc",
+      "destination_route": "manage-activity",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:18415",
+          "node_id": "5449:18606",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_e41ad4a168bc",
+      "page_id": "page:create-activity-type:5449:18415",
+      "prototype_action_id": "act_e41ad4a168bc",
+      "source_node_id": "5449:18606"
+    },
+    "app:act_e4dc78f392da": {
+      "action_id": "app:act_e4dc78f392da",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5359:17106",
+          "node_id": "I5354:14220;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_e4dc78f392da",
+      "page_id": "page:manage-activity:5359:17106",
+      "prototype_action_id": "act_e4dc78f392da",
+      "source_node_id": "I5354:14220;5217:13749"
+    },
+    "app:act_e7348e9bef80": {
+      "action_id": "app:act_e7348e9bef80",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5621:28270",
+          "node_id": "I5621:28271;5217:13749",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_e7348e9bef80",
+      "page_id": "page:manage-holiday:5621:28270",
+      "prototype_action_id": "act_e7348e9bef80",
+      "source_node_id": "I5621:28271;5217:13749"
+    },
+    "app:act_e846490401e5": {
+      "action_id": "app:act_e846490401e5",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52962",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e846490401e5",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_e846490401e5",
+      "source_node_id": "I5645:60760;5596:52962"
+    },
+    "app:act_e8987fa5fba2": {
+      "action_id": "app:act_e8987fa5fba2",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52951",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_e8987fa5fba2",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_e8987fa5fba2",
+      "source_node_id": "5596:52951"
+    },
+    "app:act_e8c842f8c0ef": {
+      "action_id": "app:act_e8c842f8c0ef",
+      "destination_route": "manage-activity",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5449:18415",
+          "node_id": "5449:18666",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_e8c842f8c0ef",
+      "page_id": "page:create-activity-type:5449:18415",
+      "prototype_action_id": "act_e8c842f8c0ef",
+      "source_node_id": "5449:18666"
+    },
+    "app:act_ec05202ba107": {
+      "action_id": "app:act_ec05202ba107",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52927",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_ec05202ba107",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_ec05202ba107",
+      "source_node_id": "I5645:60760;5596:52927"
+    },
+    "app:act_edd51451072e": {
+      "action_id": "app:act_edd51451072e",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52933",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_edd51451072e",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_edd51451072e",
+      "source_node_id": "I5645:60760;5596:52933"
+    },
+    "app:act_f5f0a47afec0": {
+      "action_id": "app:act_f5f0a47afec0",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "I5584:26947;5621:25566",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_f5f0a47afec0",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_f5f0a47afec0",
+      "source_node_id": "I5584:26947;5621:25566"
+    },
+    "app:act_f8e0208bcc1b": {
+      "action_id": "app:act_f8e0208bcc1b",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "I5645:60760;5596:52939",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_f8e0208bcc1b",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_f8e0208bcc1b",
+      "source_node_id": "I5645:60760;5596:52939"
+    },
+    "app:act_fc41c4406f0a": {
+      "action_id": "app:act_fc41c4406f0a",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5645:60757",
+          "node_id": "5645:65192",
+          "source": "figma"
+        }
+      ],
+      "kind": "navigate",
+      "name": "act_fc41c4406f0a",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "prototype_action_id": "act_fc41c4406f0a",
+      "source_node_id": "5645:65192"
+    },
+    "app:act_fd96c9f16c03": {
+      "action_id": "app:act_fd96c9f16c03",
+      "evidence": [
+        {
+          "detail": "Prototype reaction preserved as application action",
+          "frame_id": "5584:26945",
+          "node_id": "5596:52931",
+          "source": "figma"
+        }
+      ],
+      "kind": "prototype",
+      "name": "act_fd96c9f16c03",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "prototype_action_id": "act_fd96c9f16c03",
+      "source_node_id": "5596:52931"
+    }
+  },
+  "application_id": "app",
+  "collections": {
+    "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile": {
+      "collection_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile",
+      "evidence": [
+        {
+          "detail": "Collection authorized by read operation; cardinality is not limited to painted Figma nodes",
+          "frame_id": "5329:12027",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "page_id": "page:my-profile:5329:12027",
+      "query_id": "query:GET:/api/v1/marketing-team-member/profile:5329:12027",
+      "supports_variable_cardinality": true
+    }
+  },
+  "components": {},
+  "diagnostics": [
+    {
+      "api_field": "color_code",
+      "code": "form_field_unresolved_visual",
+      "detail": "API requires this field; visual control evidence is missing on the compiled frame.",
+      "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+      "frame_id": "5449:18415",
+      "operation": "POST /api/v1/marketing-team-member/activity-types"
+    },
+    {
+      "api_field": "title",
+      "code": "form_field_unresolved_visual",
+      "detail": "API requires this field; visual control evidence is missing on the compiled frame.",
+      "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+      "frame_id": "5449:18415",
+      "operation": "POST /api/v1/marketing-team-member/activity-types"
+    }
+  ],
+  "dialogs": {},
+  "features": {
+    "feature:annual-calendar-default": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5645:60757",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:annual-calendar-default",
+      "name": "annual-calendar-default",
+      "page_ids": [
+        "page:annual-calendar-default:5645:60757"
+      ]
+    },
+    "feature:create-activity-type": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5449:18415",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:create-activity-type",
+      "name": "Create-Activity-Type",
+      "page_ids": [
+        "page:create-activity-type:5449:18415"
+      ]
+    },
+    "feature:manage-activity": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5359:17106",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:manage-activity",
+      "name": "manage-activity",
+      "page_ids": [
+        "page:manage-activity:5359:17106"
+      ]
+    },
+    "feature:manage-category": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5449:19126",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:manage-category",
+      "name": "manage-category",
+      "page_ids": [
+        "page:manage-category:5449:19126"
+      ]
+    },
+    "feature:manage-holiday": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5621:28270",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:manage-holiday",
+      "name": "Manage-holiday",
+      "page_ids": [
+        "page:manage-holiday:5621:28270"
+      ]
+    },
+    "feature:manage-users": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5359:17424",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:manage-users",
+      "name": "manage-users",
+      "page_ids": [
+        "page:manage-users:5359:17424"
+      ]
+    },
+    "feature:my-profile": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5329:12027",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:my-profile",
+      "name": "my-profile",
+      "page_ids": [
+        "page:my-profile:5329:12027"
+      ]
+    },
+    "feature:week-calendar-historical-view": {
+      "evidence": [
+        {
+          "detail": "Feature hint from frame identity",
+          "frame_id": "5584:26945",
+          "source": "figma"
+        }
+      ],
+      "feature_id": "feature:week-calendar-historical-view",
+      "name": "Week-calendar-Historical view",
+      "page_ids": [
+        "page:week-calendar-historical-view:5584:26945"
+      ]
+    }
+  },
+  "forms": {
+    "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types": {
+      "evidence": [
+        {
+          "detail": "Form derived from write contract + controls",
+          "frame_id": "5449:18415",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "fields": [
+        {
+          "api_field_key": "icon",
+          "evidence": [
+            {
+              "detail": "Bound field from FieldContract",
+              "node_id": "5725:105917",
+              "operation": "POST /api/v1/marketing-team-member/activity-types",
+              "source": "api"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:icon",
+          "name": "icon",
+          "status": "resolved",
+          "visual_node_id": "5725:105917"
+        },
+        {
+          "api_field_key": "category",
+          "evidence": [
+            {
+              "detail": "Bound field from FieldContract",
+              "node_id": "5549:56813",
+              "operation": "POST /api/v1/marketing-team-member/activity-types",
+              "source": "api"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:category",
+          "name": "category",
+          "status": "resolved",
+          "visual_node_id": "5549:56813"
+        },
+        {
+          "evidence": [
+            {
+              "detail": "Bound field from FieldContract",
+              "node_id": "5449:18423",
+              "operation": "POST /api/v1/marketing-team-member/activity-types",
+              "source": "figma"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:filter-activities",
+          "name": "filter-activities",
+          "status": "unbound",
+          "visual_node_id": "5449:18423"
+        },
+        {
+          "api_field_key": "color_code",
+          "evidence": [
+            {
+              "detail": "Required by API schema but no classified Figma control on this frame",
+              "frame_id": "5449:18415",
+              "operation": "POST /api/v1/marketing-team-member/activity-types",
+              "source": "api"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:color_code:unresolved",
+          "name": "color_code",
+          "required": true,
+          "status": "unresolved_visual"
+        },
+        {
+          "api_field_key": "title",
+          "evidence": [
+            {
+              "detail": "Required by API schema but no classified Figma control on this frame",
+              "frame_id": "5449:18415",
+              "operation": "POST /api/v1/marketing-team-member/activity-types",
+              "source": "api"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:title:unresolved",
+          "name": "title",
+          "required": true,
+          "status": "unresolved_visual"
+        }
+      ],
+      "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+      "mutation_id": "mutation:POST:/api/v1/marketing-team-member/activity-types:5449:18415",
+      "page_id": "page:create-activity-type:5449:18415"
+    },
+    "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id": {
+      "evidence": [
+        {
+          "detail": "Form derived from write contract + controls",
+          "frame_id": "5449:18415",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "fields": [
+        {
+          "api_field_key": "icon",
+          "evidence": [
+            {
+              "detail": "Bound field from FieldContract",
+              "node_id": "5725:105917",
+              "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+              "source": "api"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id:icon",
+          "name": "icon",
+          "status": "resolved",
+          "visual_node_id": "5725:105917"
+        },
+        {
+          "api_field_key": "category",
+          "evidence": [
+            {
+              "detail": "Bound field from FieldContract",
+              "node_id": "5549:56813",
+              "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+              "source": "api"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id:category",
+          "name": "category",
+          "status": "resolved",
+          "visual_node_id": "5549:56813"
+        },
+        {
+          "evidence": [
+            {
+              "detail": "Bound field from FieldContract",
+              "node_id": "5449:18423",
+              "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+              "source": "figma"
+            }
+          ],
+          "field_id": "field:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id:filter-activities",
+          "name": "filter-activities",
+          "status": "unbound",
+          "visual_node_id": "5449:18423"
+        }
+      ],
+      "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id",
+      "mutation_id": "mutation:PUT:/api/v1/marketing-team-member/activity-types/{id}:5449:18415",
+      "page_id": "page:create-activity-type:5449:18415"
+    }
+  },
+  "ir_kind": "application_frontend",
+  "ir_version": 1,
+  "layout_emit": "legacy_artboard_compatible",
+  "mode": "application_oriented",
+  "mutations": {
+    "mutation:POST:/api/v1/marketing-team-member/activity-types:5449:18415": {
+      "evidence": [
+        {
+          "detail": "FieldContract write operation",
+          "frame_id": "5449:18415",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+      "method": "POST",
+      "mutation_id": "mutation:POST:/api/v1/marketing-team-member/activity-types:5449:18415",
+      "page_id": "page:create-activity-type:5449:18415",
+      "path": "/api/v1/marketing-team-member/activity-types",
+      "required_fields": [
+        "color_code",
+        "title"
+      ],
+      "unbound_required": [
+        "color_code",
+        "title"
+      ]
+    },
+    "mutation:PUT:/api/v1/marketing-team-member/activity-types/{id}:5449:18415": {
+      "evidence": [
+        {
+          "detail": "FieldContract write operation",
+          "frame_id": "5449:18415",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id",
+      "method": "PUT",
+      "mutation_id": "mutation:PUT:/api/v1/marketing-team-member/activity-types/{id}:5449:18415",
+      "page_id": "page:create-activity-type:5449:18415",
+      "path": "/api/v1/marketing-team-member/activity-types/{id}"
+    }
+  },
+  "pages": {
+    "page:annual-calendar-default:5645:60757": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5645:60757",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `annual-calendar-default`",
+          "frame_id": "5645:60757",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:annual-calendar-default"
+      ],
+      "frame_id": "5645:60757",
+      "name": "annual-calendar-default",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "route_path": "annual-calendar-default",
+      "section_node_ids": [
+        "5645:60758",
+        "5645:65073",
+        "5645:60759",
+        "5645:60760",
+        "5645:60761"
+      ]
+    },
+    "page:create-activity-type:5449:18415": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5449:18415",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `create-activity-type`",
+          "frame_id": "5449:18415",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:create-activity-type"
+      ],
+      "form_ids": [
+        "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+        "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id"
+      ],
+      "frame_id": "5449:18415",
+      "mutation_ids": [
+        "mutation:POST:/api/v1/marketing-team-member/activity-types:5449:18415",
+        "mutation:PUT:/api/v1/marketing-team-member/activity-types/{id}:5449:18415"
+      ],
+      "name": "Create-Activity-Type",
+      "page_id": "page:create-activity-type:5449:18415",
+      "route_path": "create-activity-type",
+      "section_node_ids": [
+        "5449:18416",
+        "5449:18600",
+        "5449:18417",
+        "5449:18431"
+      ]
+    },
+    "page:manage-activity:5359:17106": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5359:17106",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `manage-activity`",
+          "frame_id": "5359:17106",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:manage-activity"
+      ],
+      "frame_id": "5359:17106",
+      "name": "manage-activity",
+      "page_id": "page:manage-activity:5359:17106",
+      "route_path": "manage-activity",
+      "section_node_ids": [
+        "5354:14220",
+        "5354:14221",
+        "5359:17138"
+      ]
+    },
+    "page:manage-category:5449:19126": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5449:19126",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `manage-category`",
+          "frame_id": "5449:19126",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:manage-category"
+      ],
+      "frame_id": "5449:19126",
+      "name": "manage-category",
+      "page_id": "page:manage-category:5449:19126",
+      "route_path": "manage-category",
+      "section_node_ids": [
+        "5449:19127",
+        "5449:19128",
+        "5449:19142"
+      ]
+    },
+    "page:manage-holiday:5621:28270": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5621:28270",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `manage-holiday`",
+          "frame_id": "5621:28270",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:manage-holiday"
+      ],
+      "frame_id": "5621:28270",
+      "name": "Manage-holiday",
+      "page_id": "page:manage-holiday:5621:28270",
+      "route_path": "manage-holiday",
+      "section_node_ids": [
+        "5621:28271",
+        "5621:28272",
+        "5621:28294"
+      ]
+    },
+    "page:manage-users:5359:17424": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5359:17424",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `manage-users`",
+          "frame_id": "5359:17424",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:manage-users"
+      ],
+      "frame_id": "5359:17424",
+      "name": "manage-users",
+      "page_id": "page:manage-users:5359:17424",
+      "route_path": "manage-users",
+      "section_node_ids": [
+        "5354:14284",
+        "5354:14363",
+        "5359:17456"
+      ]
+    },
+    "page:my-profile:5329:12027": {
+      "collection_ids": [
+        "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+      ],
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5329:12027",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `my-profile`",
+          "frame_id": "5329:12027",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:my-profile"
+      ],
+      "frame_id": "5329:12027",
+      "name": "my-profile",
+      "page_id": "page:my-profile:5329:12027",
+      "query_ids": [
+        "query:GET:/api/v1/marketing-team-member/profile:5329:12027"
+      ],
+      "route_path": "my-profile",
+      "section_node_ids": [
+        "5329:12028",
+        "5333:4381",
+        "5329:12075"
+      ]
+    },
+    "page:week-calendar-historical-view:5584:26945": {
+      "evidence": [
+        {
+          "detail": "Compiled from Figma frame",
+          "frame_id": "5584:26945",
+          "source": "figma"
+        },
+        {
+          "detail": "Route `week-calendar-historical-view`",
+          "frame_id": "5584:26945",
+          "source": "route_registry"
+        }
+      ],
+      "feature_ids": [
+        "feature:week-calendar-historical-view"
+      ],
+      "frame_id": "5584:26945",
+      "name": "Week-calendar-Historical view",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "route_path": "week-calendar-historical-view",
+      "section_node_ids": [
+        "5584:26946",
+        "5584:26947",
+        "5645:47545"
+      ]
+    }
+  },
+  "queries": {
+    "query:GET:/api/v1/marketing-team-member/profile:5329:12027": {
+      "evidence": [
+        {
+          "detail": "FieldContract read operation",
+          "frame_id": "5329:12027",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "method": "GET",
+      "page_id": "page:my-profile:5329:12027",
+      "path": "/api/v1/marketing-team-member/profile",
+      "query_id": "query:GET:/api/v1/marketing-team-member/profile:5329:12027"
+    }
+  },
+  "routes": {
+    "route:annual-calendar-default": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5645:60757",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "path": "annual-calendar-default",
+      "route_id": "route:annual-calendar-default"
+    },
+    "route:create-activity-type": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5449:18415",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:create-activity-type:5449:18415",
+      "path": "create-activity-type",
+      "route_id": "route:create-activity-type"
+    },
+    "route:manage-activity": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5359:17106",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:manage-activity:5359:17106",
+      "path": "manage-activity",
+      "route_id": "route:manage-activity"
+    },
+    "route:manage-category": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5449:19126",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:manage-category:5449:19126",
+      "path": "manage-category",
+      "route_id": "route:manage-category"
+    },
+    "route:manage-holiday": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5621:28270",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:manage-holiday:5621:28270",
+      "path": "manage-holiday",
+      "route_id": "route:manage-holiday"
+    },
+    "route:manage-users": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5359:17424",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:manage-users:5359:17424",
+      "path": "manage-users",
+      "route_id": "route:manage-users"
+    },
+    "route:my-profile": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5329:12027",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:my-profile:5329:12027",
+      "path": "my-profile",
+      "route_id": "route:my-profile"
+    },
+    "route:week-calendar-historical-view": {
+      "evidence": [
+        {
+          "detail": "ScreenEntry.route",
+          "frame_id": "5584:26945",
+          "source": "route_registry"
+        }
+      ],
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "path": "week-calendar-historical-view",
+      "route_id": "route:week-calendar-historical-view"
+    }
+  },
+  "runtime_states": [
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "kind": "idle",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "kind": "submitting",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "kind": "validation_error",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "kind": "success",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "kind": "error",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "kind": "idle",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "kind": "submitting",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "kind": "validation_error",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "kind": "success",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard form runtime state",
+          "operation": "PUT /api/v1/marketing-team-member/activity-types/{id}",
+          "source": "api"
+        }
+      ],
+      "kind": "error",
+      "owner_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types-id"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "loading",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "empty",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "error",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "Standard collection runtime state",
+          "operation": "GET /api/v1/marketing-team-member/profile",
+          "source": "api"
+        }
+      ],
+      "kind": "success",
+      "owner_id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile"
+    }
+  ],
+  "shell": null,
+  "visual_authority": "figma_screen_spec",
+  "workflows": {
+    "workflow:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types": {
+      "evidence": [
+        {
+          "detail": "Workflow incomplete until visual fields resolve",
+          "operation": "POST /api/v1/marketing-team-member/activity-types",
+          "source": "api"
+        }
+      ],
+      "name": "Submit /api/v1/marketing-team-member/activity-types",
+      "page_id": "page:create-activity-type:5449:18415",
+      "steps": [
+        {
+          "evidence": [
+            {
+              "detail": "Compiled frame providing partial form UI",
+              "frame_id": "5449:18415",
+              "source": "figma"
+            }
+          ],
+          "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+          "name": "Visual step",
+          "step_id": "workflow:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:visual",
+          "visual_frame_id": "5449:18415"
+        },
+        {
+          "evidence": [
+            {
+              "detail": "API-required fields without visual controls: color_code, title",
+              "operation": "POST /api/v1/marketing-team-member/activity-types",
+              "source": "api"
+            }
+          ],
+          "form_id": "form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types",
+          "index": 1,
+          "name": "Unresolved required fields",
+          "step_id": "workflow:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types:unresolved_fields"
+        }
+      ],
+      "workflow_id": "workflow:form:page:create-activity-type:5449:18415:api-v1-marketing-team-member-activity-types"
+    }
+  }
+}

@@ -12,12 +12,12 @@
   --color-accent: #e5e7eb;
   --color-background: #fde8ed;
   --color-border: #231f20;
-  --color-100: #221c1d;
+  --color-100: var(--color-color-100);
   --color-13: #9ca3af;
   --color-14: #374151;
   --color-15: #374957;
   --color-16: #f2f1dd;
-  --color-17: #eaeaea;
+  --color-17: var(--color-color-17);
   --color-27: #fef3c7;
 
   --color-foreground: #000000;
@@ -29,10 +29,10 @@
   --color-primary-foreground: #fff9f3;
   --color-secondary: #f3f4f6;
   --color-secondary-foreground: #000000;
-  --color-muted: #eaeaea;
-  --color-muted-foreground: #6b7280;
+  --color-muted: var(--color-color-17);
+  --color-muted-foreground: var(--color-color-61);
   --color-accent-foreground: #000000;
-  --color-destructive: #ef4444;
+  --color-destructive: var(--color-color-81);
   --color-destructive-foreground: #fff9f3;
   --color-input: #231f20;
   --color-ring: #2f80ed;

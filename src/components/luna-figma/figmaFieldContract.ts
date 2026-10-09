@@ -1,0 +1,459 @@
+/** luna-spec-codegen: owned-layout */
+// Figma field → API field bindings resolved from the live API contract.
+// Request bodies use apiField names only; figmaField is the form-state key.
+
+export type FigmaFieldValue = string | boolean;
+export type FigmaFieldValues = Record<string, FigmaFieldValue | undefined>;
+
+export interface FigmaFieldBinding {
+  readonly figmaField: string;
+  readonly apiField: string;
+  readonly nodeId: string;
+  readonly kind: string;
+  readonly required: boolean;
+  readonly resolution: string;
+  readonly minLength?: number;
+  readonly maxLength?: number;
+  readonly pattern?: string;
+  readonly format?: string;
+}
+
+export interface FigmaOperation {
+  readonly method: string;
+  readonly path: string;
+  readonly role: "write" | "read";
+  readonly fields: readonly FigmaFieldBinding[];
+  readonly unboundRequired: readonly string[];
+  readonly responseUnwrap: string | null;
+  readonly submitNodeId: string | null;
+}
+
+/** Screen frame id → contract operations its form uses. */
+export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
+  "5329:12027": [
+    {
+      "fields": [
+        {
+          "apiField": "first_name",
+          "figmaField": "first-name",
+          "kind": "text",
+          "nodeId": "5335:4269",
+          "required": false,
+          "resolution": "api_schema_name",
+          "maxLength": 100
+        },
+        {
+          "apiField": "last_name",
+          "figmaField": "last-name",
+          "kind": "text",
+          "nodeId": "5337:4265",
+          "required": false,
+          "resolution": "api_schema_name",
+          "maxLength": 100
+        },
+        {
+          "apiField": "email",
+          "figmaField": "email",
+          "kind": "text",
+          "nodeId": "5335:4273",
+          "required": false,
+          "resolution": "api_schema_name",
+          "format": "email"
+        }
+      ],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/profile",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [
+        {
+          "apiField": "first_name",
+          "figmaField": "first-name",
+          "kind": "text",
+          "nodeId": "5335:4269",
+          "required": false,
+          "resolution": "api_schema_name",
+          "maxLength": 100
+        },
+        {
+          "apiField": "last_name",
+          "figmaField": "last-name",
+          "kind": "text",
+          "nodeId": "5337:4265",
+          "required": false,
+          "resolution": "api_schema_name",
+          "maxLength": 100
+        },
+        {
+          "apiField": "email",
+          "figmaField": "email",
+          "kind": "text",
+          "nodeId": "5335:4273",
+          "required": false,
+          "resolution": "api_schema_name",
+          "format": "email"
+        }
+      ],
+      "method": "PUT",
+      "path": "/api/v1/marketing-team-member/profile",
+      "responseUnwrap": "data",
+      "role": "write",
+      "submitNodeId": "5335:4291",
+      "unboundRequired": []
+    }
+  ],
+  "5645:60757": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5449:18415": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/activity-types",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [
+        {
+          "apiField": "title",
+          "figmaField": "title",
+          "kind": "text",
+          "nodeId": "5449:18614",
+          "required": true,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "color_code",
+          "figmaField": "color_code",
+          "kind": "text",
+          "nodeId": "5449:19094",
+          "required": true,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "icon",
+          "figmaField": "icon",
+          "kind": "select",
+          "nodeId": "5725:105917",
+          "required": false,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "category",
+          "figmaField": "category",
+          "kind": "select",
+          "nodeId": "5549:56813",
+          "required": false,
+          "resolution": "api_schema_name"
+        }
+      ],
+      "method": "POST",
+      "path": "/api/v1/marketing-team-member/activity-types",
+      "responseUnwrap": null,
+      "role": "write",
+      "submitNodeId": "5449:18668",
+      "unboundRequired": []
+    },
+    {
+      "fields": [
+        {
+          "apiField": "icon",
+          "figmaField": "icon",
+          "kind": "select",
+          "nodeId": "5725:105917",
+          "required": false,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "category",
+          "figmaField": "category",
+          "kind": "select",
+          "nodeId": "5549:56813",
+          "required": false,
+          "resolution": "api_schema_name"
+        }
+      ],
+      "method": "PUT",
+      "path": "/api/v1/marketing-team-member/activity-types/{id}",
+      "responseUnwrap": null,
+      "role": "write",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5449:19126": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5359:17106": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/activities",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5621:28270": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5584:26945": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ]
+};
+
+/** Figma fields no contract operation accepts: keep them local UI state, never send them. */
+export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
+  "5329:12027": [
+    "bio",
+    "new-password",
+    "confirm-password",
+    "change-password"
+  ],
+  "5359:17106": [
+    "filter-activities"
+  ],
+  "5359:17424": [
+    "search-users"
+  ],
+  "5449:18415": [
+    "filter-activities"
+  ],
+  "5449:19126": [
+    "filter-categories"
+  ],
+  "5584:26945": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "field-5596-52876",
+    "field-5596-52878",
+    "field-5596-52880",
+    "field-5596-52882",
+    "field-5596-52884",
+    "field-5596-52886"
+  ],
+  "5621:28270": [
+    "search-users"
+  ],
+  "5645:60757": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "field-i5645-60760-5596-52876",
+    "field-i5645-60760-5596-52878",
+    "field-i5645-60760-5596-52880",
+    "field-i5645-60760-5596-52882",
+    "field-i5645-60760-5596-52884",
+    "field-i5645-60760-5596-52886"
+  ]
+};
+
+export function figmaOperations(frameId: string): readonly FigmaOperation[] {
+  return FIGMA_OPERATIONS[frameId] ?? [];
+}
+
+/** The operation a screen's form submits (the one with a resolved submit control first). */
+export function figmaWriteOperation(frameId: string): FigmaOperation | undefined {
+  const writes = figmaOperations(frameId).filter((op) => op.role === "write");
+  return writes.find((op) => op.submitNodeId !== null) ?? writes[0];
+}
+
+/** The operation whose response initialises a screen's form values. */
+export function figmaReadOperation(frameId: string): FigmaOperation | undefined {
+  return figmaOperations(frameId).find((op) => op.role === "read");
+}
+
+/** Every read a screen loads: form initial values and display bindings (figmaDisplay.ts). */
+export function figmaReadOperations(frameId: string): readonly FigmaOperation[] {
+  return figmaOperations(frameId).filter((op) => op.role === "read");
+}
+
+function asRecord(value: unknown): Record<string, unknown> | null {
+  return value !== null && typeof value === "object" && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : null;
+}
+
+/** Request body keyed by API field names. Fields without a contract binding are never sent. */
+export function requestBodyFor(
+  op: FigmaOperation,
+  values: FigmaFieldValues,
+): Record<string, string | boolean> {
+  const body: Record<string, string | boolean> = {};
+  for (const field of op.fields) {
+    const value = values[field.figmaField];
+    if (typeof value === "boolean") {
+      body[field.apiField] = value;
+      continue;
+    }
+    if (value === undefined || (value.trim() === "" && !field.required)) {
+      continue;
+    }
+    body[field.apiField] = value;
+  }
+  return body;
+}
+
+/** Form values keyed by Figma field, read from a response (envelope unwrapped). */
+export function valuesFromResponse(op: FigmaOperation, payload: unknown): FigmaFieldValues {
+  const outer = asRecord(payload);
+  const record = (op.responseUnwrap && outer ? asRecord(outer[op.responseUnwrap]) : null) ?? outer;
+  const values: FigmaFieldValues = {};
+  if (!record) {
+    return values;
+  }
+  for (const field of op.fields) {
+    const value = record[field.apiField];
+    if (typeof value === "boolean") {
+      values[field.figmaField] = value;
+    } else if (typeof value === "string" || typeof value === "number") {
+      values[field.figmaField] = String(value);
+    } else if (value === null) {
+      values[field.figmaField] = "";
+    }
+  }
+  return values;
+}
+
+/** Checks the request schema states (required, length, pattern, email format). */
+export function validateValues(
+  op: FigmaOperation,
+  values: FigmaFieldValues,
+): Record<string, string> {
+  const errors: Record<string, string> = {};
+  for (const field of op.fields) {
+    const value = values[field.figmaField];
+    if (typeof value === "boolean" || field.kind === "checkbox" || field.kind === "switch") {
+      continue;
+    }
+    const text = (value ?? "").trim();
+    if (!text) {
+      if (field.required) {
+        errors[field.figmaField] = "This field is required.";
+      }
+      continue;
+    }
+    if (field.minLength !== undefined && text.length < field.minLength) {
+      errors[field.figmaField] = `Use at least ${field.minLength} characters.`;
+    } else if (field.maxLength !== undefined && text.length > field.maxLength) {
+      errors[field.figmaField] = `Use at most ${field.maxLength} characters.`;
+    } else if (field.format === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(text)) {
+      errors[field.figmaField] = "Enter a valid email address.";
+    } else if (field.pattern !== undefined) {
+      try {
+        if (!new RegExp(field.pattern).test(text)) {
+          errors[field.figmaField] = "This value is not in the expected format.";
+        }
+      } catch {
+        // A server-side pattern JavaScript cannot compile is left to the server.
+      }
+    }
+  }
+  return errors;
+}
+
+function messageText(value: unknown): string | null {
+  if (typeof value === "string") {
+    return value;
+  }
+  if (Array.isArray(value)) {
+    const parts = value.filter((part): part is string => typeof part === "string");
+    return parts.length > 0 ? parts.join(" ") : null;
+  }
+  const record = asRecord(value);
+  if (record) {
+    return messageText(record.message ?? Object.values(record));
+  }
+  return null;
+}
+
+/** Server validation errors mapped from API field names onto Figma fields. */
+export function fieldErrorsFromResponse(
+  op: FigmaOperation,
+  body: unknown,
+): Record<string, string> {
+  const errors: Record<string, string> = {};
+  const byApi = new Map(op.fields.map((field) => [field.apiField, field.figmaField]));
+  const record = asRecord(body);
+  const errorEnvelope = asRecord(record?.error);
+  const raw =
+    errorEnvelope?.details ??
+    record?.errors ??
+    record?.details ??
+    record?.message;
+  const assign = (apiField: unknown, message: unknown): void => {
+    const figmaField = typeof apiField === "string" ? byApi.get(apiField) : undefined;
+    const text = messageText(message);
+    if (figmaField && text && !errors[figmaField]) {
+      errors[figmaField] = text;
+    }
+  };
+  const entries = Array.isArray(raw) ? raw : raw !== undefined ? [raw] : [];
+  for (const entry of entries) {
+    const item = asRecord(entry);
+    if (item && !("message" in item) && !("field" in item) && !("property" in item)) {
+      for (const [key, value] of Object.entries(item)) {
+        assign(key, value);
+      }
+      continue;
+    }
+    if (item) {
+      assign(item.field ?? item.property ?? item.path, item.message ?? item.constraints);
+      continue;
+    }
+    if (typeof entry === "string") {
+      const apiField = op.fields
+        .map((field) => field.apiField)
+        .find((name) => entry === name || entry.startsWith(`${name} `));
+      assign(apiField, entry);
+    }
+  }
+  return errors;
+}
