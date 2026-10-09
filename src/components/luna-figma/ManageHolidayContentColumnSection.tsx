@@ -32,7 +32,7 @@ export function ManageHolidayContentColumnSection() {
           <div data-figma-node="5621:28304" {...figmaItemProps("5621:28304")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5621:28305" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
               <div data-figma-node="5621:28472" className="box-border w-[32px] h-[32px] rounded-[20px] relative flex flex-row items-center justify-center bg-background-tinted-9">
-                <Calendar_895821db data-figma-node="5621:28473" data-figma-component="5111:8245" className="relative" />
+                <Calendar_895821db data-figma-node="5621:28473" data-figma-component="5111:8245" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="5621:28307" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-1">{figmaTextContent("5621:28307", "New Year's Day")}</p>
             </div>
@@ -53,7 +53,7 @@ export function ManageHolidayContentColumnSection() {
           <div data-figma-node="5621:28319" {...figmaItemProps("5621:28319")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5621:28320" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
               <div data-figma-node="5621:28476" className="box-border w-[32px] h-[32px] rounded-[20px] relative flex flex-row items-center justify-center bg-background-tinted-9">
-                <Calendar_895821db data-figma-node="5621:28477" data-figma-component="5111:8245" className="relative" />
+                <Calendar_895821db data-figma-node="5621:28477" data-figma-component="5111:8245" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="5621:28322" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-1">{figmaTextContent("5621:28322", "Memorial Day")}</p>
             </div>
@@ -74,7 +74,7 @@ export function ManageHolidayContentColumnSection() {
           <div data-figma-node="5621:28334" {...figmaItemProps("5621:28334")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5621:28335" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
               <div data-figma-node="5621:28480" className="box-border w-[32px] h-[32px] rounded-[20px] relative flex flex-row items-center justify-center bg-background-tinted-9">
-                <Calendar_895821db data-figma-node="5621:28481" data-figma-component="5111:8245" className="relative" />
+                <Calendar_895821db data-figma-node="5621:28481" data-figma-component="5111:8245" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="5621:28337" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-1">{figmaTextContent("5621:28337", "4th of July")}</p>
             </div>
@@ -95,7 +95,7 @@ export function ManageHolidayContentColumnSection() {
           <div data-figma-node="5621:28349" {...figmaItemProps("5621:28349")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5621:28350" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
               <div data-figma-node="5621:28484" className="box-border w-[32px] h-[32px] rounded-[20px] relative flex flex-row items-center justify-center bg-background-tinted-9">
-                <Calendar_895821db data-figma-node="5621:28485" data-figma-component="5111:8245" className="relative" />
+                <Calendar_895821db data-figma-node="5621:28485" data-figma-component="5111:8245" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="5621:28352" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-1">{figmaTextContent("5621:28352", "Labor Day")}</p>
             </div>
@@ -120,7 +120,7 @@ export function ManageHolidayContentColumnSection() {
           <div data-figma-node="5621:28364" {...figmaItemProps("5621:28364")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5621:28365" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
               <div data-figma-node="5621:28488" className="box-border w-[32px] h-[32px] rounded-[20px] relative flex flex-row items-center justify-center bg-background-tinted-9">
-                <Calendar_895821db data-figma-node="5621:28489" data-figma-component="5111:8245" className="relative" />
+                <Calendar_895821db data-figma-node="5621:28489" data-figma-component="5111:8245" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="5621:28367" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-1">{figmaTextContent("5621:28367", "Christmas Day")}</p>
             </div>
@@ -145,7 +145,7 @@ export function ManageHolidayContentColumnSection() {
           <div data-figma-node="5621:28379" {...figmaItemProps("5621:28379")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[0px]">
             <div data-figma-node="5621:28380" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
               <div data-figma-node="5621:28492" className="box-border w-[32px] h-[32px] rounded-[20px] relative flex flex-row items-center justify-center bg-background-tinted-9">
-                <Calendar_895821db data-figma-node="5621:28493" data-figma-component="5111:8245" className="relative" />
+                <Calendar_895821db data-figma-node="5621:28493" data-figma-component="5111:8245" className="relative overflow-hidden rounded-[4px]" />
               </div>
               <p data-figma-node="5621:28382" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-1">{figmaTextContent("5621:28382", "Robert Taylor")}</p>
             </div>

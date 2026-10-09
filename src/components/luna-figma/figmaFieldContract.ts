@@ -130,6 +130,22 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
     {
       "fields": [
         {
+          "apiField": "title",
+          "figmaField": "title",
+          "kind": "text",
+          "nodeId": "5449:18614",
+          "required": true,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "color_code",
+          "figmaField": "color_code",
+          "kind": "text",
+          "nodeId": "5449:19094",
+          "required": true,
+          "resolution": "api_schema_name"
+        },
+        {
           "apiField": "icon",
           "figmaField": "icon",
           "kind": "select",
@@ -151,10 +167,7 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
       "responseUnwrap": null,
       "role": "write",
       "submitNodeId": "5449:18668",
-      "unboundRequired": [
-        "color_code",
-        "title"
-      ]
+      "unboundRequired": []
     },
     {
       "fields": [
