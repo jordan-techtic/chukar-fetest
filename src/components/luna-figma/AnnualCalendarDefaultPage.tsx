@@ -29,11 +29,11 @@ import { MemoPencil_3c0293af } from "./MemoPencil_3c0293af";
 import { PenField_051ce1e3 } from "./PenField_051ce1e3";
 import { RefreshCcwClock_22f0146d } from "./RefreshCcwClock_22f0146d";
 import { FiRrDownload_e2f06a4e } from "./FiRrDownload_e2f06a4e";
+import { ActiveTrueSizeDefault_ddd4f79d } from "./ActiveTrueSizeDefault_ddd4f79d";
+import { HistoricalView_1369850e } from "./HistoricalView_1369850e";
+import { Shared_736d44f6 } from "./Shared_736d44f6";
+import { Shared_91935847 } from "./Shared_91935847";
 import { Today_ddd8af3c } from "./Today_ddd8af3c";
-import { Variant4_736d44f6 } from "./Variant4_736d44f6";
-import { Variant5_91935847 } from "./Variant5_91935847";
-import { Variant7_1369850e } from "./Variant7_1369850e";
-
 export function AnnualCalendarDefaultPage() {
   const screenData = useFigmaScreenData();
   return (
@@ -61,7 +61,7 @@ export function AnnualCalendarDefaultPage() {
             </div>
             <div data-figma-node="I5645:60758;5217:13733" className="box-border w-max max-w-[434px] h-[40px] relative flex flex-row items-center gap-4">
               <button data-figma-node="I5645:60758;5217:13742" type="button" data-figma-action="act_580733380960" {...useFigmaActionProps("act_580733380960")} className="box-border w-max max-w-[208px] h-[40px] rounded-[6px] border-[#e2d9d0] border-[1px] inline-flex items-center justify-center whitespace-nowrap bg-[#faf3e8] hover:opacity-90 cursor-pointer gap-2"><div data-figma-node="I5645:60758;5217:13743" data-figma-component="5111:8203" className="box-border w-[16px] h-[16px] overflow-hidden relative rounded-[4px]"><RefreshCcwClock_22f0146d className="relative overflow-hidden" /></div><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#a21d35]">Historical View</span></button>
-              <input data-figma-node="I5645:60758;5217:13745" type="checkbox" role="switch" defaultChecked aria-label="Calendar view mode" className="box-border w-[28px] h-[16px] shrink-0 cursor-pointer accent-[#a21d35]" />
+              <ActiveTrueSizeDefault_ddd4f79d data-figma-node="I5645:60758;5217:13745" data-figma-component="5111:12391" className="relative shrink-0" />
               <button data-figma-node="I5645:60758;5217:13746" type="button" data-figma-unresolved-action="true" className="box-border w-max max-w-[138px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer gap-2"><div data-figma-node="I5645:60758;5217:13747" data-figma-component="5121:8564" className="box-border w-[16px] h-[16px] overflow-hidden relative rounded-[4px] flex flex-col items-center"><FiRrDownload_e2f06a4e className="relative overflow-hidden" /></div><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20]">Export PDF</span></button>
               <div data-figma-node="I5645:60758;5217:13749" className="box-border w-max max-w-[56px] h-[32px] relative flex flex-row items-center gap-2">
                 <div data-figma-node="I5645:60758;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-[32px] rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
@@ -274,7 +274,7 @@ export function AnnualCalendarDefaultPage() {
                             </div>
                           </div>
                           <div data-figma-node="I5645:60760;5589:50622;5559:19118" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden relative flex flex-col items-start gap-1">
-                            <Variant4_736d44f6 data-figma-node="I5645:60760;5589:50622;5556:77452" data-figma-component="5217:10959" className="relative" />
+                            <Shared_736d44f6 data-figma-node="I5645:60760;5589:50622;5556:77452" data-figma-component="5217:10959" className="relative" />
                             <div data-figma-node="I5645:60760;5589:50622;5589:48811" data-figma-component="5217:10959" className="box-border w-full min-w-0 h-full min-h-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1">
                               <div data-figma-node="I5645:60760;5589:50622;5589:48811;5217:10960" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:60760;5589:50622;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
@@ -338,7 +338,7 @@ export function AnnualCalendarDefaultPage() {
                             </div>
                           </div>
                           <div data-figma-node="I5645:60760;5589:50680;5559:19118" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden relative flex flex-col items-start gap-1">
-                            <Variant4_736d44f6 data-figma-node="I5645:60760;5589:50680;5556:77452" data-figma-component="5217:10959" className="relative" />
+                            <Shared_736d44f6 data-figma-node="I5645:60760;5589:50680;5556:77452" data-figma-component="5217:10959" className="relative" />
                             <div data-figma-node="I5645:60760;5589:50680;5589:48811" data-figma-component="5217:10959" className="box-border w-full min-w-0 h-full min-h-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1">
                               <div data-figma-node="I5645:60760;5589:50680;5589:48811;5217:10960" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:60760;5589:50680;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
@@ -402,7 +402,7 @@ export function AnnualCalendarDefaultPage() {
                             </div>
                           </div>
                           <div data-figma-node="I5645:60760;5589:50738;5559:19118" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden relative flex flex-col items-start gap-1">
-                            <Variant4_736d44f6 data-figma-node="I5645:60760;5589:50738;5556:77452" data-figma-component="5217:10959" className="relative" />
+                            <Shared_736d44f6 data-figma-node="I5645:60760;5589:50738;5556:77452" data-figma-component="5217:10959" className="relative" />
                             <div data-figma-node="I5645:60760;5589:50738;5589:48811" data-figma-component="5217:10959" className="box-border w-full min-w-0 h-full min-h-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1">
                               <div data-figma-node="I5645:60760;5589:50738;5589:48811;5217:10960" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:60760;5589:50738;5589:48811;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
@@ -1903,10 +1903,10 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5589:52243;5725:102098" src="/assets/figma/I5645-60760-5589-52243-5725-102098.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
-                        <Variant7_1369850e data-figma-node="I5645:60760;5589:52238" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:60760;5589:52710" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:60760;5589:52239" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:60760;5589:52240" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5589:52238" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5589:52710" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5589:52239" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5589:52240" data-figma-component="5556:77447" className="relative" />
                       </div>
                     </div>
                   </div>
@@ -2835,7 +2835,7 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5596:52939;5725:103122" src="/assets/figma/I5645-60760-5596-52939-5725-103122.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:60760;5596:52939;5602:55916" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden relative flex flex-col items-start gap-1">
-                            <Variant5_91935847 data-figma-node="I5645:60760;5596:52939;5602:55917" data-figma-component="5217:13650" className="relative" />
+                            <Shared_91935847 data-figma-node="I5645:60760;5596:52939;5602:55917" data-figma-component="5217:13650" className="relative" />
                             <div data-figma-node="I5645:60760;5596:52939;5602:55918" data-figma-component="5217:10959" className="box-border w-full min-w-0 h-full min-h-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1">
                               <div data-figma-node="I5645:60760;5596:52939;5602:55918;5217:10960" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:60760;5596:52939;5602:55918;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
@@ -2890,7 +2890,7 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5596:52940;5725:103122" src="/assets/figma/I5645-60760-5596-52940-5725-103122.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                           <div data-figma-node="I5645:60760;5596:52940;5602:55916" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden relative flex flex-col items-start gap-1">
-                            <Variant5_91935847 data-figma-node="I5645:60760;5596:52940;5602:55917" data-figma-component="5217:13650" className="relative" />
+                            <Shared_91935847 data-figma-node="I5645:60760;5596:52940;5602:55917" data-figma-component="5217:13650" className="relative" />
                             <div data-figma-node="I5645:60760;5596:52940;5602:55918" data-figma-component="5217:10959" className="box-border w-full min-w-0 h-full min-h-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1">
                               <div data-figma-node="I5645:60760;5596:52940;5602:55918;5217:10960" className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-[#fcf3f4]">
                                 <div data-figma-node="I5645:60760;5596:52940;5602:55918;5217:10961" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1">
@@ -4428,10 +4428,10 @@ export function AnnualCalendarDefaultPage() {
                             <img data-figma-node="I5645:60760;5596:52977;5725:102098" src="/assets/figma/I5645-60760-5596-52977-5725-102098.png" alt="Frame 1000007851" width={42} height={16} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[42px] h-[16px] max-w-none object-cover object-top" />
                           </div>
                         </div>
-                        <Variant7_1369850e data-figma-node="I5645:60760;5596:52978" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:60760;5596:52979" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:60760;5596:52980" data-figma-component="5556:77447" className="relative" />
-                        <Variant7_1369850e data-figma-node="I5645:60760;5596:52981" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52978" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52979" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52980" data-figma-component="5556:77447" className="relative" />
+                        <HistoricalView_1369850e data-figma-node="I5645:60760;5596:52981" data-figma-component="5556:77447" className="relative" />
                       </div>
                     </div>
                   </div>
