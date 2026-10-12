@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Noto+Sans:wght@400&family=Inter:wght@400;500;600;800&display=swap");
+@import "tailwindcss";
+@import "../theme/tokens.css";
+@import "../theme/breakpoints.css";
+@import "../theme/global.css";
+@import "../theme/typography.css";
+
+/*
+ * Tailwind v4 theme tokens. Values mirror src/theme/tokens.css exactly:
+ * the Sofia semantic color roles are the single design source of truth.
+ * Utilities: bg-background, text-foreground, bg-primary, border-border,
+ * bg-card, text-muted-foreground, ring-ring, rounded-*.
+ */
+@theme {
+  --font-onest: "Onest", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-noto-sans: "Noto Sans", sans-serif;
+
+  --color-background: #fff9f3;
+  --color-foreground: #231f20;
+  --color-card: #ffffff;
+  --color-card-foreground: #231f20;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #231f20;
+  --color-primary: #a21d35;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #faf3e8;
+  --color-secondary-foreground: #231f20;
+  --color-muted: #fde8ed;
+  --color-muted-foreground: #686868;
+  --color-accent: #fde8ed;
+  --color-accent-foreground: #231f20;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e2d9d0;
+  --color-input: #e2d9d0;
+  --color-ring: #a21d35;
+
+  --radius-sm: var(--radius-4);
+  --radius-md: var(--radius-8);
+  --radius-lg: var(--radius-12);
+  --radius-xl: var(--radius-16);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-onest);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

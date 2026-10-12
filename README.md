@@ -23,10 +23,10 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment
 
-| Variable                           | Description                                                  |
-| ---------------------------------- | ------------------------------------------------------------ |
+| Variable                           | Description                                                   |
+| ---------------------------------- | ------------------------------------------------------------- |
 | `NEXT_PUBLIC_API_URL`              | Optional absolute API base; leave empty to use `/api` rewrite |
-| `LUNA_VALIDATION_API_PROXY_TARGET` | Backend target for `/api/*` rewrites in `next.config.js`     |
+| `LUNA_VALIDATION_API_PROXY_TARGET` | Backend target for `/api/*` rewrites in `next.config.js`      |
 
 ## Scripts
 
