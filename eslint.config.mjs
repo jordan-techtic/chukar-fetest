@@ -5,7 +5,15 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: [".next/**", "node_modules/**", "coverage/**", "tsconfig.tsbuildinfo"],
+    ignores: [
+      ".next/**",
+      "node_modules/**",
+      "coverage/**",
+      "tsconfig.tsbuildinfo",
+      // Next.js regenerates this file on every build; it must keep its
+      // triple-slash references, so it is not lintable source.
+      "next-env.d.ts",
+    ],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
