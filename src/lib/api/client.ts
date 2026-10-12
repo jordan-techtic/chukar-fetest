@@ -6,6 +6,7 @@ import {
   getAccessToken,
   setSessionRejected,
 } from "@/lib/auth/token-storage";
+import { redirectToLogin } from "@/lib/auth/redirect";
 
 import { resolveApiBaseUrl } from "./resolve-base-url";
 
@@ -35,11 +36,7 @@ apiClient.interceptors.response.use(
       setSessionRejected(true);
       if (!handlingUnauthorized) {
         handlingUnauthorized = true;
-        const url = new URL(window.location.href);
-        if (!url.searchParams.has("auth")) {
-          url.searchParams.set("auth", "required");
-          window.location.replace(url.pathname + url.search);
-        }
+        redirectToLogin();
       }
     }
     return Promise.reject(error);

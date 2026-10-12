@@ -15,6 +15,7 @@ const NAV_ITEMS = [{ to: "/", label: "Home", icon: House, end: true }] as const;
 export function Sidebar({ mobileOpen = false, onNavigate }: SidebarProps) {
   return (
     <aside
+      id="primary-navigation"
       className={cn(
         "w-60 shrink-0 border-r border-border bg-card font-onest text-foreground transition-transform md:translate-x-0",
         mobileOpen

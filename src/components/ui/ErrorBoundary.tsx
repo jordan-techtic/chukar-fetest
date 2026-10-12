@@ -2,7 +2,7 @@
 
 import React, { type ErrorInfo, type ReactNode } from "react";
 
-import { Button } from "@/components/ui/button";
+import { ErrorState } from "@/components/ui/ErrorState";
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -36,18 +36,7 @@ export class ErrorBoundary extends React.Component<
 
   render(): ReactNode {
     if (this.state.hasError) {
-      return (
-        <div
-          role="alert"
-          className="mx-auto flex max-w-lg flex-col gap-4 rounded-[var(--radius-12)] border border-[var(--color-error)] bg-card p-6 shadow-[var(--shadow-drop-shadow)]"
-        >
-          <h1 className="text-heading-md-21">Something went wrong</h1>
-          <p className="text-body-sm-5 text-muted-foreground">{this.state.message}</p>
-          <Button type="button" variant="outline" onClick={this.handleRetry}>
-            Try Again
-          </Button>
-        </div>
-      );
+      return <ErrorState message={this.state.message} onRetry={this.handleRetry} />;
     }
     return this.props.children;
   }

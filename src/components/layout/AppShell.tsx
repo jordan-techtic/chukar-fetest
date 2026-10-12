@@ -15,7 +15,11 @@ export function AppShell({ children }: AppShellProps) {
 
   return (
     <div className="flex min-h-screen flex-col bg-[var(--color-background)] font-onest">
-      <Header onMenuClick={() => setMobileNavOpen((open) => !open)} />
+      <Header
+        onMenuClick={() => setMobileNavOpen((open) => !open)}
+        menuExpanded={mobileNavOpen}
+        menuControlsId="primary-navigation"
+      />
       <div className="relative flex min-h-0 flex-1">
         {mobileNavOpen ? (
           <button

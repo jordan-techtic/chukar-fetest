@@ -4,18 +4,8 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { AppShell } from "@/components/layout/AppShell";
 import { HomePlaceholder } from "@/components/features/home/HomePlaceholder";
+import { NotFoundContent } from "@/components/NotFoundContent";
 import { ProtectedLayout } from "@/lib/auth/ProtectedLayout";
-
-function NotFoundPage() {
-  return (
-    <div className="mx-auto max-w-lg rounded-[var(--radius-12)] border border-border bg-card p-[var(--spacing-padding-24)] shadow-[var(--shadow-drop-shadow)]">
-      <h1 className="text-heading-md-21">Page Not Found</h1>
-      <p className="mt-[var(--spacing-gap-12)] text-body-sm-5 text-muted-foreground">
-        No page exists at this URL.
-      </p>
-    </div>
-  );
-}
 
 function ProtectedPlaceholder() {
   return (
@@ -55,7 +45,7 @@ export function RootRouter() {
           path="*"
           element={
             <AppShell>
-              <NotFoundPage />
+              <NotFoundContent />
             </AppShell>
           }
         />

@@ -1,5 +1,6 @@
 import eslint from "@eslint/js";
-import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals.js";
+import nextPlugin from "@next/eslint-plugin-next";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
@@ -7,8 +8,16 @@ export default tseslint.config(
     ignores: [".next/**", "node_modules/**", "coverage/**", "tsconfig.tsbuildinfo"],
   },
   eslint.configs.recommended,
-  ...nextCoreWebVitals,
   ...tseslint.configs.recommended,
+  {
+    // eslint-config-next ships eslintrc-style shareable configs, so the
+    // equivalent flat config is assembled from its plugin's rule sets.
+    plugins: { "@next/next": nextPlugin },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextCoreWebVitals.rules,
+    },
+  },
   {
     rules: {
       "@typescript-eslint/no-unused-vars": [
