@@ -1,0 +1,8 @@
+:root {
+  --breakpoint-sm: 390px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --grid-columns: 12;
+  --grid-gutter: var(--spacing-gap-24);
+}
