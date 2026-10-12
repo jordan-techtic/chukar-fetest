@@ -1,18 +1,18 @@
 :root {
-  --color-color-27: #fef3c7;
-  --color-color-28: #da002f;
-  --color-primary: #00000000;
+  /* Sofia semantic color roles — exact values from the design token reference */
+  --color-primary: #a21d35;
+  --color-primary-soft: #fde8ed;
+  --color-background: #fff9f3;
+  --color-surface: #ffffff;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+  --color-border: #e2d9d0;
   --color-secondary: #ffffff;
-  --color-accent: #e5e7eb;
-  --color-background: #fde8ed;
-  --color-surface: #a21d35;
-  --color-text-primary: #fff9f3;
-  --color-text-secondary: #000000;
-  --color-border: #231f20;
-  --color-error: #e2d9d0;
-  --color-success: #faf3e8;
-  --color-warning: #676767;
-  --color-info: #f8f8f8;
+  --color-accent: #2a9d8f;
+  --color-error: #ef4444;
+  --color-success: #198754;
+  --color-warning: #d97706;
+  --color-info: #0083ba;
   --color-color-13: #9ca3af;
   --color-color-14: #374151;
   --color-color-15: #374957;
@@ -351,7 +351,7 @@
   --shadow-drop-shadow-5: 0px 4px 8px 0px #00000005;
   --shadow-drop-shadow-6: -6px 0px 24px 0px #00000026;
   --shadow-drop-shadow-7: -4px 0px 20px 0px #0000001f;
-  --shadow-drop-shadow-8: 0px 4px 32px 0px #0000001e;
+  --shadow-drop-shadow-8: 0px 4px 32px 0px #0000001f;
   --shadow-drop-shadow-9: 0px 1px 3px 0px #00000033;
   --gradient: linear-gradient(180deg, #833ab4 0%, #fd1d1d 50%, #fcaf45 100%);
   --gradient-2: linear-gradient(180deg, #ffffff 0%, #a01028 100%);
