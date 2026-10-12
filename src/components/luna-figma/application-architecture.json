@@ -1,0 +1,341 @@
+{
+  "adapter": "next",
+  "app_router": [
+    {
+      "evidence": "application_ir.routes.route:my-profile",
+      "file": "app/(app)/my-profile/page.tsx",
+      "frame_id": "5329:12027",
+      "ownership": "application",
+      "page_id": "page:my-profile:5329:12027",
+      "role": "page",
+      "route_path": "/my-profile",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:manage-holiday",
+      "file": "app/(app)/manage-holiday/page.tsx",
+      "frame_id": "5621:28270",
+      "ownership": "application",
+      "page_id": "page:manage-holiday:5621:28270",
+      "role": "page",
+      "route_path": "/manage-holiday",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:week-calendar-historical-view",
+      "file": "app/(app)/week-calendar-historical-view/page.tsx",
+      "frame_id": "5584:26945",
+      "ownership": "application",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "role": "page",
+      "route_path": "/week-calendar-historical-view",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:annual-calendar-default",
+      "file": "app/(app)/annual-calendar-default/page.tsx",
+      "frame_id": "5645:60757",
+      "ownership": "application",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "role": "page",
+      "route_path": "/annual-calendar-default",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:audit-logs",
+      "file": "app/(app)/audit-logs/page.tsx",
+      "frame_id": "5329:12177",
+      "ownership": "application",
+      "page_id": "page:audit-logs:5329:12177",
+      "role": "page",
+      "route_path": "/audit-logs",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:manage-activity",
+      "file": "app/(app)/manage-activity/page.tsx",
+      "frame_id": "5359:17106",
+      "ownership": "application",
+      "page_id": "page:manage-activity:5359:17106",
+      "role": "page",
+      "route_path": "/manage-activity",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:manage-category",
+      "file": "app/(app)/manage-category/page.tsx",
+      "frame_id": "5449:19126",
+      "ownership": "application",
+      "page_id": "page:manage-category:5449:19126",
+      "role": "page",
+      "route_path": "/manage-category",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:manage-users",
+      "file": "app/(app)/manage-users/page.tsx",
+      "frame_id": "5359:17424",
+      "ownership": "application",
+      "page_id": "page:manage-users:5359:17424",
+      "role": "page",
+      "route_path": "/manage-users",
+      "visual_reference": "components/luna-figma owned-layout"
+    },
+    {
+      "evidence": "application_ir.routes.route:monthly-calendar-historical-view",
+      "file": "app/(app)/monthly-calendar-historical-view/page.tsx",
+      "frame_id": "5645:33753",
+      "ownership": "application",
+      "page_id": "page:monthly-calendar-historical-view:5645:33753",
+      "role": "page",
+      "route_path": "/monthly-calendar-historical-view",
+      "visual_reference": "components/luna-figma owned-layout"
+    }
+  ],
+  "modules": [
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:my-profile",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:my-profile:5329:12027"
+      ],
+      "path": "src/features/my-profile"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:manage-holiday",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:manage-holiday:5621:28270"
+      ],
+      "path": "src/features/manage-holiday"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:week-calendar-historical-view",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:week-calendar-historical-view:5584:26945"
+      ],
+      "path": "src/features/week-calendar-historical-view"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:annual-calendar-default",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:annual-calendar-default:5645:60757"
+      ],
+      "path": "src/features/annual-calendar-default"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:audit-logs",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:audit-logs:5329:12177"
+      ],
+      "path": "src/features/audit-logs"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:manage-activity",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:manage-activity:5359:17106"
+      ],
+      "path": "src/features/manage-activity"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:manage-category",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:manage-category:5449:19126"
+      ],
+      "path": "src/features/manage-category"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:manage-users",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:manage-users:5359:17424"
+      ],
+      "path": "src/features/manage-users"
+    },
+    {
+      "evidence": "application_ir.features",
+      "id": "feature:monthly-calendar-historical-view",
+      "kind": "feature",
+      "ownership": "application",
+      "page_ids": [
+        "page:monthly-calendar-historical-view:5645:33753"
+      ],
+      "path": "src/features/monthly-calendar-historical-view"
+    },
+    {
+      "evidence": "application_ir.collections",
+      "hook": "useCollectionPageMyProfile532912027ApiV1MarketingTeamMembCollection",
+      "id": "collection:page:my-profile:5329:12027:api-v1-marketing-team-member-profile",
+      "kind": "collection",
+      "ownership": "application",
+      "path": "src/features/collections/collection-page-my-profile-5329-12027-api-v1-marketing-team-memb",
+      "supports_variable_cardinality": true
+    },
+    {
+      "evidence": "application_ir.collections",
+      "hook": "useCollectionPageManageHoliday562128270ApiV1MarketingTeamCollection",
+      "id": "collection:page:manage-holiday:5621:28270:api-v1-marketing-team-member-holidays",
+      "kind": "collection",
+      "ownership": "application",
+      "path": "src/features/collections/collection-page-manage-holiday-5621-28270-api-v1-marketing-team-",
+      "supports_variable_cardinality": true
+    },
+    {
+      "evidence": "application_ir.collections",
+      "hook": "useCollectionPageManageActivity535917106ApiV1MarketingTeamCollection",
+      "id": "collection:page:manage-activity:5359:17106:api-v1-marketing-team-member-activities",
+      "kind": "collection",
+      "ownership": "application",
+      "path": "src/features/collections/collection-page-manage-activity-5359-17106-api-v1-marketing-team",
+      "supports_variable_cardinality": true
+    },
+    {
+      "evidence": "application_ir.collections",
+      "hook": "useCollectionPageManageCategory544919126ApiV1MarketingTeamCollection",
+      "id": "collection:page:manage-category:5449:19126:api-v1-marketing-team-member-categories",
+      "kind": "collection",
+      "ownership": "application",
+      "path": "src/features/collections/collection-page-manage-category-5449-19126-api-v1-marketing-team",
+      "supports_variable_cardinality": true
+    },
+    {
+      "api_path": "/api/v1/marketing-team-member/profile",
+      "evidence": "application_ir.queries",
+      "id": "query:GET:/api/v1/marketing-team-member/profile:5329:12027",
+      "kind": "query",
+      "method": "GET",
+      "ownership": "application",
+      "path": "src/api/api-v1-marketing-team-member-profile"
+    },
+    {
+      "api_path": "/api/v1/marketing-team-member/holidays",
+      "evidence": "application_ir.queries",
+      "id": "query:GET:/api/v1/marketing-team-member/holidays:5621:28270",
+      "kind": "query",
+      "method": "GET",
+      "ownership": "application",
+      "path": "src/api/api-v1-marketing-team-member-holidays"
+    },
+    {
+      "api_path": "/api/v1/marketing-team-member/activities",
+      "evidence": "application_ir.queries",
+      "id": "query:GET:/api/v1/marketing-team-member/activities:5359:17106",
+      "kind": "query",
+      "method": "GET",
+      "ownership": "application",
+      "path": "src/api/api-v1-marketing-team-member-activities"
+    },
+    {
+      "api_path": "/api/v1/marketing-team-member/categories",
+      "evidence": "application_ir.queries",
+      "id": "query:GET:/api/v1/marketing-team-member/categories:5449:19126",
+      "kind": "query",
+      "method": "GET",
+      "ownership": "application",
+      "path": "src/api/api-v1-marketing-team-member-categories"
+    }
+  ],
+  "notes": [
+    "Visual luna-figma files remain Figma-owned.",
+    "Application modules attach state to semantic owners (page/feature/form/collection/workflow), not a mega-hook.",
+    "Collections authorize 0..N cardinality independent of painted nodes.",
+    "Unresolved form fields stay explicit; do not invent controls.",
+    "App Router paths are adapter output only; core IR keeps Route.path strings.",
+    "layout.tsx is suggested when AppShell evidence exists across pages."
+  ],
+  "ownership": {
+    "developer_owned": [
+      "feature hooks implementations",
+      "API client wiring",
+      "approved workflow logic"
+    ],
+    "figma_owned": [
+      "components/luna-figma/* owned-layout",
+      "visual geometry classes",
+      "assets"
+    ],
+    "generated_owned": [
+      "application-model.json",
+      "application-ir.json",
+      "architecture plan modules below"
+    ]
+  },
+  "pages": [
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5329:12027",
+      "page_id": "page:my-profile:5329:12027",
+      "route": "my-profile"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5621:28270",
+      "page_id": "page:manage-holiday:5621:28270",
+      "route": "manage-holiday"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5584:26945",
+      "page_id": "page:week-calendar-historical-view:5584:26945",
+      "route": "week-calendar-historical-view"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5645:60757",
+      "page_id": "page:annual-calendar-default:5645:60757",
+      "route": "annual-calendar-default"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5329:12177",
+      "page_id": "page:audit-logs:5329:12177",
+      "route": "audit-logs"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5359:17106",
+      "page_id": "page:manage-activity:5359:17106",
+      "route": "manage-activity"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5449:19126",
+      "page_id": "page:manage-category:5449:19126",
+      "route": "manage-category"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5359:17424",
+      "page_id": "page:manage-users:5359:17424",
+      "route": "manage-users"
+    },
+    {
+      "component": "luna-figma page (visual)",
+      "frame_id": "5645:33753",
+      "page_id": "page:monthly-calendar-historical-view:5645:33753",
+      "route": "monthly-calendar-historical-view"
+    }
+  ],
+  "visual_emit": "legacy_artboard_compatible"
+}

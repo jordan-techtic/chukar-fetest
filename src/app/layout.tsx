@@ -6,6 +6,9 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
 import "./globals.css";
+// Figma design fonts (Inter + Onest) load globally, exactly once, via the
+// owned-layout support CSS. Never import figma-fonts.css per page/section.
+import "@/components/luna-figma/figma-fonts.css";
 
 export const metadata: Metadata = {
   title: "Marketing Content Calendar",
