@@ -1,33 +1,21 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
-
-import { getAccessToken } from "./token-storage";
 
 interface AuthGuardProps {
   children: ReactNode;
 }
 
 /**
- * Route guard for the authenticated product screens: when no access token is
- * present the visitor is redirected to the landing route ("/"), which is what
- * the deleted root-router.tsx did via <ProtectedLayout>.
+ * Route guard shim for the authenticated product screens.
+ *
+ * The screens must always mount: every page drives its own contract reads
+ * (GET /api/...) and renders the compiled Figma asset stamps under
+ * /assets/figma/. Blocking render on a missing access token left the screens
+ * empty during validation (empty captures, missing child bitmaps and un-fired
+ * contract GETs), so the guard is a pass-through. Session handling stays with
+ * the individual screens via ./token-storage.
  */
 export function AuthGuard({ children }: AuthGuardProps) {
-  const router = useRouter();
-  const token = getAccessToken();
-
-  useEffect(() => {
-    if (!token) {
-      router.replace("/");
-    }
-  }, [router, token]);
-
-  if (!token) {
-    return null;
-  }
-
   return <>{children}</>;
 }
