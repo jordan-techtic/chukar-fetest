@@ -2,6 +2,8 @@
 
 import { Toaster as Sonner, type ToasterProps } from "sonner";
 
+export { toast } from "sonner";
+
 /**
  * Sonner-backed toaster styled with the design-system CSS variables, so
  * toasts match the shadcn/ui primitives used across the app.

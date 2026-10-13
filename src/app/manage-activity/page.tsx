@@ -9,12 +9,15 @@
 "use client";
 
 import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
+import { AuthGuard } from "@/lib/auth/AuthGuard";
 import { ManageActivityPage } from "@/components/luna-figma/ManageActivityPage";
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="manage-activity">
-      <ManageActivityPage />
-    </FigmaScreenDataProvider>
+    <AuthGuard>
+      <FigmaScreenDataProvider routePath="manage-activity">
+        <ManageActivityPage />
+      </FigmaScreenDataProvider>
+    </AuthGuard>
   );
 }

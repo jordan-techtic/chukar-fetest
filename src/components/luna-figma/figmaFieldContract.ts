@@ -128,6 +128,68 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
       "unboundRequired": []
     }
   ],
+  "5621:28270": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5329:12177": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/audit-log?limit=6&page=1",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5359:17424": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/users",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5645:60757": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar?year=2026",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar?year=2025",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/performance-metrics",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
   "5584:26945": [
     {
       "fields": [],
@@ -137,13 +199,58 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
       "role": "read",
       "submitNodeId": null,
       "unboundRequired": []
-    }
-  ],
-  "5621:28270": [
+    },
     {
       "fields": [],
       "method": "GET",
-      "path": "/api/v1/marketing-team-member/holidays",
+      "path": "/api/v1/marketing-team-member/calendar?year=2026",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar?year=2025",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/performance-metrics",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5645:33753": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar?year=2026",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/calendar?year=2025",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/performance-metrics",
       "responseUnwrap": "data",
       "role": "read",
       "submitNodeId": null,

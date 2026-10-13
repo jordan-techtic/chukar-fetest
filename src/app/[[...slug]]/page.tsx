@@ -1,13 +1,18 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 
-// BrowserRouter requires the DOM; render the client router without SSR.
-const RootRouter = dynamic(
-  () => import("../root-router").then((mod) => mod.RootRouter),
-  { ssr: false },
-);
+import { AppShell } from "@/components/layout/AppShell";
+import { HomePlaceholder } from "@/components/features/home/HomePlaceholder";
+import { NotFoundContent } from "@/components/NotFoundContent";
 
 export default function CatchAllPage() {
-  return <RootRouter />;
+  const pathname = usePathname();
+  const isRoot = pathname === "/";
+
+  return (
+    <AppShell>
+      {isRoot ? <HomePlaceholder /> : <NotFoundContent />}
+    </AppShell>
+  );
 }

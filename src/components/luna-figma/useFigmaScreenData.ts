@@ -39,7 +39,9 @@ import {
   figmaDisplayOperations,
   FIGMA_DISPLAY_BINDINGS,
   publishReadPayload,
+  publishSelectOptions,
   setListOffset,
+  useFigmaPayloadVersion,
 } from "./figmaDisplay";
 import { resolveBoundRead } from "./figmaMockReads";
 import {
@@ -129,7 +131,12 @@ export class FigmaApiRequestError extends Error {
     const envelope = payload !== null && typeof payload === "object" && !Array.isArray(payload)
       ? (payload as Record<string, unknown>)
       : null;
-    this.uiMessage = typeof envelope?.message === "string" ? envelope.message : "";
+    this.uiMessage =
+      typeof envelope?.message === "string" && envelope.message
+        ? envelope.message
+        : typeof envelope?.detail === "string"
+          ? envelope.detail
+          : "";
   }
 }
 
@@ -233,7 +240,8 @@ let _router: NextRouter | null = null;
 // Semantic actions with an explicit Figma destination. Every other navigate
 // action in the contract is a reaction_without_destination and stays inert.
 const ACTION_DESTINATIONS: Readonly<Record<string, string>> = {
-  act_580733380960: "/monthly-calendar-historical-view",
+  // Annual calendar header toggle → the week historical route (CF-124).
+  act_580733380960: "/week-calendar-historical-view",
   act_860bce35c6ee: "/monthly-calendar-historical-view",
 };
 
@@ -400,10 +408,11 @@ export function figmaUnresolvedActionProps(actionId: string): FigmaActionBinding
 
 // ── Field bindings (local form state; unresolved fields never sent) ─────────
 /** Controlled binding for a data-figma-field control (form state only). */
-export function figmaFieldProps(field: string): FigmaFieldBinding {
+export function figmaFieldProps(field: string, fallbackValue?: string): FigmaFieldBinding {
   useSyncExternalStore(subscribeFieldValues, getFieldValuesSnapshot, getFieldValuesSnapshot);
+  const stored = getFieldValue(field);
   return {
-    value: getFieldValue(field),
+    value: stored === "" && fallbackValue !== undefined ? fallbackValue : stored,
     onChange: (event) => {
       setFieldValue(field, event.target.value);
     },
@@ -663,6 +672,57 @@ export function figmaCategoryDeleteProps(rowNodeId: string): FigmaActionBinding 
   );
 }
 
+// ── Collection row mutations (CF-133 users) ─────────────────────────────────
+const USERS_FRAME = "5359:17424";
+export const FIGMA_USERS_OPERATION = "GET /api/v1/users";
+const USERS_OPERATION = FIGMA_USERS_OPERATION;
+const USERS_MUTATION_KEY = "5359:17424:row-mutation";
+
+/**
+ * User row request builder (CF-133 contract, exact paths):
+ *   - toggle: PATCH /api/v1/users/{user_id} { is_active: boolean }
+ * The contract binds no user delete endpoint, so "delete" is a no-op here.
+ * No optimistic flip: on failure nothing changed client-side, so the painted
+ * switch state stays correct (revert-on-failure for free).
+ */
+function usersRowRequest(
+  user: Record<string, unknown>,
+  rowKind: "toggle" | "delete",
+): { method: string; path: string; body?: Record<string, string | boolean> } | null {
+  if (rowKind !== "toggle") {
+    return null;
+  }
+  return {
+    method: "PATCH",
+    path: `/api/v1/users/${user.id as string}`,
+    body: { is_active: user.is_active !== true },
+  };
+}
+
+/** Status toggle (switch) for one bound user row → PATCH { is_active }. */
+export function figmaUserSwitchProps(rowNodeId: string): FigmaActionBinding {
+  return figmaRowActionProps(
+    { operation: USERS_OPERATION, frameId: USERS_FRAME, mutationKey: USERS_MUTATION_KEY },
+    rowNodeId,
+    "toggle",
+    usersRowRequest,
+  );
+}
+
+/**
+ * Switch state for one bound user row: true when the row item has
+ * is_active === true (the painted default), false only on loaded data.
+ */
+export function figmaUserSwitchChecked(rowNodeId: string): boolean {
+  useFigmaPayloadVersion();
+  const index = rowIndexFor(rowNodeId);
+  const item = index !== null ? asRecord(itemsForOperation(USERS_OPERATION)[index]) : null;
+  if (!item || !("is_active" in item)) {
+    return true;
+  }
+  return item.is_active === true;
+}
+
 // ── Pagination state ────────────────────────────────────────────────────────
 // Total pages are not bound via figmaReadOperations in this codegen, so the
 // documented default (10) applies.
@@ -688,8 +748,8 @@ function getPaginationSnapshot(): number {
   return _paginationVersion;
 }
 
-function setPaginationPage(group: string, page: number): void {
-  const clamped = Math.min(Math.max(1, page), FIGMA_PAGINATION_TOTAL_PAGES);
+function setPaginationPage(group: string, page: number, max = FIGMA_PAGINATION_TOTAL_PAGES): void {
+  const clamped = Math.min(Math.max(1, page), max);
   if (_paginationPages.get(group) === clamped) {
     return;
   }
@@ -717,6 +777,15 @@ export interface FigmaPaginationOptions {
   listOperation?: string;
   /** Painted rows per page for that operation's cards. */
   pageSize?: number;
+  /**
+   * Server-paginated mode: payload key ("GET /path") whose data.total drives
+   * totalPages, and the frame to refetch on every page change.
+   */
+  serverTotalKey?: string;
+  /** Rows per page the server returns in that mode. */
+  serverPageSize?: number;
+  /** Frame id whose reads refetch after each page change. */
+  serverFrameId?: string;
 }
 
 /** Pagination bar binding for a data-figma-pagination="true" container. */
@@ -725,30 +794,39 @@ export function figmaPaginationProps(
   options?: FigmaPaginationOptions,
 ): FigmaPaginationBinding {
   useSyncExternalStore(subscribePagination, getPaginationSnapshot, getPaginationSnapshot);
+  useFigmaPayloadVersion();
   const currentPage = _paginationPages.get(group) ?? 1;
+  const serverMode = Boolean(options?.serverTotalKey && options?.serverPageSize);
+  let totalPages = FIGMA_PAGINATION_TOTAL_PAGES;
+  if (serverMode) {
+    const payload = _latestPayloads.get(options?.serverTotalKey as string);
+    const data = asRecord(asRecord(payload)?.data) ?? asRecord(payload) ?? {};
+    const total = typeof data.total === "number" ? data.total : 0;
+    totalPages = total > 0 ? Math.ceil(total / (options?.serverPageSize ?? 1)) : 1;
+  }
   const applyOffset = (page: number) => {
     if (options?.listOperation && options.pageSize) {
       setListOffset(options.listOperation, (page - 1) * options.pageSize);
     }
   };
+  const goToPage = (page: number) => {
+    setPaginationPage(group, page, Math.max(1, totalPages));
+    applyOffset(page);
+    if (options?.serverFrameId) {
+      void loadReads(options.serverFrameId);
+    }
+  };
   return {
     currentPage,
-    totalPages: FIGMA_PAGINATION_TOTAL_PAGES,
+    totalPages,
     canPrev: currentPage > 1,
-    canNext: currentPage < FIGMA_PAGINATION_TOTAL_PAGES,
-    goTo: (page: number) => {
-      setPaginationPage(group, page);
-      applyOffset(page);
-    },
+    canNext: currentPage < totalPages,
+    goTo: goToPage,
     goPrev: () => {
-      const page = Math.max(1, currentPage - 1);
-      setPaginationPage(group, page);
-      applyOffset(page);
+      goToPage(Math.max(1, currentPage - 1));
     },
     goNext: () => {
-      const page = Math.min(FIGMA_PAGINATION_TOTAL_PAGES, currentPage + 1);
-      setPaginationPage(group, page);
-      applyOffset(page);
+      goToPage(Math.min(totalPages, currentPage + 1));
     },
     chipClass: (page: number) =>
       page === currentPage ? CHIP_ACTIVE_CLASS : CHIP_INACTIVE_CLASS,
@@ -757,13 +835,387 @@ export function figmaPaginationProps(
   };
 }
 
+// ── CF-128 audit log: filters, server pagination, user options ──────────────
+const AUDIT_FRAME = "5329:12177";
+export const AUDIT_READ_OP_BASE = "/api/v1/marketing-team-member/audit-log";
+const AUDIT_CANONICAL_PATH = `${AUDIT_READ_OP_BASE}?limit=6&page=1`;
+export const AUDIT_CANONICAL_OP = `GET ${AUDIT_CANONICAL_PATH}`;
+const AUDIT_PAGINATION_GROUP = "5354:14485";
+const AUDIT_PAGE_SIZE = 6;
+const AUDIT_USER_SELECT_NODE = "5329:12265";
+
+interface AuditFilters {
+  dateRange: string;
+  user: string;
+  action: string;
+}
+
+// Default matches the painted Figma "Date range" option so the UI and the
+// applied query agree before the visitor touches the filter.
+let _auditFilters: AuditFilters = { dateRange: "Sep 1, 2026 - Sep 18, 2026", user: "", action: "" };
+let _auditVersion = 0;
+const _auditListeners = new Set<() => void>();
+
+function subscribeAudit(listener: () => void): () => void {
+  _auditListeners.add(listener);
+  return () => {
+    _auditListeners.delete(listener);
+  };
+}
+
+function getAuditSnapshot(): number {
+  return _auditVersion;
+}
+
+function setAuditFilters(filters: AuditFilters): void {
+  _auditFilters = filters;
+  _auditVersion += 1;
+  _auditListeners.forEach((fn) => fn());
+}
+
+/** Painted "Date range" option → ISO date_from/date_to for the audit-log query. */
+function auditDateRange(range: string): { dateFrom: string; dateTo: string } {
+  // The painted Figma option is a literal range label: "Sep 1, 2026 - Sep 18, 2026".
+  const painted = range.match(
+    /^([A-Za-z]{3}) (\d{1,2}), (\d{4}) - ([A-Za-z]{3}) (\d{1,2}), (\d{4})$/,
+  );
+  if (painted) {
+    const months: Record<string, string> = {
+      Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06",
+      Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12",
+    };
+    const iso = (mon: string, day: string, year: string) =>
+      `${year}-${months[mon] ?? "01"}-${day.padStart(2, "0")}`;
+    return {
+      dateFrom: iso(painted[1], painted[2], painted[3]),
+      dateTo: iso(painted[4], painted[5], painted[6]),
+    };
+  }
+  const now = new Date();
+  const iso = (date: Date) => date.toISOString().slice(0, 10);
+  switch (range) {
+    case "This Week": {
+      const monday = new Date(now);
+      monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+      return { dateFrom: iso(monday), dateTo: "" };
+    }
+    case "This Month":
+      return { dateFrom: iso(new Date(now.getFullYear(), now.getMonth(), 1)), dateTo: "" };
+    case "Last Month":
+      return { dateFrom: iso(new Date(now.getFullYear(), now.getMonth() - 1, 1)), dateTo: "" };
+    case "Last 30 Days":
+    case "Last 30 days": {
+      const cutoff = new Date(now);
+      cutoff.setDate(cutoff.getDate() - 30);
+      return { dateFrom: iso(cutoff), dateTo: "" };
+    }
+    case "This Year":
+      return { dateFrom: `${now.getFullYear()}-01-01`, dateTo: "" };
+    default:
+      return { dateFrom: "", dateTo: "" };
+  }
+}
+
+/** Audit-log read path for one page with the active filters applied. */
+function auditLogPath(page: number): string {
+  const params = new URLSearchParams();
+  params.set("limit", String(AUDIT_PAGE_SIZE));
+  params.set("page", String(page));
+  if (_auditFilters.user) {
+    params.set("user_id", _auditFilters.user);
+  }
+  if (_auditFilters.action) {
+    params.set("action", _auditFilters.action);
+  }
+  const range = auditDateRange(_auditFilters.dateRange);
+  if (range.dateFrom) {
+    params.set("date_from", range.dateFrom);
+  }
+  if (range.dateTo) {
+    params.set("date_to", range.dateTo);
+  }
+  return `${AUDIT_READ_OP_BASE}?${params.toString()}`;
+}
+
+/** Export path carrying the active audit filters (no page/limit). */
+export function auditExportPath(): string {
+  const params = new URLSearchParams();
+  if (_auditFilters.user) {
+    params.set("user_id", _auditFilters.user);
+  }
+  if (_auditFilters.action) {
+    params.set("action", _auditFilters.action);
+  }
+  const range = auditDateRange(_auditFilters.dateRange);
+  if (range.dateFrom) {
+    params.set("date_from", range.dateFrom);
+  }
+  if (range.dateTo) {
+    params.set("date_to", range.dateTo);
+  }
+  const query = params.toString();
+  return query ? `${AUDIT_READ_OP_BASE}/export?${query}` : `${AUDIT_READ_OP_BASE}/export`;
+}
+
+/**
+ * Publish the audit response's users array as the User filter select options
+ * (value = actor id, label = actor name).
+ */
+function publishAuditUserOptions(): void {
+  for (const [key, payload] of _latestPayloads) {
+    if (!key.startsWith(`GET ${AUDIT_READ_OP_BASE}`)) {
+      continue;
+    }
+    const data = asRecord(asRecord(payload)?.data) ?? asRecord(payload) ?? {};
+    const users = Array.isArray(data.users) ? (data.users as unknown[]) : [];
+    const options = users
+      .map((user) => {
+        const record = asRecord(user);
+        return {
+          value: record && record.id !== undefined ? String(record.id) : "",
+          label: record && typeof record.name === "string" ? record.name : "",
+        };
+      })
+      .filter((option) => option.value !== "" && option.label !== "");
+    if (options.length > 0) {
+      publishSelectOptions(AUDIT_USER_SELECT_NODE, options);
+      return;
+    }
+  }
+}
+
+/**
+ * Controlled binding for one audit filter select; every change refetches
+ * GET /audit-log with the updated query (page reset to 1). Field names are the
+ * Figma field keys; they map onto the filter query params.
+ */
+export type FigmaAuditFilterField = "date-range" | "user" | "action-type";
+
+const AUDIT_FILTER_KEYS: Record<FigmaAuditFilterField, keyof AuditFilters> = {
+  "date-range": "dateRange",
+  user: "user",
+  "action-type": "action",
+};
+
+export function figmaAuditFilterProps(
+  field: FigmaAuditFilterField,
+): FigmaFieldBinding {
+  useSyncExternalStore(subscribeAudit, getAuditSnapshot, getAuditSnapshot);
+  const key = AUDIT_FILTER_KEYS[field];
+  return {
+    value: _auditFilters[key],
+    onChange: (event) => {
+      setAuditFilters({ ..._auditFilters, [key]: event.target.value });
+      setPaginationPage(AUDIT_PAGINATION_GROUP, 1);
+      void loadReads(AUDIT_FRAME);
+    },
+  };
+}
+
+/** RESET control: clear every filter and refetch page 1. */
+export function figmaAuditResetProps(): FigmaActionBinding {
+  useSyncExternalStore(subscribeAudit, getAuditSnapshot, getAuditSnapshot);
+  return {
+    onClick: (event) => {
+      event.preventDefault();
+      setAuditFilters({ dateRange: "", user: "", action: "" });
+      setPaginationPage(AUDIT_PAGINATION_GROUP, 1);
+      void loadReads(AUDIT_FRAME);
+    },
+  };
+}
+
+// ── Blob downloads (export endpoints) ───────────────────────────────────────
+const _pendingDownloads = new Set<string>();
+let _downloadVersion = 0;
+const _downloadListeners = new Set<() => void>();
+
+function subscribeDownloads(listener: () => void): () => void {
+  _downloadListeners.add(listener);
+  return () => {
+    _downloadListeners.delete(listener);
+  };
+}
+
+function getDownloadSnapshot(): number {
+  return _downloadVersion;
+}
+
+function setDownloadPending(key: string, pending: boolean): void {
+  if (pending === _pendingDownloads.has(key)) {
+    return;
+  }
+  if (pending) {
+    _pendingDownloads.add(key);
+  } else {
+    _pendingDownloads.delete(key);
+  }
+  _downloadVersion += 1;
+  _downloadListeners.forEach((fn) => fn());
+}
+
+export interface FigmaExportBlobOptions {
+  method: string;
+  /** Full contract path, including any query string. */
+  path: string;
+  /** JSON body for POST export endpoints (e.g. { year, view }). */
+  body?: unknown;
+  /** Download filename for the object-URL anchor. */
+  filename: string;
+  /** Expected response MIME type (also sent as the Accept header). */
+  mime: string;
+}
+
+export type FigmaExportBlobBinding = {
+  onClick?: (event: { preventDefault: () => void }) => void;
+  /** True while the export request is in flight. */
+  disabled?: boolean;
+};
+
+/**
+ * Wire a control to download a binary export endpoint as a blob
+ * (GET /audit-log/export → text/csv, POST /export-calendar → application/pdf).
+ * Disabled while its own download is pending.
+ */
+export function figmaExportBlobProps(
+  key: string,
+  options: FigmaExportBlobOptions,
+): FigmaExportBlobBinding {
+  useSyncExternalStore(subscribeDownloads, getDownloadSnapshot, getDownloadSnapshot);
+  return {
+    onClick: (event) => {
+      event.preventDefault();
+      void runExportDownload(key, options);
+    },
+    disabled: _pendingDownloads.has(key),
+  };
+}
+
+async function runExportDownload(
+  key: string,
+  options: FigmaExportBlobOptions,
+): Promise<void> {
+  if (_pendingDownloads.has(key)) {
+    return;
+  }
+  setDownloadPending(key, true);
+  try {
+    const headers: Record<string, string> = { Accept: options.mime };
+    const token = getAccessToken();
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
+    if (options.body !== undefined) {
+      headers["Content-Type"] = "application/json";
+    }
+    const response = await fetch(`${apiBaseUrl()}${options.path}`, {
+      method: options.method,
+      headers,
+      body: options.body === undefined ? undefined : JSON.stringify(options.body),
+    });
+    if (response.status === 401) {
+      clearAllAuthStorage();
+      clearReadPayloads();
+      clearScreenStatus();
+    }
+    if (!response.ok) {
+      let payload: unknown = null;
+      try {
+        payload = await response.json();
+      } catch {
+        payload = null;
+      }
+      throw new FigmaApiRequestError(
+        `Request failed (${response.status}) for ${options.method} ${options.path}`,
+        response.status,
+        payload,
+      );
+    }
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = options.filename;
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(url);
+    publishScreenStatus("Export ready — your download has started.");
+  } catch (error) {
+    publishScreenStatus(describeApiError(error));
+  } finally {
+    setDownloadPending(key, false);
+  }
+}
+
 // ── Read loading ────────────────────────────────────────────────────────────
 /** Latest raw response bodies per "METHOD path" (shared with useCurrentUser). */
 const _latestPayloads = new Map<string, unknown>();
 
+/**
+ * Defensive parse for the untyped GET /api/v1/users response: accept
+ * {data:{items}}, {data:[…]}, {items:[…]} or a bare array and normalize every
+ * item to the shape the manage-users display bindings expect.
+ */
+function normalizeUsersPayload(body: unknown): unknown {
+  const record = asRecord(body);
+  const data = asRecord(record?.data) ?? record;
+  let items: unknown = null;
+  let wrappedData: Record<string, unknown> | null = null;
+  if (Array.isArray(body)) {
+    items = body;
+  } else if (data && Array.isArray(data.items)) {
+    items = data.items;
+    wrappedData = data;
+  } else if (record && Array.isArray(record.items)) {
+    items = record.items;
+    wrappedData = record;
+  }
+  if (!Array.isArray(items)) {
+    return body;
+  }
+  const normalized = items.map((raw) => {
+    const item = asRecord(raw) ?? {};
+    const first = typeof item.first_name === "string" ? item.first_name : "";
+    const last = typeof item.last_name === "string" ? item.last_name : "";
+    const name =
+      typeof item.name === "string" && item.name.trim()
+        ? item.name
+        : `${first} ${last}`.trim();
+    return {
+      ...item,
+      id: item.id ?? item.user_id ?? item._id,
+      name,
+      email: typeof item.email === "string" ? item.email : "",
+      role: item.role ?? item.role_name ?? "",
+      is_active: item.is_active === undefined ? true : item.is_active === true,
+      last_active:
+        item.last_active ?? item.last_active_at ?? item.last_login ?? "",
+    };
+  });
+  if (Array.isArray(body)) {
+    return normalized;
+  }
+  if (wrappedData) {
+    if (record && record.data === wrappedData && wrappedData !== record) {
+      return { ...record, data: { ...wrappedData, items: normalized } };
+    }
+    return { ...wrappedData, items: normalized };
+  }
+  return body;
+}
+
 function applyReadPayload(op: FigmaOperation, body: unknown): void {
-  publishReadPayload(op.method, op.path, body);
-  _latestPayloads.set(`${op.method.toUpperCase()} ${op.path}`, body);
+  const key = `${op.method.toUpperCase()} ${op.path}`;
+  const payload = key === "GET /api/v1/users" ? normalizeUsersPayload(body) : body;
+  publishReadPayload(op.method, op.path, payload);
+  _latestPayloads.set(key, payload);
+  // Audit display bindings reference the canonical page-1 operation key, so a
+  // page/filter-specific fetch is also published under that key.
+  if (op.path.startsWith(`/api/v1/marketing-team-member/audit-log`)) {
+    publishReadPayload(op.method, AUDIT_CANONICAL_PATH, payload);
+    _latestPayloads.set(`GET ${AUDIT_CANONICAL_PATH}`, payload);
+  }
   const values = valuesFromResponse(op, body);
   for (const [field, value] of Object.entries(values)) {
     if (typeof value === "string") {
@@ -794,7 +1246,16 @@ function collectReadOperations(frameId: string): FigmaOperation[] {
  * display bindings via publishReadPayload.
  */
 async function loadReads(frameId: string): Promise<void> {
-  const ops = collectReadOperations(frameId);
+  let ops = collectReadOperations(frameId);
+  if (frameId === AUDIT_FRAME) {
+    // CF-128: substitute the server path for the current page + filters.
+    const page = _paginationPages.get(AUDIT_PAGINATION_GROUP) ?? 1;
+    ops = ops.map((op) =>
+      op.path.startsWith(AUDIT_READ_OP_BASE)
+        ? { ...op, path: auditLogPath(page) }
+        : op,
+    );
+  }
   if (ops.length === 0) {
     return;
   }
@@ -824,6 +1285,9 @@ async function loadReads(frameId: string): Promise<void> {
   if (failure) {
     publishScreenStatus(describeApiError(failure.reason));
     return;
+  }
+  if (frameId === AUDIT_FRAME) {
+    publishAuditUserOptions();
   }
   clearScreenStatus();
 }

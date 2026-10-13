@@ -1,20 +1,23 @@
 /**
  * Luna generated page
- * Page: FigmaRoutePending
- * Route: /marketing-team-member/week-calendar-historical/:id
+ * Page: WeekCalendarHistoricalPage
+ * Route: /marketing-team-member/week-calendar-historical/[id]
  * Ownership: Figma-owned layout
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
+"use client";
+
+import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
+import { AuthGuard } from "@/lib/auth/AuthGuard";
+import { WeekCalendarHistoricalPage } from "@/components/luna-figma/WeekCalendarHistoricalPage";
+
 export default function Page() {
   return (
-    <main
-      data-figma-route-pending="true"
-      data-figma-route="marketing-team-member/week-calendar-historical/:id"
-      className="flex min-h-screen flex-col items-center justify-center gap-2 p-6 text-center"
-    >
-      <h1 className="text-xl font-semibold">Marketing team member/week calendar historical/:id</h1>
-      <p className="text-sm text-muted-foreground">Not yet implemented.</p>
-    </main>
+    <AuthGuard>
+      <FigmaScreenDataProvider routePath="week-calendar-historical-view">
+        <WeekCalendarHistoricalPage />
+      </FigmaScreenDataProvider>
+    </AuthGuard>
   );
 }

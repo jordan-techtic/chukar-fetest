@@ -35,6 +35,15 @@ export default tseslint.config(
     },
   },
   {
+    // Generated Luna Figma layouts intentionally use plain <img> (compiled
+    // bitmap srcs at fixed pixel boxes) and are not hand-maintained, so the
+    // next/image advisory rule is disabled for that directory only.
+    files: ["src/components/luna-figma/**/*.tsx"],
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
+  {
     files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
     languageOptions: {
       globals: {

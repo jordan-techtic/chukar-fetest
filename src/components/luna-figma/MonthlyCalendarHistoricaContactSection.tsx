@@ -43,7 +43,7 @@ export function MonthlyCalendarHistoricaContactSection() {
               </div>
               <div data-figma-node="5431:17320" className="box-border w-max max-w-[120px] h-[30px] rounded-[100px] relative flex flex-row items-center gap-1.5 pt-[4px] pr-[16px] pb-[4px] pl-[16px] border-[#d5ba8c] border-[1px] bg-[#fef3c7]">
                 <p data-figma-node="5431:17321" className="box-border w-max max-w-[68px] h-auto min-h-[13px] font-onest text-[10px] font-[700] leading-[13px] tracking-[0.6px] text-left whitespace-nowrap text-[#000000]">1 activities</p>
-                <FiRrCopyAlt_5c291fa0 data-figma-node="5431:17322" data-figma-component="5121:8464" className="relative" />
+                <FiRrCopyAlt_5c291fa0 data-figma-node="5431:17322" data-figma-component="5121:8464" className="relative overflow-hidden" />
               </div>
             </div>
             <div data-figma-node="5431:17323" className="box-border w-max max-w-[658px] h-[635px] overflow-hidden rounded-[0px_0px_10px_0px] relative flex flex-row items-start border-[#e5e7eb] border-[1px] bg-[#ffffff]">

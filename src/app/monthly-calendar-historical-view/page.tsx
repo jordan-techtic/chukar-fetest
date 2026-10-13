@@ -9,12 +9,15 @@
 "use client";
 
 import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
+import { AuthGuard } from "@/lib/auth/AuthGuard";
 import { MonthlyCalendarHistoricalPage } from "@/components/luna-figma/MonthlyCalendarHistoricalPage";
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="monthly-calendar-historical-view">
-      <MonthlyCalendarHistoricalPage />
-    </FigmaScreenDataProvider>
+    <AuthGuard>
+      <FigmaScreenDataProvider routePath="monthly-calendar-historical-view">
+        <MonthlyCalendarHistoricalPage />
+      </FigmaScreenDataProvider>
+    </AuthGuard>
   );
 }

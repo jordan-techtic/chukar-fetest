@@ -24,6 +24,19 @@ export interface FigmaDisplayBinding {
 
 /** data-figma-node → the response field it renders. */
 export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
+  "5329:12086": {
+    "evidence": "label_pair",
+    "format": null,
+    "frameId": "5329:12027",
+    "kind": "text",
+    "nodeId": "5329:12086",
+    "operation": "GET /api/v1/marketing-team-member/profile",
+    "path": [
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
   "5335:4278": {
     "evidence": "label_pair",
     "format": null,
@@ -471,6 +484,946 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     ],
     "responseUnwrap": "data",
     "valueType": "string"
+  },
+  "5359:17495": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "item",
+    "nodeId": "5359:17495",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      0
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17498": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17498",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      0,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17499": {
+    "evidence": "role:description",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17499",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      0,
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17501": {
+    "evidence": "role:badge",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17501",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      0,
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17502": {
+    "evidence": "role:timestamp",
+    "format": "relative",
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17502",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      0,
+      "last_active"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5359:17511": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "item",
+    "nodeId": "5359:17511",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      1
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17514": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17514",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      1,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17515": {
+    "evidence": "role:description",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17515",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      1,
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17517": {
+    "evidence": "role:badge",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17517",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      1,
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17518": {
+    "evidence": "role:timestamp",
+    "format": "relative",
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17518",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      1,
+      "last_active"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5359:17527": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "item",
+    "nodeId": "5359:17527",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      2
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17530": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17530",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      2,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17531": {
+    "evidence": "role:description",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17531",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      2,
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17533": {
+    "evidence": "role:badge",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17533",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      2,
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17534": {
+    "evidence": "role:timestamp",
+    "format": "relative",
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17534",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      2,
+      "last_active"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5359:17543": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "item",
+    "nodeId": "5359:17543",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      3
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17546": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17546",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      3,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17547": {
+    "evidence": "role:description",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17547",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      3,
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17549": {
+    "evidence": "role:badge",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17549",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      3,
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17550": {
+    "evidence": "role:timestamp",
+    "format": "relative",
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17550",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      3,
+      "last_active"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5359:17559": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "item",
+    "nodeId": "5359:17559",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      4
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17562": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17562",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      4,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17563": {
+    "evidence": "role:description",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17563",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      4,
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17565": {
+    "evidence": "role:badge",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17565",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      4,
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17566": {
+    "evidence": "role:timestamp",
+    "format": "relative",
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17566",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      4,
+      "last_active"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5359:17575": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "item",
+    "nodeId": "5359:17575",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      5
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17578": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17578",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      5,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17579": {
+    "evidence": "role:description",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17579",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      5,
+      "email"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17581": {
+    "evidence": "role:badge",
+    "format": null,
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17581",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      5,
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17582": {
+    "evidence": "role:timestamp",
+    "format": "relative",
+    "frameId": "5359:17424",
+    "kind": "text",
+    "nodeId": "5359:17582",
+    "operation": "GET /api/v1/users",
+    "path": [
+      "items",
+      5,
+      "last_active"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12286": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "item",
+    "nodeId": "5329:12286",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      0
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5329:12287": {
+    "evidence": "role:timestamp",
+    "format": "timestamp_short",
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12287",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      0,
+      "created_at"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12290": {
+    "evidence": "role:actor",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12290",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      0,
+      "user_name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12291": {
+    "evidence": "role:action",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12291",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      0,
+      "action"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12292": {
+    "evidence": "role:resource",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12292",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      0,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12296": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "item",
+    "nodeId": "5329:12296",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      1
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5329:12297": {
+    "evidence": "role:timestamp",
+    "format": "timestamp_short",
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12297",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      1,
+      "created_at"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12300": {
+    "evidence": "role:actor",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12300",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      1,
+      "user_name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12301": {
+    "evidence": "role:action",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12301",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      1,
+      "action"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12302": {
+    "evidence": "role:resource",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12302",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      1,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12306": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "item",
+    "nodeId": "5329:12306",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      2
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5329:12307": {
+    "evidence": "role:timestamp",
+    "format": "timestamp_short",
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12307",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      2,
+      "created_at"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12310": {
+    "evidence": "role:actor",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12310",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      2,
+      "user_name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12311": {
+    "evidence": "role:action",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12311",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      2,
+      "action"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12312": {
+    "evidence": "role:resource",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12312",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      2,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12316": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "item",
+    "nodeId": "5329:12316",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      3
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5329:12317": {
+    "evidence": "role:timestamp",
+    "format": "timestamp_short",
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12317",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      3,
+      "created_at"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12320": {
+    "evidence": "role:actor",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12320",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      3,
+      "user_name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12321": {
+    "evidence": "role:action",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12321",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      3,
+      "action"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12322": {
+    "evidence": "role:resource",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12322",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      3,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12326": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "item",
+    "nodeId": "5329:12326",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      4
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5329:12327": {
+    "evidence": "role:timestamp",
+    "format": "timestamp_short",
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12327",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      4,
+      "created_at"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12330": {
+    "evidence": "role:actor",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12330",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      4,
+      "user_name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12331": {
+    "evidence": "role:action",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12331",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      4,
+      "action"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12332": {
+    "evidence": "role:resource",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12332",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      4,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12336": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "item",
+    "nodeId": "5329:12336",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      5
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5329:12337": {
+    "evidence": "role:timestamp",
+    "format": "timestamp_short",
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12337",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      5,
+      "created_at"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5329:12340": {
+    "evidence": "role:actor",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12340",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      5,
+      "user_name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12341": {
+    "evidence": "role:action",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12341",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      5,
+      "action"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5329:12342": {
+    "evidence": "role:resource",
+    "format": null,
+    "frameId": "5329:12177",
+    "kind": "text",
+    "nodeId": "5329:12342",
+    "operation": "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1",
+    "path": [
+      "items",
+      5,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "I5645:60760;5589:52798": {
+    "evidence": "calendar:panel_title",
+    "format": "month_year",
+    "frameId": "5645:60757",
+    "kind": "text",
+    "nodeId": "I5645:60760;5589:52798",
+    "operation": "GET /api/v1/marketing-team-member/calendar?year=2025",
+    "path": [
+      "month"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "number"
+  },
+  "I5645:60760;5596:52816": {
+    "evidence": "calendar:panel_title",
+    "format": "month_year",
+    "frameId": "5645:60757",
+    "kind": "text",
+    "nodeId": "I5645:60760;5596:52816",
+    "operation": "GET /api/v1/marketing-team-member/calendar?year=2026",
+    "path": [
+      "month"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "number"
+  },
+  "I5645:60760;5589:52803": {
+    "evidence": "calendar:activity_count",
+    "format": "activities_count",
+    "frameId": "5645:60757",
+    "kind": "text",
+    "nodeId": "I5645:60760;5589:52803",
+    "operation": "GET /api/v1/marketing-team-member/calendar?year=2025",
+    "path": [
+      "activities"
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "I5645:60760;5596:52821": {
+    "evidence": "calendar:activity_count",
+    "format": "activities_count",
+    "frameId": "5645:60757",
+    "kind": "text",
+    "nodeId": "I5645:60760;5596:52821",
+    "operation": "GET /api/v1/marketing-team-member/calendar?year=2026",
+    "path": [
+      "activities"
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
   }
 };
 
@@ -487,6 +1440,28 @@ export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]
   ],
   "5621:28270": [
     "GET /api/v1/marketing-team-member/holidays"
+  ],
+  "5329:12177": [
+    "GET /api/v1/marketing-team-member/audit-log?limit=6&page=1"
+  ],
+  "5359:17424": [
+    "GET /api/v1/users"
+  ],
+  "5645:60757": [
+    "GET /api/v1/marketing-team-member/calendar?year=2026",
+    "GET /api/v1/marketing-team-member/calendar?year=2025",
+    "GET /api/v1/marketing-team-member/performance-metrics"
+  ],
+  "5584:26945": [
+    "GET /api/v1/marketing-team-member/activities",
+    "GET /api/v1/marketing-team-member/calendar?year=2026",
+    "GET /api/v1/marketing-team-member/calendar?year=2025",
+    "GET /api/v1/marketing-team-member/performance-metrics"
+  ],
+  "5645:33753": [
+    "GET /api/v1/marketing-team-member/calendar?year=2026",
+    "GET /api/v1/marketing-team-member/calendar?year=2025",
+    "GET /api/v1/marketing-team-member/performance-metrics"
   ]
 };
 
@@ -609,6 +1584,8 @@ function formatDate(value: unknown, format: string | null): string {
       return date.toLocaleDateString("en-US");
     case "relative":
       return relativeTime(date);
+    case "timestamp_short":
+      return `${date.toLocaleDateString("en-US", { month: "short", day: "numeric" })}, ${date.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true })}`;
     default:
       return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
   }
@@ -638,6 +1615,22 @@ export function figmaTextContent(nodeId: string, fallback: string): string {
   if (!binding || binding.kind !== "text") {
     return fallback;
   }
+  if (binding.format === "month_year" || binding.format === "activities_count") {
+    const { loaded, value } = lookup({ ...binding, path: [] });
+    if (!loaded || value === undefined || value === null) {
+      return fallback;
+    }
+    if (binding.format === "month_year") {
+      const record = (value ?? {}) as { month?: number; year?: number };
+      const month = typeof record.month === "number" ? record.month : 1;
+      const year = typeof record.year === "number" ? record.year : 2026;
+      return `${MONTH_NAMES[(month - 1) % 12]} ${year}`;
+    }
+    const activities = Array.isArray(value)
+      ? value
+      : ((value as { activities?: unknown[] } | null)?.activities ?? null);
+    return Array.isArray(activities) ? `${activities.length} activities` : fallback;
+  }
   const { loaded, value } = lookup(binding);
   return loaded ? formatDisplayValue(value, binding) : fallback;
 }
@@ -665,6 +1658,26 @@ export function figmaItemProps(nodeId: string): FigmaItemBinding {
 /** Read operations ("METHOD /path") whose responses feed this frame's display bindings. */
 export function figmaDisplayOperations(frameId: string): readonly string[] {
   return FIGMA_DISPLAY_OPERATIONS[frameId] ?? [];
+}
+
+const MONTH_NAMES = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+/** React hook: re-render when any published payload, select option, or offset changes. */
+export function useFigmaPayloadVersion(): number {
+  return useSyncExternalStore(subscribe, snapshot, snapshot);
 }
 
 // ── Select options ───────────────────────────────────────────────────────────
