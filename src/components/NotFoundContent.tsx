@@ -13,7 +13,7 @@ export function NotFoundContent() {
       <p className="mt-[var(--spacing-gap-12)] text-body-sm-5 text-muted-foreground">
         The page you requested does not exist.
       </p>
-      <Button asChild className="mt-[var(--spacing-gap-16)]" size="sm">
+      <Button asChild className="mt-[var(--spacing-gap-16)] whitespace-nowrap" size="sm">
         <Link href="/">Go Home</Link>
       </Button>
     </div>

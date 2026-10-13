@@ -240,8 +240,9 @@ let _router: NextRouter | null = null;
 // Semantic actions with an explicit Figma destination. Every other navigate
 // action in the contract is a reaction_without_destination and stays inert.
 const ACTION_DESTINATIONS: Readonly<Record<string, string>> = {
-  // Annual calendar header toggle → the week historical route (CF-124).
-  act_580733380960: "/week-calendar-historical-view",
+  // Annual calendar header Historical View pill (I5645:60758;5217:13742):
+  // compiled prototype destination 5645:33753 → /monthly-calendar-historical-view.
+  act_580733380960: "/monthly-calendar-historical-view",
   act_860bce35c6ee: "/monthly-calendar-historical-view",
 };
 
@@ -723,6 +724,25 @@ export function figmaUserSwitchChecked(rowNodeId: string): boolean {
   return item.is_active === true;
 }
 
+/**
+ * Switch checked-state for a status-based collection row (activities,
+ * holidays, categories): true when the row item's status equals `onValue`
+ * (the painted default, "on", before data loads).
+ */
+export function figmaStatusSwitchChecked(
+  rowNodeId: string,
+  operation: string,
+  onValue: string,
+): boolean {
+  useFigmaPayloadVersion();
+  const index = rowIndexFor(rowNodeId);
+  const item = index !== null ? asRecord(itemsForOperation(operation)[index]) : null;
+  if (!item || typeof item.status !== "string") {
+    return true;
+  }
+  return item.status === onValue;
+}
+
 // ── Pagination state ────────────────────────────────────────────────────────
 // Total pages are not bound via figmaReadOperations in this codegen, so the
 // documented default (10) applies.
@@ -1148,6 +1168,95 @@ async function runExportDownload(
   }
 }
 
+// ── CF-123: week-calendar-historical/[id] week scoping ─────────────────────
+// The [id] route param (week 1–53) scopes the week-historical screen: reads
+// carry date_from/date_to (Monday start), published activity payloads are
+// filtered to the week's date range, and POST /export-calendar sends the
+// same range in its body.
+const WEEK_CAL_FRAME = "5584:26945";
+const WEEK_CALENDAR_READ_PATH = "/api/v1/marketing-team-member/activities";
+
+interface WeekScope {
+  week: number;
+  dateFrom: string;
+  dateTo: string;
+}
+
+let _weekScope: WeekScope | null = null;
+
+function isoDate(date: Date): string {
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${date.getFullYear()}-${month}-${day}`;
+}
+
+/** Monday-start date range for week 1–53 of `year` (week 1 contains Jan 4). */
+export function figmaWeekRange(
+  year: number,
+  week: number,
+): { dateFrom: string; dateTo: string } | null {
+  if (!Number.isInteger(year) || !Number.isInteger(week) || week < 1 || week > 53) {
+    return null;
+  }
+  const jan4 = new Date(year, 0, 4);
+  const start = new Date(jan4);
+  start.setDate(jan4.getDate() - ((jan4.getDay() + 6) % 7) + (week - 1) * 7);
+  const end = new Date(start);
+  end.setDate(start.getDate() + 6);
+  return { dateFrom: isoDate(start), dateTo: isoDate(end) };
+}
+
+/** Activate/clear the module-level week scope used by reads and exports. */
+function setWeekScope(week: number | null): void {
+  if (week === null || week < 1 || week > 53) {
+    _weekScope = null;
+    return;
+  }
+  const range = figmaWeekRange(new Date().getFullYear(), week);
+  _weekScope = range ? { week, ...range } : null;
+}
+
+/**
+ * Extra POST /export-calendar body fields for the active week scope. Empty
+ * (unscoped routes keep the plain { year, view } body).
+ */
+export function figmaWeekExportBody(): Record<string, string> {
+  return _weekScope ? { date_from: _weekScope.dateFrom, date_to: _weekScope.dateTo } : {};
+}
+
+/**
+ * Keep only activities overlapping the scoped week (start_date … end_date
+ * intersects [dateFrom, dateTo]). Items without a comparable date stay.
+ */
+function filterActivitiesToWeek(payload: unknown, scope: WeekScope): unknown {
+  const record = asRecord(payload);
+  const data = asRecord(record?.data);
+  const container = data && Array.isArray(data.items) ? data : record && Array.isArray(record.items) ? record : null;
+  if (!container) {
+    return payload;
+  }
+  const items = (container.items as unknown[]).filter((raw) => {
+    const item = asRecord(raw);
+    if (!item) {
+      return true;
+    }
+    const start =
+      (typeof item.start_date === "string" && item.start_date.slice(0, 10)) ||
+      (typeof item.date === "string" && item.date.slice(0, 10)) ||
+      "";
+    const end =
+      (typeof item.end_date === "string" && item.end_date.slice(0, 10)) || start;
+    if (!start) {
+      return true;
+    }
+    return end >= scope.dateFrom && start <= scope.dateTo;
+  });
+  if (data && Array.isArray(data.items)) {
+    return { ...record, data: { ...data, items } };
+  }
+  return { ...record, items };
+}
+
 // ── Read loading ────────────────────────────────────────────────────────────
 /** Latest raw response bodies per "METHOD path" (shared with useCurrentUser). */
 const _latestPayloads = new Map<string, unknown>();
@@ -1207,7 +1316,16 @@ function normalizeUsersPayload(body: unknown): unknown {
 
 function applyReadPayload(op: FigmaOperation, body: unknown): void {
   const key = `${op.method.toUpperCase()} ${op.path}`;
-  const payload = key === "GET /api/v1/users" ? normalizeUsersPayload(body) : body;
+  let payload = key === "GET /api/v1/users" ? normalizeUsersPayload(body) : body;
+  // CF-123: with a week scope active, the week-calendar display bindings
+  // stay on the canonical operation key and items are filtered to the week.
+  if (_weekScope && op.path.startsWith(WEEK_CALENDAR_READ_PATH)) {
+    payload = filterActivitiesToWeek(payload, _weekScope);
+    if (op.path !== WEEK_CALENDAR_READ_PATH) {
+      publishReadPayload(op.method, WEEK_CALENDAR_READ_PATH, payload);
+      _latestPayloads.set(`GET ${WEEK_CALENDAR_READ_PATH}`, payload);
+    }
+  }
   publishReadPayload(op.method, op.path, payload);
   _latestPayloads.set(key, payload);
   // Audit display bindings reference the canonical page-1 operation key, so a
@@ -1256,6 +1374,18 @@ async function loadReads(frameId: string): Promise<void> {
         : op,
     );
   }
+  if (frameId === WEEK_CAL_FRAME && _weekScope) {
+    // CF-123: scope the calendar read to the [id] week's Monday-start range.
+    const scope = _weekScope;
+    ops = ops.map((op) =>
+      op.method.toUpperCase() === "GET" && op.path === WEEK_CALENDAR_READ_PATH
+        ? {
+            ...op,
+            path: `${WEEK_CALENDAR_READ_PATH}?date_from=${scope.dateFrom}&date_to=${scope.dateTo}`,
+          }
+        : op,
+    );
+  }
   if (ops.length === 0) {
     return;
   }
@@ -1300,9 +1430,12 @@ async function loadReads(frameId: string): Promise<void> {
  */
 export function FigmaScreenDataProvider({
   routePath,
+  weekNumber,
   children,
 }: {
   routePath?: string;
+  /** CF-123: week 1–53 from /marketing-team-member/week-calendar-historical/[id]. */
+  weekNumber?: number;
   children?: ReactNode;
 }) {
   const router = useRouter();
@@ -1316,17 +1449,31 @@ export function FigmaScreenDataProvider({
     };
   }, [router]);
 
+  // Apply the week scope before the read effect so the scoped query params
+  // and payload filtering are in place on the first load.
+  useEffect(() => {
+    setWeekScope(
+      typeof weekNumber === "number" &&
+        Number.isInteger(weekNumber) &&
+        weekNumber >= 1 &&
+        weekNumber <= 53
+        ? weekNumber
+        : null,
+    );
+  }, [weekNumber]);
+
   useEffect(() => {
     if (!frameId) {
       return;
     }
     void loadReads(frameId);
     // Clear stale API payloads when navigating between screens so the next
-    // screen never briefly shows data from the previous route.
+    // screen never briefly shows data from the previous route. Reload also
+    // runs when the scoped week changes between /1, /2, …
     return () => {
       clearReadPayloads();
     };
-  }, [frameId]);
+  }, [frameId, weekNumber]);
 
   return createElement(
     FrameIdContext.Provider,

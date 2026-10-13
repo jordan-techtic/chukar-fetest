@@ -13,12 +13,18 @@ import {
   figmaCategoryDeleteProps,
   figmaCategoryToggleProps,
   figmaPaginationProps,
+  figmaStatusSwitchChecked,
 } from "./useFigmaScreenData";
 export function ManageCategoryContentColumnSection() {
   const pagination = figmaPaginationProps("5449:19186", {
     listOperation: FIGMA_CATEGORIES_OPERATION,
     pageSize: 3,
   });
+  const switchChecked: Record<"5449:19151" | "5449:19162" | "5449:19173", boolean> = {
+    "5449:19151": figmaStatusSwitchChecked("5449:19151", FIGMA_CATEGORIES_OPERATION, "active"),
+    "5449:19162": figmaStatusSwitchChecked("5449:19162", FIGMA_CATEGORIES_OPERATION, "active"),
+    "5449:19173": figmaStatusSwitchChecked("5449:19173", FIGMA_CATEGORIES_OPERATION, "active"),
+  };
   return (
     <section data-figma-node="5449:19142" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
       <div data-figma-node="5449:19143" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
@@ -33,7 +39,7 @@ export function ManageCategoryContentColumnSection() {
           <div data-figma-node="5449:19151" {...figmaItemProps("5449:19151")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <p data-figma-node="5449:19152" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-231f20">Promotions</p>
             <p data-figma-node="5449:19153" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5449:19153", "Email, SMS, and other promotional sends")}</p>
-            <div data-figma-node="5449:19154" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaCategoryToggleProps("5449:19151")} className="inline-flex items-center justify-center"><div data-figma-node="5449:19155" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5449:19154" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5449:19151"]} aria-label="Switch"{...figmaCategoryToggleProps("5449:19151")} className="inline-flex items-center justify-center"><div data-figma-node="5449:19155" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5449:19155;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5449:19155;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5449:19155;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -55,7 +61,7 @@ export function ManageCategoryContentColumnSection() {
           <div data-figma-node="5449:19162" {...figmaItemProps("5449:19162")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <p data-figma-node="5449:19163" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-231f20">Content</p>
             <p data-figma-node="5449:19164" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5449:19164", "Blog posts, social posts, and other content")}</p>
-            <div data-figma-node="5449:19165" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaCategoryToggleProps("5449:19162")} className="inline-flex items-center justify-center"><div data-figma-node="5449:19166" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5449:19165" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5449:19162"]} aria-label="Switch"{...figmaCategoryToggleProps("5449:19162")} className="inline-flex items-center justify-center"><div data-figma-node="5449:19166" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5449:19166;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5449:19166;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5449:19166;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -77,7 +83,7 @@ export function ManageCategoryContentColumnSection() {
           <div data-figma-node="5449:19173" {...figmaItemProps("5449:19173")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <p data-figma-node="5449:19174" className="box-border w-[200px] h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap text-text-body-231f20">Focuses</p>
             <p data-figma-node="5449:19175" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5449:19175", "Product and seasonal campaign focuses")}</p>
-            <div data-figma-node="5449:19176" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaCategoryToggleProps("5449:19173")} className="inline-flex items-center justify-center"><div data-figma-node="5449:19177" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5449:19176" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5449:19173"]} aria-label="Switch"{...figmaCategoryToggleProps("5449:19173")} className="inline-flex items-center justify-center"><div data-figma-node="5449:19177" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5449:19177;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5449:19177;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5449:19177;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>

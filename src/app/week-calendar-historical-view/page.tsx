@@ -14,10 +14,12 @@ import { WeekCalendarHistoricalPage } from "@/components/luna-figma/WeekCalendar
 
 export default function Page() {
   return (
-    <AuthGuard>
-      <FigmaScreenDataProvider routePath="week-calendar-historical-view">
-        <WeekCalendarHistoricalPage />
-      </FigmaScreenDataProvider>
-    </AuthGuard>
+    <div className="w-full flex flex-col">
+      <AuthGuard>
+        <FigmaScreenDataProvider routePath="week-calendar-historical-view">
+          <WeekCalendarHistoricalPage />
+        </FigmaScreenDataProvider>
+      </AuthGuard>
+    </div>
   );
 }

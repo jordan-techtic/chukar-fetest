@@ -13,12 +13,24 @@ import {
   figmaHolidayDeleteProps,
   figmaHolidayToggleProps,
   figmaPaginationProps,
+  figmaStatusSwitchChecked,
 } from "./useFigmaScreenData";
 export function ManageHolidayContentColumnSection() {
   const pagination = figmaPaginationProps("5621:28396", {
     listOperation: FIGMA_HOLIDAYS_OPERATION,
     pageSize: 6,
   });
+  const switchChecked: Record<
+    "5621:28304" | "5621:28319" | "5621:28334" | "5621:28349" | "5621:28364" | "5621:28379",
+    boolean
+  > = {
+    "5621:28304": figmaStatusSwitchChecked("5621:28304", FIGMA_HOLIDAYS_OPERATION, "active"),
+    "5621:28319": figmaStatusSwitchChecked("5621:28319", FIGMA_HOLIDAYS_OPERATION, "active"),
+    "5621:28334": figmaStatusSwitchChecked("5621:28334", FIGMA_HOLIDAYS_OPERATION, "active"),
+    "5621:28349": figmaStatusSwitchChecked("5621:28349", FIGMA_HOLIDAYS_OPERATION, "active"),
+    "5621:28364": figmaStatusSwitchChecked("5621:28364", FIGMA_HOLIDAYS_OPERATION, "active"),
+    "5621:28379": figmaStatusSwitchChecked("5621:28379", FIGMA_HOLIDAYS_OPERATION, "active"),
+  };
   return (
     <section data-figma-node="5621:28294" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
       <div data-figma-node="5621:28295" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
@@ -39,7 +51,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <p data-figma-node="5621:28308" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
             <p data-figma-node="5621:28498" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
-            <div data-figma-node="5621:28311" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaHolidayToggleProps("5621:28304")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28312" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5621:28311" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5621:28304"]} aria-label="Switch"{...figmaHolidayToggleProps("5621:28304")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28312" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5621:28312;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28312;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5621:28312;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -66,7 +78,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <p data-figma-node="5621:28500" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
             <p data-figma-node="5621:28501" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
-            <div data-figma-node="5621:28326" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaHolidayToggleProps("5621:28319")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28327" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5621:28326" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5621:28319"]} aria-label="Switch"{...figmaHolidayToggleProps("5621:28319")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28327" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5621:28327;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28327;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5621:28327;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -93,7 +105,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <p data-figma-node="5621:28503" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
             <p data-figma-node="5621:28504" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
-            <div data-figma-node="5621:28341" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaHolidayToggleProps("5621:28334")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28342" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5621:28341" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5621:28334"]} aria-label="Switch"{...figmaHolidayToggleProps("5621:28334")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28342" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5621:28342;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28342;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5621:28342;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -120,7 +132,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <p data-figma-node="5621:28506" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
             <p data-figma-node="5621:28507" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
-            <div data-figma-node="5621:28356" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaHolidayToggleProps("5621:28349")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28357" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5621:28356" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5621:28349"]} aria-label="Switch"{...figmaHolidayToggleProps("5621:28349")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28357" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5621:28357;315:8184" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28357;315:8185" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5621:28357;315:8186" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -147,7 +159,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <p data-figma-node="5621:28512" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
             <p data-figma-node="5621:28513" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
-            <div data-figma-node="5621:28371" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaHolidayToggleProps("5621:28364")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28372" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5621:28371" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5621:28364"]} aria-label="Switch"{...figmaHolidayToggleProps("5621:28364")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28372" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5621:28372;315:8184" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28372;315:8185" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5621:28372;315:8186" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -174,7 +186,7 @@ export function ManageHolidayContentColumnSection() {
             </div>
             <p data-figma-node="5621:28515" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
             <p data-figma-node="5621:28516" className="box-border w-[150px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">January 1, 2026</p>
-            <div data-figma-node="5621:28386" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaHolidayToggleProps("5621:28379")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28387" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5621:28386" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5621:28379"]} aria-label="Switch"{...figmaHolidayToggleProps("5621:28379")} className="inline-flex items-center justify-center"><div data-figma-node="5621:28387" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5621:28387;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28387;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5621:28387;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>

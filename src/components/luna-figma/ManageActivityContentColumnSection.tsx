@@ -12,6 +12,7 @@ import {
   figmaActivityDeleteProps,
   figmaActivityToggleProps,
   figmaPaginationProps,
+  figmaStatusSwitchChecked,
 } from "./useFigmaScreenData";
 import { figmaItemProps, figmaTextContent } from "./figmaDisplay";
 export function ManageActivityContentColumnSection() {
@@ -19,6 +20,17 @@ export function ManageActivityContentColumnSection() {
     listOperation: FIGMA_ACTIVITIES_OPERATION,
     pageSize: 6,
   });
+  const switchChecked: Record<
+    "5359:17170" | "5359:17187" | "5359:17204" | "5359:17218" | "5359:17235" | "5359:17252",
+    boolean
+  > = {
+    "5359:17170": figmaStatusSwitchChecked("5359:17170", FIGMA_ACTIVITIES_OPERATION, "published"),
+    "5359:17187": figmaStatusSwitchChecked("5359:17187", FIGMA_ACTIVITIES_OPERATION, "published"),
+    "5359:17204": figmaStatusSwitchChecked("5359:17204", FIGMA_ACTIVITIES_OPERATION, "published"),
+    "5359:17218": figmaStatusSwitchChecked("5359:17218", FIGMA_ACTIVITIES_OPERATION, "published"),
+    "5359:17235": figmaStatusSwitchChecked("5359:17235", FIGMA_ACTIVITIES_OPERATION, "published"),
+    "5359:17252": figmaStatusSwitchChecked("5359:17252", FIGMA_ACTIVITIES_OPERATION, "published"),
+  };
   return (
     <section data-figma-node="5359:17138" id="contact" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
       <div data-figma-node="5359:17154" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
@@ -43,7 +55,7 @@ export function ManageActivityContentColumnSection() {
               <svg data-figma-node="5364:8858" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#a21d35" /></svg>
               <p data-figma-node="5364:8859" className="box-border w-max max-w-[51px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">#A21D35</p>
             </div>
-            <div data-figma-node="5359:17173" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaActivityToggleProps("5359:17170")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17174" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5359:17173" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17170"]} aria-label="Switch"{...figmaActivityToggleProps("5359:17170")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17174" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5359:17174;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5359:17174;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5359:17174;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -73,7 +85,7 @@ export function ManageActivityContentColumnSection() {
               <svg data-figma-node="5364:8862" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#0083ba" /></svg>
               <p data-figma-node="5364:8863" className="box-border w-max max-w-[55px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">#0083BA</p>
             </div>
-            <div data-figma-node="5359:17190" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaActivityToggleProps("5359:17187")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17191" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5359:17190" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17187"]} aria-label="Switch"{...figmaActivityToggleProps("5359:17187")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17191" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5359:17191;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5359:17191;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5359:17191;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -103,7 +115,7 @@ export function ManageActivityContentColumnSection() {
               <svg data-figma-node="5364:8866" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#2a9d8f" /></svg>
               <p data-figma-node="5364:8867" className="box-border w-max max-w-[54px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">#2A9D8F</p>
             </div>
-            <div data-figma-node="5359:17207" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaActivityToggleProps("5359:17204")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17208" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5359:17207" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17204"]} aria-label="Switch"{...figmaActivityToggleProps("5359:17204")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17208" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5359:17208;315:8184" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5359:17208;315:8185" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5359:17208;315:8186" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -136,7 +148,7 @@ export function ManageActivityContentColumnSection() {
               <svg data-figma-node="5364:8870" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#f4a261" /></svg>
               <p data-figma-node="5364:8871" className="box-border w-max max-w-[50px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">#F4A261</p>
             </div>
-            <div data-figma-node="5359:17221" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaActivityToggleProps("5359:17218")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17222" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5359:17221" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17218"]} aria-label="Switch"{...figmaActivityToggleProps("5359:17218")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17222" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5359:17222;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5359:17222;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5359:17222;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -166,7 +178,7 @@ export function ManageActivityContentColumnSection() {
               <svg data-figma-node="5364:8874" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#e76f51" /></svg>
               <p data-figma-node="5364:8875" className="box-border w-max max-w-[48px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">#E76F51</p>
             </div>
-            <div data-figma-node="5359:17238" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaActivityToggleProps("5359:17235")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17239" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
+            <div data-figma-node="5359:17238" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17235"]} aria-label="Switch"{...figmaActivityToggleProps("5359:17235")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17239" data-figma-component="5111:12391" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 bg-brand-primary-a21d35">
   <div data-figma-node="I5359:17239;315:8655" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5359:17239;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5359:17239;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
@@ -199,7 +211,7 @@ export function ManageActivityContentColumnSection() {
               <svg data-figma-node="5364:8878" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M12 6C12 9.31371 9.31371 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#e76f51" /></svg>
               <p data-figma-node="5364:8879" className="box-border w-max max-w-[48px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">#E76F51</p>
             </div>
-            <div data-figma-node="5359:17255" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" aria-label="Switch"{...figmaActivityToggleProps("5359:17252")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17256" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5359:17255" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17252"]} aria-label="Switch"{...figmaActivityToggleProps("5359:17252")} className="inline-flex items-center justify-center"><div data-figma-node="5359:17256" data-figma-component="5111:12395" className="box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5359:17256;315:8184" className="box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5359:17256;315:8185" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5359:17256;315:8186" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
