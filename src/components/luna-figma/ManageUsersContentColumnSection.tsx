@@ -33,7 +33,7 @@ export function ManageUsersContentColumnSection() {
   return (
     <section data-figma-node="5359:17456" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[601px] [--fx:0] [--fww:1440] flex flex-col items-start z-[2]">
       <div data-figma-node="5359:17472" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
-        <div data-figma-node="5359:17487" className="box-border w-full min-w-0 h-full min-h-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-background-ffffff">
+        <div data-figma-node="5359:17487" className="box-border w-full min-w-0 h-[379px] overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-background-ffffff">
           <div data-figma-node="5359:17488" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-[#e2d9d0] border-[1px] bg-background-tinted-faf3e8">
             <p data-figma-node="5359:17489" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-body-231f20">User Name</p>
             <p data-figma-node="5359:17490" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-body-231f20">Email Address</p>
@@ -51,13 +51,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17501" className="box-border w-max max-w-[68px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-brand-primary-a21d35">{figmaTextContent("5359:17501", "Super Admin")}</p>
             </div>
             <p data-figma-node="5359:17502" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5359:17502", "2 mins ago")}</p>
-            <div data-figma-node="5354:14408" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17495"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17495")} className="inline-flex items-center justify-center"><div data-figma-node="5354:14409" data-figma-component={switchChecked["5359:17495"] ? "5111:12391" : "5111:12395"} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17495"] ? "bg-brand-primary-a21d35" : ""}`} style={switchChecked["5359:17495"] ? undefined : {backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14408" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button data-figma-node="5354:14409" data-figma-component={switchChecked["5359:17495"] ? "5111:12391" : "5111:12395"} type="button" role="switch" aria-checked={switchChecked["5359:17495"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17495")} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative inline-flex flex-row items-center gap-0.5 ${switchChecked["5359:17495"] ? "bg-brand-primary-a21d35" : ""}`}>
   <div data-figma-node="I5354:14409;315:8655" className={`box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center${switchChecked["5359:17495"] ? " justify-end" : ""} gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]`}>
     <div data-figma-node="I5354:14409;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14409;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
     </div>
   </div>
-</div></button></div>
+</button></div>
           </div>
           <div data-figma-node="5359:17511" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5359:17512" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
@@ -69,13 +69,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17517" className="box-border w-max max-w-[34px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-text-muted-4b5563">{figmaTextContent("5359:17517", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17518" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5359:17518", "1 hour ago")}</p>
-            <div data-figma-node="5354:14435" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17511"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17511")} className="inline-flex items-center justify-center"><div data-figma-node="5354:14436" data-figma-component={switchChecked["5359:17511"] ? "5111:12391" : "5111:12395"} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17511"] ? "bg-brand-primary-a21d35" : ""}`} style={switchChecked["5359:17511"] ? undefined : {backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14435" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button data-figma-node="5354:14436" data-figma-component={switchChecked["5359:17511"] ? "5111:12391" : "5111:12395"} type="button" role="switch" aria-checked={switchChecked["5359:17511"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17511")} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative inline-flex flex-row items-center gap-0.5 ${switchChecked["5359:17511"] ? "bg-brand-primary-a21d35" : ""}`}>
   <div data-figma-node="I5354:14436;315:8655" className={`box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center${switchChecked["5359:17511"] ? " justify-end" : ""} gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]`}>
     <div data-figma-node="I5354:14436;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14436;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
     </div>
   </div>
-</div></button></div>
+</button></div>
           </div>
           <div data-figma-node="5359:17527" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5359:17528" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
@@ -87,13 +87,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17533" className="box-border w-max max-w-[34px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-text-muted-4b5563">{figmaTextContent("5359:17533", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17534" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5359:17534", "1 day ago")}</p>
-            <div data-figma-node="5354:14441" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17527"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17527")} className="inline-flex items-center justify-center"><div data-figma-node="5354:14442" data-figma-component={switchChecked["5359:17527"] ? "5111:12391" : "5111:12395"} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17527"] ? "bg-brand-primary-a21d35" : ""}`} style={switchChecked["5359:17527"] ? undefined : {backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14441" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button data-figma-node="5354:14442" data-figma-component={switchChecked["5359:17527"] ? "5111:12391" : "5111:12395"} type="button" role="switch" aria-checked={switchChecked["5359:17527"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17527")} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative inline-flex flex-row items-center gap-0.5 ${switchChecked["5359:17527"] ? "bg-brand-primary-a21d35" : ""}`}>
   <div data-figma-node="I5354:14442;315:8655" className={`box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center${switchChecked["5359:17527"] ? " justify-end" : ""} gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]`}>
     <div data-figma-node="I5354:14442;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14442;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
     </div>
   </div>
-</div></button></div>
+</button></div>
           </div>
           <div data-figma-node="5359:17543" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5359:17544" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
@@ -105,13 +105,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17549" className="box-border w-max max-w-[34px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-text-muted-4b5563">{figmaTextContent("5359:17549", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17550" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5359:17550", "3 days ago")}</p>
-            <div data-figma-node="5354:14453" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17543"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17543")} className="inline-flex items-center justify-center"><div data-figma-node="5354:14454" data-figma-component={switchChecked["5359:17543"] ? "5111:12391" : "5111:12395"} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17543"] ? "bg-brand-primary-a21d35" : ""}`} style={switchChecked["5359:17543"] ? undefined : {backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14453" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button data-figma-node="5354:14454" data-figma-component={switchChecked["5359:17543"] ? "5111:12391" : "5111:12395"} type="button" role="switch" aria-checked={switchChecked["5359:17543"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17543")} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative inline-flex flex-row items-center gap-0.5 ${switchChecked["5359:17543"] ? "bg-brand-primary-a21d35" : ""}`}>
   <div data-figma-node="I5354:14454;315:8184" className={`box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17543"] ? " justify-end " : " "}pt-[2px] pr-[2px] pb-[2px] pl-[2px]`}>
     <div data-figma-node="I5354:14454;315:8185" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14454;315:8186" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
     </div>
   </div>
-</div></button></div>
+</button></div>
           </div>
           <div data-figma-node="5359:17559" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[1px]">
             <div data-figma-node="5359:17560" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
@@ -123,13 +123,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17565" className="box-border w-max max-w-[34px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-text-muted-4b5563">{figmaTextContent("5359:17565", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17566" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5359:17566", "5 days ago")}</p>
-            <div data-figma-node="5354:14459" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17559"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17559")} className="inline-flex items-center justify-center"><div data-figma-node="5354:14460" data-figma-component={switchChecked["5359:17559"] ? "5111:12391" : "5111:12395"} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17559"] ? "bg-brand-primary-a21d35" : ""}`} style={switchChecked["5359:17559"] ? undefined : {backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14459" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button data-figma-node="5354:14460" data-figma-component={switchChecked["5359:17559"] ? "5111:12391" : "5111:12395"} type="button" role="switch" aria-checked={switchChecked["5359:17559"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17559")} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative inline-flex flex-row items-center gap-0.5 ${switchChecked["5359:17559"] ? "bg-brand-primary-a21d35" : ""}`}>
   <div data-figma-node="I5354:14460;315:8184" className={`box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17559"] ? " justify-end " : " "}pt-[2px] pr-[2px] pb-[2px] pl-[2px]`}>
     <div data-figma-node="I5354:14460;315:8185" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14460;315:8186" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
     </div>
   </div>
-</div></button></div>
+</button></div>
           </div>
           <div data-figma-node="5359:17575" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[0px]">
             <div data-figma-node="5359:17576" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center gap-3">
@@ -141,13 +141,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17581" className="box-border w-max max-w-[34px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-text-muted-4b5563">{figmaTextContent("5359:17581", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17582" className="box-border w-[140px] h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">{figmaTextContent("5359:17582", "1 week ago")}</p>
-            <div data-figma-node="5354:14465" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button type="button" role="switch" aria-checked={switchChecked["5359:17575"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17575")} className="inline-flex items-center justify-center"><div data-figma-node="5354:14466" data-figma-component={switchChecked["5359:17575"] ? "5111:12391" : "5111:12395"} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative flex flex-row items-center gap-0.5 ${switchChecked["5359:17575"] ? "bg-brand-primary-a21d35" : ""}`} style={switchChecked["5359:17575"] ? undefined : {backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14465" className="box-border w-[100px] h-[16px] flex flex-row items-center"><button data-figma-node="5354:14466" data-figma-component={switchChecked["5359:17575"] ? "5111:12391" : "5111:12395"} type="button" role="switch" aria-checked={switchChecked["5359:17575"]} aria-label="Switch" {...figmaUserSwitchProps("5359:17575")} className={`box-border w-max max-w-[28px] h-[16px] rounded-[20px] relative inline-flex flex-row items-center gap-0.5 ${switchChecked["5359:17575"] ? "bg-brand-primary-a21d35" : ""}`}>
   <div data-figma-node="I5354:14466;315:8655" className={`box-border w-[28px] h-[16px] overflow-hidden relative flex flex-row items-center${switchChecked["5359:17575"] ? " justify-end" : ""} gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]`}>
     <div data-figma-node="I5354:14466;315:8656" className="box-border w-[12px] h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14466;315:8657" className="box-border w-[12px] h-[12px] absolute left-[0px] top-[0px] rounded-[16px] block bg-background-ffffff"></div>
     </div>
   </div>
-</div></button></div>
+</button></div>
           </div>
         </div>
         <div data-figma-node="5359:17591" data-figma-pagination="true" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between">

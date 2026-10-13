@@ -16,6 +16,7 @@ import {
 } from "./useFigmaScreenData";
 import { AuditLogsTitleRowSection } from "./AuditLogsTitleRowSection";
 import { AuditLogsWorkspaceSplitSection } from "./AuditLogsWorkspaceSplitSection";
+import { ChevronDown_a4db42af } from "./ChevronDown_a4db42af";
 
 export function AuditLogsPage() {
   const screenData = useFigmaScreenData();
@@ -45,9 +46,7 @@ export function AuditLogsPage() {
               <button data-figma-node="I5333:4347;5217:13746" type="button" data-figma-action="act_33a9e6b4f612" {...figmaActionProps("act_33a9e6b4f612")} className="box-border w-max max-w-[145px] h-[40px] rounded-[6px] inline-flex items-center justify-center whitespace-nowrap bg-[#f2f1dd] hover:opacity-90 cursor-pointer"><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-[#231f20] whitespace-nowrap">oPEN CALANDER</span></button>
               <div data-figma-node="I5333:4347;5217:13749" data-figma-action="act_d21e2d8ae98b" {...figmaActionProps("act_d21e2d8ae98b")} className="box-border w-max max-w-[56px] h-[32px] flex flex-row items-center gap-2"><button type="button" aria-label="Avatar" className="inline-flex items-center justify-center"><div data-figma-node="I5333:4347;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-[32px] rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <img data-figma-node="I5333:4347;5217:13750;1002:172586" src="/assets/figma/I5333-4347-5217-13750-1002-172586.png" alt="Image" width={32} height={32} onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[32px] h-[32px] rounded-[32px] max-w-none object-cover object-top" />
-</div></button><button type="button" aria-label="Expand oPEN CALANDER" className="inline-flex items-center justify-center"><div data-figma-node="I5333:4347;5217:13752" data-figma-component="5111:6287" className="box-border w-[16px] h-[16px] overflow-hidden relative">
-  <span data-figma-node="I5333:4347;5217:13752;5111:6288" data-figma-unrendered="vector" data-figma-diagnostic="vector_geometry_unavailable" aria-hidden="true" className="box-border w-[8px] h-[4px] absolute left-[4px] top-[6px] [--fx:4] [--fww:8] inline-block pointer-events-none" />
-</div></button></div>
+</div></button><button type="button" aria-label="Expand oPEN CALANDER" className="inline-flex items-center justify-center"><ChevronDown_a4db42af data-figma-node="I5333:4347;5217:13752" data-figma-component="5111:6287" className="box-border w-[16px] h-[16px] overflow-hidden relative" /></button></div>
             </div>
           </div>
         </div>

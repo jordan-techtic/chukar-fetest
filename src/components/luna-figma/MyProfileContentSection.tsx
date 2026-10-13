@@ -14,15 +14,17 @@ export function MyProfileContentSection() {
   return (
     <section data-figma-node="5329:12075" id="contact" className="absolute box-border left-[0px] top-[169px] w-full min-w-0 h-[1010px] [--fx:0] [--fww:1440] pr-[40px] pb-[52px] pl-[40px] flex flex-row items-start gap-6 z-[2]">
       <div data-figma-node="5329:12076" className="box-border w-[400px] h-[418px] rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-6 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-background-ffffff">
-        <div data-figma-node="5329:12077" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-center gap-4">
-          <img data-figma-node="5329:12078" src={figmaTextContent("avatar_url", "")} alt="LargeAvatar" onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[100px] h-[100px] overflow-hidden rounded-[50px] object-cover" />
+        <div data-figma-node="5329:12077" className="box-border w-full min-w-0 h-[166px] relative flex flex-col items-center gap-4">
+          <div data-figma-node="5329:12078" className="box-border w-[100px] h-[100px] rounded-[50px] overflow-hidden relative flex flex-row items-start">
+            <img src={figmaTextContent("avatar_url", "")} alt="LargeAvatar" onError={e => { (e.currentTarget as HTMLImageElement).style.visibility='hidden' }} className="box-border w-[100px] h-[100px] object-cover" />
+          </div>
           <div data-figma-node="5329:12079" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-center gap-1">
             <p data-figma-node="5329:12080" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[22px] font-[700] leading-[28px] text-center whitespace-nowrap text-brand-primary-a21d35">Amy Morse</p>
             <p data-figma-node="5329:12081" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[600] leading-[18px] text-center whitespace-nowrap text-text-muted-686868">Senior Campaign Lead</p>
           </div>
         </div>
         <div data-figma-node="5329:12082" className="box-border w-full min-w-0 h-full min-h-0 bg-[#e5e7eb] h-px" />
-        <form data-figma-node="5329:12083" noValidate onSubmit={(e) => { e.preventDefault(); }} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-4">
+        <form data-figma-node="5329:12083" noValidate onSubmit={(e) => { e.preventDefault(); }} className="box-border w-full min-w-0 h-[140px] relative flex flex-col items-start gap-4">
           <div data-figma-node="5329:12084" className="box-border w-full min-w-0 h-[36px] relative flex flex-col items-start gap-1">
             <p data-figma-node="5329:12085" className="box-border w-max max-w-[91px] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-neutral-mid-9ca3af">Email Address</p>
             <p data-figma-node="5329:12086" className="box-border w-max max-w-[187px] h-auto min-h-[18px] font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-231f20">{figmaTextContent("5329:12086", "amy.morse@calendarflow.io")}</p>
@@ -41,7 +43,7 @@ export function MyProfileContentSection() {
         </form>
       </div>
       <div data-figma-node="5329:12099" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-6">
-        <div data-figma-node="5335:4259" className="box-border w-full min-w-0 h-full min-h-0 rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-5 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-background-ffffff">
+        <div data-figma-node="5335:4259" className="box-border w-full min-w-0 h-[588px] rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-5 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-background-ffffff">
           <div data-figma-node="5335:4260" className="box-border w-max max-w-[128px] h-[24px] relative flex flex-row items-center gap-2.5">
             <div data-figma-node="5337:4319" data-figma-component="5121:9728" className="box-border w-[24px] h-[24px] overflow-hidden relative flex flex-col items-center gap-[2px]">
               <svg data-figma-node="I5337:4319;403:1251" viewBox="0 0 12 12" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[12px] h-[12px] pointer-events-none overflow-visible"><path d="M6 12C7.18669 12 8.34673 11.6481 9.33342 10.9888C10.3201 10.3295 11.0892 9.39246 11.5433 8.2961C11.9974 7.19975 12.1162 5.99335 11.8847 4.82946C11.6532 3.66558 11.0818 2.59648 10.2426 1.75736C9.40353 0.918247 8.33443 0.346802 7.17054 0.115291C6.00666 -0.11622 4.80026 0.00259972 3.7039 0.456726C2.60754 0.910851 1.67047 1.67989 1.01118 2.66658C0.351894 3.65328 8.88179e-16 4.81331 0 6C0.00158843 7.59081 0.63424 9.11602 1.75911 10.2409C2.88399 11.3658 4.40919 11.9984 6 12ZM6 2C6.79113 2 7.56448 2.2346 8.22228 2.67412C8.88008 3.11365 9.39277 3.73836 9.69552 4.46927C9.99827 5.20017 10.0775 6.00444 9.92314 6.78036C9.7688 7.55629 9.38784 8.26902 8.82843 8.82843C8.26902 9.38784 7.55629 9.7688 6.78036 9.92314C6.00444 10.0775 5.20017 9.99827 4.46927 9.69552C3.73836 9.39277 3.11365 8.88008 2.67412 8.22228C2.2346 7.56449 2 6.79113 2 6C2 4.93914 2.42143 3.92172 3.17157 3.17158C3.92172 2.42143 4.93913 2 6 2L6 2Z" fill="#a21d35" /></svg>
@@ -50,7 +52,7 @@ export function MyProfileContentSection() {
             <p data-figma-node="5335:4264" className="box-border w-max max-w-[94px] h-auto min-h-[23px] font-onest text-[18px] font-[600] leading-[23px] text-left whitespace-nowrap text-text-body-231f20">Edit Profile</p>
           </div>
           <div data-figma-node="5335:4265" className="box-border w-full min-w-0 h-full min-h-0 bg-[#e5e7eb] h-px" />
-          <form data-figma-node="5335:4266" noValidate {...figmaFormProps("5329:12027")} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-4">
+          <form data-figma-node="5335:4266" noValidate {...figmaFormProps("5329:12027")} className="box-border w-full min-w-0 h-[378px] relative flex flex-col items-start gap-4">
             <div data-figma-node="5337:4268" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-4">
               <input data-figma-node="5335:4267" name="first-name" data-figma-field="first-name" data-figma-field-origin="design_text" {...figmaFieldProps("first-name")} type="text" placeholder="First name" aria-label="First name" className="box-border w-full min-w-0 h-full min-h-0 shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary border-0 bg-transparent text-neutral-mid-9ca3af placeholder:text-[#9ca3af]" />
               <FigmaFieldError field="first-name" />
@@ -68,7 +70,7 @@ export function MyProfileContentSection() {
                 <p data-figma-node="5335:4278" className="box-border w-full min-w-0 h-full min-h-0 font-onest text-[14px] font-[500] leading-[18px] text-left whitespace-nowrap text-text-body-231f20">{figmaTextContent("5335:4278", "Senior Campaign Lead")}</p>
               </div>
             </div>
-            <div data-figma-node="5335:4283" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
+            <div data-figma-node="5335:4283" className="box-border w-full min-w-0 h-[141px] relative flex flex-col items-start gap-1.5">
               <p data-figma-node="5335:4284" className="box-border w-max max-w-[21px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-9ca3af">Bio</p>
               <textarea data-figma-node="5335:4285" name="bio" data-figma-field="bio" data-figma-field-origin="design_text" {...figmaFieldProps("bio")} placeholder="Tell us about yourself..." aria-label="Tell us about yourself..." className="box-border w-full min-w-0 h-full min-h-0 rounded-[8px] shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary border-[#e2d9d0] border-[1px] bg-background-ffffff pt-[14px] pr-[14px] pb-[14px] pl-[14px] text-neutral-mid-9ca3af placeholder:text-[#9ca3af]" />
             </div>
@@ -78,7 +80,7 @@ export function MyProfileContentSection() {
             <button data-figma-node="5335:4291" type="button" data-figma-action="act_4d5182b12c73" {...figmaActionProps("act_4d5182b12c73")} className="box-border w-[112px] h-[42px] rounded-[8px] inline-flex items-center justify-center whitespace-nowrap bg-brand-primary-a21d35 hover:opacity-90 cursor-pointer"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-background-ffffff whitespace-nowrap">Save</span></button>
           </div>
         </div>
-        <div data-figma-node="5337:4275" className="box-border w-full min-w-0 h-full min-h-0 rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-5 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-background-ffffff">
+        <div data-figma-node="5337:4275" className="box-border w-full min-w-0 h-[346px] rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-5 pt-[32px] pr-[32px] pb-[32px] pl-[32px] border-[#e2d9d0] border-[1px] bg-background-ffffff">
           <div data-figma-node="5337:4314" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-center justify-between gap-5">
             <div data-figma-node="5337:4276" className="box-border w-max max-w-[189px] h-[24px] relative flex flex-row items-center gap-2.5">
               <div data-figma-node="5339:8819" data-figma-component="5121:8905" className="box-border w-[24px] h-[24px] overflow-hidden relative">
@@ -89,7 +91,7 @@ export function MyProfileContentSection() {
             <p data-figma-node="5329:12173" className="box-border w-max max-w-[158px] h-auto min-h-[15px] font-onest text-[12px] font-[400] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">Last updated 4 months ago.</p>
           </div>
           <div data-figma-node="5337:4281" className="box-border w-full min-w-0 h-full min-h-0 bg-[#e5e7eb] h-px" />
-          <form data-figma-node="5337:4282" noValidate onSubmit={(e) => { e.preventDefault(); }} className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-4">
+          <form data-figma-node="5337:4282" noValidate onSubmit={(e) => { e.preventDefault(); }} className="box-border w-full min-w-0 h-[142px] relative flex flex-col items-start gap-4">
             <div data-figma-node="5337:4283" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-row items-start gap-4">
               <div data-figma-node="5337:4284" className="box-border w-full min-w-0 h-full min-h-0 relative flex flex-col items-start gap-1.5">
                 <p data-figma-node="5337:4285" className="box-border w-max max-w-[131px] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-neutral-mid-9ca3af">Current Password</p>
