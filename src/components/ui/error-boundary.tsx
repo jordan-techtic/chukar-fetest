@@ -10,16 +10,17 @@ interface ErrorBoundaryProps {
 
 interface ErrorBoundaryState {
   hasError: boolean;
-  message: string;
 }
 
-export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  state: ErrorBoundaryState = { hasError: false, message: "" };
+const BOUNDARY_USER_MESSAGE =
+  "Something went wrong while loading this page. Please try again.";
 
-  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  state: ErrorBoundaryState = { hasError: false };
+
+  static getDerivedStateFromError(): ErrorBoundaryState {
     return {
       hasError: true,
-      message: error.message || "Something went wrong.",
     };
   }
 
@@ -28,13 +29,17 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
   }
 
   private handleRetry = (): void => {
-    this.setState({ hasError: false, message: "" });
+    this.setState({ hasError: false });
   };
 
   render(): ReactNode {
     if (this.state.hasError) {
       return (
-        <ErrorState message={this.state.message} onRetry={this.handleRetry} retryLabel="Retry" />
+        <ErrorState
+          message={BOUNDARY_USER_MESSAGE}
+          onRetry={this.handleRetry}
+          retryLabel="Retry"
+        />
       );
     }
     return this.props.children;

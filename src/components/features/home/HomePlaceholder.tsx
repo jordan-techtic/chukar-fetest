@@ -87,7 +87,7 @@ export function HomePlaceholder() {
       <div className="relative grid w-full grid-cols-1 gap-[var(--spacing-gap-24)] px-[var(--spacing-padding-24)] py-[var(--spacing-padding-16)] lg:grid-cols-[minmax(0,1fr)_284px]">
         <div className="flex min-w-0 flex-col gap-[var(--spacing-gap-24)]">
           <section className="rounded-[var(--radius-12)] border border-[var(--color-border)] bg-[var(--color-surface)] p-[var(--spacing-padding-24)] shadow-[var(--shadow-drop-shadow)]">
-            <h1 className="font-[family-name:var(--font-inter)] text-heading-md-21 text-[var(--color-text-secondary)]">
+            <h1 className="font-[family-name:var(--font-inter)] text-heading-md-19 text-[var(--color-text-secondary)]">
               Marketing Content Calendar
             </h1>
             <p className="mt-[var(--spacing-gap-12)] font-[family-name:var(--font-onest)] text-body-sm-5 text-[var(--color-color-11)]">

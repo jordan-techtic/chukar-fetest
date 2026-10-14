@@ -2,77 +2,77 @@
   font-family: var(--font-onest);
   font-size: 13px;
   font-weight: 600;
-  line-height: 16.57px;
+  line-height: 16.57499885559082px;
 }
 
 .text-caption-2 {
   font-family: var(--font-onest);
   font-size: 12px;
   font-weight: 700;
-  line-height: 15.3px;
+  line-height: 15.299999237060547px;
 }
 
 .text-caption-3 {
   font-family: var(--font-onest);
   font-size: 13px;
   font-weight: 700;
-  line-height: 16.57px;
+  line-height: 16.57499885559082px;
 }
 
 .text-body-sm-4 {
   font-family: var(--font-onest);
   font-size: 14px;
   font-weight: 700;
-  line-height: 17.85px;
+  line-height: 17.850000381469727px;
 }
 
 .text-body-sm-5 {
   font-family: var(--font-onest);
   font-size: 14px;
   font-weight: 400;
-  line-height: 17.85px;
+  line-height: 17.850000381469727px;
 }
 
 .text-caption-6 {
   font-family: var(--font-onest);
   font-size: 11px;
   font-weight: 500;
-  line-height: 14.02px;
+  line-height: 14.024999618530273px;
 }
 
 .text-caption-7 {
   font-family: var(--font-onest);
   font-size: 11px;
   font-weight: 700;
-  line-height: 14.02px;
+  line-height: 14.024999618530273px;
 }
 
 .text-caption-8 {
   font-family: var(--font-onest);
   font-size: 11px;
   font-weight: 400;
-  line-height: 14.02px;
+  line-height: 14.024999618530273px;
 }
 
 .text-caption-9 {
   font-family: var(--font-onest);
   font-size: 12px;
   font-weight: 600;
-  line-height: 15.3px;
+  line-height: 15.299999237060547px;
 }
 
 .text-caption-10 {
   font-family: var(--font-onest);
   font-size: 13px;
   font-weight: 400;
-  line-height: 16.57px;
+  line-height: 16.57499885559082px;
 }
 
 .text-body-sm-11 {
   font-family: var(--font-onest);
   font-size: 14px;
   font-weight: 600;
-  line-height: 17.85px;
+  line-height: 17.850000381469727px;
 }
 
 .text-caption-12 {
@@ -94,14 +94,14 @@
   font-family: var(--font-onest);
   font-size: 14px;
   font-weight: 500;
-  line-height: 17.85px;
+  line-height: 17.850000381469727px;
 }
 
 .text-caption-15 {
   font-family: var(--font-onest);
   font-size: 11px;
   font-weight: 600;
-  line-height: 14.02px;
+  line-height: 14.024999618530273px;
 }
 
 .text-caption-16 {
@@ -115,14 +115,14 @@
   font-family: var(--font-onest);
   font-size: 18px;
   font-weight: 500;
-  line-height: 22.95px;
+  line-height: 22.94999885559082px;
 }
 
 .text-body-18 {
   font-family: var(--font-onest);
   font-size: 18px;
   font-weight: 700;
-  line-height: 22.95px;
+  line-height: 22.94999885559082px;
 }
 
 .text-heading-md-19 {
@@ -136,7 +136,7 @@
   font-family: var(--font-onest);
   font-size: 12px;
   font-weight: 500;
-  line-height: 15.3px;
+  line-height: 15.299999237060547px;
 }
 
 .text-heading-md-21 {
@@ -144,20 +144,6 @@
   font-size: 22px;
   font-weight: 800;
   line-height: 26.62px;
-}
-
-.text-body-17 {
-  font-family: var(--font-onest);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22.94999885559082px;
-}
-
-.text-body-18 {
-  font-family: var(--font-onest);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22.94999885559082px;
 }
 
 .text-body-26 {
