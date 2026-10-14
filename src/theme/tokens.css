@@ -1,0 +1,109 @@
+:root {
+  --color-primary: #a21d35;
+  --color-background: #fff9f3;
+  --color-surface: #ffffff;
+  --color-text: #231f20;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+  --color-border: #e2d9d0;
+  --color-accent: #2a9d8f;
+  --color-accent-teal: #2a9d8f;
+  --color-error: #a21d35;
+  --color-success: #2a9d8f;
+
+  --color-color-10: #9ca3af;
+  --color-color-11: #4a5568;
+  --color-color-12: #111827;
+  --color-color-13: #000000;
+  --color-color-14: #65758b;
+  --color-color-15: #f9fafb;
+  --color-color-16: #d5ba8c;
+  --color-color-17: #fde8ed;
+  --color-color-18: #374957;
+  --color-color-19: #f2f1dd;
+  --color-color-20: #1a202c95;
+  --color-color-21: #4b5563;
+  --color-color-22: #718096;
+  --color-color-23: #eefbf9;
+  --color-color-24: #0083ba;
+  --color-color-25: #72516a;
+  --color-color-26: #a0aec0;
+  --color-color-27: #2f80ed;
+  --color-color-28: #888888;
+  --color-color-29: #fef3c7;
+  --color-color-30: #f9f9f9;
+  --color-color-38: #2f80ed;
+  --color-color-100: #111827;
+
+  --spacing-gap-1: 1px;
+  --spacing-gap-2: 2px;
+  --spacing-gap-3: 3px;
+  --spacing-gap-4: 4px;
+  --spacing-gap-6: 6px;
+  --spacing-gap-8: 8px;
+  --spacing-gap-10: 10px;
+  --spacing-gap-12: 12px;
+  --spacing-gap-15: 15px;
+  --spacing-gap-16: 16px;
+  --spacing-gap-20: 20px;
+  --spacing-gap-24: 24px;
+  --spacing-gap-25: 25px;
+  --spacing-gap-30: 30px;
+  --spacing-gap-55: 55px;
+
+  --spacing-padding-2: 2px;
+  --spacing-padding-4: 4px;
+  --spacing-padding-6: 6px;
+  --spacing-padding-8: 8px;
+  --spacing-padding-10: 10px;
+  --spacing-padding-12: 12px;
+  --spacing-padding-14: 14px;
+  --spacing-padding-15: 15px;
+  --spacing-padding-16: 16px;
+  --spacing-padding-18: 18px;
+  --spacing-padding-20: 20px;
+  --spacing-padding-24: 24px;
+  --spacing-padding-27: 27px;
+  --spacing-padding-30: 30px;
+  --spacing-padding-32: 32px;
+  --spacing-padding-40: 40px;
+
+  --radius-3: 3px;
+  --radius-4: 4px;
+  --radius-5: 5px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-13: 13px;
+  --radius-16: 16px;
+  --radius-18: 18px;
+  --radius-20: 20px;
+  --radius-32: 32px;
+  --radius-50: 50px;
+  --radius-100: 100px;
+
+  --shadow-drop-shadow: 0px 2px 4px 0px #0000000a;
+  --shadow-drop-shadow-2: 0px 4px 10px 0px #0000000f;
+  --shadow-drop-shadow-3: 0px 4px 12px 0px #00000005;
+  --shadow-drop-shadow-4: 0px 10px 20px 0px #00000024;
+  --shadow-drop-shadow-5: 0px 4px 8px 0px #00000005;
+  --shadow-drop-shadow-6: -6px 0px 24px 0px #00000026;
+  --shadow-drop-shadow-7: -4px 0px 20px 0px #0000001f;
+  --shadow-drop-shadow-8: 0px 4px 32px 0px #0000001f;
+  --shadow-drop-shadow-9: 0px 1px 3px 0px #00000033;
+
+  --gradient: linear-gradient(180deg, #833ab4 0%, #fd1d1d 50%, #fcaf45 100%);
+  --gradient-2: linear-gradient(180deg, #ffffff 0%, #a01028 100%);
+  --gradient-3: linear-gradient(180deg, #00000000 0%, #000000 100%);
+  --gradient-4: linear-gradient(
+    180deg,
+    #ff0000 0%,
+    #ffff00 17%,
+    #00ff00 33%,
+    #00ffff 50%,
+    #0000ff 67%,
+    #ff00ff 83%,
+    #ff0000 100%
+  );
+}
