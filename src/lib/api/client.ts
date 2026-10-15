@@ -7,7 +7,9 @@ import {
 } from "@/lib/auth/token-storage";
 
 export function resolveApiBaseUrl(): string {
-  const configured = process.env.NEXT_PUBLIC_API_URL?.trim();
+  const configured =
+    process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ||
+    process.env.NEXT_PUBLIC_API_URL?.trim();
   if (configured) {
     return configured.replace(/\/$/, "");
   }

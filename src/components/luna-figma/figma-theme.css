@@ -1,0 +1,44 @@
+/**
+ * Luna generated support file
+ * Role: figma design tokens
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ */
+@theme inline {
+  --color-accent-teal-0083ba: #0083BA;
+  --color-accent-teal-2a9d8f: #2A9D8F;
+  --color-background-f8f8f8: #F8F8F8;
+  --color-background-f9f9f9: #F9F9F9;
+  --color-background-ffffff: #FFFFFF;
+  --color-background-tinted-ecfffd: #ECFFFD;
+  --color-background-tinted-eefbf9: #EEFBF9;
+  --color-background-tinted-eff7fa: #EFF7FA;
+  --color-background-tinted-f9fafb: #F9FAFB;
+  --color-background-tinted-faf3e8: #FAF3E8;
+  --color-background-tinted-fcf3f4: #FCF3F4;
+  --color-background-tinted-fde8ed: #FDE8ED;
+  --color-background-tinted-fff9f3: #FFF9F3;
+  --color-brand-primary-a21d35: #A21D35;
+  --color-brand-primary-da002f: #DA002F;
+  --color-neutral-374151: #374151;
+  --color-neutral-374957: #374957;
+  --color-neutral-718096: #718096;
+  --color-neutral-72516a: #72516A;
+  --color-neutral-76ab55: #76AB55;
+  --color-neutral-888888: #888888;
+  --color-neutral-mid-2f80ed: #2F80ED;
+  --color-neutral-mid-61ff9d: #61FF9D;
+  --color-neutral-mid-6fcf97: #6FCF97;
+  --color-neutral-mid-9ca3af: #9CA3AF;
+  --color-neutral-mid-d5ba8c: #D5BA8C;
+  --color-neutral-mid-f1b743: #F1B743;
+  --color-surface-light-e2d9d0: #E2D9D0;
+  --color-surface-light-f2f1dd: #F2F1DD;
+  --color-surface-light-fef3c7: #FEF3C7;
+  --color-text-body-231f20: #231F20;
+  --color-text-dark-000000: #000000;
+  --color-text-muted-4a4a4a: #4A4A4A;
+  --color-text-muted-686868: #686868;
+  --font-inter: 'Inter', sans-serif;
+  --font-onest: 'Onest', sans-serif;
+}

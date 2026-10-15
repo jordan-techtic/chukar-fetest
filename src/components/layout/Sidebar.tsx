@@ -2,7 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, LayoutDashboard } from "lucide-react";
+import {
+  Calendar,
+  CalendarClock,
+  Home,
+  LayoutDashboard,
+  Palmtree,
+} from "lucide-react";
 
 import { cn } from "@/lib/utils/cn";
 
@@ -12,9 +18,29 @@ interface SidebarProps {
 }
 
 const NAV_ITEMS = [
-  { href: "/", label: "Home", icon: Home },
+  { href: "/", label: "Week calendar", icon: Calendar },
+  { href: "/marketing-calendar/week", label: "Marketing calendar", icon: Calendar },
+  { href: "/week-calendar-default-1", label: "Week calendar (alt)", icon: CalendarClock },
+  { href: "/week-calendar-historical-view", label: "Historical view", icon: CalendarClock },
+  { href: "/manage-holiday", label: "Manage holidays", icon: Palmtree },
   { href: "/workspace", label: "Workspace", icon: LayoutDashboard },
+  { href: "/marketing-team-member-manage-activity", label: "Manage activity", icon: Home },
+  { href: "/marketing-team-member-manage-users", label: "Manage users", icon: Home },
+  { href: "/marketing-team-member-my-profile", label: "My profile", icon: Home },
+  { href: "/marketing-team-member-invite-user", label: "Invite user", icon: Home },
+  { href: "/marketing-team-member-manage-category", label: "Manage category", icon: Home },
+  { href: "/marketing-team-member-add-category", label: "Add category", icon: Home },
+  { href: "/marketing-team-member-create-activity-type", label: "Create activity type", icon: Home },
+  { href: "/marketing-team-member-audit-logs", label: "Audit logs", icon: Home },
+  { href: "/marketing-team-member-social-post-detail", label: "Social post detail", icon: Home },
 ] as const;
+
+function isActivePath(pathname: string, href: string): boolean {
+  if (href === "/") {
+    return pathname === "/";
+  }
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export function Sidebar({ mobileOpen, onNavigate }: SidebarProps) {
   const pathname = usePathname();
@@ -28,9 +54,9 @@ export function Sidebar({ mobileOpen, onNavigate }: SidebarProps) {
         mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
       )}
     >
-      <ul className="flex flex-col gap-[var(--spacing-gap-8)]">
+      <ul className="flex max-h-[calc(100vh-6rem)] flex-col gap-[var(--spacing-gap-8)] overflow-y-auto">
         {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
-          const active = pathname === href;
+          const active = isActivePath(pathname, href);
           return (
             <li key={href}>
               <Link
