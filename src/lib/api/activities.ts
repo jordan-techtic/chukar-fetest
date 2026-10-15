@@ -1,4 +1,4 @@
-import apiClient from "@/lib/api/client";
+import apiClient, { resolveApiBaseUrl } from "@/lib/api/client";
 import type { ApiEnvelope } from "@/lib/api/types";
 
 export interface ActivityOut {
@@ -32,6 +32,10 @@ export type ActivityListResponse = ApiEnvelope<ActivityListData>;
 
 const ACTIVITIES_PATH = "/api/v1/marketing-team-member/activities";
 
+export function activitiesApiUrl(): string {
+  return `${resolveApiBaseUrl()}${ACTIVITIES_PATH}`;
+}
+
 export async function listActivities(params?: {
   search?: string;
   category?: string;
@@ -45,6 +49,6 @@ export async function listActivities(params?: {
   page?: number;
   limit?: number;
 }): Promise<ActivityListResponse> {
-  const response = await apiClient.get<ActivityListResponse>(ACTIVITIES_PATH, { params });
+  const response = await apiClient.get<ActivityListResponse>(activitiesApiUrl(), { params });
   return response.data;
 }

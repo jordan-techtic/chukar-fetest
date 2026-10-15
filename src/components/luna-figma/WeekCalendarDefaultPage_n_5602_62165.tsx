@@ -36,7 +36,7 @@ export function WeekCalendarDefaultPage_n_5602_62165() {
       data-figma-frame="5602:62165" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background-tinted-fff9f3">
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <a data-figma-node="5602:62166" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-background-ffffff focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current">
+          <a data-figma-node="5602:62166" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border w-full min-w-0 h-[80px] absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-background-ffffff focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current overflow-hidden w-[1440px]">
             <div data-figma-node="I5602:62166;5217:13714" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-[30px]">
               <div data-figma-node="I5602:62166;5217:13715" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-3">
                 <img data-figma-node="I5602:62166;5217:13716" src="/assets/figma/I5602-62166-5217-13716.png" alt="" aria-hidden="true" width={54} height={50} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[54px] shrink-0 h-[50px] rounded-[10px] max-w-none object-cover object-top" />
@@ -64,7 +64,7 @@ export function WeekCalendarDefaultPage_n_5602_62165() {
           </a>
         </div>
         <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div data-figma-node="5602:62167" data-figma-component="5273:21161" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[80px] z-[1] [--fx:0] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-background-tinted-faf3e8">
+          <div data-figma-node="5602:62167" data-figma-component="5273:21161" className="pointer-events-auto box-border w-full min-w-0 h-[59px] absolute left-[0px] top-[80px] z-[1] [--fx:0] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-background-tinted-faf3e8 overflow-hidden bg-[#faf3e8]">
             <div data-figma-node="I5602:62167;5273:21162" className="box-border w-[1400px] shrink-0 h-auto relative flex flex-row items-center justify-between gap-3">
               <div data-figma-node="I5602:62167;5273:21163" className="box-border w-[804px] shrink-0 h-auto overflow-hidden relative flex flex-row items-center gap-3">
                 <FiRrAngleSmallLeft data-figma-node="I5602:62167;5416:10078" data-figma-component="5121:8081" className="relative" />
@@ -109,7 +109,7 @@ export function WeekCalendarDefaultPage_n_5602_62165() {
           </div>
         </div>
         <div className="pointer-events-none absolute inset-0 z-[2]">
-          <div data-figma-node="5645:43147" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[139px] z-[2] [--fx:0] flex flex-row items-start">
+          <div data-figma-node="5645:43147" className="pointer-events-auto box-border w-full min-w-0 h-[757px] absolute left-[0px] top-[139px] z-[2] [--fx:0] flex flex-row items-start overflow-hidden">
             <div data-figma-node="5602:62169" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-start gap-5 pt-[20px] pr-[20px] pb-[40px] pl-[20px]">
               <div data-figma-node="5602:64411" className="box-border flex-1 min-w-0 h-[697px] relative flex flex-col items-start">
                 <div data-figma-node="5602:64423" className="box-border self-stretch min-w-0 h-[695px] shrink-0 relative flex flex-row items-start">

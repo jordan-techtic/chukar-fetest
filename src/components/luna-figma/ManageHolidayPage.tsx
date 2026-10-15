@@ -11,7 +11,7 @@
 
 import "./figma-theme.css";
 import "./figma-responsive.css";
-import { useFigmaScreenData, useDialogState } from "./useFigmaScreenData";
+import { openFigmaDialog, useDialogState, useFigmaScreenData } from "./useFigmaScreenData";
 import { ManageHolidayTitleRowSection } from "./ManageHolidayTitleRowSection";
 import { ManageHolidayContentColumnSection } from "./ManageHolidayContentColumnSection";
 import { MonthlyCalendarProfileMenuModal } from "./MonthlyCalendarProfileMenuModal";
@@ -30,11 +30,11 @@ export function ManageHolidayPage() {
       aria-busy={screenData.loadingReads || undefined}
       className="relative flex min-h-screen w-full min-w-0 flex-col bg-background-tinted-fff9f3"
     >
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <main id="main-content" className="relative flex min-h-[770px] w-full min-w-0 flex-1 flex-col">
         <ManageHolidayTitleRowSection />
         <ManageHolidayContentColumnSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <a data-figma-node="5621:28271" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-background-ffffff focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current">
+          <a data-figma-node="5621:28271" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border w-full min-w-0 h-[80px] absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-background-ffffff focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current overflow-hidden bg-[#ffffff]">
             <div data-figma-node="I5621:28271;5217:13714" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-[30px]">
               <div data-figma-node="I5621:28271;5217:13715" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-3">
                 <img data-figma-node="I5621:28271;5217:13716" src="/assets/figma/I5621-28271-5217-13716.png" alt="" aria-hidden="true" width={54} height={50} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[54px] shrink-0 h-[50px] rounded-[10px] max-w-none object-cover object-top" />
@@ -46,7 +46,7 @@ export function ManageHolidayPage() {
             </div>
             <div data-figma-node="I5621:28271;5217:13733" className="box-border w-max max-w-[min(217px,100%)] h-auto relative flex flex-row items-center gap-4">
               <a data-figma-node="I5621:28271;5217:13746" href="/week-calendar-default-1" className="box-border w-max h-[40px] rounded-[6px] min-w-[145px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] inline-flex items-center justify-start whitespace-nowrap bg-surface-light-f2f1dd hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"><span className="font-onest text-[13px] font-[700] leading-[17px] uppercase text-left whitespace-nowrap text-text-body-231f20">oPEN CALANDER</span></a>
-              <div data-figma-node="I5621:28271;5217:13749" className="box-border w-max max-w-[min(56px,100%)] h-auto flex flex-row items-center gap-2"><button type="button" aria-label="Avatar" className="inline-flex items-center justify-center"><div data-figma-node="I5621:28271;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-auto rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+              <div data-figma-node="I5621:28271;5217:13749" data-figma-action="act_0e7f4be472d9" data-figma-overlay-opens="5327:3852" role="button" tabIndex={0} onKeyDown={(e) => { if (e.target === e.currentTarget && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openFigmaDialog("act_0e7f4be472d9"); } }} onClick={(e) => { e.preventDefault(); openFigmaDialog("act_0e7f4be472d9"); }} className="box-border w-max max-w-[min(56px,100%)] h-auto flex cursor-pointer flex-row items-center gap-2"><button type="button" aria-label="Avatar" className="inline-flex items-center justify-center"><div data-figma-node="I5621:28271;5217:13750" data-figma-component="5111:12456" className="box-border w-[32px] h-auto rounded-[32px] relative flex flex-row items-start gap-2" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <img data-figma-node="I5621:28271;5217:13750;1002:172586" src="/assets/figma/I5621-28271-5217-13750-1002-172586.png" alt="" aria-hidden="true" width={32} height={32} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[32px] shrink-0 h-[32px] rounded-[32px] max-w-none object-cover object-top" />
 </div></button><button type="button" aria-label="Expand oPEN CALANDER" className="inline-flex items-center justify-center"><div data-figma-node="I5621:28271;5217:13752" data-figma-component="5111:6287" className="box-border w-[16px] h-[16px] overflow-hidden relative">
   <span data-figma-node="I5621:28271;5217:13752;5111:6288" data-figma-unrendered="vector" data-figma-diagnostic="vector_geometry_unavailable" aria-hidden="true" className="box-border absolute [--fx:4] [--fww:8] left-[25%] w-[50%] top-[37.5%] h-[25%] inline-block pointer-events-none" />

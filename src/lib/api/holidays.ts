@@ -1,4 +1,4 @@
-import apiClient from "@/lib/api/client";
+import apiClient, { resolveApiBaseUrl } from "@/lib/api/client";
 import type { ApiEnvelope } from "@/lib/api/types";
 
 export type HolidayStatus = "active" | "inactive";
@@ -36,16 +36,20 @@ export interface HolidayUpdateRequest {
 
 const HOLIDAYS_PATH = "/api/v1/marketing-team-member/holidays";
 
+function holidaysApiUrl(pathSuffix = ""): string {
+  return `${resolveApiBaseUrl()}${HOLIDAYS_PATH}${pathSuffix}`;
+}
+
 export async function listHolidays(params?: {
   search?: string;
   status?: HolidayStatus;
 }): Promise<HolidayListResponse> {
-  const response = await apiClient.get<HolidayListResponse>(HOLIDAYS_PATH, { params });
+  const response = await apiClient.get<HolidayListResponse>(holidaysApiUrl(), { params });
   return response.data;
 }
 
 export async function createHoliday(body: HolidayCreateRequest): Promise<ApiEnvelope<HolidayOut>> {
-  const response = await apiClient.post<ApiEnvelope<HolidayOut>>(HOLIDAYS_PATH, body);
+  const response = await apiClient.post<ApiEnvelope<HolidayOut>>(holidaysApiUrl(), body);
   return response.data;
 }
 
@@ -53,13 +57,13 @@ export async function updateHoliday(
   id: string,
   body: HolidayUpdateRequest,
 ): Promise<ApiEnvelope<HolidayOut>> {
-  const response = await apiClient.put<ApiEnvelope<HolidayOut>>(`${HOLIDAYS_PATH}/${id}`, body);
+  const response = await apiClient.put<ApiEnvelope<HolidayOut>>(holidaysApiUrl(`/${id}`), body);
   return response.data;
 }
 
 export async function deleteHoliday(id: string): Promise<ApiEnvelope<Record<string, never>>> {
   const response = await apiClient.delete<ApiEnvelope<Record<string, never>>>(
-    `${HOLIDAYS_PATH}/${id}`,
+    holidaysApiUrl(`/${id}`),
   );
   return response.data;
 }

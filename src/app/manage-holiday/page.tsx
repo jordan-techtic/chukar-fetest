@@ -7,6 +7,7 @@
  * luna-spec-codegen: owned-layout
  */
 import type { Metadata } from "next";
+import { AppShell } from "@/components/layout/AppShell";
 import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
 import { ManageHolidayPage } from "@/components/luna-figma/ManageHolidayPage";
 
@@ -14,8 +15,10 @@ export const metadata: Metadata = { title: "Manage-holiday" };
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="manage-holiday">
-      <ManageHolidayPage />
-    </FigmaScreenDataProvider>
+    <AppShell>
+      <FigmaScreenDataProvider routePath="manage-holiday">
+        <ManageHolidayPage />
+      </FigmaScreenDataProvider>
+    </AppShell>
   );
 }

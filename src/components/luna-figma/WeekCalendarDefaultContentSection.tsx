@@ -16,7 +16,7 @@ import { Variant42 } from "./Variant42";
 import { Variant52 } from "./Variant52";
 export function WeekCalendarDefaultContentSection() {
   return (
-    <section data-figma-node="5602:71493" id="content" className="relative box-border w-full min-w-0 min-h-[757px] flex flex-row items-start z-[2]">
+    <section data-figma-node="5602:71493" id="content" className="absolute left-0 right-0 top-[139px] z-[2] box-border h-[757px] w-full min-w-0 overflow-hidden flex flex-row items-start">
       <div data-figma-node="5602:71494" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-start gap-5 pt-[20px] pr-[20px] pb-[40px] pl-[20px]">
         <div data-figma-node="5602:71495" className="box-border flex-1 min-w-0 h-[697px] relative flex flex-col items-start">
           <div data-figma-node="5602:71496" className="box-border self-stretch min-w-0 h-[695px] shrink-0 relative flex flex-row items-start">

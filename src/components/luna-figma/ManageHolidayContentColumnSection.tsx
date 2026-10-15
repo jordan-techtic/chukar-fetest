@@ -22,9 +22,9 @@ export function ManageHolidayContentColumnSection() {
   const paginationPage2 = useFigmaPaginationProps(2);
 
   return (
-    <section data-figma-node="5621:28294" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5621:28294" className="absolute left-0 right-0 top-[169px] z-[2] box-border h-[601px] w-full min-w-0 overflow-hidden flex flex-col items-start">
       <div data-figma-node="5621:28295" className="box-border self-stretch min-w-0 flex-1 min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
-        <div data-figma-node="5621:28296" role="table" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-background-ffffff overflow-x-auto overflow-y-hidden max-w-full">
+        <div data-figma-node="5621:28296" role="table" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-background-ffffff overflow-x-auto overflow-y-hidden max-w-full">
           <div data-figma-node="5621:28297" role="row" className="box-border self-stretch h-auto shrink-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-b border-[#e2d9d0] bg-background-tinted-faf3e8 min-w-[1360px]">
             <p data-figma-node="5621:28298" role="columnheader" className="box-border flex-1 min-w-0 h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] uppercase text-left text-text-body-231f20">Holiday Name</p>
             <p data-figma-node="5621:28299" role="columnheader" className="box-border w-[150px] shrink-0 h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] uppercase text-left whitespace-nowrap text-text-body-231f20">START DATE</p>

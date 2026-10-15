@@ -9,13 +9,16 @@ import {
 } from "lucide-react";
 import { Toaster as Sonner, type ToasterProps } from "sonner";
 
-export function Toaster({ position = "top-right", ...props }: ToasterProps) {
+import { cn } from "@/lib/utils/cn";
+
+export function Toaster({ position = "top-right", className, ...props }: ToasterProps) {
   return (
     <Sonner
       theme="light"
       position={position}
-      className="toaster group"
+      richColors
       closeButton
+      className={cn("toaster group", className)}
       icons={{
         success: <CircleCheckIcon className="h-4 w-4 shrink-0" aria-hidden />,
         info: <InfoIcon className="h-4 w-4 shrink-0" aria-hidden />,

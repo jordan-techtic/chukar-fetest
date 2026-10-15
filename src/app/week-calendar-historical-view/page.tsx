@@ -14,8 +14,10 @@ export const metadata: Metadata = { title: "Week-calendar-Historical view" };
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="week-calendar-historical-view">
-      <WeekCalendarHistoricalPage />
-    </FigmaScreenDataProvider>
+    <div className="w-full flex flex-col">
+      <FigmaScreenDataProvider routePath="week-calendar-historical-view">
+        <WeekCalendarHistoricalPage />
+      </FigmaScreenDataProvider>
+    </div>
   );
 }
