@@ -5,6 +5,7 @@ import { ErrorBoundary } from "@/components/ui/error-boundary";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
+import "@/components/luna-figma/figma-fonts.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +16,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-[var(--color-background)] font-[family-name:var(--font-onest)] antialiased text-[var(--color-text-primary)]">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      </head>
+      <body className="min-h-screen bg-[var(--color-background)] font-[family-name:var(--font-inter)] antialiased text-[var(--color-text-primary)]">
         <ThemeProvider>
           <ErrorBoundary>
             <a
