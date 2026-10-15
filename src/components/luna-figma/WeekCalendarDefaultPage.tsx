@@ -173,7 +173,7 @@ export function WeekCalendarDefaultPage() {
       {dialog_act_0dd4ae302327.isOpen && (
         <div
           data-figma-node="5621:27979"
-          className="fixed inset-0 z-[9999] flex items-stretch justify-end bg-black/50 backdrop-blur-sm pl-[1020px]"
+          className="fixed left-[0px] top-[0px] z-[9999] flex h-[884px] w-[1440px] max-w-none items-stretch justify-end bg-[rgba(26,32,44,0.584)] pl-[1020px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
@@ -194,7 +194,7 @@ export function WeekCalendarDefaultPage() {
       {dialog_act_c77f170c369e.isOpen && (
         <div
           data-figma-node="5279:24938"
-          className="fixed inset-0 z-[9999] flex items-stretch justify-end bg-black/50 backdrop-blur-sm pl-[788px]"
+          className="fixed left-[0px] top-[0px] z-[9999] flex h-[940px] w-[1440px] max-w-none items-stretch justify-end bg-[rgba(26,32,44,0.584)] pl-[788px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

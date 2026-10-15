@@ -22,11 +22,24 @@ export function AnnualCalendarDefaultModal() {
       className="relative max-w-full"
       style={{ width: 652, height: 940 }}
     >
-      <div data-figma-node="5279:24733" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
-        <div data-figma-node="5279:24734" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
-          <AnnualCalendarDefaultSection_n_5279_24939 />
-        </div>
+      <div
+        data-figma-node="5279:24733"
+        className="box-border absolute left-[0px] top-[0px] w-full h-[80px] overflow-hidden bg-[#ffffff] pt-[15px] pb-[15px] pl-[20px] pr-[20px]"
+      >
+        <a
+          data-figma-node="I5279:24733;5217:13742"
+          data-figma-action="act_87aa11910314"
+          href="/marketing-calendar/week"
+          className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0"
+        >
+          Historical View
+        </a>
       </div>
+      <div
+        data-figma-node="5279:24734"
+        className="box-border absolute left-[0px] top-[80px] w-full h-[59px] overflow-hidden bg-[#faf3e8] pt-[15px] pb-[15px] pl-[20px] pr-[20px]"
+      />
+      <AnnualCalendarDefaultSection_n_5279_24939 />
     </div>
   );
 }

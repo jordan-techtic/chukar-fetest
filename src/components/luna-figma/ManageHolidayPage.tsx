@@ -28,9 +28,9 @@ export function ManageHolidayPage() {
       data-figma-bound={screenData.bound}
       data-figma-frame="5621:28270"
       aria-busy={screenData.loadingReads || undefined}
-      className="relative flex min-h-screen w-full min-w-0 flex-col bg-background-tinted-fff9f3"
+      className="relative flex min-h-screen w-full min-w-0 flex-col overflow-x-hidden bg-background-tinted-fff9f3"
     >
-      <main id="main-content" className="relative flex min-h-[770px] w-full min-w-0 flex-1 flex-col">
+      <main id="main-content" className="relative flex min-h-0 w-full min-w-0 flex-1 flex-col">
         <ManageHolidayTitleRowSection />
         <ManageHolidayContentColumnSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
@@ -99,7 +99,7 @@ export function ManageHolidayPage() {
       {dialog_act_6441534980cd.isOpen && (
         <div
           data-figma-node="5279:24938"
-          className="fixed inset-0 z-[9999] flex items-stretch justify-end bg-black/50 backdrop-blur-sm pl-[788px]"
+          className="fixed left-[0px] top-[0px] z-[9999] flex h-[940px] w-[1440px] max-w-none items-stretch justify-end bg-[rgba(26,32,44,0.584)] pl-[788px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

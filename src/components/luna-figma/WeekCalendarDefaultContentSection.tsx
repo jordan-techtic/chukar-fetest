@@ -42,7 +42,7 @@ export function WeekCalendarDefaultContentSection() {
                     </div>
                     <div data-figma-node="5602:71517" className="box-border w-max max-w-[min(14px,100%)] h-[132px] shrink-0 relative flex flex-col items-start justify-center gap-2.5">
                       <p data-figma-node="5602:71518" className="box-border w-[14px] h-[50px] shrink-0 [writing-mode:vertical-rl] whitespace-nowrap rotate-180 font-onest text-[11px] font-[500] leading-[14px] uppercase text-left truncate min-w-0 text-background-ffffff">Sep 1 - 13</p>
-                      <p data-figma-node="5602:71519" className="box-border w-[14px] h-[75px] shrink-0 [writing-mode:vertical-rl] whitespace-nowrap rotate-180 font-onest text-[11px] font-[700] leading-[14px] uppercase text-left text-background-ffffff">Cherry harvest</p>
+                      <p data-figma-node="5602:71519" className="box-border w-[14px] h-[75px] shrink-0 [writing-mode:vertical-rl] whitespace-nowrap rotate-180 font-onest text-[11px] font-[700] leading-[14px] uppercase text-left text-background-ffffff">Cherry ha...</p>
                     </div>
                   </div>
                   <div data-figma-node="5602:71520" className="box-border w-[16px] h-[360px] shrink-0 relative flex flex-col items-center gap-2.5 pt-[10px] pb-[10px] bg-neutral-mid-f1b743">
@@ -137,7 +137,7 @@ export function WeekCalendarDefaultContentSection() {
                           </div>
                         </div>
                       </div>
-                      <Variant42 data-figma-node="I5602:71582;5725:47922" data-figma-component="5602:68955" className="relative" />
+                      <Variant42 className="relative" />
                       <Variant42 data-figma-node="I5602:71582;5725:52065" data-figma-component="5602:68955" className="relative" />
                     </div>
                   </div>
@@ -1840,7 +1840,7 @@ export function WeekCalendarDefaultContentSection() {
       <div data-figma-node="5602:73702" className="box-border w-[360px] shrink-0 h-[745px] relative flex flex-col items-start gap-4 pt-[20px] pr-[20px] pb-[20px] pl-[20px] border-l border-[#e2d9d0] bg-background-f8f8f8">
         <div data-figma-node="5602:73703" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
           <div data-figma-node="5602:73704" className="box-border w-max max-w-[min(164px,100%)] h-auto relative flex flex-row items-center gap-2">
-            <Memo data-figma-node="5602:73705" data-figma-component="5111:6989" className="relative" />
+            <Memo className="relative overflow-hidden" />
             <p data-figma-node="5602:73706" className="box-border w-max max-w-[min(136px,100%)] h-auto min-h-[20px] font-onest text-[16px] font-[700] leading-[20px] text-left whitespace-nowrap text-text-body-231f20">September Notes</p>
           </div>
           <p data-figma-node="5602:73707" className="box-border w-max max-w-[min(43px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[500] leading-[15px] text-left whitespace-nowrap text-text-muted-686868">3 notes</p>

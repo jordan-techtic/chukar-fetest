@@ -6,8 +6,24 @@
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
-import { redirect } from "next/navigation";
+import type { Metadata } from "next";
+import { AppShell } from "@/components/layout/AppShell";
+import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
+import { WeekCalendarHistoricalPage } from "@/components/luna-figma/WeekCalendarHistoricalPage";
 
-export default function Page() {
-  redirect("/week-calendar-historical-view");
+export const metadata: Metadata = { title: "Week calendar historical" };
+
+type PageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function Page({ params }: PageProps) {
+  await params;
+  return (
+    <AppShell>
+      <FigmaScreenDataProvider routePath="week-calendar-historical-view">
+        <WeekCalendarHistoricalPage />
+      </FigmaScreenDataProvider>
+    </AppShell>
+  );
 }

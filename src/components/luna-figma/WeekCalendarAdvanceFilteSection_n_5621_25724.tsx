@@ -10,8 +10,8 @@ import { figmaUnresolvedActionProps } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 export function WeekCalendarAdvanceFilteSection_n_5621_25724() {
   return (
-    <section data-figma-node="5621:25724" className="relative box-border w-full min-w-0 min-h-[884px] border-l border-[#e2d9d0] flex flex-col items-start gap-[25px] bg-background-ffffff shadow-[-4px_0px_20px_0px_rgba(0,0,0,0.122)]">
-      <div data-figma-node="5621:25768" className="relative box-border self-stretch min-w-0 shrink-0 pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
+    <section data-figma-node="5621:25724" className="relative box-border w-full min-w-0 min-h-[884px] border-l border-[#e2d9d0] bg-background-ffffff shadow-[-4px_0px_20px_0px_rgba(0,0,0,0.122)]">
+      <div data-figma-node="5621:25768" className="box-border absolute left-[0px] top-[0px] w-full h-[80px] overflow-hidden pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
       <a data-figma-node="I5621:25768;5217:13742" data-figma-action="act_caaf16a118b9" href="/week-calendar-historical-view" className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0">Historical View</a>
       <div data-figma-node="5621:28151" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
         <div data-figma-node="5621:28152" className="box-border w-max max-w-[min(126px,100%)] h-auto relative flex flex-row items-center gap-2">
@@ -24,7 +24,8 @@ export function WeekCalendarAdvanceFilteSection_n_5621_25724() {
         </div>
       </div>
       </div>
-      <div data-figma-node="5621:25769" className="box-border self-stretch min-w-0 shrink-0 pt-[15px] pb-[15px] pl-[20px] pr-[20px] flex flex-col items-start gap-[25px]">
+      <div data-figma-node="5621:25769" className="box-border absolute left-[0px] top-[80px] w-full h-[59px] overflow-hidden bg-[#faf3e8] pt-[15px] pb-[15px] pl-[20px] pr-[20px]" />
+      <div className="box-border relative w-full pt-[139px] pl-[20px] pr-[20px] pb-[15px] flex flex-col items-start gap-[25px]">
       <div data-figma-node="5621:25729" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-[15px]">
         <p data-figma-node="5621:25730" className="box-border w-max max-w-[min(146px,100%)] h-auto min-h-[17px] shrink-0 font-onest text-[13px] font-[700] leading-[17px] uppercase text-left whitespace-nowrap text-text-muted-686868">Activity Categories</p>
         <div data-figma-node="5621:25731" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-2.5">

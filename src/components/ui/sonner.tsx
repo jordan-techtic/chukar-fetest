@@ -1,5 +1,7 @@
 "use client";
 
+import "./sonner-theme.css";
+
 import {
   CircleCheckIcon,
   InfoIcon,
@@ -23,7 +25,7 @@ export function Toaster({ position = "top-right", className, ...props }: Toaster
       toastOptions={{
         classNames: {
           toast: cn(
-            "group toast group-[.toaster]:rounded-[var(--radius-8)] group-[.toaster]:border group-[.toaster]:border-border group-[.toaster]:bg-card group-[.toaster]:text-foreground group-[.toaster]:shadow-[var(--shadow-drop-shadow-2)] group-[.toaster]:font-[family-name:var(--font-inter)]",
+            "group toast group-[.toaster]:rounded-[var(--radius-8)] group-[.toaster]:border group-[.toaster]:border-border group-[.toaster]:bg-card group-[.toaster]:text-foreground group-[.toaster]:shadow-[var(--shadow-drop-shadow-2)] group-[.toaster]:font-[family-name:var(--font-onest)]",
           ),
           title: "group-[.toast]:text-body-sm-11 group-[.toast]:text-foreground",
           description: "group-[.toast]:text-body-sm-5 group-[.toast]:text-muted-foreground",

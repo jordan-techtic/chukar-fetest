@@ -24,10 +24,25 @@ export function MonthlyCalendarNotesModal() {
       className="relative max-w-full"
       style={{ width: 520, height: 497 }}
     >
-      <div data-figma-node="5549:55513" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
-        <div data-figma-node="5549:55514" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
-          <MonthlyCalendarNotesModalWindowSection />
-        </div>
+      <div
+        data-figma-node="5549:55513"
+        className="box-border absolute left-[0px] top-[0px] w-full h-[80px] overflow-hidden bg-[#ffffff] pt-[15px] pb-[15px] pl-[20px] pr-[20px]"
+      >
+        <a
+          data-figma-node="I5549:55513;5217:13742"
+          data-figma-action="act_499abfb5824f"
+          href="/marketing-calendar/week"
+          className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0"
+        >
+          Historical View
+        </a>
+      </div>
+      <div
+        data-figma-node="5549:55514"
+        className="box-border absolute left-[0px] top-[80px] w-full h-[59px] overflow-hidden bg-[#faf3e8] pt-[15px] pb-[15px] pl-[20px] pr-[20px]"
+      />
+      <div className="box-border absolute left-[0px] top-[139px] w-full">
+        <MonthlyCalendarNotesModalWindowSection />
       </div>
       {dialog_act_0cb0a53c99a1.isOpen && (
         <div
@@ -35,9 +50,13 @@ export function MonthlyCalendarNotesModal() {
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
-          ref={(el) => { el?.focus(); }}
+          ref={(el) => {
+            el?.focus();
+          }}
           onClick={dialog_act_0cb0a53c99a1.close}
-          onKeyDown={(e) => { if (e.key === "Escape") dialog_act_0cb0a53c99a1.close(); }}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") dialog_act_0cb0a53c99a1.close();
+          }}
           data-figma-dialog="act_0cb0a53c99a1"
         >
           <div
