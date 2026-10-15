@@ -22,7 +22,11 @@ export function AnnualCalendarDefaultModal() {
       className="relative max-w-full"
       style={{ width: 652, height: 940 }}
     >
-        <AnnualCalendarDefaultSection_n_5279_24939 />
+      <div data-figma-node="5279:24733" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
+        <div data-figma-node="5279:24734" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
+          <AnnualCalendarDefaultSection_n_5279_24939 />
+        </div>
+      </div>
     </div>
   );
 }

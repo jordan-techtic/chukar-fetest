@@ -11,6 +11,8 @@ import { Button } from "@/components/ui/button";
 export function WeekCalendarAdvanceFilteSection_n_5621_25724() {
   return (
     <section data-figma-node="5621:25724" className="relative box-border w-full min-w-0 min-h-[884px] border-l border-[#e2d9d0] flex flex-col items-start gap-[25px] bg-background-ffffff shadow-[-4px_0px_20px_0px_rgba(0,0,0,0.122)]">
+      <div data-figma-node="5621:25768" className="relative box-border self-stretch min-w-0 shrink-0 pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
+      <a data-figma-node="I5621:25768;5217:13742" data-figma-action="act_caaf16a118b9" href="/week-calendar-historical-view" className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0">Historical View</a>
       <div data-figma-node="5621:28151" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
         <div data-figma-node="5621:28152" className="box-border w-max max-w-[min(126px,100%)] h-auto relative flex flex-row items-center gap-2">
           <h1 data-figma-node="5621:28154" className="box-border w-max max-w-[min(126px,100%)] h-auto min-h-[23px] font-onest text-[18px] font-[700] leading-[23px] text-left whitespace-nowrap text-text-body-231f20">Advance Filter</h1>
@@ -21,6 +23,8 @@ export function WeekCalendarAdvanceFilteSection_n_5621_25724() {
 </div></button></div>
         </div>
       </div>
+      </div>
+      <div data-figma-node="5621:25769" className="box-border self-stretch min-w-0 shrink-0 pt-[15px] pb-[15px] pl-[20px] pr-[20px] flex flex-col items-start gap-[25px]">
       <div data-figma-node="5621:25729" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-[15px]">
         <p data-figma-node="5621:25730" className="box-border w-max max-w-[min(146px,100%)] h-auto min-h-[17px] shrink-0 font-onest text-[13px] font-[700] leading-[17px] uppercase text-left whitespace-nowrap text-text-muted-686868">Activity Categories</p>
         <div data-figma-node="5621:25731" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-2.5">
@@ -84,6 +88,7 @@ export function WeekCalendarAdvanceFilteSection_n_5621_25724() {
         {/* LUNA-UNRESOLVED-ACTION: no prototype reaction or submit binding found for this control (node 5621:25762) — wire manually */}
 <Button data-figma-node="5621:25762" type="button" data-figma-unresolved-action="true" {...figmaUnresolvedActionProps("5621:25762")} className="box-border flex-1 min-w-0 h-auto rounded-[6px] border-[#e2d9d0] border-[1px] pt-[12px] pr-[16px] pb-[12px] pl-[16px] inline-flex items-center justify-center whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-text-body-231f20 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 shadow-none"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-text-muted-686868">Clear All</span></Button>
         <a data-figma-node="5621:25764" href="/week-calendar-default-1" className="box-border flex-1 min-w-0 h-auto rounded-[6px] pt-[12px] pr-[16px] pb-[12px] pl-[16px] inline-flex items-center justify-center whitespace-nowrap bg-brand-primary-a21d35 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"><span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-background-ffffff">Apply Filters</span></a>
+      </div>
       </div>
     </section>
   );

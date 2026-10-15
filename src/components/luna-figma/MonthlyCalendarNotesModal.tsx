@@ -24,7 +24,11 @@ export function MonthlyCalendarNotesModal() {
       className="relative max-w-full"
       style={{ width: 520, height: 497 }}
     >
-        <MonthlyCalendarNotesModalWindowSection />
+      <div data-figma-node="5549:55513" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
+        <div data-figma-node="5549:55514" className="box-border h-full w-full pt-[15px] pb-[15px] pl-[20px] pr-[20px]">
+          <MonthlyCalendarNotesModalWindowSection />
+        </div>
+      </div>
       {dialog_act_0cb0a53c99a1.isOpen && (
         <div
           className="fixed inset-0 z-[9999] flex items-stretch justify-end bg-black/50 backdrop-blur-sm"

@@ -8,7 +8,7 @@
 export function Variant4({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
   <div data-figma-node="I5602:71660;5556:77452" data-figma-component="5217:10959" className={`box-border w-full min-w-0 h-auto rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] flex flex-row items-start gap-1 ${className}`} {...rest}>
-    <div data-figma-node="I5602:71660;5556:77452;5217:10960" className="box-border flex-1 min-w-0 h-auto rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-background-tinted-fcf3f4">
+    <div data-figma-node="I5602:71660;5556:77452;5217:10960" className="box-border flex-1 min-w-0 h-auto overflow-hidden rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-background-tinted-fcf3f4">
       <div data-figma-node="I5602:71660;5556:77452;5217:10961" className="box-border flex-1 min-w-0 h-auto relative flex flex-col items-start gap-1">
         <div data-figma-node="I5602:71660;5556:77452;5725:59480" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-1.5">
           <div data-figma-node="I5602:71660;5556:77452;5725:59481" className="box-border w-[14px] shrink-0 h-[14px] flex flex-row items-center gap-1"><button type="button" aria-label="fi-rr-envelope" className="inline-flex items-center justify-center"><div data-figma-node="I5602:71660;5556:77452;5725:59483" data-figma-component="5121:8609" className="box-border w-[14px] h-[14px] overflow-hidden relative">

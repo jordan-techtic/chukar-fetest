@@ -7,6 +7,7 @@
  * luna-spec-codegen: owned-layout
  */
 import type { Metadata } from "next";
+import { AppShell } from "@/components/layout/AppShell";
 import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
 import { WeekCalendarDefaultPage } from "@/components/luna-figma/WeekCalendarDefaultPage";
 
@@ -14,8 +15,10 @@ export const metadata: Metadata = { title: "Week-calendar-default" };
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="marketing-calendar/week">
-      <WeekCalendarDefaultPage />
-    </FigmaScreenDataProvider>
+    <AppShell>
+      <FigmaScreenDataProvider routePath="marketing-calendar/week">
+        <WeekCalendarDefaultPage />
+      </FigmaScreenDataProvider>
+    </AppShell>
   );
 }

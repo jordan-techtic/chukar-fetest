@@ -77,7 +77,8 @@ export function ManageHolidayPage() {
 
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm"
+          data-figma-node="5621:29002"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
@@ -97,7 +98,8 @@ export function ManageHolidayPage() {
 
       {dialog_act_6441534980cd.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-stretch justify-end bg-black/50 backdrop-blur-sm"
+          data-figma-node="5279:24938"
+          className="fixed inset-0 z-[9999] flex items-stretch justify-end bg-black/50 backdrop-blur-sm pl-[788px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
