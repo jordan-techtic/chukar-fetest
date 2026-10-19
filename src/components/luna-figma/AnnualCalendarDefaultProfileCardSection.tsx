@@ -11,7 +11,7 @@ import { FiRrEye } from "./FiRrEye";
 import { Move } from "./Move";
 export function AnnualCalendarDefaultProfileCardSection() {
   return (
-    <section data-figma-node="5645:60761" className="relative box-border w-[86px] max-w-full ml-[412px] min-h-[114px] pt-[12px] pb-[12px] pl-[12px] pr-[12px] border-[#e2d9d0] border-[1px] rounded-[12px] flex flex-col items-start gap-6 bg-surface shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)] z-[3]">
+    <section data-figma-node="5645:60761" className="absolute left-[412px] top-[555px] box-border h-[114px] w-[86px] max-w-full pt-[12px] pb-[12px] pl-[12px] pr-[12px] border-[#e2d9d0] border-[1px] rounded-[12px] flex flex-col items-start gap-6 bg-[#ffffff] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)] z-[3] overflow-hidden">
       <div data-figma-node="5645:60762" className="box-border w-[62px] h-auto shrink-0 relative flex flex-col items-start gap-2.5">
         <div data-figma-node="5645:60763" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-2.5">
           <FiRrEye data-figma-node="5645:60764" data-figma-component="5121:8632" className="box-border w-[14px] shrink-0 h-[14px] overflow-hidden" />

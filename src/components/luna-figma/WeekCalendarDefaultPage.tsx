@@ -9,6 +9,8 @@
  */
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+
 import "./figma-theme.css";
 import "./figma-responsive.css";
 import { useFigmaScreenData, useDialogState } from "./useFigmaScreenData";
@@ -33,13 +35,45 @@ export function WeekCalendarDefaultPage() {
   const dialog_act_0dd4ae302327 = useDialogState("act_0dd4ae302327");
   const dialog_act_c77f170c369e = useDialogState("act_c77f170c369e");
   const dialog_act_9e536ea73c9b = useDialogState("act_9e536ea73c9b");
+  const viewportShellRef = useRef<HTMLDivElement>(null);
+  const viewportInnerRef = useRef<HTMLDivElement>(null);
+  const [viewportScale, setViewportScale] = useState(1);
+  const [viewportShellHeight, setViewportShellHeight] = useState<number | undefined>();
+
+  useEffect(() => {
+    const shell = viewportShellRef.current;
+    const inner = viewportInnerRef.current;
+    if (!shell || !inner) return;
+
+    const updateScale = () => {
+      const scale = shell.clientWidth / 1440;
+      setViewportScale(scale);
+      setViewportShellHeight(inner.offsetHeight * scale);
+    };
+
+    updateScale();
+    const observer = new ResizeObserver(updateScale);
+    observer.observe(shell);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div data-figma-bound={screenData.bound}
-      data-figma-frame="5602:71490" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+    <div
+      ref={viewportShellRef}
+      className="w-full overflow-hidden"
+      style={{ height: viewportShellHeight }}
+    >
+      <div
+        ref={viewportInnerRef}
+        data-figma-bound={screenData.bound}
+        data-figma-frame="5602:71490"
+        className="relative flex min-h-screen w-[1440px] min-w-0 flex-col bg-background"
+        style={{ transform: `scale(${viewportScale})`, transformOrigin: "top left" }}
+      >
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col min-h-[896px]">
         <WeekCalendarDefaultContentSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <div data-figma-node="5602:71491" data-figma-component="5273:20995" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-surface">
+          <div data-figma-node="5602:71491" data-figma-component="5273:20995" className="pointer-events-auto box-border h-[80px] w-full min-w-0 absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-surface overflow-hidden w-[1440px]">
             <div data-figma-node="I5602:71491;5217:13714" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-[30px]">
               <div data-figma-node="I5602:71491;5217:13715" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-3">
                 <img data-figma-node="I5602:71491;5217:13716" src="/assets/figma/I5602-71491-5217-13716.png" alt="" aria-hidden="true" width={54} height={50} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[54px] shrink-0 h-[50px] rounded-[10px] max-w-none object-cover object-top" />
@@ -67,7 +101,7 @@ export function WeekCalendarDefaultPage() {
           </div>
         </div>
         <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div data-figma-node="5602:71492" data-figma-component="5273:20994" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[80px] z-[1] [--fx:0] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-color-9">
+          <div data-figma-node="5602:71492" data-figma-component="5273:20994" className="pointer-events-auto box-border h-[59px] w-full min-w-0 absolute left-[0px] top-[80px] z-[1] [--fx:0] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-color-9 overflow-hidden w-[1440px] bg-[#faf3e8]">
             <div data-figma-node="I5602:71492;5273:20960" className="box-border w-[1400px] shrink-0 h-auto relative flex flex-row items-center justify-between gap-5">
               <div data-figma-node="I5602:71492;5273:20961" className="box-border w-[804px] shrink-0 h-auto overflow-hidden relative flex flex-row items-center gap-3">
                 <FiRrAngleSmallLeft data-figma-node="I5602:71492;5273:20963" data-figma-component="5121:8081" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden" />
@@ -174,7 +208,9 @@ export function WeekCalendarDefaultPage() {
 
       {dialog_act_9e536ea73c9b.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5549:56106"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center overflow-hidden pt-[194px] pr-[460px] pb-[194px] pl-[460px]"
+          style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
@@ -191,6 +227,7 @@ export function WeekCalendarDefaultPage() {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }

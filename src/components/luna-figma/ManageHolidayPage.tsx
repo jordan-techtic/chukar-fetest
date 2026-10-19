@@ -26,11 +26,11 @@ export function ManageHolidayPage() {
   return (
     <div data-figma-bound={screenData.bound}
       data-figma-frame="5621:28270" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col min-h-[770px]">
         <ManageHolidayTitleRowSection />
         <ManageHolidayContentColumnSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <a data-figma-node="5621:28271" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current">
+          <a data-figma-node="5621:28271" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border h-[80px] w-full min-w-0 absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current overflow-hidden bg-[#ffffff]">
             <div data-figma-node="I5621:28271;5217:13714" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-[30px]">
               <div data-figma-node="I5621:28271;5217:13715" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-3">
                 <img data-figma-node="I5621:28271;5217:13716" src="/assets/figma/I5621-28271-5217-13716.png" alt="" aria-hidden="true" width={54} height={50} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[54px] shrink-0 h-[50px] rounded-[10px] max-w-none object-cover object-top" />
@@ -73,7 +73,9 @@ export function ManageHolidayPage() {
 
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5621:29002"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center overflow-hidden pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
+          style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
@@ -83,10 +85,13 @@ export function ManageHolidayPage() {
           data-figma-dialog="act_8e0ab36f39bd"
         >
           <div
-            className="relative max-h-[90vh] overflow-auto rounded-lg shadow-2xl"
+            data-figma-node="5621:28801"
+            className="relative box-border max-h-full overflow-auto rounded-lg shadow-2xl pt-[15px] pb-[15px] pl-[20px] pr-[20px]"
             onClick={(e) => e.stopPropagation()}
           >
-            <AddHolidayModal />
+            <div data-figma-node="5621:28802" className="box-border pt-[20px] pr-[40px] pb-[20px] pl-[40px]">
+              <AddHolidayModal />
+            </div>
           </div>
         </div>
       )}

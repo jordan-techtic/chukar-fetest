@@ -31,7 +31,7 @@ export function MonthlyCalendarHistoricalPage() {
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <MonthlyCalendarHistoricaContactSection />
         <div className="pointer-events-none absolute inset-0 z-[0]">
-          <a data-figma-node="5645:33754" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current">
+          <a data-figma-node="5645:33754" data-figma-component="5273:20995" href="/marketing-calendar/week" className="pointer-events-auto box-border h-[80px] w-full min-w-0 absolute left-[0px] top-[0px] z-[0] [--fx:0] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current overflow-hidden w-[1440px]">
             <div data-figma-node="I5645:33754;5217:13714" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-[30px]">
               <div data-figma-node="I5645:33754;5217:13715" className="box-border w-max max-w-[min(282px,100%)] h-auto relative flex flex-row items-center gap-3">
                 <img data-figma-node="I5645:33754;5217:13716" src="/assets/figma/I5645-33754-5217-13716.png" alt="" aria-hidden="true" width={54} height={50} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[54px] shrink-0 h-[50px] rounded-[10px] max-w-none object-cover object-top" />
@@ -59,7 +59,7 @@ export function MonthlyCalendarHistoricalPage() {
           </a>
         </div>
         <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div data-figma-node="5645:33755" data-figma-component="5273:21161" className="pointer-events-auto box-border w-full min-w-0 h-auto absolute left-[0px] top-[80px] z-[1] [--fx:0] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-color-9">
+          <div data-figma-node="5645:33755" data-figma-component="5273:21161" className="pointer-events-auto box-border h-[59px] w-full min-w-0 absolute left-[0px] top-[80px] z-[1] [--fx:0] flex flex-row items-center justify-between pt-[15px] pb-[15px] pl-[20px] pr-[20px] border-b border-[#e2d9d0] bg-color-9 overflow-hidden w-[1440px] bg-[#faf3e8]">
             <div data-figma-node="I5645:33755;5273:21162" className="box-border w-[1400px] shrink-0 h-auto relative flex flex-row items-center justify-between gap-3">
               <div data-figma-node="I5645:33755;5273:21163" className="box-border w-[804px] shrink-0 h-auto overflow-hidden relative flex flex-row items-center gap-3">
                 <h2 data-figma-node="I5645:33755;5273:21164" className="box-border w-max max-w-[min(116px,100%)] h-auto min-h-[28px] font-onest text-[22px] font-[700] leading-[28px] text-left whitespace-nowrap text-text-primary">2025-2026</h2>
