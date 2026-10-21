@@ -1,0 +1,14 @@
+/**
+ * Luna generated shared component
+ * Figma componentId: 5725:71390
+ * Component: Button6
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ */
+export function Button6({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
+  return (
+  <div data-figma-node="I5645:45615;5602:64575;5725:102097" data-figma-component="5725:71390" className={`box-border w-[16px] h-[16px] rounded-[4px] relative flex flex-row items-center justify-center gap-2.5 pr-[6px] pl-[6px] bg-color-60 ${className}`} {...rest}>
+    <p data-figma-node="I5645:45615;5602:64575;5725:102097;5725:71388" className="box-border w-max max-w-[min(8px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-text-primary">H</p>
+  </div>
+  );
+}
