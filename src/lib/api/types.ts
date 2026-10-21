@@ -27,3 +27,34 @@ export interface HealthData {
   organization: string;
   role: string;
 }
+
+export type HolidayStatus = "active" | "inactive";
+
+export interface HolidayOut {
+  id: string;
+  name: string;
+  start_date: string;
+  end_date: string;
+  status: HolidayStatus;
+  created_at: string;
+  updated_at: string;
+  last_active_at: string | null;
+}
+
+export interface HolidayListData {
+  items: HolidayOut[];
+}
+
+export interface HolidayCreateBody {
+  name: string;
+  start_date: string;
+  end_date: string;
+  status?: HolidayStatus;
+}
+
+export interface HolidayUpdateBody {
+  name?: string | null;
+  start_date?: string | null;
+  end_date?: string | null;
+  status?: HolidayStatus | null;
+}

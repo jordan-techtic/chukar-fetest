@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, LayoutDashboard } from "lucide-react";
+import { CalendarDays, Home, LayoutDashboard, Users, Palmtree } from "lucide-react";
 
 import { cn } from "@/lib/utils/cn";
 
@@ -14,6 +14,14 @@ interface SidebarProps {
 const NAV_ITEMS = [
   { href: "/", label: "Home", icon: Home },
   { href: "/workspace", label: "Workspace", icon: LayoutDashboard },
+  { href: "/week-calendar-default", label: "Week Calendar", icon: CalendarDays },
+  {
+    href: "/marketing-team-member/week-calendar-historical/current",
+    label: "Historical View",
+    icon: CalendarDays,
+  },
+  { href: "/manage-holiday", label: "Manage Holiday", icon: Palmtree },
+  { href: "/manage-users", label: "Manage Users", icon: Users },
 ] as const;
 
 export function Sidebar({ mobileOpen, onNavigate }: SidebarProps) {
@@ -30,7 +38,10 @@ export function Sidebar({ mobileOpen, onNavigate }: SidebarProps) {
     >
       <ul className="flex flex-col gap-[var(--spacing-gap-8)]">
         {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
-          const active = pathname === href;
+          const active =
+            pathname === href ||
+            (href.includes("week-calendar-historical") &&
+              pathname.startsWith("/marketing-team-member/week-calendar-historical"));
           return (
             <li key={href}>
               <Link

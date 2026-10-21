@@ -7,7 +7,9 @@ import {
   OctagonXIcon,
   TriangleAlertIcon,
 } from "lucide-react";
-import { Toaster as Sonner, type ToasterProps } from "sonner";
+import { toast, Toaster as Sonner, type ToasterProps } from "sonner";
+
+export { toast };
 
 export function Toaster({ position = "top-right", ...props }: ToasterProps) {
   return (
