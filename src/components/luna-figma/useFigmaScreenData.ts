@@ -236,7 +236,7 @@ async function apiRequest(
     markSessionRejected();
     clearReadPayloads();
   }
-  const text = await response.text();
+  const text = (await response.text()).trim();
   let parsed: unknown = null;
   if (text) {
     try {

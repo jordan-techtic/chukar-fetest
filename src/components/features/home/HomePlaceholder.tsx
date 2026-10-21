@@ -64,8 +64,18 @@ export function HomePlaceholder() {
   };
 
   const handleDevAccess = () => {
-    grantDevRouteAccess();
-    toast.success("Dev workspace access granted for route guard verification.");
+    void (async () => {
+      grantDevRouteAccess();
+      const { applyDevAuthTokensFromServer } = await import(
+        "@/lib/auth/dev-auth-tokens"
+      );
+      const usingApiJwt = await applyDevAuthTokensFromServer({ force: true });
+      toast.success(
+        usingApiJwt
+          ? "Dev API token applied — workspace + Bearer auth ready."
+          : "Dev workspace access granted for route guard verification.",
+      );
+    })();
   };
 
   return (

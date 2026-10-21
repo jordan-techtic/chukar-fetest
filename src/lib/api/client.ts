@@ -22,6 +22,26 @@ const apiClient = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
+  // Empty 204/200 bodies must not throw "Unexpected end of JSON input".
+  transformResponse: [
+    (data) => {
+      if (data === "" || data === null || data === undefined) {
+        return null;
+      }
+      if (typeof data !== "string") {
+        return data;
+      }
+      const trimmed = data.trim();
+      if (!trimmed) {
+        return null;
+      }
+      try {
+        return JSON.parse(trimmed);
+      } catch {
+        return data;
+      }
+    },
+  ],
 });
 
 apiClient.interceptors.request.use((config) => {
