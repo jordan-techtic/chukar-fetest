@@ -57,6 +57,36 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     "responseUnwrap": "data",
     "valueType": "string"
   },
+  "5621:28308": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28308",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      0,
+      "start_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5621:28498": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28498",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      0,
+      "end_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
   "5621:28319": {
     "evidence": "repeated_cards",
     "format": null,
@@ -85,6 +115,36 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     ],
     "responseUnwrap": "data",
     "valueType": "string"
+  },
+  "5621:28500": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28500",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      1,
+      "start_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5621:28501": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28501",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      1,
+      "end_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
   },
   "5621:28334": {
     "evidence": "repeated_cards",
@@ -115,6 +175,36 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     "responseUnwrap": "data",
     "valueType": "string"
   },
+  "5621:28503": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28503",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      2,
+      "start_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5621:28504": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28504",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      2,
+      "end_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
   "5621:28349": {
     "evidence": "repeated_cards",
     "format": null,
@@ -143,6 +233,36 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     ],
     "responseUnwrap": "data",
     "valueType": "string"
+  },
+  "5621:28506": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28506",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      3,
+      "start_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5621:28507": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28507",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      3,
+      "end_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
   },
   "5621:28364": {
     "evidence": "repeated_cards",
@@ -173,6 +293,36 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     "responseUnwrap": "data",
     "valueType": "string"
   },
+  "5621:28512": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28512",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      4,
+      "start_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5621:28513": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28513",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      4,
+      "end_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
   "5621:28379": {
     "evidence": "repeated_cards",
     "format": null,
@@ -201,7 +351,37 @@ export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding
     ],
     "responseUnwrap": "data",
     "valueType": "string"
-  }
+  },
+  "5621:28515": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28515",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      5,
+      "start_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
+  "5621:28516": {
+    "evidence": "role:title",
+    "format": "MMMM d, yyyy",
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28516",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      5,
+      "end_date"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "date"
+  },
 };
 
 /** Screen frame id → read operations its display bindings consume. */

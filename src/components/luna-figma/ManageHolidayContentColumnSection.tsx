@@ -36,8 +36,8 @@ export function ManageHolidayContentColumnSection() {
 </div></button></div>
               <p data-figma-node="5621:28307" className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">{figmaTextContent("5621:28307", "New Year's Day")}</p>
             </div>
-            <p data-figma-node="5621:28308" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
-            <p data-figma-node="5621:28498" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
+            <p data-figma-node="5621:28308" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28308", "January 1, 2026")}</p>
+            <p data-figma-node="5621:28498" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28498", "January 1, 2026")}</p>
             <div data-figma-node="5621:28311" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5621:28312" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5621:28312;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28312;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
@@ -63,8 +63,8 @@ export function ManageHolidayContentColumnSection() {
 </div></button></div>
               <p data-figma-node="5621:28322" className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">{figmaTextContent("5621:28322", "Memorial Day")}</p>
             </div>
-            <p data-figma-node="5621:28500" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
-            <p data-figma-node="5621:28501" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
+            <p data-figma-node="5621:28500" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28500", "January 1, 2026")}</p>
+            <p data-figma-node="5621:28501" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28501", "January 1, 2026")}</p>
             <div data-figma-node="5621:28326" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5621:28327" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5621:28327;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28327;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
@@ -90,8 +90,8 @@ export function ManageHolidayContentColumnSection() {
 </div></button></div>
               <p data-figma-node="5621:28337" className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">{figmaTextContent("5621:28337", "4th of July")}</p>
             </div>
-            <p data-figma-node="5621:28503" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
-            <p data-figma-node="5621:28504" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
+            <p data-figma-node="5621:28503" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28503", "January 1, 2026")}</p>
+            <p data-figma-node="5621:28504" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28504", "January 1, 2026")}</p>
             <div data-figma-node="5621:28341" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5621:28342" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5621:28342;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28342;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
@@ -117,8 +117,8 @@ export function ManageHolidayContentColumnSection() {
 </div></button></div>
               <p data-figma-node="5621:28352" className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">{figmaTextContent("5621:28352", "Labor Day")}</p>
             </div>
-            <p data-figma-node="5621:28506" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
-            <p data-figma-node="5621:28507" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
+            <p data-figma-node="5621:28506" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28506", "January 1, 2026")}</p>
+            <p data-figma-node="5621:28507" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28507", "January 1, 2026")}</p>
             <div data-figma-node="5621:28356" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5621:28357" data-figma-component="5111:12395" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5621:28357;315:8184" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28357;315:8185" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
@@ -144,8 +144,8 @@ export function ManageHolidayContentColumnSection() {
 </div></button></div>
               <p data-figma-node="5621:28367" className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">{figmaTextContent("5621:28367", "Christmas Day")}</p>
             </div>
-            <p data-figma-node="5621:28512" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
-            <p data-figma-node="5621:28513" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
+            <p data-figma-node="5621:28512" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28512", "January 1, 2026")}</p>
+            <p data-figma-node="5621:28513" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28513", "January 1, 2026")}</p>
             <div data-figma-node="5621:28371" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5621:28372" data-figma-component="5111:12395" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5621:28372;315:8184" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28372;315:8185" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
@@ -171,8 +171,8 @@ export function ManageHolidayContentColumnSection() {
 </div></button></div>
               <p data-figma-node="5621:28382" className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">{figmaTextContent("5621:28382", "Robert Taylor")}</p>
             </div>
-            <p data-figma-node="5621:28515" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
-            <p data-figma-node="5621:28516" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">January 1, 2026</p>
+            <p data-figma-node="5621:28515" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28515", "January 1, 2026")}</p>
+            <p data-figma-node="5621:28516" role="cell" className="box-border w-[150px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5621:28516", "January 1, 2026")}</p>
             <div data-figma-node="5621:28386" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5621:28387" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5621:28387;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5621:28387;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
@@ -193,7 +193,7 @@ export function ManageHolidayContentColumnSection() {
           </div>
         </div>
         <div data-figma-node="5621:28394" data-figma-pagination="true" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
-          <p data-figma-node="5621:28395" className="box-border w-max max-w-[min(145px,100%)] h-auto min-h-[17px] font-onest text-[13px] font-[400] leading-[17px] text-left whitespace-nowrap text-text-secondary">{listTotal ? `Showing ${rangeStart}-${rangeEnd} of ${listTotal} users` : "Showing 1-6 of 18 users"}</p>
+          <p data-figma-node="5621:28395" className="box-border w-max max-w-[min(145px,100%)] h-auto min-h-[17px] font-onest text-[13px] font-[400] leading-[17px] text-left whitespace-nowrap text-text-secondary">{listTotal ? `Showing ${rangeStart}-${rangeEnd} of ${listTotal} holidays` : "Showing 1-6 of 18 holidays"}</p>
           <div data-figma-node="5621:28396" data-figma-pagination="true" className="box-border w-max max-w-[min(173px,100%)] h-auto relative flex flex-row items-start gap-1.5">
             <button type="button" data-figma-node="5621:28397" onClick={() => setCurrentPage((p) => Math.max(1, p - 1))} disabled={loadingReads || currentPage <= 1} className="box-border w-max max-w-[min(47px,100%)] h-auto rounded-[6px] relative flex flex-row items-start pt-[6px] pr-[10px] pb-[6px] pl-[10px] border-[#e2d9d0] border-[1px] bg-surface disabled:opacity-50">
               <p data-figma-node="5621:28398" className="box-border w-max max-w-[min(27px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">Prev</p>
