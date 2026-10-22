@@ -32,7 +32,7 @@ import { Variant55 } from "./Variant55";
 import { Variant6 } from "./Variant6";
 export function WeekCalendarDefaultSection_n_5645_43147() {
   return (
-    <section data-figma-node="5645:43147" className="relative box-border w-full min-w-0 min-h-[757px] flex flex-row items-start z-[2]">
+    <section data-figma-node="5645:43147" className="relative box-border w-full min-w-0 box-border h-[757px] overflow-hidden flex flex-row items-start z-[2]">
       <div data-figma-node="5602:62169" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-start gap-5 pt-[20px] pr-[20px] pb-[40px] pl-[20px]">
         <div data-figma-node="5602:64411" className="box-border flex-1 min-w-0 h-[697px] relative flex flex-col items-start">
           <div data-figma-node="5602:64423" className="box-border self-stretch min-w-0 h-[695px] shrink-0 relative flex flex-row items-start">

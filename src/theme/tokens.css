@@ -4,8 +4,20 @@
   --color-error: #a21d35;
   --color-success: #2a9d8f;
 
+  --color-background: #fff9f3;
+  --color-primary: #a21d35;
+  --color-border: #e2d9d0;
+  --color-accent: #2a9d8f;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+  --color-surface: #ffffff;
+  --font-onest: "Onest", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
   --color-color-13: #000000;
-  --color-color-100: #111827;
+  --color-color-16: #d5ba8c;
+  --color-color-17: #fde8ed;
+  --color-color-100: #231f20;
 
   --spacing-gap-1: 1px;
   --spacing-gap-2: 2px;

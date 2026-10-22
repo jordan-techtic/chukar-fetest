@@ -33,7 +33,7 @@ import { Variant5 } from "./Variant5";
 import { Variant52 } from "./Variant52";
 export function WeekCalendarHistoricalSection_n_5645_47545() {
   return (
-    <section data-figma-node="5645:47545" className="relative box-border w-full min-w-0 min-h-[798px] pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5645:47545" className="relative box-border w-full min-w-0 box-border h-[798px] overflow-hidden pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
       <div data-figma-node="5584:26949" className="box-border self-stretch min-w-0 h-[38px] shrink-0 relative flex flex-row items-center justify-between pt-[10px] pr-[24px] pb-[10px] pl-[24px] bg-primary">
         <p data-figma-node="5584:26950" className="box-border w-max max-w-[min(914px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left lg:whitespace-nowrap text-surface">Month-by-month comparison · Review 2026 beside 2025;  Pick a date from last year and then grab a date from this year to paste event.</p>
         <p data-figma-node="5584:26951" className="box-border w-max max-w-[min(38px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-surface">Close</p>

@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "./ChevronDown";
 export function MonthlyCalendarProfileMeSection_n_5327_10133() {
   return (
-    <section data-figma-node="5327:10133" className="relative box-border w-full md:w-[290px] max-w-full md:shrink-0 md:min-h-[401px] flex flex-col items-start shadow-[0px_4px_32px_0px_rgba(0,0,0,0.12)] z-[3]">
+    <section data-figma-node="5327:10133" className="relative box-border w-full md:w-[290px] max-w-full md:shrink-0 md:box-border h-[401px] overflow-hidden flex flex-col items-start shadow-[0px_4px_32px_0px_rgba(0,0,0,0.12)] z-[3]">
       <div data-figma-node="5327:10061" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[12px_12px_0px_0px] relative flex flex-col items-start gap-6 pt-[12px] pr-[12px] pb-[24px] pl-[12px] border-[#e2d9d0] border-[1px] bg-surface">
         <div data-figma-node="5327:5476" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[4px] relative flex flex-col items-start gap-6 pt-[12px] pr-[12px] pb-[12px] pl-[12px] bg-color-18">
           <div data-figma-node="5327:5528" className="box-border w-max max-w-[min(212px,100%)] h-auto shrink-0 relative flex flex-row items-center justify-center gap-2.5">

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Noto+Sans:wght@400&family=Inter:wght@400;500;600;800&display=swap");
-@import "../components/luna-figma/figma-theme.css";
 @import "tailwindcss";
 @import "../theme/tokens.css";
 @import "../theme/breakpoints.css";
@@ -8,6 +7,16 @@
 
 @theme {
   --font-noto-sans: "Noto Sans", sans-serif;
+  --font-onest: "Onest", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-background: #fff9f3;
+  --color-primary: #a21d35;
+  --color-border: #e2d9d0;
+  --color-accent: #2a9d8f;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+  --color-surface: #ffffff;
 
   --color-foreground: #231f20;
   --color-card: #ffffff;
@@ -23,7 +32,6 @@
   --color-accent-brand: #2a9d8f;
   --color-figma-10: #9ca3af;
   --color-figma-11: #4a5568;
-  --color-figma-12: #111827;
   --color-figma-13: #000000;
   --color-figma-14: #65758b;
   --color-figma-15: #f9fafb;

@@ -9,6 +9,15 @@ export const USERS_LIST_PATH = "/api/v1/users";
 /** Locked contract path — POST invite user. */
 export const USERS_INVITE_PATH = "/api/v1/users/invite";
 
+/** PATCH /api/v1/users/{user_id} — update user fields (e.g. is_active). */
+export function userPatchPath(userId: string): string {
+  return `/api/v1/users/${encodeURIComponent(userId)}`;
+}
+
+export type PatchUserActiveRequest = {
+  is_active: boolean;
+};
+
 export type ListUsersQuery = {
   search?: string;
   status?: "active" | "inactive";
@@ -58,6 +67,17 @@ export async function inviteUser(
 ): Promise<ApiSuccessResponse<unknown> | Record<string, unknown>> {
   const response = await apiClient.post<ApiSuccessResponse<unknown> | Record<string, unknown>>(
     USERS_INVITE_PATH,
+    body,
+  );
+  return response.data;
+}
+
+export async function patchUserActive(
+  userId: string,
+  body: PatchUserActiveRequest,
+): Promise<ApiSuccessResponse<unknown> | Record<string, unknown>> {
+  const response = await apiClient.patch<ApiSuccessResponse<unknown> | Record<string, unknown>>(
+    userPatchPath(userId),
     body,
   );
   return response.data;

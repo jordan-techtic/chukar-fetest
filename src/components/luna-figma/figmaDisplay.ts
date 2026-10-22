@@ -299,6 +299,20 @@ export function figmaItemProps(nodeId: string): FigmaItemBinding {
   return { hidden: true, "aria-hidden": true, "data-figma-item-missing": "true" };
 }
 
+/** Manage-users table row object from GET /api/v1/users (after list load). */
+export function figmaManageUsersRowUser(rowNodeId: string): Record<string, unknown> | null {
+  readStore(subscribe, snapshot, snapshot);
+  const binding = FIGMA_DISPLAY_BINDINGS[rowNodeId];
+  if (!binding || binding.kind !== "item") {
+    return null;
+  }
+  const { loaded, value } = lookup(binding);
+  if (!loaded || value === undefined || value === null) {
+    return null;
+  }
+  return asRecord(value);
+}
+
 /** Read operations ("METHOD /path") whose responses feed this frame's display bindings. */
 export function figmaDisplayOperations(frameId: string): readonly string[] {
   return FIGMA_DISPLAY_OPERATIONS[frameId] ?? [];

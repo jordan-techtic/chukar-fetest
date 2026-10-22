@@ -23,6 +23,7 @@ import {
   inviteUser,
   listUsers,
   listUsersQueryFromFilters,
+  patchUserActive,
   type InviteUserRequest,
 } from "@/lib/api/users";
 import applicationModel from "./application-model.json";
@@ -53,7 +54,6 @@ export type FigmaActionBinding = {
 };
 
 const ROUTE_TO_FRAME: Readonly<Record<string, string>> = {
-  "": "5584:26945",
   "week-calendar-historical-view": "5584:26945",
   "week-calendar-default": "5602:71490",
   "week-calendar-default-1": "5602:62165",
@@ -252,7 +252,40 @@ async function contractApiRequest(
       return result;
     }
   }
+  if (method.toUpperCase() === "PATCH" && path.startsWith("/api/v1/users/") && body) {
+    const userId = path.slice("/api/v1/users/".length);
+    if (userId && typeof body.is_active === "boolean") {
+      try {
+        const data = await patchUserActive(userId, { is_active: body.is_active });
+        return { ok: true, status: 200, body: data };
+      } catch (error) {
+        const result = axiosErrorResult(error);
+        if (result.status === 401) {
+          clearReadPayloads();
+          const { clearTokens, markSessionRejected } = await import("@/lib/auth/token-storage");
+          clearTokens();
+          markSessionRejected();
+        }
+        return result;
+      }
+    }
+  }
   return apiRequest(method, path, body);
+}
+
+function weekRangeFromAnchor(anchor: string): { start_date: string; end_date: string } | null {
+  const trimmed = anchor.trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) {
+    return null;
+  }
+  const start = new Date(`${trimmed}T12:00:00`);
+  if (Number.isNaN(start.getTime())) {
+    return null;
+  }
+  const end = new Date(start);
+  end.setDate(end.getDate() + 6);
+  const fmt = (d: Date) => d.toISOString().slice(0, 10);
+  return { start_date: fmt(start), end_date: fmt(end) };
 }
 
 function apiErrorMessage(body: unknown): string {
@@ -342,10 +375,12 @@ function initialUnresolvedValues(frameId: string): FigmaFieldValues {
 function FigmaScreenDataProviderInner({
   frameId,
   routePath,
+  weekAnchor,
   children,
 }: {
   frameId: string;
   routePath?: string;
+  weekAnchor?: string;
   children?: ReactNode;
 }) {
   const router = useRouter();
@@ -366,6 +401,15 @@ function FigmaScreenDataProviderInner({
   const now = new Date();
   const [calendarYear, setCalendarYear] = useState(now.getFullYear());
   const [calendarMonth, setCalendarMonth] = useState(now.getMonth() + 1);
+  const weekRangeRef = useRef<{ start_date: string; end_date: string } | null>(null);
+
+  useEffect(() => {
+    if (!weekAnchor) {
+      weekRangeRef.current = null;
+      return;
+    }
+    weekRangeRef.current = weekRangeFromAnchor(weekAnchor);
+  }, [weekAnchor]);
 
   const loadReads = useCallback(async () => {
     if (!frameId) {
@@ -386,9 +430,15 @@ function FigmaScreenDataProviderInner({
           if (resolution.mode === "mock") {
             body = resolution.body;
           } else {
+            let requestPath = op.path;
+            const week = weekRangeRef.current;
+            if (week && frameId === "5584:26945" && op.method.toUpperCase() === "GET") {
+              const sep = requestPath.includes("?") ? "&" : "?";
+              requestPath = `${requestPath}${sep}start_date=${encodeURIComponent(week.start_date)}&end_date=${encodeURIComponent(week.end_date)}`;
+            }
             const result = await contractApiRequest(
               op.method,
-              op.path,
+              requestPath,
               undefined,
               valuesRef.current,
             );
@@ -608,9 +658,11 @@ function FigmaScreenDataProviderInner({
 
 export function FigmaScreenDataProvider({
   routePath,
+  weekAnchor,
   children,
 }: {
   routePath?: string;
+  weekAnchor?: string;
   children?: ReactNode;
 }) {
   const frameId = frameIdForRoute(routePath);
@@ -619,7 +671,7 @@ export function FigmaScreenDataProvider({
       clearReadPayloads();
     };
   }, [routePath]);
-  return createElement(FigmaScreenDataProviderInner, { frameId, routePath, children });
+  return createElement(FigmaScreenDataProviderInner, { frameId, routePath, weekAnchor, children });
 }
 
 export function useFigmaScreenData(): ScreenDataContextValue {

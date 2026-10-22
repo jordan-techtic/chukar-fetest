@@ -9,15 +9,98 @@
  */
 "use client";
 
-import { figmaItemProps, figmaTextContent, useFigmaPayloadVersion } from "./figmaDisplay";
+import { useCallback, useState } from "react";
+import { toast } from "sonner";
+
+import { patchUserActive, axiosErrorResult } from "@/lib/api/users";
+import {
+  figmaItemProps,
+  figmaManageUsersRowUser,
+  figmaTextContent,
+  useFigmaPayloadVersion,
+} from "./figmaDisplay";
 import { useFigmaScreenData } from "./useFigmaScreenData";
+
+function userIdFromRow(rowNodeId: string): string | null {
+  const user = figmaManageUsersRowUser(rowNodeId);
+  if (!user) {
+    return null;
+  }
+  const id = user.id ?? user.user_id;
+  if (typeof id === "string" && id.trim()) {
+    return id.trim();
+  }
+  if (typeof id === "number") {
+    return String(id);
+  }
+  return null;
+}
+
+function useRowStatusToggle(rowNodeId: string) {
+  const { loadReads, loadingReads } = useFigmaScreenData();
+  const [saving, setSaving] = useState(false);
+  const user = figmaManageUsersRowUser(rowNodeId);
+  const isActive = user?.is_active !== false;
+  const toggle = useCallback(async () => {
+    const userId = userIdFromRow(rowNodeId);
+    if (!userId || saving || loadingReads) {
+      return;
+    }
+    const nextActive = !isActive;
+    setSaving(true);
+    try {
+      await patchUserActive(userId, { is_active: nextActive });
+      toast.success(nextActive ? "User activated." : "User deactivated.");
+      await loadReads();
+    } catch (error) {
+      const result = axiosErrorResult(error);
+      toast.error(
+        result.status === 0 ? "Could not update user status." : "Failed to update user status.",
+      );
+    } finally {
+      setSaving(false);
+    }
+  }, [isActive, loadReads, loadingReads, rowNodeId, saving]);
+
+  return {
+    toggle,
+    disabled: saving || loadingReads || !userIdFromRow(rowNodeId),
+    ariaLabel: `Toggle status for ${typeof user?.display_name === "string" ? user.display_name : "user"}`,
+  };
+}
+
+function RowStatusSwitch({
+  rowNodeId,
+  children,
+}: {
+  rowNodeId: string;
+  children: React.ReactNode;
+}) {
+  const { toggle, disabled, ariaLabel } = useRowStatusToggle(rowNodeId);
+  const isActive = figmaManageUsersRowUser(rowNodeId)?.is_active !== false;
+  return (
+    <button
+      type="button"
+      aria-label={ariaLabel}
+      aria-pressed={isActive}
+      disabled={disabled}
+      onClick={(e) => {
+        e.preventDefault();
+        void toggle();
+      }}
+      className="inline-flex items-center justify-center disabled:cursor-not-allowed disabled:opacity-50"
+    >
+      {children}
+    </button>
+  );
+}
 
 export function ManageUsersContentColumnSection() {
   useFigmaPayloadVersion();
   const { totalPages, currentPage, setCurrentPage, loadingReads } = useFigmaScreenData();
   const showPagination = totalPages !== null && totalPages > 1;
   return (
-    <section data-figma-node="5359:17456" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5359:17456" className="relative box-border w-full min-w-0 box-border h-[601px] overflow-hidden flex flex-col items-start z-[2]">
       <div data-figma-node="5359:17472" className="box-border self-stretch min-w-0 flex-1 min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
         <div data-figma-node="5359:17487" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-surface">
           <div data-figma-node="5359:17488" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-b border-[#e2d9d0] bg-color-9">
@@ -37,13 +120,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17501" className="box-border w-max max-w-[min(68px,100%)] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-primary">{figmaTextContent("5359:17501", "Super Admin")}</p>
             </div>
             <p data-figma-node="5359:17502" className="box-border w-[140px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5359:17502", "2 mins ago")}</p>
-            <div data-figma-node="5354:14408" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5354:14409" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
+            <div data-figma-node="5354:14408" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><RowStatusSwitch rowNodeId="5359:17495"><div data-figma-node="5354:14409" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5354:14409;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5354:14409;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14409;315:8657" className="box-border h-[12px] absolute left-[0px] rounded-[16px] right-[0px] w-auto top-[calc(50%+0px)] -translate-y-1/2 block bg-surface"></div>
     </div>
   </div>
-</div></button></div>
+</div></RowStatusSwitch></div>
           </div>
           <div data-figma-node="5359:17511" {...figmaItemProps("5359:17511")} className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-b border-[#e2d9d0]">
             <div data-figma-node="5359:17512" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-center gap-3">
@@ -55,13 +138,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17517" className="box-border w-max max-w-[min(34px,100%)] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-color-22">{figmaTextContent("5359:17517", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17518" className="box-border w-[140px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5359:17518", "1 hour ago")}</p>
-            <div data-figma-node="5354:14435" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5354:14436" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
+            <div data-figma-node="5354:14435" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><RowStatusSwitch rowNodeId="5359:17511"><div data-figma-node="5354:14436" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5354:14436;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5354:14436;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14436;315:8657" className="box-border h-[12px] absolute left-[0px] rounded-[16px] right-[0px] w-auto top-[calc(50%+0px)] -translate-y-1/2 block bg-surface"></div>
     </div>
   </div>
-</div></button></div>
+</div></RowStatusSwitch></div>
           </div>
           <div data-figma-node="5359:17527" {...figmaItemProps("5359:17527")} className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-b border-[#e2d9d0]">
             <div data-figma-node="5359:17528" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-center gap-3">
@@ -73,13 +156,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17533" className="box-border w-max max-w-[min(34px,100%)] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-color-22">{figmaTextContent("5359:17533", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17534" className="box-border w-[140px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5359:17534", "1 day ago")}</p>
-            <div data-figma-node="5354:14441" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5354:14442" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
+            <div data-figma-node="5354:14441" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><RowStatusSwitch rowNodeId="5359:17527"><div data-figma-node="5354:14442" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5354:14442;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5354:14442;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14442;315:8657" className="box-border h-[12px] absolute left-[0px] rounded-[16px] right-[0px] w-auto top-[calc(50%+0px)] -translate-y-1/2 block bg-surface"></div>
     </div>
   </div>
-</div></button></div>
+</div></RowStatusSwitch></div>
           </div>
           <div data-figma-node="5359:17543" {...figmaItemProps("5359:17543")} className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-b border-[#e2d9d0]">
             <div data-figma-node="5359:17544" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-center gap-3">
@@ -91,13 +174,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17549" className="box-border w-max max-w-[min(34px,100%)] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-color-22">{figmaTextContent("5359:17549", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17550" className="box-border w-[140px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5359:17550", "3 days ago")}</p>
-            <div data-figma-node="5354:14453" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5354:14454" data-figma-component="5111:12395" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14453" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><RowStatusSwitch rowNodeId="5359:17543"><div data-figma-node="5354:14454" data-figma-component="5111:12395" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5354:14454;315:8184" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5354:14454;315:8185" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14454;315:8186" className="box-border h-[12px] absolute left-[0px] rounded-[16px] right-[0px] w-auto top-[calc(50%+0px)] -translate-y-1/2 block bg-surface"></div>
     </div>
   </div>
-</div></button></div>
+</div></RowStatusSwitch></div>
           </div>
           <div data-figma-node="5359:17559" {...figmaItemProps("5359:17559")} className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-b border-[#e2d9d0]">
             <div data-figma-node="5359:17560" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-center gap-3">
@@ -109,13 +192,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17565" className="box-border w-max max-w-[min(34px,100%)] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-color-22">{figmaTextContent("5359:17565", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17566" className="box-border w-[140px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5359:17566", "5 days ago")}</p>
-            <div data-figma-node="5354:14459" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5354:14460" data-figma-component="5111:12395" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
+            <div data-figma-node="5354:14459" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><RowStatusSwitch rowNodeId="5359:17559"><div data-figma-node="5354:14460" data-figma-component="5111:12395" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5" style={{backgroundColor: "rgba(0, 0, 0, 0.25)"}}>
   <div data-figma-node="I5354:14460;315:8184" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5354:14460;315:8185" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14460;315:8186" className="box-border h-[12px] absolute left-[0px] rounded-[16px] right-[0px] w-auto top-[calc(50%+0px)] -translate-y-1/2 block bg-surface"></div>
     </div>
   </div>
-</div></button></div>
+</div></RowStatusSwitch></div>
           </div>
           <div data-figma-node="5359:17575" {...figmaItemProps("5359:17575")} className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-5 pt-[12px] pr-[24px] pb-[12px] pl-[24px] border-[#e2d9d0] border-[0px]">
             <div data-figma-node="5359:17576" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-center gap-3">
@@ -127,13 +210,13 @@ export function ManageUsersContentColumnSection() {
               <p data-figma-node="5359:17581" className="box-border w-max max-w-[min(34px,100%)] h-auto min-h-[14px] font-onest text-[11px] font-[700] leading-[14px] text-left whitespace-nowrap text-color-22">{figmaTextContent("5359:17581", "Admin")}</p>
             </div>
             <p data-figma-node="5359:17582" className="box-border w-[140px] shrink-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">{figmaTextContent("5359:17582", "1 week ago")}</p>
-            <div data-figma-node="5354:14465" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><button type="button" aria-label="Switch" className="inline-flex items-center justify-center"><div data-figma-node="5354:14466" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
+            <div data-figma-node="5354:14465" className="box-border w-[100px] shrink-0 h-auto flex flex-row items-center"><RowStatusSwitch rowNodeId="5359:17575"><div data-figma-node="5354:14466" data-figma-component="5111:12391" className="box-border w-max max-w-[min(28px,100%)] h-auto rounded-[20px] relative flex flex-row items-center gap-0.5 bg-primary">
   <div data-figma-node="I5354:14466;315:8655" className="box-border w-[28px] shrink-0 h-[16px] overflow-hidden relative flex flex-row items-center justify-end gap-0.5 pt-[2px] pr-[2px] pb-[2px] pl-[2px]">
     <div data-figma-node="I5354:14466;315:8656" className="box-border w-[12px] shrink-0 h-[12px] rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,35,11,0.2)] relative block">
       <div data-figma-node="I5354:14466;315:8657" className="box-border h-[12px] absolute left-[0px] rounded-[16px] right-[0px] w-auto top-[calc(50%+0px)] -translate-y-1/2 block bg-surface"></div>
     </div>
   </div>
-</div></button></div>
+</div></RowStatusSwitch></div>
           </div>
         </div>
         {showPagination ? (
