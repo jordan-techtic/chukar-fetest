@@ -7,6 +7,7 @@
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
+import "./figma-fonts.css";
 import { figmaUnresolvedActionProps, openFigmaDialog } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 import { Default } from "./Default";
@@ -27,7 +28,7 @@ import { Variant53 } from "./Variant53";
 import { WeekCalendarDefaultContentItem } from "./WeekCalendarDefaultContentItem";
 export function WeekCalendarDefaultContentSection() {
   return (
-    <section data-figma-node="5602:71493" id="content" className="absolute inset-x-0 top-[139px] box-border w-full min-w-0 h-[757px] overflow-hidden flex flex-row items-start z-[2]"><span data-figma-node="I5602:71644;5725:47922;5602:68962" data-figma-action="act_1a838affa2c7" className="contents" /><span data-figma-node="I5602:71644;5725:52065;5602:68962" data-figma-action="act_32b9dd794ccf" className="contents" /><span data-figma-node="5602:71645" data-figma-action="act_5000a6dd5486" className="contents" /><span data-figma-node="I5602:71643;5725:52065;5602:68962" data-figma-action="act_6059e9b07401" className="contents" /><span data-figma-node="5602:71643" data-figma-action="act_6b4d1f2d6957" className="contents" /><span data-figma-node="I5602:71645;5602:69270;5602:68962" data-figma-action="act_b23f8f90c077" className="contents" /><span data-figma-node="I5602:71644;5602:69270;5602:68962" data-figma-action="act_b575d778726a" className="contents" /><span data-figma-node="I5602:71645;5725:52065;5602:68962" data-figma-action="act_b6edc725d563" className="contents" /><span data-figma-node="I5602:71645;5725:47922;5602:68962" data-figma-action="act_ddc36daeb58c" className="contents" /><span data-figma-node="5602:71644" data-figma-action="act_fd3db8a1435a" className="contents" />
+    <section data-figma-node="5602:71493" id="content" className="absolute inset-x-0 top-[139px] box-border w-full min-w-0 h-[757px] overflow-hidden flex flex-row items-start z-[2]"><span data-figma-node="I5602:71644;5725:47922;5602:68962" data-figma-action="act_1a838affa2c7" className="contents" /><span data-figma-node="I5602:71644;5725:52065;5602:68962" data-figma-action="act_32b9dd794ccf" className="contents" /><span data-figma-node="5602:71645" data-figma-action="act_5000a6dd5486" className="contents" /><span data-figma-node="I5602:71643;5725:52065;5602:68962" data-figma-action="act_6059e9b07401" className="contents" /><span data-figma-node="5602:71643" data-figma-action="act_6b4d1f2d6957" className="contents pt-[8px] pr-[12px] pb-[12px] pl-[12px] gap-[8px] border border-solid border-[#e5e7eb] bg-[#fff9f3]" /><span data-figma-node="I5602:71645;5602:69270;5602:68962" data-figma-action="act_b23f8f90c077" className="contents" /><span data-figma-node="I5602:71644;5602:69270;5602:68962" data-figma-action="act_b575d778726a" className="contents" /><span data-figma-node="I5602:71645;5725:52065;5602:68962" data-figma-action="act_b6edc725d563" className="contents" /><span data-figma-node="I5602:71645;5725:47922;5602:68962" data-figma-action="act_ddc36daeb58c" className="contents" /><span data-figma-node="5602:71644" data-figma-action="act_fd3db8a1435a" className="contents" />
 <div data-spec-fills="true" className="flex h-[4px] w-full shrink-0"><span className="h-[4px] flex-1 bg-[#f8f8f8]" /><span className="h-[4px] flex-1 bg-[#4a4a4a]" /></div>
       <div data-figma-node="5602:71494" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-start gap-5 pt-[20px] pr-[20px] pb-[40px] pl-[20px]">
         <div data-figma-node="5602:71495" className="box-border flex-1 min-w-0 h-[697px] relative flex flex-col items-start">
@@ -138,7 +139,7 @@ export function WeekCalendarDefaultContentSection() {
                         </div>
                       </div>
                       <Variant421 data-figma-node="I5602:71582;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5602:71582;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" /><span data-figma-node="I5602:71582;5725:52065;5602:68962" data-figma-action="act_4fc3cccf2bab" className="contents" />
+                      <Variant421 data-figma-node="I5602:71582;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" /><span data-figma-node="I5602:71582;5725:52065;5602:68962" data-figma-action="act_4fc3cccf2bab" className="contents rotate-[90deg] gap-[2px]" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71583" data-figma-action="act_5624a17f0ce8" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">

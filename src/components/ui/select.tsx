@@ -18,14 +18,14 @@ function SelectTrigger({
   return (
     <SelectPrimitive.Trigger
       className={cn(
-        "flex h-[37px] w-full items-center justify-between gap-2 rounded-[6px] border border-[var(--color-border)] bg-[var(--color-surface)] px-[14px] font-[family-name:var(--font-onest)] text-[13px] leading-[17px] text-[var(--color-text-primary)] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+        "flex w-full items-center justify-between gap-[8px] rounded-[var(--radius-8)] border border-[var(--color-border)] bg-[var(--color-surface)] px-[var(--spacing-padding-14)] font-[family-name:var(--font-onest)] text-body-sm-5 font-normal text-[var(--color-text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
         className,
       )}
       {...props}
     >
       {children}
       <SelectPrimitive.Icon asChild>
-        <ChevronDown className="h-4 w-4 shrink-0 opacity-70" aria-hidden />
+        <ChevronDown className="h-3 w-3 shrink-0 text-[var(--color-text-secondary)]" aria-hidden />
       </SelectPrimitive.Icon>
     </SelectPrimitive.Trigger>
   );
@@ -41,7 +41,7 @@ function SelectContent({
     <SelectPrimitive.Portal>
       <SelectPrimitive.Content
         className={cn(
-          "relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-[6px] border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text-primary)] shadow-[var(--shadow-drop-shadow)]",
+          "relative z-50 max-h-96 min-w-[8rem] rounded-[var(--radius-8)] border border-[var(--color-border)] bg-[var(--color-surface)] text-body-sm-5 text-[var(--color-text-primary)] shadow-[var(--shadow-drop-shadow)]",
           position === "popper" && "translate-y-1",
           className,
         )}
@@ -50,9 +50,8 @@ function SelectContent({
       >
         <SelectPrimitive.Viewport
           className={cn(
-            "p-1",
-            position === "popper" &&
-              "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]",
+            "max-h-96 overflow-y-auto p-1",
+            position === "popper" && "w-full min-w-[var(--radix-select-trigger-width)]",
           )}
         >
           {children}
@@ -70,7 +69,7 @@ function SelectItem({
   return (
     <SelectPrimitive.Item
       className={cn(
-        "relative flex w-full cursor-pointer select-none items-center rounded-[4px] py-1.5 pl-8 pr-2 font-[family-name:var(--font-onest)] text-[13px] outline-none focus:bg-[var(--color-accent)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+        "relative flex w-full cursor-pointer select-none items-center rounded-[var(--radius-4)] py-1.5 pl-8 pr-2 font-[family-name:var(--font-onest)] text-body-sm-5 outline-none focus:bg-[var(--color-accent)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
         className,
       )}
       {...props}

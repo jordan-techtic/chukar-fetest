@@ -33,6 +33,10 @@ export function Variant425({ className = "", ...rest }: { className?: string; [k
     </div>
   </div>
 
+        <p className="whitespace-pre font-onest text-[10px] leading-[13px] text-[#4a5568]" style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
+WEEK W1 W2 TODAY W3 W4 W40 W41 Cherry harvest Actions
+        </p>
+        <p className="box-border h-[24px] bg-[#d1d5db]">WEEK</p>
         <p className="whitespace-pre font-onest text-[10px] leading-[13px] text-[#4a5568]">
 Sep 1 
 - 

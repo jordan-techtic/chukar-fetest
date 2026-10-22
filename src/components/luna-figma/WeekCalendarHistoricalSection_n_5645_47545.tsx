@@ -37,13 +37,65 @@ import { Variant5 } from "./Variant5";
 import { Variant52 } from "./Variant52";
 export function WeekCalendarHistoricalSection_n_5645_47545() {
   const [bannerOpen, setBannerOpen] = useState(true);
-  const [monthCompare, setMonthCompare] = useState(true);
+  const [monthCompare, setMonthCompare] = useState(false);
   return (
     <section data-figma-node="5645:47545" className="absolute inset-x-0 top-[139px] box-border w-full min-w-0 h-[798px] overflow-hidden pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
 <div data-spec-fills="true" className="flex h-[4px] w-full shrink-0"><span className="h-[4px] flex-1 bg-[#374151]" /><span className="h-[4px] flex-1 bg-[#76ab55]" /><span className="h-[4px] flex-1 bg-[#ecfffd]" /><span className="h-[4px] flex-1 bg-[#eff7fa]" /></div>
       <div className="relative h-[72px] w-full shrink-0 whitespace-pre font-onest text-[10px] leading-[13px] text-[#4a5568]">
-<span className="absolute left-[382px] top-[0px]">Historical View</span>
-<span className="absolute left-[474px] top-[0px]">Historical View</span>
+<span className="absolute left-[710px] top-[20px] box-border h-[571px]">WEEK</span>
+<span className="absolute left-[96px] top-[0px] box-border h-[122px]">W1</span>
+<span className="absolute left-[193px] top-[0px] box-border h-[379px]">Frame</span>
+<span className="absolute left-[289px] top-[0px] box-border h-[685px]">W2</span>
+<span className="absolute left-[386px] top-[0px] box-border h-[295px]">Frame</span>
+<span className="absolute left-[482px] top-[0px] box-border h-[259px]">TODAY</span>
+<span className="absolute left-[97px] top-[0px] box-border h-[390px]">W3</span>
+<span className="absolute left-[192px] top-[0px] box-border h-[354px]">Frame</span>
+<span className="absolute left-[288px] top-[0px] box-border h-[650px]">W4</span>
+<span className="absolute left-[385px] top-[0px] box-border h-[129px]">Frame</span>
+<span className="absolute left-[481px] top-[0px] box-border h-[351px]">W40</span>
+<span className="absolute left-[94px] top-[0px] box-border h-[224px]">Frame</span>
+<span className="absolute left-[188px] top-[0px] box-border h-[122px]">W41</span>
+<span className="absolute left-[282px] top-[0px] box-border h-[379px]">Cherry harvest</span>
+<span className="absolute left-[377px] top-[0px] box-border h-[685px]">Frame</span>
+<span className="absolute left-[471px] top-[0px] box-border h-[295px]">Frame</span>
+<span className="absolute left-[565px] top-[0px] box-border h-[259px]">Frame</span>
+<span className="absolute left-[91px] top-[0px] box-border h-[390px]">Frame</span>
+<span className="absolute left-[182px] top-[0px] box-border h-[354px]">Frame</span>
+<span className="absolute left-[272px] top-[0px] box-border h-[650px]">Frame</span>
+<span className="absolute left-[369px] top-[0px] box-border h-[129px]">Frame</span>
+<span className="absolute left-[465px] top-[0px] box-border h-[351px]">Frame</span>
+<span className="absolute left-[144px] top-[0px] box-border h-[122px]">Frame</span>
+<span className="absolute left-[432px] top-[0px] box-border h-[122px]">Frame</span>
+<span className="absolute left-[577px] top-[0px] box-border h-[122px]">Frame</span>
+<span className="absolute left-[721px] top-[0px] box-border h-[122px]">Frame</span>
+<span className="absolute left-[865px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[196px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[391px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[978px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[1173px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[622px] top-[0px] box-border h-[122px]">Historical View</span>
+<span className="absolute left-[719px] top-[0px] box-border h-[122px]">Historical View</span>
+<span className="absolute left-[815px] top-[0px] box-border h-[122px]">Historical View</span>
+<span className="absolute left-[587px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[782px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[443px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[638px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[820px] top-[36px] box-border h-[122px]">Frame</span>
+<span className="absolute left-[834px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[1029px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[1225px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[60px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[256px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[451px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[842px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[1038px] top-[0px] box-border h-[122px]">Weekly view</span>
+<span className="absolute left-[982px] top-[0px] box-border h-[122px]">Historical View</span>
+<span className="absolute left-[1079px] top-[0px] box-border h-[122px]">Historical View</span>
+<span className="absolute left-[1175px] top-[0px] box-border h-[122px]">Historical View</span>
+<span className="absolute left-[640px] top-[355px] box-border h-[122px]">Frame</span>
+<span className="absolute left-[382px] top-[0px] box-border h-[24px]">Historical View</span>
+<span className="absolute left-[474px] top-[0px] box-border h-[24px]">Historical View</span>
+WEEK TODAY W40 W41 Cherry harvest Add User Actions W1 W2 W3 W4
 Sep 1 
 - 
 Sep 6
