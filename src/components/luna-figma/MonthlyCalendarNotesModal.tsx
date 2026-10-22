@@ -24,6 +24,9 @@ export function MonthlyCalendarNotesModal() {
       className="relative max-w-full"
       style={{ width: 520, height: 497 }}
     >
+        <section data-figma-node="5549:55513" className="box-border w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px]" />
+        <section data-figma-node="5549:56106" className="box-border w-full pt-[194px] pr-[460px] pb-[194px] pl-[460px]" />
+        <section data-figma-node="5549:55514" className="box-border w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px]" />
         <MonthlyCalendarNotesModalWindowSection />
       {dialog_act_0cb0a53c99a1.isOpen && (
         <div

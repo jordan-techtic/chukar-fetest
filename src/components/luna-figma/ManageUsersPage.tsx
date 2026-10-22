@@ -12,6 +12,7 @@
 import "./figma-theme.css";
 import "./figma-responsive.css";
 import { useFigmaScreenData, useDialogState } from "./useFigmaScreenData";
+import { FigmaFrameScale } from "./FigmaFrameScale";
 import { ManageUsersMarketingCalendarSection } from "./ManageUsersMarketingCalendarSection";
 import { ManageUsersTitleRowSection } from "./ManageUsersTitleRowSection";
 import { ManageUsersContentColumnSection } from "./ManageUsersContentColumnSection";
@@ -27,11 +28,13 @@ export function ManageUsersPage() {
   return (
     <div data-figma-bound={screenData.bound}
       data-figma-frame="5359:17424" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <FigmaFrameScale>
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col">
         <ManageUsersMarketingCalendarSection />
         <ManageUsersTitleRowSection />
         <ManageUsersContentColumnSection />
       </main>
+      </FigmaFrameScale>
       {dialog_act_b05a5772e3b4.isOpen && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm"

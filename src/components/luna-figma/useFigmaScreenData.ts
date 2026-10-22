@@ -44,23 +44,20 @@ export type FigmaActionBinding = {
 };
 
 const ROUTE_FRAME: Readonly<Record<string, string>> = {
-  "": "5584:26945",
-  "/": "5584:26945",
-  "week-calendar-historical-view": "5584:26945",
+  "marketing-team-member/week-calendar-historical/2025-2026": "5584:26945",
   "manage-users": "5359:17424",
   "week-calendar-default": "5602:71490",
-  "week-calendar-default-1": "5602:62165",
 };
 
 /** Navigate actions whose destination is one of the compiled routes. */
 const NAVIGATE_DESTINATION: Readonly<Record<string, string>> = {
   act_3817c363078d: "/manage-users",
   act_608aa0d2e082: "/week-calendar-default",
-  act_6460d2bfa6d4: "/week-calendar-default-1",
+  act_6460d2bfa6d4: "/week-calendar-default",
   act_682a7a535751: "/week-calendar-default",
-  act_a9b8b4dbf4c5: "/week-calendar-default-1",
-  act_ed2875c8f17c: "/week-calendar-historical-view",
-  act_fda92fdd76ba: "/week-calendar-historical-view",
+  act_a9b8b4dbf4c5: "/week-calendar-default",
+  act_ed2875c8f17c: "/marketing-team-member/week-calendar-historical/2025-2026",
+  act_fda92fdd76ba: "/marketing-team-member/week-calendar-historical/2025-2026",
 };
 
 const OPEN_OVERLAY = new Set<string>([

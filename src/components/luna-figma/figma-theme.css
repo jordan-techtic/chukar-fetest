@@ -3,75 +3,8 @@
  * Role: figma design tokens
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
+ *
+ * Canonical color and font tokens live in src/theme/tokens.css and the
+ * non-inline @theme block in src/app/globals.css. This sheet does not
+ * redeclare or renumber that scale.
  */
-@theme inline {
-  --color-accent: #2A9D8F;
-  --color-background: #FFF9F3;
-  --color-border: #E2D9D0;
-  --color-color-10: #9CA3AF;
-  --color-color-11: #4A5568;
-  --color-color-12: #111827;
-  --color-color-14: #72516A;
-  --color-color-15: #65758B;
-  --color-color-16: #F9FAFB;
-  --color-color-17: #D5BA8C;
-  --color-color-18: #FDE8ED;
-  --color-color-19: #374957;
-  --color-color-20: #F2F1DD;
-  --color-color-21: #1A202C;
-  --color-color-22: #4B5563;
-  --color-color-23: #374151;
-  --color-color-24: #718096;
-  --color-color-25: #EEFBF9;
-  --color-color-26: #0083BA;
-  --color-color-27: #A0AEC0;
-  --color-color-28: #FCF3F4;
-  --color-color-29: #2F80ED;
-  --color-color-30: #888888;
-  --color-color-31: #FEF3C7;
-  --color-color-32: #ECFFFD;
-  --color-color-33: #F9F9F9;
-  --color-color-34: #4A4A4A;
-  --color-color-35: #DA002F;
-  --color-color-36: #F1B743;
-  --color-color-37: #76AB55;
-  --color-color-38: #A01028;
-  --color-color-39: #C837AB;
-  --color-color-40: #E76F51;
-  --color-color-41: #F3F4F6;
-  --color-color-42: #F5F3FF;
-  --color-color-43: #000000;
-  --color-color-44: #B5EEBD;
-  --color-color-45: #E4FCE5;
-  --color-color-46: #EFF7FA;
-  --color-color-47: #2B2C2E;
-  --color-color-48: #61FF9D;
-  --color-color-50: #EEF2FF;
-  --color-color-51: #F4A261;
-  --color-color-52: #F8F8F8;
-  --color-color-53: #198754;
-  --color-color-54: #1A0D11;
-  --color-color-55: #20A495;
-  --color-color-56: #221C1D;
-  --color-color-57: #227C9D;
-  --color-color-58: #40A463;
-  --color-color-59: #6F2DBD;
-  --color-color-60: #6FCF97;
-  --color-color-61: #8C7A7D;
-  --color-color-62: #C83B50;
-  --color-color-63: #DC8412;
-  --color-color-64: #E2FCF9;
-  --color-color-65: #E85D04;
-  --color-color-66: #F2E6E4;
-  --color-color-67: #F5F5F5;
-  --color-color-68: #FAF5F3;
-  --color-color-69: #FFF2E6;
-  --color-color-8: #E5E7EB;
-  --color-color-9: #FAF3E8;
-  --color-primary: #A21D35;
-  --color-surface: #FFFFFF;
-  --color-text-primary: #231F20;
-  --color-text-secondary: #686868;
-  --font-inter: 'Inter', sans-serif;
-  --font-onest: 'Onest', sans-serif;
-}

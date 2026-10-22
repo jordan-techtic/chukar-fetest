@@ -16,7 +16,7 @@ export function ManageUsersContentColumnSection() {
   const pageCount = typeof totalPages === "number" ? totalPages : 0;
   const showPagination = pageCount > 1;
   return (
-    <section data-figma-node="5359:17456" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5359:17456" className="absolute inset-x-0 top-[169px] box-border w-full min-w-0 h-[601px] overflow-hidden flex flex-col items-start z-[2]">
       <div data-figma-node="5359:17472" className="box-border self-stretch min-w-0 flex-1 min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
         <div data-figma-node="5359:17487" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-surface">
           <div data-figma-node="5359:17488" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-b border-[#e2d9d0] bg-color-9">

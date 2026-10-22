@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 export function ManageUsersTitleRowSection() {
   const onSubmit = useFigmaSubmitHandler();
   return (
-    <section data-figma-node="5354:14363" className="relative box-border w-full min-w-0 min-h-[89px] pt-[20px] pr-[clamp(16px,2.778vw,40px)] pb-[20px] pl-[clamp(16px,2.778vw,40px)] flex flex-row items-center justify-between z-[1]">
+    <section data-figma-node="5354:14363" className="absolute inset-x-0 top-[80px] box-border w-full min-w-0 h-[89px] overflow-hidden pt-[20px] pr-[40px] pb-[20px] pl-[40px] flex flex-row items-center justify-between z-[1]">
       <div data-figma-node="5354:14364" className="box-border w-max max-w-[min(284px,100%)] h-auto relative flex flex-col items-start gap-1">
         <h2 data-figma-node="5354:14365" className="box-border w-max max-w-[min(151px,100%)] h-auto min-h-[28px] shrink-0 font-onest text-[22px] font-[700] leading-[28px] text-left whitespace-nowrap text-text-primary">Manage Users</h2>
         <p data-figma-node="5354:14366" className="box-border w-max max-w-[min(284px,100%)] h-auto min-h-[17px] shrink-0 font-onest text-[13px] font-[400] leading-[17px] text-left lg:whitespace-nowrap text-text-secondary">Invite people and turn their accounts on or off.</p>

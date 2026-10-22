@@ -12,6 +12,7 @@
 import "./figma-theme.css";
 import "./figma-responsive.css";
 import { useFigmaScreenData, useDialogState } from "./useFigmaScreenData";
+import { FigmaFrameScale } from "./FigmaFrameScale";
 import { WeekCalendarDefaultMarketingCalendarSection } from "./WeekCalendarDefaultMarketingCalendarSection";
 import { WeekCalendarDefaultSeptember2026Section } from "./WeekCalendarDefaultSeptember2026Section";
 import { WeekCalendarDefaultContentSection } from "./WeekCalendarDefaultContentSection";
@@ -29,11 +30,13 @@ export function WeekCalendarDefaultPage() {
   return (
     <div data-figma-bound={screenData.bound}
       data-figma-frame="5602:71490" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <FigmaFrameScale>
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col">
         <WeekCalendarDefaultMarketingCalendarSection />
         <WeekCalendarDefaultSeptember2026Section />
         <WeekCalendarDefaultContentSection />
       </main>
+      </FigmaFrameScale>
       {dialog_act_1b4093185628.isOpen && (
         <div
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm"

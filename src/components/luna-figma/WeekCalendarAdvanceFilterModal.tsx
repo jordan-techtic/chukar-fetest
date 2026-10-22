@@ -22,6 +22,9 @@ export function WeekCalendarAdvanceFilterModal() {
       className="relative max-w-full"
       style={{ width: 420, height: 884 }}
     >
+        <section data-figma-node="5621:25768" className="box-border w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px]" />
+        <section data-figma-node="5621:27979" className="box-border w-full pl-[1020px]" />
+        <section data-figma-node="5621:25769" className="box-border w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px]" />
         <WeekCalendarAdvanceFilteSection_n_5621_25724 />
     </div>
   );

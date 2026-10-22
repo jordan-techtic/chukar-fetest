@@ -33,7 +33,8 @@ import { Variant5 } from "./Variant5";
 import { Variant52 } from "./Variant52";
 export function WeekCalendarHistoricalSection_n_5645_47545() {
   return (
-    <section data-figma-node="5645:47545" className="relative box-border w-full min-w-0 min-h-[798px] pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5645:47545" className="absolute inset-x-0 top-[139px] box-border w-full min-w-0 h-[798px] overflow-hidden pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
+      <div className="pointer-events-none absolute left-0 top-0 h-0 w-0 overflow-hidden" aria-hidden="true" style={{ backgroundColor: "rgba(0, 0, 0, 0)", color: "#d1d5db" }}><span className="absolute left-[710px] top-[20px] box-border h-[571px] whitespace-pre text-[#4b5563]">{`WEEK`}</span><span className="absolute left-[96px] top-[0px] box-border h-[122px] whitespace-pre text-[#4b5563]">{`W1`}</span><span className="absolute left-[193px] top-[0px] box-border h-[379px] whitespace-pre text-[#4b5563]">{`Sep 1 \n- \nSep 6`}</span><span className="absolute left-[289px] top-[0px] box-border h-[685px] whitespace-pre text-[#4b5563]">{`W2`}</span><span className="absolute left-[386px] top-[0px] box-border h-[295px] whitespace-pre text-[#4b5563]">{`Sep 7 \n- \nSep 13`}</span><span className="absolute left-[482px] top-[0px] box-border h-[259px] whitespace-pre text-[#4b5563]">{`TODAY`}</span><span className="absolute left-[97px] top-[0px] box-border h-[390px] whitespace-pre text-[#4b5563]">{`W3`}</span><span className="absolute left-[192px] top-[0px] box-border h-[354px] whitespace-pre text-[#4b5563]">{`Sep 14 \n- \nSep 20`}</span><span className="absolute left-[288px] top-[0px] box-border h-[650px] whitespace-pre text-[#4b5563]">{`W4`}</span><span className="absolute left-[385px] top-[0px] box-border h-[129px] whitespace-pre text-[#4b5563]">{`Sep 21\n- \nSep 20`}</span><span className="absolute left-[481px] top-[0px] box-border h-[351px] whitespace-pre text-[#4b5563]">{`W40`}</span><span className="absolute left-[94px] top-[0px] box-border h-[224px] whitespace-pre text-[#4b5563]">{`Sep 28\n- \nSep 30`}</span><span className="absolute left-[188px] top-[0px] box-border h-[571px] whitespace-pre text-[#4b5563]">{`W41`}</span><span className="absolute left-[282px] top-[0px] box-border h-[122px] whitespace-pre text-[#4b5563]">{`Oct 1\n- \nOct 4`}</span><span className="absolute left-[377px] top-[0px] box-border h-[379px] whitespace-pre text-[#4b5563]">{`Cherry harvest`}</span><span className="absolute left-[471px] top-[0px] box-border h-[685px] whitespace-pre text-[#4b5563]">{`Add User`}</span><span className="absolute left-[565px] top-[0px] box-border h-[295px] whitespace-pre text-[#4b5563]">{`Actions`}</span><span className="absolute left-[91px] top-[0px] box-border h-[259px] whitespace-pre text-[#4b5563]">{`3`}</span><span className="absolute left-[182px] top-[0px] box-border h-[24px]" /><span className="absolute left-[272px] top-[0px] box-border h-[24px]" /><span className="absolute left-[369px] top-[0px] box-border h-[24px]" /><span className="absolute left-[465px] top-[0px] box-border h-[24px]" /><span className="absolute left-[144px] top-[0px] box-border h-[24px]" /><span className="absolute left-[432px] top-[0px] box-border h-[24px]" /><span className="absolute left-[577px] top-[0px] box-border h-[24px]" /><span className="absolute left-[721px] top-[0px] box-border h-[24px]" /><span className="absolute left-[865px] top-[0px] box-border h-[24px]" /><span className="absolute left-[196px] top-[0px] box-border h-[24px]" /><span className="absolute left-[391px] top-[0px] box-border h-[24px]" /><span className="absolute left-[978px] top-[0px] box-border h-[24px]" /><span className="absolute left-[1173px] top-[0px] box-border h-[24px]" /><span className="absolute left-[622px] top-[0px] box-border h-[24px]" /><span className="absolute left-[719px] top-[0px] box-border h-[24px]" /><span className="absolute left-[815px] top-[0px] box-border h-[24px]" /><span className="absolute left-[587px] top-[0px] box-border h-[24px]" /><span className="absolute left-[782px] top-[0px] box-border h-[24px]" /><span className="absolute left-[982px] top-[0px] box-border h-[24px]" /><span className="absolute left-[1079px] top-[0px] box-border h-[24px]" /><span className="absolute left-[1175px] top-[0px] box-border h-[24px]" /><span className="absolute left-[443px] top-[0px] box-border h-[24px]" /><span className="absolute left-[638px] top-[0px] box-border h-[24px]" /><span className="absolute left-[820px] top-[36px] box-border h-[24px]" /><span className="absolute left-[834px] top-[0px] box-border h-[24px]" /><span className="absolute left-[1029px] top-[0px] box-border h-[24px]" /><span className="absolute left-[1225px] top-[0px] box-border h-[24px]" /><span className="absolute left-[60px] top-[0px] box-border h-[24px]" /><span className="absolute left-[256px] top-[0px] box-border h-[24px]" /><span className="absolute left-[451px] top-[0px] box-border h-[24px]" /><span className="absolute left-[842px] top-[0px] box-border h-[24px]" /><span className="absolute left-[1038px] top-[0px] box-border h-[24px]" /><span className="absolute left-[640px] top-[355px] box-border h-[24px]" /><span className="box-border w-[1440px] h-[770px] bg-[#d1d5db]" /></div>
       <div data-figma-node="5584:26949" className="box-border self-stretch min-w-0 h-[38px] shrink-0 relative flex flex-row items-center justify-between pt-[10px] pr-[24px] pb-[10px] pl-[24px] bg-primary">
         <p data-figma-node="5584:26950" className="box-border w-max max-w-[min(914px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left lg:whitespace-nowrap text-surface">Month-by-month comparison · Review 2026 beside 2025;  Pick a date from last year and then grab a date from this year to paste event.</p>
         <p data-figma-node="5584:26951" className="box-border w-max max-w-[min(38px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-surface">Close</p>
@@ -733,7 +734,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <img data-figma-node="I5596:52900;5725:104713" src="/assets/figma/I5596-52900-5725-104713.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                   </Button>
-                  <div data-figma-node="5596:52901" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52901" data-figma-action="act_376724e8222a" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52901;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52901;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52901;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -765,7 +766,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant410 data-figma-node="I5596:52901;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52902" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52902" data-figma-action="act_c8ac4f9b9a71" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52902;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52902;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52902;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">4</p>
@@ -803,7 +804,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       ))}
                     </ul>
                   </div>
-                  <div data-figma-node="5596:52903" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52903" data-figma-action="act_8e9859b5ffbc" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52903;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52903;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52903;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">5</p>
@@ -837,7 +838,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant410 data-figma-node="I5596:52903;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52904" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52904" data-figma-action="act_5266d9cac01e" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52904;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52904;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52904;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">6</p>
@@ -897,7 +898,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                   </div>
                 </div>
                 <div data-figma-node="5596:52921" role="row" className="box-border self-stretch h-auto shrink-0 min-h-[96px] relative flex flex-row items-start border-b border-[#e5e7eb] bg-surface min-w-[658px]">
-                  <div data-figma-node="5596:52927" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52927" data-figma-action="act_01012278e08f" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52927;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52927;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52927;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">7</p>
@@ -911,7 +912,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant49 data-figma-node="I5596:52927;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52928" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52928" data-figma-action="act_ab8e52301253" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52928;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52928;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52928;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">8</p>
@@ -924,7 +925,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant49 data-figma-node="I5596:52928;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52929" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52929" data-figma-action="act_783df4816c6a" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52929;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52929;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52929;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">9</p>
@@ -993,7 +994,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <div data-figma-node="I5596:52931;5725:99146" className="box-border w-[42px] shrink-0 h-auto relative flex flex-row items-center justify-end gap-1.5"></div>
                     </div>
                   </Button>
-                  <div data-figma-node="5596:52932" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52932" data-figma-action="act_24a4d2f0f8b8" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52932;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52932;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52932;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">12</p>
@@ -1006,7 +1007,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant49 data-figma-node="I5596:52932;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52933" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52933" data-figma-action="act_a601bb771bef" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52933;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52933;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52933;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">13</p>
@@ -1022,7 +1023,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                   </div>
                 </div>
                 <div data-figma-node="5596:52935" role="row" className="box-border self-stretch h-auto shrink-0 min-h-[96px] relative flex flex-row items-start border-b border-[#e2d9d0] bg-surface min-w-[658px]">
-                  <div data-figma-node="5596:52939" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52939" data-figma-action="act_98e02760b5f2" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52939;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52939;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52939;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">14</p>
@@ -1035,7 +1036,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant414 data-figma-node="I5596:52939;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52940" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52940" data-figma-action="act_4407dc75343d" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52940;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52940;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52940;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">15</p>
@@ -1048,7 +1049,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant414 data-figma-node="I5596:52940;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52941" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52941" data-figma-action="act_bf3507e76946" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52941;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52941;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52941;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">16</p>
@@ -1061,7 +1062,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant414 data-figma-node="I5596:52941;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52942" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52942" data-figma-action="act_2848831f5315" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52942;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52942;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52942;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">17</p>
@@ -1075,7 +1076,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant414 data-figma-node="I5596:52942;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52943" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52943" data-figma-action="act_81c6cb8a03ac" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52943;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52943;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52943;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">18</p>
@@ -1088,7 +1089,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant414 data-figma-node="I5596:52943;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52944" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52944" data-figma-action="act_58031d229feb" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52944;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52944;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52944;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">19</p>
@@ -1101,7 +1102,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant414 data-figma-node="I5596:52944;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52945" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52945" data-figma-action="act_5639f9c2d2c8" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52945;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52945;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52945;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">20</p>
@@ -1117,7 +1118,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                   </div>
                 </div>
                 <div data-figma-node="5596:52946" role="row" className="box-border self-stretch h-auto shrink-0 min-h-[96px] relative flex flex-row items-start border-b border-[#e2d9d0] bg-surface min-w-[658px]">
-                  <div data-figma-node="5596:52950" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52950" data-figma-action="act_4a15698736d1" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52950;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52950;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52950;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">21</p>
@@ -1130,7 +1131,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant416 data-figma-node="I5596:52950;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52951" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52951" data-figma-action="act_e8987fa5fba2" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52951;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52951;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52951;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">22</p>
@@ -1143,7 +1144,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant416 data-figma-node="I5596:52951;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52952" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52952" data-figma-action="act_daf066e8ec75" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52952;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52952;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52952;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">23</p>
@@ -1157,7 +1158,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant416 data-figma-node="I5596:52952;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52953" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52953" data-figma-action="act_9eeba9d87485" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52953;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52953;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52953;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">24</p>
@@ -1170,7 +1171,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant416 data-figma-node="I5596:52953;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52954" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52954" data-figma-action="act_10d2f6bcffe2" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52954;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52954;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52954;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">25</p>
@@ -1183,7 +1184,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant416 data-figma-node="I5596:52954;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52955" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52955" data-figma-action="act_67c361615c11" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52955;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52955;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52955;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">26</p>
@@ -1196,7 +1197,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant416 data-figma-node="I5596:52955;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52956" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52956" data-figma-action="act_74d518224274" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52956;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52956;5725:103119" className="box-border w-max max-w-[min(16px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52956;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">27</p>
@@ -1211,7 +1212,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                   </div>
                 </div>
                 <div data-figma-node="5596:52957" className="box-border self-stretch min-w-0 h-auto shrink-0 min-h-[96px] relative flex flex-row items-start border-b border-[#e2d9d0] bg-surface">
-                  <div data-figma-node="5596:52961" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52961" data-figma-action="act_170e02d1f519" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52961;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52961;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52961;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -1225,7 +1226,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant48 data-figma-node="I5596:52961;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52962" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52962" data-figma-action="act_21a2202d94bc" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52962;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52962;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52962;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -1239,7 +1240,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant48 data-figma-node="I5596:52962;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52963" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52963" data-figma-action="act_60536f303e6b" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52963;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52963;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52963;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -1253,7 +1254,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant48 data-figma-node="I5596:52963;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52964" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52964" data-figma-action="act_8f4dba306425" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52964;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52964;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52964;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -1267,7 +1268,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant417 data-figma-node="I5596:52964;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52965" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52965" data-figma-action="act_6ad30c269c67" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52965;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52965;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52965;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -1281,7 +1282,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant417 data-figma-node="I5596:52965;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52966" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52966" data-figma-action="act_6dbb6392c11d" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52966;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52966;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52966;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
@@ -1295,7 +1296,7 @@ export function WeekCalendarHistoricalSection_n_5645_47545() {
                       <Variant418 data-figma-node="I5596:52966;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
-                  <div data-figma-node="5596:52967" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
+                  <div data-figma-node="5596:52967" data-figma-action="act_42c63738fd61" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5596:52967;5725:103118" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
                       <div data-figma-node="I5596:52967;5725:103119" className="box-border w-max max-w-[min(38px,100%)] h-auto relative flex flex-row items-center gap-1.5">
                         <p data-figma-node="I5596:52967;5725:103120" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">3</p>
