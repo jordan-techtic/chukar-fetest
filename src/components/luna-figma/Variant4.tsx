@@ -8,6 +8,7 @@
 export function Variant4({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
   <div data-figma-node="I5589:50622;5556:77452" data-figma-component="5217:10959" className={`box-border w-full min-w-0 h-auto rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1 ${className}`} {...rest}>
+<div data-spec-fills="true" className="flex h-[4px] w-full shrink-0"><span className="h-[4px] flex-1 bg-[#fcf3f4]" /><span className="h-[4px] flex-1 bg-[#61ff9d]" /></div>
     <div data-figma-node="I5589:50622;5556:77452;5217:10960" className="box-border flex-1 min-w-0 h-auto rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[4px] pr-[4px] pb-[4px] pl-[4px] border-[#a21d35] border-[1px] bg-color-28">
       <div data-figma-node="I5589:50622;5556:77452;5217:10961" className="box-border flex-1 min-w-0 h-auto relative flex flex-col items-start gap-1">
         <div data-figma-node="I5589:50622;5556:77452;5725:59480" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-1.5">

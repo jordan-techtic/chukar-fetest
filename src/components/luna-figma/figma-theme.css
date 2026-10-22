@@ -4,7 +4,58 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  *
- * Canonical color and font tokens live in src/theme/tokens.css and the
- * non-inline @theme block in src/app/globals.css. This sheet does not
- * redeclare or renumber that scale.
+ * Single declaration site for shared color and font tokens.
  */
+@theme {
+  --font-onest: "Onest", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-background: #fff9f3;
+  --color-primary: #a21d35;
+  --color-surface: #ffffff;
+  --color-border: #e2d9d0;
+  --color-accent: #fde8ed;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+
+  --color-color-8: #e5e7eb;
+  --color-color-9: #faf3e8;
+  --color-color-10: #9ca3af;
+  --color-color-11: #4a5568;
+  --color-color-12: #111827;
+  --color-color-13: #000000;
+  --color-color-14: #65758b;
+  --color-color-15: #f9fafb;
+  --color-color-16: #d5ba8c;
+  --color-color-17: #fde8ed;
+  --color-color-18: #374957;
+  --color-color-19: #f2f1dd;
+  --color-color-20: #1a202c95;
+  --color-color-21: #4b5563;
+  --color-color-22: #718096;
+  --color-color-23: #eefbf9;
+  --color-color-24: #0083ba;
+  --color-color-25: #72516a;
+  --color-color-26: #a0aec0;
+  --color-color-27: #2f80ed;
+  --color-color-28: #888888;
+  --color-color-29: #fef3c7;
+  --color-color-30: #f9f9f9;
+  --color-color-31: #fef3c7;
+  --color-color-32: #ecfffd;
+  --color-color-33: #f9f9f9;
+  --color-color-34: #4a4a4a;
+  --color-color-35: #da002f;
+  --color-color-36: #f1b743;
+  --color-color-37: #76ab55;
+  --color-color-41: #f3f4f6;
+  --color-color-42: #f5f3ff;
+  --color-color-43: #000000;
+  --color-color-45: #e4fce5;
+  --color-color-46: #eff7fa;
+  --color-color-48: #61ff9d;
+  --color-color-50: #eef2ff;
+  --color-color-52: #f8f8f8;
+  --color-color-53: #198754;
+  --color-color-60: #6fcf97;
+}

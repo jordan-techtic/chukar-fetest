@@ -9,6 +9,7 @@ import { figmaActionProps } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 export function Variant425({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
+  <>
   <div data-figma-node="I5602:71609;5725:47922" data-figma-component="5602:68955" className={`box-border w-full min-w-0 h-auto rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1 ${className}`} {...rest}>
     <div data-figma-node="I5602:71609;5725:47922;5602:68956" className="box-border flex-1 min-w-0 h-auto rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-color-28">
       <div data-figma-node="I5602:71609;5725:47922;5602:68957" className="box-border flex-1 min-w-0 h-auto relative flex flex-col items-start gap-1">
@@ -31,5 +32,27 @@ export function Variant425({ className = "", ...rest }: { className?: string; [k
       </div>
     </div>
   </div>
+
+        <p className="whitespace-pre font-onest text-[10px] leading-[13px] text-[#4a5568]">
+Sep 1 
+- 
+Sep 6
+Sep 7 
+- 
+Sep 13
+Sep 14 
+- 
+Sep 20
+Sep 21
+- 
+Sep 20
+Sep 28
+- 
+Sep 30
+Oct 1
+- 
+Oct 4
+        </p>
+  </>
   );
 }

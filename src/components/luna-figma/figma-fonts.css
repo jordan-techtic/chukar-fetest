@@ -4,16 +4,7 @@
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap");
-
-@theme {
-  --font-onest: 'Onest', sans-serif;
-  --font-sans: 'Onest', sans-serif;
-}
-
-.font-onest { font-family: 'Onest', sans-serif; }
-
-html, body { font-family: 'Onest', sans-serif; }
+.font-onest { font-family: "Onest", sans-serif; }
 
 @keyframes luna-spec-marquee {
   from { transform: translateX(0); }

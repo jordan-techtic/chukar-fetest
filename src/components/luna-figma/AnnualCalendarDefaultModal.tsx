@@ -19,12 +19,12 @@ export function AnnualCalendarDefaultModal() {
     <div
       data-figma-bound={screenData.bound}
       data-figma-frame="5279:24732"
-      className="relative max-w-full"
+      className="relative max-w-full overflow-x-hidden"
       style={{ width: 652, height: 940 }}
     >
-        <section data-figma-node="5279:24733" className="box-border w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px]" />
-        <section data-figma-node="5279:24938" className="box-border w-[1440px] h-[770px] pl-[788px]" />
-        <section data-figma-node="5279:24734" className="box-border w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px]" />
+        <section data-figma-node="5279:24733" data-figma-action="act_navigate" className="box-border h-[80px] overflow-hidden w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px] border border-solid border-[#e2d9d0] bg-[#ffffff] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)]" /><span data-figma-node="I5279:24733;5217:13742" data-figma-action="act_87aa11910314" className="contents" />
+        <section data-figma-node="5279:24938" className="pointer-events-none absolute left-[0px] top-0 z-0 h-[940px] w-full bg-[rgba(26,32,44,0.584)] pl-[788px]" />
+        <section data-figma-node="5279:24734" className="box-border h-[59px] overflow-hidden w-full pt-[15px] pr-[20px] pb-[15px] pl-[20px] bg-[#faf3e8]" />
         <AnnualCalendarDefaultSection_n_5279_24939 />
     </div>
   );

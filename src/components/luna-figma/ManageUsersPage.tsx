@@ -17,13 +17,11 @@ import { ManageUsersMarketingCalendarSection } from "./ManageUsersMarketingCalen
 import { ManageUsersTitleRowSection } from "./ManageUsersTitleRowSection";
 import { ManageUsersContentColumnSection } from "./ManageUsersContentColumnSection";
 import { MonthlyCalendarProfileMenuModal } from "./MonthlyCalendarProfileMenuModal";
-import { InviteUserModal } from "./InviteUserModal";
 import { AnnualCalendarDefaultModal } from "./AnnualCalendarDefaultModal";
 
 export function ManageUsersPage() {
   const screenData = useFigmaScreenData();
   const dialog_act_b05a5772e3b4 = useDialogState("act_b05a5772e3b4");
-  const dialog_act_b53969b2b08b = useDialogState("act_b53969b2b08b");
   const dialog_act_6441534980cd = useDialogState("act_6441534980cd");
   return (
     <div data-figma-bound={screenData.bound}
@@ -51,26 +49,6 @@ export function ManageUsersPage() {
             onClick={(e) => e.stopPropagation()}
           >
             <MonthlyCalendarProfileMenuModal />
-          </div>
-        </div>
-      )}
-
-      {dialog_act_b53969b2b08b.isOpen && (
-        <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
-          role="dialog"
-          aria-modal="true"
-          tabIndex={-1}
-          ref={(el) => { el?.focus(); }}
-          onClick={dialog_act_b53969b2b08b.close}
-          onKeyDown={(e) => { if (e.key === "Escape") dialog_act_b53969b2b08b.close(); }}
-          data-figma-dialog="act_b53969b2b08b"
-        >
-          <div
-            className="relative max-h-[90vh] overflow-auto rounded-lg shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <InviteUserModal />
           </div>
         </div>
       )}
