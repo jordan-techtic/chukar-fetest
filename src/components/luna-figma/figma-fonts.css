@@ -1,0 +1,21 @@
+/**
+ * Luna generated support file
+ * Role: figma fonts
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ */
+.font-onest { font-family: "Onest", sans-serif; }
+
+@keyframes luna-spec-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.luna-spec-marquee-track {
+  animation: luna-spec-marquee 40s linear infinite;
+}
+.luna-spec-marquee-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .luna-spec-marquee-track { animation: none; }
+}

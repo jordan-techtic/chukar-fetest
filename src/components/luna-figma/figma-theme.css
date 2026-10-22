@@ -1,0 +1,24 @@
+/**
+ * Luna generated support file
+ * Role: figma design tokens
+ * Ownership: Figma-owned layout
+ * luna-spec-codegen: owned-layout
+ *
+ * Extra frame indexes used by owned layout. Shared product tokens live in
+ * src/theme/tokens.css and src/app/globals.css.
+ */
+@theme {
+  --color-color-8: #e5e7eb;
+  --color-color-9: #faf3e8;
+  --color-color-31: #fef3c7;
+  --color-color-33: #f9f9f9;
+  --color-color-35: #da002f;
+  --color-color-36: #f1b743;
+  --color-color-41: #f3f4f6;
+  --color-color-42: #f5f3ff;
+  --color-color-43: #000000;
+  --color-color-45: #e4fce5;
+  --color-color-50: #eef2ff;
+  --color-color-53: #198754;
+  --color-color-60: #6fcf97;
+}

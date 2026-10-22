@@ -1,19 +1,24 @@
 :root {
-  --color-primary: #a21d35;
-  --color-background: #fff9f3;
-  --color-surface: #ffffff;
   --color-text: #231f20;
-  --color-text-primary: #231f20;
-  --color-text-secondary: #686868;
-  --color-border: #e2d9d0;
-  --color-accent: #2a9d8f;
   --color-accent-teal: #2a9d8f;
   --color-error: #a21d35;
   --color-success: #2a9d8f;
 
+  --font-onest: "Onest", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-background: #fff9f3;
+  --color-primary: #a21d35;
+  --color-surface: #ffffff;
+  --color-border: #e2d9d0;
+  --color-accent: #fde8ed;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+
+  --ds-ink: #111827;
+  --ds-scrim: #1a202c95;
   --color-color-10: #9ca3af;
   --color-color-11: #4a5568;
-  --color-color-12: #111827;
+  --color-color-12: var(--ds-ink);
   --color-color-13: #000000;
   --color-color-14: #65758b;
   --color-color-15: #f9fafb;
@@ -21,7 +26,7 @@
   --color-color-17: #fde8ed;
   --color-color-18: #374957;
   --color-color-19: #f2f1dd;
-  --color-color-20: #1a202c95;
+  --color-color-20: var(--ds-scrim);
   --color-color-21: #4b5563;
   --color-color-22: #718096;
   --color-color-23: #eefbf9;
@@ -32,8 +37,7 @@
   --color-color-28: #888888;
   --color-color-29: #fef3c7;
   --color-color-30: #f9f9f9;
-  --color-color-38: #2f80ed;
-  --color-color-100: #111827;
+  --color-color-100: var(--ds-ink);
 
   --spacing-gap-1: 1px;
   --spacing-gap-2: 2px;
