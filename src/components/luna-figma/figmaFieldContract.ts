@@ -2,6 +2,9 @@
 // Figma field → API field bindings resolved from the live API contract.
 // Request bodies use apiField names only; figmaField is the form-state key.
 
+import { MARKETING_CALENDAR_PATH } from "@/lib/api/marketing-team-member/calendar";
+import { MARKETING_HISTORICAL_CALENDAR_PATH } from "@/lib/api/marketing-team-member/historical";
+import { MARKETING_ACTIVITIES_PATH } from "@/lib/api/marketing-team-member/activities";
 import { USERS_INVITE_PATH, USERS_LIST_PATH } from "@/lib/api/users";
 
 export type FigmaFieldValue = string | boolean;
@@ -30,8 +33,7 @@ export interface FigmaOperation {
   readonly submitNodeId: string | null;
 }
 
-const ACTIVITIES_LIST_PATH = "/api/v1/marketing-team-member/activities";
-const MARKETING_CALENDAR_PATH = "/api/v1/marketing-team-member/calendar";
+const ACTIVITIES_LIST_PATH = MARKETING_ACTIVITIES_PATH;
 const INVITE_USER_FIELDS: readonly FigmaFieldBinding[] = [
   {
     figmaField: "first-name",
@@ -105,6 +107,17 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
       submitNodeId: null,
     },
   ],
+  "5584:26945": [
+    {
+      method: "GET",
+      path: MARKETING_HISTORICAL_CALENDAR_PATH,
+      role: "read",
+      fields: [],
+      unboundRequired: [],
+      responseUnwrap: "data",
+      submitNodeId: null,
+    },
+  ],
   "5359:17424": [
     {
       method: "GET",
@@ -127,7 +140,13 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
   ],
 };
 
-export { ACTIVITIES_LIST_PATH, MARKETING_CALENDAR_PATH, USERS_LIST_PATH, USERS_INVITE_PATH };
+export {
+  ACTIVITIES_LIST_PATH,
+  MARKETING_CALENDAR_PATH,
+  MARKETING_HISTORICAL_CALENDAR_PATH,
+  USERS_LIST_PATH,
+  USERS_INVITE_PATH,
+};
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {

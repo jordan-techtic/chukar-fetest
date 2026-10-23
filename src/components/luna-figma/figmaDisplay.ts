@@ -8,6 +8,8 @@
 // level, not inside callbacks or conditionals — same rule as any hook.
 import { useSyncExternalStore } from "react";
 
+import { onSessionReset } from "@/lib/auth/session-reset";
+
 // Aliased so rules-of-hooks (not every project enables it) does not flag the
 // non-use-named helpers below, so no blanket lint suppression is needed.
 const readStore = useSyncExternalStore;
@@ -235,4 +237,10 @@ export function setListOffset(operation: string, offset: number): void {
 
 export function getListOffset(operation: string): number {
   return listOffsets.get(operation) ?? 0;
+}
+
+if (typeof window !== "undefined") {
+  onSessionReset(() => {
+    clearReadPayloads();
+  });
 }

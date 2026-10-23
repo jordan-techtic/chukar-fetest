@@ -44,7 +44,7 @@ import { Variant62 } from "./Variant62";
 import { Variant63 } from "./Variant63";
 export function AnnualCalendarDefaultSection_n_5645_47546() {
   return (
-    <section data-figma-node="5645:47546" data-figma-component="5645:47545" className="relative box-border w-full min-w-0 flex-1 md:min-h-[798px] pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5645:47546" data-figma-component="5645:47545" className="box-border overflow-hidden h-[798px] relative box-border w-full min-w-0 flex-1  pt-[20px] pr-[20px] pl-[20px] flex flex-col items-start z-[2]">
       <div data-figma-node="I5645:47546;5584:26949" className="box-border self-stretch min-w-0 h-[38px] shrink-0 relative flex flex-row items-center justify-between pt-[10px] pr-[24px] pb-[10px] pl-[24px] bg-primary">
         <p data-figma-node="I5645:47546;5584:26950" className="box-border w-max max-w-[min(918px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left lg:whitespace-nowrap text-surface">Month-by-month comparison · Review 2026 beside 2025;  Pick a date from last year and then grab a date from this year to paste event.</p>
         <p data-figma-node="I5645:47546;5584:26951" className="box-border w-max max-w-[min(42px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-surface">Close</p>

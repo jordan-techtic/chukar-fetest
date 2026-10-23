@@ -11,7 +11,7 @@ import { figmaUnresolvedActionProps } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 export function WeekCalendarDefaultMarketingCalendarSection_n_5602_62166() {
   return (
-    <a data-figma-node="5602:62166" data-figma-component="5273:20995" href="/marketing-calendar/annual" className="relative box-border w-full min-w-0 min-h-[80px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between bg-surface shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] z-[0]">
+    <a data-figma-node="5602:62166" data-figma-component="5273:20995" href="/marketing-calendar/annual" className="relative box-border w-full min-w-0 min-h-[80px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between  shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)] z-[0]">
       <div data-figma-node="I5602:62166;5217:13714" className="box-border w-max max-w-[min(286px,100%)] h-auto relative flex flex-row items-center gap-[30px]">
         <div data-figma-node="I5602:62166;5217:13715" className="box-border w-max max-w-[min(286px,100%)] h-auto relative flex flex-row items-center gap-3">
           <img data-figma-node="I5602:62166;5217:13716" src="/assets/figma/I5602-62166-5217-13716.png" alt="" aria-hidden="true" width={54} height={50} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[54px] shrink-0 h-[50px] rounded-[10px] max-w-none object-cover object-top" />

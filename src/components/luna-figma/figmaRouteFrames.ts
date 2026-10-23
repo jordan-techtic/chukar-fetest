@@ -1,6 +1,5 @@
 /** Route path (as passed to FigmaScreenDataProvider) → root Figma frame id. */
 export const ROUTE_PATH_TO_FRAME_ID: Readonly<Record<string, string>> = {
-  "": "5584:26945",
   "week-calendar-historical-view": "5584:26945",
   "week-calendar-default": "5602:71490",
   "week-calendar-default-1": "5602:62165",

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { clearReadPayloads } from "@/components/luna-figma/figmaDisplay";
+import { notifySessionReset } from "@/lib/auth/session-reset";
 import {
   clearTokens,
   getAccessTokenForApi,
@@ -39,9 +39,9 @@ apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
     if (axios.isAxiosError(error) && error.response?.status === 401) {
-      clearReadPayloads();
       clearTokens();
       markSessionRejected();
+      notifySessionReset();
       if (typeof window !== "undefined" && window.location.pathname !== "/") {
         window.location.replace("/");
       }

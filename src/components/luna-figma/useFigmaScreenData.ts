@@ -13,6 +13,7 @@ import {
   type ReactNode,
 } from "react";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 type NextAppRouter = ReturnType<typeof useRouter>;
 
@@ -22,6 +23,7 @@ import { clearReadPayloads, publishReadPayload } from "./figmaDisplay";
 import {
   ACTIVITIES_LIST_PATH,
   MARKETING_CALENDAR_PATH,
+  MARKETING_HISTORICAL_CALENDAR_PATH,
   USERS_INVITE_PATH,
   USERS_LIST_PATH,
   fieldErrorsFromResponse,
@@ -39,11 +41,28 @@ import { annualCalendarQueryParams } from "./figmaAnnualCalendarReadParams";
 import { manageUsersListQueryParams } from "./figmaManageUsersReadParams";
 import { weekActivitiesQueryParams } from "./figmaWeekCalendarReadParams";
 import { getApiErrorMessage } from "@/lib/api/get-api-error-message";
-import { inviteUser, listUsers, type InviteUserRequest } from "@/lib/api/users";
+import { listMarketingActivities } from "@/lib/api/marketing-team-member/activities";
+import { getMarketingCalendar } from "@/lib/api/marketing-team-member/calendar";
+import { getHistoricalCalendar } from "@/lib/api/marketing-team-member/historical";
+import {
+  mondayIsoWeekStart,
+  weekRangeFromMondayStart,
+} from "@/lib/api/marketing-team-member/week-range";
+import {
+  inviteUser,
+  listUsers,
+  setUserActive,
+  type InviteUserRequest,
+  type UserRecord,
+} from "@/lib/api/users";
 
 const WEEK_CALENDAR_FRAME_ID = "5602:71490";
 const ANNUAL_CALENDAR_FRAME_ID = "5645:60757";
 const MANAGE_USERS_FRAME_ID = "5359:17424";
+const HISTORICAL_CALENDAR_FRAME_ID = "5584:26945";
+
+const HISTORICAL_CONTRACT_GAP_MESSAGE =
+  "Historical calendar data is unavailable (API contract gap). Retry when GET /api/v1/marketing-team-member/calendar/historical is available.";
 
 export type FigmaFieldBinding = {
   value?: string;
@@ -72,6 +91,8 @@ export interface FigmaScreenData {
   setCalendarPeriod: (year: number, month: number) => void;
   loadReads: () => Promise<void>;
   statusMessage: string;
+  users: UserRecord[];
+  toggleUserActive: (userId: string, isActive: boolean) => Promise<void>;
 }
 
 const defaultScreenData: FigmaScreenData = {
@@ -89,6 +110,8 @@ const defaultScreenData: FigmaScreenData = {
   setCalendarPeriod: () => {},
   loadReads: async () => {},
   statusMessage: "",
+  users: [],
+  toggleUserActive: async () => {},
 };
 
 const ScreenDataContext = createContext<FigmaScreenData>(defaultScreenData);
@@ -237,14 +260,19 @@ export function figmaUnresolvedActionProps(actionId: string): FigmaActionBinding
 
 function FigmaScreenDataProviderBody({
   routePath,
+  weekStartMonday,
   children,
 }: {
   routePath?: string;
+  weekStartMonday?: string;
   children?: ReactNode;
 }) {
   const router = useRouter();
   const frameId = frameIdForRoutePath(routePath);
   const bound = frameId;
+  const effectiveWeekStartMonday =
+    weekStartMonday ??
+    (frameId === HISTORICAL_CALENDAR_FRAME_ID ? mondayIsoWeekStart() : undefined);
 
   const [values, setValues] = useState<FigmaFieldValues>({});
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
@@ -268,6 +296,8 @@ function FigmaScreenDataProviderBody({
     routePath === "week-calendar-default" ? 9 : new Date().getMonth() + 1,
   );
   const [loadingReads, setLoadingReads] = useState(false);
+  const [users, setUsers] = useState<UserRecord[]>([]);
+  const [historicalContractGap, setHistoricalContractGap] = useState(false);
 
   useEffect(() => {
     actionRouter = router;
@@ -303,7 +333,9 @@ function FigmaScreenDataProviderBody({
     if (!frameId) {
       return;
     }
-    setStatusMessage("");
+    if (!historicalContractGap) {
+      setStatusMessage("");
+    }
     setLoadingReads(true);
     const ops = figmaReadOperations(frameId);
     try {
@@ -334,22 +366,70 @@ function FigmaScreenDataProviderBody({
               op.path === USERS_LIST_PATH
             ) {
               params = manageUsersListQueryParams(values);
+            } else if (
+              frameId === HISTORICAL_CALENDAR_FRAME_ID &&
+              op.method === "GET" &&
+              op.path === MARKETING_HISTORICAL_CALENDAR_PATH &&
+              effectiveWeekStartMonday
+            ) {
+              const monday = new Date(`${effectiveWeekStartMonday}T00:00:00`);
+              params = weekRangeFromMondayStart(monday);
             }
-            const body =
-              resolved.mode === "mock"
-                ? resolved.body
-                : frameId === MANAGE_USERS_FRAME_ID &&
-                    op.method === "GET" &&
-                    op.path === USERS_LIST_PATH
-                  ? await listUsers(params)
-                  : await apiRequest(op.method, op.path, undefined, params);
+            let body: unknown;
+            if (resolved.mode === "mock") {
+              body = resolved.body;
+            } else if (
+              frameId === WEEK_CALENDAR_FRAME_ID &&
+              op.method === "GET" &&
+              op.path === ACTIVITIES_LIST_PATH
+            ) {
+              body = await listMarketingActivities(params);
+            } else if (
+              frameId === ANNUAL_CALENDAR_FRAME_ID &&
+              op.method === "GET" &&
+              op.path === MARKETING_CALENDAR_PATH
+            ) {
+              body = await getMarketingCalendar(params);
+            } else if (
+              frameId === HISTORICAL_CALENDAR_FRAME_ID &&
+              op.method === "GET" &&
+              op.path === MARKETING_HISTORICAL_CALENDAR_PATH
+            ) {
+              if (!params?.start_date || !params.end_date) {
+                setStatusMessage("Invalid week range for historical calendar.");
+                return;
+              }
+              body = await getHistoricalCalendar({
+                start_date: String(params.start_date),
+                end_date: String(params.end_date),
+              });
+              setHistoricalContractGap(false);
+            } else if (
+              frameId === MANAGE_USERS_FRAME_ID &&
+              op.method === "GET" &&
+              op.path === USERS_LIST_PATH
+            ) {
+              const listed = await listUsers(params);
+              setUsers(listed);
+              body = listed;
+            } else {
+              body = await apiRequest(op.method, op.path, undefined, params);
+            }
             publishReadPayload(op.method, op.path, body);
             if (op.fields.length > 0) {
               const nextValues = valuesFromResponse(op, body);
               setValues((prev) => ({ ...prev, ...nextValues }));
             }
           } catch (error) {
-            setStatusMessage(getApiErrorMessage(error));
+            if (
+              frameId === HISTORICAL_CALENDAR_FRAME_ID &&
+              op.path === MARKETING_HISTORICAL_CALENDAR_PATH
+            ) {
+              setHistoricalContractGap(true);
+              setStatusMessage(HISTORICAL_CONTRACT_GAP_MESSAGE);
+            } else {
+              setStatusMessage(getApiErrorMessage(error));
+            }
             if (process.env.NODE_ENV !== "production") {
               globalThis.console.warn("[luna] read failed:", op.method, op.path, error);
             }
@@ -359,7 +439,27 @@ function FigmaScreenDataProviderBody({
     } finally {
       setLoadingReads(false);
     }
-  }, [frameId, calendarYear, calendarMonth, values]);
+  }, [frameId, calendarYear, calendarMonth, values, effectiveWeekStartMonday, historicalContractGap]);
+
+  const toggleUserActive = useCallback(
+    async (userId: string, isActive: boolean) => {
+      const previous = users;
+      setUsers((current) =>
+        current.map((user) =>
+          user.id === userId ? { ...user, is_active: isActive } : user,
+        ),
+      );
+      try {
+        await setUserActive(userId, isActive);
+        toast.success(isActive ? "User activated." : "User deactivated.");
+        await loadReads();
+      } catch (error) {
+        setUsers(previous);
+        toast.error(getApiErrorMessage(error));
+      }
+    },
+    [users, loadReads],
+  );
 
   useEffect(() => {
     clearReadPayloads();
@@ -447,6 +547,8 @@ function FigmaScreenDataProviderBody({
       setCalendarPeriod,
       loadReads,
       statusMessage,
+      users,
+      toggleUserActive,
     }),
     [
       bound,
@@ -462,6 +564,8 @@ function FigmaScreenDataProviderBody({
       setCalendarPeriod,
       loadReads,
       statusMessage,
+      users,
+      toggleUserActive,
     ],
   );
 
@@ -472,7 +576,31 @@ function FigmaScreenDataProviderBody({
       Fragment,
       null,
       statusMessage
-        ? createElement("p", { className: "sr-only", "aria-live": "polite" }, statusMessage)
+        ? createElement(
+            "div",
+            {
+              className: historicalContractGap
+                ? "mx-auto mb-2 max-w-[1440px] px-5 py-3 text-sm text-destructive"
+                : "sr-only",
+              role: historicalContractGap ? "alert" : undefined,
+              "aria-live": "polite",
+            },
+            statusMessage,
+            historicalContractGap
+              ? createElement(
+                  "button",
+                  {
+                    type: "button",
+                    className:
+                      "ml-3 rounded-[6px] border border-[#e2d9d0] px-3 py-1 text-[13px]",
+                    onClick: () => {
+                      void loadReads();
+                    },
+                  },
+                  "Retry",
+                )
+              : null,
+          )
         : null,
       children,
     ),
@@ -481,12 +609,14 @@ function FigmaScreenDataProviderBody({
 
 export function FigmaScreenDataProvider({
   routePath,
+  weekStartMonday,
   children,
 }: {
   routePath?: string;
+  weekStartMonday?: string;
   children?: ReactNode;
 }) {
-  return createElement(FigmaScreenDataProviderBody, { routePath, children });
+  return createElement(FigmaScreenDataProviderBody, { routePath, weekStartMonday, children });
 }
 
 export function useFigmaScreenData(): FigmaScreenData {

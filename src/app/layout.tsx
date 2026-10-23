@@ -6,7 +6,6 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
 import "./globals.css";
-import "@/components/luna-figma/figma-fonts.css";
 
 export const metadata: Metadata = {
   title: "Marketing Content Calendar",

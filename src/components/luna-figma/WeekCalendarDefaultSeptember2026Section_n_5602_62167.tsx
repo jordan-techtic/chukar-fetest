@@ -18,7 +18,7 @@ import { FiRrMegaphone } from "./FiRrMegaphone";
 import { FiRrTarget } from "./FiRrTarget";
 export function WeekCalendarDefaultSeptember2026Section_n_5602_62167() {
   return (
-    <section data-figma-node="5602:62167" data-figma-component="5273:21161" className="relative box-border w-full min-w-0 min-h-[59px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between bg-color-9 z-[1]">
+    <section data-figma-node="5602:62167" data-figma-component="5273:21161" className="relative box-border w-full min-w-0 min-h-[59px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between  z-[1]">
       <div data-figma-node="I5602:62167;5273:21162" className="box-border w-[1400px] shrink-0 h-auto relative flex flex-row items-center justify-between gap-3">
         <div data-figma-node="I5602:62167;5273:21163" className="box-border w-[804px] shrink-0 h-auto overflow-hidden relative flex flex-row items-center gap-3">
           <FiRrAngleSmallLeft data-figma-node="I5602:62167;5416:10078" data-figma-component="5121:8081" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden" />

@@ -14,7 +14,7 @@ import { FiRrMegaphone } from "./FiRrMegaphone";
 import { FiRrTarget } from "./FiRrTarget";
 export function MonthlyCalendarHistoricaN20252026Section() {
   return (
-    <section data-figma-node="5645:33755" data-figma-component="5273:21161" className="relative box-border w-full min-w-0 min-h-[59px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between bg-color-9 z-[1]">
+    <section data-figma-node="5645:33755" data-figma-component="5273:21161" className="relative box-border w-full min-w-0 min-h-[59px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between  z-[1]">
       <div data-figma-node="I5645:33755;5273:21162" className="box-border w-[1400px] shrink-0 h-auto relative flex flex-row items-center justify-between gap-3">
         <div data-figma-node="I5645:33755;5273:21163" className="box-border w-[804px] shrink-0 h-auto overflow-hidden relative flex flex-row items-center gap-3">
           <h2 data-figma-node="I5645:33755;5273:21164" className="box-border w-max max-w-[min(120px,100%)] h-auto min-h-[28px] font-onest text-[22px] font-[700] leading-[28px] text-left whitespace-nowrap text-text-primary">2025-2026</h2>
