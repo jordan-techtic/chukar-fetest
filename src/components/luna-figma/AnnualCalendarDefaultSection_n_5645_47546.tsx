@@ -11,8 +11,6 @@ import { figmaUnresolvedActionProps } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 import { Default } from "./Default";
 import { FiRrCopyAlt } from "./FiRrCopyAlt";
-import { Variant420 } from "./Variant420";
-import { Variant421 } from "./Variant421";
 import { Variant422 } from "./Variant422";
 import { Variant423 } from "./Variant423";
 import { Variant424 } from "./Variant424";
@@ -32,6 +30,12 @@ import { Variant437 } from "./Variant437";
 import { Variant438 } from "./Variant438";
 import { Variant439 } from "./Variant439";
 import { Variant440 } from "./Variant440";
+import { Variant441 } from "./Variant441";
+import { Variant442 } from "./Variant442";
+import { Variant443 } from "./Variant443";
+import { Variant444 } from "./Variant444";
+import { Variant445 } from "./Variant445";
+import { Variant446 } from "./Variant446";
 import { Variant53 } from "./Variant53";
 import { Variant54 } from "./Variant54";
 import { Variant55 } from "./Variant55";
@@ -150,9 +154,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:50622;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant420 data-figma-node="I5645:47546;5589:50622;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50622;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant422 data-figma-node="I5645:47546;5589:50622;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant422 data-figma-node="I5645:47546;5589:50622;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50622;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant424 data-figma-node="I5645:47546;5589:50622;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:50680" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -174,9 +178,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:50680;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant420 data-figma-node="I5645:47546;5589:50680;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50680;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant422 data-figma-node="I5645:47546;5589:50680;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant422 data-figma-node="I5645:47546;5589:50680;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50680;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant424 data-figma-node="I5645:47546;5589:50680;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:50738" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -198,9 +202,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:50738;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant420 data-figma-node="I5645:47546;5589:50738;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50738;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant422 data-figma-node="I5645:47546;5589:50738;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant425 data-figma-node="I5645:47546;5589:50738;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50738;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant424 data-figma-node="I5645:47546;5589:50738;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:50796" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -223,9 +227,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:50796;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant423 data-figma-node="I5645:47546;5589:50796;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50796;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant422 data-figma-node="I5645:47546;5589:50796;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant426 data-figma-node="I5645:47546;5589:50796;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50796;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant424 data-figma-node="I5645:47546;5589:50796;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5584:41516" className="box-border w-[408px] h-auto absolute left-[121px] top-[40px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] flex flex-row items-start gap-1"></div>
@@ -239,9 +243,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:50854;5725:99922" src="/assets/figma/I5645-47546-5589-50854-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:50854;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:50854;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50854;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:50854;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:50854;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50854;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:50854;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:50912" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -252,9 +256,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:50912;5725:99922" src="/assets/figma/I5645-47546-5589-50912-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:50912;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:50912;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50912;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:50912;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:50912;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50912;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:50912;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:50970" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -265,9 +269,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:50970;5725:99922" src="/assets/figma/I5645-47546-5589-50970-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:50970;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:50970;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:50970;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:50970;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:50970;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:50970;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:50970;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51028" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -279,9 +283,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51028;5725:99922" src="/assets/figma/I5645-47546-5589-51028-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51028;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:51028;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:51028;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:51028;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:51028;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:51028;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:51028;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51086" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -292,9 +296,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51086;5725:99922" src="/assets/figma/I5645-47546-5589-51086-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51086;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:51086;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:51086;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:51086;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:51086;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:51086;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:51086;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51144" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -306,9 +310,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51144;5725:99922" src="/assets/figma/I5645-47546-5589-51144-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51144;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:51144;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:51144;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:51144;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:51144;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:51144;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:51144;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51202" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -319,9 +323,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51202;5725:99922" src="/assets/figma/I5645-47546-5589-51202-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51202;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5645:47546;5589:51202;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5645:47546;5589:51202;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5645:47546;5589:51202;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5645:47546;5589:51202;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5645:47546;5589:51202;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant428 data-figma-node="I5645:47546;5589:51202;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -334,9 +338,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51322;5725:99922" src="/assets/figma/I5645-47546-5589-51322-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51322;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51322;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51322;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51322;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51322;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51322;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51322;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51323" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -347,9 +351,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51323;5725:99922" src="/assets/figma/I5645-47546-5589-51323-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51323;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51323;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51323;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51323;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51323;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51323;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51323;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51324" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -361,9 +365,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51324;5725:99922" src="/assets/figma/I5645-47546-5589-51324-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51324;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51324;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51324;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51324;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51324;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51324;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51324;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51325" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -374,9 +378,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51325;5725:99922" src="/assets/figma/I5645-47546-5589-51325-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51325;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51325;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51325;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51325;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51325;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51325;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51325;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51326" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -387,9 +391,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51326;5725:99922" src="/assets/figma/I5645-47546-5589-51326-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51326;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51326;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51326;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51326;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51326;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51326;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51326;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51327" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -401,9 +405,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51327;5725:99922" src="/assets/figma/I5645-47546-5589-51327-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51327;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51327;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51327;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51327;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51327;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51327;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51327;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51328" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -414,9 +418,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51328;5725:99922" src="/assets/figma/I5645-47546-5589-51328-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51328;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant426 data-figma-node="I5645:47546;5589:51328;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51328;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51328;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant429 data-figma-node="I5645:47546;5589:51328;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51328;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51328;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -429,9 +433,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51729;5725:99922" src="/assets/figma/I5645-47546-5589-51729-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51729;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant427 data-figma-node="I5645:47546;5589:51729;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51729;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51729;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51729;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51729;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51729;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51730" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -442,9 +446,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51730;5725:99922" src="/assets/figma/I5645-47546-5589-51730-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51730;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant427 data-figma-node="I5645:47546;5589:51730;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51730;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51730;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51730;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51730;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51730;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:51731" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -455,9 +459,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5589:51731;5725:99922" src="/assets/figma/I5645-47546-5589-51731-5725-99922.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5589:51731;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant427 data-figma-node="I5645:47546;5589:51731;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51731;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant427 data-figma-node="I5645:47546;5589:51731;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51731;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51731;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant430 data-figma-node="I5645:47546;5589:51731;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   {[
@@ -528,9 +532,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:52238;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5589:52238;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52238;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52238;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52238;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52238;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52238;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:52710" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
@@ -553,9 +557,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:52710;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5589:52710;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52710;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52710;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52710;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52710;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52710;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:52239" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -578,9 +582,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:52239;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5589:52239;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52239;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52239;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52239;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52239;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52239;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5589:52240" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -603,9 +607,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5589:52240;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5589:52240;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52240;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5589:52240;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52240;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52240;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5589:52240;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -726,8 +730,8 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                     </div>
                     <div data-figma-node="I5645:47546;5596:52901;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant6 data-figma-node="I5645:47546;5596:52901;5602:55917" data-figma-component="5217:13666" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52901;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant430 data-figma-node="I5645:47546;5596:52901;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52901;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant433 data-figma-node="I5645:47546;5596:52901;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52902" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
@@ -738,9 +742,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <div data-figma-node="I5645:47546;5596:52902;5725:103122" className="box-border w-[42px] shrink-0 h-auto relative flex flex-row items-center justify-end gap-1.5"></div>
                     </div>
                     <div data-figma-node="I5645:47546;5596:52902;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant431 data-figma-node="I5645:47546;5596:52902;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52902;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant430 data-figma-node="I5645:47546;5596:52902;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant434 data-figma-node="I5645:47546;5596:52902;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52902;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant433 data-figma-node="I5645:47546;5596:52902;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52903" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
@@ -751,9 +755,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52903;5725:103122" src="/assets/figma/I5645-47546-5596-52903-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52903;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant432 data-figma-node="I5645:47546;5596:52903;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant433 data-figma-node="I5645:47546;5596:52903;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant430 data-figma-node="I5645:47546;5596:52903;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant435 data-figma-node="I5645:47546;5596:52903;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant436 data-figma-node="I5645:47546;5596:52903;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant433 data-figma-node="I5645:47546;5596:52903;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52904" data-figma-component="5556:77440" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-r border-[#e5e7eb] bg-background">
@@ -764,9 +768,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52904;5725:103122" src="/assets/figma/I5645-47546-5596-52904-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52904;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant432 data-figma-node="I5645:47546;5596:52904;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant434 data-figma-node="I5645:47546;5596:52904;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant430 data-figma-node="I5645:47546;5596:52904;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant435 data-figma-node="I5645:47546;5596:52904;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant437 data-figma-node="I5645:47546;5596:52904;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant433 data-figma-node="I5645:47546;5596:52904;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52905" className="box-border w-[408px] h-auto absolute left-[844px] top-[40px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] flex flex-row items-start gap-1">
@@ -805,9 +809,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52927;5725:103122" src="/assets/figma/I5645-47546-5596-52927-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52927;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant430 data-figma-node="I5645:47546;5596:52927;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52927;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52927;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant438 data-figma-node="I5645:47546;5596:52927;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52927;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52927;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52928" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -818,9 +822,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52928;5725:103122" src="/assets/figma/I5645-47546-5596-52928-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52928;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant430 data-figma-node="I5645:47546;5596:52928;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52928;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52928;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant438 data-figma-node="I5645:47546;5596:52928;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52928;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52928;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52929" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -831,9 +835,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <div data-figma-node="I5645:47546;5596:52929;5725:103122" className="box-border w-[42px] shrink-0 h-auto relative flex flex-row items-center justify-end gap-1.5"></div>
                     </div>
                     <div data-figma-node="I5645:47546;5596:52929;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant435 data-figma-node="I5645:47546;5596:52929;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52929;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52929;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant439 data-figma-node="I5645:47546;5596:52929;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52929;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52929;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52930" data-figma-component="5556:77447" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -856,8 +860,8 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                     </div>
                     <div data-figma-node="I5645:47546;5596:52930;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant53 data-figma-node="I5645:47546;5596:52930;5556:77452" data-figma-component="5217:13650" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52930;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52930;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52930;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52930;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <Button data-figma-node="I5645:47546;5596:52931" data-figma-component="5556:77496" type="button" data-figma-action="act_ba3dc07605bf" data-figma-unresolved-action="true" {...figmaUnresolvedActionProps("act_ba3dc07605bf")} className="p-0 box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 justify-start bg-transparent hover:bg-transparent rounded-none shadow-none">
@@ -879,9 +883,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52932;5725:103122" src="/assets/figma/I5645-47546-5596-52932-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52932;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant435 data-figma-node="I5645:47546;5596:52932;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52932;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52932;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant440 data-figma-node="I5645:47546;5596:52932;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52932;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52932;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52933" data-figma-component="5556:77440" role="columnheader" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -893,9 +897,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52933;5725:103122" src="/assets/figma/I5645-47546-5596-52933-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52933;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant435 data-figma-node="I5645:47546;5596:52933;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant434 data-figma-node="I5645:47546;5596:52933;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant429 data-figma-node="I5645:47546;5596:52933;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant440 data-figma-node="I5645:47546;5596:52933;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant437 data-figma-node="I5645:47546;5596:52933;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant432 data-figma-node="I5645:47546;5596:52933;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -909,8 +913,8 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                     </div>
                     <div data-figma-node="I5645:47546;5596:52939;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant54 data-figma-node="I5645:47546;5596:52939;5602:55917" data-figma-component="5217:13650" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52939;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52939;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52939;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52939;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52940" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -922,8 +926,8 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                     </div>
                     <div data-figma-node="I5645:47546;5596:52940;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant54 data-figma-node="I5645:47546;5596:52940;5602:55917" data-figma-component="5217:13650" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52940;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52940;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52940;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52940;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52941" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -934,9 +938,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52941;5725:103122" src="/assets/figma/I5645-47546-5596-52941-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52941;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant432 data-figma-node="I5645:47546;5596:52941;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52941;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52941;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant442 data-figma-node="I5645:47546;5596:52941;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52941;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52941;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52942" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -949,8 +953,8 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                     </div>
                     <div data-figma-node="I5645:47546;5596:52942;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant55 data-figma-node="I5645:47546;5596:52942;5602:55917" data-figma-component="5217:13650" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant437 data-figma-node="I5645:47546;5596:52942;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52942;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant443 data-figma-node="I5645:47546;5596:52942;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52942;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52943" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -961,9 +965,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52943;5725:103122" src="/assets/figma/I5645-47546-5596-52943-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52943;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant432 data-figma-node="I5645:47546;5596:52943;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant437 data-figma-node="I5645:47546;5596:52943;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52943;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant442 data-figma-node="I5645:47546;5596:52943;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant443 data-figma-node="I5645:47546;5596:52943;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52943;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52944" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -975,8 +979,8 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                     </div>
                     <div data-figma-node="I5645:47546;5596:52944;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant55 data-figma-node="I5645:47546;5596:52944;5602:55917" data-figma-component="5217:13650" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant437 data-figma-node="I5645:47546;5596:52944;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52944;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant443 data-figma-node="I5645:47546;5596:52944;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52944;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52945" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -988,9 +992,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52945;5725:103122" src="/assets/figma/I5645-47546-5596-52945-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52945;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant432 data-figma-node="I5645:47546;5596:52945;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant437 data-figma-node="I5645:47546;5596:52945;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant436 data-figma-node="I5645:47546;5596:52945;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant442 data-figma-node="I5645:47546;5596:52945;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant443 data-figma-node="I5645:47546;5596:52945;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant441 data-figma-node="I5645:47546;5596:52945;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -1003,9 +1007,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52950;5725:103122" src="/assets/figma/I5645-47546-5596-52950-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52950;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52950;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52950;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52950;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52950;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52950;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52950;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52951" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1016,9 +1020,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52951;5725:103122" src="/assets/figma/I5645-47546-5596-52951-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52951;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52951;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52951;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52951;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52951;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52951;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52951;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52952" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1030,9 +1034,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52952;5725:103122" src="/assets/figma/I5645-47546-5596-52952-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52952;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52952;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52952;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52952;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52952;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52952;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52952;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52953" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1043,9 +1047,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52953;5725:103122" src="/assets/figma/I5645-47546-5596-52953-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52953;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52953;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52953;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52953;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52953;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52953;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52953;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52954" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1056,9 +1060,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52954;5725:103122" src="/assets/figma/I5645-47546-5596-52954-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52954;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52954;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52954;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52954;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52954;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52954;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52954;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52955" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1069,9 +1073,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52955;5725:103122" src="/assets/figma/I5645-47546-5596-52955-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52955;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52955;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52955;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52955;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52955;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52955;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52955;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52956" data-figma-component="5556:77440" role="cell" className="box-border w-[94px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1082,9 +1086,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52956;5725:103122" src="/assets/figma/I5645-47546-5596-52956-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52956;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant438 data-figma-node="I5645:47546;5596:52956;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52956;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant438 data-figma-node="I5645:47546;5596:52956;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52956;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52956;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant444 data-figma-node="I5645:47546;5596:52956;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -1098,9 +1102,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52961;5725:103122" src="/assets/figma/I5645-47546-5596-52961-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52961;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52961;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52961;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52961;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52961;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52961;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52961;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52962" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1112,9 +1116,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52962;5725:103122" src="/assets/figma/I5645-47546-5596-52962-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52962;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52962;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52962;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52962;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52962;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52962;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52962;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52963" data-figma-component="5556:77440" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1126,9 +1130,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52963;5725:103122" src="/assets/figma/I5645-47546-5596-52963-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52963;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52963;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52963;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52963;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52963;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52963;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52963;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52964" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1140,9 +1144,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52964;5725:103122" src="/assets/figma/I5645-47546-5596-52964-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52964;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant439 data-figma-node="I5645:47546;5596:52964;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant439 data-figma-node="I5645:47546;5596:52964;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant439 data-figma-node="I5645:47546;5596:52964;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant445 data-figma-node="I5645:47546;5596:52964;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant445 data-figma-node="I5645:47546;5596:52964;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant445 data-figma-node="I5645:47546;5596:52964;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52965" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1154,9 +1158,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52965;5725:103122" src="/assets/figma/I5645-47546-5596-52965-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52965;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant439 data-figma-node="I5645:47546;5596:52965;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant439 data-figma-node="I5645:47546;5596:52965;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant439 data-figma-node="I5645:47546;5596:52965;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant445 data-figma-node="I5645:47546;5596:52965;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant445 data-figma-node="I5645:47546;5596:52965;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant445 data-figma-node="I5645:47546;5596:52965;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52966" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1168,9 +1172,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52966;5725:103122" src="/assets/figma/I5645-47546-5596-52966-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52966;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant440 data-figma-node="I5645:47546;5596:52966;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant440 data-figma-node="I5645:47546;5596:52966;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant440 data-figma-node="I5645:47546;5596:52966;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant446 data-figma-node="I5645:47546;5596:52966;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant446 data-figma-node="I5645:47546;5596:52966;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant446 data-figma-node="I5645:47546;5596:52966;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52967" data-figma-component="5556:77440" className="box-border flex-1 min-w-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1182,9 +1186,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       <img data-figma-node="I5645:47546;5596:52967;5725:103122" src="/assets/figma/I5645-47546-5596-52967-5725-103122.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5645:47546;5596:52967;5602:55916" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant440 data-figma-node="I5645:47546;5596:52967;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant440 data-figma-node="I5645:47546;5596:52967;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant440 data-figma-node="I5645:47546;5596:52967;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant446 data-figma-node="I5645:47546;5596:52967;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant446 data-figma-node="I5645:47546;5596:52967;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant446 data-figma-node="I5645:47546;5596:52967;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
@@ -1240,9 +1244,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5596:52978;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52978;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52978;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52978;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52978;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52978;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52978;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52979" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
@@ -1265,9 +1269,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5596:52979;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52979;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52979;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52979;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52979;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52979;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52979;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52980" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1290,9 +1294,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5596:52980;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52980;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52980;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52980;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52980;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52980;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52980;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="I5645:47546;5596:52981" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
@@ -1315,9 +1319,9 @@ export function AnnualCalendarDefaultSection_n_5645_47546() {
                       </div>
                     </div>
                     <div data-figma-node="I5645:47546;5596:52981;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant428 data-figma-node="I5645:47546;5596:52981;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52981;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant428 data-figma-node="I5645:47546;5596:52981;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52981;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52981;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant431 data-figma-node="I5645:47546;5596:52981;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                 </div>
