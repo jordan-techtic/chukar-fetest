@@ -9,12 +9,15 @@ import {
 } from "lucide-react";
 import { Toaster as Sonner, type ToasterProps } from "sonner";
 
-export function Toaster({ position = "top-right", ...props }: ToasterProps) {
+import { cn } from "@/lib/utils/cn";
+
+export function Toaster({ className, position = "top-right", ...props }: ToasterProps) {
   return (
     <Sonner
       theme="light"
       position={position}
-      className="toaster group"
+      className={cn("toaster group", className)}
+      richColors
       closeButton
       icons={{
         success: <CircleCheckIcon className="h-4 w-4 shrink-0" aria-hidden />,
@@ -25,8 +28,9 @@ export function Toaster({ position = "top-right", ...props }: ToasterProps) {
       }}
       toastOptions={{
         classNames: {
-          toast:
+          toast: cn(
             "group toast group-[.toaster]:rounded-[var(--radius-8)] group-[.toaster]:border-border group-[.toaster]:bg-card group-[.toaster]:text-foreground group-[.toaster]:shadow-[var(--shadow-drop-shadow-2)] group-[.toaster]:font-[family-name:var(--font-onest)]",
+          ),
           title: "group-[.toast]:text-body-sm-11 group-[.toast]:text-foreground",
           description: "group-[.toast]:text-body-sm-5 group-[.toast]:text-muted-foreground",
           actionButton:

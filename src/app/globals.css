@@ -6,28 +6,32 @@
 @import "../theme/typography.css";
 
 @theme {
+  --font-noto-sans: "Noto Sans", sans-serif;
   --font-onest: "Onest", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --font-noto-sans: "Noto Sans", sans-serif;
 
   --color-background: #fff9f3;
+  --color-primary: #a21d35;
+  --color-border: #e2d9d0;
+  --color-accent: #2a9d8f;
+  --color-text-primary: #231f20;
+  --color-text-secondary: #686868;
+  --color-surface: #ffffff;
+
   --color-foreground: #231f20;
   --color-card: #ffffff;
   --color-card-foreground: #231f20;
   --color-popover: #ffffff;
   --color-popover-foreground: #231f20;
-  --color-primary: #a21d35;
   --color-primary-foreground: #ffffff;
   --color-secondary: #faf3e8;
   --color-secondary-foreground: #231f20;
   --color-muted: #fde8ed;
   --color-muted-foreground: #686868;
-  --color-accent: #fde8ed;
   --color-accent-foreground: #231f20;
   --color-accent-brand: #2a9d8f;
   --color-figma-10: #9ca3af;
   --color-figma-11: #4a5568;
-  --color-figma-12: #111827;
   --color-figma-13: #000000;
   --color-figma-14: #65758b;
   --color-figma-15: #f9fafb;
@@ -48,7 +52,6 @@
   --color-figma-30: #f9f9f9;
   --color-destructive: #a21d35;
   --color-destructive-foreground: #ffffff;
-  --color-border: #e2d9d0;
   --color-input: #e2d9d0;
   --color-ring: #a21d35;
 
