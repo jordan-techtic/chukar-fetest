@@ -1,5 +1,6 @@
 import axios from "axios";
 
+import { notifySessionReset } from "@/lib/auth/session-reset";
 import {
   clearTokens,
   getAccessTokenForApi,
@@ -7,7 +8,9 @@ import {
 } from "@/lib/auth/token-storage";
 
 export function resolveApiBaseUrl(): string {
-  const configured = process.env.NEXT_PUBLIC_API_URL?.trim();
+  const base = process.env.NEXT_PUBLIC_API_BASE_URL?.trim();
+  const legacy = process.env.NEXT_PUBLIC_API_URL?.trim();
+  const configured = base || legacy;
   if (configured) {
     return configured.replace(/\/$/, "");
   }
@@ -38,6 +41,7 @@ apiClient.interceptors.response.use(
     if (axios.isAxiosError(error) && error.response?.status === 401) {
       clearTokens();
       markSessionRejected();
+      notifySessionReset();
       if (typeof window !== "undefined" && window.location.pathname !== "/") {
         window.location.replace("/");
       }

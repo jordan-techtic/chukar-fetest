@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, LayoutDashboard } from "lucide-react";
+import { CalendarDays, Home, LayoutDashboard, Users } from "lucide-react";
 
+import { mondayIsoWeekStart } from "@/lib/api/marketing-team-member/week-range";
 import { cn } from "@/lib/utils/cn";
 
 interface SidebarProps {
@@ -11,9 +12,15 @@ interface SidebarProps {
   onNavigate: () => void;
 }
 
+const weekHistoricalHref = `/marketing-team-member/week-calendar-historical/${mondayIsoWeekStart()}`;
+
 const NAV_ITEMS = [
   { href: "/", label: "Home", icon: Home },
   { href: "/workspace", label: "Workspace", icon: LayoutDashboard },
+  { href: "/week-calendar-default", label: "Week calendar", icon: CalendarDays },
+  { href: weekHistoricalHref, label: "Week historical", icon: CalendarDays },
+  { href: "/marketing-calendar/annual", label: "Annual calendar", icon: CalendarDays },
+  { href: "/manage-users", label: "Manage users", icon: Users },
 ] as const;
 
 export function Sidebar({ mobileOpen, onNavigate }: SidebarProps) {
@@ -30,16 +37,21 @@ export function Sidebar({ mobileOpen, onNavigate }: SidebarProps) {
     >
       <ul className="flex flex-col gap-[var(--spacing-gap-8)]">
         {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
-          const active = pathname === href;
+          const isActive =
+            href === "/"
+              ? pathname === "/"
+              : href.startsWith("/marketing-team-member/week-calendar-historical")
+                ? pathname.startsWith("/marketing-team-member/week-calendar-historical")
+                : pathname === href || pathname.startsWith(`${href}/`);
           return (
             <li key={href}>
               <Link
                 href={href}
                 onClick={onNavigate}
-                aria-current={active ? "page" : undefined}
+                aria-current={isActive ? "page" : undefined}
                 className={cn(
                   "flex items-center gap-[var(--spacing-gap-12)] rounded-[var(--radius-10)] px-[var(--spacing-padding-12)] py-[var(--spacing-padding-10)] text-body-sm-11 transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                  active && "bg-primary text-primary-foreground hover:bg-primary/90",
+                  isActive && "bg-primary text-primary-foreground hover:bg-primary/90",
                 )}
               >
                 <Icon className="h-4 w-4 shrink-0" aria-hidden />
