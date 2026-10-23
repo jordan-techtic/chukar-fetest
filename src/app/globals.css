@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Noto+Sans:wght@400&family=Inter:wght@400;500;600;800&display=swap");
+@import "../components/luna-figma/figma-theme.css";
 @import "tailwindcss";
 @import "../theme/tokens.css";
 @import "../theme/breakpoints.css";
@@ -6,23 +7,18 @@
 @import "../theme/typography.css";
 
 @theme {
-  --font-onest: "Onest", sans-serif;
-  --font-inter: "Inter", sans-serif;
   --font-noto-sans: "Noto Sans", sans-serif;
 
-  --color-background: #fff9f3;
   --color-foreground: #231f20;
   --color-card: #ffffff;
   --color-card-foreground: #231f20;
   --color-popover: #ffffff;
   --color-popover-foreground: #231f20;
-  --color-primary: #a21d35;
   --color-primary-foreground: #ffffff;
   --color-secondary: #faf3e8;
   --color-secondary-foreground: #231f20;
   --color-muted: #fde8ed;
   --color-muted-foreground: #686868;
-  --color-accent: #fde8ed;
   --color-accent-foreground: #231f20;
   --color-accent-brand: #2a9d8f;
   --color-figma-10: #9ca3af;
@@ -48,7 +44,6 @@
   --color-figma-30: #f9f9f9;
   --color-destructive: #a21d35;
   --color-destructive-foreground: #ffffff;
-  --color-border: #e2d9d0;
   --color-input: #e2d9d0;
   --color-ring: #a21d35;
 
