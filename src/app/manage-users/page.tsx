@@ -1,21 +1,31 @@
 /**
  * Luna generated page
- * Page: ManageUsersPage
+ * Page: FigmaRoutePending
  * Route: /manage-users
  * Ownership: Figma-owned layout
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
 import type { Metadata } from "next";
-import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
-import { ManageUsersPage } from "@/components/luna-figma/ManageUsersPage";
+import { notFound } from "next/navigation";
 
-export const metadata: Metadata = { title: "Manage-users" };
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function Page() {
+  // Pending screens are 404 in production and never indexed.
+  if (process.env.NODE_ENV === "production") {
+    notFound();
+  }
   return (
-    <FigmaScreenDataProvider routePath="manage-users">
-      <ManageUsersPage />
-    </FigmaScreenDataProvider>
+    <main
+      data-figma-route-pending="true"
+      data-figma-route="manage-users"
+      className="flex min-h-screen flex-col items-center justify-center gap-2 p-6 text-center"
+    >
+      <h1 className="text-xl font-semibold">Manage users</h1>
+      <p className="text-sm text-muted-foreground">Not yet implemented.</p>
+    </main>
   );
 }

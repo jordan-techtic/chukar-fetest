@@ -27,10 +27,205 @@ export interface FigmaDisplayBinding {
 }
 
 /** data-figma-node → the response field it renders. */
-export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {};
+export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
+  "5335:4278": {
+    "evidence": "label_pair",
+    "format": null,
+    "frameId": "5329:12027",
+    "kind": "text",
+    "nodeId": "5335:4278",
+    "operation": "GET /api/v1/marketing-team-member/profile",
+    "path": [
+      "role"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17170": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "item",
+    "nodeId": "5359:17170",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      0
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17172": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "text",
+    "nodeId": "5359:17172",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      0,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17187": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "item",
+    "nodeId": "5359:17187",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      1
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17189": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "text",
+    "nodeId": "5359:17189",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      1,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17204": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "item",
+    "nodeId": "5359:17204",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      2
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17206": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "text",
+    "nodeId": "5359:17206",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      2,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17218": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "item",
+    "nodeId": "5359:17218",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      3
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17220": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "text",
+    "nodeId": "5359:17220",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      3,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17235": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "item",
+    "nodeId": "5359:17235",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      4
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17237": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "text",
+    "nodeId": "5359:17237",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      4,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5359:17252": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "item",
+    "nodeId": "5359:17252",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      5
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5359:17254": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5359:17106",
+    "kind": "text",
+    "nodeId": "5359:17254",
+    "operation": "GET /api/v1/marketing-team-member/activities",
+    "path": [
+      "items",
+      5,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  }
+};
 
 /** Screen frame id → read operations its display bindings consume. */
-export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {};
+export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {
+  "5329:12027": [
+    "GET /api/v1/marketing-team-member/profile"
+  ],
+  "5359:17106": [
+    "GET /api/v1/marketing-team-member/activities"
+  ]
+};
 
 const payloads = new Map<string, unknown>();
 const listeners = new Set<() => void>();

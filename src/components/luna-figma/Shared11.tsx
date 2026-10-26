@@ -1,18 +1,18 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:6dfe9018ec
+ * Figma componentId: repeat:90d5859737
  * Component: Shared11
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
+import { Variant414 } from "./Variant414";
 import { Variant415 } from "./Variant415";
-import { Variant416 } from "./Variant416";
-export function Shared11({ className = "", eventSubtitle = "$5,802.46", ...rest }: { className?: string; eventSubtitle?: string; [key: string]: unknown }) {
+export function Shared11({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5596:52941;5602:55916" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
-    <Variant416 data-figma-node="I5596:52941;5602:55917" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant415 data-figma-node="I5596:52941;5602:55918" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant415 data-figma-node="I5596:52941;5602:55919" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+  <div data-figma-node="I5645:45615;5602:67138;5602:61816" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
+    <Variant414 data-figma-node="I5645:45615;5602:67138;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant415 data-figma-node="I5645:45615;5602:67138;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant415 data-figma-node="I5645:45615;5602:67138;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
   </div>
   );
 }

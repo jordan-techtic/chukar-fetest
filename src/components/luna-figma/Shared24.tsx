@@ -1,17 +1,17 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:7d7a21a418
+ * Figma componentId: repeat:f8c73be193
  * Component: Shared24
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-import { Variant421 } from "./Variant421";
 export function Shared24({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5602:71660;5559:19118" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
-    <Variant421 data-figma-node="I5602:71660;5556:77452" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant421 data-figma-node="I5602:71660;5589:48811" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant421 data-figma-node="I5602:71660;5589:48828" data-figma-component="5217:10959" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+  <div data-figma-node="I5602:66906;5602:61811" className={`box-border w-full min-w-0 h-[20px] relative flex flex-row items-center justify-between gap-5 ${className}`} {...rest}>
+    <div data-figma-node="I5602:66906;5725:79515" className="box-border w-max max-w-[min(13px,100%)] h-auto relative flex flex-row items-center gap-2.5">
+      <p data-figma-node="I5602:66906;5602:61812" className="box-border w-max max-w-[min(13px,100%)] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">4</p>
+    </div>
+    <div data-figma-node="I5602:66906;5725:77344" className="box-border w-[46px] shrink-0 h-auto relative flex flex-row items-center justify-end gap-2.5"></div>
   </div>
   );
 }
