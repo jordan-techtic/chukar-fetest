@@ -5,6 +5,7 @@ import {
   getAccessTokenForApi,
   markSessionRejected,
 } from "@/lib/auth/token-storage";
+import { LOGIN_PATH, isLoginApiUrl, isPublicPath } from "@/lib/auth/public-paths";
 import { clearReadPayloads } from "@/components/luna-figma/figmaDisplay";
 
 export function resolveApiBaseUrl(): string {
@@ -39,11 +40,14 @@ apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
     if (axios.isAxiosError(error) && error.response?.status === 401) {
+      if (isLoginApiUrl(error.config?.url)) {
+        return Promise.reject(error);
+      }
       clearReadPayloads();
       clearTokens();
       markSessionRejected();
-      if (typeof window !== "undefined" && window.location.pathname !== "/") {
-        window.location.replace("/");
+      if (typeof window !== "undefined" && !isPublicPath(window.location.pathname)) {
+        window.location.replace(LOGIN_PATH);
       }
     }
     return Promise.reject(error);

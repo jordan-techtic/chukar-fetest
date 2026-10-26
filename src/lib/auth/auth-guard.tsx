@@ -4,10 +4,15 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 
 import { Spinner } from "@/components/ui/spinner";
+import { isPublicPath, loginPathWithNext } from "@/lib/auth/public-paths";
 import { hasRouteAccess, isSessionRejected } from "@/lib/auth/token-storage";
 
 interface AuthGuardProps {
   children: ReactNode;
+}
+
+function isSignedIn(): boolean {
+  return !isSessionRejected() && hasRouteAccess();
 }
 
 export function AuthGuard({ children }: AuthGuardProps) {
@@ -17,10 +22,22 @@ export function AuthGuard({ children }: AuthGuardProps) {
   const [checking, setChecking] = useState(true);
 
   useEffect(() => {
-    if (isSessionRejected() || !hasRouteAccess()) {
+    const signedIn = isSignedIn();
+    if (isPublicPath(pathname)) {
+      if (signedIn) {
+        setAllowed(false);
+        setChecking(false);
+        router.replace("/");
+        return;
+      }
+      setAllowed(true);
+      setChecking(false);
+      return;
+    }
+    if (!signedIn) {
       setAllowed(false);
       setChecking(false);
-      router.replace("/");
+      router.replace(loginPathWithNext(pathname));
       return;
     }
     setAllowed(true);
@@ -29,7 +46,7 @@ export function AuthGuard({ children }: AuthGuardProps) {
 
   if (checking) {
     return (
-      <div className="flex min-h-[40vh] items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center">
         <Spinner label="Checking access" />
       </div>
     );

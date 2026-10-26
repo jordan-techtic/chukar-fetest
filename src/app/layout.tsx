@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 
 import { ErrorBoundary } from "@/components/ui/error-boundary";
 import { Toaster } from "@/components/ui/sonner";
+import { AuthGuard } from "@/lib/auth/auth-guard";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
 import "./globals.css";
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             >
               Skip to main content
             </a>
-            {children}
+            <AuthGuard>{children}</AuthGuard>
             <Toaster position="top-right" />
           </ErrorBoundary>
         </ThemeProvider>

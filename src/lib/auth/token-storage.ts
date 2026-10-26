@@ -72,5 +72,5 @@ export function clearTokens(): void {
 }
 
 export function hasRouteAccess(): boolean {
-  return Boolean(getAccessToken());
+  return Boolean(getAccessTokenForApi());
 }
