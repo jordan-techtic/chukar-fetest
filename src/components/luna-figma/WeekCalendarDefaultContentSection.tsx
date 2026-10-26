@@ -7,32 +7,32 @@
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
-import { figmaUnresolvedActionProps, openFigmaDialog } from "./useFigmaScreenData";
+import { figmaActionProps, figmaUnresolvedActionProps, openFigmaDialog } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 import { Card } from "./Card";
 import { Default2 } from "./Default2";
 import { FiRrDocument2 } from "./FiRrDocument2";
 import { Memo } from "./Memo";
-import { Shared14 } from "./Shared14";
-import { Shared15 } from "./Shared15";
 import { Shared16 } from "./Shared16";
 import { Shared17 } from "./Shared17";
 import { Shared18 } from "./Shared18";
 import { Shared19 } from "./Shared19";
 import { Shared20 } from "./Shared20";
+import { Shared21 } from "./Shared21";
 import { Shared22 } from "./Shared22";
-import { Shared32 } from "./Shared32";
+import { Shared24 } from "./Shared24";
 import { Shared34 } from "./Shared34";
-import { Shared35 } from "./Shared35";
+import { Shared36 } from "./Shared36";
 import { Shared37 } from "./Shared37";
 import { Shared39 } from "./Shared39";
 import { Shared41 } from "./Shared41";
-import { Shared42 } from "./Shared42";
 import { Shared43 } from "./Shared43";
-import { Variant421 } from "./Variant421";
+import { Shared44 } from "./Shared44";
+import { Shared45 } from "./Shared45";
 import { Variant423 } from "./Variant423";
-import { Variant424 } from "./Variant424";
 import { Variant425 } from "./Variant425";
+import { Variant426 } from "./Variant426";
+import { Variant427 } from "./Variant427";
 import { Variant53 } from "./Variant53";
 export function WeekCalendarDefaultContentSection() {
   return (
@@ -44,7 +44,7 @@ export function WeekCalendarDefaultContentSection() {
               <div data-figma-node="5602:71502" className="box-border w-max max-w-[min(36px,100%)] h-[617px] shrink-0 relative flex flex-row items-start pt-[34px] pb-[34px]">
                 <Card data-figma-node="5602:71503" className="box-border w-[16px] shrink-0 h-[977px] rounded-[0px_0px_0px_10px] pt-[10px] pb-[10px] bg-color-37" />
                 <div data-figma-node="5602:71511" className="box-border w-max max-w-[min(20px,100%)] h-[540px] relative flex flex-col items-start">
-                  <Shared35 data-figma-node="5602:71512" className="box-border w-[16px] h-[180px] shrink-0 pt-[10px] pb-[10px] bg-color-35" />
+                  <Shared37 data-figma-node="5602:71512" className="box-border w-[16px] h-[180px] shrink-0 pt-[10px] pb-[10px] bg-color-35" />
                   <div data-figma-node="5602:71520" className="box-border w-[16px] h-[360px] shrink-0 relative flex flex-col items-center gap-2.5 pt-[10px] pb-[10px] bg-color-36">
                     <div data-figma-node="5602:71521" className="box-border w-[16px] h-[16px] shrink-0 rotate-[-90deg] origin-center relative flex flex-row items-center justify-center gap-0.5">
                       <svg data-figma-node="5602:71522" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#ffffff" /></svg>
@@ -121,7 +121,7 @@ export function WeekCalendarDefaultContentSection() {
                             <div data-figma-node="I5602:71582;5602:69270;5602:69064" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-1.5">
                               <FiRrDocument2 data-figma-node="I5602:71582;5602:69270;5725:47328" data-figma-component="5121:8558" className="box-border w-[14px] shrink-0 h-[14px] overflow-hidden" />
                               <p data-figma-node="I5602:71582;5602:69270;5602:69072" className="box-border flex-1 min-w-0 h-auto min-h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left truncate text-text-primary">Great Prosser Balloon Rally</p>
-                              <Shared39 data-figma-node="I5602:71582;5602:69270;5602:69068" className="box-border w-[14px] shrink-0 h-[14px] rotate-[90deg] origin-center" />
+                              <Shared41 data-figma-node="I5602:71582;5602:69270;5602:69068" className="box-border w-[14px] shrink-0 h-[14px] rotate-[90deg] origin-center" />
                             </div>
                             <div data-figma-node="I5602:71582;5602:69270;5602:69073" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-center gap-1">
                               <div data-figma-node="I5602:71582;5602:69270;5602:69075" className="box-border flex-1 min-w-0 h-auto rounded-[100px] relative flex flex-row items-center justify-center gap-2.5 pt-[2px] pr-[6px] pb-[2px] pl-[6px] bg-surface">
@@ -131,13 +131,13 @@ export function WeekCalendarDefaultContentSection() {
                           </div>
                         </div>
                       </div>
-                      <Variant421 data-figma-node="I5602:71582;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5602:71582;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5602:71582;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5602:71582;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71583" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
-                    <Shared41 data-figma-node="I5602:71583;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"4"} />
-                    <Shared14 data-figma-node="I5602:71583;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared43 data-figma-node="I5602:71583;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"4"} />
+                    <Shared16 data-figma-node="I5602:71583;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71584" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71584;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -146,7 +146,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71584;5725:77344" src="/assets/figma/I5602-71584-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared14 data-figma-node="I5602:71584;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared16 data-figma-node="I5602:71584;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71585" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71585;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -155,7 +155,32 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71585;5725:77344" src="/assets/figma/I5602-71585-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared14 data-figma-node="I5602:71585;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <div data-figma-node="I5602:71585;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
+                      <div data-figma-node="I5602:71585;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start gap-1">
+                        <div data-figma-node="I5602:71585;5602:69270;5602:68956" className="box-border flex-1 min-w-0 h-auto rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-[#a21d35] border-[1px] bg-color-28">
+                          <div data-figma-node="I5602:71585;5602:69270;5602:68957" className="box-border flex-1 min-w-0 h-auto relative flex flex-col items-start gap-1">
+                            <div data-figma-node="I5602:71585;5602:69270;5602:68958" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-1.5">
+                              <div data-figma-node="I5602:71585;5602:69270;5602:68959" className="box-border w-[14px] shrink-0 h-[14px] flex flex-row items-center gap-1"><button type="button" aria-label="fi-rr-envelope" className="inline-flex items-center justify-center"><div data-figma-node="I5602:71585;5602:69270;5725:47375" data-figma-component="5121:8609" className="box-border w-[14px] h-[14px] overflow-hidden relative block">
+  <svg data-figma-node="I5602:71585;5602:69270;5725:47375;403:440" viewBox="0 0 14 12.83" preserveAspectRatio="none" aria-hidden="true" className="box-border absolute left-[0%] w-[100%] top-[7.143%] h-[92.857%] pointer-events-none overflow-visible"><path d="M11.0833 0L2.91667 0C2.1434 0.00092625 1.40208 0.308514 0.855295 0.855295C0.308514 1.40208 0.00092625 2.1434 3.88578e-16 2.91667L0 9.91667C0.00092625 10.6899 0.308514 11.4313 0.855295 11.978C1.40208 12.5248 2.1434 12.8324 2.91667 12.8333L11.0833 12.8333C11.8566 12.8324 12.5979 12.5248 13.1447 11.978C13.6915 11.4313 13.9991 10.6899 14 9.91667L14 2.91667C13.9991 2.1434 13.6915 1.40208 13.1447 0.855295C12.5979 0.308514 11.8566 0.00092625 11.0833 0L11.0833 0ZM2.91667 1.16667L11.0833 1.16667C11.4326 1.16735 11.7737 1.27255 12.0627 1.46872C12.3517 1.66489 12.5754 1.94305 12.705 2.26742L8.23783 6.73517C7.90908 7.0626 7.46399 7.24644 7 7.24644C6.53601 7.24644 6.09092 7.0626 5.76217 6.73517L1.295 2.26742C1.42459 1.94305 1.64827 1.66489 1.93728 1.46872C2.22628 1.27255 2.56738 1.16735 2.91667 1.16667L2.91667 1.16667ZM11.0833 11.6667L2.91667 11.6667C2.45254 11.6667 2.00742 11.4823 1.67923 11.1541C1.35104 10.8259 1.16667 10.3808 1.16667 9.91667L1.16667 3.79167L4.93733 7.56C5.48487 8.10615 6.22665 8.41286 7 8.41286C7.77335 8.41286 8.51513 8.10615 9.06267 7.56L12.8333 3.79167L12.8333 9.91667C12.8333 10.3808 12.649 10.8259 12.3208 11.1541C11.9926 11.4823 11.5475 11.6667 11.0833 11.6667Z" fill="#a21d35" /></svg>
+</div></button></div>
+                              <p data-figma-node="I5602:71585;5602:69270;5602:68966" className="box-border flex-1 min-w-0 h-auto min-h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left truncate text-text-primary">Great Prosser Balloon Rally</p>
+                              <Button data-figma-node="I5602:71585;5602:69270;5602:68962" type="button" data-figma-action="act_c2477e767c8b" {...figmaActionProps("act_c2477e767c8b")} className="p-0 box-border w-[14px] shrink-0 h-[14px] rotate-[90deg] origin-center relative flex flex-row items-center justify-center gap-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 bg-transparent hover:bg-transparent rounded-none shadow-none">
+                                <svg data-figma-node="I5602:71585;5602:69270;5602:68963" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
+                                <svg data-figma-node="I5602:71585;5602:69270;5602:68964" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
+                                <svg data-figma-node="I5602:71585;5602:69270;5602:68965" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
+                              </Button>
+                            </div>
+                            <div data-figma-node="I5602:71585;5602:69270;5602:68967" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-1">
+                              <div data-figma-node="I5602:71585;5602:69270;5602:68969" className="box-border flex-1 min-w-0 h-auto rounded-[100px] relative flex flex-row items-center justify-center gap-2.5 pt-[2px] pr-[6px] pb-[2px] pl-[6px] bg-surface">
+                                <p data-figma-node="I5602:71585;5602:69270;5602:68970" className="box-border w-max max-w-[min(60px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[500] leading-[13px] text-left truncate min-w-0 text-color-14">C3-M9-Y26</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <Variant425 data-figma-node="I5602:71585;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant425 data-figma-node="I5602:71585;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                    </div>
                   </div>
                   <div data-figma-node="5725:105826" className="box-border w-[408px] h-auto absolute left-[444px] top-[36px] rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] flex flex-row items-start gap-1">
                     <Button data-figma-node="5725:105827" type="button" data-figma-action="act_c77f170c369e" data-figma-overlay-opens="5279:24732" onClick={(e) => { e.preventDefault(); openFigmaDialog("act_c77f170c369e"); }} className="p-0 box-border w-[564px] shrink-0 h-auto rounded-[8px_0px_0px_8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-row items-start pt-[8px] pr-[8px] pb-[8px] pl-[8px] border-t border-b border-l border-[#2a9d8f] bg-color-25 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 justify-start hover:bg-color-25">
@@ -171,7 +196,7 @@ export function WeekCalendarDefaultContentSection() {
                             <svg data-figma-node="5725:105838" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
                           </div>
                         </div>
-                        <Shared42 data-figma-node="5725:105839" className="box-border w-max max-w-[min(124px,100%)] h-auto shrink-0" />
+                        <Shared44 data-figma-node="5725:105839" className="box-border w-max max-w-[min(124px,100%)] h-auto shrink-0" />
                       </div>
                     </Button>
                   </div>
@@ -185,7 +210,11 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71609;5725:77344" src="/assets/figma/I5602-71609-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared15 data-figma-node="I5602:71609;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <div data-figma-node="I5602:71609;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
+                      <Variant426 data-figma-node="I5602:71609;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5602:71609;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5602:71609;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                    </div>
                   </div>
                   <div data-figma-node="5602:71610" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71610;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -194,11 +223,11 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71610;5725:77344" src="/assets/figma/I5602-71610-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared15 data-figma-node="I5602:71610;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared17 data-figma-node="I5602:71610;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71611" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
-                    <Shared41 data-figma-node="I5602:71611;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"9"} />
-                    <Shared15 data-figma-node="I5602:71611;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared43 data-figma-node="I5602:71611;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"9"} />
+                    <Shared17 data-figma-node="I5602:71611;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71612" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71612;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -209,8 +238,8 @@ export function WeekCalendarDefaultContentSection() {
                     </div>
                     <div data-figma-node="I5602:71612;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
                       <Variant53 data-figma-node="I5602:71612;5602:69270" data-figma-component="5602:69045" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5602:71612;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant425 data-figma-node="I5602:71612;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5602:71612;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant427 data-figma-node="I5602:71612;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71613" data-figma-component="5602:61887" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 group/s5602_71613 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb]">
@@ -231,7 +260,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71614;5725:77344" src="/assets/figma/I5602-71614-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared16 data-figma-node="I5602:71614;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared18 data-figma-node="I5602:71614;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71615" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71615;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -241,7 +270,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71615;5725:77344" src="/assets/figma/I5602-71615-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared16 data-figma-node="I5602:71615;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared18 data-figma-node="I5602:71615;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71616" className="box-border w-[408px] h-auto absolute left-[121px] top-[40px] rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] flex flex-row items-start gap-1"></div>
                 </div>
@@ -253,7 +282,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71621;5725:77344" src="/assets/figma/I5602-71621-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared17 data-figma-node="I5602:71621;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared19 data-figma-node="I5602:71621;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71622" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71622;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -262,7 +291,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71622;5725:77344" src="/assets/figma/I5602-71622-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared17 data-figma-node="I5602:71622;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared19 data-figma-node="I5602:71622;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71623" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71623;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -272,9 +301,9 @@ export function WeekCalendarDefaultContentSection() {
                       <img data-figma-node="I5602:71623;5725:77344" src="/assets/figma/I5602-71623-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5602:71623;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant424 data-figma-node="I5602:71623;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5602:71623;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant421 data-figma-node="I5602:71623;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant426 data-figma-node="I5602:71623;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5602:71623;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant423 data-figma-node="I5602:71623;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71624" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
@@ -285,7 +314,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71624;5725:77344" src="/assets/figma/I5602-71624-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared17 data-figma-node="I5602:71624;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared19 data-figma-node="I5602:71624;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71625" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71625;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -294,7 +323,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71625;5725:77344" src="/assets/figma/I5602-71625-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared18 data-figma-node="I5602:71625;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared20 data-figma-node="I5602:71625;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71626" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71626;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -326,16 +355,16 @@ export function WeekCalendarDefaultContentSection() {
                           </div>
                         </div>
                       </div>
-                      <Variant423 data-figma-node="I5602:71626;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-                      <Variant423 data-figma-node="I5602:71626;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant425 data-figma-node="I5602:71626;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant425 data-figma-node="I5602:71626;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71627" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71627;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
-                      <Shared43 data-figma-node="I5602:71627;5725:79515" className="box-border w-max max-w-[min(50px,100%)] h-auto" text={"20"} />
+                      <Shared45 data-figma-node="I5602:71627;5725:79515" className="box-border w-max max-w-[min(50px,100%)] h-auto" text={"20"} />
                       <img data-figma-node="I5602:71627;5725:77344" src="/assets/figma/I5602-71627-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared18 data-figma-node="I5602:71627;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared20 data-figma-node="I5602:71627;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                 </div>
                 <div data-figma-node="5602:71628" className="box-border self-stretch min-w-0 h-auto shrink-0 min-h-[96px] relative flex flex-row items-start border-b border-[#e2d9d0] bg-surface">
@@ -346,7 +375,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71632;5725:77344" src="/assets/figma/I5602-71632-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared19 data-figma-node="I5602:71632;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared21 data-figma-node="I5602:71632;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71633" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71633;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -355,14 +384,14 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71633;5725:77344" src="/assets/figma/I5602-71633-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared19 data-figma-node="I5602:71633;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared21 data-figma-node="I5602:71633;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71634" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71634;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
-                      <Shared43 data-figma-node="I5602:71634;5725:79515" className="box-border w-max max-w-[min(50px,100%)] h-auto" text={"23"} />
+                      <Shared45 data-figma-node="I5602:71634;5725:79515" className="box-border w-max max-w-[min(50px,100%)] h-auto" text={"23"} />
                       <img data-figma-node="I5602:71634;5725:77344" src="/assets/figma/I5602-71634-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared19 data-figma-node="I5602:71634;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared21 data-figma-node="I5602:71634;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71635" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71635;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -371,7 +400,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71635;5725:77344" src="/assets/figma/I5602-71635-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared19 data-figma-node="I5602:71635;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared21 data-figma-node="I5602:71635;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71636" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71636;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -380,7 +409,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71636;5725:77344" src="/assets/figma/I5602-71636-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared20 data-figma-node="I5602:71636;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared22 data-figma-node="I5602:71636;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71637" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71637;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -389,7 +418,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71637;5725:77344" src="/assets/figma/I5602-71637-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared20 data-figma-node="I5602:71637;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared22 data-figma-node="I5602:71637;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71638" data-figma-component="5602:61810" className="box-border w-[144px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[12px] pb-[12px] pl-[12px] border-t border-r border-[#e5e7eb] bg-background">
                     <div data-figma-node="I5602:71638;5602:61811" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
@@ -398,7 +427,7 @@ export function WeekCalendarDefaultContentSection() {
                       </div>
                       <img data-figma-node="I5602:71638;5725:77344" src="/assets/figma/I5602-71638-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
-                    <Shared20 data-figma-node="I5602:71638;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared22 data-figma-node="I5602:71638;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                 </div>
                 <div data-figma-node="5602:71639" className="box-border self-stretch min-w-0 h-auto shrink-0 min-h-[96px] overflow-hidden"><div className="luna-spec-marquee-track flex w-max"><div className="flex shrink-0"><img data-figma-node="I5602:71643;5725:77344" src="/assets/figma/I5602-71643-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71644;5725:77344" src="/assets/figma/I5602-71644-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71645;5725:77344" src="/assets/figma/I5602-71645-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71646;5725:80446" src="/assets/figma/I5602-71646-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71647;5725:80446" src="/assets/figma/I5602-71647-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71648;5725:80446" src="/assets/figma/I5602-71648-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71649;5725:80446" src="/assets/figma/I5602-71649-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /></div><div className="flex shrink-0" aria-hidden="true"><img data-figma-node="I5602:71643;5725:77344" src="/assets/figma/I5602-71643-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71644;5725:77344" src="/assets/figma/I5602-71644-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71645;5725:77344" src="/assets/figma/I5602-71645-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71646;5725:80446" src="/assets/figma/I5602-71646-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71647;5725:80446" src="/assets/figma/I5602-71647-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71648;5725:80446" src="/assets/figma/I5602-71648-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /><img data-figma-node="I5602:71649;5725:80446" src="/assets/figma/I5602-71649-5725-80446.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] h-auto shrink-0 max-w-none object-cover object-top" /></div></div></div>
@@ -409,37 +438,37 @@ export function WeekCalendarDefaultContentSection() {
                 <div data-figma-node="5602:71653" className="box-border self-stretch min-w-0 h-auto shrink-0 min-h-[96px] relative flex flex-row items-start border-b border-[#e2d9d0] bg-surface">
                   <div data-figma-node="5602:71657" data-figma-component="5556:77518" className="box-border flex-1 min-w-0 h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-color-33">
                     <div data-figma-node="I5602:71657;5725:102094" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
-                      <Shared37 data-figma-node="I5602:71657;5725:102095" className="box-border w-max max-w-[min(42px,100%)] h-auto" text={"3"} />
+                      <Shared39 data-figma-node="I5602:71657;5725:102095" className="box-border w-max max-w-[min(42px,100%)] h-auto" text={"3"} />
                       <img data-figma-node="I5602:71657;5725:102098" src="/assets/figma/I5602-71657-5725-102098.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71658" data-figma-component="5556:77518" className="box-border flex-1 min-w-0 h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-color-33">
                     <div data-figma-node="I5602:71658;5725:102094" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
-                      <Shared37 data-figma-node="I5602:71658;5725:102095" className="box-border w-max max-w-[min(42px,100%)] h-auto" text={"3"} />
+                      <Shared39 data-figma-node="I5602:71658;5725:102095" className="box-border w-max max-w-[min(42px,100%)] h-auto" text={"3"} />
                       <img data-figma-node="I5602:71658;5725:102098" src="/assets/figma/I5602-71658-5725-102098.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71659" data-figma-component="5556:77518" className="box-border flex-1 min-w-0 h-[180px] relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-color-33">
                     <div data-figma-node="I5602:71659;5725:102094" className="box-border self-stretch min-w-0 h-[20px] shrink-0 relative flex flex-row items-center justify-between gap-5">
-                      <Shared37 data-figma-node="I5602:71659;5725:102095" className="box-border w-max max-w-[min(42px,100%)] h-auto" text={"3"} />
+                      <Shared39 data-figma-node="I5602:71659;5725:102095" className="box-border w-max max-w-[min(42px,100%)] h-auto" text={"3"} />
                       <img data-figma-node="I5602:71659;5725:102098" src="/assets/figma/I5602-71659-5725-102098.png" alt="" aria-hidden="true" width={42} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[42px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                   </div>
                   <div data-figma-node="5602:71660" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
-                    <Shared32 data-figma-node="I5602:71660;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
-                    <Shared22 data-figma-node="I5602:71660;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared34 data-figma-node="I5602:71660;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
+                    <Shared24 data-figma-node="I5602:71660;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71661" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-l border-[#e5e7eb] bg-background">
-                    <Shared32 data-figma-node="I5602:71661;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
-                    <Shared22 data-figma-node="I5602:71661;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared34 data-figma-node="I5602:71661;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
+                    <Shared24 data-figma-node="I5602:71661;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71662" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
-                    <Shared32 data-figma-node="I5602:71662;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
-                    <Shared22 data-figma-node="I5602:71662;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared34 data-figma-node="I5602:71662;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
+                    <Shared24 data-figma-node="I5602:71662;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                   <div data-figma-node="5602:71663" data-figma-component="5556:77447" className="box-border w-[96px] shrink-0 h-[180px] disabled:bg-color-33 aria-disabled:bg-color-33 relative flex flex-col items-start gap-2 pt-[8px] pr-[4px] pb-[8px] pl-[4px] border-t border-r border-[#e5e7eb] bg-background">
-                    <Shared32 data-figma-node="I5602:71663;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
-                    <Shared22 data-figma-node="I5602:71663;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
+                    <Shared34 data-figma-node="I5602:71663;5725:99917" className="box-border self-stretch min-w-0 h-[20px] shrink-0" text={"3"} />
+                    <Shared24 data-figma-node="I5602:71663;5559:19118" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden" />
                   </div>
                 </div>
               </div>
@@ -486,7 +515,7 @@ export function WeekCalendarDefaultContentSection() {
           <div data-figma-node="5602:73725" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-2.5 pt-[12px] pr-[12px] pb-[12px] pl-[12px] bg-surface">
             <div data-figma-node="5602:73726" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
               <p data-figma-node="5602:73727" className="box-border flex-1 min-w-0 h-auto min-h-[17px] font-onest text-[13px] font-[700] leading-[17px] text-left truncate text-text-primary">Budget Reallocation</p>
-              <Shared34 data-figma-node="5602:73728" className="box-border w-max max-w-[min(68px,100%)] h-auto" />
+              <Shared36 data-figma-node="5602:73728" className="box-border w-max max-w-[min(68px,100%)] h-auto" />
             </div>
             <p data-figma-node="5602:73733" className="box-border self-stretch min-w-0 h-auto min-h-[32px] shrink-0 font-onest text-[12px] font-[400] leading-[16px] text-left text-color-34">Shift $2,400 from email to social media ads based on last month performance data.</p>
             <div data-figma-node="5602:73734" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
@@ -499,7 +528,7 @@ export function WeekCalendarDefaultContentSection() {
           <div data-figma-node="5602:73738" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[8px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] relative flex flex-col items-start gap-2.5 pt-[12px] pr-[12px] pb-[12px] pl-[12px] bg-surface">
             <div data-figma-node="5602:73739" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
               <p data-figma-node="5602:73740" className="box-border flex-1 min-w-0 h-auto min-h-[17px] font-onest text-[13px] font-[700] leading-[17px] text-left truncate text-text-primary">Holiday Content Deadlines</p>
-              <Shared34 data-figma-node="5602:73741" className="box-border w-max max-w-[min(68px,100%)] h-auto" />
+              <Shared36 data-figma-node="5602:73741" className="box-border w-max max-w-[min(68px,100%)] h-auto" />
             </div>
             <p data-figma-node="5602:73746" className="box-border self-stretch min-w-0 h-auto min-h-[32px] shrink-0 font-onest text-[12px] font-[400] leading-[16px] text-left text-color-34">All Halloween promotional content must be finalized by Sept 20. Assets due to print vendor by Sept 22.</p>
             <div data-figma-node="5602:73747" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">

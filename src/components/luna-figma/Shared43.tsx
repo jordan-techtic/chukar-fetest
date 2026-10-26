@@ -1,16 +1,17 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:757d650633
+ * Figma componentId: repeat:90cb7a45bb
  * Component: Shared43
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-import { Default2 } from "./Default2";
-export function Shared43({ className = "", text = "20", ...rest }: { className?: string; text?: string; [key: string]: unknown }) {
+export function Shared43({ className = "", text = "4", ...rest }: { className?: string; text?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5602:71627;5725:79515" className={`box-border w-max max-w-[min(50px,100%)] h-auto relative flex flex-row items-center gap-2.5 ${className}`} {...rest}>
-    <p data-figma-node="I5602:71627;5602:61812" className="box-border w-max h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">{text}</p>
-    <Default2 data-figma-node="I5602:71627;5725:71418" data-figma-component="5725:71390" className="box-border w-max max-w-[min(24px,100%)] h-[20px] rounded-[4px] pr-[6px] pl-[6px] bg-color-60" />
+  <div data-figma-node="I5602:71583;5602:61811" className={`box-border w-full min-w-0 h-[20px] relative flex flex-row items-center justify-between gap-5 ${className}`} {...rest}>
+    <div data-figma-node="I5602:71583;5725:79515" className="box-border w-max max-w-[min(13px,100%)] h-auto relative flex flex-row items-center gap-2.5">
+      <p data-figma-node="I5602:71583;5602:61812" className="box-border w-max h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">{text}</p>
+    </div>
+    <div data-figma-node="I5602:71583;5725:77344" className="box-border w-[46px] shrink-0 h-auto relative flex flex-row items-center justify-end gap-2.5"></div>
   </div>
   );
 }

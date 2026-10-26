@@ -1,16 +1,16 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:36c19a9b42
+ * Figma componentId: repeat:077903a0b1
  * Component: Shared47
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
+import { Default3 } from "./Default3";
 export function Shared47({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5645:45615;5602:64431" className={`box-border w-[16px] h-[16px] rotate-[-90deg] origin-center relative flex flex-row items-center justify-center gap-0.5 ${className}`} {...rest}>
-    <svg data-figma-node="I5645:45615;5602:64432" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#ffffff" /></svg>
-    <svg data-figma-node="I5645:45615;5602:64433" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#ffffff" /></svg>
-    <svg data-figma-node="I5645:45615;5602:64434" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#ffffff" /></svg>
+  <div data-figma-node="I5602:71645;5725:79515" className={`box-border w-max max-w-[min(91px,100%)] h-auto relative flex flex-row items-center gap-2.5 ${className}`} {...rest}>
+    <p data-figma-node="I5602:71645;5602:61812" className="box-border w-max max-w-[min(21px,100%)] h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">30</p>
+    <Default3 data-figma-node="I5602:71645;5725:71418" data-figma-component="5725:71390" className="box-border w-max max-w-[min(64px,100%)] h-[20px] rounded-[4px] pr-[6px] pl-[6px] bg-color-60" />
   </div>
   );
 }

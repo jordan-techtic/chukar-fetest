@@ -1,17 +1,18 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:79f5fd3f62
+ * Figma componentId: repeat:48bab81ff6
  * Component: Shared19
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-import { Variant428 } from "./Variant428";
+import { Variant423 } from "./Variant423";
+import { Variant53 } from "./Variant53";
 export function Shared19({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5602:71632;5602:61816" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
-    <Variant428 data-figma-node="I5602:71632;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant428 data-figma-node="I5602:71632;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant428 data-figma-node="I5602:71632;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+  <div data-figma-node="I5602:71621;5602:61816" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
+    <Variant53 data-figma-node="I5602:71621;5602:69270" data-figma-component="5602:69045" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant423 data-figma-node="I5602:71621;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant423 data-figma-node="I5602:71621;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
   </div>
   );
 }

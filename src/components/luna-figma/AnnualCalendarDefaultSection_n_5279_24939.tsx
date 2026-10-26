@@ -8,7 +8,7 @@
  */
 import { figmaUnresolvedActionProps } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
-import { Shared48 } from "./Shared48";
+import { Shared50 } from "./Shared50";
 export function AnnualCalendarDefaultSection_n_5279_24939() {
   return (
     <section data-figma-node="5279:24939" className="relative box-border w-full min-w-0 min-h-[940px] pt-[30px] pr-[30px] pb-[30px] pl-[30px] border-l border-[#e2d9d0] flex flex-col items-start gap-5 bg-surface shadow-[-6px_0px_24px_0px_rgba(0,0,0,0.149)]">
@@ -69,11 +69,11 @@ export function AnnualCalendarDefaultSection_n_5279_24939() {
           <div data-figma-node="5279:25666" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-start gap-4">
             <div data-figma-node="5279:25667" className="box-border flex-1 min-w-0 h-auto relative flex flex-col items-start gap-1.5">
               <p data-figma-node="5279:25668" className="box-border w-max max-w-[min(76px,100%)] h-auto min-h-[15px] shrink-0 font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] uppercase text-left whitespace-nowrap text-text-secondary">Send Date</p>
-              <Shared48 data-figma-node="5279:25669" className="box-border self-stretch min-w-0 h-auto shrink-0" />
+              <Shared50 data-figma-node="5279:25669" className="box-border self-stretch min-w-0 h-auto shrink-0" />
             </div>
             <div data-figma-node="5279:25672" className="box-border flex-1 min-w-0 h-auto relative flex flex-col items-start gap-1.5">
               <p data-figma-node="5279:25673" className="box-border w-max max-w-[min(68px,100%)] h-auto min-h-[15px] shrink-0 font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] uppercase text-left whitespace-nowrap text-text-secondary">End Date</p>
-              <Shared48 data-figma-node="5279:25674" className="box-border self-stretch min-w-0 h-auto shrink-0" />
+              <Shared50 data-figma-node="5279:25674" className="box-border self-stretch min-w-0 h-auto shrink-0" />
             </div>
           </div>
         </div>

@@ -1,16 +1,16 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:5523a1e76c
+ * Figma componentId: repeat:aaf9cda8e5
  * Component: Shared39
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-export function Shared39({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
+import { Default } from "./Default";
+export function Shared39({ className = "", text = "11", ...rest }: { className?: string; text?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5596:52901;5602:55917;5725:67329" className={`box-border w-[14px] h-[14px] rotate-[90deg] origin-center relative flex flex-row items-center justify-center gap-0.5 ${className}`} {...rest}>
-    <svg data-figma-node="I5596:52901;5602:55917;5725:67330" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
-    <svg data-figma-node="I5596:52901;5602:55917;5725:67331" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
-    <svg data-figma-node="I5596:52901;5602:55917;5725:67332" viewBox="0 0 3 3" preserveAspectRatio="none" aria-hidden="true" className="box-border w-[3px] shrink-0 h-[3px] pointer-events-none overflow-visible"><path d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z" fill="#231f20" /></svg>
+  <div data-figma-node="I5589:51028;5725:99918" className={`box-border w-max max-w-[min(42px,100%)] h-auto relative flex flex-row items-center gap-1.5 ${className}`} {...rest}>
+    <p data-figma-node="I5589:51028;5725:87494" className="box-border w-[16px] shrink-0 h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">{text}</p>
+    <Default data-figma-node="I5589:51028;5725:99921" data-figma-component="5725:71390" className="box-border w-[16px] shrink-0 h-[16px] rounded-[4px] pr-[6px] pl-[6px] bg-color-60" />
   </div>
   );
 }
