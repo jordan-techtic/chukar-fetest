@@ -1,18 +1,17 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:d5ea1791bd
+ * Figma componentId: repeat:c7b84beed0
  * Component: Shared25
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-import { Variant435 } from "./Variant435";
-import { Variant436 } from "./Variant436";
 export function Shared25({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5645:45615;5602:66964;5602:61816" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
-    <Variant436 data-figma-node="I5645:45615;5602:66964;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant435 data-figma-node="I5645:45615;5602:66964;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant435 data-figma-node="I5645:45615;5602:66964;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+  <div data-figma-node="5602:64517" className={`box-border w-max max-w-[min(124px,100%)] h-auto relative flex flex-row items-center gap-1 ${className}`} {...rest}>
+    <p data-figma-node="5602:64518" className="box-border w-[48px] h-[13px] font-onest text-[10px] font-[500] leading-[13px] text-left whitespace-nowrap text-color-14">Sept 3 - 9</p>
+    <div data-figma-node="5602:64519" className="box-border w-max max-w-[min(72px,100%)] h-auto rounded-[100px] relative flex flex-row items-center justify-center gap-2.5 pt-[2px] pr-[6px] pb-[2px] pl-[6px] bg-surface">
+      <p data-figma-node="5602:64520" className="box-border w-max max-w-[min(60px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[500] leading-[13px] text-left truncate min-w-0 text-color-14">C5-M9-Y26</p>
+    </div>
   </div>
   );
 }

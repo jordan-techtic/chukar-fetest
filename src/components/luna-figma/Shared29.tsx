@@ -1,18 +1,16 @@
 /**
  * Luna generated shared component
- * Figma componentId: repeat:0dc4f6b0ec
+ * Figma componentId: repeat:32d268db19
  * Component: Shared29
  * Ownership: Figma-owned layout
  * luna-spec-codegen: owned-layout
  */
-import { Variant435 } from "./Variant435";
-import { Variant439 } from "./Variant439";
-export function Shared29({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
+import { Default4 } from "./Default4";
+export function Shared29({ className = "", text = "20", ...rest }: { className?: string; text?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5645:45615;5602:67660;5602:61816" className={`box-border w-full min-w-0 h-[130px] overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1 ${className}`} {...rest}>
-    <Variant439 data-figma-node="I5645:45615;5602:67660;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant435 data-figma-node="I5645:45615;5602:67660;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
-    <Variant435 data-figma-node="I5645:45615;5602:67660;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+  <div data-figma-node="I5602:67892;5725:79515" className={`box-border w-max max-w-[min(90px,100%)] h-auto relative flex flex-row items-center gap-2.5 ${className}`} {...rest}>
+    <p data-figma-node="I5602:67892;5602:61812" className="box-border w-max h-auto min-h-[17px] font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-color-23">{text}</p>
+    <Default4 data-figma-node="I5602:67892;5725:71418" data-figma-component="5725:71390" className="box-border w-max max-w-[min(64px,100%)] h-[20px] rounded-[4px] pr-[6px] pl-[6px] bg-color-60" />
   </div>
   );
 }
