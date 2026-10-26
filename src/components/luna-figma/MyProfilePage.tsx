@@ -14,7 +14,7 @@ import "./figma-responsive.css";
 import { useFigmaScreenData, useDialogState } from "./useFigmaScreenData";
 import { MyProfileMarketingCalendarSection } from "./MyProfileMarketingCalendarSection";
 import { MyProfileTitleRowSection } from "./MyProfileTitleRowSection";
-import { MyProfileContentSection } from "./MyProfileContentSection";
+import { ProfileForm } from "@/components/features/profile/ProfileForm";
 import { MonthlyCalendarProfileMenuModal } from "./MonthlyCalendarProfileMenuModal";
 
 export function MyProfilePage() {
@@ -24,10 +24,10 @@ export function MyProfilePage() {
   return (
     <div data-figma-bound={screenData.bound}
       data-figma-frame="5329:12027" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col min-h-[1179px]">
         <MyProfileMarketingCalendarSection />
         <MyProfileTitleRowSection />
-        <MyProfileContentSection />
+        <ProfileForm />
       </main>
       {dialog_act_fb3c8e04cdf0.isOpen && (
         <div

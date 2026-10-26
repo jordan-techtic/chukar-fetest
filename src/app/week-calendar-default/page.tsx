@@ -14,8 +14,10 @@ export const metadata: Metadata = { title: "Week-calendar-default" };
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="week-calendar-default">
-      <WeekCalendarDefaultPage />
-    </FigmaScreenDataProvider>
+    <div className="w-full flex flex-col">
+      <FigmaScreenDataProvider routePath="week-calendar-default">
+        <WeekCalendarDefaultPage />
+      </FigmaScreenDataProvider>
+    </div>
   );
 }

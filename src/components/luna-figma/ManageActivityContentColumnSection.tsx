@@ -39,7 +39,7 @@ export function ManageActivityContentColumnSection() {
   const showPagination = totalPages > 1;
 
   return (
-    <section data-figma-node="5359:17138" id="contact" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5359:17138" id="contact" className="absolute top-[169px] left-0 right-0 box-border w-full min-w-0 h-[601px] overflow-hidden flex flex-col items-start z-[2]">
       <div data-figma-node="5359:17154" className="box-border self-stretch min-w-0 h-[601px] shrink-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
         <div className="sr-only" aria-live="polite">
           {usersLoading ? "Loading activities." : null}
@@ -121,6 +121,7 @@ export function ManageActivityContentColumnSection() {
               <ManageActivityTableRow
                 key={activity.id}
                 activity={activity}
+                rowIndex={index}
                 isLast={index === activities.length - 1}
                 onEdit={openEditActivity}
                 onDelete={(id) => void deleteActivity(id)}

@@ -1,20 +1,20 @@
 /**
  * Luna generated page
- * Page: MyProfilePage
+ * Page: WeekCalendarHistoricalPage
  * Ownership: Figma-owned layout
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
 import type { Metadata } from "next";
 import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
-import { MyProfilePage } from "@/components/luna-figma/MyProfilePage";
+import { WeekCalendarHistoricalPage } from "@/components/luna-figma/WeekCalendarHistoricalPage";
 
-export const metadata: Metadata = { title: "My-profile" };
+export const metadata: Metadata = { title: "Week-calendar-Historical view" };
 
 export default function Page() {
   return (
     <FigmaScreenDataProvider routePath="">
-      <MyProfilePage />
+      <WeekCalendarHistoricalPage />
     </FigmaScreenDataProvider>
   );
 }

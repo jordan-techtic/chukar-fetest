@@ -23,7 +23,7 @@ export function WeekCalendarDefaultPage() {
   return (
     <div data-figma-bound={screenData.bound}
       data-figma-frame="5602:62165" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col min-h-[139px]">
         <WeekCalendarDefaultMarketingCalendarSection />
         <WeekCalendarDefaultSeptember2026Section />
         <WeekCalendarDefaultSection_n_5645_43147 />

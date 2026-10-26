@@ -13,8 +13,8 @@ import "./figma-theme.css";
 import "./figma-responsive.css";
 import { useFigmaScreenData, useDialogState } from "./useFigmaScreenData";
 import { ManageActivityMarketingCalendarSection } from "./ManageActivityMarketingCalendarSection";
-import { ManageActivityTitleRowSection } from "./ManageActivityTitleRowSection";
-import { ManageActivityContentColumnSection } from "./ManageActivityContentColumnSection";
+import { FilterInput } from "@/components/features/activity/FilterInput";
+import { ActivityTable } from "@/components/features/activity/ActivityTable";
 import { MonthlyCalendarProfileMenuModal } from "./MonthlyCalendarProfileMenuModal";
 import { CreateActivityTypeModal } from "./CreateActivityTypeModal";
 
@@ -25,10 +25,10 @@ export function ManageActivityPage() {
   return (
     <div data-figma-bound={screenData.bound}
       data-figma-frame="5359:17106" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
-      <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
+      <main id="main-content" className="relative flex w-full min-w-0 flex-1 flex-col min-h-[770px]">
         <ManageActivityMarketingCalendarSection />
-        <ManageActivityTitleRowSection />
-        <ManageActivityContentColumnSection />
+        <FilterInput />
+        <ActivityTable />
       </main>
       {dialog_act_ba35eb2255f6.isOpen && (
         <div
@@ -52,7 +52,9 @@ export function ManageActivityPage() {
 
       {dialog_act_3e47c2f5e482.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5449:18600"
+          className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden box-border w-full min-h-[770px] pt-[35px] pr-[460px] pb-[35px] pl-[460px]"
+          style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

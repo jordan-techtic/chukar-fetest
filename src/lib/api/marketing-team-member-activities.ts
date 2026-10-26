@@ -120,6 +120,7 @@ export async function listMarketingActivities(
         search: params.search?.trim() || undefined,
         page: params.page ?? 1,
         limit: params.limit ?? 6,
+        sort: "-created_at",
       },
     },
   );

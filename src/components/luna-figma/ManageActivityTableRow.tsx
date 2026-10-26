@@ -4,10 +4,31 @@
 "use client";
 
 import type { MarketingActivity } from "@/lib/api/marketing-team-member-activities";
+import { figmaItemProps, figmaTextContent } from "./figmaDisplay";
 import { Actions } from "./Actions";
 import { Actions2 } from "./Actions2";
 import { StatusColumn } from "./StatusColumn";
 import { StatusColumn2 } from "./StatusColumn2";
+
+const ROW_ITEM_NODE_IDS = [
+  "5359:17170",
+  "5359:17187",
+  "5359:17204",
+  "5359:17218",
+  "5359:17235",
+  "5359:17252",
+] as const;
+
+const ROW_TITLE_NODE_IDS = [
+  "5359:17172",
+  "5359:17189",
+  "5359:17206",
+  "5359:17220",
+  "5359:17237",
+  "5359:17254",
+] as const;
+
+const ROW_FALLBACK_COLORS = ["#A21D35", "#9b51e0", "#2a9d8f", "#0083ba", "#a21d35", "#72516a"] as const;
 
 function formatCategoryLabel(category: string): string {
   if (!category) {
@@ -42,6 +63,7 @@ function isPublishedStatus(status: string): boolean {
 
 export type ManageActivityTableRowProps = {
   activity: MarketingActivity;
+  rowIndex: number;
   isLast?: boolean;
   onEdit?: (activity: MarketingActivity) => void;
   onDelete?: (id: string) => void;
@@ -49,18 +71,29 @@ export type ManageActivityTableRowProps = {
 
 export function ManageActivityTableRow({
   activity,
+  rowIndex,
   isLast = false,
   onEdit,
   onDelete,
 }: ManageActivityTableRowProps) {
+  const itemNodeId = ROW_ITEM_NODE_IDS[rowIndex] ?? ROW_ITEM_NODE_IDS[0];
+  const titleNodeId = ROW_TITLE_NODE_IDS[rowIndex] ?? ROW_TITLE_NODE_IDS[0];
   const description =
     activity.description ?? activity.details ?? activity.notes ?? "—";
-  const color = activity.color ?? "#A21D35";
+  const color =
+    activity.color ?? ROW_FALLBACK_COLORS[rowIndex % ROW_FALLBACK_COLORS.length];
   const published = isPublishedStatus(activity.status);
   const borderClass = isLast ? "border-[#e2d9d0] border-[0px]" : "border-b border-[#e2d9d0]";
+  const itemBinding = figmaItemProps(itemNodeId);
+
+  if (itemBinding.hidden) {
+    return null;
+  }
 
   return (
     <div
+      data-figma-node={itemNodeId}
+      {...itemBinding}
       className={`box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center gap-5 pt-[16px] pr-[24px] pb-[16px] pl-[24px] ${borderClass}`}
     >
       <div
@@ -68,8 +101,11 @@ export function ManageActivityTableRow({
         className="box-border w-[16px] shrink-0 h-[16px] overflow-hidden relative block"
         aria-hidden="true"
       />
-      <p className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary">
-        {activity.title}
+      <p
+        data-figma-node={titleNodeId}
+        className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[600] leading-[18px] text-left text-text-primary"
+      >
+        {figmaTextContent(titleNodeId, activity.title)}
       </p>
       <p className="box-border flex-1 min-w-0 h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left truncate text-text-secondary">
         {description}

@@ -15,7 +15,7 @@ import { FiRrAngleSmallRight } from "./FiRrAngleSmallRight";
 import { FiRrFilter } from "./FiRrFilter";
 export function MonthlyCalendarProfileMeSeptember2026Section() {
   return (
-    <section data-figma-node="5327:3854" data-figma-component="5273:20994" className="relative box-border w-full min-w-0 flex-1 md:min-h-[59px] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between bg-color-9 z-[1]">
+    <section data-figma-node="5327:3854" data-figma-component="5273:20994" className="absolute top-[80px] left-0 right-0 box-border w-full min-w-0 h-[59px] overflow-hidden pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between bg-[#faf3e8] z-[1]">
       <div data-figma-node="I5327:3854;5273:20960" className="box-border w-[1400px] shrink-0 h-auto relative flex flex-row items-center justify-between gap-5">
         <div data-figma-node="I5327:3854;5273:20961" className="box-border w-[804px] shrink-0 h-auto overflow-hidden relative flex flex-row items-center gap-3">
           <FiRrAngleSmallLeft data-figma-node="I5327:3854;5273:20963" data-figma-component="5121:8081" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden" />
