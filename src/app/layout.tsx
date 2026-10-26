@@ -3,9 +3,11 @@ import type { ReactNode } from "react";
 
 import { ErrorBoundary } from "@/components/ui/error-boundary";
 import { Toaster } from "@/components/ui/sonner";
+import { AuthGuard } from "@/lib/auth/auth-guard";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
 import "./globals.css";
+import "@/components/luna-figma/figma-fonts.css";
 
 export const metadata: Metadata = {
   title: "Marketing Content Calendar",
@@ -15,6 +17,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      </head>
       <body className="min-h-screen bg-[var(--color-background)] font-[family-name:var(--font-onest)] antialiased text-[var(--color-text-primary)]">
         <ThemeProvider>
           <ErrorBoundary>
@@ -24,7 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             >
               Skip to main content
             </a>
-            {children}
+            <AuthGuard>{children}</AuthGuard>
             <Toaster position="top-right" />
           </ErrorBoundary>
         </ThemeProvider>
