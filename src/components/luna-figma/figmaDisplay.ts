@@ -27,10 +27,279 @@ export interface FigmaDisplayBinding {
 }
 
 /** data-figma-node → the response field it renders. */
-export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {};
+export const FIGMA_DISPLAY_BINDINGS: Readonly<Record<string, FigmaDisplayBinding>> = {
+  "5449:19151": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "item",
+    "nodeId": "5449:19151",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": [
+      "items",
+      0
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5449:19153": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19153",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": [
+      "items",
+      0,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19162": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "item",
+    "nodeId": "5449:19162",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": [
+      "items",
+      1
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5449:19164": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19164",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": [
+      "items",
+      1,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5449:19173": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "item",
+    "nodeId": "5449:19173",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": [
+      "items",
+      2
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5449:19175": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5449:19126",
+    "kind": "text",
+    "nodeId": "5449:19175",
+    "operation": "GET /api/v1/marketing-team-member/categories",
+    "path": [
+      "items",
+      2,
+      "title"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5621:28304": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "item",
+    "nodeId": "5621:28304",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      0
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5621:28307": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28307",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      0,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5621:28319": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "item",
+    "nodeId": "5621:28319",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      1
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5621:28322": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28322",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      1,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5621:28334": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "item",
+    "nodeId": "5621:28334",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      2
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5621:28337": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28337",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      2,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5621:28349": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "item",
+    "nodeId": "5621:28349",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      3
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5621:28352": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28352",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      3,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5621:28364": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "item",
+    "nodeId": "5621:28364",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      4
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5621:28367": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28367",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      4,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  },
+  "5621:28379": {
+    "evidence": "repeated_cards",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "item",
+    "nodeId": "5621:28379",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      5
+    ],
+    "responseUnwrap": "data",
+    "valueType": null
+  },
+  "5621:28382": {
+    "evidence": "role:title",
+    "format": null,
+    "frameId": "5621:28270",
+    "kind": "text",
+    "nodeId": "5621:28382",
+    "operation": "GET /api/v1/marketing-team-member/holidays",
+    "path": [
+      "items",
+      5,
+      "name"
+    ],
+    "responseUnwrap": "data",
+    "valueType": "string"
+  }
+};
 
 /** Screen frame id → read operations its display bindings consume. */
-export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {};
+export const FIGMA_DISPLAY_OPERATIONS: Readonly<Record<string, readonly string[]>> = {
+  "5449:19126": [
+    "GET /api/v1/marketing-team-member/categories"
+  ],
+  "5621:28270": [
+    "GET /api/v1/marketing-team-member/holidays"
+  ]
+};
 
 const payloads = new Map<string, unknown>();
 const listeners = new Set<() => void>();
