@@ -994,7 +994,7 @@ export function useFigmaScreenData() {
   };
 }
 
-export function figmaFieldProps(field: string): FigmaFieldBinding {
+export function useFigmaFieldProps(field: string): FigmaFieldBinding {
   const ctx = useContext(FigmaScreenContext);
   if (!ctx) {
     return {};
@@ -1030,7 +1030,7 @@ export function figmaFieldProps(field: string): FigmaFieldBinding {
   return binding;
 }
 
-export function figmaActionProps(action: string): FigmaActionBinding {
+export function useFigmaActionProps(action: string): FigmaActionBinding {
   const router = useRouter();
   const onClick = useCallback(
     (event: { preventDefault: () => void }) => {
@@ -1052,6 +1052,12 @@ export function figmaActionProps(action: string): FigmaActionBinding {
   );
   return { onClick };
 }
+
+/** Luna codegen spread sites — alias of `useFigmaActionProps`. */
+export const figmaActionProps = useFigmaActionProps;
+
+/** Luna codegen spread sites — alias of `useFigmaFieldProps`. */
+export const figmaFieldProps = useFigmaFieldProps;
 
 export function figmaUnresolvedActionProps(actionId: string): FigmaActionBinding {
   return {

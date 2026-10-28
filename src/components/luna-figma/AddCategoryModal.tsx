@@ -19,8 +19,7 @@ export function AddCategoryModal() {
     <div
       data-figma-bound={screenData.bound}
       data-figma-frame="5359:17278"
-      className="relative max-w-full"
-      style={{ width: 520, height: 509 }}
+      className="relative box-border h-[509px] w-[520px] max-w-full"
     >
       <section
         data-figma-node="5354:14252"

@@ -54,27 +54,24 @@ export function ManageCategoryPage() {
 
       {dialog_act_9c6be34838f4.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center"
-          role="presentation"
+          data-figma-node="5449:19238"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)]"
+          style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Create category"
+          tabIndex={-1}
+          ref={(el) => {
+            el?.focus();
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") dialog_act_9c6be34838f4.close();
+          }}
+          data-figma-dialog="act_9c6be34838f4"
           onClick={dialog_act_9c6be34838f4.close}
         >
-          <div
-            data-figma-node="5449:19238"
-            className="box-border flex h-[770px] w-[1440px] max-w-full items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)] pt-[130px] pr-[460px] pb-[130px] pl-[460px]"
-            role="dialog"
-            aria-modal="true"
-            tabIndex={-1}
-            ref={(el) => { el?.focus(); }}
-            onKeyDown={(e) => { if (e.key === "Escape") dialog_act_9c6be34838f4.close(); }}
-            data-figma-dialog="act_9c6be34838f4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div
-              className="relative max-h-[90vh] overflow-auto rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <AddCategoryModal />
-            </div>
+          <div className="relative shrink-0" onClick={(e) => e.stopPropagation()} role="presentation">
+            <AddCategoryModal />
           </div>
         </div>
       )}

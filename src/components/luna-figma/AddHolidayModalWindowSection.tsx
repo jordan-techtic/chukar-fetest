@@ -20,7 +20,7 @@ export function AddHolidayModalWindowSection() {
     useFigmaScreenData();
 
   return (
-    <section data-figma-node="5621:29003" className="relative box-border w-full min-w-0 min-h-[334px] pt-[24px] pr-[24px] pb-[24px] pl-[24px] rounded-[12px] flex flex-col items-start gap-6 bg-surface shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)]">
+    <section data-figma-node="5621:29003" className="relative box-border w-full min-w-0 h-[334px] pt-[24px] pr-[24px] pb-[24px] pl-[24px] rounded-[12px] flex flex-col items-start gap-6 bg-surface shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)]">
       <form
         className="box-border self-stretch min-w-0 flex flex-col items-start gap-6"
         onSubmit={(event) => {

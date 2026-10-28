@@ -54,27 +54,24 @@ export function ManageHolidayPage() {
 
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center"
-          role="presentation"
+          data-figma-node="5621:29002"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)]"
+          style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Add holiday"
+          tabIndex={-1}
+          ref={(el) => {
+            el?.focus();
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") dialog_act_8e0ab36f39bd.close();
+          }}
+          data-figma-dialog="act_8e0ab36f39bd"
           onClick={dialog_act_8e0ab36f39bd.close}
         >
-          <div
-            data-figma-node="5621:29002"
-            className="box-border flex h-[770px] w-[1440px] max-w-full items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)] pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
-            role="dialog"
-            aria-modal="true"
-            tabIndex={-1}
-            ref={(el) => { el?.focus(); }}
-            onKeyDown={(e) => { if (e.key === "Escape") dialog_act_8e0ab36f39bd.close(); }}
-            data-figma-dialog="act_8e0ab36f39bd"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div
-              className="relative max-h-[90vh] overflow-auto rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <AddHolidayModal />
-            </div>
+          <div className="relative shrink-0" onClick={(e) => e.stopPropagation()} role="presentation">
+            <AddHolidayModal />
           </div>
         </div>
       )}

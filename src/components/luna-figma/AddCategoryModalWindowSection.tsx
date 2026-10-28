@@ -8,20 +8,29 @@
  */
 "use client";
 
+import type React from "react";
 import { Loader2 } from "lucide-react";
-import { figmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
+import { figmaFieldProps, useFigmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 import { FiRrCrossSmall2 } from "./FiRrCrossSmall2";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const CATEGORY_MODAL_FRAME_ID = "5359:17278";
 
 export function AddCategoryModalWindowSection() {
   const { submit, submitting, fieldErrors, submitError, closeCategoryDialog } =
     useFigmaScreenData();
+  const iconField = useFigmaFieldProps("icon");
 
   return (
-    <section data-figma-node="5449:19239" className="relative box-border w-full min-w-0 min-h-[509px] pt-[24px] pr-[24px] pb-[24px] pl-[24px] rounded-[12px] flex flex-col items-start gap-6 bg-surface shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)]">
+    <section data-figma-node="5449:19239" className="relative box-border w-full min-w-0 h-[509px] pt-[24px] pr-[24px] pb-[24px] pl-[24px] rounded-[12px] flex flex-col items-start gap-6 bg-surface shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)]">
       <form
         className="box-border self-stretch min-w-0 flex flex-col items-start gap-6"
         onSubmit={(event) => {
@@ -63,25 +72,33 @@ export function AddCategoryModalWindowSection() {
         </div>
         <div data-figma-node="5908:36968" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-1.5">
           <label htmlFor="category-icon-select" data-figma-node="5908:36969" className="box-border w-max max-w-[min(37px,100%)] h-auto min-h-[15px] shrink-0 font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] uppercase text-left whitespace-nowrap text-color-11">Icon</label>
-          <div className="box-border self-stretch min-w-0 shrink-0 rounded-[8px] relative border-[#e2d9d0] border-[1px] bg-surface h-[44px]">
-            <select
+          <Select
+            name="icon"
+            value={iconField.value ? iconField.value : undefined}
+            onValueChange={(next) => {
+              iconField.onChange?.({
+                target: { value: next },
+              } as React.ChangeEvent<HTMLSelectElement>);
+            }}
+          >
+            <SelectTrigger
               id="category-icon-select"
               data-figma-node="5908:36970"
-              name="icon"
               data-figma-field="icon"
               data-figma-field-origin="design_text"
-              {...figmaFieldProps("icon")}
               aria-label="Selected icon:"
               aria-invalid={Boolean(fieldErrors.icon)}
               aria-describedby={fieldErrors.icon ? "category-icon-error" : undefined}
-              className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer text-text-primary font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"
+              className="box-border h-[44px] shadow-none ring-0 font-onest text-[14px] font-[600] leading-[18px] text-left"
             >
-              <option value="">Selected icon:</option>
-              <option value="FaCalendar">FaCalendar</option>
-              <option value="FaEnvelope">FaEnvelope</option>
-              <option value="FaMegaphone">FaMegaphone</option>
-            </select>
-          </div>
+              <SelectValue placeholder="Selected icon:" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="FaCalendar">FaCalendar</SelectItem>
+              <SelectItem value="FaEnvelope">FaEnvelope</SelectItem>
+              <SelectItem value="FaMegaphone">FaMegaphone</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
         <div data-figma-node="5449:19253" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-1.5">
           <label htmlFor="category-description-input" data-figma-node="5449:19254" className="box-border w-max max-w-[min(91px,100%)] h-auto min-h-[15px] shrink-0 font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] uppercase text-left whitespace-nowrap text-color-11">Description</label>
