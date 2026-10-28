@@ -22,7 +22,11 @@ export function AddHolidayModal() {
       className="relative max-w-full"
       style={{ width: 520, height: 334 }}
     >
-        <AddHolidayModalWindowSection />
+      <section data-figma-node="5621:28801" className="relative box-border pt-[15px] pr-[20px] pb-[15px] pl-[20px]">
+        <section data-figma-node="5621:28802" className="relative box-border pt-[20px] pr-[40px] pb-[20px] pl-[40px]">
+          <AddHolidayModalWindowSection />
+        </section>
+      </section>
     </div>
   );
 }

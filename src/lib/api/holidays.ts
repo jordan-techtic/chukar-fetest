@@ -99,6 +99,21 @@ export async function deleteHoliday(id: string): Promise<unknown> {
   return response.data;
 }
 
+export async function importHolidays(file: File): Promise<unknown> {
+  const formData = new FormData();
+  formData.append("file", file);
+  const response = await apiClient.post<unknown>(
+    "/api/v1/marketing-team-member/holidays/import",
+    formData,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    },
+  );
+  return response.data;
+}
+
 export function formatHolidayDate(iso: string): string {
   if (!iso) {
     return "—";

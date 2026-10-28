@@ -25,8 +25,10 @@ export function WeekCalendarDefaultPage() {
       data-figma-frame="5602:62165" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <WeekCalendarDefaultMarketingCalendarSection />
-        <WeekCalendarDefaultSeptember2026Section />
-        <WeekCalendarDefaultSection_n_5645_43147 />
+        <div className="relative box-border w-full h-[757px] shrink-0">
+          <WeekCalendarDefaultSection_n_5645_43147 />
+          <WeekCalendarDefaultSeptember2026Section />
+        </div>
       </main>
       {dialog_act_10a2fe67aa7b.isOpen && (
         <div

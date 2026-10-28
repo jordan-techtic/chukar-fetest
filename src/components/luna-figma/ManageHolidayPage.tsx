@@ -27,8 +27,10 @@ export function ManageHolidayPage() {
       data-figma-frame="5621:28270" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <ManageHolidayMarketingCalendarSection />
-        <ManageHolidayTitleRowSection />
-        <ManageHolidayContentColumnSection />
+        <div className="relative box-border w-full h-[601px] shrink-0">
+          <ManageHolidayContentColumnSection />
+          <ManageHolidayTitleRowSection />
+        </div>
       </main>
       {dialog_act_0e7f4be472d9.isOpen && (
         <div
@@ -52,7 +54,9 @@ export function ManageHolidayPage() {
 
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5621:29002"
+          className="fixed inset-0 z-[9999] box-border flex h-[770px] w-[1440px] max-w-full items-center justify-center overflow-hidden pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
+          style={{ backgroundColor: "rgba(35, 31, 32, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

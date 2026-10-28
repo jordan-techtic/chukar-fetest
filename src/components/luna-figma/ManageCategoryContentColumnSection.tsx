@@ -48,7 +48,7 @@ export function ManageCategoryContentColumnSection() {
   const showPagination = totalPages > 1;
 
   return (
-    <section data-figma-node="5449:19142" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5449:19142" className="absolute left-0 right-0 top-0 z-[2] box-border h-[601px] w-full min-w-0 overflow-hidden flex flex-col items-start">
       <div className="sr-only" aria-live="polite">
         {categoriesLoading ? "Loading categories." : null}
         {categoriesError ? (
@@ -66,7 +66,7 @@ export function ManageCategoryContentColumnSection() {
           : null}
       </div>
       <div data-figma-node="5449:19143" className="box-border self-stretch min-w-0 h-[601px] shrink-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
-        <div data-figma-node="5449:19144" role="table" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-surface overflow-x-auto overflow-y-hidden max-w-full">
+        <div data-figma-node="5449:19144" role="table" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-surface max-w-full">
           <div data-figma-node="5449:19145" role="row" className="box-border self-stretch h-auto shrink-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-b border-[#e2d9d0] bg-color-9 min-w-[1360px]">
             <p data-figma-node="5449:19146" role="columnheader" className="box-border w-[200px] shrink-0 h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] uppercase text-left lg:whitespace-nowrap text-text-primary">Category Name</p>
             <p data-figma-node="5449:19147" role="columnheader" className="box-border flex-1 min-w-0 h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] uppercase text-left text-text-primary">Description</p>

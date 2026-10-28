@@ -28,6 +28,7 @@ import {
 import {
   createHoliday,
   deleteHoliday as deleteHolidayApi,
+  importHolidays as importHolidaysApi,
   listHolidays,
   updateHoliday,
   type ApiHoliday,
@@ -76,6 +77,7 @@ const NAV_ACTIONS: Record<string, string> = {
   act_343c44276459: "/week-calendar-default",
   act_9b8446277dda: "/week-calendar-default",
   act_9916cd70561d: "/manage-category",
+  act_608aa0d2e082: "/week-calendar-default",
 };
 
 const CLOSE_OVERLAY_ACTIONS = new Set([
@@ -215,6 +217,7 @@ type ScreenContextValue = {
   deleteConfirmId: string | null;
   setDeleteConfirmId: (id: string | null) => void;
   confirmDelete: () => Promise<void>;
+  importHolidayList: (file: File) => Promise<void>;
 };
 
 const FigmaScreenContext = createContext<ScreenContextValue | null>(null);
@@ -741,6 +744,19 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
     }
   }, [deleteConfirmId, deleteCategory, deleteHoliday, frameId]);
 
+  const importHolidayList = useCallback(
+    async (file: File) => {
+      setHolidaysError(null);
+      try {
+        await importHolidaysApi(file);
+        await loadReads();
+      } catch (error) {
+        setHolidaysError(getApiErrorMessage(error) || "Could not import holidays.");
+      }
+    },
+    [loadReads],
+  );
+
   const resetHolidayForm = useCallback(() => {
     setEditingHolidayId(null);
     setFieldErrors({});
@@ -898,6 +914,7 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
     deleteConfirmId,
     setDeleteConfirmId,
     confirmDelete,
+    importHolidayList,
   };
 
   // Attach debounced search helper on context (used by figmaFieldProps via ref map)
@@ -967,6 +984,7 @@ export function useFigmaScreenData() {
       deleteConfirmId: null as string | null,
       setDeleteConfirmId: () => {},
       confirmDelete: async () => {},
+      importHolidayList: async () => {},
     };
   }
   return {

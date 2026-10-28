@@ -17,7 +17,7 @@ export function ManageCategoryTitleRowSection() {
   const { openAddCategoryDialog, submitting, fieldErrors } = useFigmaScreenData();
 
   return (
-    <section data-figma-node="5449:19128" className="relative box-border w-full min-w-0 min-h-[89px] pt-[20px] pr-[clamp(16px,2.778vw,40px)] pb-[20px] pl-[clamp(16px,2.778vw,40px)] flex flex-row items-center justify-between z-[1]">
+    <section data-figma-node="5449:19128" className="absolute left-0 right-0 top-0 z-[3] box-border h-[89px] w-full min-w-0 overflow-hidden pt-[20px] pr-[40px] pb-[20px] pl-[40px] flex flex-row items-center justify-between">
       <div data-figma-node="5449:19129" className="box-border w-max max-w-[min(518px,100%)] h-auto relative flex flex-col items-start gap-1">
         <h2 data-figma-node="5449:19130" className="box-border w-max max-w-[min(194px,100%)] h-auto min-h-[28px] shrink-0 font-onest text-[22px] font-[700] leading-[28px] text-left lg:whitespace-nowrap text-text-primary">Manage Category</h2>
         <p data-figma-node="5449:19131" className="box-border w-max max-w-[min(518px,100%)] h-auto min-h-[17px] shrink-0 font-onest text-[13px] font-[400] leading-[17px] text-left lg:whitespace-nowrap text-text-secondary">Create and manage the categories used when creating marketing calendar activities.</p>

@@ -27,8 +27,10 @@ export function ManageCategoryPage() {
       data-figma-frame="5449:19126" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <ManageCategoryMarketingCalendarSection />
-        <ManageCategoryTitleRowSection />
-        <ManageCategoryContentColumnSection />
+        <div className="relative box-border w-full h-[601px] shrink-0">
+          <ManageCategoryContentColumnSection />
+          <ManageCategoryTitleRowSection />
+        </div>
       </main>
       {dialog_act_302ca0c59c1b.isOpen && (
         <div
@@ -52,7 +54,9 @@ export function ManageCategoryPage() {
 
       {dialog_act_9c6be34838f4.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5449:19238"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center overflow-hidden pt-[130px] pr-[460px] pb-[130px] pl-[460px]"
+          style={{ backgroundColor: "rgba(35, 31, 32, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
