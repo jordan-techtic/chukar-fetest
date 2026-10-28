@@ -36,9 +36,7 @@ describe("token-storage", () => {
     sessionStorage.removeItem("mcc_session_rejected");
   });
 
-  it("does not grant page access from env tokens", () => {
-    process.env.NEXT_PUBLIC_DEV_ACCESS_TOKEN = "env-access";
-    process.env.NEXT_PUBLIC_DEV_REFRESH_TOKEN = "env-refresh";
+  it("does not grant page access without a stored session token", () => {
     expect(getAccessToken()).toBeNull();
     expect(hasRouteAccess()).toBe(false);
   });

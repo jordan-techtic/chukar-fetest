@@ -7,8 +7,8 @@
  */
 export function Default4({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5645:45615;5602:67370;5725:80975" data-figma-component="5725:71390" className={`box-border w-max max-w-[min(70px,100%)] h-[20px] rounded-[4px] relative flex flex-row items-center justify-center gap-2.5 pr-[6px] pl-[6px] bg-color-60 ${className}`} {...rest}>
-    <p data-figma-node="I5645:45615;5602:67370;5725:80975;5725:71388" className="box-border w-max max-w-[min(58px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-text-primary">Patriot Day</p>
+  <div data-figma-node="I5602:67892;5725:71418" data-figma-component="5725:71390" className={`box-border w-max max-w-[min(64px,100%)] h-[20px] rounded-[4px] relative flex flex-row items-center justify-center gap-2.5 pr-[6px] pl-[6px] bg-color-60 ${className}`} {...rest}>
+    <p data-figma-node="I5602:67892;5725:71418;5725:71388" className="box-border w-max max-w-[min(52px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-text-primary">Christmas</p>
   </div>
   );
 }

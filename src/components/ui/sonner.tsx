@@ -7,37 +7,36 @@ import {
   OctagonXIcon,
   TriangleAlertIcon,
 } from "lucide-react";
-import { Toaster as Sonner, type ToasterProps } from "sonner";
+import { toast, Toaster as Sonner, type ToasterProps } from "sonner";
 
+export { toast };
+export type { ExternalToast } from "sonner";
+
+/**
+ * Sonner-backed toaster styled with design-system tokens (Onest, bordered cards).
+ */
 export function Toaster({ position = "top-right", ...props }: ToasterProps) {
   return (
     <Sonner
       theme="light"
       position={position}
-      className="toaster group"
       closeButton
+      className="toaster group"
       icons={{
-        success: <CircleCheckIcon className="h-4 w-4 shrink-0" aria-hidden />,
-        info: <InfoIcon className="h-4 w-4 shrink-0" aria-hidden />,
-        warning: <TriangleAlertIcon className="h-4 w-4 shrink-0" aria-hidden />,
-        error: <OctagonXIcon className="h-4 w-4 shrink-0" aria-hidden />,
-        loading: <Loader2Icon className="h-4 w-4 shrink-0 animate-spin" aria-hidden />,
+        success: <CircleCheckIcon className="size-4" />,
+        info: <InfoIcon className="size-4" />,
+        warning: <TriangleAlertIcon className="size-4" />,
+        error: <OctagonXIcon className="size-4" />,
+        loading: <Loader2Icon className="size-4 animate-spin" />,
       }}
       toastOptions={{
         classNames: {
           toast:
-            "group toast group-[.toaster]:rounded-[var(--radius-8)] group-[.toaster]:border-border group-[.toaster]:bg-card group-[.toaster]:text-foreground group-[.toaster]:shadow-[var(--shadow-drop-shadow-2)] group-[.toaster]:font-[family-name:var(--font-onest)]",
-          title: "group-[.toast]:text-body-sm-11 group-[.toast]:text-foreground",
-          description: "group-[.toast]:text-body-sm-5 group-[.toast]:text-muted-foreground",
+            "group toast group-[.toaster]:rounded-[var(--radius-8)] group-[.toaster]:border-border group-[.toaster]:bg-card group-[.toaster]:text-foreground group-[.toaster]:font-onest group-[.toaster]:shadow-[var(--shadow-drop-shadow-2)]",
+          description: "group-[.toast]:text-muted-foreground",
           actionButton:
-            "group-[.toast]:rounded-[var(--radius-8)] group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
-          cancelButton:
-            "group-[.toast]:rounded-[var(--radius-8)] group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
-          closeButton:
-            "group-[.toast]:rounded-[var(--radius-8)] group-[.toast]:border-border group-[.toast]:bg-card group-[.toast]:text-foreground",
-          error:
-            "group-[.toast]:border-destructive/30 group-[.toast]:bg-card group-[.toast]:text-foreground",
-          success: "group-[.toast]:border-[var(--color-accent-brand)]/30",
+            "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
+          cancelButton: "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
         },
       }}
       {...props}

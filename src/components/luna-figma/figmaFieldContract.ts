@@ -30,72 +30,108 @@ export interface FigmaOperation {
 
 /** Screen frame id → contract operations its form uses. */
 export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
-  "5359:17424": [
+  "5449:19126": [
     {
       "fields": [],
       "method": "GET",
-      "path": "/api/v1/users",
-      "responseUnwrap": null,
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": "data",
       "role": "read",
       "submitNodeId": null,
       "unboundRequired": []
     }
   ],
-  "5449:19395": [
+  "5621:28270": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5359:17278": [
     {
       "fields": [
         {
-          "figmaField": "first-name",
-          "apiField": "first_name",
-          "nodeId": "5449:19726",
+          "apiField": "title",
+          "figmaField": "category-title",
+          "format": undefined,
           "kind": "text",
-          "required": true,
-          "resolution": "resolved",
+          "maxLength": 100,
           "minLength": 1,
-          "maxLength": 100
+          "nodeId": "5449:19250",
+          "required": true,
+          "resolution": "resolved"
         },
         {
-          "figmaField": "last-name",
-          "apiField": "last_name",
-          "nodeId": "5449:19730",
+          "apiField": "description",
+          "figmaField": "category-description",
+          "format": undefined,
           "kind": "text",
-          "required": true,
-          "resolution": "resolved",
-          "minLength": 1,
-          "maxLength": 100
-        },
-        {
-          "figmaField": "email-address",
-          "apiField": "email",
-          "nodeId": "5449:19735",
-          "kind": "email",
-          "required": true,
-          "resolution": "resolved",
-          "format": "email"
-        },
-        {
-          "figmaField": "phone-number",
-          "apiField": "phone",
-          "nodeId": "5449:19739",
-          "kind": "tel",
+          "nodeId": "5449:19255",
           "required": false,
-          "resolution": "resolved",
-          "maxLength": 32
+          "resolution": "resolved"
         },
         {
-          "figmaField": "role",
-          "apiField": "role",
-          "nodeId": "5449:19745",
-          "kind": "select",
+          "apiField": "icon",
+          "figmaField": "icon",
+          "format": undefined,
+          "kind": "text",
+          "maxLength": 64,
+          "nodeId": "5908:36970",
+          "required": false,
+          "resolution": "resolved"
+        }
+      ],
+      "method": "POST",
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": "data",
+      "role": "write",
+      "submitNodeId": "5449:19302",
+      "unboundRequired": []
+    }
+  ],
+  "5621:28800": [
+    {
+      "fields": [
+        {
+          "apiField": "name",
+          "figmaField": "holiday-name",
+          "format": undefined,
+          "kind": "text",
+          "maxLength": 100,
+          "minLength": 1,
+          "nodeId": "5621:29026",
+          "required": true,
+          "resolution": "resolved"
+        },
+        {
+          "apiField": "start_date",
+          "figmaField": "start-date",
+          "format": "date",
+          "kind": "date",
+          "nodeId": "5621:29031",
+          "required": true,
+          "resolution": "resolved"
+        },
+        {
+          "apiField": "end_date",
+          "figmaField": "end-date",
+          "format": "date",
+          "kind": "date",
+          "nodeId": "5621:29037",
           "required": true,
           "resolution": "resolved"
         }
       ],
       "method": "POST",
-      "path": "/api/v1/users/invite",
-      "responseUnwrap": null,
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": "data",
       "role": "write",
-      "submitNodeId": "5449:19631",
+      "submitNodeId": "5621:29045",
       "unboundRequired": []
     }
   ]
@@ -103,12 +139,14 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
-  "5359:17424": [
-    "role-filter",
-    "status-filter",
-    "search-input"
+  "5359:17278": [],
+  "5449:19126": [
+    "filter-categories"
   ],
-  "5449:19395": []
+  "5621:28270": [
+    "search-users"
+  ],
+  "5621:28800": []
 };
 
 export function figmaOperations(frameId: string): readonly FigmaOperation[] {
@@ -202,6 +240,8 @@ export function validateValues(
       errors[field.figmaField] = `Use at most ${field.maxLength} characters.`;
     } else if (field.format === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(text)) {
       errors[field.figmaField] = "Enter a valid email address.";
+    } else if (field.format === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+      errors[field.figmaField] = "Enter a valid date.";
     } else if (field.pattern !== undefined) {
       try {
         if (!new RegExp(field.pattern).test(text)) {
@@ -238,6 +278,8 @@ export function fieldErrorsFromResponse(
   const errors: Record<string, string> = {};
   const byApi = new Map(op.fields.map((field) => [field.apiField, field.figmaField]));
   const record = asRecord(body);
+  const errorBlock = asRecord(record?.error);
+  const raw = record?.errors ?? record?.details ?? errorBlock?.details ?? record?.message;
   const assign = (apiField: unknown, message: unknown): void => {
     const figmaField = typeof apiField === "string" ? byApi.get(apiField) : undefined;
     const text = messageText(message);
@@ -245,32 +287,6 @@ export function fieldErrorsFromResponse(
       errors[figmaField] = text;
     }
   };
-  const errorEnvelope = asRecord(record?.error);
-  const detailList = record?.detail;
-  if (Array.isArray(detailList)) {
-    for (const entry of detailList) {
-      const item = asRecord(entry);
-      if (!item) {
-        continue;
-      }
-      const loc = item.loc;
-      let apiField: string | undefined;
-      if (Array.isArray(loc)) {
-        const pathParts = loc.filter((part): part is string => typeof part === "string");
-        apiField = pathParts[pathParts.length - 1];
-      }
-      assign(apiField ?? item.field, item.msg ?? item.message);
-    }
-  }
-  if (errorEnvelope && Array.isArray(errorEnvelope.details)) {
-    for (const entry of errorEnvelope.details) {
-      const item = asRecord(entry);
-      if (item) {
-        assign(item.field, item.message);
-      }
-    }
-  }
-  const raw = record?.errors ?? record?.details ?? record?.message;
   const entries = Array.isArray(raw) ? raw : raw !== undefined ? [raw] : [];
   for (const entry of entries) {
     const item = asRecord(entry);

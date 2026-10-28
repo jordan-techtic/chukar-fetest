@@ -1,7 +1,7 @@
 /**
  * Luna generated page
  * Page: FigmaRoutePending
- * Route: /marketing-team-member-add-holiday
+ * Route: /marketing-team-member-annual-calendar-default
  * Ownership: Figma-owned layout
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
@@ -21,10 +21,10 @@ export default function Page() {
   return (
     <main
       data-figma-route-pending="true"
-      data-figma-route="marketing-team-member-add-holiday"
+      data-figma-route="marketing-team-member-annual-calendar-default"
       className="flex min-h-screen flex-col items-center justify-center gap-2 p-6 text-center"
     >
-      <h1 className="text-xl font-semibold">Marketing team member add holiday</h1>
+      <h1 className="text-xl font-semibold">Marketing team member annual calendar default</h1>
       <p className="text-sm text-muted-foreground">Not yet implemented.</p>
     </main>
   );
