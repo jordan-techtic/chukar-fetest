@@ -15,17 +15,17 @@ export function Shared908080({ className = "", ...rest }: { className?: string; 
     <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
         "5602:68973": <FigmaVariant5602_68973_7aa11167 />,
       }}>
-    <Variant44 data-figma-node="I5602:67660;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant44 data-figma-node="I5602:67660;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
     </FigmaVariantSwitch>
     <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
         "5602:68973": <FigmaVariant5602_68973_7aa11167 />,
       }}>
-    <Variant42 data-figma-node="I5602:67660;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant42 data-figma-node="I5602:67660;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
     </FigmaVariantSwitch>
     <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
         "5602:68973": <FigmaVariant5602_68973_7aa11167 />,
       }}>
-    <Variant42 data-figma-node="I5602:67660;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+    <Variant42 data-figma-node="I5602:67660;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
     </FigmaVariantSwitch>
   </div>
   );

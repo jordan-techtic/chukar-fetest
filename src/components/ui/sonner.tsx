@@ -7,7 +7,10 @@ import {
   OctagonXIcon,
   TriangleAlertIcon,
 } from "lucide-react";
-import { Toaster as Sonner, type ToasterProps } from "sonner";
+import { toast, Toaster as Sonner, type ToasterProps } from "sonner";
+
+export { toast };
+export type { ExternalToast } from "sonner";
 
 /**
  * Sonner-backed toaster styled with design-system tokens (Onest, bordered cards).

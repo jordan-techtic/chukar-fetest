@@ -24,7 +24,7 @@ export function ManageHolidayPage() {
   const dialog_act_8e0ab36f39bd = useDialogState("act_8e0ab36f39bd");
   return (
     <div data-figma-bound={screenData.bound}
-      data-figma-frame="5621:28270" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
+      data-figma-frame="5621:28270" className="relative flex min-h-screen w-full min-w-0 flex-col overflow-x-hidden bg-background">
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <ManageHolidayMarketingCalendarSection />
         <div className="relative box-border w-full h-[601px] shrink-0">
@@ -54,21 +54,27 @@ export function ManageHolidayPage() {
 
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
-          data-figma-node="5621:29002"
-          className="fixed inset-0 left-[0px] z-[9999] box-border flex items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)] pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
-          role="dialog"
-          aria-modal="true"
-          tabIndex={-1}
-          ref={(el) => { el?.focus(); }}
+          className="fixed inset-0 z-[9999] flex items-center justify-center"
+          role="presentation"
           onClick={dialog_act_8e0ab36f39bd.close}
-          onKeyDown={(e) => { if (e.key === "Escape") dialog_act_8e0ab36f39bd.close(); }}
-          data-figma-dialog="act_8e0ab36f39bd"
         >
           <div
-            className="relative max-h-[90vh] overflow-auto rounded-lg shadow-2xl"
+            data-figma-node="5621:29002"
+            className="box-border flex h-[770px] w-[1440px] max-w-full items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)] pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
+            role="dialog"
+            aria-modal="true"
+            tabIndex={-1}
+            ref={(el) => { el?.focus(); }}
+            onKeyDown={(e) => { if (e.key === "Escape") dialog_act_8e0ab36f39bd.close(); }}
+            data-figma-dialog="act_8e0ab36f39bd"
             onClick={(e) => e.stopPropagation()}
           >
-            <AddHolidayModal />
+            <div
+              className="relative max-h-[90vh] overflow-auto rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <AddHolidayModal />
+            </div>
           </div>
         </div>
       )}

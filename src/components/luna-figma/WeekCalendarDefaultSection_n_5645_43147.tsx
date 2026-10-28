@@ -109,16 +109,16 @@ export function WeekCalendarDefaultSection_n_5645_43147() {
                       <img data-figma-node="I5602:66848;5725:77344" src="/assets/figma/I5602-66848-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5602:66848;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant6 data-figma-node="I5602:66848;5602:69270" data-figma-component="5602:69061" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant6 data-figma-node="I5602:66848;5602:69270" data-figma-component="5602:69061" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:66848;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:66848;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:66848;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:66848;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                     </div>
                   </div>
@@ -128,17 +128,17 @@ export function WeekCalendarDefaultSection_n_5645_43147() {
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant43 data-figma-node="I5602:66906;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant43 data-figma-node="I5602:66906;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
                       </FigmaVariantSwitch>
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:66906;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:66906;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:66906;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:66906;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                     </div>
                   </div>
@@ -198,17 +198,17 @@ export function WeekCalendarDefaultSection_n_5645_43147() {
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant43 data-figma-node="I5602:67196;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
+                      <Variant43 data-figma-node="I5602:67196;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)] invisible" />
                       </FigmaVariantSwitch>
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:67196;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:67196;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:67196;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:67196;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                     </div>
                   </div>
@@ -243,16 +243,16 @@ export function WeekCalendarDefaultSection_n_5645_43147() {
                       <img data-figma-node="I5602:67486;5725:77344" src="/assets/figma/I5602-67486-5725-77344.png" alt="" aria-hidden="true" width={46} height={16} decoding="async" onError={e => { const img = e.currentTarget as HTMLImageElement; img.onerror = null; img.src = "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect width='1' height='1' fill='%23e5e7eb'/%3E%3C/svg%3E"; }} className="box-border w-[46px] shrink-0 h-auto max-w-none object-cover object-top" />
                     </div>
                     <div data-figma-node="I5602:67486;5602:61816" className="box-border self-stretch min-w-0 h-[130px] shrink-0 overflow-y-auto overflow-x-hidden relative flex flex-col items-start gap-1">
-                      <Variant62 data-figma-node="I5602:67486;5602:69270" data-figma-component="5602:69061" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant62 data-figma-node="I5602:67486;5602:69270" data-figma-component="5602:69061" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:67486;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:67486;5725:47922" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:67486;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:67486;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                     </div>
                   </div>
@@ -304,13 +304,13 @@ export function WeekCalendarDefaultSection_n_5645_43147() {
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant44 data-figma-node="I5602:67776;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant44 data-figma-node="I5602:67776;5602:69270" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
-                      <Variant62 data-figma-node="I5602:67776;5725:47922" data-figma-component="5602:69061" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant62 data-figma-node="I5602:67776;5725:47922" data-figma-component="5602:69061" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       <FigmaVariantSwitch base="5602:68955" dismissible={["5602:68973"]} variants={{
                           "5602:68973": <FigmaVariant5602_68973_1c514364 />,
                         }}>
-                      <Variant42 data-figma-node="I5602:67776;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
+                      <Variant42 data-figma-node="I5602:67776;5725:52065" data-figma-component="5602:68955" className="box-border self-stretch min-w-0 h-auto shrink-0 overflow-hidden rounded-[6px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.039)]" />
                       </FigmaVariantSwitch>
                     </div>
                   </div>
