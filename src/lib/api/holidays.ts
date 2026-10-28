@@ -105,11 +105,6 @@ export async function importHolidays(file: File): Promise<unknown> {
   const response = await apiClient.post<unknown>(
     "/api/v1/marketing-team-member/holidays/import",
     formData,
-    {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    },
   );
   return response.data;
 }

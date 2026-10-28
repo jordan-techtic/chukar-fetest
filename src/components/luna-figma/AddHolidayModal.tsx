@@ -10,7 +10,7 @@
 
 import "./figma-theme.css";
 import "./figma-responsive.css";
-import { useFigmaScreenData } from "./useFigmaScreenData";
+import { figmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 import { AddHolidayModalWindowSection } from "./AddHolidayModalWindowSection";
 
 export function AddHolidayModal() {
@@ -22,8 +22,26 @@ export function AddHolidayModal() {
       className="relative max-w-full"
       style={{ width: 520, height: 334 }}
     >
-      <section data-figma-node="5621:28801" className="relative box-border pt-[15px] pr-[20px] pb-[15px] pl-[20px]">
-        <section data-figma-node="5621:28802" className="relative box-border pt-[20px] pr-[40px] pb-[20px] pl-[40px]">
+      <section
+        data-figma-node="5621:28801"
+        className="relative box-border h-[80px] overflow-hidden bg-[#ffffff] pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-[#e2d9d0] border-[1px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.059)]"
+      >
+        <section
+          data-figma-node="5621:28802"
+          className="relative box-border h-[89px] overflow-hidden pt-[20px] pr-[40px] pb-[20px] pl-[40px]"
+        >
+          <input
+            data-figma-node="5621:28808"
+            name="search-users"
+            data-figma-field="search-users"
+            data-figma-field-origin="design_text"
+            {...figmaFieldProps("search-users")}
+            type="search"
+            inputMode="search"
+            placeholder="Search users..."
+            aria-label="Search users..."
+            className="sr-only"
+          />
           <AddHolidayModalWindowSection />
         </section>
       </section>

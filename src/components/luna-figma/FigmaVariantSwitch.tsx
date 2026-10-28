@@ -99,6 +99,7 @@ export function figmaVariantProps(destination: string) {
   const ctx = useContext(FigmaVariantContext);
   return {
     "aria-expanded": ctx ? ctx.variant === destination : undefined,
+    "data-figma-action": `change_variant:${destination}`,
     "data-figma-variant-target": destination,
     onClick: (event: ReactMouseEvent) => {
       event.preventDefault();

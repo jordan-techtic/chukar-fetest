@@ -24,7 +24,7 @@ export function ManageCategoryPage() {
   const dialog_act_9c6be34838f4 = useDialogState("act_9c6be34838f4");
   return (
     <div data-figma-bound={screenData.bound}
-      data-figma-frame="5449:19126" className="relative flex min-h-screen w-full min-w-0 flex-col bg-background">
+      data-figma-frame="5449:19126" className="relative flex min-h-screen w-full min-w-0 flex-col overflow-x-hidden bg-background">
       <main id="main-content" className="flex w-full min-w-0 flex-1 flex-col">
         <ManageCategoryMarketingCalendarSection />
         <div className="relative box-border w-full h-[601px] shrink-0">
@@ -55,8 +55,7 @@ export function ManageCategoryPage() {
       {dialog_act_9c6be34838f4.isOpen && (
         <div
           data-figma-node="5449:19238"
-          className="fixed inset-0 z-[9999] box-border flex items-center justify-center overflow-hidden pt-[130px] pr-[460px] pb-[130px] pl-[460px]"
-          style={{ backgroundColor: "rgba(35, 31, 32, 0.584)" }}
+          className="fixed inset-0 left-[0px] z-[9999] box-border flex w-[1440px] max-w-full items-center justify-center overflow-hidden bg-[rgba(26,32,44,0.584)] pt-[130px] pr-[460px] pb-[130px] pl-[460px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}
