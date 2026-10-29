@@ -19,7 +19,8 @@ export function AddHolidayModal() {
     <div
       data-figma-bound={screenData.bound}
       data-figma-frame="5621:28800"
-      className="relative max-w-full"
+      data-figma-node="5621:28801"
+      className="relative max-w-full box-border pt-[15px] pr-[20px] pb-[15px] pl-[20px]"
       style={{ width: 520, height: 334 }}
     >
         <AddHolidayModalWindowSection />

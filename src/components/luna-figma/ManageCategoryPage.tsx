@@ -56,7 +56,9 @@ export function ManageCategoryPage() {
 
       {dialog_act_9c6be34838f4.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5449:19238"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center pt-[130px] pr-[460px] pb-[130px] pl-[460px]"
+          style={{ backgroundColor: "rgba(35, 31, 32, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

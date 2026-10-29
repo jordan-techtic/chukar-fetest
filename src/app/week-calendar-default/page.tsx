@@ -1,13 +1,23 @@
 /**
  * Luna generated page
- * Page: FigmaRouteAlias
+ * Page: WeekCalendarDefaultPage
  * Route: /week-calendar-default
  * Ownership: Figma-owned layout
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
-import { redirect } from "next/navigation";
+import type { Metadata } from "next";
+import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
+import { WeekCalendarDefaultPage } from "@/components/luna-figma/WeekCalendarDefaultPage";
+
+export const metadata: Metadata = { title: "Week-calendar-default" };
 
 export default function Page() {
-  redirect("/marketing-team-member-week-calendar-default");
+  return (
+    <div className="w-full flex flex-col">
+      <FigmaScreenDataProvider routePath="week-calendar-default">
+        <WeekCalendarDefaultPage />
+      </FigmaScreenDataProvider>
+    </div>
+  );
 }

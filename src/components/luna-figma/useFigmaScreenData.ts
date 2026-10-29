@@ -28,6 +28,7 @@ import {
   importHolidays,
   listHolidays,
   type ApiHoliday,
+  type HolidayImportResult,
 } from "@/lib/api/holidays";
 import { listUsers, setUserActive, type ApiUser } from "@/lib/api/users";
 
@@ -214,6 +215,7 @@ type ScreenContextValue = {
   deleteInProgressId: string | null;
   mutationError: string | null;
   holidayImportInProgress: boolean;
+  holidayImportSummary: HolidayImportResult | null;
   uploadHolidayList: (file: File) => Promise<void>;
   isEditingCategory: boolean;
   blurValidateField: (field: string) => void;
@@ -235,6 +237,7 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
   const [holidaysLoading, setHolidaysLoading] = useState(false);
   const [holidaysError, setHolidaysError] = useState<string | null>(null);
   const [holidayImportInProgress, setHolidayImportInProgress] = useState(false);
+  const [holidayImportSummary, setHolidayImportSummary] = useState<HolidayImportResult | null>(null);
   const [allCategories, setAllCategories] = useState<ApiCategory[]>([]);
   const [categoriesLoading, setCategoriesLoading] = useState(false);
   const [categoriesError, setCategoriesError] = useState<string | null>(null);
@@ -701,14 +704,14 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
     async (file: File) => {
       setHolidayImportInProgress(true);
       setMutationError(null);
+      setHolidayImportSummary(null);
       try {
         const result = await importHolidays(file);
         await loadReads();
+        setHolidayImportSummary(result);
         if (result.failed > 0) {
           const parts = [`Imported ${result.created} holiday(s).`];
-          if (result.failed > 0) {
-            parts.push(`${result.failed} row(s) could not be imported.`);
-          }
+          parts.push(`${result.failed} row(s) could not be imported.`);
           setMutationError(parts.join(" "));
         }
       } catch (error) {
@@ -833,6 +836,7 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
     deleteInProgressId,
     mutationError,
     holidayImportInProgress,
+    holidayImportSummary,
     uploadHolidayList,
     isEditingCategory,
     blurValidateField,
@@ -900,6 +904,7 @@ export function useFigmaScreenData() {
       deleteInProgressId: null as string | null,
       mutationError: null as string | null,
       holidayImportInProgress: false,
+      holidayImportSummary: null,
       uploadHolidayList: async () => {},
       isEditingCategory: false,
       blurValidateField: () => {},

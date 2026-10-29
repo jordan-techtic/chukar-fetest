@@ -38,6 +38,7 @@ export function AddCategoryModalWindowSection() {
             <Button
               data-figma-node="5449:19245"
               type="button"
+              data-figma-action="act_084002b35e7a"
               onClick={(e) => {
                 e.preventDefault();
                 resetCategoryForm();
@@ -119,7 +120,7 @@ export function AddCategoryModalWindowSection() {
               resetCategoryForm();
               closeFigmaDialog();
             }}
-            className="p-0 box-border w-max h-auto rounded-[6px] min-w-[78px] border-[#e2d9d0] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] inline-flex items-center justify-start whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#0b0b0b] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 shadow-none"
+            className="p-0 box-border w-max h-auto rounded-[6px] min-w-[78px] border-[#e2d9d0] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] inline-flex items-center justify-start whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-text-primary cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 shadow-none"
           >
             <span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-color-11">Cancel</span>
           </Button>

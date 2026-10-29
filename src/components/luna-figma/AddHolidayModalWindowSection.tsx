@@ -27,6 +27,7 @@ export function AddHolidayModalWindowSection() {
           void submit(HOLIDAY_FRAME_ID);
         }}
       >
+        <div data-figma-node="5621:28802" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between pt-[20px] pr-[40px] pb-[20px] pl-[40px]">
         <div data-figma-node="5621:29004" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
           <div data-figma-node="5621:29005" className="box-border w-max max-w-[min(210px,100%)] h-auto relative flex flex-row items-center gap-2">
             <div data-figma-node="5621:29006" data-figma-component="5111:8263" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden relative block">
@@ -48,6 +49,7 @@ export function AddHolidayModalWindowSection() {
               <FiRrCrossSmall2 data-figma-node="5621:29010" data-figma-component="5121:8491" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden" />
             </Button>
           </div>
+        </div>
         </div>
         <div data-figma-node="5621:29011" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-4">
           <div data-figma-node="5621:29022" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-4">
@@ -134,7 +136,7 @@ export function AddHolidayModalWindowSection() {
               resetHolidayForm();
               closeFigmaDialog();
             }}
-            className="p-0 box-border w-max h-auto rounded-[6px] min-w-[78px] border-[#e2d9d0] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] inline-flex items-center justify-start whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-[#0b0b0b] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 shadow-none"
+            className="p-0 box-border w-max h-auto rounded-[6px] min-w-[78px] border-[#e2d9d0] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] inline-flex items-center justify-start whitespace-nowrap bg-transparent hover:bg-[#ffffff] hover:text-text-primary cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 shadow-none"
           >
             <span className="font-onest text-[14px] font-[700] leading-[18px] text-left whitespace-nowrap text-color-11">Cancel</span>
           </Button>

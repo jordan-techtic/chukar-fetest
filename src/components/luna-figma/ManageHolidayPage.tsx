@@ -56,7 +56,9 @@ export function ManageHolidayPage() {
 
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: "rgba(26, 32, 44, 0.584)" }}
+          data-figma-node="5621:29002"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
+          style={{ backgroundColor: "rgba(35, 31, 32, 0.584)" }}
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

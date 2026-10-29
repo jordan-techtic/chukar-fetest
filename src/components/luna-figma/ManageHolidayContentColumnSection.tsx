@@ -25,6 +25,7 @@ export function ManageHolidayContentColumnSection() {
     clearFilters,
     fieldValues,
     pageSize,
+    holidayImportSummary,
   } = useFigmaScreenData();
 
   const hasFilters = Boolean(String(fieldValues["search-users"] ?? "").trim());
@@ -33,7 +34,7 @@ export function ManageHolidayContentColumnSection() {
   const showPagination = totalPages > 1;
 
   return (
-    <section data-figma-node="5621:28294" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5621:28294" className="relative box-border w-full min-w-0 flex flex-col items-start z-[2]">
       <div className="sr-only" aria-live="polite">
         {holidaysLoading ? "Loading holidays." : null}
         {holidaysError ? (
@@ -51,6 +52,29 @@ export function ManageHolidayContentColumnSection() {
           : null}
       </div>
       <div data-figma-node="5621:28295" className="box-border self-stretch min-w-0 flex-1 min-h-0 relative flex flex-col items-start gap-6 pr-[40px] pb-[40px] pl-[40px]">
+        {holidayImportSummary ? (
+          <div
+            role="status"
+            aria-live="polite"
+            className="box-border self-stretch min-w-0 rounded-[8px] border-[#e2d9d0] border-[1px] bg-surface pt-[12px] pr-[16px] pb-[12px] pl-[16px] flex flex-col gap-2"
+          >
+            <p className="font-onest text-[13px] font-[600] leading-[17px] text-text-primary">
+              {`Import complete: ${holidayImportSummary.created} created`}
+              {holidayImportSummary.failed > 0 ? `, ${holidayImportSummary.failed} failed` : ""}
+              {holidayImportSummary.message ? `. ${holidayImportSummary.message}` : ""}
+            </p>
+            {holidayImportSummary.errors?.length ? (
+              <ul className="font-onest text-[12px] font-[400] leading-[15px] text-text-secondary list-disc pl-[18px]">
+                {holidayImportSummary.errors.slice(0, 5).map((entry) => (
+                  <li key={`${entry.row}-${entry.message}`}>{`Row ${entry.row}: ${entry.message}`}</li>
+                ))}
+                {holidayImportSummary.errors.length > 5 ? (
+                  <li>{`…and ${holidayImportSummary.errors.length - 5} more`}</li>
+                ) : null}
+              </ul>
+            ) : null}
+          </div>
+        ) : null}
         <div data-figma-node="5621:28296" role="table" className="box-border self-stretch min-w-0 h-auto shrink-0 rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.02)] relative flex flex-col items-start border-[#e2d9d0] border-[1px] bg-surface overflow-x-auto overflow-y-hidden max-w-full">
           <div data-figma-node="5621:28297" role="row" className="box-border self-stretch h-auto shrink-0 relative flex flex-row items-start gap-5 pt-[14px] pr-[24px] pb-[14px] pl-[24px] border-b border-[#e2d9d0] bg-color-9 min-w-[1360px]">
             <p data-figma-node="5621:28298" role="columnheader" className="box-border flex-1 min-w-0 h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] uppercase text-left text-text-primary">Holiday Name</p>

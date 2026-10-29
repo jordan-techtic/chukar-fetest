@@ -1,10 +1,13 @@
 import apiClient from "@/lib/api/client";
 
+export type HolidayStatus = "active" | "inactive";
+
 export type ApiHoliday = {
   id: string;
   name: string;
   start_date: string;
   end_date: string;
+  status: HolidayStatus;
   is_active: boolean;
 };
 
@@ -36,12 +39,15 @@ function normalizeHoliday(raw: unknown): ApiHoliday | null {
   const name = String(row.name ?? "");
   const start_date = String(row.start_date ?? row.startDate ?? "");
   const end_date = String(row.end_date ?? row.endDate ?? start_date);
-  const is_active =
-    row.is_active !== false &&
-    row.is_active !== "false" &&
-    row.status !== "inactive" &&
-    row.is_active !== 0;
-  return { id, name, start_date, end_date, is_active };
+  const statusRaw = row.status;
+  const status: HolidayStatus =
+    statusRaw === "inactive" || statusRaw === "active"
+      ? statusRaw
+      : row.is_active === false || row.is_active === "false" || row.is_active === 0
+        ? "inactive"
+        : "active";
+  const is_active = status === "active";
+  return { id, name, start_date, end_date, status, is_active };
 }
 
 export function unwrapHolidaysList(body: unknown): ListHolidaysResult {
@@ -67,10 +73,16 @@ export type HolidayWritePayload = {
   status?: "active" | "inactive";
 };
 
+export type HolidayImportRowError = {
+  row: number;
+  message: string;
+};
+
 export type HolidayImportResult = {
   created: number;
   failed: number;
   message?: string;
+  errors?: HolidayImportRowError[];
 };
 
 export async function listHolidays(params: ListHolidaysParams = {}): Promise<ListHolidaysResult> {
@@ -119,10 +131,26 @@ export async function importHolidays(file: File): Promise<HolidayImportResult> {
   const created = Number(data?.created ?? 0);
   const failed = Number(data?.failed ?? 0);
   const message = typeof root?.message === "string" ? root.message : undefined;
+  const rawErrors = data?.errors;
+  const errors = (Array.isArray(rawErrors) ? rawErrors : [])
+    .map((entry) => {
+      const item = asRecord(entry);
+      if (!item) {
+        return null;
+      }
+      const row = Number(item.row);
+      const errMessage = String(item.message ?? "");
+      if (!Number.isFinite(row) || !errMessage) {
+        return null;
+      }
+      return { row, message: errMessage };
+    })
+    .filter((entry): entry is HolidayImportRowError => entry !== null);
   return {
     created: Number.isFinite(created) ? created : 0,
     failed: Number.isFinite(failed) ? failed : 0,
     message,
+    errors: errors.length > 0 ? errors : undefined,
   };
 }
 

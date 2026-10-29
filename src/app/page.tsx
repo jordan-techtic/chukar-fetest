@@ -13,8 +13,10 @@ export const metadata: Metadata = { title: "Manage-holiday" };
 
 export default function Page() {
   return (
-    <FigmaScreenDataProvider routePath="">
-      <ManageHolidayPage />
-    </FigmaScreenDataProvider>
+    <div className="w-full flex flex-col">
+      <FigmaScreenDataProvider routePath="manage-holiday">
+        <ManageHolidayPage />
+      </FigmaScreenDataProvider>
+    </div>
   );
 }

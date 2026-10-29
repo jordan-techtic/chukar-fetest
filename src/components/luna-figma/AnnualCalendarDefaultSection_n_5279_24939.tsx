@@ -101,7 +101,7 @@ export function AnnualCalendarDefaultSection_n_5279_24939() {
           </div>
           <div data-figma-node="5279:25994" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
             <p data-figma-node="5279:25995" className="box-border w-max max-w-[min(75px,100%)] h-auto min-h-[18px] font-onest text-[14px] font-[400] leading-[18px] text-left whitespace-nowrap text-text-secondary">Send Type</p>
-            <div data-figma-node="5297:4054" className="box-border w-max max-w-[min(73px,100%)] h-auto rounded-[100px] relative flex flex-row items-center justify-center gap-2.5 pt-[4px] pr-[10px] pb-[4px] pl-[10px] border-[#b5eebd] border-[1px] bg-color-45">
+            <div data-figma-node="5297:4054" className="box-border w-max max-w-[min(73px,100%)] h-auto rounded-[100px] relative flex flex-row items-center justify-center gap-2.5 pt-[4px] pr-[10px] pb-[4px] pl-[10px] border-[#e2d9d0] border-[1px] bg-color-45">
               <p data-figma-node="5279:25996" className="box-border w-max max-w-[min(51px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[600] leading-[15px] text-left whitespace-nowrap text-text-primary">Sending</p>
             </div>
           </div>
