@@ -50,6 +50,15 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
       "role": "read",
       "submitNodeId": null,
       "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
     }
   ],
   "5621:28800": [

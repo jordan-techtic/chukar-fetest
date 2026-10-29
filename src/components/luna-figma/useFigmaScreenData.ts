@@ -312,6 +312,8 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
     } else if (frameId === "5621:28270") {
       setHolidaysLoading(true);
       setHolidaysError(null);
+      setCategoriesLoading(true);
+      setCategoriesError(null);
     } else if (frameId === "5449:19126") {
       setCategoriesLoading(true);
       setCategoriesError(null);
@@ -376,6 +378,8 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
       } else if (frameId === "5621:28270") {
         setHolidaysError(message || "Unable to load holidays.");
         setAllHolidays([]);
+        setCategoriesError(message || "Unable to load categories.");
+        setAllCategories([]);
       } else if (frameId === "5449:19126") {
         setCategoriesError(message || "Unable to load categories.");
         setAllCategories([]);
@@ -385,6 +389,7 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
         setUsersLoading(false);
       } else if (frameId === "5621:28270") {
         setHolidaysLoading(false);
+        setCategoriesLoading(false);
       } else if (frameId === "5449:19126") {
         setCategoriesLoading(false);
       }

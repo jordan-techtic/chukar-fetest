@@ -1,6 +1,18 @@
 "use client";
 
+import { useState } from "react";
+
 import type { ApiCategory } from "@/lib/api/categories";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import { StatusColumnA03B73 } from "./StatusColumnA03B73";
 import { openFigmaDialog, useFigmaScreenData } from "./useFigmaScreenData";
 
@@ -23,6 +35,7 @@ export type ManageCategoryTableRowProps = {
 export function ManageCategoryTableRow({ category, isLast = false }: ManageCategoryTableRowProps) {
   const { deleteCategoryRow, beginEditCategory, deleteInProgressId } = useFigmaScreenData();
   const deleting = deleteInProgressId === category.id;
+  const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false);
 
   return (
     <div
@@ -72,7 +85,7 @@ export function ManageCategoryTableRow({ category, isLast = false }: ManageCateg
             type="button"
             aria-label={`Delete ${category.title}`}
             disabled={deleting}
-            onClick={() => void deleteCategoryRow(category.id)}
+            onClick={() => setConfirmDeleteOpen(true)}
             className="inline-flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50"
           >
             <div data-figma-component="5121:9660" className="box-border w-[16px] h-[16px] overflow-hidden relative block">
@@ -86,6 +99,29 @@ export function ManageCategoryTableRow({ category, isLast = false }: ManageCateg
           </button>
         </div>
       </div>
+      <AlertDialog open={confirmDeleteOpen} onOpenChange={setConfirmDeleteOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Delete category?</AlertDialogTitle>
+            <AlertDialogDescription>
+              {`This will permanently delete "${category.title}". Categories in use cannot be removed.`}
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel type="button">Cancel</AlertDialogCancel>
+            <AlertDialogAction
+              type="button"
+              className="bg-primary text-surface hover:bg-primary/90"
+              onClick={() => {
+                setConfirmDeleteOpen(false);
+                void deleteCategoryRow(category.id);
+              }}
+            >
+              Delete
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
