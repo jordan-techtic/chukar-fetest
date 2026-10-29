@@ -8,7 +8,7 @@
  */
 "use client";
 
-import { closeFigmaDialog, figmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
+import { closeFigmaDialog, useFigmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 import { FiRrCrossSmall2 } from "./FiRrCrossSmall2";
 import { Shared5B5A48 } from "./Shared5B5A48";
@@ -63,7 +63,7 @@ export function AddHolidayModalWindowSection() {
                     name="holiday-name"
                     data-figma-field="holiday-name"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("holiday-name")}
+                    {...useFigmaFieldProps("holiday-name")}
                     type="text"
                     placeholder="e.g. Thanksgiving Day"
                     aria-label="Holiday name"
@@ -85,7 +85,7 @@ export function AddHolidayModalWindowSection() {
                     name="start-date"
                     data-figma-field="start-date"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("start-date")}
+                    {...useFigmaFieldProps("start-date")}
                     type="date"
                     aria-label="Start Date"
                     aria-invalid={Boolean(fieldErrors["start-date"])}
@@ -107,7 +107,7 @@ export function AddHolidayModalWindowSection() {
                     name="end-date"
                     data-figma-field="end-date"
                     data-figma-field-origin="design_text"
-                    {...figmaFieldProps("end-date")}
+                    {...useFigmaFieldProps("end-date")}
                     type="date"
                     aria-label="End Date"
                     aria-invalid={Boolean(fieldErrors["end-date"])}

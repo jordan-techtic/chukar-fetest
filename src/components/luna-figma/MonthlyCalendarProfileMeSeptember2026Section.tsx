@@ -6,6 +6,8 @@
  * Behavior: useFigmaScreenData / figmaFieldContract
  * luna-spec-codegen: owned-layout
  */
+"use client";
+
 import { Button00FF0C } from "./Button00FF0C";
 import { Button33DB9B } from "./Button33DB9B";
 import { Button563BD1 } from "./Button563BD1";
@@ -13,7 +15,12 @@ import { ButtonA5CCE2 } from "./ButtonA5CCE2";
 import { FiRrAngleSmallLeft } from "./FiRrAngleSmallLeft";
 import { FiRrAngleSmallRight } from "./FiRrAngleSmallRight";
 import { FiRrFilter } from "./FiRrFilter";
+import { useFigmaScreenData } from "./useFigmaScreenData";
+
 export function MonthlyCalendarProfileMeSeptember2026Section() {
+  const { categories, categoriesLoading, categoriesError } = useFigmaScreenData();
+  const categoryTabs = categories.slice(0, 3);
+
   return (
     <section data-figma-node="5327:3854" data-figma-component="5273:20994" className="relative box-border w-full min-w-0 pt-[15px] pr-[20px] pb-[15px] pl-[20px] border-b border-[#e2d9d0] flex flex-row items-center justify-between bg-[#faf3e8] z-[1]">
       <div data-figma-node="I5327:3854;5273:20960" className="box-border flex-1 min-w-0 h-auto relative flex flex-row items-center justify-between gap-5">
@@ -30,9 +37,37 @@ export function MonthlyCalendarProfileMeSeptember2026Section() {
         </div>
         <div data-figma-node="I5327:3854;5528:39931" className="box-border w-max max-w-[min(579px,100%)] h-auto relative flex flex-row items-center gap-5">
           <div data-figma-node="I5327:3854;5503:26056" className="box-border w-max max-w-[min(530px,100%)] h-auto relative flex flex-row items-center gap-2.5">
-            <Button563BD1 data-figma-node="I5327:3854;5273:20970" className="box-border w-max max-w-[min(118px,100%)] h-auto rounded-[6px] border-[#e2d9d0] border-[1px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-surface" />
-            <Button33DB9B data-figma-node="I5327:3854;5273:20973" className="box-border w-max max-w-[min(99px,100%)] h-auto rounded-[6px] border-[#e2d9d0] border-[1px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-surface" />
-            <ButtonA5CCE2 data-figma-node="I5327:3854;5273:20976" className="box-border w-max max-w-[min(99px,100%)] h-auto rounded-[6px] [background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(90.0deg,_#da002f_0.0%,_#f1b743_48.6%,_#87b568_100.0%)]! [background-origin:border-box]! [background-clip:padding-box,border-box]! [border-color:transparent]! border-[2px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-surface" />
+            {categoriesLoading ? (
+              <p className="font-onest text-[13px] font-[400] leading-[17px] text-text-secondary">Loading categories…</p>
+            ) : categoriesError ? (
+              <p className="font-onest text-[13px] font-[400] leading-[17px] text-text-secondary">Unable to load categories.</p>
+            ) : categoryTabs.length === 0 ? (
+              <p className="font-onest text-[13px] font-[400] leading-[17px] text-text-secondary">No categories.</p>
+            ) : (
+              <>
+                {categoryTabs[0] ? (
+                  <Button563BD1
+                    data-figma-node="I5327:3854;5273:20970"
+                    label={categoryTabs[0].title}
+                    className="box-border w-max max-w-[min(118px,100%)] h-auto rounded-[6px] border-[#e2d9d0] border-[1px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-surface"
+                  />
+                ) : null}
+                {categoryTabs[1] ? (
+                  <Button33DB9B
+                    data-figma-node="I5327:3854;5273:20973"
+                    label={categoryTabs[1].title}
+                    className="box-border w-max max-w-[min(99px,100%)] h-auto rounded-[6px] border-[#e2d9d0] border-[1px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-surface"
+                  />
+                ) : null}
+                {categoryTabs[2] ? (
+                  <ButtonA5CCE2
+                    data-figma-node="I5327:3854;5273:20976"
+                    label={categoryTabs[2].title}
+                    className="box-border w-max max-w-[min(99px,100%)] h-auto rounded-[6px] [background-image:linear-gradient(#ffffff,#ffffff),linear-gradient(90.0deg,_#da002f_0.0%,_#f1b743_48.6%,_#87b568_100.0%)]! [background-origin:border-box]! [background-clip:padding-box,border-box]! [border-color:transparent]! border-[2px] pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-surface"
+                  />
+                ) : null}
+              </>
+            )}
             <div data-figma-node="I5327:3854;5273:20979" className="box-border w-[1px] shrink-0 h-[20px] relative block bg-border"></div>
             <div data-figma-node="I5327:3854;5621:25652" className="box-border w-max max-w-[min(97px,100%)] h-auto rounded-[6px] relative flex flex-row items-center gap-1.5 pt-[6px] pr-[12px] pb-[6px] pl-[12px] bg-color-17">
               <FiRrFilter data-figma-node="I5327:3854;5621:25653" data-figma-component="5121:8683" className="box-border w-[14px] shrink-0 h-[14px] overflow-hidden" />

@@ -16,6 +16,8 @@ import {
   type ReactNode,
 } from "react";
 
+import { toast } from "sonner";
+
 import apiClient, { resolveApiBaseUrl } from "@/lib/api/client";
 import {
   deleteCategory as deleteCategoryApi,
@@ -737,7 +739,9 @@ function useFigmaScreenDataInternal(routePath: string): ScreenContextValue {
         await loadReads();
       } catch (error) {
         const message = getApiErrorMessage(error);
-        if (axios.isAxiosError(error) && error.response?.status === 403) {
+        if (axios.isAxiosError(error) && error.response?.status === 409) {
+          toast.error(message || "This category is in use and cannot be deleted.");
+        } else if (axios.isAxiosError(error) && error.response?.status === 403) {
           setMutationError(message || "You do not have permission to delete categories.");
         } else {
           setMutationError(message || "Unable to delete category.");
@@ -918,7 +922,7 @@ export function useFigmaScreenData() {
   };
 }
 
-export function figmaFieldProps(field: string): FigmaFieldBinding {
+export function useFigmaFieldProps(field: string): FigmaFieldBinding {
   const ctx = useContext(FigmaScreenContext);
   if (!ctx) {
     return {};
@@ -957,7 +961,7 @@ export function figmaFieldProps(field: string): FigmaFieldBinding {
   };
 }
 
-export function figmaActionProps(action: string): FigmaActionBinding {
+export function useFigmaActionProps(action: string): FigmaActionBinding {
   const router = useRouter();
   const onClick = useCallback(
     (event: { preventDefault: () => void }) => {

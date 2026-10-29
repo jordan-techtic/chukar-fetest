@@ -31,7 +31,8 @@ export function ManageHolidayContentColumnSection() {
   const hasFilters = Boolean(String(fieldValues["search-users"] ?? "").trim());
   const rangeStart = totalHolidays === 0 ? 0 : (currentPage - 1) * pageSize + 1;
   const rangeEnd = totalHolidays === 0 ? 0 : Math.min(currentPage * pageSize, totalHolidays);
-  const showPagination = totalPages > 1;
+  const paginationPages = Math.max(totalPages, 1);
+  const showPagination = !holidaysLoading && !holidaysError;
 
   return (
     <section data-figma-node="5621:28294" className="relative box-border w-full min-w-0 flex flex-col items-start z-[2]">
@@ -153,7 +154,7 @@ export function ManageHolidayContentColumnSection() {
               >
                 <p data-figma-node="5621:28398" className="box-border w-max max-w-[min(31px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">Prev</p>
               </button>
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+              {Array.from({ length: paginationPages }, (_, i) => i + 1).map((pageNum) => (
                 <button
                   key={pageNum}
                   type="button"
@@ -178,7 +179,7 @@ export function ManageHolidayContentColumnSection() {
                 type="button"
                 data-figma-node="5621:28403"
                 onClick={() => setCurrentPage((p) => p + 1)}
-                disabled={currentPage >= totalPages}
+                disabled={currentPage >= paginationPages}
                 className="box-border w-max max-w-[min(52px,100%)] h-auto rounded-[6px] relative flex flex-row items-start pt-[6px] pr-[10px] pb-[6px] pl-[10px] border-[#e2d9d0] border-[1px] bg-surface disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 <p data-figma-node="5621:28404" className="box-border w-max max-w-[min(32px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">Next</p>

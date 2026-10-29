@@ -25,7 +25,7 @@ export function ManageCategoryPage() {
   const dialog_act_9c6be34838f4 = useDialogState("act_9c6be34838f4");
   return (
     <div data-figma-bound={screenData.bound}
-      data-figma-frame="5449:19126" className="relative flex min-h-screen w-full min-w-0 flex-col overflow-x-clip bg-background">
+      data-figma-frame="5449:19126" className="relative mx-auto flex min-h-screen w-full min-w-0 max-w-[1440px] flex-col overflow-x-clip bg-background lg:min-h-[770px]">
       <div className="sr-only" aria-live="polite">
         {mutationError ? mutationError : null}
       </div>

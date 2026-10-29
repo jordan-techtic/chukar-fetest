@@ -8,7 +8,7 @@
  */
 "use client";
 
-import { closeFigmaDialog, figmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
+import { closeFigmaDialog, useFigmaFieldProps, useFigmaScreenData } from "./useFigmaScreenData";
 import { Button } from "@/components/ui/button";
 import { FiRrCrossSmall2 } from "./FiRrCrossSmall2";
 
@@ -61,7 +61,7 @@ export function AddCategoryModalWindowSection() {
                 name="category-title"
                 data-figma-field="category-title"
                 data-figma-field-origin="design_text"
-                {...figmaFieldProps("category-title")}
+                {...useFigmaFieldProps("category-title")}
                 type="text"
                 placeholder="e.g., Q4 Product Launch Campaign"
                 aria-label="Title"
@@ -81,7 +81,7 @@ export function AddCategoryModalWindowSection() {
                 name="icon"
                 data-figma-field="icon"
                 data-figma-field-origin="design_text"
-                {...figmaFieldProps("icon")}
+                {...useFigmaFieldProps("icon")}
                 aria-label="Selected icon:"
                 className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer text-text-primary font-onest text-[14px] font-[600] leading-[18px] text-left whitespace-nowrap pt-[10px] pr-[12px] pb-[10px] pl-[12px]"
               >
@@ -97,7 +97,7 @@ export function AddCategoryModalWindowSection() {
                 name="category-description"
                 data-figma-field="category-description"
                 data-figma-field-origin="design_text"
-                {...figmaFieldProps("category-description")}
+                {...useFigmaFieldProps("category-description")}
                 placeholder="Describe key objectives, milestones and channels..."
                 aria-label="Description"
                 aria-invalid={Boolean(fieldErrors["category-description"])}
