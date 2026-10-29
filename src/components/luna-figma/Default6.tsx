@@ -7,8 +7,8 @@
  */
 export function Default6({ className = "", ...rest }: { className?: string; [key: string]: unknown }) {
   return (
-  <div data-figma-node="I5645:45615;5602:67718;5725:71418" data-figma-component="5725:71390" className={`box-border w-max max-w-[min(96px,100%)] h-[20px] rounded-[4px] relative flex flex-row items-center justify-center gap-2.5 pr-[6px] pl-[6px] bg-color-60 ${className}`} {...rest}>
-    <p data-figma-node="I5645:45615;5602:67718;5725:71418;5725:71388" className="box-border w-max max-w-[min(84px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-text-primary">Constitution Day</p>
+  <div data-figma-node="I5645:45615;5602:64575;5725:102097" data-figma-component="5725:71390" className={`box-border w-[16px] h-[16px] rounded-[4px] relative flex flex-row items-center justify-center gap-2.5 pr-[6px] pl-[6px] bg-color-60 ${className}`} {...rest}>
+    <p data-figma-node="I5645:45615;5602:64575;5725:102097;5725:71388" className="box-border w-max max-w-[min(12px,100%)] h-auto min-h-[13px] font-onest text-[10px] font-[600] leading-[13px] text-left whitespace-nowrap text-text-primary">H</p>
   </div>
   );
 }
