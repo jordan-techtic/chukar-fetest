@@ -18,7 +18,7 @@ export function AddCategoryModal() {
   return (
     <div
       data-figma-node="5354:14252"
-      className="box-border pt-[15px] pr-[20px] pb-[15px] pl-[20px]"
+      className="box-border min-h-[80px] rounded-[12px] border-[#e2d9d0] border-[1px] bg-[#ffffff] pt-[15px] pr-[20px] pb-[15px] pl-[20px] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.141)]"
     >
       <div
         data-figma-bound={screenData.bound}

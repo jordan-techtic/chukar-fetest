@@ -34,7 +34,7 @@ export function ManageCategoryContentColumnSection() {
   const showPagination = totalPages > 1;
 
   return (
-    <section data-figma-node="5449:19142" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
+    <section data-figma-node="5449:19142" className="relative box-border w-full min-w-0 flex flex-col items-start z-[2]">
       <div className="sr-only" aria-live="polite">
         {categoriesLoading ? "Loading categories." : null}
         {categoriesError ? (

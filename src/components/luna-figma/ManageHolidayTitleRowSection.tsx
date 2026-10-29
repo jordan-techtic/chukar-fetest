@@ -16,7 +16,7 @@ export function ManageHolidayTitleRowSection() {
   const { resetHolidayForm, uploadHolidayList, holidayImportInProgress } = useFigmaScreenData();
   const uploadInputRef = useRef<HTMLInputElement>(null);
   return (
-    <section data-figma-node="5621:28272" className="relative box-border w-full min-w-0 min-h-[89px] pt-[20px] pr-[clamp(16px,2.778vw,40px)] pb-[20px] pl-[clamp(16px,2.778vw,40px)] flex flex-row items-center justify-between z-[1]">
+    <section data-figma-node="5621:28272" className="relative box-border w-full min-w-0 pt-[20px] pr-[clamp(16px,2.778vw,40px)] pb-[20px] pl-[clamp(16px,2.778vw,40px)] flex flex-row items-center justify-between z-[1]">
       <div data-figma-node="5621:28273" className="box-border w-max max-w-[min(312px,100%)] h-auto relative flex flex-col items-start gap-1">
         <h2 data-figma-node="5621:28274" className="box-border w-max max-w-[min(228px,100%)] h-auto min-h-[28px] shrink-0 font-onest text-[22px] font-[700] leading-[28px] text-left lg:whitespace-nowrap text-text-primary">Holiday Management</h2>
         <p data-figma-node="5621:28275" className="box-border w-max max-w-[min(312px,100%)] h-auto min-h-[17px] shrink-0 font-onest text-[13px] font-[400] leading-[17px] text-left lg:whitespace-nowrap text-text-secondary">Manage company-wide holidays and observances.</p>

@@ -57,7 +57,7 @@ export function ManageHolidayPage() {
       {dialog_act_8e0ab36f39bd.isOpen && (
         <div
           data-figma-node="5621:29002"
-          className="fixed left-[0px] top-[0px] z-[9999] box-border flex h-[770px] w-[1440px] max-w-[100vw] items-center justify-center bg-[rgba(26,32,44,0.584)] pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
+          className="fixed inset-0 z-[9999] box-border flex items-center justify-center bg-[rgba(26,32,44,0.584)] pt-[218px] pr-[460px] pb-[218px] pl-[460px]"
           role="dialog"
           aria-modal="true"
           tabIndex={-1}

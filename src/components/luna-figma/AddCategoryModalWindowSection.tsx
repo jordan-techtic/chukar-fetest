@@ -27,7 +27,7 @@ export function AddCategoryModalWindowSection() {
           void submit(CATEGORY_FRAME_ID);
         }}
       >
-        <section data-figma-node="5354:14348" className="box-border self-stretch min-w-0 min-h-[89px] pt-[20px] pr-[40px] pb-[20px] pl-[40px] flex flex-col items-start">
+        <section data-figma-node="5354:14348" className="box-border self-stretch min-w-0 pt-[20px] pr-[40px] pb-[20px] pl-[40px] flex flex-col items-start">
         <div data-figma-node="5449:19240" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
           <div data-figma-node="5449:19241" className="box-border w-max max-w-[min(181px,100%)] h-auto relative flex flex-row items-center gap-2">
             <div data-figma-node="5449:19242" data-figma-component="5111:7679" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden relative block">
