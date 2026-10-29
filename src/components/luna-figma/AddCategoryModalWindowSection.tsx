@@ -27,6 +27,7 @@ export function AddCategoryModalWindowSection() {
           void submit(CATEGORY_FRAME_ID);
         }}
       >
+        <section data-figma-node="5354:14348" className="box-border self-stretch min-w-0 min-h-[89px] pt-[20px] pr-[40px] pb-[20px] pl-[40px] flex flex-col items-start">
         <div data-figma-node="5449:19240" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
           <div data-figma-node="5449:19241" className="box-border w-max max-w-[min(181px,100%)] h-auto relative flex flex-row items-center gap-2">
             <div data-figma-node="5449:19242" data-figma-component="5111:7679" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden relative block">
@@ -50,6 +51,7 @@ export function AddCategoryModalWindowSection() {
             </Button>
           </div>
         </div>
+        </section>
         <div data-figma-node="5449:19247" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-4">
           <div data-figma-node="5449:19248" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-col items-start gap-1.5">
             <p data-figma-node="5449:19249" className="box-border w-max max-w-[min(39px,100%)] h-auto min-h-[15px] shrink-0 font-onest text-[12px] font-[700] leading-[15px] tracking-[0.48px] uppercase text-left whitespace-nowrap text-color-11">Title</p>
@@ -115,6 +117,7 @@ export function AddCategoryModalWindowSection() {
           <Button
             data-figma-node="5449:19300"
             type="button"
+            data-figma-action="act_47a65406f291"
             onClick={(e) => {
               e.preventDefault();
               resetCategoryForm();
@@ -127,6 +130,7 @@ export function AddCategoryModalWindowSection() {
           <Button
             data-figma-node="5449:19302"
             type="submit"
+            data-figma-action="act_4acaeab4fb49"
             disabled={submitting}
             aria-busy={submitting}
             className="p-0 box-border w-max h-auto rounded-[6px] min-w-[153px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] inline-flex items-center justify-center whitespace-nowrap bg-primary hover:opacity-90 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-2 hover:bg-primary shadow-none"

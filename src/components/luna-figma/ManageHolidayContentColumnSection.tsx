@@ -34,7 +34,7 @@ export function ManageHolidayContentColumnSection() {
   const showPagination = totalPages > 1;
 
   return (
-    <section data-figma-node="5621:28294" className="relative box-border w-full min-w-0 flex flex-col items-start z-[2]">
+    <section data-figma-node="5621:28294" className="relative box-border w-full min-w-0 min-h-[601px] flex flex-col items-start z-[2]">
       <div className="sr-only" aria-live="polite">
         {holidaysLoading ? "Loading holidays." : null}
         {holidaysError ? (

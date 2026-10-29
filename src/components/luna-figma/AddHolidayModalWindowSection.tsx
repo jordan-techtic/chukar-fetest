@@ -27,7 +27,7 @@ export function AddHolidayModalWindowSection() {
           void submit(HOLIDAY_FRAME_ID);
         }}
       >
-        <div data-figma-node="5621:28802" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between pt-[20px] pr-[40px] pb-[20px] pl-[40px]">
+        <div data-figma-node="5621:28802" className="box-border self-stretch min-w-0 min-h-[89px] h-auto shrink-0 relative flex flex-row items-center justify-between pt-[20px] pr-[40px] pb-[20px] pl-[40px]">
         <div data-figma-node="5621:29004" className="box-border self-stretch min-w-0 h-auto shrink-0 relative flex flex-row items-center justify-between">
           <div data-figma-node="5621:29005" className="box-border w-max max-w-[min(210px,100%)] h-auto relative flex flex-row items-center gap-2">
             <div data-figma-node="5621:29006" data-figma-component="5111:8263" className="box-border w-[24px] shrink-0 h-[24px] overflow-hidden relative block">
@@ -39,6 +39,7 @@ export function AddHolidayModalWindowSection() {
             <Button
               data-figma-node="5621:29009"
               type="button"
+              data-figma-action="act_0b52f00d4464"
               onClick={(e) => {
                 e.preventDefault();
                 resetHolidayForm();
@@ -131,6 +132,7 @@ export function AddHolidayModalWindowSection() {
           <Button
             data-figma-node="5621:29043"
             type="button"
+            data-figma-action="act_3e52a9e8a905"
             onClick={(e) => {
               e.preventDefault();
               resetHolidayForm();
@@ -143,6 +145,7 @@ export function AddHolidayModalWindowSection() {
           <Button
             data-figma-node="5621:29045"
             type="submit"
+            data-figma-action="act_9cb2d6ba2b8b"
             disabled={submitting}
             className="p-0 box-border w-max h-auto rounded-[6px] min-w-[129px] pt-[10px] pr-[20px] pb-[10px] pl-[20px] inline-flex items-center justify-start whitespace-nowrap bg-primary hover:opacity-90 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 hover:bg-primary shadow-none"
           >
