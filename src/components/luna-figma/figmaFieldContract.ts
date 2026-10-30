@@ -30,6 +30,200 @@ export interface FigmaOperation {
 
 /** Screen frame id → contract operations its form uses. */
 export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]>> = {
+  "5359:17278": [
+    {
+      "fields": [
+        {
+          "apiField": "title",
+          "figmaField": "title",
+          "kind": "text",
+          "nodeId": "5449:19250",
+          "required": true,
+          "resolution": "api_schema_name",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        {
+          "apiField": "description",
+          "figmaField": "description",
+          "kind": "textarea",
+          "nodeId": "5449:19255",
+          "required": false,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "icon",
+          "figmaField": "icon",
+          "kind": "select",
+          "nodeId": "5908:36970",
+          "required": false,
+          "resolution": "api_schema_name",
+          "maxLength": 64
+        }
+      ],
+      "method": "POST",
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": null,
+      "role": "write",
+      "submitNodeId": "5449:19302",
+      "unboundRequired": []
+    },
+    {
+      "fields": [
+        {
+          "apiField": "title",
+          "figmaField": "title",
+          "kind": "text",
+          "nodeId": "5449:19250",
+          "required": false,
+          "resolution": "api_schema_name",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        {
+          "apiField": "description",
+          "figmaField": "description",
+          "kind": "textarea",
+          "nodeId": "5449:19255",
+          "required": false,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "icon",
+          "figmaField": "icon",
+          "kind": "select",
+          "nodeId": "5908:36970",
+          "required": false,
+          "resolution": "api_schema_name",
+          "maxLength": 64
+        }
+      ],
+      "method": "PUT",
+      "path": "/api/v1/marketing-team-member/categories/{id}",
+      "responseUnwrap": null,
+      "role": "write",
+      "submitNodeId": "5449:19302",
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5449:19126": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/categories",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5621:28270": [
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
+  "5621:28800": [
+    {
+      "fields": [
+        {
+          "apiField": "name",
+          "figmaField": "name",
+          "kind": "text",
+          "nodeId": "5621:29026",
+          "required": true,
+          "resolution": "api_schema_name",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        {
+          "apiField": "start_date",
+          "figmaField": "start-date",
+          "format": "date",
+          "kind": "text",
+          "nodeId": "5621:29031",
+          "required": true,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "end_date",
+          "figmaField": "end-date",
+          "format": "date",
+          "kind": "text",
+          "nodeId": "5621:29037",
+          "required": true,
+          "resolution": "api_schema_name"
+        }
+      ],
+      "method": "POST",
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": null,
+      "role": "write",
+      "submitNodeId": "5621:29045",
+      "unboundRequired": []
+    },
+    {
+      "fields": [
+        {
+          "apiField": "name",
+          "figmaField": "name",
+          "kind": "text",
+          "nodeId": "5621:29026",
+          "required": false,
+          "resolution": "api_schema_name",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        {
+          "apiField": "start_date",
+          "figmaField": "start-date",
+          "format": "date",
+          "kind": "text",
+          "nodeId": "5621:29031",
+          "required": false,
+          "resolution": "api_schema_name"
+        },
+        {
+          "apiField": "end_date",
+          "figmaField": "end-date",
+          "format": "date",
+          "kind": "text",
+          "nodeId": "5621:29037",
+          "required": false,
+          "resolution": "api_schema_name"
+        }
+      ],
+      "method": "PUT",
+      "path": "/api/v1/marketing-team-member/holidays/{id}",
+      "responseUnwrap": null,
+      "role": "write",
+      "submitNodeId": "5621:29045",
+      "unboundRequired": []
+    },
+    {
+      "fields": [],
+      "method": "GET",
+      "path": "/api/v1/marketing-team-member/holidays",
+      "responseUnwrap": "data",
+      "role": "read",
+      "submitNodeId": null,
+      "unboundRequired": []
+    }
+  ],
   "5359:17424": [
     {
       "fields": [],
@@ -98,17 +292,34 @@ export const FIGMA_OPERATIONS: Readonly<Record<string, readonly FigmaOperation[]
       "submitNodeId": "5449:19631",
       "unboundRequired": []
     }
-  ]
+  ],
 };
 
 /** Figma fields no contract operation accepts: keep them local UI state, never send them. */
 export const UNRESOLVED_FIGMA_FIELDS: Readonly<Record<string, readonly string[]>> = {
+  "5359:17278": [
+    "filter-categories"
+  ],
   "5359:17424": [
     "role-filter",
     "status-filter",
-    "search-input"
+    "search-users"
   ],
-  "5449:19395": []
+  "5449:19126": [
+    "filter-categories"
+  ],
+  "5449:19395": [
+    "role",
+    "role-filter",
+    "status-filter",
+    "search-users"
+  ],
+  "5621:28270": [
+    "search-users"
+  ],
+  "5621:28800": [
+    "search-users"
+  ]
 };
 
 export function figmaOperations(frameId: string): readonly FigmaOperation[] {
@@ -202,6 +413,8 @@ export function validateValues(
       errors[field.figmaField] = `Use at most ${field.maxLength} characters.`;
     } else if (field.format === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(text)) {
       errors[field.figmaField] = "Enter a valid email address.";
+    } else if (field.format === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+      errors[field.figmaField] = "Enter a valid date.";
     } else if (field.pattern !== undefined) {
       try {
         if (!new RegExp(field.pattern).test(text)) {
@@ -210,6 +423,20 @@ export function validateValues(
       } catch {
         // A server-side pattern JavaScript cannot compile is left to the server.
       }
+    }
+  }
+  if (op.path.includes("/marketing-team-member/holidays")) {
+    const start = String(values["start-date"] ?? "").trim();
+    const end = String(values["end-date"] ?? "").trim();
+    if (
+      start &&
+      end &&
+      /^\d{4}-\d{2}-\d{2}$/.test(start) &&
+      /^\d{4}-\d{2}-\d{2}$/.test(end) &&
+      end < start &&
+      !errors["end-date"]
+    ) {
+      errors["end-date"] = "End date must be on or after the start date.";
     }
   }
   return errors;
@@ -238,6 +465,12 @@ export function fieldErrorsFromResponse(
   const errors: Record<string, string> = {};
   const byApi = new Map(op.fields.map((field) => [field.apiField, field.figmaField]));
   const record = asRecord(body);
+  const errorEnvelope = asRecord(record?.error);
+  const raw =
+    record?.errors ??
+    errorEnvelope?.details ??
+    record?.details ??
+    record?.message;
   const assign = (apiField: unknown, message: unknown): void => {
     const figmaField = typeof apiField === "string" ? byApi.get(apiField) : undefined;
     const text = messageText(message);
@@ -245,32 +478,6 @@ export function fieldErrorsFromResponse(
       errors[figmaField] = text;
     }
   };
-  const errorEnvelope = asRecord(record?.error);
-  const detailList = record?.detail;
-  if (Array.isArray(detailList)) {
-    for (const entry of detailList) {
-      const item = asRecord(entry);
-      if (!item) {
-        continue;
-      }
-      const loc = item.loc;
-      let apiField: string | undefined;
-      if (Array.isArray(loc)) {
-        const pathParts = loc.filter((part): part is string => typeof part === "string");
-        apiField = pathParts[pathParts.length - 1];
-      }
-      assign(apiField ?? item.field, item.msg ?? item.message);
-    }
-  }
-  if (errorEnvelope && Array.isArray(errorEnvelope.details)) {
-    for (const entry of errorEnvelope.details) {
-      const item = asRecord(entry);
-      if (item) {
-        assign(item.field, item.message);
-      }
-    }
-  }
-  const raw = record?.errors ?? record?.details ?? record?.message;
   const entries = Array.isArray(raw) ? raw : raw !== undefined ? [raw] : [];
   for (const entry of entries) {
     const item = asRecord(entry);
