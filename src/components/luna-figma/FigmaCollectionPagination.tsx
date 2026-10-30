@@ -5,10 +5,14 @@ import { useFigmaScreenData } from "./useFigmaScreenData";
 export function FigmaCollectionPagination({
   summaryLabel,
   className = "",
+  prevNodeId,
+  nextNodeId,
   ...rest
 }: {
   summaryLabel: string;
   className?: string;
+  prevNodeId?: string;
+  nextNodeId?: string;
   [key: string]: unknown;
 }) {
   const { currentPage, setCurrentPage, totalPages, pageItemsCount, totalFiltered, pageSize } =
@@ -45,7 +49,7 @@ export function FigmaCollectionPagination({
           onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
           className="box-border w-max max-w-[min(51px,100%)] h-auto rounded-[6px] relative flex flex-row items-start border-[#e2d9d0] border-[1px] pt-[5px] pr-[9px] pb-[5px] pl-[9px] bg-surface cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <p className="box-border w-max max-w-[min(31px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">
+          <p data-figma-node={prevNodeId} className="box-border w-max max-w-[min(31px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">
             Prev
           </p>
         </button>
@@ -77,7 +81,7 @@ export function FigmaCollectionPagination({
           onClick={() => setCurrentPage((p) => p + 1)}
           className="box-border w-max max-w-[min(52px,100%)] h-auto rounded-[6px] relative flex flex-row items-start border-[#e2d9d0] border-[1px] pt-[5px] pr-[9px] pb-[5px] pl-[9px] bg-surface cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <p className="box-border w-max max-w-[min(32px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">
+          <p data-figma-node={nextNodeId} className="box-border w-max max-w-[min(32px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">
             Next
           </p>
         </button>

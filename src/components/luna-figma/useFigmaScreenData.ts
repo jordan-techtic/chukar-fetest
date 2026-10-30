@@ -59,7 +59,9 @@ const ROUTE_TO_FRAME: Record<string, string> = {
   "manage-users": "5359:17424",
   "marketing-team-member-manage-users": "5359:17424",
   "manage-category": "5449:19126",
+  "marketing/add-category": "5359:17278",
   "manage-holiday": "5621:28270",
+  "marketing-calendar/add-holiday": "5621:28800",
   "week-calendar-default": "5602:71490",
   "week-calendar-historical-view": "5584:26945",
   "": "5584:26945",
@@ -68,7 +70,9 @@ const ROUTE_TO_FRAME: Record<string, string> = {
 const PAGE_SIZE_BY_FRAME: Record<string, number> = {
   "5359:17424": 6,
   "5449:19126": 5,
+  "5359:17278": 5,
   "5621:28270": 6,
+  "5621:28800": 6,
 };
 
 const NAV_ACTIONS: Record<string, string> = {
