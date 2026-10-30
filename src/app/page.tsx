@@ -1,20 +1,10 @@
-/**
- * Luna generated page
- * Page: WeekCalendarHistoricalPage
- * Ownership: Figma-owned layout
- * Behavior: useFigmaScreenData / figmaFieldContract
- * luna-spec-codegen: owned-layout
- */
-import type { Metadata } from "next";
-import { FigmaScreenDataProvider } from "@/components/luna-figma/useFigmaScreenData";
-import { WeekCalendarHistoricalPage } from "@/components/luna-figma/WeekCalendarHistoricalPage";
+import { AppShell } from "@/components/layout/AppShell";
+import { HomePlaceholder } from "@/components/features/home/HomePlaceholder";
 
-export const metadata: Metadata = { title: "Week-calendar-Historical view" };
-
-export default function Page() {
+export default function HomePage() {
   return (
-    <FigmaScreenDataProvider routePath="">
-      <WeekCalendarHistoricalPage />
-    </FigmaScreenDataProvider>
+    <AppShell>
+      <HomePlaceholder />
+    </AppShell>
   );
 }

@@ -1,0 +1,74 @@
+/**
+ * Luna generated layout
+ * Figma node: 5621:28272
+ * Section: TitleRow
+ * Route: /manage-holiday
+ * Ownership: Figma-owned layout
+ * Behavior: useFigmaScreenData / figmaFieldContract
+ * luna-spec-codegen: owned-layout
+ */
+"use client";
+
+import { useRef } from "react";
+
+import {
+  figmaFieldProps,
+  openFigmaDialog,
+  registerHolidayDialogOpener,
+  useFigmaScreenData,
+} from "./useFigmaScreenData";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
+export function ManageHolidayTitleRowSection() {
+  const { resetModalForm, uploadHolidayList, importingHolidayList } = useFigmaScreenData();
+  const importInputRef = useRef<HTMLInputElement>(null);
+
+  return (
+    <section data-figma-node="5621:28272" className="relative box-border w-full min-w-0 min-h-[89px] pt-[20px] pr-[clamp(16px,2.778vw,40px)] pb-[20px] pl-[clamp(16px,2.778vw,40px)] flex flex-row items-center justify-between flex-wrap gap-y-3 z-[1]">
+      <div data-figma-node="5621:28273" className="box-border w-max max-w-[min(312px,100%)] h-auto relative flex flex-col items-start gap-1">
+        <h2 data-figma-node="5621:28274" className="box-border w-max max-w-[min(228px,100%)] h-auto min-h-[28px] shrink-0 font-onest text-[22px] font-[700] leading-[28px] text-left min-[1440px]:whitespace-nowrap text-text-primary">Holiday Management</h2>
+        <p data-figma-node="5621:28275" className="box-border w-max max-w-[min(312px,100%)] h-auto min-h-[17px] shrink-0 font-onest text-[13px] font-[400] leading-[17px] text-left min-[1440px]:whitespace-nowrap text-text-secondary">Manage company-wide holidays and observances.</p>
+      </div>
+      <div data-figma-node="5621:28276" data-figma-pagination="true" className="box-border flex-1 min-w-[min(581px,100%)] h-auto relative flex flex-row items-center justify-end gap-5 flex-wrap gap-y-3">
+        <div data-figma-node="5621:28285" data-figma-pagination="true" className="box-border w-max max-w-[min(284px,100%)] h-auto relative flex flex-row items-center gap-3">
+          <div className="box-border w-[280px] shrink-0 rounded-[6px] relative border-[#e2d9d0] border-[1px] bg-surface h-[37px]"><Input data-figma-node="5621:28286" name="search-users" data-figma-field="search-users" data-figma-field-origin="design_text" {...figmaFieldProps("search-users")} type="search" inputMode="search" placeholder="Search users..." aria-label="Search users..." className="absolute inset-0 h-full w-full appearance-none bg-transparent shadow-none ring-0 focus-visible:ring-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary border-0 text-text-secondary placeholder:text-[#686868] font-onest text-[13px] font-[400] leading-[17px] text-left pl-[38px] pr-[16px] hover:bg-transparent rounded-none" /><div className="pointer-events-none absolute inset-0"><div data-figma-node="5621:28287" className="box-border w-[14px] h-[14px] absolute left-[16px] top-[12px] overflow-hidden block">
+  <svg data-figma-node="5621:28288" viewBox="0 0 10.5 10.5" preserveAspectRatio="none" aria-hidden="true" className="box-border absolute left-[14.286%] w-[78.571%] top-[14.286%] h-[78.571%] pointer-events-none overflow-visible"><path d="M9.79298 11.2072C10.1835 11.5977 10.8167 11.5977 11.2072 11.2072C11.5977 10.8167 11.5977 10.1835 11.2072 9.79298L10.5001 10.5001L9.79298 11.2072ZM8.67553 7.26132C8.28501 6.87079 7.65184 6.87079 7.26132 7.26132C6.87079 7.65184 6.87079 8.28501 7.26132 8.67553L7.96842 7.96842L8.67553 7.26132ZM10.5001 10.5001L11.2072 9.79298L8.67553 7.26132L7.96842 7.96842L7.26132 8.67553L9.79298 11.2072L10.5001 10.5001ZM9.33333 4.66667L8.33333 4.66667C8.33333 6.69171 6.69171 8.33333 4.66667 8.33333L4.66667 9.33333L4.66667 10.3333C7.79628 10.3333 10.3333 7.79628 10.3333 4.66667L9.33333 4.66667ZM4.66667 9.33333L4.66667 8.33333C2.64162 8.33333 1 6.69171 1 4.66667L0 4.66667L-1 4.66667C-1 7.79628 1.53705 10.3333 4.66667 10.3333L4.66667 9.33333ZM0 4.66667L1 4.66667C1 2.64162 2.64162 1 4.66667 1L4.66667 0L4.66667 -1C1.53705 -1 -1 1.53705 -1 4.66667L0 4.66667ZM4.66667 0L4.66667 1C6.69171 1 8.33333 2.64162 8.33333 4.66667L9.33333 4.66667L10.3333 4.66667C10.3333 1.53705 7.79628 -1 4.66667 -1L4.66667 0Z" fill="#686868" /></svg>
+</div></div></div>
+        </div>
+        <input
+          ref={importInputRef}
+          type="file"
+          accept=".csv,.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv"
+          className="sr-only"
+          tabIndex={-1}
+          aria-hidden
+          onChange={(event) => {
+            const file = event.target.files?.[0];
+            event.target.value = "";
+            if (file) {
+              void uploadHolidayList(file);
+            }
+          }}
+        />
+        <Button
+          data-figma-node="5621:28192"
+          type="button"
+          disabled={importingHolidayList}
+          aria-busy={importingHolidayList}
+          onClick={(e) => {
+            e.preventDefault();
+            importInputRef.current?.click();
+          }}
+          className="p-0 box-border w-max h-auto rounded-[6px] min-w-[126px] border-[#e2d9d0] border-[1px] pt-[10px] pr-[16px] pb-[10px] pl-[16px] inline-flex items-center justify-start whitespace-nowrap bg-surface hover:opacity-90 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 hover:bg-surface shadow-none gap-2"
+        >
+          <div data-figma-node="5621:28193" data-figma-component="5111:5554" className="box-border w-[16px] h-[16px] overflow-hidden relative block">
+  <svg data-figma-node="I5621:28193;5111:5555" viewBox="0 0 13.36 12.57" preserveAspectRatio="none" aria-hidden="true" className="box-border absolute left-[6.25%] w-[81.25%] top-[12.5%] h-[81.25%] pointer-events-none overflow-visible"><path d="M4.67857 2.81731L5.99821 2.81731L5.99821 8.85838C5.99821 8.93696 6.0625 9.00124 6.14107 9.00124L7.2125 9.00124C7.29107 9.00124 7.35536 8.93696 7.35536 8.85838L7.35536 2.81731L8.67857 2.81731C8.79821 2.81731 8.86429 2.67981 8.79107 2.58696L6.79107 0.0548123C6.77771 0.0377377 6.76063 0.0239288 6.74114 0.0144321C6.72165 0.0049354 6.70025 0 6.67857 0C6.65689 0 6.63549 0.0049354 6.616 0.0144321C6.59651 0.0239288 6.57943 0.0377377 6.56607 0.0548123L4.56607 2.58517C4.49286 2.67981 4.55893 2.81731 4.67857 2.81731L4.67857 2.81731ZM13.2143 8.32267L12.1429 8.32267C12.0643 8.32267 12 8.38696 12 8.46553L12 11.2155L1.35714 11.2155L1.35714 8.46553C1.35714 8.38696 1.29286 8.32267 1.21429 8.32267L0.142857 8.32267C0.0642857 8.32267 0 8.38696 0 8.46553L0 12.0012C0 12.3173 0.255357 12.5727 0.571429 12.5727L12.7857 12.5727C13.1018 12.5727 13.3571 12.3173 13.3571 12.0012L13.3571 8.46553C13.3571 8.38696 13.2929 8.32267 13.2143 8.32267Z" fill="#a21d35" /></svg>
+</div><span className="font-onest text-[13px] font-[600] leading-[17px] text-left whitespace-nowrap text-text-primary">{importingHolidayList ? "Uploading…" : "Upload List"}</span></Button>
+        <Button data-figma-node="5621:28290" type="button" data-figma-action="act_8e0ab36f39bd" data-figma-overlay-opens="5621:28800" onClick={(e) => { e.preventDefault(); registerHolidayDialogOpener(e.currentTarget); resetModalForm(); openFigmaDialog("act_8e0ab36f39bd"); }} className="p-0 box-border w-max h-auto rounded-[6px] min-w-[135px] pt-[10px] pr-[18px] pb-[10px] pl-[18px] inline-flex items-center justify-start whitespace-nowrap bg-primary hover:opacity-90 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current disabled:cursor-not-allowed disabled:opacity-50 gap-0 hover:bg-primary shadow-none gap-2"><div data-figma-node="5621:28291" className="box-border w-[14px] h-[14px] overflow-hidden relative block">
+  <svg data-figma-node="5621:28292" viewBox="0 0 8.17 8.17" preserveAspectRatio="none" aria-hidden="true" className="box-border absolute left-[21.429%] w-[57.143%] top-[21.429%] h-[57.143%] pointer-events-none overflow-visible"><path d="M0 3.0838C-0.552285 3.0838 -1 3.53152 -1 4.0838C-1 4.63609 -0.552285 5.0838 0 5.0838L0 4.0838L0 3.0838ZM8.1676 5.0838C8.71989 5.0838 9.1676 4.63609 9.1676 4.0838C9.1676 3.53152 8.71989 3.0838 8.1676 3.0838L8.1676 4.0838L8.1676 5.0838ZM5.0838 0C5.0838 -0.552285 4.63609 -1 4.0838 -1C3.53152 -1 3.0838 -0.552285 3.0838 0L4.0838 0L5.0838 0ZM3.0838 8.1676C3.0838 8.71989 3.53152 9.1676 4.0838 9.1676C4.63609 9.1676 5.0838 8.71989 5.0838 8.1676L4.0838 8.1676L3.0838 8.1676ZM0 4.0838L0 5.0838L8.1676 5.0838L8.1676 4.0838L8.1676 3.0838L0 3.0838L0 4.0838ZM4.0838 0L3.0838 0L3.0838 8.1676L4.0838 8.1676L5.0838 8.1676L5.0838 0L4.0838 0Z" fill="#ffffff" /></svg>
+</div><span className="font-onest text-[13px] font-[700] leading-[17px] text-left whitespace-nowrap text-surface">Add Holiday</span></Button>
+      </div>
+    </section>
+  );
+}

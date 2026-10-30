@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "typecheck": "rm -rf .next/types && next typegen && tsc --noEmit",
     "start": "next start",
     "lint": "eslint . --max-warnings 0",
     "format": "prettier --write .",
