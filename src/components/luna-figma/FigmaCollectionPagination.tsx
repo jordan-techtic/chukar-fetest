@@ -18,17 +18,20 @@ export function FigmaCollectionPagination({
   const { currentPage, setCurrentPage, totalPages, pageItemsCount, totalFiltered, pageSize } =
     useFigmaScreenData();
 
-  if (totalPages <= 1) {
-    return null;
-  }
-
+  const pages = Math.max(totalPages, 1);
   const start = totalFiltered <= 0 ? 0 : (currentPage - 1) * pageSize + 1;
   const end = totalFiltered <= 0 ? 0 : start + pageItemsCount - 1;
   const summary = `Showing ${start}-${end} of ${totalFiltered} ${summaryLabel}`;
 
-  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1).filter(
-    (n) => n === 1 || n === totalPages || Math.abs(n - currentPage) <= 1,
-  );
+  const pageNumbers =
+    totalPages > 1
+      ? Array.from({ length: totalPages }, (_, i) => i + 1).filter(
+          (n) => n === 1 || n === totalPages || Math.abs(n - currentPage) <= 1,
+        )
+      : [];
+
+  const prevDisabled = currentPage <= 1 || totalPages <= 1;
+  const nextDisabled = currentPage >= pages || totalPages <= 1;
 
   return (
     <div
@@ -45,11 +48,14 @@ export function FigmaCollectionPagination({
       >
         <button
           type="button"
-          disabled={currentPage <= 1}
+          disabled={prevDisabled}
           onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-          className="box-border w-max max-w-[min(51px,100%)] h-auto rounded-[6px] relative flex flex-row items-start border-[#e2d9d0] border-[1px] pt-[5px] pr-[9px] pb-[5px] pl-[9px] bg-surface cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="group box-border w-max max-w-[min(51px,100%)] h-auto rounded-[6px] relative flex flex-row items-start border-[#e2d9d0] border-[1px] pt-[5px] pr-[9px] pb-[5px] pl-[9px] bg-surface cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:bg-surface disabled:border-[#e2d9d0]"
         >
-          <p data-figma-node={prevNodeId} className="box-border w-max max-w-[min(31px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">
+          <p
+            data-figma-node={prevNodeId}
+            className="box-border w-max max-w-[min(31px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary group-disabled:text-text-secondary"
+          >
             Prev
           </p>
         </button>
@@ -77,11 +83,14 @@ export function FigmaCollectionPagination({
         ))}
         <button
           type="button"
-          disabled={currentPage >= totalPages}
+          disabled={nextDisabled}
           onClick={() => setCurrentPage((p) => p + 1)}
-          className="box-border w-max max-w-[min(52px,100%)] h-auto rounded-[6px] relative flex flex-row items-start border-[#e2d9d0] border-[1px] pt-[5px] pr-[9px] pb-[5px] pl-[9px] bg-surface cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="group box-border w-max max-w-[min(52px,100%)] h-auto rounded-[6px] relative flex flex-row items-start border-[#e2d9d0] border-[1px] pt-[5px] pr-[9px] pb-[5px] pl-[9px] bg-surface cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:bg-surface disabled:border-[#e2d9d0]"
         >
-          <p data-figma-node={nextNodeId} className="box-border w-max max-w-[min(32px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary">
+          <p
+            data-figma-node={nextNodeId}
+            className="box-border w-max max-w-[min(32px,100%)] h-auto min-h-[15px] font-onest text-[12px] font-[700] leading-[15px] text-left whitespace-nowrap text-text-primary group-disabled:text-text-secondary"
+          >
             Next
           </p>
         </button>
